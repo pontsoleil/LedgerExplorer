@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ledger Explorer demo – Structured CSV for xBRL GL 2.0</title>
+  <style>
+    :root {
+      --bg: #7DA3A1;
+      --panel: #ffffff;
+      --ink: #102a2a;
+      --muted: rgba(16, 42, 42, .75);
+      --accent: #34675C;
+      --header: #324851;
+      --border: #d9e2e2;
+    }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      margin: 16px;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .page{
+      display: flex;
+      justify-content: center; /* 横中央 */
+    }
+    .body{
+      width: min(960px, 100%);
+      padding: 0 16px;
+    }
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+    }
+    a.button.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: rgba(0,0,0,.1);
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      max-width: 980px;
+    }
+    h1 {
+      font-size: 22px;
+      margin: 0 0 10px 0;
+      color: #fff;
+    }
+    h2 {
+      font-size: 16px;
+      margin: 18px 0 8px;
+      color: var(--header);
+    }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 8px 20px; }
+    .note {
+      background: rgba(50,72,81,.08);
+      border: 1px solid rgba(50,72,81,.18);
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: var(--muted);
+    }
+    code, pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+    }
+    .refs li { margin-bottom: 6px; }
+    footer {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #fff;
+    }
+    footer a { color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="body">
+      <div class="topbar">
+        <a class="button primary" href="./?view=tidy&month=2021-04&mode=server&lang=en">Open the demo (Structured CSV)</a>
+        <a class="button" href="./">Back to Ledger Explorer</a>
+      </div>
+
+      <h1>Ledger Explorer demo: Structured CSV / hierarchical tidy data for xBRL GL 2.0</h1>
+
+      <div class="card">
+        <h2>1. What this site is</h2>
+        <p>
+          <strong>Ledger Explorer</strong> is a lightweight, browser-based demo that helps participants
+          <em>experience</em> Structured CSV (hierarchical tidy data) as a practical foundation for
+          xBRL GL 2.0.
+        </p>
+        <p class="note">
+          The “Structured CSV” view (tidy) is intended to be the <strong>source of truth</strong>.
+          Other views (Journal, General Ledger, Trial Balance, Balance Sheet, Profit and Loss) are
+          rendered from the same dataset so that users can see familiar accounting representations
+          without re-creating meaning through complex joins.
+        </p>
+
+        <h2>2. Why Structured CSV (hierarchical tidy data) matters</h2>
+        <ul>
+          <li><strong>Preserves context</strong>: keeps the relationship between voucher/header/line-level information.</li>
+          <li><strong>Tabular-friendly</strong>: works well with common CSV tooling and scalable data pipelines.</li>
+          <li><strong>Operationally simple</strong>: monthly splitting enables file-level scalability and easy distribution.</li>
+          <li><strong>Supports localisation</strong>: the same data can be presented with Japanese/English labels.</li>
+        </ul>
+
+        <h2>3. Suggested walkthrough (5–8 minutes)</h2>
+        <ol>
+          <li>Start from <strong>Structured CSV / tidy</strong> for a month (e.g., 2021‑04).</li>
+          <li>Switch to <strong>Journal</strong> to show the familiar “book of original entry”.</li>
+          <li>Switch to <strong>General Ledger</strong> and filter by <strong>Account</strong>; show drill‑down.</li>
+          <li>Show <strong>Trial Balance</strong>, then <strong>Balance Sheet</strong> and <strong>Profit and Loss</strong>.</li>
+          <li>Toggle <strong>Language</strong> to show localisation as a presentation layer.</li>
+        </ol>
+
+        <h2>4. How this relates to xBRL GL 2.0 requirements (discussion points)</h2>
+        <p>
+          This demo is designed to support IG discussions around recurring xBRL GL 2.0 requirement themes:
+        </p>
+        <ul>
+          <li><strong>Scalability for highly granular data</strong>: monthly files and tabular layouts support large datasets.</li>
+          <li><strong>Interoperability</strong>: CSV-first workflows align with the XBRL Open Information Model and xBRL‑CSV representations.</li>
+          <li><strong>Validation at scale</strong>: tabular constraints are a natural fit for efficient checks on CSV data.</li>
+          <li><strong>Auditability & traceability</strong>: stable structure makes transformations reproducible and reviewable.</li>
+          <li><strong>Localisation</strong>: bilingual UI demonstrates practical multi-language presentation.</li>
+        </ul>
+
+        <h2>5. References (helpful background)</h2>
+        <ul class="refs">
+          <li>
+            XBRL Open Information Model (OIM) – specification group index:
+            <a href="https://specifications.xbrl.org/work-product-index-open-information-model-open-information-model.html" target="_blank" rel="noopener">specifications.xbrl.org</a>
+          </li>
+          <li>
+            xBRL‑CSV – XBRL specification:
+            <a href="https://www.xbrl.org/Specification/xbrl-csv/REC-2021-10-13+errata-2023-04-19/xbrl-csv-REC-2021-10-13+corrected-errata-2023-04-19.html" target="_blank" rel="noopener">xbrl.org</a>
+          </li>
+          <li>
+            xBRL‑CSV Table Constraints – Public Working Draft:
+            <a href="https://www.xbrl.org/Specification/table-constraints/CR-2025-10-07/table-constraints-CR-2025-10-07.html" target="_blank" rel="noopener">xbrl.org</a>
+          </li>
+          <li>
+            “Tidy Data” (Hadley Wickham, 2014):
+            <a href="https://www.jstatsoft.org/article/view/v059i10" target="_blank" rel="noopener">Journal of Statistical Software</a>
+          </li>
+        </ul>
+
+        <h2>6. Licence and attribution</h2>
+        <p>
+          © 2026 SAMBUICHI, Nobuyuki (Sambuichi Professional Engineers Office). This page is intended to be shared
+          within the xBRL GL 2.0 IG for demonstration and discussion purposes.
+        </p>
+        <p class="note">
+          If you plan to reuse screenshots in IG materials, please keep attribution and respect the stated licence terms.
+        </p>
+      </div>
+
+      <footer>
+        © 2026 SAMBUICHI, Nobuyuki · <a href="https://www.sambuichi.jp/" target="_blank" rel="noopener">sambuichi.jp</a> · CC BY‑SA 4.0
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

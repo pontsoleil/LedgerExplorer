@@ -1,0 +1,6 @@
+FROM python:3.11-slim
+WORKDIR /work
+COPY tools/requirements.txt tools/requirements.txt
+RUN pip install --no-cache-dir -r tools/requirements.txt
+COPY tools/ tools/
+ENTRYPOINT ["python"]

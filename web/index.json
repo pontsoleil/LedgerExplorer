@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-02-19T05:58:27.979260Z",
+  "lang": "ja",
+  "months": [
+    "2021-04",
+    "2021-05",
+    "2021-06",
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03"
+  ],
+  "views": {
+    "journal": {
+      "by": "month",
+      "path": "journal/{month}.csv",
+      "fallback": "journal.csv",
+      "available": [
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03"
+      ]
+    },
+    "ledger": {
+      "by": "month",
+      "path": "ledger/{month}.csv",
+      "fallback": "ledger.csv",
+      "available": [
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03"
+      ]
+    },
+    "trial_balance": {
+      "by": "month",
+      "path": "trial_balance/{month}.csv",
+      "fallback": "trial_balance.csv",
+      "available": [
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03"
+      ]
+    },
+    "balance_sheet": {
+      "by": "month",
+      "path": "balance_sheet/{month}.csv",
+      "fallback": "balance_sheet.csv",
+      "available": [
+        "ALL"
+      ]
+    },
+    "pnl": {
+      "by": "month",
+      "path": "pnl/{month}.csv",
+      "fallback": "pnl.csv",
+      "available": [
+        "ALL"
+      ]
+    }
+  }
+}

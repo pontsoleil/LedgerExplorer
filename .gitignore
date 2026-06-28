@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.python-version
+
+# Node / front-end tooling (if you add later)
+node_modules/
+dist/
+.parcel-cache/
+.cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+
+# Logs
+*.log
+
+# Large generated exports (commit only samples)
+data/out/
+data/full/
+data/**/20??-??/*.csv
+!data/sample/**
+
+# Secrets / env
+.env

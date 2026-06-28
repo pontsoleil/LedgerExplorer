@@ -1,0 +1,116 @@
+
+body {
+    font-family: system-ui, sans-serif;
+    margin: 16px;
+    background: #7DA3A1
+}
+
+.row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+}
+
+button.active {
+    color: #fff;
+    background: #34675C;
+}
+
+label {
+    font-size: 13px;
+    color: #fff;
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+}
+
+select {
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+}
+
+input[type="text"],
+input[type="file"] {
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+}
+
+#about {
+    color: #fff;
+    background: #86ac41;
+}
+
+.status {
+    margin: 8px 0;
+    color: #fff;
+    font-size: 13px;
+}
+
+.table-wrap {
+    max-height: 78vh;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+#dataTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 14px;
+}
+
+#dataTable thead th {
+    position: sticky;
+    top: 0;
+    text-align: center !important;
+    vertical-align: middle;
+    color: #fff;
+    background: #324851;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+    z-index: 2;
+
+    max-width: 80px !important;
+    min-width: 46px !important;
+
+    /* ★折り返し設定（nowrapを上書き） */
+    white-space: normal !important;
+    overflow-wrap: anywhere;   /* 長い英単語も折る */
+    word-break: break-word;    /* 古いブラウザ対策 */
+    line-height: 1.2;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+    white-space: nowrap;
+    background: #fff;
+}
+
+.copyright {
+    margin: 8px 0;
+    color: #fff;
+    font-size: 13px;
+}

@@ -1,0 +1,8 @@
+﻿Dr_Cr,Tax_Code,Tax_Name,Tax_Category_Code,Tax_Category_Name_ja,Tax_Category_Name_en
+,00,-,O,-,-
+Cr,B5,Sales (10%),S10,標準10%,Standard 10%
+Dr,C5,Sales Returns (10%),S10,標準10%,Standard 10%
+Dr,P0,Non-deductible Purchases,X,非仕入,Non-Purchase
+Dr,Q5,Purchases (10%),S10,標準10%,Standard 10%
+Dr,Q6,Purchases (8% Reduced Rate),AA8,軽減8%,Reduced 8%
+Cr,R5,Purchase Returns (10%),S10,標準10%,Standard 10%

@@ -1,0 +1,26 @@
+﻿Ledger_Account_Number,Level,Type,Ledger_Account_Number,Parent,Category,eTax_Category,eTax_Account_Name,Beginning_Balance,Total_Debit,Total_Credit,Ending_Balance,seq
+10A000010,1,T,10A000010,10_000000,Assets,Assets,Assets,0,2585618480,2568916626,-16701854,2
+10A100010,2,T,10A100010,10A000010,Assets,Current assets,Current assets,0,2584118480,2566676702,-17441778,3
+10A100020,3,1,10A100020,10A100010,Assets,Current assets,Cash and deposits,0.0,1304847002.0,1268415220.0,36431782.0,4
+10A100060,3,1,10A100060,10A100010,Assets,Current assets,Notes receivable - trade,0.0,426025539.0,392166316.0,33859223.0,8
+10A100090,3,1,10A100090,10A100010,Assets,Current assets,Accounts receivable - trade,0.0,852605939.0,905415166.0,-52809227.0,11
+10A100200,3,1,10A100200,10A100010,Assets,Current assets,Electronically recorded monetary claims - operating,0.0,40000.0,0.0,40000.0,22
+10A100610,4,1,10A100610,10A100570,Assets,Current assets,Short-term loans receivable,0.0,600000.0,680000.0,-80000.0,63
+10A200010,2,T,10A200010,10A000010,Assets,Non-current assets,Non-current assets,0,1500000,2239924,739924,119
+10A210130,4,1,10A210130,10A210010,Assets,"Property, plant and equipment",Structures,0.0,0.0,328000.0,-328000.0,132
+10A210410,4,1,10A210410,10A210010,Assets,"Property, plant and equipment","Tools, furniture and fixtures",0.0,0.0,1911924.0,-1911924.0,160
+10A230010,3,T,10A230010,10A200010,Assets,Investments and other assets,Investments and other assets,0,1500000,0,-1500000,248
+10A230280,4,T,10A230280,10A230010,Assets,Investments and other assets,Other long-term assets,0,1500000,0,-1500000,275
+10A230570,5,1,10A230570,10A230280,Assets,Investments and other assets,Insurance funds,0.0,1500000.0,0.0,1500000.0,304
+10B000010,1,T,10B000010,10_000000,Liabilities,Liabilities,Liabilities,0,831714104,818879909,12834195,346
+10B100010,2,T,10B100010,10B000010,Liabilities,Current liabilities,Current liabilities,0,824714104,818879909,5834195,347
+10B100030,3,1,10B100030,10B100010,Liabilities,Current liabilities,Notes payable - trade,0.0,167107676.0,183544830.0,16437154.0,349
+10B100040,3,1,10B100040,10B100010,Liabilities,Current liabilities,Accounts payable - trade,0.0,521771803.0,513586826.0,-8184977.0,350
+10B100620,3,T,10B100620,10B100010,Liabilities,Current liabilities,"Accounts payable - ordinary transactions, paid in short term",0,127992625,121748253,6244372,408
+10B100630,4,1,10B100630,10B100620,Liabilities,Current liabilities,Accounts payable - other,0.0,97455856.0,96837971.0,-617885.0,409
+10B100640,4,1,10B100640,10B100620,Liabilities,Current liabilities,Income taxes payable,0.0,2864378.0,0.0,-2864378.0,410
+10B100650,4,1,10B100650,10B100620,Liabilities,Current liabilities,Accrued business office tax,0.0,1862000.0,0.0,-1862000.0,411
+10B100660,4,1,10B100660,10B100620,Liabilities,Current liabilities,Accrued consumption taxes,0.0,4947100.0,0.0,-4947100.0,412
+10B100690,4,1,10B100690,10B100620,Liabilities,Current liabilities,Deposits received,0.0,20863291.0,24910282.0,4046991.0,415
+10B100790,4,1,10B100790,10B100730,Liabilities,Current liabilities,Short-term borrowings,0.0,7842000.0,0.0,-7842000.0,425
+10B200080,4,1,10B200080,10B200070,Liabilities,Non-current liabilities,Long-term borrowings,0.0,7000000.0,0.0,-7000000.0,461

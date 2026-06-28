@@ -1,0 +1,125 @@
+{
+  "version": "1.1",
+  "generated_at": "2026-02-17",
+  "base_dir": "ledger/data",
+  "langs": [
+    "ja",
+    "en"
+  ],
+  "default": {
+    "lang": "ja",
+    "view": "journal",
+    "month": "2021-04"
+  },
+  "months": [
+    "2021-04",
+    "2021-05",
+    "2021-06",
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03"
+  ],
+  "views": {
+    "tidy": {
+      "by": "month",
+      "path": "{lang}/tidy/{month}.csv",
+      "fallback": "{lang}/tidy/{month}.csv",
+      "available": [
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03"
+      ]
+    },
+    "journal": {
+      "by": "month",
+      "path": "{lang}/journal/{month}.csv",
+      "fallback": "{lang}/journal/ALL.csv",
+      "available": [
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03"
+      ]
+    },
+    "ledger": {
+      "by": "month",
+      "path": "{lang}/ledger/{month}.csv",
+      "fallback": "{lang}/ledger/ALL.csv",
+      "available": [
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03"
+      ]
+    },
+    "trial_balance": {
+      "by": "month",
+      "path": "{lang}/trial_balance/{month}.csv",
+      "fallback": "{lang}/trial_balance/ALL.csv",
+      "available": [
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03"
+      ]
+    },
+    "balance_sheet": {
+      "path": "{lang}/balance_sheet/ALL.csv",
+      "fallback": "{lang}/balance_sheet/ALL.csv",
+      "available": [
+        "ALL"
+      ]
+    },
+    "pnl": {
+      "path": "{lang}/pnl/ALL.csv",
+      "fallback": "{lang}/pnl/ALL.csv",
+      "available": [
+        "ALL"
+      ]
+    }
+  },
+  "notes": {
+    "months": "Set months to match tidy/{YYYY-MM}.csv files (filename without extension).",
+    "views": "Non-monthly views use available=['ALL'] and ignore month selection.",
+    "tidy_available": "tidy.available set to match months so month selector works consistently."
+  }
+}

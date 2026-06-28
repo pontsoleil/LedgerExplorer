@@ -1,0 +1,1668 @@
+﻿JP07a,JP08a,BS04fb,JP05a,BS04fc,JP05b,JP07a_GL03_01,JP07a_GL03_03,GL05c_01,GE23c_01,GE09eR_01,JP08a_GL04_03,JP06e_GE24_01,JP06e_GE24_02,JP05a_01,JP05a_02,JP05a_03,GE05ku_01,GE05kw_01,JP02j_BS09_01,JP02j_BS09_02,JP06f_GE24_01,JP06f_GE24_02,JP05b_01,JP05b_02,JP05b_03,GE05kz_01,GE05kB_01,JP02k_BS09_01,JP02k_BS09_02,BS04fb_01,BS04fb_02,BS04fb_03,BS04fc_01,BS04fc_02,BS04fc_03
+712,,,,,,56,2021-07-01,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+712,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,19800.0,1800.0,S10,Standard 10%,10A100020,Cash and deposits,,,,19800.0,0.0,O,Exempt,,,,,,
+712,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+712,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+713,,,,,,66,2021-07-01,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+713,1.0,,,,,,,,,,Lease Payments,10E200730,Rent expenses on land and buildings,,,,209850.0,19077.0,S10,Standard 10%,10A100020,Cash and deposits,,,,209850.0,0.0,O,Exempt,,,,,,
+713,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+713,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+713,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+714,,,,,,70,2021-07-01,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+714,1.0,,,,,,,,,,Battery Cost,10E201270,Miscellaneous expenses,,,,458.0,41.0,S10,Standard 10%,10A100020,Cash and deposits,,,,458.0,0.0,O,Exempt,,,,,,
+714,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+714,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+715,,,,,,79,2021-07-01,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+715,1.0,,,,,,,,,,Prize Cost,10E200140,Welfare expenses,,,,35077.0,3188.0,S10,Standard 10%,10A100020,Cash and deposits,,,,35077.0,0.0,O,Exempt,,,,,,
+715,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+715,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+716,,,,,,116,2021-07-01,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+716,1.0,,,,,,,,,,Lease Payments,10E200730,Rent expenses on land and buildings,,,,84000.0,7636.0,S10,Standard 10%,10A100020,Cash and deposits,,,,84000.0,0.0,O,Exempt,,,,,,
+716,1.0,,,,1.0,,,,,,,,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,
+716,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+716,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+717,,,,,,32,2021-07-02,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+717,1.0,,,,,,,,,,Office Supplies Expense,10E201110,Office supplies expenses,,,,2233.0,203.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,2233.0,0.0,O,Exempt,,,,,,
+717,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+717,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+718,,,,,,142,2021-07-02,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+718,1.0,,,,,,,,,,Car wash,10E201120,Vehicle expenses,,,,2458.0,223.0,S10,Standard 10%,10A100020,Cash and deposits,,,,24205.0,0.0,O,Exempt,,,,,,
+718,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+718,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+718,2.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,6229.0,566.0,S10,Standard 10%,,,,,,,,,,,,,,,
+718,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+718,3.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,3086.0,280.0,S10,Standard 10%,,,,,,,,,,,,,,,
+718,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+718,4.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,477.0,43.0,S10,Standard 10%,,,,,,,,,,,,,,,
+718,4.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+718,5.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,8097.0,736.0,S10,Standard 10%,,,,,,,,,,,,,,,
+718,5.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+718,6.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,3858.0,350.0,S10,Standard 10%,,,,,,,,,,,,,,,
+718,6.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+719,,,,,,151,2021-07-02,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+719,1.0,,,,,,,,,,Meal Cost Dining Sai 2 People,10E200150,Entertainment expenses,,,,6143.0,558.0,S10,Standard 10%,10A100020,Cash and deposits,,,,15055.0,0.0,O,Exempt,,,,,,
+719,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+719,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+719,2.0,,,,,,,,,,Meal Cost Italian Restaurant Penne 4 People,10E200150,Entertainment expenses,,,,8912.0,810.0,S10,Standard 10%,,,,,,,,,,,,,,,
+719,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+720,,,,,,19,2021-07-03,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+720,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,10450.0,950.0,S10,Standard 10%,10A100020,Cash and deposits,,,,10450.0,0.0,O,Exempt,,,,,,
+720,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+720,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+721,,,,,,80,2021-07-03,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+721,1.0,,,,,,,,,,Taxi Fare,10E201230,Travel and transportation expenses,,,,6500.0,590.0,S10,Standard 10%,10A100020,Cash and deposits,,,,6500.0,0.0,O,Exempt,,,,,,
+721,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+721,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+722,,,,,,134,2021-07-03,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+722,1.0,,,,,,,,,,Paper,10E201110,Office supplies expenses,,,,13780.0,1252.0,S10,Standard 10%,10A100020,Cash and deposits,,,,13780.0,0.0,O,Exempt,,,,,,
+722,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+722,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+723,,,,,,10,2021-07-04,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+723,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,7320.0,665.0,S10,Standard 10%,10A100020,Cash and deposits,,,,7320.0,0.0,O,Exempt,,,,,,
+723,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+723,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+724,,,,,,41,2021-07-04,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+724,1.0,,,,,,,,,,Wedding fee,10E200150,Entertainment expenses,,,,12000.0,1090.0,S10,Standard 10%,10A100020,Cash and deposits,,,,12000.0,0.0,O,Exempt,,,,,,
+724,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+724,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+725,,,,,,73,2021-07-04,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+725,1.0,,,,,,,,,,Food and drink fee cafe maintre,10E200150,Entertainment expenses,,,,14630.0,1330.0,S10,Standard 10%,10A100020,Cash and deposits,,,,14630.0,0.0,O,Exempt,,,,,,
+725,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+725,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+726,,,,,,82,2021-07-04,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+726,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,18900.0,1718.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,18900.0,0.0,O,Exempt,,,,,,
+726,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+726,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+727,,,,,,18,2021-07-05,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+727,1.0,,,,,,,,,,Airline Ticket,10E201230,Travel and transportation expenses,,,,24500.0,2227.0,S10,Standard 10%,10A100020,Cash and deposits,,,,24500.0,0.0,O,Exempt,,,,,,
+727,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+727,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+728,,,,,,42,2021-07-05,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+728,1.0,,,,,,,,,,3 coffee,10E200150,Entertainment expenses,,,,1575.0,143.0,S10,Standard 10%,10A100020,Cash and deposits,,,,1575.0,0.0,O,Exempt,,,,,,
+728,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+728,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+729,,,,,,87,2021-07-05,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+729,1.0,,,,,,,,,,"July 5th Slip No. 253 Watanabe Industries Co., Ltd.",10A100020,Cash and deposits,,,,950782.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,950782.0,0.0,O,Exempt,,,,,,
+729,1.0,,1.0,,,,,,,,,,,50,Fukuoka Kitakyushu,sub-account,,,,,,,,,,,,,,,,,,,
+729,1.0,,,,1.0,,,,,,,,,,,,,,,,,,22,"Watanabe Industries Co., Ltd.",sub-account,,,,,,,,,,
+729,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+729,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+729,2.0,,,,,,,,,,"July 5th Slip No. 253 Watanabe Industries Co., Ltd.",10A100090,Accounts receivable - trade,,,,10000.0,0.0,O,Exempt,10D100110,Sales allowance and returns,,,,10000.0,909.0,S10,Standard 10%,,,,,,
+729,2.0,,1.0,,,,,,,,,,,22,"Watanabe Industries Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+729,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+729,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department
+729,3.0,,,,,,,,,,"July 5th Slip No. 253 Watanabe Industries Co., Ltd.",10E200690,Commission expenses,,,,472.0,42.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,472.0,0.0,O,Exempt,,,,,,
+729,3.0,,,,1.0,,,,,,,,,,,,,,,,,,22,"Watanabe Industries Co., Ltd.",sub-account,,,,,,,,,,
+729,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+729,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+730,,,,,,88,2021-07-05,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+730,1.0,,,,,,,,,,"July 5th Slip No. 254 Sasaki Sales Co., Ltd.",10A100020,Cash and deposits,,,,841905.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,841905.0,0.0,O,Exempt,,,,,,
+730,1.0,,1.0,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,,,,,,,,,,
+730,1.0,,,,1.0,,,,,,,,,,,,,,,,,,26,"Sasaki Sales Co., Ltd.",sub-account,,,,,,,,,,
+730,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+730,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+730,2.0,,,,,,,,,,"July 5th Slip No. 254 Sasaki Sales Co., Ltd.",10E200690,Commission expenses,,,,472.0,42.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,472.0,0.0,O,Exempt,,,,,,
+730,2.0,,,,1.0,,,,,,,,,,,,,,,,,,26,"Sasaki Sales Co., Ltd.",sub-account,,,,,,,,,,
+730,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+730,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+731,,,,,,89,2021-07-05,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+731,1.0,,,,,,,,,,"July 5th Slip No. 255 Iwashita Trading Co., Ltd.",10A100020,Cash and deposits,,,,490899.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,490899.0,0.0,O,Exempt,,,,,,
+731,1.0,,1.0,,,,,,,,,,,30,Mitsui Nagoya,sub-account,,,,,,,,,,,,,,,,,,,
+731,1.0,,,,1.0,,,,,,,,,,,,,,,,,,27,"Iwashita Trading Co., Ltd.",sub-account,,,,,,,,,,
+731,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+731,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+732,,,,,,133,2021-07-05,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+732,1.0,,,,,,,,,,Tax Accountant Fee,10E200600,Fee expenses,,,,139710.0,12700.0,S10,Standard 10%,10A100020,Cash and deposits,,,,139710.0,0.0,O,Exempt,,,,,,
+732,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+732,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+732,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+733,,,,,,7,2021-07-06,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+733,1.0,,,,,,,,,,Meal Cost Hotel Lunch 2 People,10E200150,Entertainment expenses,,,,5543.0,503.0,S10,Standard 10%,10A100020,Cash and deposits,,,,6591.0,0.0,O,Exempt,,,,,,
+733,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+733,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+733,2.0,,,,,,,,,,Coffee fee 2 people,10E200150,Entertainment expenses,,,,1048.0,95.0,S10,Standard 10%,,,,,,,,,,,,,,,
+733,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+734,,,,,,43,2021-07-06,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+734,1.0,,,,,,,,,,Lunch Cost Restaurant Ouka 3 People,10E200150,Entertainment expenses,,,,7140.0,649.0,S10,Standard 10%,10A100020,Cash and deposits,,,,7140.0,0.0,O,Exempt,,,,,,
+734,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+734,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+735,,,,,,94,2021-07-06,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+735,1.0,,,,,,,,,,Toilet Paper Cost,10E201270,Miscellaneous expenses,,,,3102.0,282.0,S10,Standard 10%,10A100020,Cash and deposits,,,,3102.0,0.0,O,Exempt,,,,,,
+735,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+735,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+736,,,,,,110,2021-07-06,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+736,1.0,,,,,,,,,,Taxi Fare,10E201230,Travel and transportation expenses,,,,2290.0,208.0,S10,Standard 10%,10A100020,Cash and deposits,,,,2290.0,0.0,O,Exempt,,,,,,
+736,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+736,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+737,,,,,,156,2021-07-06,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+737,1.0,,,,,,,,,,Business Trip Expense,10E201230,Travel and transportation expenses,,,,12000.0,1090.0,S10,Standard 10%,10A100020,Cash and deposits,,,,12000.0,0.0,O,Exempt,,,,,,
+737,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+737,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+738,,,,,,21,2021-07-07,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+738,1.0,,,,,,,,,,JR,10E201230,Travel and transportation expenses,,,,69500.0,6318.0,S10,Standard 10%,10A100020,Cash and deposits,,,,69500.0,0.0,O,Exempt,,,,,,
+738,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+738,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+739,,,,,,22,2021-07-07,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+739,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,50000.0,4545.0,S10,Standard 10%,10A100020,Cash and deposits,,,,50000.0,0.0,O,Exempt,,,,,,
+739,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+739,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+740,,,,,,50,2021-07-07,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+740,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,12000.0,1090.0,S10,Standard 10%,10A100020,Cash and deposits,,,,12000.0,0.0,O,Exempt,,,,,,
+740,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+740,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+741,,,,,,20,2021-07-08,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+741,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,42000.0,3818.0,S10,Standard 10%,10A100020,Cash and deposits,,,,42000.0,0.0,O,Exempt,,,,,,
+741,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+741,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+742,,,,,,68,2021-07-08,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+742,1.0,,,,,,,,,,Toilet Paper and Others,10E201270,Miscellaneous expenses,,,,2361.0,214.0,S10,Standard 10%,10A100020,Cash and deposits,,,,2361.0,0.0,O,Exempt,,,,,,
+742,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+742,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+743,,,,,,76,2021-07-08,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+743,1.0,,,,,,,,,,Prize Cost,10E200140,Welfare expenses,,,,61050.0,5550.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,61050.0,0.0,O,Exempt,,,,,,
+743,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+743,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+744,,,,,,103,2021-07-08,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+744,1.0,,,,,,,,,,Coffee fee 4 people,10E200150,Entertainment expenses,,,,2210.0,200.0,S10,Standard 10%,10A100020,Cash and deposits,,,,2210.0,0.0,O,Exempt,,,,,,
+744,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+744,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+745,,,,,,147,2021-07-08,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+745,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,5412.0,492.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,10842.0,0.0,O,Exempt,,,,,,
+745,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+745,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+745,2.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,4858.0,441.0,S10,Standard 10%,,,,,,,,,,,,,,,
+745,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+745,3.0,,,,,,,,,,Parking Fee,10E201120,Vehicle expenses,,,,572.0,52.0,S10,Standard 10%,,,,,,,,,,,,,,,
+745,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+746,,,,,,150,2021-07-08,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+746,1.0,,,,,,,,,,Golf play fee 2 people,10E200150,Entertainment expenses,,,,18240.0,1658.0,S10,Standard 10%,10A100020,Cash and deposits,,,,18240.0,0.0,O,Exempt,,,,,,
+746,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+746,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+747,,,,,,157,2021-07-08,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+747,1.0,,,,,,,,,,Airline Ticket Cost,10E201230,Travel and transportation expenses,,,,45000.0,4090.0,S10,Standard 10%,10A100020,Cash and deposits,,,,45000.0,0.0,O,Exempt,,,,,,
+747,1.0,,,,1.0,,,,,,,,,,,,,,,,,,50,Fukuoka Kitakyushu,sub-account,,,,,,,,,,
+747,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+747,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+748,,,,,,79,2021-07-09,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+748,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,3519.0,319.0,S10,Standard 10%,10A100020,Cash and deposits,,,,3519.0,0.0,O,Exempt,,,,,,
+748,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+748,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+749,,,,,,143,2021-07-09,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+749,1.0,,,,,,,,,,Inspection Fee,10E201120,Vehicle expenses,,,,40000.0,3636.0,S10,Standard 10%,10A100020,Cash and deposits,,,,40000.0,0.0,O,Exempt,,,,,,
+749,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+749,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+750,,,,,,33,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+750,1.0,,,,,,,,,,Rent Payment,10E200720,Rent expenses on land and buildings,,,,320000.0,29090.0,S10,Standard 10%,10A100020,Cash and deposits,,,,320000.0,0.0,O,Exempt,,,,,,
+750,1.0,,,,1.0,,,,,,,,,,,,,,,,,,10,Hokkaido Station Front,sub-account,,,,,,,,,,
+750,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+750,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+750,2.0,,,,,,,,,,Telephone Cost,10E200180,Communication expenses,,,,155351.0,14122.0,S10,Standard 10%,10A100020,Cash and deposits,,,,155351.0,0.0,O,Exempt,,,,,,
+750,2.0,,,,1.0,,,,,,,,,,,,,,,,,,10,Hokkaido Station Front,sub-account,,,,,,,,,,
+750,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+750,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+751,,,,,,57,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+751,1.0,,,,,,,,,,JR,10E201230,Travel and transportation expenses,,,,78074.0,7097.0,S10,Standard 10%,10A100020,Cash and deposits,,,,78074.0,0.0,O,Exempt,,,,,,
+751,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+751,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+752,,,,,,65,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+752,1.0,,,,,,,,,,Rent Payment,10E200720,Rent expenses on land and buildings,,,,840000.0,76363.0,S10,Standard 10%,10A100020,Cash and deposits,,,,840000.0,0.0,O,Exempt,,,,,,
+752,1.0,,,,1.0,,,,,,,,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,
+752,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+752,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+753,,,,,,67,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+753,1.0,,,,,,,,,,Wired (Cable),10E201270,Miscellaneous expenses,,,,5000.0,454.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,39286.0,0.0,O,Exempt,,,,,,
+753,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+753,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+753,2.0,,,,,,,,,,Security Fee,10E201270,Miscellaneous expenses,,,,34286.0,3116.0,S10,Standard 10%,,,,,,,,,,,,,,,
+753,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+754,,,,,,69,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+754,1.0,,,,,,,,,,Withholding Tax Payment,10B100690,Deposits received,,,,585612.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,881412.0,0.0,O,Exempt,,,,,,
+754,1.0,,1.0,,,,,,,,,,,3,Withholding Tax,sub-account,,,,,,,,,,,,,,,,,,,
+754,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+754,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+754,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+754,2.0,,,,,,,,,,Resident Tax Payment,10B100690,Deposits received,,,,295800.0,0.0,O,Exempt,,,,,,,,,,,,,,,
+754,2.0,,1.0,,,,,,,,,,,2,Resident Tax,sub-account,,,,,,,,,,,,,,,,,,,
+754,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+755,,,,,,85,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+755,1.0,,,,,,,,,,Telephone Cost,10E200180,Communication expenses,,,,83624.0,7602.0,S10,Standard 10%,10A100020,Cash and deposits,,,,83624.0,0.0,O,Exempt,,,,,,
+755,1.0,,,,1.0,,,,,,,,,,,,,,,,,,30,Mitsui Nagoya,sub-account,,,,,,,,,,
+755,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+755,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+756,,,,,,90,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+756,1.0,,,,,,,,,,"July 10th Slip No. 256 Minami Co., Ltd.",10A100020,Cash and deposits,,,,867720.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,867720.0,0.0,O,Exempt,,,,,,
+756,1.0,,1.0,,,,,,,,,,,30,Mitsui Nagoya,sub-account,,,,,,,,,,,,,,,,,,,
+756,1.0,,,,1.0,,,,,,,,,,,,,,,,,,19,"Minami Co., Ltd.",sub-account,,,,,,,,,,
+756,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+756,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+756,2.0,,,,,,,,,,"July 10th Slip No. 256 Minami Co., Ltd.",10E200690,Commission expenses,,,,735.0,66.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,735.0,0.0,O,Exempt,,,,,,
+756,2.0,,,,1.0,,,,,,,,,,,,,,,,,,19,"Minami Co., Ltd.",sub-account,,,,,,,,,,
+756,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+756,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+757,,,,,,91,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+757,1.0,,,,,,,,,,July 10th Slip No. 257 Kameda Department Store,10A100060,Notes receivable - trade,,,,6024279.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,6024279.0,0.0,O,Exempt,,,,,,
+757,1.0,,,,1.0,,,,,,,,,,,,,,,,,,28,Kameda Department Store,sub-account,,,,,,,,,,
+757,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+757,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+758,,,,,,92,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+758,1.0,,,,,,,,,,"July 10th Slip No. 475 Check Co., Ltd.",10B100040,Accounts payable - trade,,,,774975.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,774975.0,0.0,O,Exempt,,,,,,
+758,1.0,,1.0,,,,,,,,,,,3,"Check Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+758,1.0,,,,1.0,,,,,,,,,,,,,,,,,,3,"Check Co., Ltd.",sub-account,,,,,,,,,,
+758,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+758,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+759,,,,,,93,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+759,1.0,,,,,,,,,,"July 10th Slip No. 497 Fujita Tokyo Headquarters Co., Ltd.",10A100020,Cash and deposits,,,,8362017.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,8362017.0,0.0,O,Exempt,,,,,,
+759,1.0,,1.0,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,,,,,,,,,,
+759,1.0,,,,1.0,,,,,,,,,,,,,,,,,,14,"Fujita Co., Ltd.",sub-account,,,,,,,,,,
+759,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+759,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+759,2.0,,,,,,,,,,"July 10th Slip No. 497 Fujita Tokyo Headquarters Co., Ltd.",10E200690,Commission expenses,,,,840.0,76.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,840.0,0.0,O,Exempt,,,,,,
+759,2.0,,,,1.0,,,,,,,,,,,,,,,,,,14,"Fujita Co., Ltd.",sub-account,,,,,,,,,,
+759,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+759,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+760,,,,,,94,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+760,1.0,,,,,,,,,,"July 10th Slip No. 170 Check Co., Ltd.",10B100040,Accounts payable - trade,,,,2382263.0,0.0,O,Exempt,10B100030,Notes payable - trade,,,,2382263.0,0.0,O,Exempt,,,,,,
+760,1.0,,1.0,,,,,,,,,,,3,"Check Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+760,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+760,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+761,,,,,,95,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+761,1.0,,,,,,,,,,"July 10th Slip No. 171 Yamashita Co., Ltd.",10B100040,Accounts payable - trade,,,,406425.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,406425.0,0.0,O,Exempt,,,,,,
+761,1.0,,1.0,,,,,,,,,,,8,"Yamashita Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+761,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+761,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+761,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+762,,,,,,96,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+762,1.0,,,,,,,,,,Rent Payment,10E200720,Rent expenses on land and buildings,,,,1260000.0,114545.0,S10,Standard 10%,10A100020,Cash and deposits,,,,1260000.0,0.0,O,Exempt,,,,,,
+762,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+762,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+762,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+763,,,,,,112,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+763,1.0,,,,,,,,,,Telephone Cost,10E200180,Communication expenses,,,,246816.0,22437.0,S10,Standard 10%,10A100020,Cash and deposits,,,,246816.0,0.0,O,Exempt,,,,,,
+763,1.0,,,,1.0,,,,,,,,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,
+763,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+763,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+764,,,,,,129,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+764,1.0,,,,,,,,,,Rent Payment,10E200720,Rent expenses on land and buildings,,,,399000.0,36272.0,S10,Standard 10%,10A100020,Cash and deposits,,,,399000.0,0.0,O,Exempt,,,,,,
+764,1.0,,,,1.0,,,,,,,,,,,,,,,,,,30,Mitsui Nagoya,sub-account,,,,,,,,,,
+764,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+764,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+765,,,,,,138,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+765,1.0,,,,,,,,,,Bill Due Date Check,10B100030,Notes payable - trade,,,,7368349.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,7368349.0,0.0,O,Exempt,,,,,,
+765,1.0,,,,1.0,,,,,,,,,,,,,,,,,,1,Mizuho Bank,sub-account,,,,,,,,,,
+765,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+765,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+766,,,,,,152,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+766,1.0,,,,,,,,,,Coffee fee 2 people,10E200150,Entertainment expenses,,,,1570.0,142.0,S10,Standard 10%,10A100020,Cash and deposits,,,,1570.0,0.0,O,Exempt,,,,,,
+766,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+766,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+767,,,,,,162,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+767,1.0,,,,,,,,,,Meeting Meal Cost,10E201130,Meeting expenses,,,,24995.0,2272.0,S10,Standard 10%,10A100020,Cash and deposits,,,,24995.0,0.0,O,Exempt,,,,,,
+767,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+767,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+768,,,,,,167,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+768,1.0,,,,,,,,,,Rent Payment,10E200720,Rent expenses on land and buildings,,,,600000.0,54545.0,S10,Standard 10%,10A100020,Cash and deposits,,,,758107.0,0.0,O,Exempt,,,,,,
+768,1.0,,,,1.0,,,,,,,,,,,,,,,,,,50,Fukuoka Kitakyushu,sub-account,,,,,,,,,,
+768,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+768,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+768,2.0,,,,,,,,,,Telephone Cost,10E200180,Communication expenses,,,,158107.0,14373.0,S10,Standard 10%,,,,,,,,,,,,,,,
+768,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+769,,,,,,168,2021-07-10,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+769,1.0,,,,,,,,,,Wired (Cable),10E201270,Miscellaneous expenses,,,,6000.0,545.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,48858.0,0.0,O,Exempt,,,,,,
+769,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+769,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+769,2.0,,,,,,,,,,Security Fee,10E201270,Miscellaneous expenses,,,,42858.0,3896.0,S10,Standard 10%,,,,,,,,,,,,,,,
+769,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+770,,,,,,23,2021-07-11,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+770,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,34953.0,3177.0,S10,Standard 10%,10A100020,Cash and deposits,,,,118199.0,0.0,O,Exempt,,,,,,
+770,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+770,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+770,2.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,27334.0,2484.0,S10,Standard 10%,,,,,,,,,,,,,,,
+770,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+770,3.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,55912.0,5082.0,S10,Standard 10%,,,,,,,,,,,,,,,
+770,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+771,,,,,,61,2021-07-11,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+771,1.0,,,,,,,,,,Withdrawal,10A100020,Cash and deposits,,,,2000000.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,2000000.0,0.0,O,Exempt,,,,,,
+771,1.0,,,,1.0,,,,,,,,,,,,,,,,,,1,Mizuho Bank,sub-account,,,,,,,,,,
+771,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+771,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+772,,,,,,69,2021-07-11,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+772,1.0,,,,,,,,,,Toilet Paper Cost,10E201270,Miscellaneous expenses,,,,760.0,69.0,S10,Standard 10%,10A100020,Cash and deposits,,,,1565.0,0.0,O,Exempt,,,,,,
+772,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+772,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+772,2.0,,,,,,,,,,Detergent Cost,10E201270,Miscellaneous expenses,,,,805.0,73.0,S10,Standard 10%,,,,,,,,,,,,,,,
+772,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+773,,,,,,58,2021-07-12,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+773,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,59870.0,5442.0,S10,Standard 10%,10A100020,Cash and deposits,,,,59870.0,0.0,O,Exempt,,,,,,
+773,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+773,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+774,,,,,,74,2021-07-12,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+774,1.0,,,,,,,,,,Meal Cost Tonkichi 4 People,10E200150,Entertainment expenses,,,,8690.0,790.0,S10,Standard 10%,10A100020,Cash and deposits,,,,8690.0,0.0,O,Exempt,,,,,,
+774,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+774,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+775,,,,,,81,2021-07-12,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+775,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,20500.0,1863.0,S10,Standard 10%,10A100020,Cash and deposits,,,,20500.0,0.0,O,Exempt,,,,,,
+775,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+775,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+776,,,,,,149,2021-07-12,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+776,1.0,,,,,,,,,,Condolence Money,10E200150,Entertainment expenses,,,,10000.0,909.0,S10,Standard 10%,10A100020,Cash and deposits,,,,10000.0,0.0,O,Exempt,,,,,,
+776,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+776,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+777,,,,,,51,2021-07-14,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+777,1.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,760.0,69.0,S10,Standard 10%,10A100020,Cash and deposits,,,,1565.0,0.0,O,Exempt,,,,,,
+777,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+777,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+777,2.0,,,,,,,,,,Parking Fee,10E201120,Vehicle expenses,,,,805.0,73.0,S10,Standard 10%,,,,,,,,,,,,,,,
+777,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+778,,,,,,74,2021-07-14,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+778,1.0,,,,,,,,,,Golf Play Fee,10E200150,Entertainment expenses,,,,7900.0,718.0,S10,Standard 10%,10A100020,Cash and deposits,,,,7900.0,0.0,O,Exempt,,,,,,
+778,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+778,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+779,,,,,,104,2021-07-14,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+779,1.0,,,,,,,,,,Subjects Abe Shoten,10E200150,Entertainment expenses,,,,1575.0,143.0,S10,Standard 10%,10A100020,Cash and deposits,,,,1575.0,0.0,O,Exempt,,,,,,
+779,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+779,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+780,,,,,,46,2021-07-15,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+780,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,14000.0,1272.0,S10,Standard 10%,10A100020,Cash and deposits,,,,14000.0,0.0,O,Exempt,,,,,,
+780,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+780,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+781,,,,,,84,2021-07-15,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+781,1.0,,,,,,,,,,July Salary Others 0060 Part-time and Temporary Workers,10E200520,Other salaries,,,,364425.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,351930.0,0.0,O,Exempt,,,,,,
+781,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+781,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+781,2.0,,,,,,,,,,July Salary Others 0060 Part-time and Temporary Workers,,,,,,,,,,10B100690,Deposits received,,,,860.0,0.0,O,Exempt,,,,,,
+781,2.0,,,,1.0,,,,,,,,,,,,,,,,,,3,Withholding Tax,sub-account,,,,,,,,,,
+781,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+781,3.0,,,,,,,,,,July Salary Others 0060 Part-time and Temporary Workers,,,,,,,,,,10B100690,Deposits received,,,,11635.0,0.0,O,Exempt,,,,,,
+781,3.0,,,,1.0,,,,,,,,,,,,,,,,,,9,Others,sub-account,,,,,,,,,,
+781,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+782,,,,,,96,2021-07-15,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+782,1.0,,,,,,,,,,"July 15th Slip No. 258 Goketsu Co., Ltd.",10A100020,Cash and deposits,,,,1549199.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,1549199.0,0.0,O,Exempt,,,,,,
+782,1.0,,1.0,,,,,,,,,,,50,Fukuoka Kitakyushu,sub-account,,,,,,,,,,,,,,,,,,,
+782,1.0,,,,1.0,,,,,,,,,,,,,,,,,,1,"Goketsu Co., Ltd.",sub-account,,,,,,,,,,
+782,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+782,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+782,2.0,,,,,,,,,,"July 15th Slip No. 258 Goketsu Co., Ltd.",10E200690,Commission expenses,,,,840.0,76.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,840.0,0.0,O,Exempt,,,,,,
+782,2.0,,,,1.0,,,,,,,,,,,,,,,,,,1,"Goketsu Co., Ltd.",sub-account,,,,,,,,,,
+782,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+782,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+783,,,,,,97,2021-07-15,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+783,1.0,,,,,,,,,,"July 15th Slip No. 259 Entry Co., Ltd.",10A100020,Cash and deposits,,,,748719.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,748719.0,0.0,O,Exempt,,,,,,
+783,1.0,,1.0,,,,,,,,,,,30,Mitsui Nagoya,sub-account,,,,,,,,,,,,,,,,,,,
+783,1.0,,,,1.0,,,,,,,,,,,,,,,,,,6,"Entry Co., Ltd.",sub-account,,,,,,,,,,
+783,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+783,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+783,2.0,,,,,,,,,,"July 15th Slip No. 259 Entry Co., Ltd.",10E200690,Commission expenses,,,,840.0,76.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,840.0,0.0,O,Exempt,,,,,,
+783,2.0,,,,1.0,,,,,,,,,,,,,,,,,,6,"Entry Co., Ltd.",sub-account,,,,,,,,,,
+783,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+783,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+784,,,,,,98,2021-07-15,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+784,1.0,,,,,,,,,,"July 15th Slip No. 260 Tower Co., Ltd.",10A100020,Cash and deposits,,,,783396.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,783396.0,0.0,O,Exempt,,,,,,
+784,1.0,,1.0,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,,,,,,,,,,
+784,1.0,,,,1.0,,,,,,,,,,,,,,,,,,8,"Tower Co., Ltd.",sub-account,,,,,,,,,,
+784,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+784,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+784,2.0,,,,,,,,,,"July 15th Slip No. 260 Tower Co., Ltd.",10E200690,Commission expenses,,,,840.0,76.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,840.0,0.0,O,Exempt,,,,,,
+784,2.0,,,,1.0,,,,,,,,,,,,,,,,,,8,"Tower Co., Ltd.",sub-account,,,,,,,,,,
+784,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+784,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+785,,,,,,99,2021-07-15,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+785,1.0,,,,,,,,,,"July 15th Slip No. 261 Takahashi Trading Co., Ltd.",10A100020,Cash and deposits,,,,782779.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,782779.0,0.0,O,Exempt,,,,,,
+785,1.0,,1.0,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,,,,,,,,,,
+785,1.0,,,,1.0,,,,,,,,,,,,,,,,,,9,"Takahashi Trading Co., Ltd.",sub-account,,,,,,,,,,
+785,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+785,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+785,2.0,,,,,,,,,,"July 15th Slip No. 261 Takahashi Trading Co., Ltd.",10E200690,Commission expenses,,,,840.0,76.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,840.0,0.0,O,Exempt,,,,,,
+785,2.0,,,,1.0,,,,,,,,,,,,,,,,,,9,"Takahashi Trading Co., Ltd.",sub-account,,,,,,,,,,
+785,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+785,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+786,,,,,,100,2021-07-15,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+786,1.0,,,,,,,,,,"July 15th Slip No. 262 Abe Trading Co., Ltd.",10A100020,Cash and deposits,,,,1142617.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,1142617.0,0.0,O,Exempt,,,,,,
+786,1.0,,1.0,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,,,,,,,,,,
+786,1.0,,,,1.0,,,,,,,,,,,,,,,,,,13,"Abe Trading Co., Ltd.",sub-account,,,,,,,,,,
+786,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+786,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+787,,,,,,101,2021-07-15,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+787,1.0,,,,,,,,,,"July 15th Slip No. 263 Kujou Trading Co., Ltd.",10A100020,Cash and deposits,,,,798435.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,798435.0,0.0,O,Exempt,,,,,,
+787,1.0,,1.0,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,,,,,,,,,,
+787,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,"Kujou Trading Co., Ltd.",sub-account,,,,,,,,,,
+787,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+787,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+787,2.0,,,,,,,,,,"July 15th Slip No. 263 Kujou Trading Co., Ltd.",10E200690,Commission expenses,,,,315.0,28.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,315.0,0.0,O,Exempt,,,,,,
+787,2.0,,,,1.0,,,,,,,,,,,,,,,,,,20,"Kujou Trading Co., Ltd.",sub-account,,,,,,,,,,
+787,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+787,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+788,,,,,,102,2021-07-15,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+788,1.0,,,,,,,,,,"July 15th Slip No. 172 Y2 Co., Ltd.",10B100040,Accounts payable - trade,,,,6139435.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,6139435.0,0.0,O,Exempt,,,,,,
+788,1.0,,1.0,,,,,,,,,,,1,"Y2 Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+788,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+788,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+788,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+789,,,,,,117,2021-07-15,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+789,1.0,,,,,,,,,,Membership Fee,10E201140,Membership fee,,,,20000.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,20000.0,0.0,O,Exempt,,,,,,
+789,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+789,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+790,,,,,,130,2021-07-15,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+790,1.0,,,,,,,,,,Membership Fee,10E201140,Membership fee,,,,24000.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,24000.0,0.0,O,Exempt,,,,,,
+790,1.0,,,,1.0,,,,,,,,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,
+790,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+790,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+791,,,,,,141,2021-07-15,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+791,1.0,,,,,,,,,,JR,10E201230,Travel and transportation expenses,,,,7500.0,681.0,S10,Standard 10%,10A100020,Cash and deposits,,,,7500.0,0.0,O,Exempt,,,,,,
+791,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+791,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+792,,,,,,11,2021-07-16,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+792,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,3210.0,291.0,S10,Standard 10%,10A100020,Cash and deposits,,,,3210.0,0.0,O,Exempt,,,,,,
+792,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+792,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+793,,,,,,52,2021-07-16,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+793,1.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,3381.0,307.0,S10,Standard 10%,10A100020,Cash and deposits,,,,74810.0,0.0,O,Exempt,,,,,,
+793,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+793,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+793,2.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,71429.0,6493.0,S10,Standard 10%,,,,,,,,,,,,,,,
+793,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+794,,,,,,61,2021-07-16,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+794,1.0,,,,,,,,,,Telephone Cost,10E200180,Communication expenses,,,,134577.0,12234.0,S10,Standard 10%,10A100020,Cash and deposits,,,,134577.0,0.0,O,Exempt,,,,,,
+794,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+794,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+794,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+795,,,,,,105,2021-07-16,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+795,1.0,,,,,,,,,,Food and Beverage Cost Dining Sai 4 People,10E200150,Entertainment expenses,,,,17461.0,1587.0,S10,Standard 10%,10A100020,Cash and deposits,,,,48766.0,0.0,O,Exempt,,,,,,
+795,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+795,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+795,2.0,,,,,,,,,,Food and Beverage Cost Snack Hakobune 4 People,10E200150,Entertainment expenses,,,,31305.0,2845.0,S10,Standard 10%,,,,,,,,,,,,,,,
+795,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+796,,,,,,136,2021-07-16,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+796,1.0,,,,,,,,,,Duskin Service Fee,10E201270,Miscellaneous expenses,,,,16500.0,1500.0,S10,Standard 10%,10A100020,Cash and deposits,,,,16500.0,0.0,O,Exempt,,,,,,
+796,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+796,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+797,,,,,,161,2021-07-16,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+797,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,3500.0,318.0,S10,Standard 10%,10A100020,Cash and deposits,,,,3500.0,0.0,O,Exempt,,,,,,
+797,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+797,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+798,,,,,,4,2021-07-17,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+798,1.0,,,,,,,,,,Advertising Expense,10E200050,Advertising expenses,,,,31500.0,2863.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,31500.0,0.0,O,Exempt,,,,,,
+798,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+798,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+799,,,,,,12,2021-07-17,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+799,1.0,,,,,,,,,,Parking Fee,10E201120,Vehicle expenses,,,,800.0,72.0,S10,Standard 10%,10A100020,Cash and deposits,,,,800.0,0.0,O,Exempt,,,,,,
+799,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+799,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+799,2.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,4456.0,405.0,S10,Standard 10%,10A100020,Cash and deposits,,,,8471.0,0.0,O,Exempt,,,,,,
+799,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+799,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+799,3.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,4015.0,365.0,S10,Standard 10%,,,,,,,,,,,,,,,
+799,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+800,,,,,,59,2021-07-18,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+800,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,45000.0,4090.0,S10,Standard 10%,10A100020,Cash and deposits,,,,45000.0,0.0,O,Exempt,,,,,,
+800,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+800,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+801,,,,,,82,2021-07-18,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+801,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,9800.0,890.0,S10,Standard 10%,10A100020,Cash and deposits,,,,9800.0,0.0,O,Exempt,,,,,,
+801,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+801,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+802,,,,,,123,2021-07-18,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+802,1.0,,,,,,,,,,Postage Cost,10E200180,Communication expenses,,,,16000.0,1454.0,S10,Standard 10%,10A100020,Cash and deposits,,,,16000.0,0.0,O,Exempt,,,,,,
+802,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+802,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+803,,,,,,139,2021-07-18,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+803,1.0,,,,,,,,,,Employee Night Meal Cost,10E200140,Welfare expenses,,,,45020.0,4092.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,45020.0,0.0,O,Exempt,,,,,,
+803,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+803,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+804,,,,,,148,2021-07-18,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+804,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,4486.0,407.0,S10,Standard 10%,10A100020,Cash and deposits,,,,6086.0,0.0,O,Exempt,,,,,,
+804,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+804,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+804,2.0,,,,,,,,,,Washer liquid and other,10E201120,Vehicle expenses,,,,1600.0,145.0,S10,Standard 10%,,,,,,,,,,,,,,,
+804,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+805,,,,,,8,2021-07-19,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+805,1.0,,,,,,,,,,Regular Meeting Membership Fee,10E200150,Entertainment expenses,,,,4486.0,407.0,S10,Standard 10%,10A100020,Cash and deposits,,,,6086.0,0.0,O,Exempt,,,,,,
+805,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+805,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+805,2.0,,,,,,,,,,Prize,10E200150,Entertainment expenses,,,,1600.0,145.0,S10,Standard 10%,,,,,,,,,,,,,,,
+805,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+806,,,,,,47,2021-07-19,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+806,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,8540.0,776.0,S10,Standard 10%,10A100020,Cash and deposits,,,,8540.0,0.0,O,Exempt,,,,,,
+806,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+806,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+807,,,,,,160,2021-07-19,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+807,1.0,,,,,,,,,,Business Trip Expense,10E201230,Travel and transportation expenses,,,,86700.0,7881.0,S10,Standard 10%,10A100020,Cash and deposits,,,,86700.0,0.0,O,Exempt,,,,,,
+807,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+807,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+808,,,,,,1,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+808,1.0,,,,,,,,,,Overtime Night Meal Reduced Tax Rate,10E200140,Welfare expenses,,,,10800.0,800.0,AA8,Reduced 8%,10A100020,Cash and deposits,,,,10800.0,0.0,O,Exempt,,,,,,
+808,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+808,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+809,,,,,,6,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+809,1.0,,,,,,,,,,Advertisement Fee,10E200050,Advertising expenses,,,,5000.0,454.0,S10,Standard 10%,10A100020,Cash and deposits,,,,5000.0,0.0,O,Exempt,,,,,,
+809,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+809,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+810,,,,,,31,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+810,1.0,,,,,,,,,,Copy Cost,10E201110,Office supplies expenses,,,,2866.0,260.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,2866.0,0.0,O,Exempt,,,,,,
+810,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+810,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+811,,,,,,45,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+811,1.0,,,,,,,,,,Coffee fee 2 people,10E200150,Entertainment expenses,,,,1260.0,114.0,S10,Standard 10%,10A100020,Cash and deposits,,,,1260.0,0.0,O,Exempt,,,,,,
+811,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+811,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+812,,,,,,48,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+812,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,4303.0,391.0,S10,Standard 10%,10A100020,Cash and deposits,,,,4303.0,0.0,O,Exempt,,,,,,
+812,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+812,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+813,,,,,,53,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+813,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,6381.0,580.0,S10,Standard 10%,10A100020,Cash and deposits,,,,8525.0,0.0,O,Exempt,,,,,,
+813,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+813,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+813,2.0,,,,,,,,,,Parking Fee,10E201120,Vehicle expenses,,,,1429.0,129.0,S10,Standard 10%,,,,,,,,,,,,,,,
+813,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+813,3.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,715.0,65.0,S10,Standard 10%,,,,,,,,,,,,,,,
+813,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+814,,,,,,69,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+814,1.0,,,,,,,,,,Wired (Cable),10E201270,Miscellaneous expenses,,,,5000.0,454.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,5000.0,0.0,O,Exempt,,,,,,
+814,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+814,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+815,,,,,,71,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+815,1.0,,,,,,,,,,Office Supplies,10E201110,Office supplies expenses,,,,11407.0,1037.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,42727.0,0.0,O,Exempt,,,,,,
+815,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+815,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+815,2.0,,,,,,,,,,Counter Fee,10E201110,Office supplies expenses,,,,31320.0,2847.0,S10,Standard 10%,,,,,,,,,,,,,,,
+815,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+816,,,,,,72,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+816,1.0,,,,,,,,,,Counter Fee,10E201110,Office supplies expenses,,,,6300.0,572.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,6300.0,0.0,O,Exempt,,,,,,
+816,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+816,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+817,,,,,,77,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+817,1.0,,,,,,,,,,Files and Others,10E200200,Supplies expenses,,,,19387.0,1762.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,268502.0,0.0,O,Exempt,,,,,,
+817,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+817,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+817,2.0,,,,,,,,,,Drinking Water,10E200200,Supplies expenses,,,,239019.0,21729.0,S10,Standard 10%,,,,,,,,,,,,,,,
+817,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+817,3.0,,,,,,,,,,Business Card Cost,10E200200,Supplies expenses,,,,10096.0,917.0,S10,Standard 10%,,,,,,,,,,,,,,,
+817,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+818,,,,,,97,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+818,1.0,,,,,,,,,,Copy Cost,10E201110,Office supplies expenses,,,,35789.0,3253.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,35789.0,0.0,O,Exempt,,,,,,
+818,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+818,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+819,,,,,,98,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+819,1.0,,,,,,,,,,Office Supplies,10E201110,Office supplies expenses,,,,5890.0,535.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,5890.0,0.0,O,Exempt,,,,,,
+819,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+819,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+820,,,,,,101,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+820,1.0,,,,,,,,,,Advertisement Fee,10E200050,Advertising expenses,,,,52500.0,4772.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,52500.0,0.0,O,Exempt,,,,,,
+820,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+820,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+821,,,,,,103,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+821,1.0,,,,,,,,,,"July 20th Slip No. 264 Saito Co., Ltd.",10A100020,Cash and deposits,,,,633459.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,633459.0,0.0,O,Exempt,,,,,,
+821,1.0,,,,1.0,,,,,,,,,,,,,,,,,,11,"Saito Co., Ltd.",sub-account,,,,,,,,,,
+821,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+821,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+822,,,,,,104,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+822,1.0,,,,,,,,,,July 20th Slip No. 265 Takada LLC,10A100020,Cash and deposits,,,,840514.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,840514.0,0.0,O,Exempt,,,,,,
+822,1.0,,1.0,,,,,,,,,,,30,Mitsui Nagoya,sub-account,,,,,,,,,,,,,,,,,,,
+822,1.0,,,,1.0,,,,,,,,,,,,,,,,,,21,Takada LLC,sub-account,,,,,,,,,,
+822,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+822,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+822,2.0,,,,,,,,,,July 20th Slip No. 265 Takada LLC,10E200690,Commission expenses,,,,630.0,57.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,630.0,0.0,O,Exempt,,,,,,
+822,2.0,,,,1.0,,,,,,,,,,,,,,,,,,21,Takada LLC,sub-account,,,,,,,,,,
+822,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+822,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+823,,,,,,105,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+823,1.0,,,,,,,,,,"July 20th Slip No. 266 YAG Co., Ltd.",10A100020,Cash and deposits,,,,1270608.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,1270608.0,0.0,O,Exempt,,,,,,
+823,1.0,,1.0,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,,,,,,,,,,
+823,1.0,,,,1.0,,,,,,,,,,,,,,,,,,30,"YAG Co., Ltd.",sub-account,,,,,,,,,,
+823,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+823,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+823,2.0,,,,,,,,,,"July 20th Slip No. 266 YAG Co., Ltd.",10E200690,Commission expenses,,,,735.0,66.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,735.0,0.0,O,Exempt,,,,,,
+823,2.0,,,,1.0,,,,,,,,,,,,,,,,,,30,"YAG Co., Ltd.",sub-account,,,,,,,,,,
+823,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+823,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+824,,,,,,106,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+824,1.0,,,,,,,,,,"July 20th Slip No. 173 Attach Co., Ltd.",10B100040,Accounts payable - trade,,,,888656.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,888656.0,0.0,O,Exempt,,,,,,
+824,1.0,,1.0,,,,,,,,,,,4,"Attach Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+824,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+824,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+824,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+825,,,,,,107,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+825,1.0,,,,,,,,,,"July 20th Slip No. 174 Hanada Co., Ltd.",10B100040,Accounts payable - trade,,,,3530262.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,3530262.0,0.0,O,Exempt,,,,,,
+825,1.0,,1.0,,,,,,,,,,,6,"Hanada Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+825,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+825,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+825,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+826,,,,,,108,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+826,1.0,,,,,,,,,,"July 20th Slip No. 175 Matsumura Co., Ltd.",10B100040,Accounts payable - trade,,,,4255056.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,4255056.0,0.0,O,Exempt,,,,,,
+826,1.0,,1.0,,,,,,,,,,,11,"Matsumura Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+826,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+826,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+826,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+827,,,,,,118,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+827,1.0,,,,,,,,,,Copy Cost,10E201110,Office supplies expenses,,,,7223.0,656.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,7223.0,0.0,O,Exempt,,,,,,
+827,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+827,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+828,,,,,,119,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+828,1.0,,,,,,,,,,Office Supplies,10E201110,Office supplies expenses,,,,1480.0,134.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,1480.0,0.0,O,Exempt,,,,,,
+828,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+828,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+829,,,,,,137,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+829,1.0,,,,,,,,,,Miji department store,10A100020,Cash and deposits,,,,8459513.0,0.0,O,Exempt,10A100060,Notes receivable - trade,,,,8523355.0,0.0,O,Exempt,,,,,,
+829,1.0,,1.0,,,,,,,,,,,1,Mizuho Bank,sub-account,,,,,,,,,,,,,,,,,,,
+829,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+829,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+829,2.0,,,,,,,,,,Bill Discount Fee,10E300020,Interest expenses,,,,63842.0,0.0,X,Non-Purchase,,,,,,,,,,,,,,,
+829,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+830,,,,,,139,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+830,1.0,,,,,,,,,,Date of bill dates Matsumura,10B100030,Notes payable - trade,,,,6181724.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,6181724.0,0.0,O,Exempt,,,,,,
+830,1.0,,,,1.0,,,,,,,,,,,,,,,,,,1,Mizuho Bank,sub-account,,,,,,,,,,
+830,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+830,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+830,2.0,,,,,,,,,,Bade discounted department store,10A100020,Cash and deposits,,,,6918775.0,0.0,O,Exempt,10A100060,Notes receivable - trade,,,,6971057.0,0.0,O,Exempt,,,,,,
+830,2.0,,1.0,,,,,,,,,,,1,Mizuho Bank,sub-account,,,,,,,,,,,,,,,,,,,
+830,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+830,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+830,3.0,,,,,,,,,,Bill Discount Fee,10E300020,Interest expenses,,,,52282.0,0.0,X,Non-Purchase,,,,,,,,,,,,,,,
+830,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+831,,,,,,142,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+831,1.0,,,,,,,,,,Fund Transfer,10A100020,Cash and deposits,,,,19000000.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,19000000.0,0.0,O,Exempt,,,,,,
+831,1.0,,1.0,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,,,,,,,,,,
+831,1.0,,,,1.0,,,,,,,,,,,,,,,,,,1,Mizuho Bank,sub-account,,,,,,,,,,
+831,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+831,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+832,,,,,,144,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+832,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,4324.0,393.0,S10,Standard 10%,10A100020,Cash and deposits,,,,14780.0,0.0,O,Exempt,,,,,,
+832,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+832,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+832,2.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,3408.0,309.0,S10,Standard 10%,,,,,,,,,,,,,,,
+832,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+832,3.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,7048.0,640.0,S10,Standard 10%,,,,,,,,,,,,,,,
+832,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+833,,,,,,158,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+833,1.0,,,,,,,,,,Business Trip Expense,10E201230,Travel and transportation expenses,,,,10000.0,909.0,S10,Standard 10%,10A100020,Cash and deposits,,,,10000.0,0.0,O,Exempt,,,,,,
+833,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+833,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+834,,,,,,163,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+834,1.0,,,,,,,,,,Membership Fee,10E201140,Membership fee,,,,18000.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,18000.0,0.0,O,Exempt,,,,,,
+834,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+834,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+835,,,,,,164,2021-07-20,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+835,1.0,,,,,,,,,,Office Supplies,10E201110,Office supplies expenses,,,,5980.0,543.0,S10,Standard 10%,10A100020,Cash and deposits,,,,5980.0,0.0,O,Exempt,,,,,,
+835,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+835,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+836,,,,,,25,2021-07-21,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+836,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,56000.0,5090.0,S10,Standard 10%,10A100020,Cash and deposits,,,,56000.0,0.0,O,Exempt,,,,,,
+836,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+836,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+837,,,,,,63,2021-07-21,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+837,1.0,,,,,,,,,,Tea Cost,10E200140,Welfare expenses,,,,11050.0,1004.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,11050.0,0.0,O,Exempt,,,,,,
+837,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+837,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+838,,,,,,159,2021-07-21,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+838,1.0,,,,,,,,,,Taxi Fare,10E201230,Travel and transportation expenses,,,,9780.0,889.0,S10,Standard 10%,10A100020,Cash and deposits,,,,9780.0,0.0,O,Exempt,,,,,,
+838,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+838,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+839,,,,,,26,2021-07-22,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+839,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,19050.0,1731.0,S10,Standard 10%,10A100020,Cash and deposits,,,,19050.0,0.0,O,Exempt,,,,,,
+839,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+839,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+840,,,,,,34,2021-07-22,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+840,1.0,,,,,,,,,,Electricity Cost,10E201040,Utilities expenses,,,,96715.0,8792.0,S10,Standard 10%,10A100020,Cash and deposits,,,,101973.0,0.0,O,Exempt,,,,,,
+840,1.0,,,,1.0,,,,,,,,,,,,,,,,,,10,Hokkaido Station Front,sub-account,,,,,,,,,,
+840,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+840,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+840,2.0,,,,,,,,,,Water Cost,10E201040,Utilities expenses,,,,5258.0,478.0,S10,Standard 10%,,,,,,,,,,,,,,,
+840,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+841,,,,,,64,2021-07-22,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+841,1.0,,,,,,,,,,Electricity Bill,10E201040,Utilities expenses,,,,170932.0,15539.0,S10,Standard 10%,10A100020,Cash and deposits,,,,178592.0,0.0,O,Exempt,,,,,,
+841,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+841,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+841,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+841,2.0,,,,,,,,,,Water Bill,10E201040,Utilities expenses,,,,7660.0,696.0,S10,Standard 10%,,,,,,,,,,,,,,,
+841,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+842,,,,,,89,2021-07-22,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+842,1.0,,,,,,,,,,Electricity Bill,10E201040,Utilities expenses,,,,78783.0,7162.0,S10,Standard 10%,10A100020,Cash and deposits,,,,85245.0,0.0,O,Exempt,,,,,,
+842,1.0,,,,1.0,,,,,,,,,,,,,,,,,,30,Mitsui Nagoya,sub-account,,,,,,,,,,
+842,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+842,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+842,2.0,,,,,,,,,,Water Bill,10E201040,Utilities expenses,,,,3400.0,309.0,S10,Standard 10%,,,,,,,,,,,,,,,
+842,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+842,3.0,,,,,,,,,,Gas Cost,10E201040,Utilities expenses,,,,3062.0,278.0,S10,Standard 10%,,,,,,,,,,,,,,,
+842,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+843,,,,,,90,2021-07-22,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+843,1.0,,,,,,,,,,Duskin Service Fee,10E201270,Miscellaneous expenses,,,,10500.0,954.0,S10,Standard 10%,10A100020,Cash and deposits,,,,10500.0,0.0,O,Exempt,,,,,,
+843,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+843,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+844,,,,,,95,2021-07-22,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+844,1.0,,,,,,,,,,Cleaning Fee,10E201270,Miscellaneous expenses,,,,71675.0,6515.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,71675.0,0.0,O,Exempt,,,,,,
+844,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+844,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+845,,,,,,132,2021-07-22,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+845,1.0,,,,,,,,,,Electricity Cost,10E201040,Utilities expenses,,,,93957.0,8541.0,S10,Standard 10%,10A100020,Cash and deposits,,,,98693.0,0.0,O,Exempt,,,,,,
+845,1.0,,,,1.0,,,,,,,,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,
+845,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+845,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+845,2.0,,,,,,,,,,Water Cost,10E201040,Utilities expenses,,,,4736.0,430.0,S10,Standard 10%,,,,,,,,,,,,,,,
+845,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+846,,,,,,165,2021-07-22,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+846,1.0,,,,,,,,,,Detergent and Others,10E201270,Miscellaneous expenses,,,,2530.0,230.0,S10,Standard 10%,10A100020,Cash and deposits,,,,2530.0,0.0,O,Exempt,,,,,,
+846,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+846,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+847,,,,,,166,2021-07-22,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+847,1.0,,,,,,,,,,Duskin Service Fee,10E201270,Miscellaneous expenses,,,,1890.0,171.0,S10,Standard 10%,10A100020,Cash and deposits,,,,1890.0,0.0,O,Exempt,,,,,,
+847,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+847,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+848,,,,,,169,2021-07-22,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+848,1.0,,,,,,,,,,Electricity Bill,10E201040,Utilities expenses,,,,106261.0,9660.0,S10,Standard 10%,10A100020,Cash and deposits,,,,112917.0,0.0,O,Exempt,,,,,,
+848,1.0,,,,1.0,,,,,,,,,,,,,,,,,,50,Fukuoka Kitakyushu,sub-account,,,,,,,,,,
+848,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+848,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+848,2.0,,,,,,,,,,Water Bill,10E201040,Utilities expenses,,,,6656.0,605.0,S10,Standard 10%,,,,,,,,,,,,,,,
+848,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+849,,,,,,24,2021-07-23,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+849,1.0,,,,,,,,,,JR coupon,10E201230,Travel and transportation expenses,,,,82620.0,7510.0,S10,Standard 10%,10A100020,Cash and deposits,,,,82620.0,0.0,O,Exempt,,,,,,
+849,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+849,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+850,,,,,,140,2021-07-23,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+850,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,11000.0,1000.0,S10,Standard 10%,10A100020,Cash and deposits,,,,11000.0,0.0,O,Exempt,,,,,,
+850,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+850,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+851,,,,,,38,2021-07-24,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+851,1.0,,,,,,,,,,Accommodation Expense,10E200140,Welfare expenses,,,,48164.0,4378.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,48164.0,0.0,O,Exempt,,,,,,
+851,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+851,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+852,,,,,,54,2021-07-24,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+852,1.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,2858.0,259.0,S10,Standard 10%,10A100020,Cash and deposits,,,,7270.0,0.0,O,Exempt,,,,,,
+852,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+852,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+852,2.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,4412.0,401.0,S10,Standard 10%,,,,,,,,,,,,,,,
+852,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+853,,,,,,137,2021-07-24,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+853,1.0,,,,,,,,,,Wired (Cable),10E201270,Miscellaneous expenses,,,,6000.0,545.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,48858.0,0.0,O,Exempt,,,,,,
+853,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+853,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+853,2.0,,,,,,,,,,Security Fee,10E201270,Miscellaneous expenses,,,,42858.0,3896.0,S10,Standard 10%,,,,,,,,,,,,,,,
+853,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+853,3.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,29740.0,2703.0,S10,Standard 10%,10A100020,Cash and deposits,,,,29740.0,0.0,O,Exempt,,,,,,
+853,3.0,,,,1.0,,,,,,,,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,
+853,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+853,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+853,4.0,,,,,,,,,,Cleaning Fee,10E201270,Miscellaneous expenses,,,,73500.0,6681.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,73500.0,0.0,O,Exempt,,,,,,
+853,4.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+853,4.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+853,5.0,,,,,,,,,,Parking Fee,10E201120,Vehicle expenses,,,,3507.0,318.0,S10,Standard 10%,10A100020,Cash and deposits,,,,3507.0,0.0,O,Exempt,,,,,,
+853,5.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+853,5.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+854,,,,,,154,2021-07-24,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+854,1.0,,,,,,,,,,Food and Beverage Cost Hakata Tei 3 People,10E200150,Entertainment expenses,,,,13029.0,1184.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,36506.0,0.0,O,Exempt,,,,,,
+854,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+854,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+854,2.0,,,,,,,,,,Food and drink fee Snack Miwa,10E200150,Entertainment expenses,,,,23477.0,2134.0,S10,Standard 10%,,,,,,,,,,,,,,,
+854,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+855,,,,,,172,2021-07-24,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+855,1.0,,,,,,,,,,Subcontracting Fee Payment,10E200020,Sales commission,,,,132000.0,12000.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,132000.0,0.0,O,Exempt,,,,,,
+855,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+855,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+856,,,,,,3,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+856,1.0,,,,,,,,,,Accommodation Cost,10E200140,Welfare expenses,,,,30012.0,2728.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,30012.0,0.0,O,Exempt,,,,,,
+856,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+856,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+857,,,,,,28,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+857,1.0,,,,,,,,,,Taxi Fare,10E201230,Travel and transportation expenses,,,,5987.0,544.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,5987.0,0.0,O,Exempt,,,,,,
+857,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+857,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+858,,,,,,29,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+858,1.0,,,,,,,,,,Mobile Phone Bill,10E200180,Communication expenses,,,,84352.0,7668.0,S10,Standard 10%,10A100020,Cash and deposits,,,,84352.0,0.0,O,Exempt,,,,,,
+858,1.0,,,,1.0,,,,,,,,,,,,,,,,,,10,Hokkaido Station Front,sub-account,,,,,,,,,,
+858,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+858,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+859,,,,,,35,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+859,1.0,,,,,,,,,,Newspaper Cost,10E201160,Book expenses,,,,3925.0,356.0,S10,Standard 10%,10A100020,Cash and deposits,,,,3925.0,0.0,O,Exempt,,,,,,
+859,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+859,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+860,,,,,,60,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+860,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,11200.0,1018.0,S10,Standard 10%,10A100020,Cash and deposits,,,,11200.0,0.0,O,Exempt,,,,,,
+860,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+860,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+861,,,,,,78,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+861,1.0,,,,,,,,,,Subcontracting Fee Payment,10E200020,Sales commission,,,,189000.0,17181.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,189000.0,0.0,O,Exempt,,,,,,
+861,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+861,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,,,,,,85,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+862,1.0,,,,,,,,,,July Salary Others 0001 Executives,10E200090,Remuneration for directors (and other officers),,,,1720000.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,1129093.0,0.0,O,Exempt,,,,,,
+862,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+862,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+862,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,2.0,,,,,,,,,,July Salary Others 0001 Executives,,,,,,,,,,10B100690,Deposits received,,,,111192.0,0.0,O,Exempt,,,,,,
+862,2.0,,,,1.0,,,,,,,,,,,,,,,,,,1,Insurance Premium,sub-account,,,,,,,,,,
+862,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,3.0,,,,,,,,,,July Salary Others 0001 Executives,,,,,,,,,,10B100690,Deposits received,,,,171200.0,0.0,O,Exempt,,,,,,
+862,3.0,,,,1.0,,,,,,,,,,,,,,,,,,2,Resident Tax,sub-account,,,,,,,,,,
+862,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,4.0,,,,,,,,,,July Salary Others 0001 Executives,,,,,,,,,,10B100690,Deposits received,,,,166823.0,0.0,O,Exempt,,,,,,
+862,4.0,,,,1.0,,,,,,,,,,,,,,,,,,3,Withholding Tax,sub-account,,,,,,,,,,
+862,4.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,5.0,,,,,,,,,,July Salary Others 0001 Executives,,,,,,,,,,10B100690,Deposits received,,,,133972.0,0.0,O,Exempt,,,,,,
+862,5.0,,,,1.0,,,,,,,,,,,,,,,,,,4,Savings & Insurance,sub-account,,,,,,,,,,
+862,5.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,6.0,,,,,,,,,,July Salary Others 0001 Executives,,,,,,,,,,10B100690,Deposits received,,,,7720.0,0.0,O,Exempt,,,,,,
+862,6.0,,,,1.0,,,,,,,,,,,,,,,,,,9,Others,sub-account,,,,,,,,,,
+862,6.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,7.0,,,,,,,,,,July Salary Others 0020 Sales Department,10E200370,Salaries and allowances,,,,1936145.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,1476277.0,0.0,O,Exempt,,,,,,
+862,7.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+862,7.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+862,7.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,8.0,,,,,,,,,,July Salary Others 0020 Sales Department,,,,,,,,,,10B100690,Deposits received,,,,216077.0,0.0,O,Exempt,,,,,,
+862,8.0,,,,1.0,,,,,,,,,,,,,,,,,,1,Insurance Premium,sub-account,,,,,,,,,,
+862,8.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,9.0,,,,,,,,,,July Salary Others 0020 Sales Department,,,,,,,,,,10B100690,Deposits received,,,,104300.0,0.0,O,Exempt,,,,,,
+862,9.0,,,,1.0,,,,,,,,,,,,,,,,,,2,Resident Tax,sub-account,,,,,,,,,,
+862,9.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,10.0,,,,,,,,,,July Salary Others 0020 Sales Department,,,,,,,,,,10B100690,Deposits received,,,,35770.0,0.0,O,Exempt,,,,,,
+862,10.0,,,,1.0,,,,,,,,,,,,,,,,,,3,Withholding Tax,sub-account,,,,,,,,,,
+862,10.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,11.0,,,,,,,,,,July Salary Others 0020 Sales Department,,,,,,,,,,10B100690,Deposits received,,,,43305.0,0.0,O,Exempt,,,,,,
+862,11.0,,,,1.0,,,,,,,,,,,,,,,,,,4,Savings & Insurance,sub-account,,,,,,,,,,
+862,11.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,12.0,,,,,,,,,,July Salary Others 0020 Sales Department,,,,,,,,,,10B100690,Deposits received,,,,60416.0,0.0,O,Exempt,,,,,,
+862,12.0,,,,1.0,,,,,,,,,,,,,,,,,,9,Others,sub-account,,,,,,,,,,
+862,12.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,13.0,,,,,,,,,,July Salary Others 1000 Sapporo Office,10E200370,Salaries and allowances,,,,860487.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,616860.0,0.0,O,Exempt,,,,,,
+862,13.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+862,13.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+862,13.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,14.0,,,,,,,,,,July Salary Others 1000 Sapporo Office,,,,,,,,,,10B100690,Deposits received,,,,94847.0,0.0,O,Exempt,,,,,,
+862,14.0,,,,1.0,,,,,,,,,,,,,,,,,,1,Insurance Premium,sub-account,,,,,,,,,,
+862,14.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,15.0,,,,,,,,,,July Salary Others 1000 Sapporo Office,,,,,,,,,,10B100690,Deposits received,,,,46300.0,0.0,O,Exempt,,,,,,
+862,15.0,,,,1.0,,,,,,,,,,,,,,,,,,2,Resident Tax,sub-account,,,,,,,,,,
+862,15.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,16.0,,,,,,,,,,July Salary Others 1000 Sapporo Office,,,,,,,,,,10B100690,Deposits received,,,,14070.0,0.0,O,Exempt,,,,,,
+862,16.0,,,,1.0,,,,,,,,,,,,,,,,,,3,Withholding Tax,sub-account,,,,,,,,,,
+862,16.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,17.0,,,,,,,,,,July Salary Others 1000 Sapporo Office,,,,,,,,,,10B100690,Deposits received,,,,50648.0,0.0,O,Exempt,,,,,,
+862,17.0,,,,1.0,,,,,,,,,,,,,,,,,,4,Savings & Insurance,sub-account,,,,,,,,,,
+862,17.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,18.0,,,,,,,,,,July Salary Others 1000 Sapporo Office,,,,,,,,,,10B100690,Deposits received,,,,37762.0,0.0,O,Exempt,,,,,,
+862,18.0,,,,1.0,,,,,,,,,,,,,,,,,,9,Others,sub-account,,,,,,,,,,
+862,18.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,19.0,,,,,,,,,,July Salary Others 3000 Nagoya Office,10E200370,Salaries and allowances,,,,778108.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,553900.0,0.0,O,Exempt,,,,,,
+862,19.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+862,19.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+862,19.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,20.0,,,,,,,,,,July Salary Others 3000 Nagoya Office,,,,,,,,,,10B100690,Deposits received,,,,92651.0,0.0,O,Exempt,,,,,,
+862,20.0,,,,1.0,,,,,,,,,,,,,,,,,,1,Insurance Premium,sub-account,,,,,,,,,,
+862,20.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,21.0,,,,,,,,,,July Salary Others 3000 Nagoya Office,,,,,,,,,,10B100690,Deposits received,,,,42600.0,0.0,O,Exempt,,,,,,
+862,21.0,,,,1.0,,,,,,,,,,,,,,,,,,2,Resident Tax,sub-account,,,,,,,,,,
+862,21.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,22.0,,,,,,,,,,July Salary Others 3000 Nagoya Office,,,,,,,,,,10B100690,Deposits received,,,,8030.0,0.0,O,Exempt,,,,,,
+862,22.0,,,,1.0,,,,,,,,,,,,,,,,,,3,Withholding Tax,sub-account,,,,,,,,,,
+862,22.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,23.0,,,,,,,,,,July Salary Others 3000 Nagoya Office,,,,,,,,,,10B100690,Deposits received,,,,40759.0,0.0,O,Exempt,,,,,,
+862,23.0,,,,1.0,,,,,,,,,,,,,,,,,,4,Savings & Insurance,sub-account,,,,,,,,,,
+862,23.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,24.0,,,,,,,,,,July Salary Others 3000 Nagoya Office,,,,,,,,,,10B100690,Deposits received,,,,40168.0,0.0,O,Exempt,,,,,,
+862,24.0,,,,1.0,,,,,,,,,,,,,,,,,,9,Others,sub-account,,,,,,,,,,
+862,24.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,25.0,,,,,,,,,,July Salary Others 4000 Osaka Branch,10E200370,Salaries and allowances,,,,1070100.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,849396.0,0.0,O,Exempt,,,,,,
+862,25.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+862,25.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+862,25.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,26.0,,,,,,,,,,July Salary Others 4000 Osaka Branch,,,,,,,,,,10B100690,Deposits received,,,,119974.0,0.0,O,Exempt,,,,,,
+862,26.0,,,,1.0,,,,,,,,,,,,,,,,,,1,Insurance Premium,sub-account,,,,,,,,,,
+862,26.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,27.0,,,,,,,,,,July Salary Others 4000 Osaka Branch,,,,,,,,,,10B100690,Deposits received,,,,53400.0,0.0,O,Exempt,,,,,,
+862,27.0,,,,1.0,,,,,,,,,,,,,,,,,,2,Resident Tax,sub-account,,,,,,,,,,
+862,27.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,28.0,,,,,,,,,,July Salary Others 4000 Osaka Branch,,,,,,,,,,10B100690,Deposits received,,,,19740.0,0.0,O,Exempt,,,,,,
+862,28.0,,,,1.0,,,,,,,,,,,,,,,,,,3,Withholding Tax,sub-account,,,,,,,,,,
+862,28.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,29.0,,,,,,,,,,July Salary Others 4000 Osaka Branch,,,,,,,,,,10B100690,Deposits received,,,,13570.0,0.0,O,Exempt,,,,,,
+862,29.0,,,,1.0,,,,,,,,,,,,,,,,,,4,Savings & Insurance,sub-account,,,,,,,,,,
+862,29.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,30.0,,,,,,,,,,July Salary Others 4000 Osaka Branch,,,,,,,,,,10B100690,Deposits received,,,,14020.0,0.0,O,Exempt,,,,,,
+862,30.0,,,,1.0,,,,,,,,,,,,,,,,,,9,Others,sub-account,,,,,,,,,,
+862,30.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,31.0,,,,,,,,,,July Salary Others 5000 Kyushu Office,10E200370,Salaries and allowances,,,,584400.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,434653.0,0.0,O,Exempt,,,,,,
+862,31.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+862,31.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+862,31.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,32.0,,,,,,,,,,July Salary Others 5000 Kyushu Office,,,,,,,,,,10B100690,Deposits received,,,,66241.0,0.0,O,Exempt,,,,,,
+862,32.0,,,,1.0,,,,,,,,,,,,,,,,,,1,Insurance Premium,sub-account,,,,,,,,,,
+862,32.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,33.0,,,,,,,,,,July Salary Others 5000 Kyushu Office,,,,,,,,,,10B100690,Deposits received,,,,31700.0,0.0,O,Exempt,,,,,,
+862,33.0,,,,1.0,,,,,,,,,,,,,,,,,,2,Resident Tax,sub-account,,,,,,,,,,
+862,33.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,34.0,,,,,,,,,,July Salary Others 5000 Kyushu Office,,,,,,,,,,10B100690,Deposits received,,,,7960.0,0.0,O,Exempt,,,,,,
+862,34.0,,,,1.0,,,,,,,,,,,,,,,,,,3,Withholding Tax,sub-account,,,,,,,,,,
+862,34.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,35.0,,,,,,,,,,July Salary Others 5000 Kyushu Office,,,,,,,,,,10B100690,Deposits received,,,,18540.0,0.0,O,Exempt,,,,,,
+862,35.0,,,,1.0,,,,,,,,,,,,,,,,,,4,Savings & Insurance,sub-account,,,,,,,,,,
+862,35.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+862,36.0,,,,,,,,,,July Salary Others 5000 Kyushu Office,,,,,,,,,,10B100690,Deposits received,,,,25306.0,0.0,O,Exempt,,,,,,
+862,36.0,,,,1.0,,,,,,,,,,,,,,,,,,9,Others,sub-account,,,,,,,,,,
+862,36.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+863,,,,,,87,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+863,1.0,,,,,,,,,,Mobile Phone Cost,10E200180,Communication expenses,,,,63248.0,5749.0,S10,Standard 10%,10A100020,Cash and deposits,,,,63248.0,0.0,O,Exempt,,,,,,
+863,1.0,,,,1.0,,,,,,,,,,,,,,,,,,30,Mitsui Nagoya,sub-account,,,,,,,,,,
+863,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+863,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+864,,,,,,88,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+864,1.0,,,,,,,,,,Newspaper Cost,10E201160,Book expenses,,,,3568.0,324.0,S10,Standard 10%,10A100020,Cash and deposits,,,,3568.0,0.0,O,Exempt,,,,,,
+864,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+864,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+865,,,,,,92,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+865,1.0,,,,,,,,,,Copier Repair,10E201000,Repair and maintenance expenses,,,,18000.0,1636.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,18000.0,0.0,O,Exempt,,,,,,
+865,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+865,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+866,,,,,,109,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+866,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,44500.0,4045.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,44500.0,0.0,O,Exempt,,,,,,
+866,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+866,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+866,2.0,,,,,,,,,,July 25th Slip No. 267 Imai Department Store,10A100060,Notes receivable - trade,,,,14812990.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,14812990.0,0.0,O,Exempt,,,,,,
+866,2.0,,,,1.0,,,,,,,,,,,,,,,,,,2,Imai Department Store,sub-account,,,,,,,,,,
+866,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+866,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+867,,,,,,110,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+867,1.0,,,,,,,,,,"July 25th Slip No. 268 Comprehensive Management Co., Ltd.",10A100020,Cash and deposits,,,,1163236.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,1163236.0,0.0,O,Exempt,,,,,,
+867,1.0,,1.0,,,,,,,,,,,30,Mitsui Nagoya,sub-account,,,,,,,,,,,,,,,,,,,
+867,1.0,,,,1.0,,,,,,,,,,,,,,,,,,7,"Comprehensive Management Co., Ltd.",sub-account,,,,,,,,,,
+867,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+867,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+867,2.0,,,,,,,,,,"July 25th Slip No. 268 Comprehensive Management Co., Ltd.",10E200690,Commission expenses,,,,735.0,66.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,735.0,0.0,O,Exempt,,,,,,
+867,2.0,,,,1.0,,,,,,,,,,,,,,,,,,7,"Comprehensive Management Co., Ltd.",sub-account,,,,,,,,,,
+867,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+867,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+868,,,,,,111,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+868,1.0,,,,,,,,,,Taxi Fare,10E201230,Travel and transportation expenses,,,,23600.0,2145.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,23600.0,0.0,O,Exempt,,,,,,
+868,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+868,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+868,2.0,,,,,,,,,,"July 25th Slip No. 269 Kamata Shoten Co., Ltd.",10A100020,Cash and deposits,,,,902295.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,902295.0,0.0,O,Exempt,,,,,,
+868,2.0,,1.0,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,,,,,,,,,,
+868,2.0,,,,1.0,,,,,,,,,,,,,,,,,,23,"Kamata Shoten Co., Ltd.",sub-account,,,,,,,,,,
+868,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+868,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+868,3.0,,,,,,,,,,"July 25th Slip No. 269 Kamata Shoten Co., Ltd.",10E200690,Commission expenses,,,,630.0,57.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,630.0,0.0,O,Exempt,,,,,,
+868,3.0,,,,1.0,,,,,,,,,,,,,,,,,,23,"Kamata Shoten Co., Ltd.",sub-account,,,,,,,,,,
+868,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+868,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+869,,,,,,112,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+869,1.0,,,,,,,,,,"July 25th Slip No. 270 Kobayashi Market Co., Ltd.",10A100020,Cash and deposits,,,,3147912.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,3147912.0,0.0,O,Exempt,,,,,,
+869,1.0,,1.0,,,,,,,,,,,10,Hokkaido Station Front,sub-account,,,,,,,,,,,,,,,,,,,
+869,1.0,,,,1.0,,,,,,,,,,,,,,,,,,25,"Kobayashi Market Co., Ltd.",sub-account,,,,,,,,,,
+869,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+869,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+869,2.0,,,,,,,,,,"July 25th Slip No. 270 Kobayashi Market Co., Ltd.",10E200690,Commission expenses,,,,840.0,76.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,840.0,0.0,O,Exempt,,,,,,
+869,2.0,,,,1.0,,,,,,,,,,,,,,,,,,25,"Kobayashi Market Co., Ltd.",sub-account,,,,,,,,,,
+869,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+869,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+870,,,,,,114,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+870,1.0,,,,,,,,,,Newspaper Cost,10E201160,Book expenses,,,,2540.0,230.0,S10,Standard 10%,10A100020,Cash and deposits,,,,5404.0,0.0,O,Exempt,,,,,,
+870,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+870,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+870,2.0,,,,,,,,,,Newspaper Cost,10E201160,Book expenses,,,,2864.0,260.0,S10,Standard 10%,,,,,,,,,,,,,,,
+870,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+871,,,,,,131,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+871,1.0,,,,,,,,,,Membership Fee,10E201140,Membership fee,,,,24000.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,24000.0,0.0,O,Exempt,,,,,,
+871,1.0,,,,1.0,,,,,,,,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,
+871,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+871,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+872,,,,,,153,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+872,1.0,,,,,,,,,,Meal Cost Kanashu 2 People,10E200150,Entertainment expenses,,,,3540.0,321.0,S10,Standard 10%,10A100020,Cash and deposits,,,,3540.0,0.0,O,Exempt,,,,,,
+872,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+872,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+873,,,,,,155,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+873,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,7246.0,658.0,S10,Standard 10%,10A100020,Cash and deposits,,,,7246.0,0.0,O,Exempt,,,,,,
+873,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+873,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+874,,,,,,170,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+874,1.0,,,,,,,,,,Newspaper Cost,10E201160,Book expenses,,,,3007.0,273.0,S10,Standard 10%,10A100020,Cash and deposits,,,,3007.0,0.0,O,Exempt,,,,,,
+874,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+874,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+875,,,,,,171,2021-07-25,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+875,1.0,,,,,,,,,,Mobile Phone Cost,10E200180,Communication expenses,,,,71096.0,6463.0,S10,Standard 10%,10A100020,Cash and deposits,,,,71096.0,0.0,O,Exempt,,,,,,
+875,1.0,,,,1.0,,,,,,,,,,,,,,,,,,50,Fukuoka Kitakyushu,sub-account,,,,,,,,,,
+875,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+875,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+876,,,,,,27,2021-07-26,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+876,1.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,14324.0,1302.0,S10,Standard 10%,10A100020,Cash and deposits,,,,88087.0,0.0,O,Exempt,,,,,,
+876,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+876,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+876,2.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,43686.0,3971.0,S10,Standard 10%,,,,,,,,,,,,,,,
+876,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+876,3.0,,,,,,,,,,Travel Expenses,10E201230,Travel and transportation expenses,,,,30077.0,2734.0,S10,Standard 10%,,,,,,,,,,,,,,,
+876,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+877,,,,,,73,2021-07-26,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+877,1.0,,,,,,,,,,Golf play fee 2 people,10E200150,Entertainment expenses,,,,32200.0,2927.0,S10,Standard 10%,10A100020,Cash and deposits,,,,32200.0,0.0,O,Exempt,,,,,,
+877,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+877,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+878,,,,,,83,2021-07-26,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+878,1.0,,,,,,,,,,JR,10E201230,Travel and transportation expenses,,,,12000.0,1090.0,S10,Standard 10%,10A100020,Cash and deposits,,,,12000.0,0.0,O,Exempt,,,,,,
+878,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+878,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+879,,,,,,113,2021-07-26,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+879,1.0,,,,,,,,,,Mobile Phone Cost,10E200180,Communication expenses,,,,49243.0,4476.0,S10,Standard 10%,10A100020,Cash and deposits,,,,49243.0,0.0,O,Exempt,,,,,,
+879,1.0,,,,1.0,,,,,,,,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,
+879,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+879,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+880,,,,,,120,2021-07-26,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+880,1.0,,,,,,,,,,Subcontracting Cost,10E200020,Sales commission,,,,336000.0,30545.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,336000.0,0.0,O,Exempt,,,,,,
+880,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+880,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+881,,,,,,146,2021-07-26,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+881,1.0,,,,,,,,,,Subcontracting Cost,10E200020,Sales commission,,,,147000.0,13363.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,147000.0,0.0,O,Exempt,,,,,,
+881,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+881,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+882,,,,,,15,2021-07-27,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+882,1.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,3000.0,272.0,S10,Standard 10%,10A100020,Cash and deposits,,,,3000.0,0.0,O,Exempt,,,,,,
+882,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+882,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+883,,,,,,30,2021-07-27,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+883,1.0,,,,,,,,,,Insurance Premium Payment,10E200240,Insurance expenses,,,,54320.0,0.0,X,Non-Purchase,10A100020,Cash and deposits,,,,54320.0,0.0,O,Exempt,,,,,,
+883,1.0,,,,1.0,,,,,,,,,,,,,,,,,,10,Hokkaido Station Front,sub-account,,,,,,,,,,
+883,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+883,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+884,,,,,,37,2021-07-27,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+884,1.0,,,,,,,,,,Subcontracting Cost,10E200020,Sales commission,,,,477334.0,43394.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,1559708.0,0.0,O,Exempt,,,,,,
+884,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+884,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+884,2.0,,,,,,,,,,Subcontracting Cost,10E200020,Sales commission,,,,266000.0,24181.0,S10,Standard 10%,,,,,,,,,,,,,,,
+884,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+884,3.0,,,,,,,,,,Subcontracting Cost,10E200020,Sales commission,,,,816374.0,74215.0,S10,Standard 10%,,,,,,,,,,,,,,,
+884,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+885,,,,,,39,2021-07-27,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+885,1.0,,,,,,,,,,Membership Fee,10E200140,Welfare expenses,,,,9000.0,818.0,S10,Standard 10%,10A100020,Cash and deposits,,,,9000.0,0.0,O,Exempt,,,,,,
+885,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+885,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+886,,,,,,62,2021-07-27,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+886,1.0,,,,,,,,,,Mobile Phone Cost,10E200180,Communication expenses,,,,110245.0,10022.0,S10,Standard 10%,10A100020,Cash and deposits,,,,110245.0,0.0,O,Exempt,,,,,,
+886,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+886,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+886,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+887,,,,,,83,2021-07-27,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+887,1.0,,,,,,,,,,Vehicle Management Cost,10E201120,Vehicle expenses,,,,45000.0,4090.0,S10,Standard 10%,10A100020,Cash and deposits,,,,45000.0,0.0,O,Exempt,,,,,,
+887,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+887,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+888,,,,,,9,2021-07-28,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+888,1.0,,,,,,,,,,Land juice and other comprehensive management,10E200150,Entertainment expenses,,,,2520.0,229.0,S10,Standard 10%,10A100020,Cash and deposits,,,,2520.0,0.0,O,Exempt,,,,,,
+888,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+888,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+889,,,,,,72,2021-07-28,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+889,1.0,,,,,,,,,,Newspaper Cost,10E201160,Book expenses,,,,2864.0,260.0,S10,Standard 10%,10A100020,Cash and deposits,,,,9078.0,0.0,O,Exempt,,,,,,
+889,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+889,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+889,2.0,,,,,,,,,,Newspaper Cost,10E201160,Book expenses,,,,2815.0,255.0,S10,Standard 10%,,,,,,,,,,,,,,,
+889,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+889,3.0,,,,,,,,,,Newspaper Cost,10E201160,Book expenses,,,,3399.0,309.0,S10,Standard 10%,,,,,,,,,,,,,,,
+889,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+890,,,,,,81,2021-07-28,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+890,1.0,,,,,,,,,,Tea Cost,10E200140,Welfare expenses,,,,22000.0,2000.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,22000.0,0.0,O,Exempt,,,,,,
+890,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+890,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+891,,,,,,93,2021-07-28,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+891,1.0,,,,,,,,,,Maintenance Cost,10E201000,Repair and maintenance expenses,,,,17850.0,1622.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,17850.0,0.0,O,Exempt,,,,,,
+891,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+891,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+892,,,,,,121,2021-07-28,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+892,1.0,,,,,,,,,,Tea Cost,10E200140,Welfare expenses,,,,10500.0,954.0,S10,Standard 10%,10A100020,Cash and deposits,,,,10500.0,0.0,O,Exempt,,,,,,
+892,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+892,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+893,,,,,,138,2021-07-28,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+893,1.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,4290.0,390.0,S10,Standard 10%,10A100020,Cash and deposits,,,,22596.0,0.0,O,Exempt,,,,,,
+893,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+893,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+893,2.0,,,,,,,,,,Parking Fee,10E201120,Vehicle expenses,,,,3049.0,277.0,S10,Standard 10%,,,,,,,,,,,,,,,
+893,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+893,3.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,6229.0,566.0,S10,Standard 10%,,,,,,,,,,,,,,,
+893,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+893,4.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,477.0,43.0,S10,Standard 10%,,,,,,,,,,,,,,,
+893,4.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+893,5.0,,,,,,,,,,Highway Toll,10E201120,Vehicle expenses,,,,2353.0,213.0,S10,Standard 10%,,,,,,,,,,,,,,,
+893,5.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+893,6.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,6198.0,563.0,S10,Standard 10%,,,,,,,,,,,,,,,
+893,6.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+894,,,,,,14,2021-07-29,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+894,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,3000.0,272.0,S10,Standard 10%,10A100020,Cash and deposits,,,,3000.0,0.0,O,Exempt,,,,,,
+894,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+894,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+895,,,,,,108,2021-07-29,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+895,1.0,,,,,,,,,,Coffee Cost OtherOthers 2 People,10E200150,Entertainment expenses,,,,1570.0,142.0,S10,Standard 10%,10A100020,Cash and deposits,,,,1570.0,0.0,O,Exempt,,,,,,
+895,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+895,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+896,,,,,,49,2021-07-30,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+896,1.0,,,,,,,,,,Gasoline Cost,10E201120,Vehicle expenses,,,,170000.0,15454.0,S10,Standard 10%,10A100020,Cash and deposits,,,,170000.0,0.0,O,Exempt,,,,,,
+896,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+896,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+896,2.0,,,,,,,,,,Vehicle Management Cost,10E201120,Vehicle expenses,,,,21000.0,1909.0,S10,Standard 10%,10A100020,Cash and deposits,,,,21000.0,0.0,O,Exempt,,,,,,
+896,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+896,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+897,,,,,,61,2021-07-30,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+897,1.0,,,,,,,,,,Fund Transfer,10A100020,Cash and deposits,,,,12500000.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,4000000.0,0.0,O,Exempt,,,,,,
+897,1.0,,1.0,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,,,,,,,,,,
+897,1.0,,,,1.0,,,,,,,,,,,,,,,,,,10,Hokkaido Station Front,sub-account,,,,,,,,,,
+897,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+897,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+897,2.0,,,,,,,,,,Fund Transfer,,,,,,,,,,10A100020,Cash and deposits,,,,3500000.0,0.0,O,Exempt,,,,,,
+897,2.0,,,,1.0,,,,,,,,,,,,,,,,,,30,Mitsui Nagoya,sub-account,,,,,,,,,,
+897,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+897,3.0,,,,,,,,,,Fund Transfer,,,,,,,,,,10A100020,Cash and deposits,,,,3000000.0,0.0,O,Exempt,,,,,,
+897,3.0,,,,1.0,,,,,,,,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,
+897,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+897,4.0,,,,,,,,,,Fund Transfer,,,,,,,,,,10A100020,Cash and deposits,,,,2000000.0,0.0,O,Exempt,,,,,,
+897,4.0,,,,1.0,,,,,,,,,,,,,,,,,,50,Fukuoka Kitakyushu,sub-account,,,,,,,,,,
+897,4.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+898,,,,,,63,2021-07-30,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+898,1.0,,,,,,,,,,Insurance Premium,10E200240,Insurance expenses,,,,81000.0,0.0,X,Non-Purchase,10A100020,Cash and deposits,,,,81000.0,0.0,O,Exempt,,,,,,
+898,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+898,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+898,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+899,,,,,,67,2021-07-30,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+899,1.0,,,,,,,,,,Membership Fee Payment,10E201140,Membership fee,,,,30000.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,30000.0,0.0,O,Exempt,,,,,,
+899,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+899,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+900,,,,,,70,2021-07-30,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+900,1.0,,,,,,,,,,Wired (Cable),10E201270,Miscellaneous expenses,,,,6000.0,545.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,58381.0,0.0,O,Exempt,,,,,,
+900,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+900,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+900,2.0,,,,,,,,,,Security Fee,10E201270,Miscellaneous expenses,,,,52381.0,4761.0,S10,Standard 10%,,,,,,,,,,,,,,,
+900,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+900,3.0,,,,,,,,,,Cleaning Fee,10E201270,Miscellaneous expenses,,,,73500.0,6681.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,73500.0,0.0,O,Exempt,,,,,,
+900,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+900,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+901,,,,,,71,2021-07-30,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+901,1.0,,,,,,,,,,Detergent Cost,10E201270,Miscellaneous expenses,,,,798.0,72.0,S10,Standard 10%,10A100020,Cash and deposits,,,,798.0,0.0,O,Exempt,,,,,,
+901,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+901,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+902,,,,,,96,2021-07-30,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+902,1.0,,,,,,,,,,Security Fee,10E201270,Miscellaneous expenses,,,,22470.0,2042.0,S10,Standard 10%,10A100020,Cash and deposits,,,,22470.0,0.0,O,Exempt,,,,,,
+902,1.0,,,,1.0,,,,,,,,,,,,,,,,,,30,Mitsui Nagoya,sub-account,,,,,,,,,,
+902,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+902,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+903,,,,,,100,2021-07-30,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+903,1.0,,,,,,,,,,Membership Fee,10E200140,Welfare expenses,,,,6000.0,545.0,S10,Standard 10%,10A100020,Cash and deposits,,,,6000.0,0.0,O,Exempt,,,,,,
+903,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+903,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+904,,,,,,115,2021-07-30,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+904,1.0,,,,,,,,,,Insurance Premium,10E200240,Insurance expenses,,,,64500.0,0.0,X,Non-Purchase,10A100020,Cash and deposits,,,,64500.0,0.0,O,Exempt,,,,,,
+904,1.0,,,,1.0,,,,,,,,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,
+904,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+904,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+905,,,,,,1,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+905,1.0,,,,,,,,,,Fare Sagawa Express,10E200870,Freight costs,,,,162800.0,14800.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,162800.0,0.0,O,Exempt,,,,,,
+905,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+905,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+906,,,,,,36,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+906,1.0,,,,,,,,,,Fare Yamato Transport,10E200870,Freight costs,,,,1835020.0,166820.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,2799068.0,0.0,O,Exempt,,,,,,
+906,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+906,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+906,2.0,,,,,,,,,,Fare Sagawa Express,10E200870,Freight costs,,,,964048.0,87640.0,S10,Standard 10%,,,,,,,,,,,,,,,
+906,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+907,,,,,,40,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+907,1.0,,,,,,,,,,Advertisement,10E200050,Advertising expenses,,,,50000.0,4545.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,50000.0,0.0,O,Exempt,,,,,,
+907,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+907,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+908,,,,,,66,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+908,1.0,,,,,,,,,,Lease Payments,10E200730,Rent expenses on land and buildings,,,,209850.0,19077.0,S10,Standard 10%,10A100020,Cash and deposits,,,,209850.0,0.0,O,Exempt,,,,,,
+908,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+908,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+908,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+909,,,,,,74,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+909,1.0,,,,,,,,,,Insurance Premium Advance,10B100690,Deposits received,,,,1180527.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,2370728.0,0.0,O,Exempt,,,,,,
+909,1.0,,1.0,,,,,,,,,,,1,Insurance Premium,sub-account,,,,,,,,,,,,,,,,,,,
+909,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+909,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+909,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+909,2.0,,,,,,,,,,Employer's Share of Insurance Premiums,10E200540,Legal welfare expenses,,,,111192.0,0.0,X,Non-Purchase,,,,,,,,,,,,,,,
+909,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+909,3.0,,,,,,,,,,Employer's Share of Insurance Premiums,10E200540,Legal welfare expenses,,,,401259.0,0.0,X,Non-Purchase,,,,,,,,,,,,,,,
+909,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+909,4.0,,,,,,,,,,Employer's Share of Insurance Premiums,10E200540,Legal welfare expenses,,,,177774.0,0.0,X,Non-Purchase,,,,,,,,,,,,,,,
+909,4.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+909,5.0,,,,,,,,,,Employer's Share of Insurance Premiums,10E200540,Legal welfare expenses,,,,165649.0,0.0,X,Non-Purchase,,,,,,,,,,,,,,,
+909,5.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+909,6.0,,,,,,,,,,Employer's Share of Insurance Premiums,10E200540,Legal welfare expenses,,,,204278.0,0.0,X,Non-Purchase,,,,,,,,,,,,,,,
+909,6.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+909,7.0,,,,,,,,,,Employer's Share of Insurance Premiums,10E200540,Legal welfare expenses,,,,120377.0,0.0,X,Non-Purchase,,,,,,,,,,,,,,,
+909,7.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+909,8.0,,,,,,,,,,Employer's Share of Child Contribution,10E200540,Legal welfare expenses,,,,9672.0,0.0,X,Non-Purchase,,,,,,,,,,,,,,,
+909,8.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+910,,,,,,75,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+910,1.0,,,,,,,,,,Insurance Premium,10E200240,Insurance expenses,,,,62000.0,0.0,X,Non-Purchase,10A100020,Cash and deposits,,,,62000.0,0.0,O,Exempt,,,,,,
+910,1.0,,,,1.0,,,,,,,,,,,,,,,,,,30,Mitsui Nagoya,sub-account,,,,,,,,,,
+910,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+910,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+911,,,,,,76,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+911,1.0,,,,,,,,,,Insurance Premium Payment,10E200240,Insurance expenses,,,,57000.0,0.0,X,Non-Purchase,10A100020,Cash and deposits,,,,57000.0,0.0,O,Exempt,,,,,,
+911,1.0,,,,1.0,,,,,,,,,,,,,,,,,,50,Fukuoka Kitakyushu,sub-account,,,,,,,,,,
+911,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+911,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+912,,,,,,77,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+912,1.0,,,,,,,,,,Freight,10E200870,Freight costs,,,,125560.0,11414.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,125560.0,0.0,O,Exempt,,,,,,
+912,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+912,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+913,,,,,,78,2021-07-31,2021-02-01,8,21,,,,,,,,,,,,,,,,,,,,,,,,,
+913,1.0,,,,,,,,,,Consumables Cost Department Allocation,,,,,,,,,,10E200200,Supplies expenses,,,,268502.0,0.0,O,Exempt,,,,,,
+913,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+913,2.0,,,,,,,,,,,10E200200,Supplies expenses,,,,29535.0,0.0,O,Exempt,,,,,,,,,,,,,,,
+913,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+913,3.0,,,,,,,,,,,10E200200,Supplies expenses,,,,128882.0,0.0,O,Exempt,,,,,,,,,,,,,,,
+913,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+913,4.0,,,,,,,,,,,10E200200,Supplies expenses,,,,26850.0,0.0,O,Exempt,,,,,,,,,,,,,,,
+913,4.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+913,5.0,,,,,,,,,,,10E200200,Supplies expenses,,,,64440.0,0.0,O,Exempt,,,,,,,,,,,,,,,
+913,5.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+913,6.0,,,,,,,,,,,10E200200,Supplies expenses,,,,18795.0,0.0,O,Exempt,,,,,,,,,,,,,,,
+913,6.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+914,,,,,,86,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+914,1.0,,,,,,,,,,Payment for June,10B100630,Accounts payable - other,,,,7396290.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,7396290.0,0.0,O,Exempt,,,,,,
+914,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+914,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+914,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+915,,,,,,99,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+915,1.0,,,,,,,,,,Freight,10E200870,Freight costs,,,,755200.0,68654.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,755200.0,0.0,O,Exempt,,,,,,
+915,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+915,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+916,,,,,,113,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+916,1.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,4665496.0,0.0,O,Exempt,10D100100,Gross sales,,,,4665496.0,424136.0,S10,Standard 10%,,,,,,
+916,1.0,,1.0,,,,,,,,,,,25,"Kobayashi Market Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+916,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+916,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department
+916,2.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,1299624.0,0.0,O,Exempt,10D100100,Gross sales,,,,1299624.0,118147.0,S10,Standard 10%,,,,,,
+916,2.0,,1.0,,,,,,,,,,,5,"ABC Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+916,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+916,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department
+916,3.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,1052584.0,0.0,O,Exempt,10D100100,Gross sales,,,,1052584.0,95689.0,S10,Standard 10%,,,,,,
+916,3.0,,1.0,,,,,,,,,,,14,"Fujita Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+916,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+916,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department
+916,4.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10D100110,Sales allowance and returns,,,,32640.0,2967.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,32640.0,0.0,O,Exempt,,,,,,
+916,4.0,,,,1.0,,,,,,,,,,,,,,,,,,5,"ABC Co., Ltd.",sub-account,,,,,,,,,,
+916,4.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+916,4.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+916,5.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10D100110,Sales allowance and returns,,,,63360.0,5760.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,63360.0,0.0,O,Exempt,,,,,,
+916,5.0,,,,1.0,,,,,,,,,,,,,,,,,,14,"Fujita Co., Ltd.",sub-account,,,,,,,,,,
+916,5.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+916,5.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+917,,,,,,114,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+917,1.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,9706318.0,0.0,O,Exempt,10D100100,Gross sales,,,,9706318.0,882392.0,S10,Standard 10%,,,,,,
+917,1.0,,1.0,,,,,,,,,,,12,Momiji Department Store,sub-account,,,,,,,,,,,,,,,,,,,
+917,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+917,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department
+917,2.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,16459173.0,0.0,O,Exempt,10D100100,Gross sales,,,,16459173.0,1496288.0,S10,Standard 10%,,,,,,
+917,2.0,,1.0,,,,,,,,,,,2,Imai Department Store,sub-account,,,,,,,,,,,,,,,,,,,
+917,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+917,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department
+917,3.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,1740812.0,0.0,O,Exempt,10D100100,Gross sales,,,,1740812.0,158255.0,S10,Standard 10%,,,,,,
+917,3.0,,1.0,,,,,,,,,,,30,"YAG Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+917,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+917,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department
+917,4.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,862193.0,0.0,O,Exempt,10D100100,Gross sales,,,,862193.0,78381.0,S10,Standard 10%,,,,,,
+917,4.0,,1.0,,,,,,,,,,,13,"Abe Trading Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+917,4.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+917,4.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department
+917,5.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,1678938.0,0.0,O,Exempt,10D100100,Gross sales,,,,1678938.0,152630.0,S10,Standard 10%,,,,,,
+917,5.0,,1.0,,,,,,,,,,,14,"Fujita Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+917,5.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+917,5.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department
+917,6.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,1056864.0,0.0,O,Exempt,10D100100,Gross sales,,,,1056864.0,96078.0,S10,Standard 10%,,,,,,
+917,6.0,,1.0,,,,,,,,,,,26,"Sasaki Sales Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+917,6.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+917,6.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department
+917,7.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,366976.0,0.0,O,Exempt,10D100100,Gross sales,,,,366976.0,33361.0,S10,Standard 10%,,,,,,
+917,7.0,,1.0,,,,,,,,,,,11,"Saito Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+917,7.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+917,7.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department
+917,8.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10D100110,Sales allowance and returns,,,,64000.0,5818.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,64000.0,0.0,O,Exempt,,,,,,
+917,8.0,,,,1.0,,,,,,,,,,,,,,,,,,2,Imai Department Store,sub-account,,,,,,,,,,
+917,8.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+917,8.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+917,9.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10D100110,Sales allowance and returns,,,,36000.0,3272.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,36000.0,0.0,O,Exempt,,,,,,
+917,9.0,,,,1.0,,,,,,,,,,,,,,,,,,12,Momiji Department Store,sub-account,,,,,,,,,,
+917,9.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+917,9.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+917,10.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,376504.0,0.0,O,Exempt,10D100100,Gross sales,,,,376504.0,34227.0,S10,Standard 10%,,,,,,
+917,10.0,,1.0,,,,,,,,,,,24,"Hatakeyama Trading Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+917,10.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+917,10.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department
+917,11.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,305388.0,0.0,O,Exempt,10D100100,Gross sales,,,,305388.0,27762.0,S10,Standard 10%,,,,,,
+917,11.0,,1.0,,,,,,,,,,,10,Aim Trading LLC,sub-account,,,,,,,,,,,,,,,,,,,
+917,11.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+917,11.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department
+917,12.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10D100110,Sales allowance and returns,,,,50400.0,4581.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,50400.0,0.0,O,Exempt,,,,,,
+917,12.0,,,,1.0,,,,,,,,,,,,,,,,,,26,"Sasaki Sales Co., Ltd.",sub-account,,,,,,,,,,
+917,12.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+917,12.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+918,,,,,,115,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+918,1.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,1184900.0,0.0,O,Exempt,10D100100,Gross sales,,,,1184900.0,107718.0,S10,Standard 10%,,,,,,
+918,1.0,,1.0,,,,,,,,,,,27,"Iwashita Trading Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+918,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+918,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department
+918,2.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,925880.0,0.0,O,Exempt,10D100100,Gross sales,,,,925880.0,84170.0,S10,Standard 10%,,,,,,
+918,2.0,,1.0,,,,,,,,,,,7,"Comprehensive Management Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+918,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+918,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department
+918,3.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,928386.0,0.0,O,Exempt,10D100100,Gross sales,,,,928386.0,84398.0,S10,Standard 10%,,,,,,
+918,3.0,,1.0,,,,,,,,,,,14,"Fujita Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+918,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+918,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department
+918,4.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,378495.0,0.0,O,Exempt,10D100100,Gross sales,,,,378495.0,34408.0,S10,Standard 10%,,,,,,
+918,4.0,,1.0,,,,,,,,,,,19,"Minami Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+918,4.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+918,4.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department
+918,5.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,610974.0,0.0,O,Exempt,10D100100,Gross sales,,,,610974.0,55543.0,S10,Standard 10%,,,,,,
+918,5.0,,1.0,,,,,,,,,,,21,Takada LLC,sub-account,,,,,,,,,,,,,,,,,,,
+918,5.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+918,5.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department
+918,6.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,911211.0,0.0,O,Exempt,10D100100,Gross sales,,,,911211.0,82837.0,S10,Standard 10%,,,,,,
+918,6.0,,1.0,,,,,,,,,,,6,"Entry Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+918,6.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+918,6.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department
+919,,,,,,116,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+919,1.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,6131174.0,0.0,O,Exempt,10D100100,Gross sales,,,,6131174.0,557379.0,S10,Standard 10%,,,,,,
+919,1.0,,1.0,,,,,,,,,,,28,Kameda Department Store,sub-account,,,,,,,,,,,,,,,,,,,
+919,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+919,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department
+919,2.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,1135138.0,0.0,O,Exempt,10D100100,Gross sales,,,,1135138.0,103194.0,S10,Standard 10%,,,,,,
+919,2.0,,1.0,,,,,,,,,,,23,"Kamata Shoten Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+919,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+919,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department
+919,3.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,2487704.0,0.0,O,Exempt,10D100100,Gross sales,,,,2487704.0,226154.0,S10,Standard 10%,,,,,,
+919,3.0,,1.0,,,,,,,,,,,14,"Fujita Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+919,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+919,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department
+919,4.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,1186200.0,0.0,O,Exempt,10D100100,Gross sales,,,,1186200.0,107836.0,S10,Standard 10%,,,,,,
+919,4.0,,1.0,,,,,,,,,,,4,Mark Market,sub-account,,,,,,,,,,,,,,,,,,,
+919,4.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+919,4.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department
+919,5.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,560430.0,0.0,O,Exempt,10D100100,Gross sales,,,,560430.0,50948.0,S10,Standard 10%,,,,,,
+919,5.0,,1.0,,,,,,,,,,,8,"Tower Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+919,5.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+919,5.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department
+919,6.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,1013480.0,0.0,O,Exempt,10D100100,Gross sales,,,,1013480.0,92134.0,S10,Standard 10%,,,,,,
+919,6.0,,1.0,,,,,,,,,,,9,"Takahashi Trading Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+919,6.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+919,6.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department
+919,7.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,942360.0,0.0,O,Exempt,10D100100,Gross sales,,,,942360.0,85669.0,S10,Standard 10%,,,,,,
+919,7.0,,1.0,,,,,,,,,,,20,"Kujou Trading Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+919,7.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+919,7.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department
+919,8.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,588672.0,0.0,O,Exempt,10D100100,Gross sales,,,,588672.0,53515.0,S10,Standard 10%,,,,,,
+919,8.0,,1.0,,,,,,,,,,,3,"Check Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+919,8.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+919,8.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department
+919,9.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10D100110,Sales allowance and returns,,,,66560.0,6050.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,66560.0,0.0,O,Exempt,,,,,,
+919,9.0,,,,1.0,,,,,,,,,,,,,,,,,,4,Mark Market,sub-account,,,,,,,,,,
+919,9.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+919,9.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+919,10.0,,,,,,,,,,Lease Payments,10E200730,Rent expenses on land and buildings,,,,84000.0,7636.0,S10,Standard 10%,10A100020,Cash and deposits,,,,84000.0,0.0,O,Exempt,,,,,,
+919,10.0,,,,1.0,,,,,,,,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,
+919,10.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+919,10.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+920,,,,,,117,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+920,1.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,943160.0,0.0,O,Exempt,10D100100,Gross sales,,,,943160.0,85741.0,S10,Standard 10%,,,,,,
+920,1.0,,1.0,,,,,,,,,,,14,"Fujita Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+920,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+920,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department
+920,2.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,1402208.0,0.0,O,Exempt,10D100100,Gross sales,,,,1402208.0,127473.0,S10,Standard 10%,,,,,,
+920,2.0,,1.0,,,,,,,,,,,22,"Watanabe Industries Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+920,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+920,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department
+920,3.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,1369532.0,0.0,O,Exempt,10D100100,Gross sales,,,,1369532.0,124502.0,S10,Standard 10%,,,,,,
+920,3.0,,1.0,,,,,,,,,,,1,"Goketsu Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+920,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+920,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department
+920,4.0,,,,,,,,,,Sales for the period from July 1th to July 31th,10A100090,Accounts receivable - trade,,,,963720.0,0.0,O,Exempt,10D100100,Gross sales,,,,963720.0,87610.0,S10,Standard 10%,,,,,,
+920,4.0,,1.0,,,,,,,,,,,29,"Chiyo Service Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+920,4.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+920,4.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department
+921,,,,,,118,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+921,1.0,,,,,,,,,,July 31th Slip No. 271 Mark Market,10A100020,Cash and deposits,,,,982934.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,982934.0,0.0,O,Exempt,,,,,,
+921,1.0,,1.0,,,,,,,,,,,40,Mitsubishi Tokyo Umeda,sub-account,,,,,,,,,,,,,,,,,,,
+921,1.0,,,,1.0,,,,,,,,,,,,,,,,,,4,Mark Market,sub-account,,,,,,,,,,
+921,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+921,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+921,2.0,,,,,,,,,,July 31th Slip No. 271 Mark Market,10E200690,Commission expenses,,,,840.0,76.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,840.0,0.0,O,Exempt,,,,,,
+921,2.0,,,,1.0,,,,,,,,,,,,,,,,,,4,Mark Market,sub-account,,,,,,,,,,
+921,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+921,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+922,,,,,,119,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+922,1.0,,,,,,,,,,"July 31th Slip No. 272 ABC Co., Ltd.",10A100020,Cash and deposits,,,,948410.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,948410.0,0.0,O,Exempt,,,,,,
+922,1.0,,1.0,,,,,,,,,,,10,Hokkaido Station Front,sub-account,,,,,,,,,,,,,,,,,,,
+922,1.0,,,,1.0,,,,,,,,,,,,,,,,,,5,"ABC Co., Ltd.",sub-account,,,,,,,,,,
+922,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+922,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+922,2.0,,,,,,,,,,"July 31th Slip No. 272 ABC Co., Ltd.",10E200690,Commission expenses,,,,840.0,76.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,840.0,0.0,O,Exempt,,,,,,
+922,2.0,,,,1.0,,,,,,,,,,,,,,,,,,5,"ABC Co., Ltd.",sub-account,,,,,,,,,,
+922,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+922,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+923,,,,,,120,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+923,1.0,,,,,,,,,,July 31th Slip No. 273 Momiji Department Store,10A100060,Notes receivable - trade,,,,10772743.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,10772743.0,0.0,O,Exempt,,,,,,
+923,1.0,,,,1.0,,,,,,,,,,,,,,,,,,12,Momiji Department Store,sub-account,,,,,,,,,,
+923,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+923,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+924,,,,,,121,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+924,1.0,,,,,,,,,,"July 31th Slip No. 274 Hatakeyama Trading Co., Ltd.",10A100020,Cash and deposits,,,,632472.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,632472.0,0.0,O,Exempt,,,,,,
+924,1.0,,1.0,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,,,,,,,,,,
+924,1.0,,,,1.0,,,,,,,,,,,,,,,,,,24,"Hatakeyama Trading Co., Ltd.",sub-account,,,,,,,,,,
+924,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+924,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+924,2.0,,,,,,,,,,"July 31th Slip No. 274 Hatakeyama Trading Co., Ltd.",10E200690,Commission expenses,,,,472.0,42.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,472.0,0.0,O,Exempt,,,,,,
+924,2.0,,,,1.0,,,,,,,,,,,,,,,,,,24,"Hatakeyama Trading Co., Ltd.",sub-account,,,,,,,,,,
+924,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+924,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+925,,,,,,122,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+925,1.0,,,,,,,,,,"July 31th Slip No. 275 Chiyo Service Co., Ltd.",10A100020,Cash and deposits,,,,424359.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,424359.0,0.0,O,Exempt,,,,,,
+925,1.0,,1.0,,,,,,,,,,,50,Fukuoka Kitakyushu,sub-account,,,,,,,,,,,,,,,,,,,
+925,1.0,,,,1.0,,,,,,,,,,,,,,,,,,29,"Chiyo Service Co., Ltd.",sub-account,,,,,,,,,,
+925,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+925,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+925,2.0,,,,,,,,,,"July 31th Slip No. 275 Chiyo Service Co., Ltd.",10E200690,Commission expenses,,,,210.0,19.0,S10,Standard 10%,10A100090,Accounts receivable - trade,,,,210.0,0.0,O,Exempt,,,,,,
+925,2.0,,,,1.0,,,,,,,,,,,,,,,,,,29,"Chiyo Service Co., Ltd.",sub-account,,,,,,,,,,
+925,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+925,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+926,,,,,,123,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+926,1.0,,,,,,,,,,July 31th Slip No. 453 Aim Trading LLC,10A100020,Cash and deposits,,,,350112.0,0.0,O,Exempt,10A100090,Accounts receivable - trade,,,,350112.0,0.0,O,Exempt,,,,,,
+926,1.0,,,,1.0,,,,,,,,,,,,,,,,,,10,Aim Trading LLC,sub-account,,,,,,,,,,
+926,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+926,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+927,,,,,,124,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+927,1.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,49392.0,4490.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,49392.0,0.0,O,Exempt,,,,,,
+927,1.0,,,,1.0,,,,,,,,,,,,,,,,,,8,"Yamashita Co., Ltd.",sub-account,,,,,,,,,,
+927,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+927,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+927,2.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,176676.0,16061.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,176676.0,0.0,O,Exempt,,,,,,
+927,2.0,,,,1.0,,,,,,,,,,,,,,,,,,2,"Pole Co., Ltd.",sub-account,,,,,,,,,,
+927,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,010,Sapporo Sales Office,department,,,
+927,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+928,,,,,,125,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+928,1.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,2953512.0,268501.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,2953512.0,0.0,O,Exempt,,,,,,
+928,1.0,,,,1.0,,,,,,,,,,,,,,,,,,14,West LLC,sub-account,,,,,,,,,,
+928,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+928,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+928,2.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,3216642.0,292422.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,3216642.0,0.0,O,Exempt,,,,,,
+928,2.0,,,,1.0,,,,,,,,,,,,,,,,,,3,"Check Co., Ltd.",sub-account,,,,,,,,,,
+928,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+928,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+928,3.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10B100040,Accounts payable - trade,,,,34523.0,0.0,O,Exempt,10E100120,Purchase allowance and returns,,,,34523.0,3138.0,S10,Standard 10%,,,,,,
+928,3.0,,1.0,,,,,,,,,,,3,"Check Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+928,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+928,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department
+928,4.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,1317476.0,119770.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,1317476.0,0.0,O,Exempt,,,,,,
+928,4.0,,,,1.0,,,,,,,,,,,,,,,,,,13,"Nakamura Industries Co., Ltd.",sub-account,,,,,,,,,,
+928,4.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+928,4.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+928,5.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,6120204.0,556382.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,6120204.0,0.0,O,Exempt,,,,,,
+928,5.0,,,,1.0,,,,,,,,,,,,,,,,,,1,"Y2 Co., Ltd.",sub-account,,,,,,,,,,
+928,5.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+928,5.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+928,6.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,4398969.0,399906.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,4398969.0,0.0,O,Exempt,,,,,,
+928,6.0,,,,1.0,,,,,,,,,,,,,,,,,,11,"Matsumura Co., Ltd.",sub-account,,,,,,,,,,
+928,6.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+928,6.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+928,7.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,336571.0,30597.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,336571.0,0.0,O,Exempt,,,,,,
+928,7.0,,,,1.0,,,,,,,,,,,,,,,,,,12,"Arie Co., Ltd.",sub-account,,,,,,,,,,
+928,7.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+928,7.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+928,8.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,650681.0,59152.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,650681.0,0.0,O,Exempt,,,,,,
+928,8.0,,,,1.0,,,,,,,,,,,,,,,,,,2,"Pole Co., Ltd.",sub-account,,,,,,,,,,
+928,8.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+928,8.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+928,9.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,167932.0,15266.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,167932.0,0.0,O,Exempt,,,,,,
+928,9.0,,,,1.0,,,,,,,,,,,,,,,,,,8,"Yamashita Co., Ltd.",sub-account,,,,,,,,,,
+928,9.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,
+928,9.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+928,10.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10B100040,Accounts payable - trade,,,,19252.0,0.0,O,Exempt,10E100120,Purchase allowance and returns,,,,19252.0,1750.0,S10,Standard 10%,,,,,,
+928,10.0,,1.0,,,,,,,,,,,1,"Y2 Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+928,10.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+928,10.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department
+929,,,,,,126,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+929,1.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,1819272.0,165388.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,1819272.0,0.0,O,Exempt,,,,,,
+929,1.0,,,,1.0,,,,,,,,,,,,,,,,,,9,"Saito Industries Co., Ltd.",sub-account,,,,,,,,,,
+929,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+929,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+929,2.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,1159628.0,105420.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,1159628.0,0.0,O,Exempt,,,,,,
+929,2.0,,,,1.0,,,,,,,,,,,,,,,,,,15,"Hanamaru Trading Co., Ltd.",sub-account,,,,,,,,,,
+929,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+929,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+929,3.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,3639444.0,330858.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,3639444.0,0.0,O,Exempt,,,,,,
+929,3.0,,,,1.0,,,,,,,,,,,,,,,,,,7,"Sunset Co., Ltd.",sub-account,,,,,,,,,,
+929,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+929,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+929,4.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10B100040,Accounts payable - trade,,,,18748.0,0.0,O,Exempt,10E100120,Purchase allowance and returns,,,,18748.0,1704.0,S10,Standard 10%,,,,,,
+929,4.0,,1.0,,,,,,,,,,,15,"Hanamaru Trading Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+929,4.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+929,4.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department
+929,5.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,77565.0,7051.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,77565.0,0.0,O,Exempt,,,,,,
+929,5.0,,,,1.0,,,,,,,,,,,,,,,,,,2,"Pole Co., Ltd.",sub-account,,,,,,,,,,
+929,5.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+929,5.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+929,6.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,24696.0,2245.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,24696.0,0.0,O,Exempt,,,,,,
+929,6.0,,,,1.0,,,,,,,,,,,,,,,,,,8,"Yamashita Co., Ltd.",sub-account,,,,,,,,,,
+929,6.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,030,Nagoya Branch,department,,,
+929,6.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+930,,,,,,127,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+930,1.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,3841014.0,349183.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,3841014.0,0.0,O,Exempt,,,,,,
+930,1.0,,,,1.0,,,,,,,,,,,,,,,,,,5,"Kofujimaru Co., Ltd.",sub-account,,,,,,,,,,
+930,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+930,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+930,2.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,929328.0,84484.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,929328.0,0.0,O,Exempt,,,,,,
+930,2.0,,,,1.0,,,,,,,,,,,,,,,,,,4,"Attach Co., Ltd.",sub-account,,,,,,,,,,
+930,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+930,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+930,3.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,3148603.0,286236.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,3148603.0,0.0,O,Exempt,,,,,,
+930,3.0,,,,1.0,,,,,,,,,,,,,,,,,,10,"Suzuki Sales Co., Ltd.",sub-account,,,,,,,,,,
+930,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+930,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+930,4.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,3600809.0,327346.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,3600809.0,0.0,O,Exempt,,,,,,
+930,4.0,,,,1.0,,,,,,,,,,,,,,,,,,6,"Hanada Co., Ltd.",sub-account,,,,,,,,,,
+930,4.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+930,4.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+930,5.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10B100040,Accounts payable - trade,,,,14817.0,0.0,O,Exempt,10E100120,Purchase allowance and returns,,,,14817.0,1347.0,S10,Standard 10%,,,,,,
+930,5.0,,1.0,,,,,,,,,,,4,"Attach Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+930,5.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+930,5.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department
+930,6.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,148176.0,13470.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,148176.0,0.0,O,Exempt,,,,,,
+930,6.0,,,,1.0,,,,,,,,,,,,,,,,,,8,"Yamashita Co., Ltd.",sub-account,,,,,,,,,,
+930,6.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+930,6.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+930,7.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,215458.0,19587.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,215458.0,0.0,O,Exempt,,,,,,
+930,7.0,,,,1.0,,,,,,,,,,,,,,,,,,2,"Pole Co., Ltd.",sub-account,,,,,,,,,,
+930,7.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,040,Osaka Branch,department,,,
+930,7.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+931,,,,,,128,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+931,1.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,24696.0,2245.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,24696.0,0.0,O,Exempt,,,,,,
+931,1.0,,,,1.0,,,,,,,,,,,,,,,,,,8,"Yamashita Co., Ltd.",sub-account,,,,,,,,,,
+931,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+931,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+931,2.0,,,,,,,,,,Purchases for the period from July 1th to July 31th,10E100130,Cost of purchased goods,,,,198221.0,18020.0,S10,Standard 10%,10B100040,Accounts payable - trade,,,,198221.0,0.0,O,Exempt,,,,,,
+931,2.0,,,,1.0,,,,,,,,,,,,,,,,,,2,"Pole Co., Ltd.",sub-account,,,,,,,,,,
+931,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+931,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+932,,,,,,129,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+932,1.0,,,,,,,,,,"July 31th Slip No. 176 Pole Co., Ltd.",10B100040,Accounts payable - trade,,,,1297055.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,1297055.0,0.0,O,Exempt,,,,,,
+932,1.0,,1.0,,,,,,,,,,,2,"Pole Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+932,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+932,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+932,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+933,,,,,,130,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+933,1.0,,,,,,,,,,"July 31th Slip No. 177 Kofujimaru Co., Ltd.",10B100040,Accounts payable - trade,,,,3725574.0,0.0,O,Exempt,10B100030,Notes payable - trade,,,,3725574.0,0.0,O,Exempt,,,,,,
+933,1.0,,1.0,,,,,,,,,,,5,"Kofujimaru Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+933,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+933,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+934,,,,,,131,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+934,1.0,,,,,,,,,,"July 31th Slip No. 178 Sunset Co., Ltd.",10B100040,Accounts payable - trade,,,,3533096.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,3533096.0,0.0,O,Exempt,,,,,,
+934,1.0,,1.0,,,,,,,,,,,7,"Sunset Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+934,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+934,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+934,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+935,,,,,,132,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+935,1.0,,,,,,,,,,"July 31th Slip No. 179 Saito Industries Co., Ltd.",10B100040,Accounts payable - trade,,,,1712425.0,0.0,O,Exempt,10B100030,Notes payable - trade,,,,1712425.0,0.0,O,Exempt,,,,,,
+935,1.0,,1.0,,,,,,,,,,,9,"Saito Industries Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+935,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+935,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+936,,,,,,133,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+936,1.0,,,,,,,,,,"July 31th Slip No. 181 Suzuki Sales Co., Ltd.",10B100040,Accounts payable - trade,,,,3060500.0,0.0,O,Exempt,10B100030,Notes payable - trade,,,,3060500.0,0.0,O,Exempt,,,,,,
+936,1.0,,1.0,,,,,,,,,,,10,"Suzuki Sales Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+936,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+936,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+937,,,,,,134,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+937,1.0,,,,,,,,,,"July 31th Slip No. 182 Arie Co., Ltd.",10B100040,Accounts payable - trade,,,,316537.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,316537.0,0.0,O,Exempt,,,,,,
+937,1.0,,1.0,,,,,,,,,,,12,"Arie Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+937,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+937,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+937,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+938,,,,,,135,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+938,1.0,,,,,,,,,,"July 31th Slip No. 183 Nakamura Industries Co., Ltd.",10B100040,Accounts payable - trade,,,,1291839.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,1291839.0,0.0,O,Exempt,,,,,,
+938,1.0,,1.0,,,,,,,,,,,13,"Nakamura Industries Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+938,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+938,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+938,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+939,,,,,,136,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+939,1.0,,,,,,,,,,July 31th Slip No. 184 West LLC,10B100040,Accounts payable - trade,,,,2864586.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,2864586.0,0.0,O,Exempt,,,,,,
+939,1.0,,1.0,,,,,,,,,,,14,West LLC,sub-account,,,,,,,,,,,,,,,,,,,
+939,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+939,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+939,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+940,,,,,,137,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+940,1.0,,,,,,,,,,"July 31th Slip No. 185 Hanamaru Trading Co., Ltd.",10B100040,Accounts payable - trade,,,,1109128.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,1109128.0,0.0,O,Exempt,,,,,,
+940,1.0,,1.0,,,,,,,,,,,15,"Hanamaru Trading Co., Ltd.",sub-account,,,,,,,,,,,,,,,,,,,
+940,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+940,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+940,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+941,,,,,,139,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+941,1.0,,,,,,,,,,Film maturity Imai Department Store,10A100020,Cash and deposits,,,,20392404.0,0.0,O,Exempt,10A100060,Notes receivable - trade,,,,20392404.0,0.0,O,Exempt,,,,,,
+941,1.0,,1.0,,,,,,,,,,,1,Mizuho Bank,sub-account,,,,,,,,,,,,,,,,,,,
+941,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+941,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+942,,,,,,140,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+942,1.0,,,,,,,,,,Date of bill dates Koto Maru,10B100030,Notes payable - trade,,,,5237507.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,5237507.0,0.0,O,Exempt,,,,,,
+942,1.0,,,,1.0,,,,,,,,,,,,,,,,,,1,Mizuho Bank,sub-account,,,,,,,,,,
+942,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+942,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+942,2.0,,,,,,,,,,Date of bill dates Saito Sangyo,10B100030,Notes payable - trade,,,,2599235.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,2599235.0,0.0,O,Exempt,,,,,,
+942,2.0,,,,1.0,,,,,,,,,,,,,,,,,,1,Mizuho Bank,sub-account,,,,,,,,,,
+942,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+942,2.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+942,3.0,,,,,,,,,,Salugary date of falling day Suzuki Sales,10B100030,Notes payable - trade,,,,4640751.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,4640751.0,0.0,O,Exempt,,,,,,
+942,3.0,,,,1.0,,,,,,,,,,,,,,,,,,1,Mizuho Bank,sub-account,,,,,,,,,,
+942,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+942,3.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+943,,,,,,145,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+943,1.0,,,,,,,,,,Freight,10E200870,Freight costs,,,,165200.0,15018.0,S10,Standard 10%,10B100630,Accounts payable - other,,,,165200.0,0.0,O,Exempt,,,,,,
+943,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,050,Kyushu Sales Office,department,,,
+943,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+944,,,,,,146,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+944,1.0,,,,,,,,,,Loan Repayment,10A100020,Cash and deposits,,,,40000.0,0.0,O,Exempt,10A100610,Short-term loans receivable,,,,40000.0,0.0,O,Exempt,,,,,,
+944,1.0,,1.0,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,,,,,,,,,,
+944,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+944,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+945,,,,,,147,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+945,1.0,,,,,,,,,,Regular Savings Deposit,10A100020,Cash and deposits,,,,500000.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,625000.0,0.0,O,Exempt,,,,,,
+945,1.0,,,,1.0,,,,,,,,,,,,,,,,,,20,Mizuho Main Branch,sub-account,,,,,,,,,,
+945,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+945,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+945,2.0,,,,,,,,,,Insurance Reserve Fund,10A230570,Insurance funds,,,,125000.0,0.0,O,Exempt,,,,,,,,,,,,,,,
+945,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+946,,,,,,148,2021-07-31,2021-02-01,1,21,,,,,,,,,,,,,,,,,,,,,,,,,
+946,1.0,,,,,,,,,,Loan Repayment,10B100790,Short-term borrowings,,,,653500.0,0.0,O,Exempt,10A100020,Cash and deposits,,,,686175.0,0.0,O,Exempt,,,,,,
+946,1.0,,,,1.0,,,,,,,,,,,,,,,,,,1,Mizuho Bank,sub-account,,,,,,,,,,
+946,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department,,,
+946,1.0,,,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,000,Common Department,department
+946,2.0,,,,,,,,,,Interest,10E300020,Interest expenses,,,,32675.0,0.0,X,Non-Purchase,,,,,,,,,,,,,,,
+946,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,020,Tokyo Branch,department,,,

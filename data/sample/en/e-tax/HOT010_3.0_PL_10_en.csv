@@ -1,0 +1,843 @@
+﻿name,B,category,seq,account_name,amount,type,level,Ledger_Account_Number,element_name,English_Label
+　Profit and Loss,,,5.0,Profit and Loss,,T,1,10_000000,,Profit and Loss
+　　Revenue from operating activities,,Net sales,,Revenue from operating activities,,T,2,10D100010,RevenueFromOperatingActivitiesAbstract,Revenue from operating activities
+　　　Net sales,,Net sales,,Net sales,,T,3,10D100020,NetSalesAbstract,Net sales
+　　　　Net sales,0.0,Net sales,,Net sales,,1,4,10D100030,NetSales,Net sales
+　　　Operating revenue,,Net sales,,Operating revenue,,T,3,10D100040,OperatingRevenue2Abstract,Operating revenue
+　　　　Operating revenue,0.0,Net sales,,Operating revenue,,1,4,10D100050,OperatingRevenue1,Operating revenue
+　　　Operating revenue,,Net sales,,Operating revenue,,T,3,10D100060,OperatingRevenue2Abstract,Operating revenue
+　　　　Operating revenue,0.0,Net sales,,Operating revenue,,1,4,10D100070,OperatingRevenue2,Operating revenue
+　　　　Gross operating revenue,0.0,Net sales,,Gross operating revenue,,1,4,10D100080,GrossOperatingRevenue,Gross operating revenue
+　　　Revenue from operating activities - detail,,Net sales,,Revenue from operating activities - detail,,T,3,10D100090,RevenueFromOperatingActivitiesDetailAbstract,Revenue from operating activities - detail
+　　　　Gross sales,0.0,Net sales,,Gross sales,,T,4,10D100100,GrossSalesRevOA,Gross sales
+　　　　　Gross sales from electronic transactions,0.0,Net sales,,Gross sales from electronic transactions,,T,5,10D100103,,Gross sales from electronic transactions
+　　　　　　Sales from electronic transactions,0.0,Net sales,,Sales from electronic transactions,,0,6,10D100101,,Sales from electronic transactions
+　　　　　　Sales allowance and returns from electronic transactions from electronic transactions,0.0,Net sales,,Sales allowance and returns from electronic transactions from electronic transactions,,0,6,10D100111,,Sales allowance and returns from electronic transactions from electronic transactions
+　　　　Sales allowance and returns,0.0,Net sales,,Sales allowance and returns,,0,4,10D100110,SalesAllowanceAndReturnsRevOA,Sales allowance and returns
+　　　　　Gross sales from traditional transactions,0.0,Net sales,,Gross sales from traditional transactions,,T,5,10D100104,,Gross sales from traditional transactions
+　　　　　　Sales from traditional transactions,0.0,Net sales,,Sales from traditional transactions,,0,6,10D100102,,Sales from traditional transactions
+　　　　　　Sales allowance and returns from traditional transactions,0.0,Net sales,,Sales allowance and returns from traditional transactions,,0,6,10D100112,,Sales allowance and returns from traditional transactions
+　　　　Net sales of goods,0.0,Net sales,,Net sales of goods,,1,4,10D100120,NetSalesOfGoodsRevOA,Net sales of goods
+　　　　Net sales of finished goods,0.0,Net sales,,Net sales of finished goods,,1,4,10D100130,NetSalesOfFinishedGoodsRevOA,Net sales of finished goods
+　　　　Net sales of merchandise and finished goods,0.0,Net sales,,Net sales of merchandise and finished goods,,1,4,10D100140,NetSalesOfMerchandiseAndFinishedGoodsRevOA,Net sales of merchandise and finished goods
+　　　　Sales of semi-finished goods,0.0,Net sales,,Sales of semi-finished goods,,1,4,10D100150,SalesOfSemiFinishedGoodsRevOA,Sales of semi-finished goods
+　　　　Sales of raw materials,0.0,Net sales,,Sales of raw materials,,1,4,10D100160,SalesOfRawMaterialsRevOA,Sales of raw materials
+　　　　Sales of by-products,0.0,Net sales,,Sales of by-products,,1,4,10D100170,SalesOfByProductsRevOA,Sales of by-products
+　　　　Sales of scraps,0.0,Net sales,,Sales of scraps,,1,4,10D100180,SalesOfScrapsRevOA,Sales of scraps
+　　　　Service revenue,0.0,Net sales,,Service revenue,,1,4,10D100190,ServiceRevenueRevOA,Service revenue
+　　　　Service sales,0.0,Net sales,,Service sales,,1,4,10D100200,ServiceSalesRevOA,Service sales
+　　　　Installment sales,0.0,Net sales,,Installment sales,,1,4,10D100210,InstallmentSalesRevOA,Installment sales
+　　　　Real estate sales,0.0,Net sales,,Real estate sales,,1,4,10D100220,RealEstateSalesRevOA,Real estate sales
+　　　　Sales in development business,0.0,Net sales,,Sales in development business,,1,4,10D100230,SalesOnDevelopmentBusinessRevOA,Sales in development business
+　　　　Sales in real estate business,0.0,Net sales,,Sales in real estate business,,1,4,10D100240,SalesOnRealEstateBusinessRevOA,Sales in real estate business
+　　　　Sales in leasing business,0.0,Net sales,,Sales in leasing business,,1,4,10D100250,SalesOnLeaseBusinessRevOA,Sales in leasing business
+　　　　Sales in residential property sales business,0.0,Net sales,,Sales in residential property sales business,,1,4,10D100260,SalesOnSellingBusinessRevOA,Sales in residential property sales business
+　　　　Sales in other businesses,0.0,Net sales,,Sales in other businesses,,1,4,10D100270,SalesOnOtherBusinessRevOA,Sales in other businesses
+　　　　Leasing business revenue,0.0,Net sales,,Leasing business revenue,,1,4,10D100280,LeaseBusinessRevenueRevOA,Leasing business revenue
+　　　　Leasing business revenue,0.0,Net sales,,Leasing business revenue,,1,4,10D100290,LeaseBusinessRevenueSpecificRevOA,Leasing business revenue
+　　　　Lease revenue,0.0,Net sales,,Lease revenue,,1,4,10D100300,RentIncomeRevOA,Lease revenue
+　　　　Real estate lease revenue,0.0,Net sales,,Real estate lease revenue,,1,4,10D100310,RentIncomeOfRealEstateRevOA,Real estate lease revenue
+　　　　Real estate income,0.0,Net sales,,Real estate income,,1,4,10D100320,RealEstateIncomeRevOA,Real estate income
+　　　　Commission income,0.0,Net sales,,Commission income,,1,4,10D100330,CommissionIncomeRevOA,Commission income
+　　　　Processing income,0.0,Net sales,,Processing income,,1,4,10D100340,ProcessingIncomeRevOA,Processing income
+　　　　Royalty income,0.0,Net sales,,Royalty income,,1,4,10D100350,RoyaltyIncomeRevOA,Royalty income
+　　　　Consulting income,0.0,Net sales,,Consulting income,,1,4,10D100360,ConsultingIncomeRevOA,Consulting income
+　　　　Income from franchised stores,0.0,Net sales,,Income from franchised stores,,1,4,10D100370,IncomeFromFranchisedStoresRevOA,Income from franchised stores
+　　　　Dividends from subsidiaries and associates,0.0,Net sales,,Dividends from subsidiaries and associates,,1,4,10D100380,DividendsFromSubsidiariesAndAffiliatesRevOA,Dividends from subsidiaries and associates
+　　　　Dividend income,0.0,Net sales,,Dividend income,,1,4,10D100390,DividendsIncomeRevOA,Dividend income
+　　　　Commissions from subsidiaries and associates,0.0,Net sales,,Commissions from subsidiaries and associates,,1,4,10D100400,CommissionsFromSubsidiariesAndAffiliatesRevOA,Commissions from subsidiaries and associates
+　　　　Interest on loans receivable from subsidiaries and associates,0.0,Net sales,,Interest on loans receivable from subsidiaries and associates,,1,4,10D100410,InterestOnLoansToSubsidiariesAndAffiliatesRevOA,Interest on loans receivable from subsidiaries and associates
+　　　　Interest on securities of subsidiaries and associates,0.0,Net sales,,Interest on securities of subsidiaries and associates,,1,4,10D100420,InterestOnSecuritiesOfSubsidiariesAndAffiliatesRevOA,Interest on securities of subsidiaries and associates
+　　　　Management fee income,0.0,Net sales,,Management fee income,,1,4,10D100430,ManagementFeeIncomeRevOA,Management fee income
+　　　　Consulting fee income,0.0,Net sales,,Consulting fee income,,1,4,10D100440,ConsultingFeeIncomeRevOA,Consulting fee income
+　　　　Trademark fee income,0.0,Net sales,,Trademark fee income,,1,4,10D100450,TrademarkFeeIncomeRevOA,Trademark fee income
+　　　　Asset rental income,0.0,Net sales,,Asset rental income,,1,4,10D100460,AssetRentalIncomeRevOA,Asset rental income
+　　　　Completed service contracts,0.0,Net sales,,Completed service contracts,,1,4,10D100470,ContractsCompletedRevOA,Completed service contracts
+　　　　Construction sales,0.0,Net sales,,Construction sales,,1,4,10D100480,ConstructionSalesRevOA,Construction sales
+　　　　Sales of software development,0.0,Net sales,,Sales of software development,,1,4,10D100490,SalesOfSoftwareDevelopmentRevOA,Sales of software development
+　　　　Sales of information service,0.0,Net sales,,Sales of information service,,1,4,10D100500,SalesOfInformationServiceRevOA,Sales of information service
+　　　　Sales of maintenance service,0.0,Net sales,,Sales of maintenance service,,1,4,10D100510,SalesOfMaintenanceServiceRevOA,Sales of maintenance service
+　　　　Annual fee income,0.0,Net sales,,Annual fee income,,1,4,10D100520,AnnualFeeIncomeRevOA,Annual fee income
+　　　　Warehouse income,0.0,Net sales,,Warehouse income,,1,4,10D100530,WarehouseIncomeRevOA,Warehouse income
+　　　　Warehousing fee income,0.0,Net sales,,Warehousing fee income,,1,4,10D100540,WarehousingFeeIncomeRevOA,Warehousing fee income
+　　　　Stevedoring income,0.0,Net sales,,Stevedoring income,,1,4,10D100550,StevedoringIncomeRevOA,Stevedoring income
+　　　　Transportation income,0.0,Net sales,,Transportation income,,1,4,10D100560,TransportationIncomeRevOA,Transportation income
+　　　　Miscellaneous transportation income,0.0,Net sales,,Miscellaneous transportation income,,1,4,10D100570,MiscellaneousTransportationIncomeRevOA,Miscellaneous transportation income
+　　　　Production income,0.0,Net sales,,Production income,,1,4,10D100580,ProductionIncomeRevOA,Production income
+　　　　Income from broadcasting business,0.0,Net sales,,Income from broadcasting business,,1,4,10D100590,IncomeFromBroadcastingBusinessRevOA,Income from broadcasting business
+　　　　Income from television business,0.0,Net sales,,Income from television business,,1,4,10D100600,IncomeFromTelevisionBusinessRevOA,Income from television business
+　　　　Income from radio business,0.0,Net sales,,Income from radio business,,1,4,10D100610,IncomeFromRadioBusinessRevOA,Income from radio business
+　　　　Rental sales,0.0,Net sales,,Rental sales,,1,4,10D100620,RentalSalesRevOA,Rental sales
+　　　　Sales of goods on consignment,0.0,Net sales,,Sales of goods on consignment,,1,4,10D100630,SalesOfGoodsOnConsignmentRevOA,Sales of goods on consignment
+　　　　Indent sales,0.0,Net sales,,Indent sales,,1,4,10D100640,IndentSalesRevOA,Indent sales
+　　　　Other sales,0.0,Net sales,,Other sales,,1,4,10D100650,OtherSalesRevOA,Other sales
+　　　　Other business revenue,0.0,Net sales,,Other business revenue,,1,4,10D100660,OtherBusinessRevenue1RevOA,Other business revenue
+　　　　Other business revenue,0.0,Net sales,,Other business revenue,,1,4,10D100670,OtherBusinessRevenue2RevOA,Other business revenue
+　　　　Other operating revenue,0.0,Net sales,,Other operating revenue,,1,4,10D100680,OtherOperatingRevenue1RevOA,Other operating revenue
+　　　　Other operating revenue,0.0,Net sales,,Other operating revenue,,1,4,10D100690,OtherOperatingRevenue2RevOA,Other operating revenue
+　　　　Other revenue,0.0,Net sales,,Other revenue,,1,4,10D100700,OtherRevenue1RevOA,Other revenue
+　　　　Other revenue,0.0,Net sales,,Other revenue,,1,4,10D100710,OtherRevenue2RevOA,Other revenue
+　　　　Other,0.0,Net sales,,Other,,1,4,10D100720,OtherRevOA,Other
+　　　　Financial revenue,,Net sales,,Financial revenue,,T,4,10D100730,FinancialRevenueAbstract,Financial revenue
+　　　　　Financial revenue,0.0,Net sales,,Financial revenue,,1,5,10D100740,FinancialRevenue,Financial revenue
+　　　　　Financing revenue,0.0,Net sales,,Financing revenue,,1,5,10D100750,FinancingRevenueRevOA,Financing revenue
+　　　　　Lease revenue,0.0,Net sales,,Lease revenue,,1,5,10D100760,LeaseRevenueRevOA,Lease revenue
+　　　　　Revenue from operational investment securities,0.0,Net sales,,Revenue from operational investment securities,,1,5,10D100770,RevenueFromOperationalInvestmentSecuritiesRevOA,Revenue from operational investment securities
+　　　　　Revenue from agency services of installment purchase,0.0,Net sales,,Revenue from agency services of installment purchase,,1,5,10D100780,RevenueFromAgencyServicesOfInstallmentPurchaseRevOA,Revenue from agency services of installment purchase
+　　　　　Revenue from credit card business,0.0,Net sales,,Revenue from credit card business,,1,5,10D100790,CreditCardRevenueRevOA,Revenue from credit card business
+　　　　　Revenue from installment sales finance business,0.0,Net sales,,Revenue from installment sales finance business,,1,5,10D100800,PerItemRevenueRevOA,Revenue from installment sales finance business
+　　　　　Discount revenue,0.0,Net sales,,Discount revenue,,1,5,10D100810,DiscountRevenueRevOA,Discount revenue
+　　　　　Revenue from credit guarantee,0.0,Net sales,,Revenue from credit guarantee,,1,5,10D100820,RevenueFromCreditGuaranteeRevOA,Revenue from credit guarantee
+　　　　　Income from investment partnership management,0.0,Net sales,,Income from investment partnership management,,1,5,10D100830,IncomeFromPartnershipManagementRevOA,Income from investment partnership management
+　　　　　Name transfer fee income,0.0,Net sales,,Name transfer fee income,,1,5,10D100840,NameTransferFeeRevOA,Name transfer fee income
+　　　　　Loan agency revenue,0.0,Net sales,,Loan agency revenue,,1,5,10D100850,LoanAgencyRevenueRevOA,Loan agency revenue
+　　　　　Proceeds from purchased receivables,0.0,Net sales,,Proceeds from purchased receivables,,1,5,10D100860,CollectionFromPurchasedReceivableRevOA,Proceeds from purchased receivables
+　　　　　Interest on collateral money for securities borrowed,0.0,Net sales,,Interest on collateral money for securities borrowed,,1,5,10D100870,InterestOnCollateralMoneyForSecuritiesBorrowedRevOA,Interest on collateral money for securities borrowed
+　　　　　Charge on securities loaned,0.0,Net sales,,Charge on securities loaned,,1,5,10D100880,ChargeOnSecuritiesLoanedRevOA,Charge on securities loaned
+　　　　　Interest on loans on margin transaction,0.0,Net sales,,Interest on loans on margin transaction,,1,5,10D100890,InterestOnLoansOnMarginTransactionRevOA,Interest on loans on margin transaction
+　　　　　Interest on bond financing,0.0,Net sales,,Interest on bond financing,,1,5,10D100900,InterestOnBondFinancingRevOA,Interest on bond financing
+　　　　　Interest on general loans,0.0,Net sales,,Interest on general loans,,1,5,10D100910,InterestOnGeneralLoansRevOA,Interest on general loans
+　　　　　Gain on investments,0.0,Net sales,,Gain on investments,,1,5,10D100920,GainOnInvestmentRevOA,Gain on investments
+　　　　　Other financial revenue,0.0,Net sales,,Other financial revenue,,1,5,10D100930,OtherFinancialRevenueRevOA,Other financial revenue
+　　COS and expenses from operating activities,,Cost of sales,,COS and expenses from operating activities,,T,2,10E100010,COSAndExpensesFromOperatingActivitiesAbstract,COS and expenses from operating activities
+　　　Cost of sales,,Cost of sales,,Cost of sales,,T,3,10E100020,CostOfSalesAbstract,Cost of sales
+　　　　Cost of sales,0.0,Cost of sales,,Cost of sales,,1,4,10E100030,CostOfSales,Cost of sales
+　　　Operating expenses,,Cost of sales,,Operating expenses,,T,3,10E100040,OperatingExpensesAbstract,Operating expenses
+　　　　Operating expenses,0.0,Cost of sales,,Operating expenses,,1,4,10E100050,OperatingExpenses,Operating expenses
+　　　Operating cost,,Cost of sales,,Operating cost,,T,3,10E100060,OperatingCostAbstract,Operating cost
+　　　　Operating cost,0.0,Cost of sales,,Operating cost,,1,4,10E100070,OperatingCost,Operating cost
+　　　COS and expenses from operating activities - detail,,Cost of sales,,COS and expenses from operating activities - detail,,T,3,10E100080,COSAndExpensesFromOperatingActivitiesDetailAbstract,COS and expenses from operating activities - detail
+　　　　Cost of goods sold,,Cost of sales,,Cost of goods sold,,T,4,10E100090,CostOfGoodsSoldAbstract,Cost of goods sold
+　　　　　Beginning merchandise inventory,0.0,Cost of sales,,Beginning merchandise inventory,,1,5,10E100100,BeginningGoodsCOS,Beginning merchandise inventory
+　　　　　Total purchase of goods,0.0,Cost of sales,,Total purchase of goods,,T,5,10E100110,TotalPurchaseOfGoods,Total purchase of goods
+　　　　　　Total purchase of goods from electronic transactions,0.0,Cost of sales,,Total purchase of goods from electronic transactions,,T,6,10E100113,,Total purchase of goods from electronic transactions
+　　　　　　　Total purchase of goods from electronic transactions,0.0,Cost of sales,,Total purchase of goods from electronic transactions,,0,7,10E100111,,Total purchase of goods from electronic transactions
+　　　　　　　Cost of purchased goods from electronic transactions,0.0,Cost of sales,,Cost of purchased goods from electronic transactions,,0,7,10E100131,,Cost of purchased goods from electronic transactions
+　　　　　　　Purchase allowance and returns from electronic transactions,0.0,Cost of sales,,Purchase allowance and returns from electronic transactions,,0,7,10E100121,,Purchase allowance and returns from electronic transactions
+　　　　　　Total purchase of goods from traditional transactions,0.0,Cost of sales,,Total purchase of goods from traditional transactions,,T,6,10E100114,,Total purchase of goods from traditional transactions
+　　　　　　　Total purchase of goods from traditional transactions,0.0,Cost of sales,,Total purchase of goods from traditional transactions,,0,7,10E100112,,Total purchase of goods from traditional transactions
+　　　　　　　Cost of purchased goods from traditional transactions,0.0,Cost of sales,,Cost of purchased goods from traditional transactions,,0,7,10E100132,,Cost of purchased goods from traditional transactions
+　　　　　　　Purchase allowance and returns from traditional transactions,0.0,Cost of sales,,Purchase allowance and returns from traditional transactions,,0,7,10E100122,,Purchase allowance and returns from traditional transactions
+　　　　　Purchase allowance and returns,0.0,Cost of sales,,Purchase allowance and returns,,0,5,10E100120,CostNonConstructionSalesPurchaseReturnsAllowances,Purchase allowance and returns
+　　　　　Cost of purchased goods,0.0,Cost of sales,,Cost of purchased goods,,0,5,10E100130,CostOfPurchasedGoods,Cost of purchased goods
+　　　　　Ending merchandise inventory,0.0,Cost of sales,,Ending merchandise inventory,,1,5,10E100140,EndingGoodsCOS,Ending merchandise inventory
+　　　　　Total,0.0,Cost of sales,,Total,,1,5,10E100150,TotalBeginningAndPurchaseOfGoods,Total
+　　　　　Goods transfer to other account,0.0,Cost of sales,,Goods transfer to other account,,1,5,10E100160,GoodsTransferToOtherAccountCOS,Goods transfer to other account
+　　　　　Valuation loss on goods,0.0,Cost of sales,,Valuation loss on goods,,1,5,10E100170,ValuationLossOnGoodsCOS,Valuation loss on goods
+　　　　　Subtotal,0.0,Cost of sales,,Subtotal,,1,5,10E100180,SubtotalCOSGoods,Subtotal
+　　　　　Net,0.0,Cost of sales,,Net,,1,5,10E100190,NetCOSGoods,Net
+　　　　　Cost of goods sold,0.0,Cost of sales,,Cost of goods sold,,1,5,10E100200,CostOfGoodsSold,Cost of goods sold
+　　　　Cost of finished goods sold,,Cost of sales,,Cost of finished goods sold,,T,4,10E100210,CostOfFinishedGoodsSoldAbstract,Cost of finished goods sold
+　　　　　Beginning finished goods inventory,0.0,Cost of sales,,Beginning finished goods inventory,,1,5,10E100220,BeginningFinishedGoodsCOS,Beginning finished goods inventory
+　　　　　Cost of products manufactured,0.0,Cost of sales,,Cost of products manufactured,,1,5,10E100230,CostOfProductsManufactured,Cost of products manufactured
+　　　　　Purchase of finished goods,0.0,Cost of sales,,Purchase of finished goods,,1,5,10E100240,PurchaseOfFinishedGoodsCOS,Purchase of finished goods
+　　　　　Ending finished goods inventory,0.0,Cost of sales,,Ending finished goods inventory,,1,5,10E100250,EndingFinishedGoodsCOS,Ending finished goods inventory
+　　　　　Total,0.0,Cost of sales,,Total,,1,5,10E100260,TotalBeginningFinishedGoodsAndCostOfProductsManufacturedForThePeriod,Total
+　　　　　Finished goods transfer to other account,0.0,Cost of sales,,Finished goods transfer to other account,,1,5,10E100270,FinishedGoodsTransferToOtherAccountCOS,Finished goods transfer to other account
+　　　　　Valuation loss on finished goods,0.0,Cost of sales,,Valuation loss on finished goods,,1,5,10E100280,ValuationLossOnFinishedGoodsCOS,Valuation loss on finished goods
+　　　　　Valuation loss on raw materials,0.0,Cost of sales,,Valuation loss on raw materials,,1,5,10E100290,ValuationLossOnRawMaterialsCOS,Valuation loss on raw materials
+　　　　　Subtotal,0.0,Cost of sales,,Subtotal,,1,5,10E100300,SubtotalCOSFinishedGoods,Subtotal
+　　　　　Net,0.0,Cost of sales,,Net,,1,5,10E100310,NetCOSFinishedGoods,Net
+　　　　　Cost of finished goods sold,0.0,Cost of sales,,Cost of finished goods sold,,1,5,10E100320,CostOfFinishedGoodsSold,Cost of finished goods sold
+　　　　Transfer to other account,0.0,Cost of sales,,Transfer to other account,,1,4,10E100330,TransferToOtherAccountCOS,Transfer to other account
+　　　　Transfer from other account,0.0,Cost of sales,,Transfer from other account,,1,4,10E100340,TransferFromOtherAccountCOS,Transfer from other account
+　　　　Transfer of goods by merger,0.0,Cost of sales,,Transfer of goods by merger,,1,4,10E100350,TransferOfGoodsByMergerCOS,Transfer of goods by merger
+　　　　Cost variances,0.0,Cost of sales,,Cost variances,,1,4,10E100360,CostPriceBalanceCOS,Cost variances
+　　　　Cost of merchandise and finished goods sold,0.0,Cost of sales,,Cost of merchandise and finished goods sold,,1,4,10E100370,CostOfMerchandiseAndFinishedGoodsSoldCOS,Cost of merchandise and finished goods sold
+　　　　　Beginning inventory of merchandise and finished goods,0.0,Cost of sales,,Beginning inventory of merchandise and finished goods,,1,5,10E100380,BeginningMerchandiseAndFinishedGoodsCOS,Beginning inventory of merchandise and finished goods
+　　　　　Cost of purchased merchandise and finished goods,0.0,Cost of sales,,Cost of purchased merchandise and finished goods,,1,5,10E100390,CostOfPurchasedMerchandiseAndFinishedGoodsCOS,Cost of purchased merchandise and finished goods
+　　　　　Total,0.0,Cost of sales,,Total,,1,5,10E100400,TotalBeginningAndCostPurchasedMerchandiseAndFinishedGoodsCOS,Total
+　　　　　Ending inventory of merchandise and finished goods,0.0,Cost of sales,,Ending inventory of merchandise and finished goods,,1,5,10E100410,EndingMerchandiseAndFinishedGoodsCOS,Ending inventory of merchandise and finished goods
+　　　　Cost of raw material sales,0.0,Cost of sales,,Cost of raw material sales,,1,4,10E100420,CostOfRawMaterialSalesCOSExpOA,Cost of raw material sales
+　　　　Cost of service sales,0.0,Cost of sales,,Cost of service sales,,1,4,10E100430,CostOfServiceSalesCOSExpOA,Cost of service sales
+　　　　Cost of sales - real estate,0.0,Cost of sales,,Cost of sales - real estate,,1,4,10E100440,CostOfSalesRealEstateCOSExpOA,Cost of sales - real estate
+　　　　Cost of sales in development business,0.0,Cost of sales,,Cost of sales in development business,,1,4,10E100450,CostOfSalesOnDevelopmentBusinessCOSExpOA,Cost of sales in development business
+　　　　Cost of sales in real estate business,0.0,Cost of sales,,Cost of sales in real estate business,,1,4,10E100460,CostOfSalesOnRealEstateBusinessCOSExpOA,Cost of sales in real estate business
+　　　　Cost of sales in leasing business,0.0,Cost of sales,,Cost of sales in leasing business,,1,4,10E100470,CostOfSalesOnLeaseBusinessCOSExpOA,Cost of sales in leasing business
+　　　　Cost of sales in residential property sales business,0.0,Cost of sales,,Cost of sales in residential property sales business,,1,4,10E100480,CostOfSalesOnSellingBusinessCOSExpOA,Cost of sales in residential property sales business
+　　　　Cost of sales in other businesses,0.0,Cost of sales,,Cost of sales in other businesses,,1,4,10E100490,CostOfSalesOnOtherBusinessCOSExpOA,Cost of sales in other businesses
+　　　　Cost of construction sales,0.0,Cost of sales,,Cost of construction sales,,1,4,10E100500,CostOfConstructionSalesCOSExpOA,Cost of construction sales
+　　　　Cost of sales of software development,0.0,Cost of sales,,Cost of sales of software development,,1,4,10E100510,CostOfSalesOfSoftwareDevelopmentCOSExpOA,Cost of sales of software development
+　　　　Cost of sales of information service,0.0,Cost of sales,,Cost of sales of information service,,1,4,10E100520,CostOfSalesOfInformationServiceCOSExpOA,Cost of sales of information service
+　　　　Cost of sales of maintenance service,0.0,Cost of sales,,Cost of sales of maintenance service,,1,4,10E100530,CostOfSalesOfMaintenanceServiceCOSExpOA,Cost of sales of maintenance service
+　　　　Cost of sales of goods on consignment,0.0,Cost of sales,,Cost of sales of goods on consignment,,1,4,10E100540,CostOfSalesOfGoodsOnConsignmentCOSExpOA,Cost of sales of goods on consignment
+　　　　Cost of indent sales,0.0,Cost of sales,,Cost of indent sales,,1,4,10E100550,CostOfIndentSalesCOSExpOA,Cost of indent sales
+　　　　Cost of completed service contracts,0.0,Cost of sales,,Cost of completed service contracts,,1,4,10E100560,CostOfCompletedWorkCOSExpOA,Cost of completed service contracts
+　　　　Cost of lease revenue,0.0,Cost of sales,,Cost of lease revenue,,1,4,10E100570,RentCostCOSExpOA,Cost of lease revenue
+　　　　Cost of real estate lease revenue,0.0,Cost of sales,,Cost of real estate lease revenue,,1,4,10E100580,CostOfRealEstateRentCOSExpOA,Cost of real estate lease revenue
+　　　　Real estate lease expenses,0.0,Cost of sales,,Real estate lease expenses,,1,4,10E100590,ExpensesOfRealEstateRentCOSExpOA,Real estate lease expenses
+　　　　Cost of sales in leasing business,0.0,Cost of sales,,Cost of sales in leasing business,,1,4,10E100600,LeaseBusinessCostCOSExpOA,Cost of sales in leasing business
+　　　　Cost of sales in residential property sales business,0.0,Cost of sales,,Cost of sales in residential property sales business,,1,4,10E100610,SellingBusinessCostCOSExpOA,Cost of sales in residential property sales business
+　　　　Cost of sales in other businesses,0.0,Cost of sales,,Cost of sales in other businesses,,1,4,10E100620,OtherBusinessCostCOSExpOA,Cost of sales in other businesses
+　　　　Amortization of software,0.0,Cost of sales,,Amortization of software,,1,4,10E100630,AmortizationOfSoftwareCOSExpOA,Amortization of software
+　　　　Maintenance and operating expenses,0.0,Cost of sales,,Maintenance and operating expenses,,1,4,10E100640,MaintenanceAndOperatingExpensesCOSExpOA,Maintenance and operating expenses
+　　　　Program production expenses,0.0,Cost of sales,,Program production expenses,,1,4,10E100650,ProgramProductionExpensesCOSExpOA,Program production expenses
+　　　　Program expenses,0.0,Cost of sales,,Program expenses,,1,4,10E100660,ProgramExpensesCOSExpOA,Program expenses
+　　　　Broadcasting expenses,0.0,Cost of sales,,Broadcasting expenses,,1,4,10E100670,BroadcastingExpensesCOSExpOA,Broadcasting expenses
+　　　　Other business expenses,0.0,Cost of sales,,Other business expenses,,1,4,10E100680,OtherBusinessExpensesCOSExpOA,Other business expenses
+　　　　Other cost,0.0,Cost of sales,,Other cost,,1,4,10E100690,OtherCostCOSExpOA,Other cost
+　　　　Other,0.0,Cost of sales,,Other,,1,4,10E100700,OtherCOSExpOA,Other
+　　　　Financial expenses,,Cost of sales,,Financial expenses,,T,4,10E100710,FinancialExpensesAbstract,Financial expenses
+　　　　　Financial expenses,0.0,Cost of sales,,Financial expenses,,1,5,10E100720,FinancialExpenses,Financial expenses
+　　　　　Cost of operational investment securities,0.0,Cost of sales,,Cost of operational investment securities,,1,5,10E100730,CostOfOperationalInvestmentSecuritiesCOSExpOA,Cost of operational investment securities
+　　　　　Interest on borrowings,0.0,Cost of sales,,Interest on borrowings,,1,5,10E100740,InterestOnLoansCOSExpOA,Interest on borrowings
+　　　　　Borrowing fee on securities,0.0,Cost of sales,,Borrowing fee on securities,,1,5,10E100750,BorrowingFeeOnSecuritiesCOSExpOA,Borrowing fee on securities
+　　　　　Cost of purchased receivables,0.0,Cost of sales,,Cost of purchased receivables,,1,5,10E100760,CostOfPurchasedReceivableCOSExpOA,Cost of purchased receivables
+　　　　　Interest on collateral money received for securities lent,0.0,Cost of sales,,Interest on collateral money received for securities lent,,1,5,10E100770,InterestOnCollateralMoneyReceivedForSecuritiesLentCOSExpOA,Interest on collateral money received for securities lent
+　　　　　Other financial expenses,0.0,Cost of sales,,Other financial expenses,,1,5,10E100780,OtherFinancialExpensesCOSExpOA,Other financial expenses
+"　　　　Selling, general and administrative expenses",,SG&A (cost of sales),,"Selling, general and administrative expenses",,T,4,10E110010,OperatingCostAbstract,"Selling, general and administrative expenses"
+　　　　　Sales commission,0.0,SG&A (cost of sales),,Sales commission,,1,5,10E110020,OtherCostCOSExpOA,Sales commission
+　　　　　Packing expenses,0.0,SG&A (cost of sales),,Packing expenses,,1,5,10E110030,OtherCostCOSExpOA,Packing expenses
+　　　　　Transportation costs,0.0,SG&A (cost of sales),,Transportation costs,,1,5,10E110040,OtherCostCOSExpOA,Transportation costs
+　　　　　Advertising expenses,0.0,SG&A (cost of sales),,Advertising expenses,,1,5,10E110050,OtherCostCOSExpOA,Advertising expenses
+　　　　　Sample expenses,0.0,SG&A (cost of sales),,Sample expenses,,1,5,10E110060,OtherCostCOSExpOA,Sample expenses
+　　　　　Storage costs,0.0,SG&A (cost of sales),,Storage costs,,1,5,10E110070,OtherCostCOSExpOA,Storage costs
+　　　　　Delivery examination expenses,0.0,SG&A (cost of sales),,Delivery examination expenses,,1,5,10E110080,OtherCostCOSExpOA,Delivery examination expenses
+　　　　　Remuneration for directors (and other officers),0.0,SG&A (cost of sales),,Remuneration for directors (and other officers),,1,5,10E110090,OtherCostCOSExpOA,Remuneration for directors (and other officers)
+　　　　　Salaries,0.0,SG&A (cost of sales),,Salaries,,1,5,10E110100,OtherCostCOSExpOA,Salaries
+　　　　　Wages,0.0,SG&A (cost of sales),,Wages,,1,5,10E110110,OtherCostCOSExpOA,Wages
+　　　　　Allowance,0.0,SG&A (cost of sales),,Allowance,,1,5,10E110120,OtherCostCOSExpOA,Allowance
+　　　　　Bonuses,0.0,SG&A (cost of sales),,Bonuses,,1,5,10E110130,OtherCostCOSExpOA,Bonuses
+　　　　　Welfare expenses,0.0,SG&A (cost of sales),,Welfare expenses,,1,5,10E110140,OtherCostCOSExpOA,Welfare expenses
+　　　　　Entertainment expenses,0.0,SG&A (cost of sales),,Entertainment expenses,,1,5,10E110150,OtherCostCOSExpOA,Entertainment expenses
+　　　　　Travel expenses,0.0,SG&A (cost of sales),,Travel expenses,,1,5,10E110160,OtherCostCOSExpOA,Travel expenses
+　　　　　Transportation expenses,0.0,SG&A (cost of sales),,Transportation expenses,,1,5,10E110170,OtherCostCOSExpOA,Transportation expenses
+　　　　　Communication expenses,0.0,SG&A (cost of sales),,Communication expenses,,1,5,10E110180,OtherCostCOSExpOA,Communication expenses
+　　　　　Heating and lighting expenses,0.0,SG&A (cost of sales),,Heating and lighting expenses,,1,5,10E110190,OtherCostCOSExpOA,Heating and lighting expenses
+　　　　　Supplies expenses,0.0,SG&A (cost of sales),,Supplies expenses,,1,5,10E110200,OtherCostCOSExpOA,Supplies expenses
+　　　　　Taxes and dues,0.0,SG&A (cost of sales),,Taxes and dues,,1,5,10E110210,OtherCostCOSExpOA,Taxes and dues
+　　　　　Depreciation,0.0,SG&A (cost of sales),,Depreciation,,1,5,10E110220,OtherCostCOSExpOA,Depreciation
+　　　　　Repair expenses,0.0,SG&A (cost of sales),,Repair expenses,,1,5,10E110230,OtherCostCOSExpOA,Repair expenses
+　　　　　Insurance expenses,0.0,SG&A (cost of sales),,Insurance expenses,,1,5,10E110240,OtherCostCOSExpOA,Insurance expenses
+　　　　　Rent expenses on real estate,0.0,SG&A (cost of sales),,Rent expenses on real estate,,1,5,10E110250,OtherCostCOSExpOA,Rent expenses on real estate
+　　　　　Provision of allowance for doubtful accounts,0.0,SG&A (cost of sales),,Provision of allowance for doubtful accounts,,1,5,10E110260,OtherCostCOSExpOA,Provision of allowance for doubtful accounts
+　　　　　Bad debts expenses,0.0,SG&A (cost of sales),,Bad debts expenses,,1,5,10E110270,OtherCostCOSExpOA,Bad debts expenses
+　　　　　Provision for bonuses,0.0,SG&A (cost of sales),,Provision for bonuses,,1,5,10E110280,OtherCostCOSExpOA,Provision for bonuses
+　　　　　Provision for retirement benefits for directors (and other officers),0.0,SG&A (cost of sales),,Provision for retirement benefits for directors (and other officers),,1,5,10E110290,OtherCostCOSExpOA,Provision for retirement benefits for directors (and other officers)
+　　　　　Provision for bonuses for directors (and other officers),0.0,SG&A (cost of sales),,Provision for bonuses for directors (and other officers),,1,5,10E110300,OtherCostCOSExpOA,Provision for bonuses for directors (and other officers)
+　　　　　Retirement benefit expenses,0.0,SG&A (cost of sales),,Retirement benefit expenses,,1,5,10E110310,OtherCostCOSExpOA,Retirement benefit expenses
+　　　　　Research and development expenses,0.0,SG&A (cost of sales),,Research and development expenses,,1,5,10E110320,OtherCostCOSExpOA,Research and development expenses
+　　　　　Selling expenses,0.0,SG&A (cost of sales),,Selling expenses,,1,5,10E110330,OtherCostCOSExpOA,Selling expenses
+　　　　　General and administrative expenses,,SG&A (cost of sales),,General and administrative expenses,,T,5,10E110340,OperatingCostAbstract,General and administrative expenses
+　　　　　　General and administrative expenses,0.0,SG&A (cost of sales),,General and administrative expenses,,1,6,10E110350,OperatingExpenses,General and administrative expenses
+　　　　　Personnel expenses,0.0,SG&A (cost of sales),,Personnel expenses,,1,5,10E110360,OperatingExpenses,Personnel expenses
+　　　　　Salaries and allowances,0.0,SG&A (cost of sales),,Salaries and allowances,,1,5,10E110370,OperatingExpenses,Salaries and allowances
+　　　　　Salaries and bonuses,0.0,SG&A (cost of sales),,Salaries and bonuses,,1,5,10E110380,OperatingExpenses,Salaries and bonuses
+"　　　　　Salaries, allowances and bonuses",0.0,SG&A (cost of sales),,"Salaries, allowances and bonuses",,1,5,10E110390,OperatingExpenses,"Salaries, allowances and bonuses"
+　　　　　Salaries and allowances and welfare expenses,0.0,SG&A (cost of sales),,Salaries and allowances and welfare expenses,,1,5,10E110400,OperatingExpenses,Salaries and allowances and welfare expenses
+　　　　　Salaries and wages,0.0,SG&A (cost of sales),,Salaries and wages,,1,5,10E110410,OperatingExpenses,Salaries and wages
+　　　　　Bonuses and allowance,0.0,SG&A (cost of sales),,Bonuses and allowance,,1,5,10E110420,OperatingExpenses,Bonuses and allowance
+　　　　　Employees' salaries,0.0,SG&A (cost of sales),,Employees' salaries,,1,5,10E110430,OperatingExpenses,Employees' salaries
+　　　　　Employees' bonuses,0.0,SG&A (cost of sales),,Employees' bonuses,,1,5,10E110440,OperatingExpenses,Employees' bonuses
+　　　　　Employees' salaries and bonuses,0.0,SG&A (cost of sales),,Employees' salaries and bonuses,,1,5,10E110450,OperatingExpenses,Employees' salaries and bonuses
+　　　　　Employees' salaries and allowances,0.0,SG&A (cost of sales),,Employees' salaries and allowances,,1,5,10E110460,OperatingExpenses,Employees' salaries and allowances
+"　　　　　Remuneration, salaries and allowances",0.0,SG&A (cost of sales),,"Remuneration, salaries and allowances",,1,5,10E110470,OperatingExpenses,"Remuneration, salaries and allowances"
+"　　　　　Remuneration, salaries and allowances for directors (and other officers)",0.0,SG&A (cost of sales),,"Remuneration, salaries and allowances for directors (and other officers)",,1,5,10E110480,OperatingExpenses,"Remuneration, salaries and allowances for directors (and other officers)"
+　　　　　Retirement payments,0.0,SG&A (cost of sales),,Retirement payments,,1,5,10E110490,OperatingExpenses,Retirement payments
+　　　　　Provision for retirement benefits,0.0,SG&A (cost of sales),,Provision for retirement benefits,,1,5,10E110500,OperatingExpenses,Provision for retirement benefits
+　　　　　Retirement benefits for directors (and other officers),0.0,SG&A (cost of sales),,Retirement benefits for directors (and other officers),,1,5,10E110510,OperatingExpenses,Retirement benefits for directors (and other officers)
+　　　　　Other salaries,0.0,SG&A (cost of sales),,Other salaries,,1,5,10E110520,OperatingExpenses,Other salaries
+　　　　　Legal and other welfare expenses,0.0,SG&A (cost of sales),,Legal and other welfare expenses,,1,5,10E110530,OperatingExpenses,Legal and other welfare expenses
+　　　　　Legal welfare expenses,0.0,SG&A (cost of sales),,Legal welfare expenses,,1,5,10E110540,OperatingExpenses,Legal welfare expenses
+　　　　　Share-based remuneration expenses,0.0,SG&A (cost of sales),,Share-based remuneration expenses,,1,5,10E110550,OperatingExpenses,Share-based remuneration expenses
+　　　　　Amortization of goodwill,0.0,SG&A (cost of sales),,Amortization of goodwill,,1,5,10E110560,OperatingExpenses,Amortization of goodwill
+　　　　　Share issuance cost,0.0,SG&A (cost of sales),,Share issuance cost,,1,5,10E110570,OperatingExpenses,Share issuance cost
+　　　　　Amortization of business commencement expenses,0.0,SG&A (cost of sales),,Amortization of business commencement expenses,,1,5,10E110580,OperatingExpenses,Amortization of business commencement expenses
+　　　　　Amortization of development expenses,0.0,SG&A (cost of sales),,Amortization of development expenses,,1,5,10E110590,OperatingExpenses,Amortization of development expenses
+　　　　　Fee expenses,0.0,SG&A (cost of sales),,Fee expenses,,1,5,10E110600,OperatingExpenses,Fee expenses
+　　　　　Consulting expenses,0.0,SG&A (cost of sales),,Consulting expenses,,1,5,10E110610,OperatingExpenses,Consulting expenses
+　　　　　Education and training expenses,0.0,SG&A (cost of sales),,Education and training expenses,,1,5,10E110620,OperatingExpenses,Education and training expenses
+　　　　　Training expenses,0.0,SG&A (cost of sales),,Training expenses,,1,5,10E110630,OperatingExpenses,Training expenses
+　　　　　Recruiting expenses,0.0,SG&A (cost of sales),,Recruiting expenses,,1,5,10E110640,OperatingExpenses,Recruiting expenses
+　　　　　Offering expenses,0.0,SG&A (cost of sales),,Offering expenses,,1,5,10E110650,OperatingExpenses,Offering expenses
+　　　　　Outsourcing expenses,0.0,SG&A (cost of sales),,Outsourcing expenses,,1,5,10E110660,CostSalesOutsideOrderExpense,Outsourcing expenses
+　　　　　Administrative outsourcing expenses,0.0,SG&A (cost of sales),,Administrative outsourcing expenses,,1,5,10E110670,OperatingExpenses,Administrative outsourcing expenses
+　　　　　Outsourcing expenses,0.0,SG&A (cost of sales),,Outsourcing expenses,,1,5,10E110680,OperatingExpenses,Outsourcing expenses
+　　　　　Commission expenses,0.0,SG&A (cost of sales),,Commission expenses,,1,5,10E110690,OperatingExpenses,Commission expenses
+　　　　　Rent expenses,0.0,SG&A (cost of sales),,Rent expenses,,1,5,10E110700,OperatingExpenses,Rent expenses
+　　　　　Facility expenses,0.0,SG&A (cost of sales),,Facility expenses,,1,5,10E110710,OperatingExpenses,Facility expenses
+　　　　　Rent expenses on land and buildings,0.0,SG&A (cost of sales),,Rent expenses on land and buildings,,1,5,10E110720,OperatingExpenses,Rent expenses on land and buildings
+　　　　　Rent expenses on land and buildings,0.0,SG&A (cost of sales),,Rent expenses on land and buildings,,1,5,10E110730,OperatingExpenses,Rent expenses on land and buildings
+　　　　　Promotion expenses,0.0,SG&A (cost of sales),,Promotion expenses,,1,5,10E110740,OperatingExpenses,Promotion expenses
+　　　　　Advertising and promotion expenses,0.0,SG&A (cost of sales),,Advertising and promotion expenses,,1,5,10E110750,OperatingExpenses,Advertising and promotion expenses
+　　　　　Business advertising expenses,0.0,SG&A (cost of sales),,Business advertising expenses,,1,5,10E110760,OperatingExpenses,Business advertising expenses
+　　　　　Agent fee,0.0,SG&A (cost of sales),,Agent fee,,1,5,10E110770,OperatingExpenses,Agent fee
+　　　　　Provision for product warranties,0.0,SG&A (cost of sales),,Provision for product warranties,,1,5,10E110780,OperatingExpenses,Provision for product warranties
+　　　　　Provision for warranties for completed construction,0.0,SG&A (cost of sales),,Provision for warranties for completed construction,,1,5,10E110790,OperatingExpenses,Provision for warranties for completed construction
+　　　　　Provision for special repairs,0.0,SG&A (cost of sales),,Provision for special repairs,,1,5,10E110800,OperatingExpenses,Provision for special repairs
+　　　　　Provision for point card certificates,0.0,SG&A (cost of sales),,Provision for point card certificates,,1,5,10E110810,OperatingExpenses,Provision for point card certificates
+　　　　　Provision for loss on interest repayment,0.0,SG&A (cost of sales),,Provision for loss on interest repayment,,1,5,10E110820,OperatingExpenses,Provision for loss on interest repayment
+　　　　　Provision for share-based remuneration,0.0,SG&A (cost of sales),,Provision for share-based remuneration,,1,5,10E110830,OperatingExpenses,Provision for share-based remuneration
+　　　　　Provision for share-based remuneration for directors (and other officers),0.0,SG&A (cost of sales),,Provision for share-based remuneration for directors (and other officers),,1,5,10E110840,OperatingExpenses,Provision for share-based remuneration for directors (and other officers)
+　　　　　Provision for shareholder benefit program,0.0,SG&A (cost of sales),,Provision for shareholder benefit program,,1,5,10E110850,OperatingExpenses,Provision for shareholder benefit program
+　　　　　Transportation and storage costs,0.0,SG&A (cost of sales),,Transportation and storage costs,,1,5,10E110860,OperatingExpenses,Transportation and storage costs
+　　　　　Freight costs,0.0,SG&A (cost of sales),,Freight costs,,1,5,10E110870,OperatingExpenses,Freight costs
+　　　　　Freight and packing costs,0.0,SG&A (cost of sales),,Freight and packing costs,,1,5,10E110880,OperatingExpenses,Freight and packing costs
+　　　　　Freight and incidental costs,0.0,SG&A (cost of sales),,Freight and incidental costs,,1,5,10E110890,OperatingExpenses,Freight and incidental costs
+　　　　　Packing and transportation costs,0.0,SG&A (cost of sales),,Packing and transportation costs,,1,5,10E110900,OperatingExpenses,Packing and transportation costs
+　　　　　Packing and delivery expenses,0.0,SG&A (cost of sales),,Packing and delivery expenses,,1,5,10E110910,OperatingExpenses,Packing and delivery expenses
+　　　　　Freight-out,0.0,SG&A (cost of sales),,Freight-out,,1,5,10E110920,OperatingExpenses,Freight-out
+　　　　　Freight-out,0.0,SG&A (cost of sales),,Freight-out,,1,5,10E110930,OperatingExpenses,Freight-out
+　　　　　Distribution expenses,0.0,SG&A (cost of sales),,Distribution expenses,,1,5,10E110940,OperatingExpenses,Distribution expenses
+　　　　　Shipment expenses,0.0,SG&A (cost of sales),,Shipment expenses,,1,5,10E110950,OperatingExpenses,Shipment expenses
+　　　　　Experimentation and research expenses,0.0,SG&A (cost of sales),,Experimentation and research expenses,,1,5,10E110960,OperatingExpenses,Experimentation and research expenses
+　　　　　Development and research expenses,0.0,SG&A (cost of sales),,Development and research expenses,,1,5,10E110970,OperatingExpenses,Development and research expenses
+　　　　　Technical research expenses,0.0,SG&A (cost of sales),,Technical research expenses,,1,5,10E110980,OperatingExpenses,Technical research expenses
+　　　　　Research expenses,0.0,SG&A (cost of sales),,Research expenses,,1,5,10E110990,OperatingExpenses,Research expenses
+　　　　　Repair and maintenance expenses,0.0,SG&A (cost of sales),,Repair and maintenance expenses,,1,5,10E111000,OperatingExpenses,Repair and maintenance expenses
+　　　　　Donations,0.0,SG&A (cost of sales),,Donations,,1,5,10E111010,OperatingExpenses,Donations
+　　　　　License fee,0.0,SG&A (cost of sales),,License fee,,1,5,10E111020,OperatingExpenses,License fee
+　　　　　Amortization of long-term prepaid expenses,0.0,SG&A (cost of sales),,Amortization of long-term prepaid expenses,,1,5,10E111030,OperatingExpenses,Amortization of long-term prepaid expenses
+　　　　　Utilities expenses,0.0,SG&A (cost of sales),,Utilities expenses,,1,5,10E111040,OperatingExpenses,Utilities expenses
+　　　　　Power utilities expenses,0.0,SG&A (cost of sales),,Power utilities expenses,,1,5,10E111050,OperatingExpenses,Power utilities expenses
+　　　　　Medical expenses,0.0,SG&A (cost of sales),,Medical expenses,,1,5,10E111060,OperatingExpenses,Medical expenses
+　　　　　Business office tax,0.0,SG&A (cost of sales),,Business office tax,,1,5,10E111070,OperatingExpenses,Business office tax
+　　　　　Enterprise tax,0.0,SG&A (cost of sales),,Enterprise tax,,1,5,10E111080,OperatingExpenses,Enterprise tax
+　　　　　Office cost,0.0,SG&A (cost of sales),,Office cost,,1,5,10E111090,OperatingExpenses,Office cost
+　　　　　Stationery expenses,0.0,SG&A (cost of sales),,Stationery expenses,,1,5,10E111100,OperatingExpenses,Stationery expenses
+　　　　　Office supplies expenses,0.0,SG&A (cost of sales),,Office supplies expenses,,1,5,10E111110,OperatingExpenses,Office supplies expenses
+　　　　　Vehicle expenses,0.0,SG&A (cost of sales),,Vehicle expenses,,1,5,10E111120,OperatingExpenses,Vehicle expenses
+　　　　　Meeting expenses,0.0,SG&A (cost of sales),,Meeting expenses,,1,5,10E111130,OperatingExpenses,Meeting expenses
+　　　　　Membership fee,0.0,SG&A (cost of sales),,Membership fee,,1,5,10E111140,OperatingExpenses,Membership fee
+　　　　　Sundry expenses,0.0,SG&A (cost of sales),,Sundry expenses,,1,5,10E111150,OperatingExpenses,Sundry expenses
+　　　　　Book expenses,0.0,SG&A (cost of sales),,Book expenses,,1,5,10E111160,OperatingExpenses,Book expenses
+　　　　　Print expenses,0.0,SG&A (cost of sales),,Print expenses,,1,5,10E111170,OperatingExpenses,Print expenses
+　　　　　Book and printing expenses,0.0,SG&A (cost of sales),,Book and printing expenses,,1,5,10E111180,OperatingExpenses,Book and printing expenses
+　　　　　Research study expenses,0.0,SG&A (cost of sales),,Research study expenses,,1,5,10E111190,OperatingExpenses,Research study expenses
+　　　　　Investigation expenses,0.0,SG&A (cost of sales),,Investigation expenses,,1,5,10E111200,OperatingExpenses,Investigation expenses
+"　　　　　Travel, transportation and communication expenses",0.0,SG&A (cost of sales),,"Travel, transportation and communication expenses",,1,5,10E111210,OperatingExpenses,"Travel, transportation and communication expenses"
+　　　　　Travel and communication expenses,0.0,SG&A (cost of sales),,Travel and communication expenses,,1,5,10E111220,OperatingExpenses,Travel and communication expenses
+　　　　　Travel and transportation expenses,0.0,SG&A (cost of sales),,Travel and transportation expenses,,1,5,10E111230,OperatingExpenses,Travel and transportation expenses
+　　　　　Communication and transportation expenses,0.0,SG&A (cost of sales),,Communication and transportation expenses,,1,5,10E111240,OperatingExpenses,Communication and transportation expenses
+　　　　　Trading related expenses,0.0,SG&A (cost of sales),,Trading related expenses,,1,5,10E111250,OperatingExpenses,Trading related expenses
+　　　　　Real estate related expenses,0.0,SG&A (cost of sales),,Real estate related expenses,,1,5,10E111260,OperatingExpenses,Real estate related expenses
+　　　　　Miscellaneous expenses,0.0,SG&A (cost of sales),,Miscellaneous expenses,,1,5,10E111270,OperatingExpenses,Miscellaneous expenses
+　　　　　Other selling expenses,0.0,SG&A (cost of sales),,Other selling expenses,,1,5,10E111280,OperatingExpenses,Other selling expenses
+　　　　　Other general and administrative expenses,0.0,SG&A (cost of sales),,Other general and administrative expenses,,1,5,10E111290,OperatingExpenses,Other general and administrative expenses
+　　　　　Other expenses,0.0,SG&A (cost of sales),,Other expenses,,1,5,10E111300,OperatingExpenses,Other expenses
+　　　　　Other personnel expenses,0.0,SG&A (cost of sales),,Other personnel expenses,,1,5,10E111310,OperatingExpenses,Other personnel expenses
+　　　　　Other,0.0,SG&A (cost of sales),,Other,,1,5,10E111320,OperatingExpenses,Other
+"　　　　　Selling, general and administrative expenses",0.0,SG&A (cost of sales),,"Selling, general and administrative expenses",,1,5,10E111330,OperatingExpenses,"Selling, general and administrative expenses"
+　　Gross profit (loss),0.0,Profit and loss,,Gross profit (loss),,1,2,10F000010,GrossProfit,Gross profit (loss)
+　　　Gross profit (loss) - net,0.0,Profit and loss,,Gross profit (loss) - net,,1,3,10F000020,GrossProfitNetGP,Gross profit (loss) - net
+　　　　Provision of unrealized income on installment sales,0.0,Other,,Provision of unrealized income on installment sales,,1,4,10F100010,ProvisionOfUnrealizedIncomeOnInstallmentSalesGP,Provision of unrealized income on installment sales
+　　　　Reversal of unrealized income on installment sales,0.0,Other,,Reversal of unrealized income on installment sales,,1,4,10F100020,ReversalOfUnrealizedIncomeOnInstallmentSalesGP,Reversal of unrealized income on installment sales
+　　　　Provision for sales returns,0.0,Other,,Provision for sales returns,,1,4,10F100030,ProvisionForSalesReturnsGP,Provision for sales returns
+　　　　Reversal of provision for sales returns,0.0,Other,,Reversal of provision for sales returns,,1,4,10F100040,ReversalOfProvisionForSalesReturnsGP,Reversal of provision for sales returns
+　　　Gross profit (loss) - merchandise,0.0,Profit and loss,,Gross profit (loss) - merchandise,,1,3,10F000030,GrossProfitMerchandiseGP,Gross profit (loss) - merchandise
+　　　Gross profit (loss) - finished goods,0.0,Profit and loss,,Gross profit (loss) - finished goods,,1,3,10F000040,GrossProfitFinishedGoodsGP,Gross profit (loss) - finished goods
+　　　Gross profit (loss) - real estate sales,0.0,Profit and loss,,Gross profit (loss) - real estate sales,,1,3,10F000050,GrossProfitRealEstateSalesGP,Gross profit (loss) - real estate sales
+　　　Gross profit (loss) - real estate business,0.0,Profit and loss,,Gross profit (loss) - real estate business,,1,3,10F000060,GrossProfitRealEstateBusinessGP,Gross profit (loss) - real estate business
+　　　Gross profit (loss) - development business,0.0,Profit and loss,,Gross profit (loss) - development business,,1,3,10F000070,GrossProfitDevelopingBusinessGP,Gross profit (loss) - development business
+　　　Gross profit (loss) - other business,0.0,Profit and loss,,Gross profit (loss) - other business,,1,3,10F000080,GrossProfitOtherBusinessGP,Gross profit (loss) - other business
+　　　Gross profit (loss) - other,0.0,Profit and loss,,Gross profit (loss) - other,,1,3,10F000090,GrossProfitOtherGP,Gross profit (loss) - other
+　　Operating gross profit (loss),0.0,Profit and loss,,Operating gross profit (loss),,1,2,10F000100,OperatingGrossProfit,Operating gross profit (loss)
+"　　Selling, general and administrative expenses",,"Selling, general and administrative expenses",,"Selling, general and administrative expenses",,T,2,10E200010,SellingGeneralAndAdministrativeExpensesAbstract,"Selling, general and administrative expenses"
+　　　Sales commission,0.0,"Selling, general and administrative expenses",,Sales commission,,1,3,10E200020,SalesCommissionSGA,Sales commission
+　　　Packing expenses,0.0,"Selling, general and administrative expenses",,Packing expenses,,1,3,10E200030,PackingExpensesSGA,Packing expenses
+　　　Transportation costs,0.0,"Selling, general and administrative expenses",,Transportation costs,,1,3,10E200040,HaulageExpensesSGA,Transportation costs
+　　　Advertising expenses,0.0,"Selling, general and administrative expenses",,Advertising expenses,,1,3,10E200050,AdvertisingExpensesSGA,Advertising expenses
+　　　Sample expenses,0.0,"Selling, general and administrative expenses",,Sample expenses,,1,3,10E200060,SampleExpensesSGA,Sample expenses
+　　　Storage costs,0.0,"Selling, general and administrative expenses",,Storage costs,,1,3,10E200070,WarehousingExpensesSGA,Storage costs
+　　　Delivery examination expenses,0.0,"Selling, general and administrative expenses",,Delivery examination expenses,,1,3,10E200080,DeliveryExaminationExpensesSGA,Delivery examination expenses
+　　　Remuneration for directors (and other officers),0.0,"Selling, general and administrative expenses",,Remuneration for directors (and other officers),,1,3,10E200090,DirectorsCompensationsSGA,Remuneration for directors (and other officers)
+　　　Salaries,0.0,"Selling, general and administrative expenses",,Salaries,,1,3,10E200100,SalariesSGA,Salaries
+　　　Wages,0.0,"Selling, general and administrative expenses",,Wages,,1,3,10E200110,WagesSGA,Wages
+　　　Allowance,0.0,"Selling, general and administrative expenses",,Allowance,,1,3,10E200120,AllowanceSGA,Allowance
+　　　Bonuses,0.0,"Selling, general and administrative expenses",,Bonuses,,1,3,10E200130,BonusesSGA,Bonuses
+　　　Welfare expenses,0.0,"Selling, general and administrative expenses",,Welfare expenses,,1,3,10E200140,WelfareExpensesSGA,Welfare expenses
+　　　Entertainment expenses,0.0,"Selling, general and administrative expenses",,Entertainment expenses,,1,3,10E200150,EntertainmentExpensesSGA,Entertainment expenses
+　　　Travel expenses,0.0,"Selling, general and administrative expenses",,Travel expenses,,1,3,10E200160,TravelingExpensesSGA,Travel expenses
+　　　Transportation expenses,0.0,"Selling, general and administrative expenses",,Transportation expenses,,1,3,10E200170,TransportationExpensesSGA,Transportation expenses
+　　　Communication expenses,0.0,"Selling, general and administrative expenses",,Communication expenses,,1,3,10E200180,CommunicationExpensesSGA,Communication expenses
+　　　Heating and lighting expenses,0.0,"Selling, general and administrative expenses",,Heating and lighting expenses,,1,3,10E200190,HeatingAndLightingExpensesSGA,Heating and lighting expenses
+　　　Supplies expenses,0.0,"Selling, general and administrative expenses",,Supplies expenses,,1,3,10E200200,SuppliesExpensesSGA,Supplies expenses
+　　　Taxes and dues,0.0,"Selling, general and administrative expenses",,Taxes and dues,,1,3,10E200210,TaxesAndDuesSGA,Taxes and dues
+　　　Depreciation,0.0,"Selling, general and administrative expenses",,Depreciation,,1,3,10E200220,DepreciationSGA,Depreciation
+　　　Repair expenses,0.0,"Selling, general and administrative expenses",,Repair expenses,,1,3,10E200230,RepairExpensesSGA,Repair expenses
+　　　Insurance expenses,0.0,"Selling, general and administrative expenses",,Insurance expenses,,1,3,10E200240,InsuranceExpensesSGA,Insurance expenses
+　　　Rent expenses on real estate,0.0,"Selling, general and administrative expenses",,Rent expenses on real estate,,1,3,10E200250,RentExpensesOnRealEstatesSGA,Rent expenses on real estate
+　　　Provision of allowance for doubtful accounts,0.0,"Selling, general and administrative expenses",,Provision of allowance for doubtful accounts,,1,3,10E200260,ProvisionOfAllowanceForDoubtfulAccountsSGA,Provision of allowance for doubtful accounts
+　　　Bad debts expenses,0.0,"Selling, general and administrative expenses",,Bad debts expenses,,1,3,10E200270,BadDebtsExpensesSGA,Bad debts expenses
+　　　Provision for bonuses,0.0,"Selling, general and administrative expenses",,Provision for bonuses,,1,3,10E200280,ProvisionForBonusesSGA,Provision for bonuses
+　　　Provision for retirement benefits for directors (and other officers),0.0,"Selling, general and administrative expenses",,Provision for retirement benefits for directors (and other officers),,1,3,10E200290,ProvisionForDirectorsRetirementBenefitsSGA,Provision for retirement benefits for directors (and other officers)
+　　　Provision for bonuses for directors (and other officers),0.0,"Selling, general and administrative expenses",,Provision for bonuses for directors (and other officers),,1,3,10E200300,ProvisionForDirectorsBonusesSGA,Provision for bonuses for directors (and other officers)
+　　　Retirement benefit expenses,0.0,"Selling, general and administrative expenses",,Retirement benefit expenses,,1,3,10E200310,RetirementBenefitExpensesSGA,Retirement benefit expenses
+　　　Research and development expenses,0.0,"Selling, general and administrative expenses",,Research and development expenses,,1,3,10E200320,ResearchAndDevelopmentExpensesSGA,Research and development expenses
+　　　Selling expenses,0.0,"Selling, general and administrative expenses",,Selling expenses,,1,3,10E200330,SellingExpensesSGA,Selling expenses
+　　　General and administrative expenses,,"Selling, general and administrative expenses",,General and administrative expenses,,T,3,10E200340,GeneralAndAdministrativeExpensesSGAAbstract,General and administrative expenses
+　　　　General and administrative expenses,0.0,"Selling, general and administrative expenses",,General and administrative expenses,,1,4,10E200350,GeneralAndAdministrativeExpensesSGA,General and administrative expenses
+　　　Personnel expenses,0.0,"Selling, general and administrative expenses",,Personnel expenses,,1,3,10E200360,SalariesSGA,Personnel expenses
+　　　Salaries and allowances,0.0,"Selling, general and administrative expenses",,Salaries and allowances,,1,3,10E200370,SalariesAndAllowancesSGA,Salaries and allowances
+　　　Salaries and bonuses,0.0,"Selling, general and administrative expenses",,Salaries and bonuses,,1,3,10E200380,SalariesAndBonusesSGA,Salaries and bonuses
+"　　　Salaries, allowances and bonuses",0.0,"Selling, general and administrative expenses",,"Salaries, allowances and bonuses",,1,3,10E200390,SalariesAllowancesAndBonusesSGA,"Salaries, allowances and bonuses"
+　　　Salaries and allowances and welfare expenses,0.0,"Selling, general and administrative expenses",,Salaries and allowances and welfare expenses,,1,3,10E200400,SalariesAndAllowancesAndWelfareExpensesSGA,Salaries and allowances and welfare expenses
+　　　Salaries and wages,0.0,"Selling, general and administrative expenses",,Salaries and wages,,1,3,10E200410,SalariesAndWagesSGA,Salaries and wages
+　　　Bonuses and allowance,0.0,"Selling, general and administrative expenses",,Bonuses and allowance,,1,3,10E200420,BonusesAndAllowanceSGA,Bonuses and allowance
+　　　Employees' salaries,0.0,"Selling, general and administrative expenses",,Employees' salaries,,1,3,10E200430,EmployeesSalariesSGA,Employees' salaries
+　　　Employees' bonuses,0.0,"Selling, general and administrative expenses",,Employees' bonuses,,1,3,10E200440,EmployeesBonusesSGA,Employees' bonuses
+　　　Employees' salaries and bonuses,0.0,"Selling, general and administrative expenses",,Employees' salaries and bonuses,,1,3,10E200450,EmployeesSalariesAndBonusesSGA,Employees' salaries and bonuses
+　　　Employees' salaries and allowances,0.0,"Selling, general and administrative expenses",,Employees' salaries and allowances,,1,3,10E200460,EmployeesSalariesAndAllowancesSGA,Employees' salaries and allowances
+"　　　Remuneration, salaries and allowances",0.0,"Selling, general and administrative expenses",,"Remuneration, salaries and allowances",,1,3,10E200470,CompensationsSalariesAndAllowancesSGA,"Remuneration, salaries and allowances"
+"　　　Remuneration, salaries and allowances for directors (and other officers)",0.0,"Selling, general and administrative expenses",,"Remuneration, salaries and allowances for directors (and other officers)",,1,3,10E200480,DirectorsCompensationsSalariesAndAllowancesSGA,"Remuneration, salaries and allowances for directors (and other officers)"
+　　　Retirement payments,0.0,"Selling, general and administrative expenses",,Retirement payments,,1,3,10E200490,RetirementPaymentsSGA,Retirement payments
+　　　Provision for retirement benefits,0.0,"Selling, general and administrative expenses",,Provision for retirement benefits,,1,3,10E200500,ProvisionForRetirementBenefitsSGA,Provision for retirement benefits
+　　　Retirement benefits for directors (and other officers),0.0,"Selling, general and administrative expenses",,Retirement benefits for directors (and other officers),,1,3,10E200510,DirectorsRetirementBenefitsSGA,Retirement benefits for directors (and other officers)
+　　　Other salaries,0.0,"Selling, general and administrative expenses",,Other salaries,,1,3,10E200520,OtherSalariesSGA,Other salaries
+　　　Legal and other welfare expenses,0.0,"Selling, general and administrative expenses",,Legal and other welfare expenses,,1,3,10E200530,LegalAndEmployeeBenefitsExpensesSGA,Legal and other welfare expenses
+　　　Legal welfare expenses,0.0,"Selling, general and administrative expenses",,Legal welfare expenses,,1,3,10E200540,LegalWelfareExpensesSGA,Legal welfare expenses
+　　　Share-based remuneration expenses,0.0,"Selling, general and administrative expenses",,Share-based remuneration expenses,,1,3,10E200550,ShareBasedCompensationExpensesSGA,Share-based remuneration expenses
+　　　Amortization of goodwill,0.0,"Selling, general and administrative expenses",,Amortization of goodwill,,1,3,10E200560,AmortizationOfGoodwillSGA,Amortization of goodwill
+　　　Share issuance cost,0.0,"Selling, general and administrative expenses",,Share issuance cost,,1,3,10E200570,StockIssuanceCostSGA,Share issuance cost
+　　　Amortization of business commencement expenses,0.0,"Selling, general and administrative expenses",,Amortization of business commencement expenses,,1,3,10E200580,AmortizationOfBusinessCommencementExpensesSGA,Amortization of business commencement expenses
+　　　Amortization of development expenses,0.0,"Selling, general and administrative expenses",,Amortization of development expenses,,1,3,10E200590,AmortizationOfDevelopmentExpensesSGA,Amortization of development expenses
+　　　Fee expenses,0.0,"Selling, general and administrative expenses",,Fee expenses,,1,3,10E200600,CompensationsSGA,Fee expenses
+　　　Consulting expenses,0.0,"Selling, general and administrative expenses",,Consulting expenses,,1,3,10E200610,ConsultingExpensesSGA,Consulting expenses
+　　　Education and training expenses,0.0,"Selling, general and administrative expenses",,Education and training expenses,,1,3,10E200620,EducationAndTrainingExpensesSGA,Education and training expenses
+　　　Training expenses,0.0,"Selling, general and administrative expenses",,Training expenses,,1,3,10E200630,TrainingExpensesSGA,Training expenses
+　　　Recruiting expenses,0.0,"Selling, general and administrative expenses",,Recruiting expenses,,1,3,10E200640,RecruitingExpensesSGA,Recruiting expenses
+　　　Offering expenses,0.0,"Selling, general and administrative expenses",,Offering expenses,,1,3,10E200650,OfferingExpensesSGA,Offering expenses
+　　　Outsourcing expenses,0.0,"Selling, general and administrative expenses",,Outsourcing expenses,,1,3,10E200660,SubcontractExpensesSGA,Outsourcing expenses
+　　　Administrative outsourcing expenses,0.0,"Selling, general and administrative expenses",,Administrative outsourcing expenses,,1,3,10E200670,OperationsConsignmentExpensesSGA,Administrative outsourcing expenses
+　　　Outsourcing expenses,0.0,"Selling, general and administrative expenses",,Outsourcing expenses,,1,3,10E200680,BusinessConsignmentExpensesSGA,Outsourcing expenses
+　　　Commission expenses,0.0,"Selling, general and administrative expenses",,Commission expenses,,1,3,10E200690,CommissionFeeSGA,Commission expenses
+　　　Rent expenses,0.0,"Selling, general and administrative expenses",,Rent expenses,,1,3,10E200700,RentExpensesSGA,Rent expenses
+　　　Facility expenses,0.0,"Selling, general and administrative expenses",,Facility expenses,,1,3,10E200710,FacilityExpensesSGA,Facility expenses
+　　　Rent expenses on land and buildings,0.0,"Selling, general and administrative expenses",,Rent expenses on land and buildings,,1,3,10E200720,RentsSGA,Rent expenses on land and buildings
+　　　Rent expenses on land and buildings,0.0,"Selling, general and administrative expenses",,Rent expenses on land and buildings,,1,3,10E200730,LeaseholdAndOfficeRentsSGA,Rent expenses on land and buildings
+　　　Promotion expenses,0.0,"Selling, general and administrative expenses",,Promotion expenses,,1,3,10E200740,PromotionExpensesSGA,Promotion expenses
+　　　Advertising and promotion expenses,0.0,"Selling, general and administrative expenses",,Advertising and promotion expenses,,1,3,10E200750,AdvertisingAndPromotionExpensesSGA,Advertising and promotion expenses
+　　　Business advertising expenses,0.0,"Selling, general and administrative expenses",,Business advertising expenses,,1,3,10E200760,BusinessAdvertisingExpensesSGA,Business advertising expenses
+　　　Agent fee,0.0,"Selling, general and administrative expenses",,Agent fee,,1,3,10E200770,AgentFeeSGA,Agent fee
+　　　Provision for product warranties,0.0,"Selling, general and administrative expenses",,Provision for product warranties,,1,3,10E200780,ProvisionForProductWarrantiesSGA,Provision for product warranties
+　　　Provision for warranties for completed construction,0.0,"Selling, general and administrative expenses",,Provision for warranties for completed construction,,1,3,10E200790,ProvisionForWarrantiesForCompletedConstructionSGA,Provision for warranties for completed construction
+　　　Provision for special repairs,0.0,"Selling, general and administrative expenses",,Provision for special repairs,,1,3,10E200800,ProvisionForSpecialRepairsSGA,Provision for special repairs
+　　　Provision for point card certificates,0.0,"Selling, general and administrative expenses",,Provision for point card certificates,,1,3,10E200810,ProvisionForPointCardCertificatesSGA,Provision for point card certificates
+　　　Provision for loss on interest repayment,0.0,"Selling, general and administrative expenses",,Provision for loss on interest repayment,,1,3,10E200820,ProvisionForLossOnInterestRepaymentSGA,Provision for loss on interest repayment
+　　　Provision for share-based remuneration,0.0,"Selling, general and administrative expenses",,Provision for share-based remuneration,,1,3,10E200830,GeneralAndAdministrativeExpensesSGAAbstract,Provision for share-based remuneration
+　　　Provision for share-based remuneration for directors (and other officers),0.0,"Selling, general and administrative expenses",,Provision for share-based remuneration for directors (and other officers),,1,3,10E200840,ProvisionForDirectorsBonusesSGA,Provision for share-based remuneration for directors (and other officers)
+　　　Provision for shareholder benefit program,0.0,"Selling, general and administrative expenses",,Provision for shareholder benefit program,,1,3,10E200850,GeneralAndAdministrativeExpensesSGAAbstract,Provision for shareholder benefit program
+　　　Transportation and storage costs,0.0,"Selling, general and administrative expenses",,Transportation and storage costs,,1,3,10E200860,TransportationAndWarehousingExpensesSGA,Transportation and storage costs
+　　　Freight costs,0.0,"Selling, general and administrative expenses",,Freight costs,,1,3,10E200870,FreightageExpensesSGA,Freight costs
+　　　Freight and packing costs,0.0,"Selling, general and administrative expenses",,Freight and packing costs,,1,3,10E200880,FreightageAndPackingExpensesSGA,Freight and packing costs
+　　　Freight and incidental costs,0.0,"Selling, general and administrative expenses",,Freight and incidental costs,,1,3,10E200890,FreightageRelatedExpensesSGA,Freight and incidental costs
+　　　Packing and transportation costs,0.0,"Selling, general and administrative expenses",,Packing and transportation costs,,1,3,10E200900,PackingAndTransportationExpensesSGA,Packing and transportation costs
+　　　Packing and delivery expenses,0.0,"Selling, general and administrative expenses",,Packing and delivery expenses,,1,3,10E200910,PackingAndDeliveryExpensesSGA,Packing and delivery expenses
+　　　Freight-out,0.0,"Selling, general and administrative expenses",,Freight-out,,1,3,10E200920,SalesFareSGA,Freight-out
+　　　Freight-out,0.0,"Selling, general and administrative expenses",,Freight-out,,1,3,10E200930,FreightOutSGA,Freight-out
+　　　Distribution expenses,0.0,"Selling, general and administrative expenses",,Distribution expenses,,1,3,10E200940,DistributionExpensesSGA,Distribution expenses
+　　　Shipment expenses,0.0,"Selling, general and administrative expenses",,Shipment expenses,,1,3,10E200950,ShipmentExpensesSGA,Shipment expenses
+　　　Experimentation and research expenses,0.0,"Selling, general and administrative expenses",,Experimentation and research expenses,,1,3,10E200960,ExperimentAndResearchExpensesSGA,Experimentation and research expenses
+　　　Development and research expenses,0.0,"Selling, general and administrative expenses",,Development and research expenses,,1,3,10E200970,DevelopmentAndResearchExpensesSGA,Development and research expenses
+　　　Technical research expenses,0.0,"Selling, general and administrative expenses",,Technical research expenses,,1,3,10E200980,TechnicalResearchExpensesSGA,Technical research expenses
+　　　Research expenses,0.0,"Selling, general and administrative expenses",,Research expenses,,1,3,10E200990,ResearchExpensesSGA,Research expenses
+　　　Repair and maintenance expenses,0.0,"Selling, general and administrative expenses",,Repair and maintenance expenses,,1,3,10E201000,RepairAndMaintenanceSGA,Repair and maintenance expenses
+　　　Donations,0.0,"Selling, general and administrative expenses",,Donations,,1,3,10E201010,ContributionSGA,Donations
+　　　License fee,0.0,"Selling, general and administrative expenses",,License fee,,1,3,10E201020,LicenseFeeSGA,License fee
+　　　Amortization of long-term prepaid expenses,0.0,"Selling, general and administrative expenses",,Amortization of long-term prepaid expenses,,1,3,10E201030,AmortizationOfLongTermPrepaidExpensesSGA,Amortization of long-term prepaid expenses
+　　　Utilities expenses,0.0,"Selling, general and administrative expenses",,Utilities expenses,,1,3,10E201040,UtilitiesExpensesSGA,Utilities expenses
+　　　Power utilities expenses,0.0,"Selling, general and administrative expenses",,Power utilities expenses,,1,3,10E201050,PowerUtilitiesExpensesSGA,Power utilities expenses
+　　　Medical expenses,0.0,"Selling, general and administrative expenses",,Medical expenses,,1,3,10E201060,MedicalExpensesSGA,Medical expenses
+　　　Business office tax,0.0,"Selling, general and administrative expenses",,Business office tax,,1,3,10E201070,OfficeTaxesSGA,Business office tax
+　　　Enterprise tax,0.0,"Selling, general and administrative expenses",,Enterprise tax,,1,3,10E201080,EnterpriseTaxSGA,Enterprise tax
+　　　Office cost,0.0,"Selling, general and administrative expenses",,Office cost,,1,3,10E201090,OfficeCostSGA,Office cost
+　　　Stationery expenses,0.0,"Selling, general and administrative expenses",,Stationery expenses,,1,3,10E201100,StationeryExpensesSGA,Stationery expenses
+　　　Office supplies expenses,0.0,"Selling, general and administrative expenses",,Office supplies expenses,,1,3,10E201110,OfficeSuppliesExpensesSGA,Office supplies expenses
+　　　Vehicle expenses,0.0,"Selling, general and administrative expenses",,Vehicle expenses,,1,3,10E201120,VehicleExpensesSGA,Vehicle expenses
+　　　Meeting expenses,0.0,"Selling, general and administrative expenses",,Meeting expenses,,1,3,10E201130,ConferenceExpensesSGA,Meeting expenses
+　　　Membership fee,0.0,"Selling, general and administrative expenses",,Membership fee,,1,3,10E201140,MembershipFeeSGA,Membership fee
+　　　Sundry expenses,0.0,"Selling, general and administrative expenses",,Sundry expenses,,1,3,10E201150,SundryExpensesSGA,Sundry expenses
+　　　Book expenses,0.0,"Selling, general and administrative expenses",,Book expenses,,1,3,10E201160,BookExpensesSGA,Book expenses
+　　　Print expenses,0.0,"Selling, general and administrative expenses",,Print expenses,,1,3,10E201170,PrintExpensesSGA,Print expenses
+　　　Book and printing expenses,0.0,"Selling, general and administrative expenses",,Book and printing expenses,,1,3,10E201180,BookAndPrintingExpensesSGA,Book and printing expenses
+　　　Research study expenses,0.0,"Selling, general and administrative expenses",,Research study expenses,,1,3,10E201190,ResearchStudyExpensesSGA,Research study expenses
+　　　Investigation expenses,0.0,"Selling, general and administrative expenses",,Investigation expenses,,1,3,10E201200,InvestigationExpensesSGA,Investigation expenses
+"　　　Travel, transportation and communication expenses",0.0,"Selling, general and administrative expenses",,"Travel, transportation and communication expenses",,1,3,10E201210,TransportationAndCommunicationExpensesSGA,"Travel, transportation and communication expenses"
+　　　Travel and communication expenses,0.0,"Selling, general and administrative expenses",,Travel and communication expenses,,1,3,10E201220,TravelingAndCommunicationExpensesSGA,Travel and communication expenses
+　　　Travel and transportation expenses,0.0,"Selling, general and administrative expenses",,Travel and transportation expenses,,1,3,10E201230,TravelingAndTransportationExpensesSGA,Travel and transportation expenses
+　　　Communication and transportation expenses,0.0,"Selling, general and administrative expenses",,Communication and transportation expenses,,1,3,10E201240,CorrespondenceAndTransportationExpensesSGA,Communication and transportation expenses
+　　　Trading related expenses,0.0,"Selling, general and administrative expenses",,Trading related expenses,,1,3,10E201250,TradingRelatedExpensesSGA,Trading related expenses
+　　　Real estate related expenses,0.0,"Selling, general and administrative expenses",,Real estate related expenses,,1,3,10E201260,RealEstateRelatedExpensesSGA,Real estate related expenses
+　　　Miscellaneous expenses,0.0,"Selling, general and administrative expenses",,Miscellaneous expenses,,1,3,10E201270,MiscellaneousExpensesSGA,Miscellaneous expenses
+　　　Other selling expenses,0.0,"Selling, general and administrative expenses",,Other selling expenses,,1,3,10E201280,GeneralAndAdministrativeExpensesSGAAbstract,Other selling expenses
+　　　Other general and administrative expenses,0.0,"Selling, general and administrative expenses",,Other general and administrative expenses,,1,3,10E201290,GeneralAndAdministrativeExpensesSGAAbstract,Other general and administrative expenses
+　　　Other expenses,0.0,"Selling, general and administrative expenses",,Other expenses,,1,3,10E201300,GeneralAndAdministrativeExpensesSGAAbstract,Other expenses
+　　　Other personnel expenses,0.0,"Selling, general and administrative expenses",,Other personnel expenses,,1,3,10E201310,OtherPersonnelCostAdministrativeExpenses,Other personnel expenses
+　　　Other,0.0,"Selling, general and administrative expenses",,Other,,1,3,10E201320,GeneralAndAdministrativeExpensesSGAAbstract,Other
+"　　　Selling, general and administrative expenses",0.0,"Selling, general and administrative expenses",,"Selling, general and administrative expenses",,1,3,10E201330,SellingGeneralAndAdministrativeExpenses,"Selling, general and administrative expenses"
+　　Operating profit (loss),0.0,Profit and loss,,Operating profit (loss),,1,2,10F000110,OperatingIncome,Operating profit (loss)
+　　　Operating profit (loss) - all businesses,0.0,Profit and loss,,Operating profit (loss) - all businesses,,1,3,10F000120,OperatingIncomeTotalBusiness,Operating profit (loss) - all businesses
+　　Non-operating income,,Non-operating income,,Non-operating income,,T,2,10D200010,NonOperatingIncomeAbstract,Non-operating income
+　　　Interest income,0.0,Non-operating income,,Interest income,,1,3,10D200020,InterestIncomeNOI,Interest income
+　　　Interest on securities,0.0,Non-operating income,,Interest on securities,,1,3,10D200030,InterestOnSecuritiesNOI,Interest on securities
+　　　Dividend income,0.0,Non-operating income,,Dividend income,,1,3,10D200040,DividendsIncomeNOI,Dividend income
+　　　Purchase discounts,0.0,Non-operating income,,Purchase discounts,,1,3,10D200050,PurchaseDiscountsNOI,Purchase discounts
+　　　Rental income from investment property,0.0,Non-operating income,,Rental income from investment property,,1,3,10D200060,RentOfRealEstateForInvestmentNOI,Rental income from investment property
+　　　Refunded consumption taxes,0.0,Non-operating income,,Refunded consumption taxes,,1,3,10D200070,RefundedConsumptionTaxesNOI,Refunded consumption taxes
+　　　Amortization of negative goodwill,0.0,Non-operating income,,Amortization of negative goodwill,,1,3,10D200080,AmortizationOfNegativeGoodwillNOI,Amortization of negative goodwill
+　　　Share of profit of entities accounted for using equity method,0.0,Non-operating income,,Share of profit of entities accounted for using equity method,,1,3,10D200090,EquityInEarningsOfAffiliatesNOI,Share of profit of entities accounted for using equity method
+　　　Foreign exchange gains,0.0,Non-operating income,,Foreign exchange gains,,1,3,10D200100,ForeignExchangeGainsNOI,Foreign exchange gains
+　　　Gain on sales of securities,0.0,Non-operating income,,Gain on sales of securities,,1,3,10D200110,GainOnSalesOfSecuritiesNOI,Gain on sales of securities
+　　　Gain on sales of investment securities,0.0,Non-operating income,,Gain on sales of investment securities,,1,3,10D200120,GainOnSalesOfInvestmentSecuritiesNOI,Gain on sales of investment securities
+　　　Gain on valuation of investment securities,0.0,Non-operating income,,Gain on valuation of investment securities,,1,3,10D200130,GainOnValuationOfSecuritiesNOI,Gain on valuation of investment securities
+　　　Gain on forfeiture of unclaimed dividends,0.0,Non-operating income,,Gain on forfeiture of unclaimed dividends,,1,3,10D200140,GainOnAdjustmentOfAccountPayableNOI,Gain on forfeiture of unclaimed dividends
+　　　Gain on redemption of securities,0.0,Non-operating income,,Gain on redemption of securities,,1,3,10D200150,GainOnRedemptionOfSecuritiesNOI,Gain on redemption of securities
+　　　Gain on investments in securities,0.0,Non-operating income,,Gain on investments in securities,,1,3,10D200160,GainOnInvestmentOfSecuritiesNOI,Gain on investments in securities
+　　　Gain on valuation of securities,0.0,Non-operating income,,Gain on valuation of securities,,1,3,10D200170,GainOnValuationOfSecuritiesNOI,Gain on valuation of securities
+　　　Gain on reversal of loss on valuation of investment securities,0.0,Non-operating income,,Gain on reversal of loss on valuation of investment securities,,1,3,10D200180,GainOnReversalOfLossOnValuationOfInvestmentSecuritiesNOI,Gain on reversal of loss on valuation of investment securities
+　　　Gain on investments in capital,0.0,Non-operating income,,Gain on investments in capital,,1,3,10D200190,GainOnInvestmentsInCapitalNOI,Gain on investments in capital
+　　　Gain on investments in investment partnerships,0.0,Non-operating income,,Gain on investments in investment partnerships,,1,3,10D200200,GainOnInvestmentsInPartnershipNOI,Gain on investments in investment partnerships
+　　　Gain on investments in silent partnerships,0.0,Non-operating income,,Gain on investments in silent partnerships,,1,3,10D200210,GainOnInvestmentsInSilentPartnershipNOI,Gain on investments in silent partnerships
+　　　Gain on investments in money held in trust,0.0,Non-operating income,,Gain on investments in money held in trust,,1,3,10D200220,GainOnInvestmentsInMoneyHeldInTrustNOI,Gain on investments in money held in trust
+　　　Gain on valuation of derivatives,0.0,Non-operating income,,Gain on valuation of derivatives,,1,3,10D200230,GainOnValuationOfDerivativesNOI,Gain on valuation of derivatives
+　　　Gain on valuation of interest rate swaps,0.0,Non-operating income,,Gain on valuation of interest rate swaps,,1,3,10D200240,GainOnValuationOfInterestRateSwapsNOI,Gain on valuation of interest rate swaps
+　　　Gain on valuation of compound financial instruments,0.0,Non-operating income,,Gain on valuation of compound financial instruments,,1,3,10D200250,GainOnValuationOfCompoundFinancialInstrumentsNOI,Gain on valuation of compound financial instruments
+　　　Consulting fee income,0.0,Non-operating income,,Consulting fee income,,1,3,10D200260,BusinessAdvisoryFeeNOI,Consulting fee income
+　　　Technical advisory fee income,0.0,Non-operating income,,Technical advisory fee income,,1,3,10D200270,TechnicalAdvisoryFeeNOI,Technical advisory fee income
+　　　Outsourcing service income,0.0,Non-operating income,,Outsourcing service income,,1,3,10D200280,FiduciaryObligationFeeNOI,Outsourcing service income
+　　　Outsourcing service income,0.0,Non-operating income,,Outsourcing service income,,1,3,10D200290,OperationsConsignmentFeeNOI,Outsourcing service income
+　　　Technical support fee income,0.0,Non-operating income,,Technical support fee income,,1,3,10D200300,TechnicalSupportFeeNOI,Technical support fee income
+　　　Royalty income,0.0,Non-operating income,,Royalty income,,1,3,10D200310,RoyaltyIncomeNOI,Royalty income
+　　　Interest on loans,0.0,Non-operating income,,Interest on loans,,1,3,10D200320,InterestOnLoansNOI,Interest on loans
+　　　Commission income,0.0,Non-operating income,,Commission income,,1,3,10D200330,CommissionFeeNOI,Commission income
+　　　Administrative service fee income,0.0,Non-operating income,,Administrative service fee income,,1,3,10D200340,OfficeWorkFeeNOI,Administrative service fee income
+　　　Rental income,0.0,Non-operating income,,Rental income,,1,3,10D200350,RentIncomeNOI,Rental income
+　　　Rental income from real estate,0.0,Non-operating income,,Rental income from real estate,,1,3,10D200360,RealEstateRentNOI,Rental income from real estate
+　　　Rental income from non-current assets,0.0,Non-operating income,,Rental income from non-current assets,,1,3,10D200370,RentIncomeOnNoncurrentAssetsNOI,Rental income from non-current assets
+　　　Rental income from facilities,0.0,Non-operating income,,Rental income from facilities,,1,3,10D200380,RentIncomeOnFacilitiesNOI,Rental income from facilities
+　　　Rental income from buildings,0.0,Non-operating income,,Rental income from buildings,,1,3,10D200390,HouseRentIncomeNOI,Rental income from buildings
+　　　Rental income from land and buildings,0.0,Non-operating income,,Rental income from land and buildings,,1,3,10D200400,LandAndHouseRentReceivedNOI,Rental income from land and buildings
+　　　Insurance claim income,0.0,Non-operating income,,Insurance claim income,,1,3,10D200410,InsuranceIncomeNOI,Insurance claim income
+　　　Insurance claim and dividend income,0.0,Non-operating income,,Insurance claim and dividend income,,1,3,10D200420,InsuranceAndDividendsIncomeNOI,Insurance claim and dividend income
+　　　Insurance fee income,0.0,Non-operating income,,Insurance fee income,,1,3,10D200430,InsuranceFeeNOI,Insurance fee income
+　　　Guarantee commission received,0.0,Non-operating income,,Guarantee commission received,,1,3,10D200440,GuaranteeCommissionReceivedNOI,Guarantee commission received
+　　　Compensation income,0.0,Non-operating income,,Compensation income,,1,3,10D200450,CompensationIncomeNOI,Compensation income
+　　　Interest and dividend income,0.0,Non-operating income,,Interest and dividend income,,1,3,10D200460,InterestAndDividendsIncomeNOI,Interest and dividend income
+　　　Subsidy income,0.0,Non-operating income,,Subsidy income,,1,3,10D200470,SubsidyIncomeNOIBounty,Subsidy income
+　　　Subsidy income,0.0,Non-operating income,,Subsidy income,,1,3,10D200480,SubsidyIncomeNOI,Subsidy income
+　　　Sponsorship money income,0.0,Non-operating income,,Sponsorship money income,,1,3,10D200490,CoSponsorFeeNOI,Sponsorship money income
+　　　Penalty income,0.0,Non-operating income,,Penalty income,,1,3,10D200500,PenaltyIncomeNOI,Penalty income
+　　　Electricity sale income,0.0,Non-operating income,,Electricity sale income,,1,3,10D200510,MiscellaneousIncomeNOI,Electricity sale income
+　　　Surrender value of insurance policies,0.0,Non-operating income,,Surrender value of insurance policies,,1,3,10D200520,InsurancePremiumsRefundedCancellationNOI,Surrender value of insurance policies
+　　　Insurance return,0.0,Non-operating income,,Insurance return,,1,3,10D200530,InsuranceReturnNOI,Insurance return
+　　　Dividend income of life insurance,0.0,Non-operating income,,Dividend income of life insurance,,1,3,10D200540,DividendsIncomeOfLifeInsuranceNOI,Dividend income of life insurance
+　　　Dividend income of insurance,0.0,Non-operating income,,Dividend income of insurance,,1,3,10D200550,DividendsIncomeOfInsuranceNOI,Dividend income of insurance
+　　　Commission for insurance office work,0.0,Non-operating income,,Commission for insurance office work,,1,3,10D200560,CommissionForInsuranceOfficeWorkNOI,Commission for insurance office work
+　　　Gain on sales of non-current assets,0.0,Non-operating income,,Gain on sales of non-current assets,,1,3,10D200570,GainOnSalesOfNoncurrentAssetsNOI,Gain on sales of non-current assets
+　　　Gain on donation of non-current assets,0.0,Non-operating income,,Gain on donation of non-current assets,,1,3,10D200580,GainOnDonationOfNoncurrentAssetsNOI,Gain on donation of non-current assets
+　　　Gain on disposal of non-current assets,0.0,Non-operating income,,Gain on disposal of non-current assets,,1,3,10D200590,GainOnDisposalOfNoncurrentAssetsNOI,Gain on disposal of non-current assets
+　　　Reversal of allowance for investment loss,0.0,Non-operating income,,Reversal of allowance for investment loss,,1,3,10D200600,ReversalOfAllowanceForInvestmentLossNOI,Reversal of allowance for investment loss
+　　　Amortization of net retirement benefit obligation at transition,0.0,Non-operating income,,Amortization of net retirement benefit obligation at transition,,1,3,10D200610,AmortizationOfNetRetirementBenefitObligationAtTransitionNOI,Amortization of net retirement benefit obligation at transition
+　　　Reversal of provision for retirement benefits for directors (and other officers),0.0,Non-operating income,,Reversal of provision for retirement benefits for directors (and other officers),,1,3,10D200620,ReversalOfProvisionForDirectorsRetirementBenefitsNOI,Reversal of provision for retirement benefits for directors (and other officers)
+　　　Reversal of allowance for doubtful accounts,0.0,Non-operating income,,Reversal of allowance for doubtful accounts,,1,3,10D200630,ReversalOfAllowanceForDoubtfulAccountsNOI,Reversal of allowance for doubtful accounts
+　　　Gain on bad debts recovered,0.0,Non-operating income,,Gain on bad debts recovered,,1,3,10D200640,GainOnBadDebtsRecoveredNOI,Gain on bad debts recovered
+　　　Gain on sales of goods,0.0,Non-operating income,,Gain on sales of goods,,1,3,10D200650,GainOnSalesOfGoodsNOI,Gain on sales of goods
+　　　Gain on sales of scraps,0.0,Non-operating income,,Gain on sales of scraps,,1,3,10D200660,GainOnSalesOfScraps1NOI,Gain on sales of scraps
+　　　Gain on sales of scraps,0.0,Non-operating income,,Gain on sales of scraps,,1,3,10D200670,GainOnSalesOfScraps2NOI,Gain on sales of scraps
+　　　Gain on adjustment of account payable,0.0,Non-operating income,,Gain on adjustment of account payable,,1,3,10D200680,GainOnAdjustmentOfAccountPayableNOI,Gain on adjustment of account payable
+　　　Interest on refund of income taxes,0.0,Non-operating income,,Interest on refund of income taxes,,1,3,10D200690,InterestOnRefundOfIncomeTaxesAndOtherNOI,Interest on refund of income taxes
+　　　Interest on tax refund,0.0,Non-operating income,,Interest on tax refund,,1,3,10D200700,InterestOnRefundNOI,Interest on tax refund
+　　　Subsidies for employment adjustment,0.0,Non-operating income,,Subsidies for employment adjustment,,1,3,10D200710,SubsidiesForEmploymentAdjustmentNOI,Subsidies for employment adjustment
+　　　Miscellaneous income,0.0,Non-operating income,,Miscellaneous income,,1,3,10D200720,MiscellaneousIncomeNOI,Miscellaneous income
+　　　Other,0.0,Non-operating income,,Other,,1,3,10D200730,OtherNOI,Other
+　　　Non-operating income,0.0,Non-operating income,,Non-operating income,,1,3,10D200740,NonOperatingIncome,Non-operating income
+　　Non-operating expenses,,Non-operating expenses,,Non-operating expenses,,T,2,10E300010,NonOperatingExpensesAbstract,Non-operating expenses
+　　　Interest expenses,0.0,Non-operating expenses,,Interest expenses,,1,3,10E300020,InterestExpensesNOE,Interest expenses
+　　　Interest on bonds,0.0,Non-operating expenses,,Interest on bonds,,1,3,10E300030,InterestOnBondsNOE,Interest on bonds
+　　　Sales discounts,0.0,Non-operating expenses,,Sales discounts,,1,3,10E300040,SalesDiscountsNOE,Sales discounts
+　　　Loss on sales of securities,0.0,Non-operating expenses,,Loss on sales of securities,,1,3,10E300050,LossOnSalesOfSecuritiesNOE,Loss on sales of securities
+　　　Loss on valuation of securities,0.0,Non-operating expenses,,Loss on valuation of securities,,1,3,10E300060,LossOnValuationOfSecuritiesNOE,Loss on valuation of securities
+　　　Loss on redemption of securities,0.0,Non-operating expenses,,Loss on redemption of securities,,1,3,10E300070,LossOnRedemptionOfSecuritiesNOE,Loss on redemption of securities
+　　　Loss on investments in securities,0.0,Non-operating expenses,,Loss on investments in securities,,1,3,10E300080,LossOnInvestmentOfSecuritiesNOE,Loss on investments in securities
+　　　Loss on sales of investment securities,0.0,Non-operating expenses,,Loss on sales of investment securities,,1,3,10E300090,LossOnSalesOfInvestmentSecuritiesNOE,Loss on sales of investment securities
+　　　Loss on valuation of investment securities,0.0,Non-operating expenses,,Loss on valuation of investment securities,,1,3,10E300100,LossOnValuationOfInvestmentSecuritiesNOE,Loss on valuation of investment securities
+　　　Share of loss of entities accounted for using equity method,0.0,Non-operating expenses,,Share of loss of entities accounted for using equity method,,1,3,10E300110,EquityInLossesOfAffiliatesNOE,Share of loss of entities accounted for using equity method
+　　　Loss on investments in capital,0.0,Non-operating expenses,,Loss on investments in capital,,1,3,10E300120,LossOnInvestmentsInCapitalNOE,Loss on investments in capital
+　　　Loss on investments in investment partnerships,0.0,Non-operating expenses,,Loss on investments in investment partnerships,,1,3,10E300130,LossOnInvestmentsInPartnershipNOE,Loss on investments in investment partnerships
+　　　Loss on investments in silent partnerships,0.0,Non-operating expenses,,Loss on investments in silent partnerships,,1,3,10E300140,LossOnInvestmentsInSilentPartnershipNOE,Loss on investments in silent partnerships
+　　　Loss on valuation of investments in capital,0.0,Non-operating expenses,,Loss on valuation of investments in capital,,1,3,10E300150,LossOnValuationOfInvestmentsInCapitalNOE,Loss on valuation of investments in capital
+　　　Loss on investments in money held in trust,0.0,Non-operating expenses,,Loss on investments in money held in trust,,1,3,10E300160,LossOnInvestmentsInMoneyHeldInTrustNOE,Loss on investments in money held in trust
+　　　Loss on valuation of derivatives,0.0,Non-operating expenses,,Loss on valuation of derivatives,,1,3,10E300170,LossOnValuationOfDerivativesNOE,Loss on valuation of derivatives
+　　　Loss on valuation of golf club membership,0.0,Non-operating expenses,,Loss on valuation of golf club membership,,1,3,10E300180,LossOnValuationOfGolfClubMembershipNOE,Loss on valuation of golf club membership
+　　　Loss on valuation of membership,0.0,Non-operating expenses,,Loss on valuation of membership,,1,3,10E300190,LossOnValuationOfMembershipNOE,Loss on valuation of membership
+　　　Loss on sales of membership,0.0,Non-operating expenses,,Loss on sales of membership,,1,3,10E300200,LossOnSaleOfMembershipNOE,Loss on sales of membership
+　　　Loss on cancellation of insurance policies,0.0,Non-operating expenses,,Loss on cancellation of insurance policies,,1,3,10E300210,LossOnInsuranceCancellationNOE,Loss on cancellation of insurance policies
+　　　Amortization of bond issuance cost,0.0,Non-operating expenses,,Amortization of bond issuance cost,,1,3,10E300220,AmortizationOfBondIssuanceCostNOE,Amortization of bond issuance cost
+　　　Share issuance cost,0.0,Non-operating expenses,,Share issuance cost,,1,3,10E300230,StockIssuanceCostNOE,Share issuance cost
+　　　Amortization of share issuance cost,0.0,Non-operating expenses,,Amortization of share issuance cost,,1,3,10E300240,AmortizationOfStockIssuanceCostNOE,Amortization of share issuance cost
+　　　Share issuance cost,0.0,Non-operating expenses,,Share issuance cost,,1,3,10E300250,StockIssuanceCostPriorNOE,Share issuance cost
+　　　Amortization of share issuance cost,0.0,Non-operating expenses,,Amortization of share issuance cost,,1,3,10E300260,AmortizationOfStockIssuanceCostPriorNOE,Amortization of share issuance cost
+　　　Loss on redemption of bonds,0.0,Non-operating expenses,,Loss on redemption of bonds,,1,3,10E300270,LossOnBondRetirementNOE,Loss on redemption of bonds
+　　　Bond issuance cost,0.0,Non-operating expenses,,Bond issuance cost,,1,3,10E300280,BondIssuanceCostNOE,Bond issuance cost
+　　　Commission for purchase of treasury shares,0.0,Non-operating expenses,,Commission for purchase of treasury shares,,1,3,10E300290,CommissionForPurchaseOfTreasuryStockNOE,Commission for purchase of treasury shares
+　　　Going public expenses,0.0,Non-operating expenses,,Going public expenses,,1,3,10E300300,GoingPublicExpensesNOE,Going public expenses
+　　　Financing expenses,0.0,Non-operating expenses,,Financing expenses,,1,3,10E300310,FinancingExpensesNOE,Financing expenses
+　　　Interest on short-term bonds,0.0,Non-operating expenses,,Interest on short-term bonds,,1,3,10E300320,InterestOnShortTermBondsNOE,Interest on short-term bonds
+　　　Interest on commercial papers,0.0,Non-operating expenses,,Interest on commercial papers,,1,3,10E300330,InterestOnCommercialPapersNOE,Interest on commercial papers
+　　　Foreign exchange losses,0.0,Non-operating expenses,,Foreign exchange losses,,1,3,10E300340,ForeignExchangeLossesNOE,Foreign exchange losses
+　　　Loss on valuation of interest rate swaps,0.0,Non-operating expenses,,Loss on valuation of interest rate swaps,,1,3,10E300350,LossOnValuationOfInterestSwapNOE,Loss on valuation of interest rate swaps
+　　　Loss on valuation of compound financial instruments,0.0,Non-operating expenses,,Loss on valuation of compound financial instruments,,1,3,10E300360,LossOnValuationOfCompoundFinancialInstrumentsNOE,Loss on valuation of compound financial instruments
+　　　Loss on sales of notes receivable - trade,0.0,Non-operating expenses,,Loss on sales of notes receivable - trade,,1,3,10E300370,LossOnSalesOfNotesPayableNOE,Loss on sales of notes receivable - trade
+　　　Loss on sales of electronically recorded monetary claims,0.0,Non-operating expenses,,Loss on sales of electronically recorded monetary claims,,1,3,10E300380,LossOnSalesOfElectronicallyRecordedMonetaryClaimsNOE,Loss on sales of electronically recorded monetary claims
+　　　Depreciation of assets for rent,0.0,Non-operating expenses,,Depreciation of assets for rent,,1,3,10E300390,DepreciationOfAssetsForRentNOE,Depreciation of assets for rent
+　　　Depreciation of inactive non-current assets,0.0,Non-operating expenses,,Depreciation of inactive non-current assets,,1,3,10E300400,DepreciationOfInactiveNoncurrentAssetsNOE,Depreciation of inactive non-current assets
+　　　Depreciation,0.0,Non-operating expenses,,Depreciation,,1,3,10E300410,DepreciationNOE,Depreciation
+　　　Rental cost,0.0,Non-operating expenses,,Rental cost,,1,3,10E300420,CostOfLeaseRevenueNOE,Rental cost
+　　　Rental expenses,0.0,Non-operating expenses,,Rental expenses,,1,3,10E300430,RentExpensesNOE,Rental expenses
+　　　Rental expenses on real estate,0.0,Non-operating expenses,,Rental expenses on real estate,,1,3,10E300440,RentExpensesOnRealEstatesNOE,Rental expenses on real estate
+　　　Rental cost on real estate,0.0,Non-operating expenses,,Rental cost on real estate,,1,3,10E300450,RentCostOfRealEstateNOE,Rental cost on real estate
+　　　Rental expenses on non-current assets,0.0,Non-operating expenses,,Rental expenses on non-current assets,,1,3,10E300460,RentExpensesOnNoncurrentAssetsNOE,Rental expenses on non-current assets
+　　　Rental expenses on facilities,0.0,Non-operating expenses,,Rental expenses on facilities,,1,3,10E300470,RentExpensesOnFacilitiesNOE,Rental expenses on facilities
+　　　Loss on cancellation of leases,0.0,Non-operating expenses,,Loss on cancellation of leases,,1,3,10E300480,LossOnCancelOfLeaseContractsNOE,Loss on cancellation of leases
+　　　Loss on sales of non-current assets,0.0,Non-operating expenses,,Loss on sales of non-current assets,,1,3,10E300490,LossOnSalesOfNoncurrentAssetsNOE,Loss on sales of non-current assets
+　　　Loss on retirement of non-current assets,0.0,Non-operating expenses,,Loss on retirement of non-current assets,,1,3,10E300500,LossOnRetirementOfNoncurrentAssetsNOE,Loss on retirement of non-current assets
+　　　Loss on sales and retirement of non-current assets,0.0,Non-operating expenses,,Loss on sales and retirement of non-current assets,,1,3,10E300510,LossOnSalesAndRetirementOfNoncurrentAssetsNOE,Loss on sales and retirement of non-current assets
+　　　Loss on abandonment of non-current assets,0.0,Non-operating expenses,,Loss on abandonment of non-current assets,,1,3,10E300520,LossOnAbandonmentOfNoncurrentAssetsNOE,Loss on abandonment of non-current assets
+　　　Loss on disposal of non-current assets,0.0,Non-operating expenses,,Loss on disposal of non-current assets,,1,3,10E300530,LossOnDisposalOfNoncurrentAssetsNOE,Loss on disposal of non-current assets
+　　　Loss on tax purpose reduction entry of non-current assets,0.0,Non-operating expenses,,Loss on tax purpose reduction entry of non-current assets,,1,3,10E300540,LossOnReductionOfNoncurrentAssetsNOE,Loss on tax purpose reduction entry of non-current assets
+　　　Loss on valuation of non-current assets,0.0,Non-operating expenses,,Loss on valuation of non-current assets,,1,3,10E300550,LossOnValuationOfNoncurrentAssetsNOE,Loss on valuation of non-current assets
+　　　Loss on valuation of inventories,0.0,Non-operating expenses,,Loss on valuation of inventories,,1,3,10E300560,LossOnValuationOfInventoriesNOE,Loss on valuation of inventories
+　　　Loss on abandonment of inventories,0.0,Non-operating expenses,,Loss on abandonment of inventories,,1,3,10E300570,LossOnAbandonmentOfInventoriesNOE,Loss on abandonment of inventories
+　　　Loss on retirement of inventories,0.0,Non-operating expenses,,Loss on retirement of inventories,,1,3,10E300580,LossOnRetirementOfInventoriesNOE,Loss on retirement of inventories
+　　　Loss on disposal of inventories,0.0,Non-operating expenses,,Loss on disposal of inventories,,1,3,10E300590,LossOnDisposalOfInventoriesNOE,Loss on disposal of inventories
+　　　Loss on valuation of goods,0.0,Non-operating expenses,,Loss on valuation of goods,,1,3,10E300600,LossOnValuationOfGoodsNOE,Loss on valuation of goods
+　　　Loss on abandonment of goods,0.0,Non-operating expenses,,Loss on abandonment of goods,,1,3,10E300610,LossOnAbandonmentOfGoodsNOE,Loss on abandonment of goods
+　　　Loss on valuation of raw materials,0.0,Non-operating expenses,,Loss on valuation of raw materials,,1,3,10E300620,LossOnValuationOfRawMaterialsNOE,Loss on valuation of raw materials
+　　　Provision of allowance for doubtful accounts,0.0,Non-operating expenses,,Provision of allowance for doubtful accounts,,1,3,10E300630,ProvisionOfAllowanceForDoubtfulAccountsNOE,Provision of allowance for doubtful accounts
+　　　Bad debts expenses,0.0,Non-operating expenses,,Bad debts expenses,,1,3,10E300640,BadDebtsExpensesNOE,Bad debts expenses
+　　　Retirement benefit expenses,0.0,Non-operating expenses,,Retirement benefit expenses,,1,3,10E300650,RetirementBenefitExpensesNOE,Retirement benefit expenses
+　　　Retirement benefit expenses for prior periods,0.0,Non-operating expenses,,Retirement benefit expenses for prior periods,,1,3,10E300660,RetirementBenefitExpensesForPriorPeriodsNOE,Retirement benefit expenses for prior periods
+　　　Amortization of shortage reserve for retirement benefits,0.0,Non-operating expenses,,Amortization of shortage reserve for retirement benefits,,1,3,10E300670,AmortizationOfShortageReserveForRetirementBenefitsNOE,Amortization of shortage reserve for retirement benefits
+　　　Amortization of net retirement benefit obligation at transition,0.0,Non-operating expenses,,Amortization of net retirement benefit obligation at transition,,1,3,10E300680,AmortizationOfNetRetirementBenefitObligationAtTransitionNOE,Amortization of net retirement benefit obligation at transition
+　　　Extra retirement payments,0.0,Non-operating expenses,,Extra retirement payments,,1,3,10E300690,ExtraRetirementPaymentsNOE,Extra retirement payments
+　　　Amortization of organization expenses,0.0,Non-operating expenses,,Amortization of organization expenses,,1,3,10E300700,AmortizationOfDeferredOrganizationExpensesNOE,Amortization of organization expenses
+　　　Amortization of business commencement expenses,0.0,Non-operating expenses,,Amortization of business commencement expenses,,1,3,10E300710,AmortizationOfBusinessCommencementExpensesNOE,Amortization of business commencement expenses
+　　　Amortization of long-term prepaid expenses,0.0,Non-operating expenses,,Amortization of long-term prepaid expenses,,1,3,10E300720,AmortizationOfLongTermPrepaidExpensesNOE,Amortization of long-term prepaid expenses
+　　　Amortization of development expenses,0.0,Non-operating expenses,,Amortization of development expenses,,1,3,10E300730,AmortizationOfDevelopmentExpensesNOE,Amortization of development expenses
+　　　Commission expenses,0.0,Non-operating expenses,,Commission expenses,,1,3,10E300740,CommissionFeeNOE,Commission expenses
+　　　Guarantee commission,0.0,Non-operating expenses,,Guarantee commission,,1,3,10E300750,GuaranteeCommissionNOE,Guarantee commission
+　　　Compensation expenses,0.0,Non-operating expenses,,Compensation expenses,,1,3,10E300760,CompensationExpensesNOE,Compensation expenses
+　　　Taxes and dues,0.0,Non-operating expenses,,Taxes and dues,,1,3,10E300770,TaxesAndDuesNOE,Taxes and dues
+　　　Donations,0.0,Non-operating expenses,,Donations,,1,3,10E300780,ContributionNOE,Donations
+　　　Loss on sales of trade receivables,0.0,Non-operating expenses,,Loss on sales of trade receivables,,1,3,10E300790,LossOnSalesOfAccountsReceivableNOE,Loss on sales of trade receivables
+　　　Loss on transfer of receivables,0.0,Non-operating expenses,,Loss on transfer of receivables,,1,3,10E300800,LossOnTransferOfReceivablesNOE,Loss on transfer of receivables
+　　　Commitment fee,0.0,Non-operating expenses,,Commitment fee,,1,3,10E300810,CommitmentFeeNOE,Commitment fee
+　　　Commission for syndicated loans,0.0,Non-operating expenses,,Commission for syndicated loans,,1,3,10E300820,CommissionForSyndicateLoanNOE,Commission for syndicated loans
+　　　Office relocation expenses,0.0,Non-operating expenses,,Office relocation expenses,,1,3,10E300830,OfficeTransferExpensesNOE,Office relocation expenses
+　　　Settlement package,0.0,Non-operating expenses,,Settlement package,,1,3,10E300840,SettlementPackageNOE,Settlement package
+　　　Litigation settlement,0.0,Non-operating expenses,,Litigation settlement,,1,3,10E300850,LitigationSettlementNOE,Litigation settlement
+　　　Litigation expenses,0.0,Non-operating expenses,,Litigation expenses,,1,3,10E300860,LitigationExpensesNOE,Litigation expenses
+　　　Listing expenses,0.0,Non-operating expenses,,Listing expenses,,1,3,10E300870,ListingExpense,Listing expenses
+　　　Miscellaneous expenses,0.0,Non-operating expenses,,Miscellaneous expenses,,1,3,10E300880,MiscellaneousExpensesNOE,Miscellaneous expenses
+　　　Miscellaneous loss,0.0,Non-operating expenses,,Miscellaneous loss,,1,3,10E300890,MiscellaneousLossNOE,Miscellaneous loss
+　　　Other,0.0,Non-operating expenses,,Other,,1,3,10E300900,NonOperatingExpensesAbstract,Other
+　　　Non-operating expenses,0.0,Non-operating expenses,,Non-operating expenses,,1,3,10E300910,NonOperatingExpenses,Non-operating expenses
+　　Ordinary profit (loss),0.0,Profit and loss,,Ordinary profit (loss),,1,2,10F000130,OrdinaryIncome,Ordinary profit (loss)
+　　Extraordinary income,,Extraordinary income,,Extraordinary income,,T,2,10D300010,ExtraordinaryIncomeAbstract,Extraordinary income
+　　　Reversal of provision incurred from business combination,0.0,Extraordinary income,,Reversal of provision incurred from business combination,,1,3,10D300020,ReversalOfProvisionIncurredFromBusinessCombinationEI,Reversal of provision incurred from business combination
+　　　Gain on exchange from business combination,0.0,Extraordinary income,,Gain on exchange from business combination,,1,3,10D300030,GainOnExchangeFromBusinessCombinationEI,Gain on exchange from business combination
+　　　Gain on transfer from business divestitures,0.0,Extraordinary income,,Gain on transfer from business divestitures,,1,3,10D300040,GainOnTransferFromBusinessDivestituresEI,Gain on transfer from business divestitures
+　　　Gain on step acquisitions,0.0,Extraordinary income,,Gain on step acquisitions,,1,3,10D300050,GainOnStepAcquisitionsEI,Gain on step acquisitions
+　　　Gain on change in equity,0.0,Extraordinary income,,Gain on change in equity,,1,3,10D300060,GainOnChangeInEquityEI,Gain on change in equity
+　　　Gain on extinguishment of tie-in shares,0.0,Extraordinary income,,Gain on extinguishment of tie-in shares,,1,3,10D300070,GainOnExtinguishmentOfTieInSharesEI,Gain on extinguishment of tie-in shares
+　　　Gain on sales of non-current assets,0.0,Extraordinary income,,Gain on sales of non-current assets,,1,3,10D300080,GainOnSalesOfNoncurrentAssetsEI,Gain on sales of non-current assets
+　　　Gain on disposal of non-current assets,0.0,Extraordinary income,,Gain on disposal of non-current assets,,1,3,10D300090,GainOnDisposalOfNoncurrentAssetsEI,Gain on disposal of non-current assets
+　　　Gain on donation of non-current assets,0.0,Extraordinary income,,Gain on donation of non-current assets,,1,3,10D300100,GainOnDonationOfNoncurrentAssetsEI,Gain on donation of non-current assets
+"　　　Gain on sales of property, plant and equipment",0.0,Extraordinary income,,"Gain on sales of property, plant and equipment",,1,3,10D300110,GainOnSalesOfPropertyPlantAndEquipmentEI,"Gain on sales of property, plant and equipment"
+　　　Gain on sales of land,0.0,Extraordinary income,,Gain on sales of land,,1,3,10D300120,GainOnSalesOfLandEI,Gain on sales of land
+　　　Gain on sales of investment securities,0.0,Extraordinary income,,Gain on sales of investment securities,,1,3,10D300130,GainOnSalesOfInvestmentSecuritiesEI,Gain on sales of investment securities
+　　　Gain on redemption of investment securities,0.0,Extraordinary income,,Gain on redemption of investment securities,,1,3,10D300140,GainOnRedemptionOfInvestmentSecuritiesEI,Gain on redemption of investment securities
+　　　Gain on sales of securities,0.0,Extraordinary income,,Gain on sales of securities,,1,3,10D300150,GainOnSalesOfSecuritiesEI,Gain on sales of securities
+　　　Gain on reversal of loss on valuation of investment securities,0.0,Extraordinary income,,Gain on reversal of loss on valuation of investment securities,,1,3,10D300160,GainOnReversalOfLossOnValuationOfInvestmentSecuritiesEI,Gain on reversal of loss on valuation of investment securities
+　　　Gain on investments in silent partnerships,0.0,Extraordinary income,,Gain on investments in silent partnerships,,1,3,10D300170,GainOnInvestmentsInSilentPartnershipEI,Gain on investments in silent partnerships
+　　　Gain on sales of golf memberships,0.0,Extraordinary income,,Gain on sales of golf memberships,,1,3,10D300180,GainOnSalesOfGolfMembershipsEI,Gain on sales of golf memberships
+　　　Gain on sales of memberships,0.0,Extraordinary income,,Gain on sales of memberships,,1,3,10D300190,GainOnSalesOfMembershipsEI,Gain on sales of memberships
+　　　Gain on bargain purchase,0.0,Extraordinary income,,Gain on bargain purchase,,1,3,10D300200,GainOnNegativeGoodwillEI,Gain on bargain purchase
+　　　Gain on liquidation of subsidiaries and associates,0.0,Extraordinary income,,Gain on liquidation of subsidiaries and associates,,1,3,10D300210,GainOnLiquidationOfSubsidiariesAndAffiliatesEI,Gain on liquidation of subsidiaries and associates
+　　　Gain on liquidation of subsidiaries,0.0,Extraordinary income,,Gain on liquidation of subsidiaries,,1,3,10D300220,GainOnLiquidationOfSubsidiariesEI,Gain on liquidation of subsidiaries
+　　　Gain on sales of shares of subsidiaries and associates,0.0,Extraordinary income,,Gain on sales of shares of subsidiaries and associates,,1,3,10D300230,GainOnSalesOfSubsidiariesAndAffiliatesStocksEI,Gain on sales of shares of subsidiaries and associates
+　　　Gain on sales of shares of subsidiaries,0.0,Extraordinary income,,Gain on sales of shares of subsidiaries,,1,3,10D300240,GainOnSalesOfSubsidiariesStocksEI,Gain on sales of shares of subsidiaries
+　　　Gain on sale of businesses,0.0,Extraordinary income,,Gain on sale of businesses,,1,3,10D300250,GainOnTransferOfBusinessEI,Gain on sale of businesses
+　　　Reversal of allowance for doubtful accounts,0.0,Extraordinary income,,Reversal of allowance for doubtful accounts,,1,3,10D300260,ReversalOfAllowanceForDoubtfulAccountsEI,Reversal of allowance for doubtful accounts
+　　　Reversal of provision for bonuses,0.0,Extraordinary income,,Reversal of provision for bonuses,,1,3,10D300270,ReversalOfProvisionForBonusesEI,Reversal of provision for bonuses
+　　　Reversal of provision for bonuses for directors (and other officers),0.0,Extraordinary income,,Reversal of provision for bonuses for directors (and other officers),,1,3,10D300280,ReversalOfProvisionForDirectorsBonusesEI,Reversal of provision for bonuses for directors (and other officers)
+　　　Reversal of provision for retirement benefits,0.0,Extraordinary income,,Reversal of provision for retirement benefits,,1,3,10D300290,ReversalOfProvisionForRetirementBenefitsEI,Reversal of provision for retirement benefits
+　　　Reversal of provision for retirement benefits for directors (and other officers),0.0,Extraordinary income,,Reversal of provision for retirement benefits for directors (and other officers),,1,3,10D300300,ReversalOfProvisionForDirectorsRetirementBenefitsEI,Reversal of provision for retirement benefits for directors (and other officers)
+　　　Reversal of allowance for investment loss,0.0,Extraordinary income,,Reversal of allowance for investment loss,,1,3,10D300310,ReversalOfAllowanceForInvestmentLossEI,Reversal of allowance for investment loss
+　　　Reversal of provision for product warranties,0.0,Extraordinary income,,Reversal of provision for product warranties,,1,3,10D300320,ReversalOfProvisionForProductWarrantiesEI,Reversal of provision for product warranties
+　　　Reversal of provision for special repairs,0.0,Extraordinary income,,Reversal of provision for special repairs,,1,3,10D300330,ReversalOfProvisionForSpecialRepairsEI,Reversal of provision for special repairs
+　　　Reversal of provision for warranties for completed construction,0.0,Extraordinary income,,Reversal of provision for warranties for completed construction,,1,3,10D300340,ReversalOfProvisionForWarrantiesForCompletedConstructionEI,Reversal of provision for warranties for completed construction
+　　　Reversal of provision for loss on guarantees,0.0,Extraordinary income,,Reversal of provision for loss on guarantees,,1,3,10D300350,ReversalOfProvisionForLossOnGuaranteesEI,Reversal of provision for loss on guarantees
+　　　Reversal of provision for loss on liquidation of subsidiaries and associates,0.0,Extraordinary income,,Reversal of provision for loss on liquidation of subsidiaries and associates,,1,3,10D300360,ReversalOfProvisionForLossOnLiquidationOfSubsidiariesAndAffiliatesEI,Reversal of provision for loss on liquidation of subsidiaries and associates
+　　　Reversal of provision for loss on business liquidation,0.0,Extraordinary income,,Reversal of provision for loss on business liquidation,,1,3,10D300370,ReversalOfProvisionForLossOnBusinessLiquidationEI,Reversal of provision for loss on business liquidation
+　　　Reversal of provision for loss on business of subsidiaries and associates,0.0,Extraordinary income,,Reversal of provision for loss on business of subsidiaries and associates,,1,3,10D300380,ReversalOfProvisionForLossOnBusinessOfSubsidiariesAndAffiliatesEI,Reversal of provision for loss on business of subsidiaries and associates
+　　　Reversal of provision for business restructuring,0.0,Extraordinary income,,Reversal of provision for business restructuring,,1,3,10D300390,ReversalOfProvisionForBusinessStructureImprovementEI,Reversal of provision for business restructuring
+　　　Reversal of provision for loss on store closings,0.0,Extraordinary income,,Reversal of provision for loss on store closings,,1,3,10D300400,ReversalOfProvisionForLossOnStoreClosingEI,Reversal of provision for loss on store closings
+　　　Reversal of provision for loss on litigation,0.0,Extraordinary income,,Reversal of provision for loss on litigation,,1,3,10D300410,ReversalOfProvisionForLossOnLitigationEI,Reversal of provision for loss on litigation
+　　　Reversal of provision for point card certificates,0.0,Extraordinary income,,Reversal of provision for point card certificates,,1,3,10D300420,ReversalOfProvisionForPointCardCertificatesEI,Reversal of provision for point card certificates
+　　　Gain on reversal of provision for loss on disaster,0.0,Extraordinary income,,Gain on reversal of provision for loss on disaster,,1,3,10D300430,ReversalOfReservesUnderTheSpecialLawsEI,Gain on reversal of provision for loss on disaster
+　　　Gain on contribution of securities to retirement benefit trust,0.0,Extraordinary income,,Gain on contribution of securities to retirement benefit trust,,1,3,10D300440,GainOnContributionOfSecuritiesToRetirementBenefitTrustEI,Gain on contribution of securities to retirement benefit trust
+　　　Gain on transfer of benefit obligation relating to employees' pension fund,0.0,Extraordinary income,,Gain on transfer of benefit obligation relating to employees' pension fund,,1,3,10D300450,GainOnTransferOfBenefitObligationRelatingToEmployeesPensionFundEI,Gain on transfer of benefit obligation relating to employees' pension fund
+　　　Amortization of net retirement benefit obligation at transition,0.0,Extraordinary income,,Amortization of net retirement benefit obligation at transition,,1,3,10D300460,AmortizationOfNetRetirementBenefitObligationAtTransitionEI,Amortization of net retirement benefit obligation at transition
+　　　Gain on revision of retirement benefit plan,0.0,Extraordinary income,,Gain on revision of retirement benefit plan,,1,3,10D300470,GainOnRevisionOfRetirementBenefitPlanEI,Gain on revision of retirement benefit plan
+　　　Gain on termination of retirement benefit plan,0.0,Extraordinary income,,Gain on termination of retirement benefit plan,,1,3,10D300480,GainOnAbolishmentOfRetirementBenefitPlanEI,Gain on termination of retirement benefit plan
+　　　Foreign exchange gains,0.0,Extraordinary income,,Foreign exchange gains,,1,3,10D300490,ForeignExchangeGainsEI,Foreign exchange gains
+　　　Reversal of reserves under special laws,0.0,Extraordinary income,,Reversal of reserves under special laws,,1,3,10D300500,ReversalOfReservesUnderTheSpecialLawsEI,Reversal of reserves under special laws
+　　　Contribution for construction,0.0,Extraordinary income,,Contribution for construction,,1,3,10D300510,ContributionForConstructionEI,Contribution for construction
+　　　National subsidies,0.0,Extraordinary income,,National subsidies,,1,3,10D300520,StateSubsidyEI,National subsidies
+　　　Subsidy income,0.0,Extraordinary income,,Subsidy income,,1,3,10D300530,SubsidyEI,Subsidy income
+　　　Gain on reversal of share acquisition rights,0.0,Extraordinary income,,Gain on reversal of share acquisition rights,,1,3,10D300540,GainOnReversalOfSubscriptionRightsToSharesEI,Gain on reversal of share acquisition rights
+　　　Gain on reversal of asset retirement obligations,0.0,Extraordinary income,,Gain on reversal of asset retirement obligations,,1,3,10D300550,GainOnBadDebtsRecoveredEI,Gain on reversal of asset retirement obligations
+　　　Surrender value of insurance policies,0.0,Extraordinary income,,Surrender value of insurance policies,,1,3,10D300560,SurrenderValueOfInsuranceEI,Surrender value of insurance policies
+　　　Insurance claim income,0.0,Extraordinary income,,Insurance claim income,,1,3,10D300570,InsuranceIncomeEI,Insurance claim income
+　　　Gain on insurance claims,0.0,Extraordinary income,,Gain on insurance claims,,1,3,10D300580,GainOnInsuranceAdjustmentEI,Gain on insurance claims
+　　　Compensation income,0.0,Extraordinary income,,Compensation income,,1,3,10D300590,CompensationIncomeEI,Compensation income
+　　　Compensation for expropriation,0.0,Extraordinary income,,Compensation for expropriation,,1,3,10D300600,CompensationIncomeForExpropriationEI,Compensation for expropriation
+　　　Compensation for forced relocation,0.0,Extraordinary income,,Compensation for forced relocation,,1,3,10D300610,CompensationForTransferEI,Compensation for forced relocation
+　　　Settlement received,0.0,Extraordinary income,,Settlement received,,1,3,10D300620,SettlementReceivedEI,Settlement received
+　　　Penalty income,0.0,Extraordinary income,,Penalty income,,1,3,10D300630,SettlementReceivedEI,Penalty income
+　　　Gain on bad debts recovered,0.0,Extraordinary income,,Gain on bad debts recovered,,1,3,10D300640,GainOnBadDebtsRecoveredEI,Gain on bad debts recovered
+　　　Gain on forgiveness of debts,0.0,Extraordinary income,,Gain on forgiveness of debts,,1,3,10D300650,GainOnForgivenessOfDebtsEI,Gain on forgiveness of debts
+　　　Other,0.0,Extraordinary income,,Other,,1,3,10D300660,ExtraordinaryIncomeAbstract,Other
+　　　Extraordinary income,0.0,Extraordinary income,,Extraordinary income,,1,3,10D300670,ExtraordinaryIncome,Extraordinary income
+　　Extraordinary losses,,Extraordinary losses,,Extraordinary losses,,T,2,10E400010,ExtraordinaryLossAbstract,Extraordinary losses
+　　　Loss on exchange from business combination,0.0,Extraordinary losses,,Loss on exchange from business combination,,1,3,10E400020,LossOnExchangeFromBusinessCombinationEL,Loss on exchange from business combination
+　　　Loss on transfer from business divestitures,0.0,Extraordinary losses,,Loss on transfer from business divestitures,,1,3,10E400030,LossOnTransferFromBusinessDivestituresEL,Loss on transfer from business divestitures
+　　　Loss on step acquisitions,0.0,Extraordinary losses,,Loss on step acquisitions,,1,3,10E400040,LossOnStepAcquisitionsEL,Loss on step acquisitions
+　　　Loss on change in equity,0.0,Extraordinary losses,,Loss on change in equity,,1,3,10E400050,LossOnChangeInEquityEL,Loss on change in equity
+　　　Loss on extinguishment of tie-in shares,0.0,Extraordinary losses,,Loss on extinguishment of tie-in shares,,1,3,10E400060,LossOnExtinguishmentOfTieInSharesEL,Loss on extinguishment of tie-in shares
+　　　Merger expenses,0.0,Extraordinary losses,,Merger expenses,,1,3,10E400070,MergerExpensesEL,Merger expenses
+　　　Loss on sales of non-current assets,0.0,Extraordinary losses,,Loss on sales of non-current assets,,1,3,10E400080,LossOnSalesOfNoncurrentAssetsEL,Loss on sales of non-current assets
+　　　Impairment loss,0.0,Extraordinary losses,,Impairment loss,,1,3,10E400090,ImpairmentLossEL,Impairment loss
+　　　Loss on disaster,0.0,Extraordinary losses,,Loss on disaster,,1,3,10E400100,LossOnDisasterEL,Loss on disaster
+　　　Loss on retirement of non-current assets,0.0,Extraordinary losses,,Loss on retirement of non-current assets,,1,3,10E400110,LossOnRetirementOfNoncurrentAssetsEL,Loss on retirement of non-current assets
+　　　Loss on sales and retirement of non-current assets,0.0,Extraordinary losses,,Loss on sales and retirement of non-current assets,,1,3,10E400120,LossOnSalesAndRetirementOfNoncurrentAssetsEL,Loss on sales and retirement of non-current assets
+　　　Loss on abandonment of non-current assets,0.0,Extraordinary losses,,Loss on abandonment of non-current assets,,1,3,10E400130,LossOnAbandonmentOfNoncurrentAssetsEL,Loss on abandonment of non-current assets
+　　　Loss on disposal of non-current assets,0.0,Extraordinary losses,,Loss on disposal of non-current assets,,1,3,10E400140,LossOnDisposalOfNoncurrentAssetsEL,Loss on disposal of non-current assets
+　　　Loss on tax purpose reduction entry of non-current assets,0.0,Extraordinary losses,,Loss on tax purpose reduction entry of non-current assets,,1,3,10E400150,LossOnReductionOfNoncurrentAssetsEL,Loss on tax purpose reduction entry of non-current assets
+　　　Loss on valuation of non-current assets,0.0,Extraordinary losses,,Loss on valuation of non-current assets,,1,3,10E400160,LossOnValuationOfNoncurrentAssetsEL,Loss on valuation of non-current assets
+"　　　Loss on sales of property, plant and equipment",0.0,Extraordinary losses,,"Loss on sales of property, plant and equipment",,1,3,10E400170,LossOnSalesOfPropertyPlantAndEquipmentEL,"Loss on sales of property, plant and equipment"
+"　　　Loss on retirement of property, plant and equipment",0.0,Extraordinary losses,,"Loss on retirement of property, plant and equipment",,1,3,10E400180,LossOnRetirementOfPropertyPlantAndEquipmentEL,"Loss on retirement of property, plant and equipment"
+"　　　Loss on disposal of property, plant and equipment",0.0,Extraordinary losses,,"Loss on disposal of property, plant and equipment",,1,3,10E400190,LossOnDisposalOfPropertyPlantAndEquipmentEL,"Loss on disposal of property, plant and equipment"
+　　　Loss on sales of land,0.0,Extraordinary losses,,Loss on sales of land,,1,3,10E400200,LossOnSalesOfLandEL,Loss on sales of land
+　　　Loss on sales of investment securities,0.0,Extraordinary losses,,Loss on sales of investment securities,,1,3,10E400210,LossOnSalesOfInvestmentSecuritiesEL,Loss on sales of investment securities
+　　　Loss on valuation of investment securities,0.0,Extraordinary losses,,Loss on valuation of investment securities,,1,3,10E400220,LossOnValuationOfInvestmentSecuritiesEL,Loss on valuation of investment securities
+　　　Loss on redemption of investment securities,0.0,Extraordinary losses,,Loss on redemption of investment securities,,1,3,10E400230,LossOnRedemptionOfInvestmentSecuritiesEL,Loss on redemption of investment securities
+　　　Loss on sales of securities,0.0,Extraordinary losses,,Loss on sales of securities,,1,3,10E400240,LossOnSalesOfSecuritiesEL,Loss on sales of securities
+　　　Loss on valuation of securities,0.0,Extraordinary losses,,Loss on valuation of securities,,1,3,10E400250,LossOnValuationOfSecuritiesEL,Loss on valuation of securities
+　　　Loss on investments in silent partnerships,0.0,Extraordinary losses,,Loss on investments in silent partnerships,,1,3,10E400260,LossOnInvestmentsInSilentPartnershipEL,Loss on investments in silent partnerships
+　　　Loss on valuation of investments in capital,0.0,Extraordinary losses,,Loss on valuation of investments in capital,,1,3,10E400270,LossOnValuationOfInvestmentsInCapitalEL,Loss on valuation of investments in capital
+　　　Loss on valuation of shares of subsidiaries and associates,0.0,Extraordinary losses,,Loss on valuation of shares of subsidiaries and associates,,1,3,10E400280,LossOnValuationOfStocksOfSubsidiariesAndAffiliatesEL,Loss on valuation of shares of subsidiaries and associates
+　　　Loss on sales of shares of subsidiaries and associates,0.0,Extraordinary losses,,Loss on sales of shares of subsidiaries and associates,,1,3,10E400290,LossOnSalesOfStocksOfSubsidiariesAndAffiliatesEL,Loss on sales of shares of subsidiaries and associates
+　　　Provision of allowance for investment loss,0.0,Extraordinary losses,,Provision of allowance for investment loss,,1,3,10E400300,ProvisionOfAllowanceForInvestmentLossEL,Provision of allowance for investment loss
+　　　Loss on valuation of investments in capital of subsidiaries and associates,0.0,Extraordinary losses,,Loss on valuation of investments in capital of subsidiaries and associates,,1,3,10E400310,LossOnValuationOfInvestmentsInCapitalOfSubsidiariesAndAffiliatesEL,Loss on valuation of investments in capital of subsidiaries and associates
+　　　Loss on sales of shares of subsidiaries,0.0,Extraordinary losses,,Loss on sales of shares of subsidiaries,,1,3,10E400320,LossOnSalesOfSubsidiariesStocksEL,Loss on sales of shares of subsidiaries
+　　　Loss on valuation of shares of subsidiaries,0.0,Extraordinary losses,,Loss on valuation of shares of subsidiaries,,1,3,10E400330,LossOnValuationOfSubsidiariesStocksEL,Loss on valuation of shares of subsidiaries
+　　　Loss on liquidation of subsidiaries and associates,0.0,Extraordinary losses,,Loss on liquidation of subsidiaries and associates,,1,3,10E400340,LossOnLiquidationOfSubsidiariesAndAffiliatesGeneralEL,Loss on liquidation of subsidiaries and associates
+　　　Provision for loss on liquidation of subsidiaries and associates,0.0,Extraordinary losses,,Provision for loss on liquidation of subsidiaries and associates,,1,3,10E400350,ProvisionForLossOnLiquidationOfSubsidiariesAndAffiliatesEL,Provision for loss on liquidation of subsidiaries and associates
+　　　Loss on liquidation of business,0.0,Extraordinary losses,,Loss on liquidation of business,,1,3,10E400360,LossOnLiquidationOfBusinessEL,Loss on liquidation of business
+　　　Provision for loss on business liquidation,0.0,Extraordinary losses,,Provision for loss on business liquidation,,1,3,10E400370,ProvisionForLossOnBusinessLiquidationEL,Provision for loss on business liquidation
+　　　Loss on business of subsidiaries and associates,0.0,Extraordinary losses,,Loss on business of subsidiaries and associates,,1,3,10E400380,LossOnBusinessOfSubsidiariesAndAffiliatesEL,Loss on business of subsidiaries and associates
+　　　Provision for loss on business of subsidiaries and associates,0.0,Extraordinary losses,,Provision for loss on business of subsidiaries and associates,,1,3,10E400390,ProvisionForLossOnBusinessOfSubsidiariesAndAffiliatesEL,Provision for loss on business of subsidiaries and associates
+　　　Business restructuring expenses,0.0,Extraordinary losses,,Business restructuring expenses,,1,3,10E400400,BusinessStructureImprovementExpensesEL,Business restructuring expenses
+　　　Provision for business restructuring,0.0,Extraordinary losses,,Provision for business restructuring,,1,3,10E400410,ProvisionForBusinessStructureImprovementEL,Provision for business restructuring
+　　　Loss on liquidation of subsidiaries and associates,0.0,Extraordinary losses,,Loss on liquidation of subsidiaries and associates,,1,3,10E400420,LossOnLiquidationOfSubsidiariesAndAffiliatesEL,Loss on liquidation of subsidiaries and associates
+　　　Loss on liquidation of subsidiaries,0.0,Extraordinary losses,,Loss on liquidation of subsidiaries,,1,3,10E400430,LossOnLiquidationOfSubsidiariesGeneralEL,Loss on liquidation of subsidiaries
+　　　Loss on liquidation of subsidiaries,0.0,Extraordinary losses,,Loss on liquidation of subsidiaries,,1,3,10E400440,LossOnLiquidationOfSubsidiariesEL,Loss on liquidation of subsidiaries
+　　　Restructuring loss,0.0,Extraordinary losses,,Restructuring loss,,1,3,10E400450,RestructuringLossEL,Restructuring loss
+　　　Loss on withdrawal from business,0.0,Extraordinary losses,,Loss on withdrawal from business,,1,3,10E400460,LossOnBusinessWithdrawalEL,Loss on withdrawal from business
+　　　Loss on sale of businesses,0.0,Extraordinary losses,,Loss on sale of businesses,,1,3,10E400470,LossOnTransferOfBusinessEL,Loss on sale of businesses
+　　　Loss on support to subsidiaries and associates,0.0,Extraordinary losses,,Loss on support to subsidiaries and associates,,1,3,10E400480,LossOnSupportToSubsidiariesAndSubsidiariesAndAffiliatesEL,Loss on support to subsidiaries and associates
+　　　Provision of allowance for doubtful accounts for subsidiaries and associates,0.0,Extraordinary losses,,Provision of allowance for doubtful accounts for subsidiaries and associates,,1,3,10E400490,ProvisionOfAllowanceForDoubtfulAccountsForSubsidiariesAndAffiliatesEL,Provision of allowance for doubtful accounts for subsidiaries and associates
+　　　Loss on valuation of other investments,0.0,Extraordinary losses,,Loss on valuation of other investments,,1,3,10E400500,LossOnValuationOfOtherInvestmentsEL,Loss on valuation of other investments
+　　　Loss on valuation of golf club membership,0.0,Extraordinary losses,,Loss on valuation of golf club membership,,1,3,10E400510,LossOnValuationOfGolfClubMembershipEL,Loss on valuation of golf club membership
+　　　Provision of allowance for doubtful accounts of golf club membership,0.0,Extraordinary losses,,Provision of allowance for doubtful accounts of golf club membership,,1,3,10E400520,ProvisionOfAllowanceForDoubtfulAccountsOfGolfClubMembershipEL,Provision of allowance for doubtful accounts of golf club membership
+　　　Loss on sales of golf club memberships,0.0,Extraordinary losses,,Loss on sales of golf club memberships,,1,3,10E400530,LossOnSalesOfGolfClubMembershipsEL,Loss on sales of golf club memberships
+　　　Loss on valuation of membership,0.0,Extraordinary losses,,Loss on valuation of membership,,1,3,10E400540,LossOnValuationOfMembershipEL,Loss on valuation of membership
+　　　Loss on sales of membership,0.0,Extraordinary losses,,Loss on sales of membership,,1,3,10E400550,LossOnSalesOfMembershipEL,Loss on sales of membership
+　　　Loss on valuation of telephone subscription right,0.0,Extraordinary losses,,Loss on valuation of telephone subscription right,,1,3,10E400560,LossOnValuationOfTelephoneSubscriptionRightEL,Loss on valuation of telephone subscription right
+　　　Loss on valuation of right to use facilities,0.0,Extraordinary losses,,Loss on valuation of right to use facilities,,1,3,10E400570,LossOnValuationOfRightOfUsingFacilitiesEL,Loss on valuation of right to use facilities
+　　　Extra retirement payments,0.0,Extraordinary losses,,Extra retirement payments,,1,3,10E400580,SpecialRetirementExpensesEL,Extra retirement payments
+　　　Extra retirement payments,0.0,Extraordinary losses,,Extra retirement payments,,1,3,10E400590,ExtraRetirementPaymentsEL,Extra retirement payments
+　　　Extra payments for early retirements,0.0,Extraordinary losses,,Extra payments for early retirements,,1,3,10E400600,EarlyExtraRetirementPaymentsEL,Extra payments for early retirements
+　　　Extra retirement payments,0.0,Extraordinary losses,,Extra retirement payments,,1,3,10E400610,SpecialExtraRetirementPaymentsEL,Extra retirement payments
+　　　Loss on store closings,0.0,Extraordinary losses,,Loss on store closings,,1,3,10E400620,LossOnClosingOfStoresEL,Loss on store closings
+　　　Provision for loss on store closings,0.0,Extraordinary losses,,Provision for loss on store closings,,1,3,10E400630,ProvisionForLossOnStoreClosingEL,Provision for loss on store closings
+　　　Office relocation expenses,0.0,Extraordinary losses,,Office relocation expenses,,1,3,10E400640,OfficeTransferExpensesEL,Office relocation expenses
+　　　Head office relocation expenses,0.0,Extraordinary losses,,Head office relocation expenses,,1,3,10E400650,HeadOfficeTransferCostEL,Head office relocation expenses
+　　　Provision for loss on guarantees,0.0,Extraordinary losses,,Provision for loss on guarantees,,1,3,10E400660,ProvisionForLossOnGuaranteesEL,Provision for loss on guarantees
+　　　Provision for loss on construction contracts,0.0,Extraordinary losses,,Provision for loss on construction contracts,,1,3,10E400670,ProvisionForLossOnConstructionContractsEL,Provision for loss on construction contracts
+　　　Provision of allowance for doubtful accounts,0.0,Extraordinary losses,,Provision of allowance for doubtful accounts,,1,3,10E400680,ProvisionOfAllowanceForDoubtfulAccountsEL,Provision of allowance for doubtful accounts
+　　　Bad debts written off,0.0,Extraordinary losses,,Bad debts written off,,1,3,10E400690,BadDebtsWrittenOffEL,Bad debts written off
+　　　Loss on valuation of inventories,0.0,Extraordinary losses,,Loss on valuation of inventories,,1,3,10E400700,LossOnValuationOfInventoriesEL,Loss on valuation of inventories
+　　　Loss on disposal of inventories,0.0,Extraordinary losses,,Loss on disposal of inventories,,1,3,10E400710,LossOnDisposalOfInventoriesEL,Loss on disposal of inventories
+　　　Loss on retirement of inventories,0.0,Extraordinary losses,,Loss on retirement of inventories,,1,3,10E400720,LossOnRetirementOfInventoriesEL,Loss on retirement of inventories
+　　　Loss on abandonment of inventories,0.0,Extraordinary losses,,Loss on abandonment of inventories,,1,3,10E400730,LossOnAbandonmentOfInventoriesEL,Loss on abandonment of inventories
+　　　Loss on valuation of goods,0.0,Extraordinary losses,,Loss on valuation of goods,,1,3,10E400740,LossOnValuationOfGoodsEL,Loss on valuation of goods
+　　　Loss on abandonment of goods,0.0,Extraordinary losses,,Loss on abandonment of goods,,1,3,10E400750,LossOnAbandonmentOfGoodsEL,Loss on abandonment of goods
+　　　Loss on valuation of real estate for sale,0.0,Extraordinary losses,,Loss on valuation of real estate for sale,,1,3,10E400760,LossOnValuationOfRealEstateForSaleEL,Loss on valuation of real estate for sale
+　　　Loss on valuation of land for sale,0.0,Extraordinary losses,,Loss on valuation of land for sale,,1,3,10E400770,LossOnValuationOfLandForSaleEL,Loss on valuation of land for sale
+　　　Loss on retirement of buildings,0.0,Extraordinary losses,,Loss on retirement of buildings,,1,3,10E400780,LossOnRetirementOfBuildingEL,Loss on retirement of buildings
+　　　Foreign exchange losses,0.0,Extraordinary losses,,Foreign exchange losses,,1,3,10E400790,ForeignExchangeLossesEL,Foreign exchange losses
+　　　Non-recurring depreciation on non-current assets,0.0,Extraordinary losses,,Non-recurring depreciation on non-current assets,,1,3,10E400800,NonRecurringDepreciationOnNoncurrentAssetsEL,Non-recurring depreciation on non-current assets
+　　　Tax purpose reduction entry of contribution for construction,0.0,Extraordinary losses,,Tax purpose reduction entry of contribution for construction,,1,3,10E400810,ReductionEntryOfLandContributionForConstructionEL,Tax purpose reduction entry of contribution for construction
+　　　Loss on retirement of software,0.0,Extraordinary losses,,Loss on retirement of software,,1,3,10E400820,LossOnRetirementOfSoftwareEL,Loss on retirement of software
+　　　Loss on cancellation of rental contracts,0.0,Extraordinary losses,,Loss on cancellation of rental contracts,,1,3,10E400830,LossOnCancellationOfLeaseholdContractsEL,Loss on cancellation of rental contracts
+　　　Loss on cancellation of leases,0.0,Extraordinary losses,,Loss on cancellation of leases,,1,3,10E400840,LossOnCancellationOfLeaseContractsEL,Loss on cancellation of leases
+　　　Loss on cancellation of insurance policies,0.0,Extraordinary losses,,Loss on cancellation of insurance policies,,1,3,10E400850,LossOnInsuranceCancellationEL,Loss on cancellation of insurance policies
+　　　Retirement benefit expenses,0.0,Extraordinary losses,,Retirement benefit expenses,,1,3,10E400860,RetirementBenefitExpensesEL,Retirement benefit expenses
+　　　Loss on contribution of securities to retirement benefit trust,0.0,Extraordinary losses,,Loss on contribution of securities to retirement benefit trust,,1,3,10E400870,LossOnContributionOfSecuritiesToRetirementBenefitTrustEL,Loss on contribution of securities to retirement benefit trust
+　　　Loss on transfer of benefit obligation relating to employees' pension fund,0.0,Extraordinary losses,,Loss on transfer of benefit obligation relating to employees' pension fund,,1,3,10E400880,LossOnTransferOfBenefitObligationRelatingToEmployeesPensionFundEL,Loss on transfer of benefit obligation relating to employees' pension fund
+　　　Retirement benefit expenses for prior periods,0.0,Extraordinary losses,,Retirement benefit expenses for prior periods,,1,3,10E400890,RetirementBenefitExpensesForPriorPeriodsEL,Retirement benefit expenses for prior periods
+　　　Provision for retirement benefits,0.0,Extraordinary losses,,Provision for retirement benefits,,1,3,10E400900,ProvisionForRetirementBenefitsEL,Provision for retirement benefits
+　　　Amortization of net retirement benefit obligation at transition,0.0,Extraordinary losses,,Amortization of net retirement benefit obligation at transition,,1,3,10E400910,AmortizationOfNetRetirementBenefitObligationAtTransitionEL,Amortization of net retirement benefit obligation at transition
+　　　Retirement benefits for directors (and other officers),0.0,Extraordinary losses,,Retirement benefits for directors (and other officers),,1,3,10E400920,DirectorsRetirementBenefitsEL,Retirement benefits for directors (and other officers)
+　　　Provision for retirement benefits for directors (and other officers),0.0,Extraordinary losses,,Provision for retirement benefits for directors (and other officers),,1,3,10E400930,ProvisionForDirectorsRetirementBenefitsEL,Provision for retirement benefits for directors (and other officers)
+　　　Loss on revision of retirement benefit plan,0.0,Extraordinary losses,,Loss on revision of retirement benefit plan,,1,3,10E400940,LossOnRevisionOfRetirementBenefitPlanEL,Loss on revision of retirement benefit plan
+　　　Loss on termination of retirement benefit plan,0.0,Extraordinary losses,,Loss on termination of retirement benefit plan,,1,3,10E400950,LossOnAbolishmentOfRetirementBenefitPlanEL,Loss on termination of retirement benefit plan
+　　　Compensation for damage,0.0,Extraordinary losses,,Compensation for damage,,1,3,10E400960,CompensationForDamageEL,Compensation for damage
+　　　Settlement package,0.0,Extraordinary losses,,Settlement package,,1,3,10E400970,SettlementPackageEL,Settlement package
+　　　Litigation settlement,0.0,Extraordinary losses,,Litigation settlement,,1,3,10E400980,LitigationSettlementEL,Litigation settlement
+　　　Loss on litigation,0.0,Extraordinary losses,,Loss on litigation,,1,3,10E400990,LossOnLitigationEL,Loss on litigation
+　　　Provision for loss on litigation,0.0,Extraordinary losses,,Provision for loss on litigation,,1,3,10E401000,ProvisionForLossOnLitigationEL,Provision for loss on litigation
+　　　Provision for environmental measures,0.0,Extraordinary losses,,Provision for environmental measures,,1,3,10E401010,ProvisionForEnvironmentalMeasuresEL,Provision for environmental measures
+　　　Environmental expenses,0.0,Extraordinary losses,,Environmental expenses,,1,3,10E401020,EnvironmentalExpensesEL,Environmental expenses
+　　　Provision for loss on interest repayment,0.0,Extraordinary losses,,Provision for loss on interest repayment,,1,3,10E401030,ProvisionForLossOnInterestRepaymentEL,Provision for loss on interest repayment
+　　　Provision for contingent loss,0.0,Extraordinary losses,,Provision for contingent loss,,1,3,10E401040,ProvisionForContingentLossEL,Provision for contingent loss
+　　　Provision for loss on disaster,0.0,Extraordinary losses,,Provision for loss on disaster,,1,3,10E401050,ProvisionForLossOnDisasterEL,Provision for loss on disaster
+　　　Nonrecurring loss,0.0,Extraordinary losses,,Nonrecurring loss,,1,3,10E401060,NonrecurringLossEL,Nonrecurring loss
+　　　Provision of reserves under special laws,0.0,Extraordinary losses,,Provision of reserves under special laws,,1,3,10E401070,ProvisionOfReservesUnderTheSpecialLawsEL,Provision of reserves under special laws
+　　　Other,0.0,Extraordinary losses,,Other,,1,3,10E401080,ExtraordinaryLossAbstract,Other
+　　　Extraordinary losses,0.0,Extraordinary losses,,Extraordinary losses,,1,3,10E401090,ExtraordinaryLoss,Extraordinary losses
+　　Profit (loss) before distributions of profit or loss on silent partnerships and income taxes,0.0,Profit and loss,,Profit (loss) before distributions of profit or loss on silent partnerships and income taxes,,1,2,10F000140,IncomeBeforeDividendsDistributionFromSilentPartnershipIncomeTaxes,Profit (loss) before distributions of profit or loss on silent partnerships and income taxes
+　　Distributions of profit or loss on silent partnerships,0.0,Other,,Distributions of profit or loss on silent partnerships,,1,2,10F100050,DividendsDistributionFromSilentPartnership,Distributions of profit or loss on silent partnerships
+　　Profit (loss) before income taxes,0.0,Profit and loss,,Profit (loss) before income taxes,,1,2,10F000150,IncomeBeforeIncomeTaxes,Profit (loss) before income taxes
+　　Income taxes,0.0,Other,,Income taxes,,1,2,10F100060,IncomeTaxes,Income taxes
+　　　Income taxes - current,0.0,Other,,Income taxes - current,,1,3,10F100070,IncomeTaxesCurrent,Income taxes - current
+　　　Income taxes - correction,0.0,Other,,Income taxes - correction,,1,3,10F100080,IncomeTaxesCorrection,Income taxes - correction
+　　　Income taxes - deferred,0.0,Other,,Income taxes - deferred,,1,3,10F100090,IncomeTaxesDeferred,Income taxes - deferred
+　　　Refund of income taxes,0.0,Other,,Refund of income taxes,,1,3,10F100100,RefundOfIncomeTaxesIncomeTaxes,Refund of income taxes
+　　　Income taxes for prior periods,0.0,Other,,Income taxes for prior periods,,1,3,10F100110,IncomeTaxesForPriorPeriodsIncomeTaxes,Income taxes for prior periods
+　　　Refund of income taxes for prior periods,0.0,Other,,Refund of income taxes for prior periods,,1,3,10F100120,RefundOfIncomeTaxesForPriorPeriodsIncomeTaxes,Refund of income taxes for prior periods
+　　Profit (loss),0.0,Profit and loss,,Profit (loss),,1,2,10F000160,NetIncome,Profit (loss)
+　　　Profit attributable to,,Other,,Profit attributable to,,T,3,10F100130,abstract,Profit attributable to
+　　　　Profit (loss) attributable to non-controlling interests,0.0,Other,,Profit (loss) attributable to non-controlling interests,,1,4,10F100140,MinorityInterestsInIncome,Profit (loss) attributable to non-controlling interests
+　　　　Profit (loss) attributable to owners of parent,0.0,Other,,Profit (loss) attributable to owners of parent,,1,4,10F100150,StatementsOfIncomeAbstract,Profit (loss) attributable to owners of parent
+　　Other comprehensive income,,Other,,Other comprehensive income,,T,2,10F100160,abstract,Other comprehensive income
+"　　　Valuation difference on available-for-sale securities, before tax",0.0,Other,,"Valuation difference on available-for-sale securities, before tax",,1,3,10F100170,StatementsOfIncomeAbstract,"Valuation difference on available-for-sale securities, before tax"
+　　　Valuation difference on available-for-sale securities,0.0,Other,,Valuation difference on available-for-sale securities,,1,3,10F100180,StatementsOfIncomeAbstract,Valuation difference on available-for-sale securities
+"　　　Deferred gains or losses on hedges, before tax",0.0,Other,,"Deferred gains or losses on hedges, before tax",,1,3,10F100190,StatementsOfIncomeAbstract,"Deferred gains or losses on hedges, before tax"
+　　　Deferred gains or losses on hedges,0.0,Other,,Deferred gains or losses on hedges,,1,3,10F100200,StatementsOfIncomeAbstract,Deferred gains or losses on hedges
+　　　Revaluation reserve for land,0.0,Other,,Revaluation reserve for land,,1,3,10F100210,StatementsOfIncomeAbstract,Revaluation reserve for land
+"　　　Foreign currency translation adjustment, before tax",0.0,Other,,"Foreign currency translation adjustment, before tax",,1,3,10F100220,StatementsOfIncomeAbstract,"Foreign currency translation adjustment, before tax"
+　　　Foreign currency translation adjustment,0.0,Other,,Foreign currency translation adjustment,,1,3,10F100230,StatementsOfIncomeAbstract,Foreign currency translation adjustment
+"　　　Remeasurements of defined benefit plans, before tax",0.0,Other,,"Remeasurements of defined benefit plans, before tax",,1,3,10F100240,StatementsOfIncomeAbstract,"Remeasurements of defined benefit plans, before tax"
+"　　　Remeasurements of defined benefit plans, net of tax",0.0,Other,,"Remeasurements of defined benefit plans, net of tax",,1,3,10F100250,StatementsOfIncomeAbstract,"Remeasurements of defined benefit plans, net of tax"
+　　　Share of other comprehensive income of entities accounted for using equity method,0.0,Other,,Share of other comprehensive income of entities accounted for using equity method,,1,3,10F100260,StatementsOfIncomeAbstract,Share of other comprehensive income of entities accounted for using equity method
+　　　Income tax relating to other comprehensive income,0.0,Other,,Income tax relating to other comprehensive income,,1,3,10F100270,StatementsOfIncomeAbstract,Income tax relating to other comprehensive income
+　　　Other comprehensive income,0.0,Other,,Other comprehensive income,,1,3,10F100280,StatementsOfIncomeAbstract,Other comprehensive income
+　　Comprehensive income,0.0,Other,,Comprehensive income,,1,2,10F100290,StatementsOfIncomeAbstract,Comprehensive income
+　　　Comprehensive income attributable to,,Other,,Comprehensive income attributable to,,T,3,10F100300,abstract,Comprehensive income attributable to
+　　　　Comprehensive income attributable to owners of parent,0.0,Other,,Comprehensive income attributable to owners of parent,,1,4,10F100310,StatementsOfIncomeAbstract,Comprehensive income attributable to owners of parent
+　　　　Comprehensive income attributable to non-controlling interests,0.0,Other,,Comprehensive income attributable to non-controlling interests,,1,4,10F100320,StatementsOfIncomeAbstract,Comprehensive income attributable to non-controlling interests
+　　Statement of comprehensive income,,Other,,Statement of comprehensive income,,T,2,10F100330,abstract,Statement of comprehensive income

@@ -1,0 +1,843 @@
+﻿name,B,category,seq,account_name,amount,type,level,Ledger_Account_Number,element_name,English_Label
+　損益計算書,,,5,損益計算書,,T,1,10_000000,#N/A,Profit and Loss
+　　営業活動による収益,,売上高,,営業活動による収益,,T,2,10D100010,RevenueFromOperatingActivitiesAbstract,Revenue from operating activities
+　　　売上高,,売上高,,売上高,,T,3,10D100020,NetSalesAbstract,Net sales
+　　　　売上高,0,売上高,,売上高,,1,4,10D100030,NetSales,Net sales
+　　　営業収益,,売上高,,営業収益,,T,3,10D100040,OperatingRevenue2Abstract,Operating revenue
+　　　　営業収益,0,売上高,,営業収益,,1,4,10D100050,OperatingRevenue1,Operating revenue
+　　　営業収入,,売上高,,営業収入,,T,3,10D100060,OperatingRevenue2Abstract,Operating revenue
+　　　　営業収入,0,売上高,,営業収入,,1,4,10D100070,OperatingRevenue2,Operating revenue
+　　　　営業総収入,0,売上高,,営業総収入,,1,4,10D100080,GrossOperatingRevenue,Gross operating revenue
+　　　営業活動による収益の内訳,,売上高,,営業活動による収益の内訳,,T,3,10D100090,RevenueFromOperatingActivitiesDetailAbstract,Revenue from operating activities - detail
+　　　　総売上高,0,売上高,,総売上高,,T,4,10D100100,GrossSalesRevOA,Gross sales
+　　　　　電子取引 総売上高,0,売上高,,電子取引総売上高,,T,5,10D100103,#N/A,Gross sales from electronic transactions
+　　　　　　電子取引 売上高,0,売上高,,電子取引売上高,,0,6,10D100101,#N/A,Sales from electronic transactions
+　　　　　　電子取引 売上値引及び戻り高,0,売上高,,電子取引売上値引及び戻り高,,0,6,10D100111,#N/A,Sales allowance and returns from electronic transactions from electronic transactions
+　　　　売上値引及び戻り高,0,売上高,,売上値引及び戻り高,,0,4,10D100110,SalesAllowanceAndReturnsRevOA,Sales allowance and returns
+　　　　　電子取引以外 総売上高,0,売上高,,電子取引以外総売上高,,T,5,10D100104,#N/A,Gross sales from traditional transactions
+　　　　　　電子取引以外 売上高,0,売上高,,電子取引以外売上高,,0,6,10D100102,#N/A,Sales from traditional transactions
+　　　　　　電子取引以外 売上値引及び戻り高,0,売上高,,電子取引以外売上値引及び戻り高,,0,6,10D100112,#N/A,Sales allowance and returns from traditional transactions
+　　　　商品売上高,0,売上高,,商品売上高,,1,4,10D100120,NetSalesOfGoodsRevOA,Net sales of goods
+　　　　製品売上高,0,売上高,,製品売上高,,1,4,10D100130,NetSalesOfFinishedGoodsRevOA,Net sales of finished goods
+　　　　商品及び製品売上高,0,売上高,,商品及び製品売上高,,1,4,10D100140,NetSalesOfMerchandiseAndFinishedGoodsRevOA,Net sales of merchandise and finished goods
+　　　　半製品売上高,0,売上高,,半製品売上高,,1,4,10D100150,SalesOfSemiFinishedGoodsRevOA,Sales of semi-finished goods
+　　　　原材料売上高,0,売上高,,原材料売上高,,1,4,10D100160,SalesOfRawMaterialsRevOA,Sales of raw materials
+　　　　副産物売上高,0,売上高,,副産物売上高,,1,4,10D100170,SalesOfByProductsRevOA,Sales of by-products
+　　　　作業くず売上高,0,売上高,,作業くず売上高,,1,4,10D100180,SalesOfScrapsRevOA,Sales of scraps
+　　　　役務収益,0,売上高,,役務収益,,1,4,10D100190,ServiceRevenueRevOA,Service revenue
+　　　　サービス売上高,0,売上高,,サービス売上高,,1,4,10D100200,ServiceSalesRevOA,Service sales
+　　　　割賦販売売上高,0,売上高,,割賦販売売上高,,1,4,10D100210,InstallmentSalesRevOA,Installment sales
+　　　　不動産売上高,0,売上高,,不動産売上高,,1,4,10D100220,RealEstateSalesRevOA,Real estate sales
+　　　　開発事業売上高,0,売上高,,開発事業売上高,,1,4,10D100230,SalesOnDevelopmentBusinessRevOA,Sales in development business
+　　　　不動産事業売上高,0,売上高,,不動産事業売上高,,1,4,10D100240,SalesOnRealEstateBusinessRevOA,Sales in real estate business
+　　　　賃貸事業売上高,0,売上高,,賃貸事業売上高,,1,4,10D100250,SalesOnLeaseBusinessRevOA,Sales in leasing business
+　　　　分譲事業売上高,0,売上高,,分譲事業売上高,,1,4,10D100260,SalesOnSellingBusinessRevOA,Sales in residential property sales business
+　　　　その他の事業売上高,0,売上高,,その他の事業売上高,,1,4,10D100270,SalesOnOtherBusinessRevOA,Sales in other businesses
+　　　　賃貸事業収益,0,売上高,,賃貸事業収益,,1,4,10D100280,LeaseBusinessRevenueRevOA,Leasing business revenue
+　　　　賃貸事業収入,0,売上高,,賃貸事業収入,,1,4,10D100290,LeaseBusinessRevenueSpecificRevOA,Leasing business revenue
+　　　　賃貸収入,0,売上高,,賃貸収入,,1,4,10D100300,RentIncomeRevOA,Lease revenue
+　　　　不動産賃貸収入,0,売上高,,不動産賃貸収入,,1,4,10D100310,RentIncomeOfRealEstateRevOA,Real estate lease revenue
+　　　　不動産収入,0,売上高,,不動産収入,,1,4,10D100320,RealEstateIncomeRevOA,Real estate income
+　　　　手数料収入,0,売上高,,手数料収入,,1,4,10D100330,CommissionIncomeRevOA,Commission income
+　　　　加工料収入,0,売上高,,加工料収入,,1,4,10D100340,ProcessingIncomeRevOA,Processing income
+　　　　ロイヤリティー収入,0,売上高,,ロイヤリティー収入,,1,4,10D100350,RoyaltyIncomeRevOA,Royalty income
+　　　　コンサルティング収入,0,売上高,,コンサルティング収入,,1,4,10D100360,ConsultingIncomeRevOA,Consulting income
+　　　　加盟店からの収入,0,売上高,,加盟店からの収入,,1,4,10D100370,IncomeFromFranchisedStoresRevOA,Income from franchised stores
+　　　　関係会社受取配当金,0,売上高,,関係会社受取配当金,,1,4,10D100380,DividendsFromSubsidiariesAndAffiliatesRevOA,Dividends from subsidiaries and associates
+　　　　受取配当金,0,売上高,,受取配当金,,1,4,10D100390,DividendsIncomeRevOA,Dividend income
+　　　　関係会社受入手数料,0,売上高,,関係会社受入手数料,,1,4,10D100400,CommissionsFromSubsidiariesAndAffiliatesRevOA,Commissions from subsidiaries and associates
+　　　　関係会社貸付金利息,0,売上高,,関係会社貸付金利息,,1,4,10D100410,InterestOnLoansToSubsidiariesAndAffiliatesRevOA,Interest on loans receivable from subsidiaries and associates
+　　　　関係会社有価証券利息,0,売上高,,関係会社有価証券利息,,1,4,10D100420,InterestOnSecuritiesOfSubsidiariesAndAffiliatesRevOA,Interest on securities of subsidiaries and associates
+　　　　経営管理料,0,売上高,,経営管理料,,1,4,10D100430,ManagementFeeIncomeRevOA,Management fee income
+　　　　経営指導料,0,売上高,,経営指導料,,1,4,10D100440,ConsultingFeeIncomeRevOA,Consulting fee income
+　　　　商標使用料,0,売上高,,商標使用料,,1,4,10D100450,TrademarkFeeIncomeRevOA,Trademark fee income
+　　　　資産利用料,0,売上高,,資産利用料,,1,4,10D100460,AssetRentalIncomeRevOA,Asset rental income
+　　　　完成業務高,0,売上高,,完成業務高,,1,4,10D100470,ContractsCompletedRevOA,Completed service contracts
+　　　　工事売上高,0,売上高,,工事売上高,,1,4,10D100480,ConstructionSalesRevOA,Construction sales
+　　　　ソフトウエア開発売上高,0,売上高,,ソフトウエア開発売上高,,1,4,10D100490,SalesOfSoftwareDevelopmentRevOA,Sales of software development
+　　　　情報サービス売上高,0,売上高,,情報サービス売上高,,1,4,10D100500,SalesOfInformationServiceRevOA,Sales of information service
+　　　　保守売上高,0,売上高,,保守売上高,,1,4,10D100510,SalesOfMaintenanceServiceRevOA,Sales of maintenance service
+　　　　年会費収入,0,売上高,,年会費収入,,1,4,10D100520,AnnualFeeIncomeRevOA,Annual fee income
+　　　　倉庫収入,0,売上高,,倉庫収入,,1,4,10D100530,WarehouseIncomeRevOA,Warehouse income
+　　　　倉庫保管料,0,売上高,,倉庫保管料,,1,4,10D100540,WarehousingFeeIncomeRevOA,Warehousing fee income
+　　　　倉庫荷役料,0,売上高,,倉庫荷役料,,1,4,10D100550,StevedoringIncomeRevOA,Stevedoring income
+　　　　運送収入,0,売上高,,運送収入,,1,4,10D100560,TransportationIncomeRevOA,Transportation income
+　　　　運送雑収,0,売上高,,運送雑収,,1,4,10D100570,MiscellaneousTransportationIncomeRevOA,Miscellaneous transportation income
+　　　　制作収入,0,売上高,,制作収入,,1,4,10D100580,ProductionIncomeRevOA,Production income
+　　　　放送収入,0,売上高,,放送収入,,1,4,10D100590,IncomeFromBroadcastingBusinessRevOA,Income from broadcasting business
+　　　　テレビ収入,0,売上高,,テレビ収入,,1,4,10D100600,IncomeFromTelevisionBusinessRevOA,Income from television business
+　　　　ラジオ収入,0,売上高,,ラジオ収入,,1,4,10D100610,IncomeFromRadioBusinessRevOA,Income from radio business
+　　　　レンタル売上高,0,売上高,,レンタル売上高,,1,4,10D100620,RentalSalesRevOA,Rental sales
+　　　　受託品売上高,0,売上高,,受託品売上高,,1,4,10D100630,SalesOfGoodsOnConsignmentRevOA,Sales of goods on consignment
+　　　　買付品売上高,0,売上高,,買付品売上高,,1,4,10D100640,IndentSalesRevOA,Indent sales
+　　　　その他の売上高,0,売上高,,その他の売上高,,1,4,10D100650,OtherSalesRevOA,Other sales
+　　　　その他の事業収益,0,売上高,,その他の事業収益,,1,4,10D100660,OtherBusinessRevenue1RevOA,Other business revenue
+　　　　その他の事業収入,0,売上高,,その他の事業収入,,1,4,10D100670,OtherBusinessRevenue2RevOA,Other business revenue
+　　　　その他の営業収益,0,売上高,,その他の営業収益,,1,4,10D100680,OtherOperatingRevenue1RevOA,Other operating revenue
+　　　　その他の営業収入,0,売上高,,その他の営業収入,,1,4,10D100690,OtherOperatingRevenue2RevOA,Other operating revenue
+　　　　その他の収益,0,売上高,,その他の収益,,1,4,10D100700,OtherRevenue1RevOA,Other revenue
+　　　　その他の収入,0,売上高,,その他の収入,,1,4,10D100710,OtherRevenue2RevOA,Other revenue
+　　　　その他,0,売上高,,その他,,1,4,10D100720,OtherRevOA,Other
+　　　　金融収益,,売上高,,金融収益,,T,4,10D100730,FinancialRevenueAbstract,Financial revenue
+　　　　　金融収益,0,売上高,,金融収益,,1,5,10D100740,FinancialRevenue,Financial revenue
+　　　　　融資収益,0,売上高,,融資収益,,1,5,10D100750,FinancingRevenueRevOA,Financing revenue
+　　　　　リース収益,0,売上高,,リース収益,,1,5,10D100760,LeaseRevenueRevOA,Lease revenue
+　　　　　営業投資有価証券売上高,0,売上高,,営業投資有価証券売上高,,1,5,10D100770,RevenueFromOperationalInvestmentSecuritiesRevOA,Revenue from operational investment securities
+　　　　　割賦購入あっせん収益,0,売上高,,割賦購入あっせん収益,,1,5,10D100780,RevenueFromAgencyServicesOfInstallmentPurchaseRevOA,Revenue from agency services of installment purchase
+　　　　　包括信用購入あっせん収益,0,売上高,,包括信用購入あっせん収益,,1,5,10D100790,CreditCardRevenueRevOA,Revenue from credit card business
+　　　　　個別信用購入あっせん収益,0,売上高,,個別信用購入あっせん収益,,1,5,10D100800,PerItemRevenueRevOA,Revenue from installment sales finance business
+　　　　　受取割引料,0,売上高,,受取割引料,,1,5,10D100810,DiscountRevenueRevOA,Discount revenue
+　　　　　信用保証収益,0,売上高,,信用保証収益,,1,5,10D100820,RevenueFromCreditGuaranteeRevOA,Revenue from credit guarantee
+　　　　　投資事業組合管理収入,0,売上高,,投資事業組合管理収入,,1,5,10D100830,IncomeFromPartnershipManagementRevOA,Income from investment partnership management
+　　　　　名義書換手数料,0,売上高,,名義書換手数料,,1,5,10D100840,NameTransferFeeRevOA,Name transfer fee income
+　　　　　融資代行収益,0,売上高,,融資代行収益,,1,5,10D100850,LoanAgencyRevenueRevOA,Loan agency revenue
+　　　　　買取債権回収高,0,売上高,,買取債権回収高,,1,5,10D100860,CollectionFromPurchasedReceivableRevOA,Proceeds from purchased receivables
+　　　　　借入有価証券代り金利息,0,売上高,,借入有価証券代り金利息,,1,5,10D100870,InterestOnCollateralMoneyForSecuritiesBorrowedRevOA,Interest on collateral money for securities borrowed
+　　　　　有価証券貸付料,0,売上高,,有価証券貸付料,,1,5,10D100880,ChargeOnSecuritiesLoanedRevOA,Charge on securities loaned
+　　　　　貸借取引貸付金利息,0,売上高,,貸借取引貸付金利息,,1,5,10D100890,InterestOnLoansOnMarginTransactionRevOA,Interest on loans on margin transaction
+　　　　　公社債貸付金利息,0,売上高,,公社債貸付金利息,,1,5,10D100900,InterestOnBondFinancingRevOA,Interest on bond financing
+　　　　　一般貸付金利息,0,売上高,,一般貸付金利息,,1,5,10D100910,InterestOnGeneralLoansRevOA,Interest on general loans
+　　　　　投資収益,0,売上高,,投資収益,,1,5,10D100920,GainOnInvestmentRevOA,Gain on investments
+　　　　　その他の金融収益,0,売上高,,その他の金融収益,,1,5,10D100930,OtherFinancialRevenueRevOA,Other financial revenue
+　　営業活動による費用・売上原価,,売上原価,,営業活動による費用・売上原価,,T,2,10E100010,COSAndExpensesFromOperatingActivitiesAbstract,COS and expenses from operating activities
+　　　売上原価,,売上原価,,売上原価,,T,3,10E100020,CostOfSalesAbstract,Cost of sales
+　　　　売上原価,0,売上原価,,売上原価,,1,4,10E100030,CostOfSales,Cost of sales
+　　　営業費用,,売上原価,,営業費用,,T,3,10E100040,OperatingExpensesAbstract,Operating expenses
+　　　　営業費用,0,売上原価,,営業費用,,1,4,10E100050,OperatingExpenses,Operating expenses
+　　　営業原価,,売上原価,,営業原価,,T,3,10E100060,OperatingCostAbstract,Operating cost
+　　　　営業原価,0,売上原価,,営業原価,,1,4,10E100070,OperatingCost,Operating cost
+　　　営業活動による費用・売上原価の内訳,,売上原価,,営業活動による費用・売上原価の内訳,,T,3,10E100080,COSAndExpensesFromOperatingActivitiesDetailAbstract,COS and expenses from operating activities - detail
+　　　　商品売上原価,,売上原価,,商品売上原価,,T,4,10E100090,CostOfGoodsSoldAbstract,Cost of goods sold
+　　　　　商品期首たな卸高,0,売上原価,,商品期首たな卸高,,1,5,10E100100,BeginningGoodsCOS,Beginning merchandise inventory
+　　　　　総仕入高,0,売上原価,,総仕入高,,T,5,10E100110,TotalPurchaseOfGoods,Total purchase of goods
+　　　　　　電子取引 総仕入高,0,売上原価,,電子取引総仕入高,,T,6,10E100113,#N/A,Total purchase of goods from electronic transactions
+　　　　　　　電子取引 仕入高,0,売上原価,,電子取引総仕入高,,0,7,10E100111,#N/A,Total purchase of goods from electronic transactions
+　　　　　　　電子取引 当期商品仕入高,0,売上原価,,電子取引商品仕入高,,0,7,10E100131,#N/A,Cost of purchased goods from electronic transactions
+　　　　　　　電子取引 仕入値引及び戻し高,0,売上原価,,電子取引仕入割戻し高,,0,7,10E100121,#N/A,Purchase allowance and returns from electronic transactions
+　　　　　　電子取引以外 総仕入高,0,売上原価,,電子取引以外 総仕入高,,T,6,10E100114,#N/A,Total purchase of goods from traditional transactions
+　　　　　　　電子取引以外 仕入高,0,売上原価,,電子取引以外 総仕入高,,0,7,10E100112,#N/A,Total purchase of goods from traditional transactions
+　　　　　　　電子取引以外 当期商品仕入高,0,売上原価,,電子取引以外商品仕入高,,0,7,10E100132,#N/A,Cost of purchased goods from traditional transactions
+　　　　　　　電子取引以外 仕入値引及び戻し高,0,売上原価,,電子取引以外仕入割戻し高,,0,7,10E100122,#N/A,Purchase allowance and returns from traditional transactions
+　　　　　仕入値引及び戻し高,0,売上原価,,仕入値引及び戻し高,,0,5,10E100120,CostNonConstructionSalesPurchaseReturnsAllowances,Purchase allowance and returns
+　　　　　当期商品仕入高,0,売上原価,,当期商品仕入高,,0,5,10E100130,CostOfPurchasedGoods,Cost of purchased goods
+　　　　　商品期末たな卸高,0,売上原価,,商品期末たな卸高,,1,5,10E100140,EndingGoodsCOS,Ending merchandise inventory
+　　　　　合計,0,売上原価,,合計,,1,5,10E100150,TotalBeginningAndPurchaseOfGoods,Total
+　　　　　商品他勘定振替高,0,売上原価,,商品他勘定振替高,,1,5,10E100160,GoodsTransferToOtherAccountCOS,Goods transfer to other account
+　　　　　商品評価損,0,売上原価,,商品評価損,,1,5,10E100170,ValuationLossOnGoodsCOS,Valuation loss on goods
+　　　　　小計,0,売上原価,,小計,,1,5,10E100180,SubtotalCOSGoods,Subtotal
+　　　　　差引,0,売上原価,,差引,,1,5,10E100190,NetCOSGoods,Net
+　　　　　商品売上原価,0,売上原価,,商品売上原価,,1,5,10E100200,CostOfGoodsSold,Cost of goods sold
+　　　　製品売上原価,,売上原価,,製品売上原価,,T,4,10E100210,CostOfFinishedGoodsSoldAbstract,Cost of finished goods sold
+　　　　　製品期首たな卸高,0,売上原価,,製品期首たな卸高,,1,5,10E100220,BeginningFinishedGoodsCOS,Beginning finished goods inventory
+　　　　　当期製品製造原価,0,売上原価,,当期製品製造原価,,1,5,10E100230,CostOfProductsManufactured,Cost of products manufactured
+　　　　　当期製品仕入高,0,売上原価,,当期製品仕入高,,1,5,10E100240,PurchaseOfFinishedGoodsCOS,Purchase of finished goods
+　　　　　製品期末たな卸高,0,売上原価,,製品期末たな卸高,,1,5,10E100250,EndingFinishedGoodsCOS,Ending finished goods inventory
+　　　　　合計,0,売上原価,,合計,,1,5,10E100260,TotalBeginningFinishedGoodsAndCostOfProductsManufacturedForThePeriod,Total
+　　　　　製品他勘定振替高,0,売上原価,,製品他勘定振替高,,1,5,10E100270,FinishedGoodsTransferToOtherAccountCOS,Finished goods transfer to other account
+　　　　　製品評価損,0,売上原価,,製品評価損,,1,5,10E100280,ValuationLossOnFinishedGoodsCOS,Valuation loss on finished goods
+　　　　　原材料評価損,0,売上原価,,原材料評価損,,1,5,10E100290,ValuationLossOnRawMaterialsCOS,Valuation loss on raw materials
+　　　　　小計,0,売上原価,,小計,,1,5,10E100300,SubtotalCOSFinishedGoods,Subtotal
+　　　　　差引,0,売上原価,,差引,,1,5,10E100310,NetCOSFinishedGoods,Net
+　　　　　製品売上原価,0,売上原価,,製品売上原価,,1,5,10E100320,CostOfFinishedGoodsSold,Cost of finished goods sold
+　　　　他勘定振替高,0,売上原価,,他勘定振替高,,1,4,10E100330,TransferToOtherAccountCOS,Transfer to other account
+　　　　他勘定受入高,0,売上原価,,他勘定受入高,,1,4,10E100340,TransferFromOtherAccountCOS,Transfer from other account
+　　　　合併による商品受入高,0,売上原価,,合併による商品受入高,,1,4,10E100350,TransferOfGoodsByMergerCOS,Transfer of goods by merger
+　　　　原価差額,0,売上原価,,原価差額,,1,4,10E100360,CostPriceBalanceCOS,Cost variances
+　　　　商品及び製品売上原価,0,売上原価,,商品及び製品売上原価,,1,4,10E100370,CostOfMerchandiseAndFinishedGoodsSoldCOS,Cost of merchandise and finished goods sold
+　　　　　商品及び製品期首たな卸高,0,売上原価,,商品及び製品期首たな卸高,,1,5,10E100380,BeginningMerchandiseAndFinishedGoodsCOS,Beginning inventory of merchandise and finished goods
+　　　　　当期商品及び製品仕入高,0,売上原価,,当期商品及び製品仕入高,,1,5,10E100390,CostOfPurchasedMerchandiseAndFinishedGoodsCOS,Cost of purchased merchandise and finished goods
+　　　　　合計,0,売上原価,,合計,,1,5,10E100400,TotalBeginningAndCostPurchasedMerchandiseAndFinishedGoodsCOS,Total
+　　　　　商品及び製品期末たな卸高,0,売上原価,,商品及び製品期末たな卸高,,1,5,10E100410,EndingMerchandiseAndFinishedGoodsCOS,Ending inventory of merchandise and finished goods
+　　　　原材料売上原価,0,売上原価,,原材料売上原価,,1,4,10E100420,CostOfRawMaterialSalesCOSExpOA,Cost of raw material sales
+　　　　サービス売上原価,0,売上原価,,サービス売上原価,,1,4,10E100430,CostOfServiceSalesCOSExpOA,Cost of service sales
+　　　　不動産売上原価,0,売上原価,,不動産売上原価,,1,4,10E100440,CostOfSalesRealEstateCOSExpOA,Cost of sales - real estate
+　　　　開発事業売上原価,0,売上原価,,開発事業売上原価,,1,4,10E100450,CostOfSalesOnDevelopmentBusinessCOSExpOA,Cost of sales in development business
+　　　　不動産事業売上原価,0,売上原価,,不動産事業売上原価,,1,4,10E100460,CostOfSalesOnRealEstateBusinessCOSExpOA,Cost of sales in real estate business
+　　　　賃貸事業売上原価,0,売上原価,,賃貸事業売上原価,,1,4,10E100470,CostOfSalesOnLeaseBusinessCOSExpOA,Cost of sales in leasing business
+　　　　分譲事業売上原価,0,売上原価,,分譲事業売上原価,,1,4,10E100480,CostOfSalesOnSellingBusinessCOSExpOA,Cost of sales in residential property sales business
+　　　　その他の事業売上原価,0,売上原価,,その他の事業売上原価,,1,4,10E100490,CostOfSalesOnOtherBusinessCOSExpOA,Cost of sales in other businesses
+　　　　工事売上原価,0,売上原価,,工事売上原価,,1,4,10E100500,CostOfConstructionSalesCOSExpOA,Cost of construction sales
+　　　　ソフトウエア開発売上原価,0,売上原価,,ソフトウエア開発売上原価,,1,4,10E100510,CostOfSalesOfSoftwareDevelopmentCOSExpOA,Cost of sales of software development
+　　　　情報サービス売上原価,0,売上原価,,情報サービス売上原価,,1,4,10E100520,CostOfSalesOfInformationServiceCOSExpOA,Cost of sales of information service
+　　　　保守売上原価,0,売上原価,,保守売上原価,,1,4,10E100530,CostOfSalesOfMaintenanceServiceCOSExpOA,Cost of sales of maintenance service
+　　　　受託品売上原価,0,売上原価,,受託品売上原価,,1,4,10E100540,CostOfSalesOfGoodsOnConsignmentCOSExpOA,Cost of sales of goods on consignment
+　　　　買付品売上原価,0,売上原価,,買付品売上原価,,1,4,10E100550,CostOfIndentSalesCOSExpOA,Cost of indent sales
+　　　　完成業務原価,0,売上原価,,完成業務原価,,1,4,10E100560,CostOfCompletedWorkCOSExpOA,Cost of completed service contracts
+　　　　賃貸原価,0,売上原価,,賃貸原価,,1,4,10E100570,RentCostCOSExpOA,Cost of lease revenue
+　　　　不動産賃貸原価,0,売上原価,,不動産賃貸原価,,1,4,10E100580,CostOfRealEstateRentCOSExpOA,Cost of real estate lease revenue
+　　　　不動産賃貸費用,0,売上原価,,不動産賃貸費用,,1,4,10E100590,ExpensesOfRealEstateRentCOSExpOA,Real estate lease expenses
+　　　　賃貸事業原価,0,売上原価,,賃貸事業原価,,1,4,10E100600,LeaseBusinessCostCOSExpOA,Cost of sales in leasing business
+　　　　分譲事業原価,0,売上原価,,分譲事業原価,,1,4,10E100610,SellingBusinessCostCOSExpOA,Cost of sales in residential property sales business
+　　　　その他の事業原価,0,売上原価,,その他の事業原価,,1,4,10E100620,OtherBusinessCostCOSExpOA,Cost of sales in other businesses
+　　　　ソフトウエア償却費,0,売上原価,,ソフトウエア償却費,,1,4,10E100630,AmortizationOfSoftwareCOSExpOA,Amortization of software
+　　　　維持運転費,0,売上原価,,維持運転費,,1,4,10E100640,MaintenanceAndOperatingExpensesCOSExpOA,Maintenance and operating expenses
+　　　　番組制作費,0,売上原価,,番組制作費,,1,4,10E100650,ProgramProductionExpensesCOSExpOA,Program production expenses
+　　　　番組費,0,売上原価,,番組費,,1,4,10E100660,ProgramExpensesCOSExpOA,Program expenses
+　　　　放送費,0,売上原価,,放送費,,1,4,10E100670,BroadcastingExpensesCOSExpOA,Broadcasting expenses
+　　　　その他の事業費用,0,売上原価,,その他の事業費用,,1,4,10E100680,OtherBusinessExpensesCOSExpOA,Other business expenses
+　　　　その他の原価,0,売上原価,,その他の原価,,1,4,10E100690,OtherCostCOSExpOA,Other cost
+　　　　その他,0,売上原価,,その他,,1,4,10E100700,OtherCOSExpOA,Other
+　　　　金融費用,,売上原価,,金融費用,,T,4,10E100710,FinancialExpensesAbstract,Financial expenses
+　　　　　金融費用,0,売上原価,,金融費用,,1,5,10E100720,FinancialExpenses,Financial expenses
+　　　　　営業投資有価証券売上原価,0,売上原価,,営業投資有価証券売上原価,,1,5,10E100730,CostOfOperationalInvestmentSecuritiesCOSExpOA,Cost of operational investment securities
+　　　　　借入金利息,0,売上原価,,借入金利息,,1,5,10E100740,InterestOnLoansCOSExpOA,Interest on borrowings
+　　　　　有価証券借入料,0,売上原価,,有価証券借入料,,1,5,10E100750,BorrowingFeeOnSecuritiesCOSExpOA,Borrowing fee on securities
+　　　　　債権買取原価,0,売上原価,,債権買取原価,,1,5,10E100760,CostOfPurchasedReceivableCOSExpOA,Cost of purchased receivables
+　　　　　貸付有価証券代り金利息,0,売上原価,,貸付有価証券代り金利息,,1,5,10E100770,InterestOnCollateralMoneyReceivedForSecuritiesLentCOSExpOA,Interest on collateral money received for securities lent
+　　　　　その他の金融費用,0,売上原価,,その他の金融費用,,1,5,10E100780,OtherFinancialExpensesCOSExpOA,Other financial expenses
+　　　　販売費及び一般管理費,,販売費及び一般管理費(売上原価),,販売費及び一般管理費,,T,4,10E110010,OperatingCostAbstract,"Selling, general and administrative expenses"
+　　　　　販売手数料,0,販売費及び一般管理費(売上原価),,販売手数料,,1,5,10E110020,OtherCostCOSExpOA,Sales commission
+　　　　　荷造費,0,販売費及び一般管理費(売上原価),,荷造費,,1,5,10E110030,OtherCostCOSExpOA,Packing expenses
+　　　　　運搬費,0,販売費及び一般管理費(売上原価),,運搬費,,1,5,10E110040,OtherCostCOSExpOA,Transportation costs
+　　　　　広告宣伝費,0,販売費及び一般管理費(売上原価),,広告宣伝費,,1,5,10E110050,OtherCostCOSExpOA,Advertising expenses
+　　　　　見本費,0,販売費及び一般管理費(売上原価),,見本費,,1,5,10E110060,OtherCostCOSExpOA,Sample expenses
+　　　　　保管費,0,販売費及び一般管理費(売上原価),,保管費,,1,5,10E110070,OtherCostCOSExpOA,Storage costs
+　　　　　納入試験費,0,販売費及び一般管理費(売上原価),,納入試験費,,1,5,10E110080,OtherCostCOSExpOA,Delivery examination expenses
+　　　　　役員報酬,0,販売費及び一般管理費(売上原価),,役員報酬,,1,5,10E110090,OtherCostCOSExpOA,Remuneration for directors (and other officers)
+　　　　　給料,0,販売費及び一般管理費(売上原価),,給料,,1,5,10E110100,OtherCostCOSExpOA,Salaries
+　　　　　賃金,0,販売費及び一般管理費(売上原価),,賃金,,1,5,10E110110,OtherCostCOSExpOA,Wages
+　　　　　手当,0,販売費及び一般管理費(売上原価),,手当,,1,5,10E110120,OtherCostCOSExpOA,Allowance
+　　　　　賞与,0,販売費及び一般管理費(売上原価),,賞与,,1,5,10E110130,OtherCostCOSExpOA,Bonuses
+　　　　　福利厚生費,0,販売費及び一般管理費(売上原価),,福利厚生費,,1,5,10E110140,OtherCostCOSExpOA,Welfare expenses
+　　　　　交際費,0,販売費及び一般管理費(売上原価),,交際費,,1,5,10E110150,OtherCostCOSExpOA,Entertainment expenses
+　　　　　旅費,0,販売費及び一般管理費(売上原価),,旅費,,1,5,10E110160,OtherCostCOSExpOA,Travel expenses
+　　　　　交通費,0,販売費及び一般管理費(売上原価),,交通費,,1,5,10E110170,OtherCostCOSExpOA,Transportation expenses
+　　　　　通信費,0,販売費及び一般管理費(売上原価),,通信費,,1,5,10E110180,OtherCostCOSExpOA,Communication expenses
+　　　　　光熱費,0,販売費及び一般管理費(売上原価),,光熱費,,1,5,10E110190,OtherCostCOSExpOA,Heating and lighting expenses
+　　　　　消耗品費,0,販売費及び一般管理費(売上原価),,消耗品費,,1,5,10E110200,OtherCostCOSExpOA,Supplies expenses
+　　　　　租税公課,0,販売費及び一般管理費(売上原価),,租税公課,,1,5,10E110210,OtherCostCOSExpOA,Taxes and dues
+　　　　　減価償却費,0,販売費及び一般管理費(売上原価),,減価償却費,,1,5,10E110220,OtherCostCOSExpOA,Depreciation
+　　　　　修繕費,0,販売費及び一般管理費(売上原価),,修繕費,,1,5,10E110230,OtherCostCOSExpOA,Repair expenses
+　　　　　保険料,0,販売費及び一般管理費(売上原価),,保険料,,1,5,10E110240,OtherCostCOSExpOA,Insurance expenses
+　　　　　不動産賃借料,0,販売費及び一般管理費(売上原価),,不動産賃借料,,1,5,10E110250,OtherCostCOSExpOA,Rent expenses on real estate
+　　　　　貸倒引当金繰入額,0,販売費及び一般管理費(売上原価),,貸倒引当金繰入額,,1,5,10E110260,OtherCostCOSExpOA,Provision of allowance for doubtful accounts
+　　　　　貸倒損失,0,販売費及び一般管理費(売上原価),,貸倒損失,,1,5,10E110270,OtherCostCOSExpOA,Bad debts expenses
+　　　　　賞与引当金繰入額,0,販売費及び一般管理費(売上原価),,賞与引当金繰入額,,1,5,10E110280,OtherCostCOSExpOA,Provision for bonuses
+　　　　　役員退職慰労引当金繰入額,0,販売費及び一般管理費(売上原価),,役員退職慰労引当金繰入額,,1,5,10E110290,OtherCostCOSExpOA,Provision for retirement benefits for directors (and other officers)
+　　　　　役員賞与引当金繰入額,0,販売費及び一般管理費(売上原価),,役員賞与引当金繰入額,,1,5,10E110300,OtherCostCOSExpOA,Provision for bonuses for directors (and other officers)
+　　　　　退職給付費用,0,販売費及び一般管理費(売上原価),,退職給付費用,,1,5,10E110310,OtherCostCOSExpOA,Retirement benefit expenses
+　　　　　研究開発費,0,販売費及び一般管理費(売上原価),,研究開発費,,1,5,10E110320,OtherCostCOSExpOA,Research and development expenses
+　　　　　販売費,0,販売費及び一般管理費(売上原価),,販売費,,1,5,10E110330,OtherCostCOSExpOA,Selling expenses
+　　　　　一般管理費,,販売費及び一般管理費(売上原価),,一般管理費,,T,5,10E110340,OperatingCostAbstract,General and administrative expenses
+　　　　　　一般管理費,0,販売費及び一般管理費(売上原価),,一般管理費,,1,6,10E110350,OperatingExpenses,General and administrative expenses
+　　　　　人件費,0,販売費及び一般管理費(売上原価),,人件費,,1,5,10E110360,OperatingExpenses,Personnel expenses
+　　　　　給料及び手当,0,販売費及び一般管理費(売上原価),,給料及び手当,,1,5,10E110370,OperatingExpenses,Salaries and allowances
+　　　　　給料及び賞与,0,販売費及び一般管理費(売上原価),,給料及び賞与,,1,5,10E110380,OperatingExpenses,Salaries and bonuses
+　　　　　給料手当及び賞与,0,販売費及び一般管理費(売上原価),,給料手当及び賞与,,1,5,10E110390,OperatingExpenses,"Salaries, allowances and bonuses"
+　　　　　給料手当及び福利費,0,販売費及び一般管理費(売上原価),,給料手当及び福利費,,1,5,10E110400,OperatingExpenses,Salaries and allowances and welfare expenses
+　　　　　給料及び賃金,0,販売費及び一般管理費(売上原価),,給料及び賃金,,1,5,10E110410,OperatingExpenses,Salaries and wages
+　　　　　賞与及び手当,0,販売費及び一般管理費(売上原価),,賞与及び手当,,1,5,10E110420,OperatingExpenses,Bonuses and allowance
+　　　　　従業員給料,0,販売費及び一般管理費(売上原価),,従業員給料,,1,5,10E110430,OperatingExpenses,Employees' salaries
+　　　　　従業員賞与,0,販売費及び一般管理費(売上原価),,従業員賞与,,1,5,10E110440,OperatingExpenses,Employees' bonuses
+　　　　　従業員給料及び賞与,0,販売費及び一般管理費(売上原価),,従業員給料及び賞与,,1,5,10E110450,OperatingExpenses,Employees' salaries and bonuses
+　　　　　従業員給料及び手当,0,販売費及び一般管理費(売上原価),,従業員給料及び手当,,1,5,10E110460,OperatingExpenses,Employees' salaries and allowances
+　　　　　報酬及び給料手当,0,販売費及び一般管理費(売上原価),,報酬及び給料手当,,1,5,10E110470,OperatingExpenses,"Remuneration, salaries and allowances"
+　　　　　役員報酬及び給料手当,0,販売費及び一般管理費(売上原価),,役員報酬及び給料手当,,1,5,10E110480,OperatingExpenses,"Remuneration, salaries and allowances for directors (and other officers)"
+　　　　　退職金,0,販売費及び一般管理費(売上原価),,退職金,,1,5,10E110490,OperatingExpenses,Retirement payments
+　　　　　退職給付引当金繰入額,0,販売費及び一般管理費(売上原価),,退職給付引当金繰入額,,1,5,10E110500,OperatingExpenses,Provision for retirement benefits
+　　　　　役員退職慰労金,0,販売費及び一般管理費(売上原価),,役員退職慰労金,,1,5,10E110510,OperatingExpenses,Retirement benefits for directors (and other officers)
+　　　　　雑給,0,販売費及び一般管理費(売上原価),,雑給,,1,5,10E110520,OperatingExpenses,Other salaries
+　　　　　法定福利及び厚生費,0,販売費及び一般管理費(売上原価),,法定福利及び厚生費,,1,5,10E110530,OperatingExpenses,Legal and other welfare expenses
+　　　　　法定福利費,0,販売費及び一般管理費(売上原価),,法定福利費,,1,5,10E110540,OperatingExpenses,Legal welfare expenses
+　　　　　株式報酬費用,0,販売費及び一般管理費(売上原価),,株式報酬費用,,1,5,10E110550,OperatingExpenses,Share-based remuneration expenses
+　　　　　のれん償却額,0,販売費及び一般管理費(売上原価),,のれん償却額,,1,5,10E110560,OperatingExpenses,Amortization of goodwill
+　　　　　株式交付費,0,販売費及び一般管理費(売上原価),,株式交付費,,1,5,10E110570,OperatingExpenses,Share issuance cost
+　　　　　開業費償却,0,販売費及び一般管理費(売上原価),,開業費償却,,1,5,10E110580,OperatingExpenses,Amortization of business commencement expenses
+　　　　　開発費償却,0,販売費及び一般管理費(売上原価),,開発費償却,,1,5,10E110590,OperatingExpenses,Amortization of development expenses
+　　　　　支払報酬,0,販売費及び一般管理費(売上原価),,支払報酬,,1,5,10E110600,OperatingExpenses,Fee expenses
+　　　　　顧問料,0,販売費及び一般管理費(売上原価),,顧問料,,1,5,10E110610,OperatingExpenses,Consulting expenses
+　　　　　教育研修費,0,販売費及び一般管理費(売上原価),,教育研修費,,1,5,10E110620,OperatingExpenses,Education and training expenses
+　　　　　研修費,0,販売費及び一般管理費(売上原価),,研修費,,1,5,10E110630,OperatingExpenses,Training expenses
+　　　　　採用費,0,販売費及び一般管理費(売上原価),,採用費,,1,5,10E110640,OperatingExpenses,Recruiting expenses
+　　　　　募集費,0,販売費及び一般管理費(売上原価),,募集費,,1,5,10E110650,OperatingExpenses,Offering expenses
+　　　　　外注費,0,販売費及び一般管理費(売上原価),,外注費,,1,5,10E110660,CostSalesOutsideOrderExpense,Outsourcing expenses
+　　　　　事務委託費,0,販売費及び一般管理費(売上原価),,事務委託費,,1,5,10E110670,OperatingExpenses,Administrative outsourcing expenses
+　　　　　業務委託費,0,販売費及び一般管理費(売上原価),,業務委託費,,1,5,10E110680,OperatingExpenses,Outsourcing expenses
+　　　　　支払手数料,0,販売費及び一般管理費(売上原価),,支払手数料,,1,5,10E110690,OperatingExpenses,Commission expenses
+　　　　　賃借料,0,販売費及び一般管理費(売上原価),,賃借料,,1,5,10E110700,OperatingExpenses,Rent expenses
+　　　　　施設使用料,0,販売費及び一般管理費(売上原価),,施設使用料,,1,5,10E110710,OperatingExpenses,Facility expenses
+　　　　　地代家賃,0,販売費及び一般管理費(売上原価),,地代家賃,,1,5,10E110720,OperatingExpenses,Rent expenses on land and buildings
+　　　　　借地借家料,0,販売費及び一般管理費(売上原価),,借地借家料,,1,5,10E110730,OperatingExpenses,Rent expenses on land and buildings
+　　　　　販売促進費,0,販売費及び一般管理費(売上原価),,販売促進費,,1,5,10E110740,OperatingExpenses,Promotion expenses
+　　　　　広告宣伝費及び販売促進費,0,販売費及び一般管理費(売上原価),,広告宣伝費及び販売促進費,,1,5,10E110750,OperatingExpenses,Advertising and promotion expenses
+　　　　　事業宣伝費,0,販売費及び一般管理費(売上原価),,事業宣伝費,,1,5,10E110760,OperatingExpenses,Business advertising expenses
+　　　　　代理店手数料,0,販売費及び一般管理費(売上原価),,代理店手数料,,1,5,10E110770,OperatingExpenses,Agent fee
+　　　　　製品保証引当金繰入額,0,販売費及び一般管理費(売上原価),,製品保証引当金繰入額,,1,5,10E110780,OperatingExpenses,Provision for product warranties
+　　　　　完成工事補償引当金繰入額,0,販売費及び一般管理費(売上原価),,完成工事補償引当金繰入額,,1,5,10E110790,OperatingExpenses,Provision for warranties for completed construction
+　　　　　特別修繕引当金繰入額,0,販売費及び一般管理費(売上原価),,特別修繕引当金繰入額,,1,5,10E110800,OperatingExpenses,Provision for special repairs
+　　　　　ポイント引当金繰入額,0,販売費及び一般管理費(売上原価),,ポイント引当金繰入額,,1,5,10E110810,OperatingExpenses,Provision for point card certificates
+　　　　　利息返還損失引当金繰入額,0,販売費及び一般管理費(売上原価),,利息返還損失引当金繰入額,,1,5,10E110820,OperatingExpenses,Provision for loss on interest repayment
+　　　　　株式給付引当金繰入額,0,販売費及び一般管理費(売上原価),,株式給付引当金繰入額,,1,5,10E110830,OperatingExpenses,Provision for share-based remuneration
+　　　　　役員株式給付引当金繰入額,0,販売費及び一般管理費(売上原価),,役員株式給付引当金繰入額,,1,5,10E110840,OperatingExpenses,Provision for share-based remuneration for directors (and other officers)
+　　　　　株主優待引当金繰入額,0,販売費及び一般管理費(売上原価),,株主優待引当金繰入額,,1,5,10E110850,OperatingExpenses,Provision for shareholder benefit program
+　　　　　運送費及び保管費,0,販売費及び一般管理費(売上原価),,運送費及び保管費,,1,5,10E110860,OperatingExpenses,Transportation and storage costs
+　　　　　運賃,0,販売費及び一般管理費(売上原価),,運賃,,1,5,10E110870,OperatingExpenses,Freight costs
+　　　　　運賃及び荷造費,0,販売費及び一般管理費(売上原価),,運賃及び荷造費,,1,5,10E110880,OperatingExpenses,Freight and packing costs
+　　　　　運賃諸掛,0,販売費及び一般管理費(売上原価),,運賃諸掛,,1,5,10E110890,OperatingExpenses,Freight and incidental costs
+　　　　　荷造運搬費,0,販売費及び一般管理費(売上原価),,荷造運搬費,,1,5,10E110900,OperatingExpenses,Packing and transportation costs
+　　　　　荷造及び発送費,0,販売費及び一般管理費(売上原価),,荷造及び発送費,,1,5,10E110910,OperatingExpenses,Packing and delivery expenses
+　　　　　販売運賃,0,販売費及び一般管理費(売上原価),,販売運賃,,1,5,10E110920,OperatingExpenses,Freight-out
+　　　　　発送運賃,0,販売費及び一般管理費(売上原価),,発送運賃,,1,5,10E110930,OperatingExpenses,Freight-out
+　　　　　配送費,0,販売費及び一般管理費(売上原価),,配送費,,1,5,10E110940,OperatingExpenses,Distribution expenses
+　　　　　発送費,0,販売費及び一般管理費(売上原価),,発送費,,1,5,10E110950,OperatingExpenses,Shipment expenses
+　　　　　試験研究費,0,販売費及び一般管理費(売上原価),,試験研究費,,1,5,10E110960,OperatingExpenses,Experimentation and research expenses
+　　　　　開発研究費,0,販売費及び一般管理費(売上原価),,開発研究費,,1,5,10E110970,OperatingExpenses,Development and research expenses
+　　　　　技術研究費,0,販売費及び一般管理費(売上原価),,技術研究費,,1,5,10E110980,OperatingExpenses,Technical research expenses
+　　　　　研究費,0,販売費及び一般管理費(売上原価),,研究費,,1,5,10E110990,OperatingExpenses,Research expenses
+　　　　　修繕維持費,0,販売費及び一般管理費(売上原価),,修繕維持費,,1,5,10E111000,OperatingExpenses,Repair and maintenance expenses
+　　　　　寄付金,0,販売費及び一般管理費(売上原価),,寄付金,,1,5,10E111010,OperatingExpenses,Donations
+　　　　　特許権使用料,0,販売費及び一般管理費(売上原価),,特許権使用料,,1,5,10E111020,OperatingExpenses,License fee
+　　　　　長期前払費用償却,0,販売費及び一般管理費(売上原価),,長期前払費用償却,,1,5,10E111030,OperatingExpenses,Amortization of long-term prepaid expenses
+　　　　　水道光熱費,0,販売費及び一般管理費(売上原価),,水道光熱費,,1,5,10E111040,OperatingExpenses,Utilities expenses
+　　　　　動力用水光熱費,0,販売費及び一般管理費(売上原価),,動力用水光熱費,,1,5,10E111050,OperatingExpenses,Power utilities expenses
+　　　　　衛生費,0,販売費及び一般管理費(売上原価),,衛生費,,1,5,10E111060,OperatingExpenses,Medical expenses
+　　　　　事業所税,0,販売費及び一般管理費(売上原価),,事業所税,,1,5,10E111070,OperatingExpenses,Business office tax
+　　　　　事業税,0,販売費及び一般管理費(売上原価),,事業税,,1,5,10E111080,OperatingExpenses,Enterprise tax
+　　　　　事務費,0,販売費及び一般管理費(売上原価),,事務費,,1,5,10E111090,OperatingExpenses,Office cost
+　　　　　事務用品費,0,販売費及び一般管理費(売上原価),,事務用品費,,1,5,10E111100,OperatingExpenses,Stationery expenses
+　　　　　事務用消耗品費,0,販売費及び一般管理費(売上原価),,事務用消耗品費,,1,5,10E111110,OperatingExpenses,Office supplies expenses
+　　　　　車両費,0,販売費及び一般管理費(売上原価),,車両費,,1,5,10E111120,OperatingExpenses,Vehicle expenses
+　　　　　会議費,0,販売費及び一般管理費(売上原価),,会議費,,1,5,10E111130,OperatingExpenses,Meeting expenses
+　　　　　諸会費,0,販売費及び一般管理費(売上原価),,諸会費,,1,5,10E111140,OperatingExpenses,Membership fee
+　　　　　諸経費,0,販売費及び一般管理費(売上原価),,諸経費,,1,5,10E111150,OperatingExpenses,Sundry expenses
+　　　　　図書費,0,販売費及び一般管理費(売上原価),,図書費,,1,5,10E111160,OperatingExpenses,Book expenses
+　　　　　印刷費,0,販売費及び一般管理費(売上原価),,印刷費,,1,5,10E111170,OperatingExpenses,Print expenses
+　　　　　図書印刷費,0,販売費及び一般管理費(売上原価),,図書印刷費,,1,5,10E111180,OperatingExpenses,Book and printing expenses
+　　　　　調査研究費,0,販売費及び一般管理費(売上原価),,調査研究費,,1,5,10E111190,OperatingExpenses,Research study expenses
+　　　　　調査費,0,販売費及び一般管理費(売上原価),,調査費,,1,5,10E111200,OperatingExpenses,Investigation expenses
+　　　　　旅費交通費及び通信費,0,販売費及び一般管理費(売上原価),,旅費交通費及び通信費,,1,5,10E111210,OperatingExpenses,"Travel, transportation and communication expenses"
+　　　　　旅費及び通信費,0,販売費及び一般管理費(売上原価),,旅費及び通信費,,1,5,10E111220,OperatingExpenses,Travel and communication expenses
+　　　　　旅費及び交通費,0,販売費及び一般管理費(売上原価),,旅費及び交通費,,1,5,10E111230,OperatingExpenses,Travel and transportation expenses
+　　　　　通信交通費,0,販売費及び一般管理費(売上原価),,通信交通費,,1,5,10E111240,OperatingExpenses,Communication and transportation expenses
+　　　　　取引関連費,0,販売費及び一般管理費(売上原価),,取引関連費,,1,5,10E111250,OperatingExpenses,Trading related expenses
+　　　　　不動産関連費,0,販売費及び一般管理費(売上原価),,不動産関連費,,1,5,10E111260,OperatingExpenses,Real estate related expenses
+　　　　　雑費,0,販売費及び一般管理費(売上原価),,雑費,,1,5,10E111270,OperatingExpenses,Miscellaneous expenses
+　　　　　その他の販売費,0,販売費及び一般管理費(売上原価),,その他の販売費,,1,5,10E111280,OperatingExpenses,Other selling expenses
+　　　　　その他の一般管理費,0,販売費及び一般管理費(売上原価),,その他の一般管理費,,1,5,10E111290,OperatingExpenses,Other general and administrative expenses
+　　　　　その他の経費,0,販売費及び一般管理費(売上原価),,その他の経費,,1,5,10E111300,OperatingExpenses,Other expenses
+　　　　　その他の人件費,0,販売費及び一般管理費(売上原価),,その他の人件費,,1,5,10E111310,OperatingExpenses,Other personnel expenses
+　　　　　その他,0,販売費及び一般管理費(売上原価),,その他,,1,5,10E111320,OperatingExpenses,Other
+　　　　　販売費及び一般管理費,0,販売費及び一般管理費(売上原価),,販売費及び一般管理費,,1,5,10E111330,OperatingExpenses,"Selling, general and administrative expenses"
+　　売上総利益又は売上総損失（△）,0,損益,,売上総利益又は売上総損失（△）,,1,2,10F000010,GrossProfit,Gross profit (loss)
+　　　差引売上総利益又は差引売上総損失（△）,0,損益,,差引売上総利益又は差引売上総損失（△）,,1,3,10F000020,GrossProfitNetGP,Gross profit (loss) - net
+　　　　割賦販売未実現利益繰入額,0,その他,,割賦販売未実現利益繰入額,,1,4,10F100010,ProvisionOfUnrealizedIncomeOnInstallmentSalesGP,Provision of unrealized income on installment sales
+　　　　割賦販売未実現利益戻入額,0,その他,,割賦販売未実現利益戻入額,,1,4,10F100020,ReversalOfUnrealizedIncomeOnInstallmentSalesGP,Reversal of unrealized income on installment sales
+　　　　返品調整引当金繰入額,0,その他,,返品調整引当金繰入額,,1,4,10F100030,ProvisionForSalesReturnsGP,Provision for sales returns
+　　　　返品調整引当金戻入額,0,その他,,返品調整引当金戻入額,,1,4,10F100040,ReversalOfProvisionForSalesReturnsGP,Reversal of provision for sales returns
+　　　商品売上総利益又は商品売上総損失（△）,0,損益,,商品売上総利益又は商品売上総損失（△）,,1,3,10F000030,GrossProfitMerchandiseGP,Gross profit (loss) - merchandise
+　　　製品売上総利益又は製品売上総損失（△）,0,損益,,製品売上総利益又は製品売上総損失（△）,,1,3,10F000040,GrossProfitFinishedGoodsGP,Gross profit (loss) - finished goods
+　　　不動産売上総利益又は不動産売上総損失（△）,0,損益,,不動産売上総利益又は不動産売上総損失（△）,,1,3,10F000050,GrossProfitRealEstateSalesGP,Gross profit (loss) - real estate sales
+　　　不動産事業総利益又は不動産事業総損失（△）,0,損益,,不動産事業総利益又は不動産事業総損失（△）,,1,3,10F000060,GrossProfitRealEstateBusinessGP,Gross profit (loss) - real estate business
+　　　開発事業総利益又は開発事業総損失（△）,0,損益,,開発事業総利益又は開発事業総損失（△）,,1,3,10F000070,GrossProfitDevelopingBusinessGP,Gross profit (loss) - development business
+　　　その他の事業総利益又はその他の事業総損失（△）,0,損益,,その他の事業総利益又はその他の事業総損失（△）,,1,3,10F000080,GrossProfitOtherBusinessGP,Gross profit (loss) - other business
+　　　その他の売上総利益又はその他の売上総損失（△）,0,損益,,その他の売上総利益又はその他の売上総損失（△）,,1,3,10F000090,GrossProfitOtherGP,Gross profit (loss) - other
+　　営業総利益又は営業総損失（△）,0,損益,,営業総利益又は営業総損失（△）,,1,2,10F000100,OperatingGrossProfit,Operating gross profit (loss)
+　　販売費及び一般管理費,,販売費及び一般管理費,,販売費及び一般管理費,,T,2,10E200010,SellingGeneralAndAdministrativeExpensesAbstract,"Selling, general and administrative expenses"
+　　　販売手数料,0,販売費及び一般管理費,,販売手数料,,1,3,10E200020,SalesCommissionSGA,Sales commission
+　　　荷造費,0,販売費及び一般管理費,,荷造費,,1,3,10E200030,PackingExpensesSGA,Packing expenses
+　　　運搬費,0,販売費及び一般管理費,,運搬費,,1,3,10E200040,HaulageExpensesSGA,Transportation costs
+　　　広告宣伝費,0,販売費及び一般管理費,,広告宣伝費,,1,3,10E200050,AdvertisingExpensesSGA,Advertising expenses
+　　　見本費,0,販売費及び一般管理費,,見本費,,1,3,10E200060,SampleExpensesSGA,Sample expenses
+　　　保管費,0,販売費及び一般管理費,,保管費,,1,3,10E200070,WarehousingExpensesSGA,Storage costs
+　　　納入試験費,0,販売費及び一般管理費,,納入試験費,,1,3,10E200080,DeliveryExaminationExpensesSGA,Delivery examination expenses
+　　　役員報酬,0,販売費及び一般管理費,,役員報酬,,1,3,10E200090,DirectorsCompensationsSGA,Remuneration for directors (and other officers)
+　　　給料,0,販売費及び一般管理費,,給料,,1,3,10E200100,SalariesSGA,Salaries
+　　　賃金,0,販売費及び一般管理費,,賃金,,1,3,10E200110,WagesSGA,Wages
+　　　手当,0,販売費及び一般管理費,,手当,,1,3,10E200120,AllowanceSGA,Allowance
+　　　賞与,0,販売費及び一般管理費,,賞与,,1,3,10E200130,BonusesSGA,Bonuses
+　　　福利厚生費,0,販売費及び一般管理費,,福利厚生費,,1,3,10E200140,WelfareExpensesSGA,Welfare expenses
+　　　交際費,0,販売費及び一般管理費,,交際費,,1,3,10E200150,EntertainmentExpensesSGA,Entertainment expenses
+　　　旅費,0,販売費及び一般管理費,,旅費,,1,3,10E200160,TravelingExpensesSGA,Travel expenses
+　　　交通費,0,販売費及び一般管理費,,交通費,,1,3,10E200170,TransportationExpensesSGA,Transportation expenses
+　　　通信費,0,販売費及び一般管理費,,通信費,,1,3,10E200180,CommunicationExpensesSGA,Communication expenses
+　　　光熱費,0,販売費及び一般管理費,,光熱費,,1,3,10E200190,HeatingAndLightingExpensesSGA,Heating and lighting expenses
+　　　消耗品費,0,販売費及び一般管理費,,消耗品費,,1,3,10E200200,SuppliesExpensesSGA,Supplies expenses
+　　　租税公課,0,販売費及び一般管理費,,租税公課,,1,3,10E200210,TaxesAndDuesSGA,Taxes and dues
+　　　減価償却費,0,販売費及び一般管理費,,減価償却費,,1,3,10E200220,DepreciationSGA,Depreciation
+　　　修繕費,0,販売費及び一般管理費,,修繕費,,1,3,10E200230,RepairExpensesSGA,Repair expenses
+　　　保険料,0,販売費及び一般管理費,,保険料,,1,3,10E200240,InsuranceExpensesSGA,Insurance expenses
+　　　不動産賃借料,0,販売費及び一般管理費,,不動産賃借料,,1,3,10E200250,RentExpensesOnRealEstatesSGA,Rent expenses on real estate
+　　　貸倒引当金繰入額,0,販売費及び一般管理費,,貸倒引当金繰入額,,1,3,10E200260,ProvisionOfAllowanceForDoubtfulAccountsSGA,Provision of allowance for doubtful accounts
+　　　貸倒損失,0,販売費及び一般管理費,,貸倒損失,,1,3,10E200270,BadDebtsExpensesSGA,Bad debts expenses
+　　　賞与引当金繰入額,0,販売費及び一般管理費,,賞与引当金繰入額,,1,3,10E200280,ProvisionForBonusesSGA,Provision for bonuses
+　　　役員退職慰労引当金繰入額,0,販売費及び一般管理費,,役員退職慰労引当金繰入額,,1,3,10E200290,ProvisionForDirectorsRetirementBenefitsSGA,Provision for retirement benefits for directors (and other officers)
+　　　役員賞与引当金繰入額,0,販売費及び一般管理費,,役員賞与引当金繰入額,,1,3,10E200300,ProvisionForDirectorsBonusesSGA,Provision for bonuses for directors (and other officers)
+　　　退職給付費用,0,販売費及び一般管理費,,退職給付費用,,1,3,10E200310,RetirementBenefitExpensesSGA,Retirement benefit expenses
+　　　研究開発費,0,販売費及び一般管理費,,研究開発費,,1,3,10E200320,ResearchAndDevelopmentExpensesSGA,Research and development expenses
+　　　販売費,0,販売費及び一般管理費,,販売費,,1,3,10E200330,SellingExpensesSGA,Selling expenses
+　　　一般管理費,,販売費及び一般管理費,,一般管理費,,T,3,10E200340,GeneralAndAdministrativeExpensesSGAAbstract,General and administrative expenses
+　　　　一般管理費,0,販売費及び一般管理費,,一般管理費,,1,4,10E200350,GeneralAndAdministrativeExpensesSGA,General and administrative expenses
+　　　人件費,0,販売費及び一般管理費,,人件費,,1,3,10E200360,SalariesSGA,Personnel expenses
+　　　給料及び手当,0,販売費及び一般管理費,,給料及び手当,,1,3,10E200370,SalariesAndAllowancesSGA,Salaries and allowances
+　　　給料及び賞与,0,販売費及び一般管理費,,給料及び賞与,,1,3,10E200380,SalariesAndBonusesSGA,Salaries and bonuses
+　　　給料手当及び賞与,0,販売費及び一般管理費,,給料手当及び賞与,,1,3,10E200390,SalariesAllowancesAndBonusesSGA,"Salaries, allowances and bonuses"
+　　　給料手当及び福利費,0,販売費及び一般管理費,,給料手当及び福利費,,1,3,10E200400,SalariesAndAllowancesAndWelfareExpensesSGA,Salaries and allowances and welfare expenses
+　　　給料及び賃金,0,販売費及び一般管理費,,給料及び賃金,,1,3,10E200410,SalariesAndWagesSGA,Salaries and wages
+　　　賞与及び手当,0,販売費及び一般管理費,,賞与及び手当,,1,3,10E200420,BonusesAndAllowanceSGA,Bonuses and allowance
+　　　従業員給料,0,販売費及び一般管理費,,従業員給料,,1,3,10E200430,EmployeesSalariesSGA,Employees' salaries
+　　　従業員賞与,0,販売費及び一般管理費,,従業員賞与,,1,3,10E200440,EmployeesBonusesSGA,Employees' bonuses
+　　　従業員給料及び賞与,0,販売費及び一般管理費,,従業員給料及び賞与,,1,3,10E200450,EmployeesSalariesAndBonusesSGA,Employees' salaries and bonuses
+　　　従業員給料及び手当,0,販売費及び一般管理費,,従業員給料及び手当,,1,3,10E200460,EmployeesSalariesAndAllowancesSGA,Employees' salaries and allowances
+　　　報酬及び給料手当,0,販売費及び一般管理費,,報酬及び給料手当,,1,3,10E200470,CompensationsSalariesAndAllowancesSGA,"Remuneration, salaries and allowances"
+　　　役員報酬及び給料手当,0,販売費及び一般管理費,,役員報酬及び給料手当,,1,3,10E200480,DirectorsCompensationsSalariesAndAllowancesSGA,"Remuneration, salaries and allowances for directors (and other officers)"
+　　　退職金,0,販売費及び一般管理費,,退職金,,1,3,10E200490,RetirementPaymentsSGA,Retirement payments
+　　　退職給付引当金繰入額,0,販売費及び一般管理費,,退職給付引当金繰入額,,1,3,10E200500,ProvisionForRetirementBenefitsSGA,Provision for retirement benefits
+　　　役員退職慰労金,0,販売費及び一般管理費,,役員退職慰労金,,1,3,10E200510,DirectorsRetirementBenefitsSGA,Retirement benefits for directors (and other officers)
+　　　雑給,0,販売費及び一般管理費,,雑給,,1,3,10E200520,OtherSalariesSGA,Other salaries
+　　　法定福利及び厚生費,0,販売費及び一般管理費,,法定福利及び厚生費,,1,3,10E200530,LegalAndEmployeeBenefitsExpensesSGA,Legal and other welfare expenses
+　　　法定福利費,0,販売費及び一般管理費,,法定福利費,,1,3,10E200540,LegalWelfareExpensesSGA,Legal welfare expenses
+　　　株式報酬費用,0,販売費及び一般管理費,,株式報酬費用,,1,3,10E200550,ShareBasedCompensationExpensesSGA,Share-based remuneration expenses
+　　　のれん償却額,0,販売費及び一般管理費,,のれん償却額,,1,3,10E200560,AmortizationOfGoodwillSGA,Amortization of goodwill
+　　　株式交付費,0,販売費及び一般管理費,,株式交付費,,1,3,10E200570,StockIssuanceCostSGA,Share issuance cost
+　　　開業費償却,0,販売費及び一般管理費,,開業費償却,,1,3,10E200580,AmortizationOfBusinessCommencementExpensesSGA,Amortization of business commencement expenses
+　　　開発費償却,0,販売費及び一般管理費,,開発費償却,,1,3,10E200590,AmortizationOfDevelopmentExpensesSGA,Amortization of development expenses
+　　　支払報酬,0,販売費及び一般管理費,,支払報酬,,1,3,10E200600,CompensationsSGA,Fee expenses
+　　　顧問料,0,販売費及び一般管理費,,顧問料,,1,3,10E200610,ConsultingExpensesSGA,Consulting expenses
+　　　教育研修費,0,販売費及び一般管理費,,教育研修費,,1,3,10E200620,EducationAndTrainingExpensesSGA,Education and training expenses
+　　　研修費,0,販売費及び一般管理費,,研修費,,1,3,10E200630,TrainingExpensesSGA,Training expenses
+　　　採用費,0,販売費及び一般管理費,,採用費,,1,3,10E200640,RecruitingExpensesSGA,Recruiting expenses
+　　　募集費,0,販売費及び一般管理費,,募集費,,1,3,10E200650,OfferingExpensesSGA,Offering expenses
+　　　外注費,0,販売費及び一般管理費,,外注費,,1,3,10E200660,SubcontractExpensesSGA,Outsourcing expenses
+　　　事務委託費,0,販売費及び一般管理費,,事務委託費,,1,3,10E200670,OperationsConsignmentExpensesSGA,Administrative outsourcing expenses
+　　　業務委託費,0,販売費及び一般管理費,,業務委託費,,1,3,10E200680,BusinessConsignmentExpensesSGA,Outsourcing expenses
+　　　支払手数料,0,販売費及び一般管理費,,支払手数料,,1,3,10E200690,CommissionFeeSGA,Commission expenses
+　　　賃借料,0,販売費及び一般管理費,,賃借料,,1,3,10E200700,RentExpensesSGA,Rent expenses
+　　　施設使用料,0,販売費及び一般管理費,,施設使用料,,1,3,10E200710,FacilityExpensesSGA,Facility expenses
+　　　地代家賃,0,販売費及び一般管理費,,地代家賃,,1,3,10E200720,RentsSGA,Rent expenses on land and buildings
+　　　借地借家料,0,販売費及び一般管理費,,借地借家料,,1,3,10E200730,LeaseholdAndOfficeRentsSGA,Rent expenses on land and buildings
+　　　販売促進費,0,販売費及び一般管理費,,販売促進費,,1,3,10E200740,PromotionExpensesSGA,Promotion expenses
+　　　広告宣伝費及び販売促進費,0,販売費及び一般管理費,,広告宣伝費及び販売促進費,,1,3,10E200750,AdvertisingAndPromotionExpensesSGA,Advertising and promotion expenses
+　　　事業宣伝費,0,販売費及び一般管理費,,事業宣伝費,,1,3,10E200760,BusinessAdvertisingExpensesSGA,Business advertising expenses
+　　　代理店手数料,0,販売費及び一般管理費,,代理店手数料,,1,3,10E200770,AgentFeeSGA,Agent fee
+　　　製品保証引当金繰入額,0,販売費及び一般管理費,,製品保証引当金繰入額,,1,3,10E200780,ProvisionForProductWarrantiesSGA,Provision for product warranties
+　　　完成工事補償引当金繰入額,0,販売費及び一般管理費,,完成工事補償引当金繰入額,,1,3,10E200790,ProvisionForWarrantiesForCompletedConstructionSGA,Provision for warranties for completed construction
+　　　特別修繕引当金繰入額,0,販売費及び一般管理費,,特別修繕引当金繰入額,,1,3,10E200800,ProvisionForSpecialRepairsSGA,Provision for special repairs
+　　　ポイント引当金繰入額,0,販売費及び一般管理費,,ポイント引当金繰入額,,1,3,10E200810,ProvisionForPointCardCertificatesSGA,Provision for point card certificates
+　　　利息返還損失引当金繰入額,0,販売費及び一般管理費,,利息返還損失引当金繰入額,,1,3,10E200820,ProvisionForLossOnInterestRepaymentSGA,Provision for loss on interest repayment
+　　　株式給付引当金繰入額,0,販売費及び一般管理費,,株式給付引当金繰入額,,1,3,10E200830,GeneralAndAdministrativeExpensesSGAAbstract,Provision for share-based remuneration
+　　　役員株式給付引当金繰入額,0,販売費及び一般管理費,,役員株式給付引当金繰入額,,1,3,10E200840,ProvisionForDirectorsBonusesSGA,Provision for share-based remuneration for directors (and other officers)
+　　　株主優待引当金繰入額,0,販売費及び一般管理費,,株主優待引当金繰入額,,1,3,10E200850,GeneralAndAdministrativeExpensesSGAAbstract,Provision for shareholder benefit program
+　　　運送費及び保管費,0,販売費及び一般管理費,,運送費及び保管費,,1,3,10E200860,TransportationAndWarehousingExpensesSGA,Transportation and storage costs
+　　　運賃,0,販売費及び一般管理費,,運賃,,1,3,10E200870,FreightageExpensesSGA,Freight costs
+　　　運賃及び荷造費,0,販売費及び一般管理費,,運賃及び荷造費,,1,3,10E200880,FreightageAndPackingExpensesSGA,Freight and packing costs
+　　　運賃諸掛,0,販売費及び一般管理費,,運賃諸掛,,1,3,10E200890,FreightageRelatedExpensesSGA,Freight and incidental costs
+　　　荷造運搬費,0,販売費及び一般管理費,,荷造運搬費,,1,3,10E200900,PackingAndTransportationExpensesSGA,Packing and transportation costs
+　　　荷造及び発送費,0,販売費及び一般管理費,,荷造及び発送費,,1,3,10E200910,PackingAndDeliveryExpensesSGA,Packing and delivery expenses
+　　　販売運賃,0,販売費及び一般管理費,,販売運賃,,1,3,10E200920,SalesFareSGA,Freight-out
+　　　発送運賃,0,販売費及び一般管理費,,発送運賃,,1,3,10E200930,FreightOutSGA,Freight-out
+　　　配送費,0,販売費及び一般管理費,,配送費,,1,3,10E200940,DistributionExpensesSGA,Distribution expenses
+　　　発送費,0,販売費及び一般管理費,,発送費,,1,3,10E200950,ShipmentExpensesSGA,Shipment expenses
+　　　試験研究費,0,販売費及び一般管理費,,試験研究費,,1,3,10E200960,ExperimentAndResearchExpensesSGA,Experimentation and research expenses
+　　　開発研究費,0,販売費及び一般管理費,,開発研究費,,1,3,10E200970,DevelopmentAndResearchExpensesSGA,Development and research expenses
+　　　技術研究費,0,販売費及び一般管理費,,技術研究費,,1,3,10E200980,TechnicalResearchExpensesSGA,Technical research expenses
+　　　研究費,0,販売費及び一般管理費,,研究費,,1,3,10E200990,ResearchExpensesSGA,Research expenses
+　　　修繕維持費,0,販売費及び一般管理費,,修繕維持費,,1,3,10E201000,RepairAndMaintenanceSGA,Repair and maintenance expenses
+　　　寄付金,0,販売費及び一般管理費,,寄付金,,1,3,10E201010,ContributionSGA,Donations
+　　　特許権使用料,0,販売費及び一般管理費,,特許権使用料,,1,3,10E201020,LicenseFeeSGA,License fee
+　　　長期前払費用償却,0,販売費及び一般管理費,,長期前払費用償却,,1,3,10E201030,AmortizationOfLongTermPrepaidExpensesSGA,Amortization of long-term prepaid expenses
+　　　水道光熱費,0,販売費及び一般管理費,,水道光熱費,,1,3,10E201040,UtilitiesExpensesSGA,Utilities expenses
+　　　動力用水光熱費,0,販売費及び一般管理費,,動力用水光熱費,,1,3,10E201050,PowerUtilitiesExpensesSGA,Power utilities expenses
+　　　衛生費,0,販売費及び一般管理費,,衛生費,,1,3,10E201060,MedicalExpensesSGA,Medical expenses
+　　　事業所税,0,販売費及び一般管理費,,事業所税,,1,3,10E201070,OfficeTaxesSGA,Business office tax
+　　　事業税,0,販売費及び一般管理費,,事業税,,1,3,10E201080,EnterpriseTaxSGA,Enterprise tax
+　　　事務費,0,販売費及び一般管理費,,事務費,,1,3,10E201090,OfficeCostSGA,Office cost
+　　　事務用品費,0,販売費及び一般管理費,,事務用品費,,1,3,10E201100,StationeryExpensesSGA,Stationery expenses
+　　　事務用消耗品費,0,販売費及び一般管理費,,事務用消耗品費,,1,3,10E201110,OfficeSuppliesExpensesSGA,Office supplies expenses
+　　　車両費,0,販売費及び一般管理費,,車両費,,1,3,10E201120,VehicleExpensesSGA,Vehicle expenses
+　　　会議費,0,販売費及び一般管理費,,会議費,,1,3,10E201130,ConferenceExpensesSGA,Meeting expenses
+　　　諸会費,0,販売費及び一般管理費,,諸会費,,1,3,10E201140,MembershipFeeSGA,Membership fee
+　　　諸経費,0,販売費及び一般管理費,,諸経費,,1,3,10E201150,SundryExpensesSGA,Sundry expenses
+　　　図書費,0,販売費及び一般管理費,,図書費,,1,3,10E201160,BookExpensesSGA,Book expenses
+　　　印刷費,0,販売費及び一般管理費,,印刷費,,1,3,10E201170,PrintExpensesSGA,Print expenses
+　　　図書印刷費,0,販売費及び一般管理費,,図書印刷費,,1,3,10E201180,BookAndPrintingExpensesSGA,Book and printing expenses
+　　　調査研究費,0,販売費及び一般管理費,,調査研究費,,1,3,10E201190,ResearchStudyExpensesSGA,Research study expenses
+　　　調査費,0,販売費及び一般管理費,,調査費,,1,3,10E201200,InvestigationExpensesSGA,Investigation expenses
+　　　旅費交通費及び通信費,0,販売費及び一般管理費,,旅費交通費及び通信費,,1,3,10E201210,TransportationAndCommunicationExpensesSGA,"Travel, transportation and communication expenses"
+　　　旅費及び通信費,0,販売費及び一般管理費,,旅費及び通信費,,1,3,10E201220,TravelingAndCommunicationExpensesSGA,Travel and communication expenses
+　　　旅費及び交通費,0,販売費及び一般管理費,,旅費及び交通費,,1,3,10E201230,TravelingAndTransportationExpensesSGA,Travel and transportation expenses
+　　　通信交通費,0,販売費及び一般管理費,,通信交通費,,1,3,10E201240,CorrespondenceAndTransportationExpensesSGA,Communication and transportation expenses
+　　　取引関連費,0,販売費及び一般管理費,,取引関連費,,1,3,10E201250,TradingRelatedExpensesSGA,Trading related expenses
+　　　不動産関連費,0,販売費及び一般管理費,,不動産関連費,,1,3,10E201260,RealEstateRelatedExpensesSGA,Real estate related expenses
+　　　雑費,0,販売費及び一般管理費,,雑費,,1,3,10E201270,MiscellaneousExpensesSGA,Miscellaneous expenses
+　　　その他の販売費,0,販売費及び一般管理費,,その他の販売費,,1,3,10E201280,GeneralAndAdministrativeExpensesSGAAbstract,Other selling expenses
+　　　その他の一般管理費,0,販売費及び一般管理費,,その他の一般管理費,,1,3,10E201290,GeneralAndAdministrativeExpensesSGAAbstract,Other general and administrative expenses
+　　　その他の経費,0,販売費及び一般管理費,,その他の経費,,1,3,10E201300,GeneralAndAdministrativeExpensesSGAAbstract,Other expenses
+　　　その他の人件費,0,販売費及び一般管理費,,その他の人件費,,1,3,10E201310,OtherPersonnelCostAdministrativeExpenses,Other personnel expenses
+　　　その他,0,販売費及び一般管理費,,その他,,1,3,10E201320,GeneralAndAdministrativeExpensesSGAAbstract,Other
+　　　販売費及び一般管理費,0,販売費及び一般管理費,,販売費及び一般管理費,,1,3,10E201330,SellingGeneralAndAdministrativeExpenses,"Selling, general and administrative expenses"
+　　営業利益又は営業損失（△）,0,損益,,営業利益又は営業損失（△）,,1,2,10F000110,OperatingIncome,Operating profit (loss)
+　　　全事業営業利益又は全事業営業損失（△）,0,損益,,全事業営業利益又は全事業営業損失（△）,,1,3,10F000120,OperatingIncomeTotalBusiness,Operating profit (loss) - all businesses
+　　営業外収益,,営業外収益,,営業外収益,,T,2,10D200010,NonOperatingIncomeAbstract,Non-operating income
+　　　受取利息,0,営業外収益,,受取利息,,1,3,10D200020,InterestIncomeNOI,Interest income
+　　　有価証券利息,0,営業外収益,,有価証券利息,,1,3,10D200030,InterestOnSecuritiesNOI,Interest on securities
+　　　受取配当金,0,営業外収益,,受取配当金,,1,3,10D200040,DividendsIncomeNOI,Dividend income
+　　　仕入割引,0,営業外収益,,仕入割引,,1,3,10D200050,PurchaseDiscountsNOI,Purchase discounts
+　　　投資不動産賃貸料,0,営業外収益,,投資不動産賃貸料,,1,3,10D200060,RentOfRealEstateForInvestmentNOI,Rental income from investment property
+　　　還付消費税等,0,営業外収益,,還付消費税等,,1,3,10D200070,RefundedConsumptionTaxesNOI,Refunded consumption taxes
+　　　負ののれん償却額,0,営業外収益,,負ののれん償却額,,1,3,10D200080,AmortizationOfNegativeGoodwillNOI,Amortization of negative goodwill
+　　　持分法による投資利益,0,営業外収益,,持分法による投資利益,,1,3,10D200090,EquityInEarningsOfAffiliatesNOI,Share of profit of entities accounted for using equity method
+　　　為替差益,0,営業外収益,,為替差益,,1,3,10D200100,ForeignExchangeGainsNOI,Foreign exchange gains
+　　　有価証券売却益,0,営業外収益,,有価証券売却益,,1,3,10D200110,GainOnSalesOfSecuritiesNOI,Gain on sales of securities
+　　　投資有価証券売却益,0,営業外収益,,投資有価証券売却益,,1,3,10D200120,GainOnSalesOfInvestmentSecuritiesNOI,Gain on sales of investment securities
+　　　投資有価証券評価益,0,営業外収益,,投資有価証券評価益,,1,3,10D200130,GainOnValuationOfSecuritiesNOI,Gain on valuation of investment securities
+　　　未払配当金除斥益,0,営業外収益,,未払配当金除斥益,,1,3,10D200140,GainOnAdjustmentOfAccountPayableNOI,Gain on forfeiture of unclaimed dividends
+　　　有価証券償還益,0,営業外収益,,有価証券償還益,,1,3,10D200150,GainOnRedemptionOfSecuritiesNOI,Gain on redemption of securities
+　　　有価証券運用益,0,営業外収益,,有価証券運用益,,1,3,10D200160,GainOnInvestmentOfSecuritiesNOI,Gain on investments in securities
+　　　有価証券評価益,0,営業外収益,,有価証券評価益,,1,3,10D200170,GainOnValuationOfSecuritiesNOI,Gain on valuation of securities
+　　　投資有価証券評価損戻入益,0,営業外収益,,投資有価証券評価損戻入益,,1,3,10D200180,GainOnReversalOfLossOnValuationOfInvestmentSecuritiesNOI,Gain on reversal of loss on valuation of investment securities
+　　　出資金運用益,0,営業外収益,,出資金運用益,,1,3,10D200190,GainOnInvestmentsInCapitalNOI,Gain on investments in capital
+　　　投資事業組合運用益,0,営業外収益,,投資事業組合運用益,,1,3,10D200200,GainOnInvestmentsInPartnershipNOI,Gain on investments in investment partnerships
+　　　匿名組合投資利益,0,営業外収益,,匿名組合投資利益,,1,3,10D200210,GainOnInvestmentsInSilentPartnershipNOI,Gain on investments in silent partnerships
+　　　金銭の信託運用益,0,営業外収益,,金銭の信託運用益,,1,3,10D200220,GainOnInvestmentsInMoneyHeldInTrustNOI,Gain on investments in money held in trust
+　　　デリバティブ評価益,0,営業外収益,,デリバティブ評価益,,1,3,10D200230,GainOnValuationOfDerivativesNOI,Gain on valuation of derivatives
+　　　金利スワップ評価益,0,営業外収益,,金利スワップ評価益,,1,3,10D200240,GainOnValuationOfInterestRateSwapsNOI,Gain on valuation of interest rate swaps
+　　　複合金融商品評価益,0,営業外収益,,複合金融商品評価益,,1,3,10D200250,GainOnValuationOfCompoundFinancialInstrumentsNOI,Gain on valuation of compound financial instruments
+　　　経営指導料,0,営業外収益,,経営指導料,,1,3,10D200260,BusinessAdvisoryFeeNOI,Consulting fee income
+　　　技術指導料,0,営業外収益,,技術指導料,,1,3,10D200270,TechnicalAdvisoryFeeNOI,Technical advisory fee income
+　　　業務受託料,0,営業外収益,,業務受託料,,1,3,10D200280,FiduciaryObligationFeeNOI,Outsourcing service income
+　　　業務受託手数料,0,営業外収益,,業務受託手数料,,1,3,10D200290,OperationsConsignmentFeeNOI,Outsourcing service income
+　　　受取技術料,0,営業外収益,,受取技術料,,1,3,10D200300,TechnicalSupportFeeNOI,Technical support fee income
+　　　受取ロイヤリティー,0,営業外収益,,受取ロイヤリティー,,1,3,10D200310,RoyaltyIncomeNOI,Royalty income
+　　　貸付金利息,0,営業外収益,,貸付金利息,,1,3,10D200320,InterestOnLoansNOI,Interest on loans
+　　　受取手数料,0,営業外収益,,受取手数料,,1,3,10D200330,CommissionFeeNOI,Commission income
+　　　受取事務手数料,0,営業外収益,,受取事務手数料,,1,3,10D200340,OfficeWorkFeeNOI,Administrative service fee income
+　　　受取賃貸料,0,営業外収益,,受取賃貸料,,1,3,10D200350,RentIncomeNOI,Rental income
+　　　不動産賃貸料,0,営業外収益,,不動産賃貸料,,1,3,10D200360,RealEstateRentNOI,Rental income from real estate
+　　　固定資産賃貸料,0,営業外収益,,固定資産賃貸料,,1,3,10D200370,RentIncomeOnNoncurrentAssetsNOI,Rental income from non-current assets
+　　　設備賃貸料,0,営業外収益,,設備賃貸料,,1,3,10D200380,RentIncomeOnFacilitiesNOI,Rental income from facilities
+　　　受取家賃,0,営業外収益,,受取家賃,,1,3,10D200390,HouseRentIncomeNOI,Rental income from buildings
+　　　受取地代家賃,0,営業外収益,,受取地代家賃,,1,3,10D200400,LandAndHouseRentReceivedNOI,Rental income from land and buildings
+　　　受取保険金,0,営業外収益,,受取保険金,,1,3,10D200410,InsuranceIncomeNOI,Insurance claim income
+　　　受取保険金及び配当金,0,営業外収益,,受取保険金及び配当金,,1,3,10D200420,InsuranceAndDividendsIncomeNOI,Insurance claim and dividend income
+　　　受取保険料,0,営業外収益,,受取保険料,,1,3,10D200430,InsuranceFeeNOI,Insurance fee income
+　　　受取保証料,0,営業外収益,,受取保証料,,1,3,10D200440,GuaranteeCommissionReceivedNOI,Guarantee commission received
+　　　受取補償金,0,営業外収益,,受取補償金,,1,3,10D200450,CompensationIncomeNOI,Compensation income
+　　　受取利息及び配当金,0,営業外収益,,受取利息及び配当金,,1,3,10D200460,InterestAndDividendsIncomeNOI,Interest and dividend income
+　　　助成金収入,0,営業外収益,,助成金収入,,1,3,10D200470,SubsidyIncomeNOIBounty,Subsidy income
+　　　補助金収入,0,営業外収益,,補助金収入,,1,3,10D200480,SubsidyIncomeNOI,Subsidy income
+　　　協賛金収入,0,営業外収益,,協賛金収入,,1,3,10D200490,CoSponsorFeeNOI,Sponsorship money income
+　　　違約金収入,0,営業外収益,,違約金収入,,1,3,10D200500,PenaltyIncomeNOI,Penalty income
+　　　売電収入,0,営業外収益,,売電収入,,1,3,10D200510,MiscellaneousIncomeNOI,Electricity sale income
+　　　保険解約返戻金,0,営業外収益,,保険解約返戻金,,1,3,10D200520,InsurancePremiumsRefundedCancellationNOI,Surrender value of insurance policies
+　　　保険返戻金,0,営業外収益,,保険返戻金,,1,3,10D200530,InsuranceReturnNOI,Insurance return
+　　　生命保険配当金,0,営業外収益,,生命保険配当金,,1,3,10D200540,DividendsIncomeOfLifeInsuranceNOI,Dividend income of life insurance
+　　　保険配当金,0,営業外収益,,保険配当金,,1,3,10D200550,DividendsIncomeOfInsuranceNOI,Dividend income of insurance
+　　　保険事務手数料,0,営業外収益,,保険事務手数料,,1,3,10D200560,CommissionForInsuranceOfficeWorkNOI,Commission for insurance office work
+　　　固定資産売却益,0,営業外収益,,固定資産売却益,,1,3,10D200570,GainOnSalesOfNoncurrentAssetsNOI,Gain on sales of non-current assets
+　　　固定資産受贈益,0,営業外収益,,固定資産受贈益,,1,3,10D200580,GainOnDonationOfNoncurrentAssetsNOI,Gain on donation of non-current assets
+　　　固定資産処分益,0,営業外収益,,固定資産処分益,,1,3,10D200590,GainOnDisposalOfNoncurrentAssetsNOI,Gain on disposal of non-current assets
+　　　投資損失引当金戻入額,0,営業外収益,,投資損失引当金戻入額,,1,3,10D200600,ReversalOfAllowanceForInvestmentLossNOI,Reversal of allowance for investment loss
+　　　退職給付会計基準変更時差異の処理額,0,営業外収益,,退職給付会計基準変更時差異の処理額,,1,3,10D200610,AmortizationOfNetRetirementBenefitObligationAtTransitionNOI,Amortization of net retirement benefit obligation at transition
+　　　役員退職慰労引当金戻入額,0,営業外収益,,役員退職慰労引当金戻入額,,1,3,10D200620,ReversalOfProvisionForDirectorsRetirementBenefitsNOI,Reversal of provision for retirement benefits for directors (and other officers)
+　　　貸倒引当金戻入額,0,営業外収益,,貸倒引当金戻入額,,1,3,10D200630,ReversalOfAllowanceForDoubtfulAccountsNOI,Reversal of allowance for doubtful accounts
+　　　償却債権取立益,0,営業外収益,,償却債権取立益,,1,3,10D200640,GainOnBadDebtsRecoveredNOI,Gain on bad debts recovered
+　　　物品売却益,0,営業外収益,,物品売却益,,1,3,10D200650,GainOnSalesOfGoodsNOI,Gain on sales of goods
+　　　作業くず売却益,0,営業外収益,,作業くず売却益,,1,3,10D200660,GainOnSalesOfScraps1NOI,Gain on sales of scraps
+　　　スクラップ売却益,0,営業外収益,,スクラップ売却益,,1,3,10D200670,GainOnSalesOfScraps2NOI,Gain on sales of scraps
+　　　債務勘定整理益,0,営業外収益,,債務勘定整理益,,1,3,10D200680,GainOnAdjustmentOfAccountPayableNOI,Gain on adjustment of account payable
+　　　法人税等還付加算金,0,営業外収益,,法人税等還付加算金,,1,3,10D200690,InterestOnRefundOfIncomeTaxesAndOtherNOI,Interest on refund of income taxes
+　　　還付加算金,0,営業外収益,,還付加算金,,1,3,10D200700,InterestOnRefundNOI,Interest on tax refund
+　　　雇用調整助成金,0,営業外収益,,雇用調整助成金,,1,3,10D200710,SubsidiesForEmploymentAdjustmentNOI,Subsidies for employment adjustment
+　　　雑収入,0,営業外収益,,雑収入,,1,3,10D200720,MiscellaneousIncomeNOI,Miscellaneous income
+　　　その他,0,営業外収益,,その他,,1,3,10D200730,OtherNOI,Other
+　　　営業外収益,0,営業外収益,,営業外収益,,1,3,10D200740,NonOperatingIncome,Non-operating income
+　　営業外費用,,営業外費用,,営業外費用,,T,2,10E300010,NonOperatingExpensesAbstract,Non-operating expenses
+　　　支払利息,0,営業外費用,,支払利息,,1,3,10E300020,InterestExpensesNOE,Interest expenses
+　　　社債利息,0,営業外費用,,社債利息,,1,3,10E300030,InterestOnBondsNOE,Interest on bonds
+　　　売上割引,0,営業外費用,,売上割引,,1,3,10E300040,SalesDiscountsNOE,Sales discounts
+　　　有価証券売却損,0,営業外費用,,有価証券売却損,,1,3,10E300050,LossOnSalesOfSecuritiesNOE,Loss on sales of securities
+　　　有価証券評価損,0,営業外費用,,有価証券評価損,,1,3,10E300060,LossOnValuationOfSecuritiesNOE,Loss on valuation of securities
+　　　有価証券償還損,0,営業外費用,,有価証券償還損,,1,3,10E300070,LossOnRedemptionOfSecuritiesNOE,Loss on redemption of securities
+　　　有価証券運用損,0,営業外費用,,有価証券運用損,,1,3,10E300080,LossOnInvestmentOfSecuritiesNOE,Loss on investments in securities
+　　　投資有価証券売却損,0,営業外費用,,投資有価証券売却損,,1,3,10E300090,LossOnSalesOfInvestmentSecuritiesNOE,Loss on sales of investment securities
+　　　投資有価証券評価損,0,営業外費用,,投資有価証券評価損,,1,3,10E300100,LossOnValuationOfInvestmentSecuritiesNOE,Loss on valuation of investment securities
+　　　持分法による投資損失,0,営業外費用,,持分法による投資損失,,1,3,10E300110,EquityInLossesOfAffiliatesNOE,Share of loss of entities accounted for using equity method
+　　　出資金運用損,0,営業外費用,,出資金運用損,,1,3,10E300120,LossOnInvestmentsInCapitalNOE,Loss on investments in capital
+　　　投資事業組合運用損,0,営業外費用,,投資事業組合運用損,,1,3,10E300130,LossOnInvestmentsInPartnershipNOE,Loss on investments in investment partnerships
+　　　匿名組合投資損失,0,営業外費用,,匿名組合投資損失,,1,3,10E300140,LossOnInvestmentsInSilentPartnershipNOE,Loss on investments in silent partnerships
+　　　出資金評価損,0,営業外費用,,出資金評価損,,1,3,10E300150,LossOnValuationOfInvestmentsInCapitalNOE,Loss on valuation of investments in capital
+　　　金銭の信託運用損,0,営業外費用,,金銭の信託運用損,,1,3,10E300160,LossOnInvestmentsInMoneyHeldInTrustNOE,Loss on investments in money held in trust
+　　　デリバティブ評価損,0,営業外費用,,デリバティブ評価損,,1,3,10E300170,LossOnValuationOfDerivativesNOE,Loss on valuation of derivatives
+　　　ゴルフ会員権評価損,0,営業外費用,,ゴルフ会員権評価損,,1,3,10E300180,LossOnValuationOfGolfClubMembershipNOE,Loss on valuation of golf club membership
+　　　会員権評価損,0,営業外費用,,会員権評価損,,1,3,10E300190,LossOnValuationOfMembershipNOE,Loss on valuation of membership
+　　　会員権売却損,0,営業外費用,,会員権売却損,,1,3,10E300200,LossOnSaleOfMembershipNOE,Loss on sales of membership
+　　　保険解約損,0,営業外費用,,保険解約損,,1,3,10E300210,LossOnInsuranceCancellationNOE,Loss on cancellation of insurance policies
+　　　社債発行費償却,0,営業外費用,,社債発行費償却,,1,3,10E300220,AmortizationOfBondIssuanceCostNOE,Amortization of bond issuance cost
+　　　株式交付費,0,営業外費用,,株式交付費,,1,3,10E300230,StockIssuanceCostNOE,Share issuance cost
+　　　株式交付費償却,0,営業外費用,,株式交付費償却,,1,3,10E300240,AmortizationOfStockIssuanceCostNOE,Amortization of share issuance cost
+　　　新株発行費,0,営業外費用,,新株発行費,,1,3,10E300250,StockIssuanceCostPriorNOE,Share issuance cost
+　　　新株発行費償却,0,営業外費用,,新株発行費償却,,1,3,10E300260,AmortizationOfStockIssuanceCostPriorNOE,Amortization of share issuance cost
+　　　社債償還損,0,営業外費用,,社債償還損,,1,3,10E300270,LossOnBondRetirementNOE,Loss on redemption of bonds
+　　　社債発行費,0,営業外費用,,社債発行費,,1,3,10E300280,BondIssuanceCostNOE,Bond issuance cost
+　　　自己株式取得費用,0,営業外費用,,自己株式取得費用,,1,3,10E300290,CommissionForPurchaseOfTreasuryStockNOE,Commission for purchase of treasury shares
+　　　株式公開費用,0,営業外費用,,株式公開費用,,1,3,10E300300,GoingPublicExpensesNOE,Going public expenses
+　　　資金調達費用,0,営業外費用,,資金調達費用,,1,3,10E300310,FinancingExpensesNOE,Financing expenses
+　　　短期社債利息,0,営業外費用,,短期社債利息,,1,3,10E300320,InterestOnShortTermBondsNOE,Interest on short-term bonds
+　　　コマーシャル・ペーパー利息,0,営業外費用,,コマーシャル・ペーパー利息,,1,3,10E300330,InterestOnCommercialPapersNOE,Interest on commercial papers
+　　　為替差損,0,営業外費用,,為替差損,,1,3,10E300340,ForeignExchangeLossesNOE,Foreign exchange losses
+　　　金利スワップ評価損,0,営業外費用,,金利スワップ評価損,,1,3,10E300350,LossOnValuationOfInterestSwapNOE,Loss on valuation of interest rate swaps
+　　　複合金融商品評価損,0,営業外費用,,複合金融商品評価損,,1,3,10E300360,LossOnValuationOfCompoundFinancialInstrumentsNOE,Loss on valuation of compound financial instruments
+　　　手形売却損,0,営業外費用,,手形売却損,,1,3,10E300370,LossOnSalesOfNotesPayableNOE,Loss on sales of notes receivable - trade
+　　　電子記録債権売却損,0,営業外費用,,電子記録債権売却損,,1,3,10E300380,LossOnSalesOfElectronicallyRecordedMonetaryClaimsNOE,Loss on sales of electronically recorded monetary claims
+　　　貸与資産減価償却費,0,営業外費用,,貸与資産減価償却費,,1,3,10E300390,DepreciationOfAssetsForRentNOE,Depreciation of assets for rent
+　　　休止固定資産減価償却費,0,営業外費用,,休止固定資産減価償却費,,1,3,10E300400,DepreciationOfInactiveNoncurrentAssetsNOE,Depreciation of inactive non-current assets
+　　　減価償却費,0,営業外費用,,減価償却費,,1,3,10E300410,DepreciationNOE,Depreciation
+　　　賃貸収入原価,0,営業外費用,,賃貸収入原価,,1,3,10E300420,CostOfLeaseRevenueNOE,Rental cost
+　　　賃貸費用,0,営業外費用,,賃貸費用,,1,3,10E300430,RentExpensesNOE,Rental expenses
+　　　不動産賃貸費用,0,営業外費用,,不動産賃貸費用,,1,3,10E300440,RentExpensesOnRealEstatesNOE,Rental expenses on real estate
+　　　不動産賃貸原価,0,営業外費用,,不動産賃貸原価,,1,3,10E300450,RentCostOfRealEstateNOE,Rental cost on real estate
+　　　固定資産賃貸費用,0,営業外費用,,固定資産賃貸費用,,1,3,10E300460,RentExpensesOnNoncurrentAssetsNOE,Rental expenses on non-current assets
+　　　設備賃貸費用,0,営業外費用,,設備賃貸費用,,1,3,10E300470,RentExpensesOnFacilitiesNOE,Rental expenses on facilities
+　　　リース解約損,0,営業外費用,,リース解約損,,1,3,10E300480,LossOnCancelOfLeaseContractsNOE,Loss on cancellation of leases
+　　　固定資産売却損,0,営業外費用,,固定資産売却損,,1,3,10E300490,LossOnSalesOfNoncurrentAssetsNOE,Loss on sales of non-current assets
+　　　固定資産除却損,0,営業外費用,,固定資産除却損,,1,3,10E300500,LossOnRetirementOfNoncurrentAssetsNOE,Loss on retirement of non-current assets
+　　　固定資産除売却損,0,営業外費用,,固定資産除売却損,,1,3,10E300510,LossOnSalesAndRetirementOfNoncurrentAssetsNOE,Loss on sales and retirement of non-current assets
+　　　固定資産廃棄損,0,営業外費用,,固定資産廃棄損,,1,3,10E300520,LossOnAbandonmentOfNoncurrentAssetsNOE,Loss on abandonment of non-current assets
+　　　固定資産処分損,0,営業外費用,,固定資産処分損,,1,3,10E300530,LossOnDisposalOfNoncurrentAssetsNOE,Loss on disposal of non-current assets
+　　　固定資産圧縮損,0,営業外費用,,固定資産圧縮損,,1,3,10E300540,LossOnReductionOfNoncurrentAssetsNOE,Loss on tax purpose reduction entry of non-current assets
+　　　固定資産評価損,0,営業外費用,,固定資産評価損,,1,3,10E300550,LossOnValuationOfNoncurrentAssetsNOE,Loss on valuation of non-current assets
+　　　たな卸資産評価損,0,営業外費用,,たな卸資産評価損,,1,3,10E300560,LossOnValuationOfInventoriesNOE,Loss on valuation of inventories
+　　　たな卸資産廃棄損,0,営業外費用,,たな卸資産廃棄損,,1,3,10E300570,LossOnAbandonmentOfInventoriesNOE,Loss on abandonment of inventories
+　　　たな卸資産除却損,0,営業外費用,,たな卸資産除却損,,1,3,10E300580,LossOnRetirementOfInventoriesNOE,Loss on retirement of inventories
+　　　たな卸資産処分損,0,営業外費用,,たな卸資産処分損,,1,3,10E300590,LossOnDisposalOfInventoriesNOE,Loss on disposal of inventories
+　　　商品評価損,0,営業外費用,,商品評価損,,1,3,10E300600,LossOnValuationOfGoodsNOE,Loss on valuation of goods
+　　　商品廃棄損,0,営業外費用,,商品廃棄損,,1,3,10E300610,LossOnAbandonmentOfGoodsNOE,Loss on abandonment of goods
+　　　原材料評価損,0,営業外費用,,原材料評価損,,1,3,10E300620,LossOnValuationOfRawMaterialsNOE,Loss on valuation of raw materials
+　　　貸倒引当金繰入額,0,営業外費用,,貸倒引当金繰入額,,1,3,10E300630,ProvisionOfAllowanceForDoubtfulAccountsNOE,Provision of allowance for doubtful accounts
+　　　貸倒損失,0,営業外費用,,貸倒損失,,1,3,10E300640,BadDebtsExpensesNOE,Bad debts expenses
+　　　退職給付費用,0,営業外費用,,退職給付費用,,1,3,10E300650,RetirementBenefitExpensesNOE,Retirement benefit expenses
+　　　過年度退職給付費用,0,営業外費用,,過年度退職給付費用,,1,3,10E300660,RetirementBenefitExpensesForPriorPeriodsNOE,Retirement benefit expenses for prior periods
+　　　退職給付積立不足償却額,0,営業外費用,,退職給付積立不足償却額,,1,3,10E300670,AmortizationOfShortageReserveForRetirementBenefitsNOE,Amortization of shortage reserve for retirement benefits
+　　　退職給付会計基準変更時差異の処理額,0,営業外費用,,退職給付会計基準変更時差異の処理額,,1,3,10E300680,AmortizationOfNetRetirementBenefitObligationAtTransitionNOE,Amortization of net retirement benefit obligation at transition
+　　　割増退職金,0,営業外費用,,割増退職金,,1,3,10E300690,ExtraRetirementPaymentsNOE,Extra retirement payments
+　　　創立費償却,0,営業外費用,,創立費償却,,1,3,10E300700,AmortizationOfDeferredOrganizationExpensesNOE,Amortization of organization expenses
+　　　開業費償却,0,営業外費用,,開業費償却,,1,3,10E300710,AmortizationOfBusinessCommencementExpensesNOE,Amortization of business commencement expenses
+　　　長期前払費用償却,0,営業外費用,,長期前払費用償却,,1,3,10E300720,AmortizationOfLongTermPrepaidExpensesNOE,Amortization of long-term prepaid expenses
+　　　開発費償却,0,営業外費用,,開発費償却,,1,3,10E300730,AmortizationOfDevelopmentExpensesNOE,Amortization of development expenses
+　　　支払手数料,0,営業外費用,,支払手数料,,1,3,10E300740,CommissionFeeNOE,Commission expenses
+　　　支払保証料,0,営業外費用,,支払保証料,,1,3,10E300750,GuaranteeCommissionNOE,Guarantee commission
+　　　支払補償費,0,営業外費用,,支払補償費,,1,3,10E300760,CompensationExpensesNOE,Compensation expenses
+　　　租税公課,0,営業外費用,,租税公課,,1,3,10E300770,TaxesAndDuesNOE,Taxes and dues
+　　　寄付金,0,営業外費用,,寄付金,,1,3,10E300780,ContributionNOE,Donations
+　　　売上債権売却損,0,営業外費用,,売上債権売却損,,1,3,10E300790,LossOnSalesOfAccountsReceivableNOE,Loss on sales of trade receivables
+　　　債権売却損,0,営業外費用,,債権売却損,,1,3,10E300800,LossOnTransferOfReceivablesNOE,Loss on transfer of receivables
+　　　コミットメントフィー,0,営業外費用,,コミットメントフィー,,1,3,10E300810,CommitmentFeeNOE,Commitment fee
+　　　シンジケートローン手数料,0,営業外費用,,シンジケートローン手数料,,1,3,10E300820,CommissionForSyndicateLoanNOE,Commission for syndicated loans
+　　　事務所移転費用,0,営業外費用,,事務所移転費用,,1,3,10E300830,OfficeTransferExpensesNOE,Office relocation expenses
+　　　和解金,0,営業外費用,,和解金,,1,3,10E300840,SettlementPackageNOE,Settlement package
+　　　訴訟和解金,0,営業外費用,,訴訟和解金,,1,3,10E300850,LitigationSettlementNOE,Litigation settlement
+　　　訴訟関連費用,0,営業外費用,,訴訟関連費用,,1,3,10E300860,LitigationExpensesNOE,Litigation expenses
+　　　上場関連費用,0,営業外費用,,上場関連費用,,1,3,10E300870,ListingExpense,Listing expenses
+　　　雑支出,0,営業外費用,,雑支出,,1,3,10E300880,MiscellaneousExpensesNOE,Miscellaneous expenses
+　　　雑損失,0,営業外費用,,雑損失,,1,3,10E300890,MiscellaneousLossNOE,Miscellaneous loss
+　　　その他,0,営業外費用,,その他,,1,3,10E300900,NonOperatingExpensesAbstract,Other
+　　　営業外費用,0,営業外費用,,営業外費用,,1,3,10E300910,NonOperatingExpenses,Non-operating expenses
+　　経常利益又は経常損失（△）,0,損益,,経常利益又は経常損失（△）,,1,2,10F000130,OrdinaryIncome,Ordinary profit (loss)
+　　特別利益,,特別利益,,特別利益,,T,2,10D300010,ExtraordinaryIncomeAbstract,Extraordinary income
+　　　企業結合に係る特定勘定取崩益,0,特別利益,,企業結合に係る特定勘定取崩益,,1,3,10D300020,ReversalOfProvisionIncurredFromBusinessCombinationEI,Reversal of provision incurred from business combination
+　　　企業結合における交換利益,0,特別利益,,企業結合における交換利益,,1,3,10D300030,GainOnExchangeFromBusinessCombinationEI,Gain on exchange from business combination
+　　　事業分離における移転利益,0,特別利益,,事業分離における移転利益,,1,3,10D300040,GainOnTransferFromBusinessDivestituresEI,Gain on transfer from business divestitures
+　　　段階取得に係る差益,0,特別利益,,段階取得に係る差益,,1,3,10D300050,GainOnStepAcquisitionsEI,Gain on step acquisitions
+　　　持分変動利益,0,特別利益,,持分変動利益,,1,3,10D300060,GainOnChangeInEquityEI,Gain on change in equity
+　　　抱合せ株式消滅差益,0,特別利益,,抱合せ株式消滅差益,,1,3,10D300070,GainOnExtinguishmentOfTieInSharesEI,Gain on extinguishment of tie-in shares
+　　　固定資産売却益,0,特別利益,,固定資産売却益,,1,3,10D300080,GainOnSalesOfNoncurrentAssetsEI,Gain on sales of non-current assets
+　　　固定資産処分益,0,特別利益,,固定資産処分益,,1,3,10D300090,GainOnDisposalOfNoncurrentAssetsEI,Gain on disposal of non-current assets
+　　　固定資産受贈益,0,特別利益,,固定資産受贈益,,1,3,10D300100,GainOnDonationOfNoncurrentAssetsEI,Gain on donation of non-current assets
+　　　有形固定資産売却益,0,特別利益,,有形固定資産売却益,,1,3,10D300110,GainOnSalesOfPropertyPlantAndEquipmentEI,"Gain on sales of property, plant and equipment"
+　　　土地売却益,0,特別利益,,土地売却益,,1,3,10D300120,GainOnSalesOfLandEI,Gain on sales of land
+　　　投資有価証券売却益,0,特別利益,,投資有価証券売却益,,1,3,10D300130,GainOnSalesOfInvestmentSecuritiesEI,Gain on sales of investment securities
+　　　投資有価証券償還益,0,特別利益,,投資有価証券償還益,,1,3,10D300140,GainOnRedemptionOfInvestmentSecuritiesEI,Gain on redemption of investment securities
+　　　有価証券売却益,0,特別利益,,有価証券売却益,,1,3,10D300150,GainOnSalesOfSecuritiesEI,Gain on sales of securities
+　　　投資有価証券評価損戻入益,0,特別利益,,投資有価証券評価損戻入益,,1,3,10D300160,GainOnReversalOfLossOnValuationOfInvestmentSecuritiesEI,Gain on reversal of loss on valuation of investment securities
+　　　匿名組合投資利益,0,特別利益,,匿名組合投資利益,,1,3,10D300170,GainOnInvestmentsInSilentPartnershipEI,Gain on investments in silent partnerships
+　　　ゴルフ会員権売却益,0,特別利益,,ゴルフ会員権売却益,,1,3,10D300180,GainOnSalesOfGolfMembershipsEI,Gain on sales of golf memberships
+　　　会員権売却益,0,特別利益,,会員権売却益,,1,3,10D300190,GainOnSalesOfMembershipsEI,Gain on sales of memberships
+　　　負ののれん発生益,0,特別利益,,負ののれん発生益,,1,3,10D300200,GainOnNegativeGoodwillEI,Gain on bargain purchase
+　　　関係会社清算益,0,特別利益,,関係会社清算益,,1,3,10D300210,GainOnLiquidationOfSubsidiariesAndAffiliatesEI,Gain on liquidation of subsidiaries and associates
+　　　子会社清算益,0,特別利益,,子会社清算益,,1,3,10D300220,GainOnLiquidationOfSubsidiariesEI,Gain on liquidation of subsidiaries
+　　　関係会社株式売却益,0,特別利益,,関係会社株式売却益,,1,3,10D300230,GainOnSalesOfSubsidiariesAndAffiliatesStocksEI,Gain on sales of shares of subsidiaries and associates
+　　　子会社株式売却益,0,特別利益,,子会社株式売却益,,1,3,10D300240,GainOnSalesOfSubsidiariesStocksEI,Gain on sales of shares of subsidiaries
+　　　事業譲渡益,0,特別利益,,事業譲渡益,,1,3,10D300250,GainOnTransferOfBusinessEI,Gain on sale of businesses
+　　　貸倒引当金戻入額,0,特別利益,,貸倒引当金戻入額,,1,3,10D300260,ReversalOfAllowanceForDoubtfulAccountsEI,Reversal of allowance for doubtful accounts
+　　　賞与引当金戻入額,0,特別利益,,賞与引当金戻入額,,1,3,10D300270,ReversalOfProvisionForBonusesEI,Reversal of provision for bonuses
+　　　役員賞与引当金戻入額,0,特別利益,,役員賞与引当金戻入額,,1,3,10D300280,ReversalOfProvisionForDirectorsBonusesEI,Reversal of provision for bonuses for directors (and other officers)
+　　　退職給付引当金戻入額,0,特別利益,,退職給付引当金戻入額,,1,3,10D300290,ReversalOfProvisionForRetirementBenefitsEI,Reversal of provision for retirement benefits
+　　　役員退職慰労引当金戻入額,0,特別利益,,役員退職慰労引当金戻入額,,1,3,10D300300,ReversalOfProvisionForDirectorsRetirementBenefitsEI,Reversal of provision for retirement benefits for directors (and other officers)
+　　　投資損失引当金戻入額,0,特別利益,,投資損失引当金戻入額,,1,3,10D300310,ReversalOfAllowanceForInvestmentLossEI,Reversal of allowance for investment loss
+　　　製品保証引当金戻入額,0,特別利益,,製品保証引当金戻入額,,1,3,10D300320,ReversalOfProvisionForProductWarrantiesEI,Reversal of provision for product warranties
+　　　特別修繕引当金戻入額,0,特別利益,,特別修繕引当金戻入額,,1,3,10D300330,ReversalOfProvisionForSpecialRepairsEI,Reversal of provision for special repairs
+　　　完成工事補償引当金戻入額,0,特別利益,,完成工事補償引当金戻入額,,1,3,10D300340,ReversalOfProvisionForWarrantiesForCompletedConstructionEI,Reversal of provision for warranties for completed construction
+　　　債務保証損失引当金戻入額,0,特別利益,,債務保証損失引当金戻入額,,1,3,10D300350,ReversalOfProvisionForLossOnGuaranteesEI,Reversal of provision for loss on guarantees
+　　　関係会社整理損失引当金戻入額,0,特別利益,,関係会社整理損失引当金戻入額,,1,3,10D300360,ReversalOfProvisionForLossOnLiquidationOfSubsidiariesAndAffiliatesEI,Reversal of provision for loss on liquidation of subsidiaries and associates
+　　　事業整理損失引当金戻入額,0,特別利益,,事業整理損失引当金戻入額,,1,3,10D300370,ReversalOfProvisionForLossOnBusinessLiquidationEI,Reversal of provision for loss on business liquidation
+　　　関係会社事業損失引当金戻入額,0,特別利益,,関係会社事業損失引当金戻入額,,1,3,10D300380,ReversalOfProvisionForLossOnBusinessOfSubsidiariesAndAffiliatesEI,Reversal of provision for loss on business of subsidiaries and associates
+　　　事業構造改善引当金戻入額,0,特別利益,,事業構造改善引当金戻入額,,1,3,10D300390,ReversalOfProvisionForBusinessStructureImprovementEI,Reversal of provision for business restructuring
+　　　店舗閉鎖損失引当金戻入額,0,特別利益,,店舗閉鎖損失引当金戻入額,,1,3,10D300400,ReversalOfProvisionForLossOnStoreClosingEI,Reversal of provision for loss on store closings
+　　　訴訟損失引当金戻入額,0,特別利益,,訴訟損失引当金戻入額,,1,3,10D300410,ReversalOfProvisionForLossOnLitigationEI,Reversal of provision for loss on litigation
+　　　ポイント引当金戻入額,0,特別利益,,ポイント引当金戻入額,,1,3,10D300420,ReversalOfProvisionForPointCardCertificatesEI,Reversal of provision for point card certificates
+　　　災害損失引当金戻入額,0,特別利益,,災害損失引当金戻入額,,1,3,10D300430,ReversalOfReservesUnderTheSpecialLawsEI,Gain on reversal of provision for loss on disaster
+　　　退職給付信託設定益,0,特別利益,,退職給付信託設定益,,1,3,10D300440,GainOnContributionOfSecuritiesToRetirementBenefitTrustEI,Gain on contribution of securities to retirement benefit trust
+　　　厚生年金基金代行返上益,0,特別利益,,厚生年金基金代行返上益,,1,3,10D300450,GainOnTransferOfBenefitObligationRelatingToEmployeesPensionFundEI,Gain on transfer of benefit obligation relating to employees' pension fund
+　　　退職給付会計基準変更時差異の処理額,0,特別利益,,退職給付会計基準変更時差異の処理額,,1,3,10D300460,AmortizationOfNetRetirementBenefitObligationAtTransitionEI,Amortization of net retirement benefit obligation at transition
+　　　退職給付制度改定益,0,特別利益,,退職給付制度改定益,,1,3,10D300470,GainOnRevisionOfRetirementBenefitPlanEI,Gain on revision of retirement benefit plan
+　　　退職給付制度終了益,0,特別利益,,退職給付制度終了益,,1,3,10D300480,GainOnAbolishmentOfRetirementBenefitPlanEI,Gain on termination of retirement benefit plan
+　　　為替差益,0,特別利益,,為替差益,,1,3,10D300490,ForeignExchangeGainsEI,Foreign exchange gains
+　　　特別法上の準備金戻入額,0,特別利益,,特別法上の準備金戻入額,,1,3,10D300500,ReversalOfReservesUnderTheSpecialLawsEI,Reversal of reserves under special laws
+　　　工事負担金等受入額,0,特別利益,,工事負担金等受入額,,1,3,10D300510,ContributionForConstructionEI,Contribution for construction
+　　　国庫補助金,0,特別利益,,国庫補助金,,1,3,10D300520,StateSubsidyEI,National subsidies
+　　　補助金収入,0,特別利益,,補助金収入,,1,3,10D300530,SubsidyEI,Subsidy income
+　　　新株予約権戻入益,0,特別利益,,新株予約権戻入益,,1,3,10D300540,GainOnReversalOfSubscriptionRightsToSharesEI,Gain on reversal of share acquisition rights
+　　　資産除去債務戻入益,0,特別利益,,資産除去債務戻入益,,1,3,10D300550,GainOnBadDebtsRecoveredEI,Gain on reversal of asset retirement obligations
+　　　保険解約返戻金,0,特別利益,,保険解約返戻金,,1,3,10D300560,SurrenderValueOfInsuranceEI,Surrender value of insurance policies
+　　　受取保険金,0,特別利益,,受取保険金,,1,3,10D300570,InsuranceIncomeEI,Insurance claim income
+　　　保険差益,0,特別利益,,保険差益,,1,3,10D300580,GainOnInsuranceAdjustmentEI,Gain on insurance claims
+　　　受取補償金,0,特別利益,,受取補償金,,1,3,10D300590,CompensationIncomeEI,Compensation income
+　　　収用補償金,0,特別利益,,収用補償金,,1,3,10D300600,CompensationIncomeForExpropriationEI,Compensation for expropriation
+　　　移転補償金,0,特別利益,,移転補償金,,1,3,10D300610,CompensationForTransferEI,Compensation for forced relocation
+　　　受取和解金,0,特別利益,,受取和解金,,1,3,10D300620,SettlementReceivedEI,Settlement received
+　　　違約金収入,0,特別利益,,違約金収入,,1,3,10D300630,SettlementReceivedEI,Penalty income
+　　　償却債権取立益,0,特別利益,,償却債権取立益,,1,3,10D300640,GainOnBadDebtsRecoveredEI,Gain on bad debts recovered
+　　　債務免除益,0,特別利益,,債務免除益,,1,3,10D300650,GainOnForgivenessOfDebtsEI,Gain on forgiveness of debts
+　　　その他,0,特別利益,,その他,,1,3,10D300660,ExtraordinaryIncomeAbstract,Other
+　　　特別利益,0,特別利益,,特別利益,,1,3,10D300670,ExtraordinaryIncome,Extraordinary income
+　　特別損失,,特別損失,,特別損失,,T,2,10E400010,ExtraordinaryLossAbstract,Extraordinary losses
+　　　企業結合における交換損失,0,特別損失,,企業結合における交換損失,,1,3,10E400020,LossOnExchangeFromBusinessCombinationEL,Loss on exchange from business combination
+　　　事業分離における移転損失,0,特別損失,,事業分離における移転損失,,1,3,10E400030,LossOnTransferFromBusinessDivestituresEL,Loss on transfer from business divestitures
+　　　段階取得に係る差損,0,特別損失,,段階取得に係る差損,,1,3,10E400040,LossOnStepAcquisitionsEL,Loss on step acquisitions
+　　　持分変動損失,0,特別損失,,持分変動損失,,1,3,10E400050,LossOnChangeInEquityEL,Loss on change in equity
+　　　抱合せ株式消滅差損,0,特別損失,,抱合せ株式消滅差損,,1,3,10E400060,LossOnExtinguishmentOfTieInSharesEL,Loss on extinguishment of tie-in shares
+　　　合併関連費用,0,特別損失,,合併関連費用,,1,3,10E400070,MergerExpensesEL,Merger expenses
+　　　固定資産売却損,0,特別損失,,固定資産売却損,,1,3,10E400080,LossOnSalesOfNoncurrentAssetsEL,Loss on sales of non-current assets
+　　　減損損失,0,特別損失,,減損損失,,1,3,10E400090,ImpairmentLossEL,Impairment loss
+　　　災害による損失,0,特別損失,,災害による損失,,1,3,10E400100,LossOnDisasterEL,Loss on disaster
+　　　固定資産除却損,0,特別損失,,固定資産除却損,,1,3,10E400110,LossOnRetirementOfNoncurrentAssetsEL,Loss on retirement of non-current assets
+　　　固定資産除売却損,0,特別損失,,固定資産除売却損,,1,3,10E400120,LossOnSalesAndRetirementOfNoncurrentAssetsEL,Loss on sales and retirement of non-current assets
+　　　固定資産廃棄損,0,特別損失,,固定資産廃棄損,,1,3,10E400130,LossOnAbandonmentOfNoncurrentAssetsEL,Loss on abandonment of non-current assets
+　　　固定資産処分損,0,特別損失,,固定資産処分損,,1,3,10E400140,LossOnDisposalOfNoncurrentAssetsEL,Loss on disposal of non-current assets
+　　　固定資産圧縮損,0,特別損失,,固定資産圧縮損,,1,3,10E400150,LossOnReductionOfNoncurrentAssetsEL,Loss on tax purpose reduction entry of non-current assets
+　　　固定資産評価損,0,特別損失,,固定資産評価損,,1,3,10E400160,LossOnValuationOfNoncurrentAssetsEL,Loss on valuation of non-current assets
+　　　有形固定資産売却損,0,特別損失,,有形固定資産売却損,,1,3,10E400170,LossOnSalesOfPropertyPlantAndEquipmentEL,"Loss on sales of property, plant and equipment"
+　　　有形固定資産除却損,0,特別損失,,有形固定資産除却損,,1,3,10E400180,LossOnRetirementOfPropertyPlantAndEquipmentEL,"Loss on retirement of property, plant and equipment"
+　　　有形固定資産処分損,0,特別損失,,有形固定資産処分損,,1,3,10E400190,LossOnDisposalOfPropertyPlantAndEquipmentEL,"Loss on disposal of property, plant and equipment"
+　　　土地売却損,0,特別損失,,土地売却損,,1,3,10E400200,LossOnSalesOfLandEL,Loss on sales of land
+　　　投資有価証券売却損,0,特別損失,,投資有価証券売却損,,1,3,10E400210,LossOnSalesOfInvestmentSecuritiesEL,Loss on sales of investment securities
+　　　投資有価証券評価損,0,特別損失,,投資有価証券評価損,,1,3,10E400220,LossOnValuationOfInvestmentSecuritiesEL,Loss on valuation of investment securities
+　　　投資有価証券償還損,0,特別損失,,投資有価証券償還損,,1,3,10E400230,LossOnRedemptionOfInvestmentSecuritiesEL,Loss on redemption of investment securities
+　　　有価証券売却損,0,特別損失,,有価証券売却損,,1,3,10E400240,LossOnSalesOfSecuritiesEL,Loss on sales of securities
+　　　有価証券評価損,0,特別損失,,有価証券評価損,,1,3,10E400250,LossOnValuationOfSecuritiesEL,Loss on valuation of securities
+　　　匿名組合投資損失,0,特別損失,,匿名組合投資損失,,1,3,10E400260,LossOnInvestmentsInSilentPartnershipEL,Loss on investments in silent partnerships
+　　　出資金評価損,0,特別損失,,出資金評価損,,1,3,10E400270,LossOnValuationOfInvestmentsInCapitalEL,Loss on valuation of investments in capital
+　　　関係会社株式評価損,0,特別損失,,関係会社株式評価損,,1,3,10E400280,LossOnValuationOfStocksOfSubsidiariesAndAffiliatesEL,Loss on valuation of shares of subsidiaries and associates
+　　　関係会社株式売却損,0,特別損失,,関係会社株式売却損,,1,3,10E400290,LossOnSalesOfStocksOfSubsidiariesAndAffiliatesEL,Loss on sales of shares of subsidiaries and associates
+　　　投資損失引当金繰入額,0,特別損失,,投資損失引当金繰入額,,1,3,10E400300,ProvisionOfAllowanceForInvestmentLossEL,Provision of allowance for investment loss
+　　　関係会社出資金評価損,0,特別損失,,関係会社出資金評価損,,1,3,10E400310,LossOnValuationOfInvestmentsInCapitalOfSubsidiariesAndAffiliatesEL,Loss on valuation of investments in capital of subsidiaries and associates
+　　　子会社株式売却損,0,特別損失,,子会社株式売却損,,1,3,10E400320,LossOnSalesOfSubsidiariesStocksEL,Loss on sales of shares of subsidiaries
+　　　子会社株式評価損,0,特別損失,,子会社株式評価損,,1,3,10E400330,LossOnValuationOfSubsidiariesStocksEL,Loss on valuation of shares of subsidiaries
+　　　関係会社整理損,0,特別損失,,関係会社整理損,,1,3,10E400340,LossOnLiquidationOfSubsidiariesAndAffiliatesGeneralEL,Loss on liquidation of subsidiaries and associates
+　　　関係会社整理損失引当金繰入額,0,特別損失,,関係会社整理損失引当金繰入額,,1,3,10E400350,ProvisionForLossOnLiquidationOfSubsidiariesAndAffiliatesEL,Provision for loss on liquidation of subsidiaries and associates
+　　　事業整理損,0,特別損失,,事業整理損,,1,3,10E400360,LossOnLiquidationOfBusinessEL,Loss on liquidation of business
+　　　事業整理損失引当金繰入額,0,特別損失,,事業整理損失引当金繰入額,,1,3,10E400370,ProvisionForLossOnBusinessLiquidationEL,Provision for loss on business liquidation
+　　　関係会社事業損失,0,特別損失,,関係会社事業損失,,1,3,10E400380,LossOnBusinessOfSubsidiariesAndAffiliatesEL,Loss on business of subsidiaries and associates
+　　　関係会社事業損失引当金繰入額,0,特別損失,,関係会社事業損失引当金繰入額,,1,3,10E400390,ProvisionForLossOnBusinessOfSubsidiariesAndAffiliatesEL,Provision for loss on business of subsidiaries and associates
+　　　事業構造改善費用,0,特別損失,,事業構造改善費用,,1,3,10E400400,BusinessStructureImprovementExpensesEL,Business restructuring expenses
+　　　事業構造改善引当金繰入額,0,特別損失,,事業構造改善引当金繰入額,,1,3,10E400410,ProvisionForBusinessStructureImprovementEL,Provision for business restructuring
+　　　関係会社清算損,0,特別損失,,関係会社清算損,,1,3,10E400420,LossOnLiquidationOfSubsidiariesAndAffiliatesEL,Loss on liquidation of subsidiaries and associates
+　　　子会社整理損,0,特別損失,,子会社整理損,,1,3,10E400430,LossOnLiquidationOfSubsidiariesGeneralEL,Loss on liquidation of subsidiaries
+　　　子会社清算損,0,特別損失,,子会社清算損,,1,3,10E400440,LossOnLiquidationOfSubsidiariesEL,Loss on liquidation of subsidiaries
+　　　事業再編損,0,特別損失,,事業再編損,,1,3,10E400450,RestructuringLossEL,Restructuring loss
+　　　事業撤退損,0,特別損失,,事業撤退損,,1,3,10E400460,LossOnBusinessWithdrawalEL,Loss on withdrawal from business
+　　　事業譲渡損,0,特別損失,,事業譲渡損,,1,3,10E400470,LossOnTransferOfBusinessEL,Loss on sale of businesses
+　　　関係会社支援損,0,特別損失,,関係会社支援損,,1,3,10E400480,LossOnSupportToSubsidiariesAndSubsidiariesAndAffiliatesEL,Loss on support to subsidiaries and associates
+　　　関係会社貸倒引当金繰入額,0,特別損失,,関係会社貸倒引当金繰入額,,1,3,10E400490,ProvisionOfAllowanceForDoubtfulAccountsForSubsidiariesAndAffiliatesEL,Provision of allowance for doubtful accounts for subsidiaries and associates
+　　　その他の投資評価損,0,特別損失,,その他の投資評価損,,1,3,10E400500,LossOnValuationOfOtherInvestmentsEL,Loss on valuation of other investments
+　　　ゴルフ会員権評価損,0,特別損失,,ゴルフ会員権評価損,,1,3,10E400510,LossOnValuationOfGolfClubMembershipEL,Loss on valuation of golf club membership
+　　　ゴルフ会員権貸倒引当金繰入額,0,特別損失,,ゴルフ会員権貸倒引当金繰入額,,1,3,10E400520,ProvisionOfAllowanceForDoubtfulAccountsOfGolfClubMembershipEL,Provision of allowance for doubtful accounts of golf club membership
+　　　ゴルフ会員権売却損,0,特別損失,,ゴルフ会員権売却損,,1,3,10E400530,LossOnSalesOfGolfClubMembershipsEL,Loss on sales of golf club memberships
+　　　会員権評価損,0,特別損失,,会員権評価損,,1,3,10E400540,LossOnValuationOfMembershipEL,Loss on valuation of membership
+　　　会員権売却損,0,特別損失,,会員権売却損,,1,3,10E400550,LossOnSalesOfMembershipEL,Loss on sales of membership
+　　　電話加入権評価損,0,特別損失,,電話加入権評価損,,1,3,10E400560,LossOnValuationOfTelephoneSubscriptionRightEL,Loss on valuation of telephone subscription right
+　　　施設利用権評価損,0,特別損失,,施設利用権評価損,,1,3,10E400570,LossOnValuationOfRightOfUsingFacilitiesEL,Loss on valuation of right to use facilities
+　　　特別退職金,0,特別損失,,特別退職金,,1,3,10E400580,SpecialRetirementExpensesEL,Extra retirement payments
+　　　割増退職金,0,特別損失,,割増退職金,,1,3,10E400590,ExtraRetirementPaymentsEL,Extra retirement payments
+　　　早期割増退職金,0,特別損失,,早期割増退職金,,1,3,10E400600,EarlyExtraRetirementPaymentsEL,Extra payments for early retirements
+　　　退職特別加算金,0,特別損失,,退職特別加算金,,1,3,10E400610,SpecialExtraRetirementPaymentsEL,Extra retirement payments
+　　　店舗閉鎖損失,0,特別損失,,店舗閉鎖損失,,1,3,10E400620,LossOnClosingOfStoresEL,Loss on store closings
+　　　店舗閉鎖損失引当金繰入額,0,特別損失,,店舗閉鎖損失引当金繰入額,,1,3,10E400630,ProvisionForLossOnStoreClosingEL,Provision for loss on store closings
+　　　事務所移転費用,0,特別損失,,事務所移転費用,,1,3,10E400640,OfficeTransferExpensesEL,Office relocation expenses
+　　　本社移転費用,0,特別損失,,本社移転費用,,1,3,10E400650,HeadOfficeTransferCostEL,Head office relocation expenses
+　　　債務保証損失引当金繰入額,0,特別損失,,債務保証損失引当金繰入額,,1,3,10E400660,ProvisionForLossOnGuaranteesEL,Provision for loss on guarantees
+　　　工事損失引当金繰入額,0,特別損失,,工事損失引当金繰入額,,1,3,10E400670,ProvisionForLossOnConstructionContractsEL,Provision for loss on construction contracts
+　　　貸倒引当金繰入額,0,特別損失,,貸倒引当金繰入額,,1,3,10E400680,ProvisionOfAllowanceForDoubtfulAccountsEL,Provision of allowance for doubtful accounts
+　　　貸倒損失,0,特別損失,,貸倒損失,,1,3,10E400690,BadDebtsWrittenOffEL,Bad debts written off
+　　　たな卸資産評価損,0,特別損失,,たな卸資産評価損,,1,3,10E400700,LossOnValuationOfInventoriesEL,Loss on valuation of inventories
+　　　たな卸資産処分損,0,特別損失,,たな卸資産処分損,,1,3,10E400710,LossOnDisposalOfInventoriesEL,Loss on disposal of inventories
+　　　たな卸資産除却損,0,特別損失,,たな卸資産除却損,,1,3,10E400720,LossOnRetirementOfInventoriesEL,Loss on retirement of inventories
+　　　たな卸資産廃棄損,0,特別損失,,たな卸資産廃棄損,,1,3,10E400730,LossOnAbandonmentOfInventoriesEL,Loss on abandonment of inventories
+　　　商品評価損,0,特別損失,,商品評価損,,1,3,10E400740,LossOnValuationOfGoodsEL,Loss on valuation of goods
+　　　商品廃棄損,0,特別損失,,商品廃棄損,,1,3,10E400750,LossOnAbandonmentOfGoodsEL,Loss on abandonment of goods
+　　　販売用不動産評価損,0,特別損失,,販売用不動産評価損,,1,3,10E400760,LossOnValuationOfRealEstateForSaleEL,Loss on valuation of real estate for sale
+　　　販売用土地評価損,0,特別損失,,販売用土地評価損,,1,3,10E400770,LossOnValuationOfLandForSaleEL,Loss on valuation of land for sale
+　　　建物除却損,0,特別損失,,建物除却損,,1,3,10E400780,LossOnRetirementOfBuildingEL,Loss on retirement of buildings
+　　　為替差損,0,特別損失,,為替差損,,1,3,10E400790,ForeignExchangeLossesEL,Foreign exchange losses
+　　　固定資産臨時償却費,0,特別損失,,固定資産臨時償却費,,1,3,10E400800,NonRecurringDepreciationOnNoncurrentAssetsEL,Non-recurring depreciation on non-current assets
+　　　工事負担金等圧縮額,0,特別損失,,工事負担金等圧縮額,,1,3,10E400810,ReductionEntryOfLandContributionForConstructionEL,Tax purpose reduction entry of contribution for construction
+　　　ソフトウエア除却損,0,特別損失,,ソフトウエア除却損,,1,3,10E400820,LossOnRetirementOfSoftwareEL,Loss on retirement of software
+　　　賃貸借契約解約損,0,特別損失,,賃貸借契約解約損,,1,3,10E400830,LossOnCancellationOfLeaseholdContractsEL,Loss on cancellation of rental contracts
+　　　リース解約損,0,特別損失,,リース解約損,,1,3,10E400840,LossOnCancellationOfLeaseContractsEL,Loss on cancellation of leases
+　　　保険解約損,0,特別損失,,保険解約損,,1,3,10E400850,LossOnInsuranceCancellationEL,Loss on cancellation of insurance policies
+　　　退職給付費用,0,特別損失,,退職給付費用,,1,3,10E400860,RetirementBenefitExpensesEL,Retirement benefit expenses
+　　　退職給付信託設定損,0,特別損失,,退職給付信託設定損,,1,3,10E400870,LossOnContributionOfSecuritiesToRetirementBenefitTrustEL,Loss on contribution of securities to retirement benefit trust
+　　　厚生年金基金代行返上損,0,特別損失,,厚生年金基金代行返上損,,1,3,10E400880,LossOnTransferOfBenefitObligationRelatingToEmployeesPensionFundEL,Loss on transfer of benefit obligation relating to employees' pension fund
+　　　過年度退職給付費用,0,特別損失,,過年度退職給付費用,,1,3,10E400890,RetirementBenefitExpensesForPriorPeriodsEL,Retirement benefit expenses for prior periods
+　　　退職給付引当金繰入額,0,特別損失,,退職給付引当金繰入額,,1,3,10E400900,ProvisionForRetirementBenefitsEL,Provision for retirement benefits
+　　　退職給付会計基準変更時差異の処理額,0,特別損失,,退職給付会計基準変更時差異の処理額,,1,3,10E400910,AmortizationOfNetRetirementBenefitObligationAtTransitionEL,Amortization of net retirement benefit obligation at transition
+　　　役員退職慰労金,0,特別損失,,役員退職慰労金,,1,3,10E400920,DirectorsRetirementBenefitsEL,Retirement benefits for directors (and other officers)
+　　　役員退職慰労引当金繰入額,0,特別損失,,役員退職慰労引当金繰入額,,1,3,10E400930,ProvisionForDirectorsRetirementBenefitsEL,Provision for retirement benefits for directors (and other officers)
+　　　退職給付制度改定損,0,特別損失,,退職給付制度改定損,,1,3,10E400940,LossOnRevisionOfRetirementBenefitPlanEL,Loss on revision of retirement benefit plan
+　　　退職給付制度終了損,0,特別損失,,退職給付制度終了損,,1,3,10E400950,LossOnAbolishmentOfRetirementBenefitPlanEL,Loss on termination of retirement benefit plan
+　　　損害賠償金,0,特別損失,,損害賠償金,,1,3,10E400960,CompensationForDamageEL,Compensation for damage
+　　　和解金,0,特別損失,,和解金,,1,3,10E400970,SettlementPackageEL,Settlement package
+　　　訴訟和解金,0,特別損失,,訴訟和解金,,1,3,10E400980,LitigationSettlementEL,Litigation settlement
+　　　訴訟関連損失,0,特別損失,,訴訟関連損失,,1,3,10E400990,LossOnLitigationEL,Loss on litigation
+　　　訴訟損失引当金繰入額,0,特別損失,,訴訟損失引当金繰入額,,1,3,10E401000,ProvisionForLossOnLitigationEL,Provision for loss on litigation
+　　　環境対策引当金繰入額,0,特別損失,,環境対策引当金繰入額,,1,3,10E401010,ProvisionForEnvironmentalMeasuresEL,Provision for environmental measures
+　　　環境対策費,0,特別損失,,環境対策費,,1,3,10E401020,EnvironmentalExpensesEL,Environmental expenses
+　　　利息返還損失引当金繰入額,0,特別損失,,利息返還損失引当金繰入額,,1,3,10E401030,ProvisionForLossOnInterestRepaymentEL,Provision for loss on interest repayment
+　　　偶発損失引当金繰入額,0,特別損失,,偶発損失引当金繰入額,,1,3,10E401040,ProvisionForContingentLossEL,Provision for contingent loss
+　　　災害損失引当金繰入額,0,特別損失,,災害損失引当金繰入額,,1,3,10E401050,ProvisionForLossOnDisasterEL,Provision for loss on disaster
+　　　臨時損失,0,特別損失,,臨時損失,,1,3,10E401060,NonrecurringLossEL,Nonrecurring loss
+　　　特別法上の準備金繰入額,0,特別損失,,特別法上の準備金繰入額,,1,3,10E401070,ProvisionOfReservesUnderTheSpecialLawsEL,Provision of reserves under special laws
+　　　その他,0,特別損失,,その他,,1,3,10E401080,ExtraordinaryLossAbstract,Other
+　　　特別損失,0,特別損失,,特別損失,,1,3,10E401090,ExtraordinaryLoss,Extraordinary losses
+　　匿名組合損益分配前税引前当期純利益又は純損失（△）,0,損益,,匿名組合損益分配前税引前当期純利益又は純損失（△）,,1,2,10F000140,IncomeBeforeDividendsDistributionFromSilentPartnershipIncomeTaxes,Profit (loss) before distributions of profit or loss on silent partnerships and income taxes
+　　匿名組合損益分配額,0,その他,,匿名組合損益分配額,,1,2,10F100050,DividendsDistributionFromSilentPartnership,Distributions of profit or loss on silent partnerships
+　　税引前当期純利益又は税引前当期純損失（△）,0,損益,,税引前当期純利益又は税引前当期純損失（△）,,1,2,10F000150,IncomeBeforeIncomeTaxes,Profit (loss) before income taxes
+　　法人税等,0,その他,,法人税等,,1,2,10F100060,IncomeTaxes,Income taxes
+　　　法人税、住民税及び事業税,0,その他,,法人税、住民税及び事業税,,1,3,10F100070,IncomeTaxesCurrent,Income taxes - current
+　　　法人税等の更正、決定等による納付税額又は還付税額,0,その他,,法人税等の更正、決定等による納付税額又は還付税額,,1,3,10F100080,IncomeTaxesCorrection,Income taxes - correction
+　　　法人税等調整額,0,その他,,法人税等調整額,,1,3,10F100090,IncomeTaxesDeferred,Income taxes - deferred
+　　　法人税等還付税額,0,その他,,法人税等還付税額,,1,3,10F100100,RefundOfIncomeTaxesIncomeTaxes,Refund of income taxes
+　　　過年度法人税等,0,その他,,過年度法人税等,,1,3,10F100110,IncomeTaxesForPriorPeriodsIncomeTaxes,Income taxes for prior periods
+　　　過年度法人税等戻入額,0,その他,,過年度法人税等戻入額,,1,3,10F100120,RefundOfIncomeTaxesForPriorPeriodsIncomeTaxes,Refund of income taxes for prior periods
+　　当期純利益又は当期純損失（△）,0,損益,,当期純利益又は当期純損失（△）,,1,2,10F000160,NetIncome,Profit (loss)
+　　　（内訳）,,その他,,（内訳）,,T,3,10F100130,abstract,Profit attributable to
+　　　　非支配株主に帰属する当期純利益又は非支配株主に帰属する当期純損失（△）,0,その他,,非支配株主に帰属する当期純利益又は非支配株主に帰属する当期純損失（△）,,1,4,10F100140,MinorityInterestsInIncome,Profit (loss) attributable to non-controlling interests
+　　　　親会社株主に帰属する当期純利益又は親会社株主に帰属する当期純損失（△）,0,その他,,親会社株主に帰属する当期純利益又は親会社株主に帰属する当期純損失（△）,,1,4,10F100150,StatementsOfIncomeAbstract,Profit (loss) attributable to owners of parent
+　　その他の包括利益,,その他,,その他の包括利益,,T,2,10F100160,abstract,Other comprehensive income
+　　　その他有価証券評価差額金（税引前）,0,その他,,その他有価証券評価差額金（税引前）,,1,3,10F100170,StatementsOfIncomeAbstract,"Valuation difference on available-for-sale securities, before tax"
+　　　その他有価証券評価差額金,0,その他,,その他有価証券評価差額金,,1,3,10F100180,StatementsOfIncomeAbstract,Valuation difference on available-for-sale securities
+　　　繰延ヘッジ損益（税引前）,0,その他,,繰延ヘッジ損益（税引前）,,1,3,10F100190,StatementsOfIncomeAbstract,"Deferred gains or losses on hedges, before tax"
+　　　繰延ヘッジ損益,0,その他,,繰延ヘッジ損益,,1,3,10F100200,StatementsOfIncomeAbstract,Deferred gains or losses on hedges
+　　　土地再評価差額金,0,その他,,土地再評価差額金,,1,3,10F100210,StatementsOfIncomeAbstract,Revaluation reserve for land
+　　　為替換算調整勘定（税引前）,0,その他,,為替換算調整勘定（税引前）,,1,3,10F100220,StatementsOfIncomeAbstract,"Foreign currency translation adjustment, before tax"
+　　　為替換算調整勘定,0,その他,,為替換算調整勘定,,1,3,10F100230,StatementsOfIncomeAbstract,Foreign currency translation adjustment
+　　　退職給付に係る調整額（税引前）,0,その他,,退職給付に係る調整額（税引前）,,1,3,10F100240,StatementsOfIncomeAbstract,"Remeasurements of defined benefit plans, before tax"
+　　　退職給付に係る調整額,0,その他,,退職給付に係る調整額,,1,3,10F100250,StatementsOfIncomeAbstract,"Remeasurements of defined benefit plans, net of tax"
+　　　持分法適用会社に対する持分相当額,0,その他,,持分法適用会社に対する持分相当額,,1,3,10F100260,StatementsOfIncomeAbstract,Share of other comprehensive income of entities accounted for using equity method
+　　　その他の包括利益に係る税効果額,0,その他,,その他の包括利益に係る税効果額,,1,3,10F100270,StatementsOfIncomeAbstract,Income tax relating to other comprehensive income
+　　　その他の包括利益,0,その他,,その他の包括利益,,1,3,10F100280,StatementsOfIncomeAbstract,Other comprehensive income
+　　包括利益,0,その他,,包括利益,,1,2,10F100290,StatementsOfIncomeAbstract,Comprehensive income
+　　　（内訳）,,その他,,（内訳）,,T,3,10F100300,abstract,Comprehensive income attributable to
+　　　　親会社株主に係る包括利益,0,その他,,親会社株主に係る包括利益,,1,4,10F100310,StatementsOfIncomeAbstract,Comprehensive income attributable to owners of parent
+　　　　非支配株主に係る包括利益,0,その他,,非支配株主に係る包括利益,,1,4,10F100320,StatementsOfIncomeAbstract,Comprehensive income attributable to non-controlling interests
+　　包括利益計算書,,その他,,包括利益計算書,,T,2,10F100330,abstract,Statement of comprehensive income

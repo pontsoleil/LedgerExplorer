@@ -1,0 +1,11 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web:/usr/share/nginx/html/web:ro
+      - ./data:/usr/share/nginx/html/data:ro
+    depends_on: []
