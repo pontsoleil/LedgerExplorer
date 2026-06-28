@@ -2230,8 +2230,19 @@ class TidyData:
         beginning_balance_df = pd.read_csv(self.etax_beginning_balance_path, dtype={"Account_Code": str, "eTax_Account_Code": str})
         # 勘定科目の開始残高を辞書に変換
         beginning_balance_df["Account_Code"] = beginning_balance_df["Account_Code"].astype(str)
-        # beginning_balance_dfに複数のAccount_Codeが存在する場合、それぞれのAccount_CodeごとにBeginning_Balanceを合計し、beginning_balancesを作成する
-        beginning_balances = beginning_balance_df.groupby("Account_Code")['Beginning_Balance'].sum().to_dict()
+        beginning_balance_df = beginning_balance_df.merge(
+            account_list_df[["Account_Code", "eTax_Account_Code"]],
+            on="Account_Code",
+            how="left",
+        )
+        # Trial balance and general ledger are keyed by e-Tax account code, so
+        # source-account opening balances must be folded into that same key.
+        beginning_balances = (
+            beginning_balance_df.dropna(subset=["eTax_Account_Code"])
+            .groupby("eTax_Account_Code")["Beginning_Balance"]
+            .sum()
+            .to_dict()
+        )
         self.beginning_balances = beginning_balances
 
     def csv2dataframe(self, param_file_path, root=None, gui=None):

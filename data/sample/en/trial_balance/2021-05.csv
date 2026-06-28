@@ -1,17 +1,17 @@
-﻿Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
-2021-05,10A100020,119166656,117816296,Cash and deposits,8419395,9769755,Current assets
-2021-05,10A100060,33785761,32345738,Notes receivable - trade,14999059,16439082,Current assets
-2021-05,10A100090,61189848,81226360,Accounts receivable - trade,-38000673,-58037185,Current assets
-2021-05,10A100610,0,40000,Short-term loans receivable,-40000,-80000,Current assets
-2021-05,10A230570,125000,0,Insurance funds,125000,250000,Investments and other assets
-2021-05,10B100030,13344010,6591904,Notes payable - trade,1923008,-4829098,Current liabilities
-2021-05,10B100040,36986269,37445581,Accounts payable - trade,-16234858,-15775546,Current liabilities
-2021-05,10B100630,7529245,7116470,Accounts payable - other,-214746,-627521,Current liabilities
-2021-05,10B100640,2864378,0,Income taxes payable,0,-2864378,Current liabilities
-2021-05,10B100650,1862000,0,Accrued business office tax,0,-1862000,Current liabilities
-2021-05,10B100660,4947100,0,Accrued consumption taxes,0,-4947100,Current liabilities
-2021-05,10B100690,1494720,1957781,Deposits received,586897,1049958,Current liabilities
-2021-05,10B100790,653500,0,Short-term borrowings,-653500,-1307000,Current liabilities
+Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
+2021-05,10A100020,119166656,117816296,Cash and deposits,82079292,83429652,Current assets
+2021-05,10A100060,33785761,32345738,Notes receivable - trade,92630495,94070518,Current assets
+2021-05,10A100090,61189848,81226360,Accounts receivable - trade,8092812050,8072775538,Current assets
+2021-05,10A100610,0,40000,Short-term loans receivable,440000,400000,Current assets
+2021-05,10A230570,125000,0,Insurance funds,1653000,1778000,Investments and other assets
+2021-05,10B100030,13344010,6591904,Notes payable - trade,54174743,47422637,Current liabilities
+2021-05,10B100040,36986269,37445581,Accounts payable - trade,247816243,248275555,Current liabilities
+2021-05,10B100630,7529245,7116470,Accounts payable - other,57369946,56957171,Current liabilities
+2021-05,10B100640,2864378,0,Income taxes payable,2864378,0,Current liabilities
+2021-05,10B100650,1862000,0,Accrued business office tax,1862000,0,Current liabilities
+2021-05,10B100660,4947100,0,Accrued consumption taxes,4947100,0,Current liabilities
+2021-05,10B100690,1494720,1957781,Deposits received,2896472,3359533,Current liabilities
+2021-05,10B100790,653500,0,Short-term borrowings,7188500,6535000,Current liabilities
 2021-05,10D100100,0,61189848,Gross sales,60337616,121527464,Net sales
 2021-05,10D100110,504464,0,Sales allowance and returns,167936,672400,Net sales
 2021-05,10E100120,0,231990,Purchase allowance and returns,-202379,29611,Cost of sales

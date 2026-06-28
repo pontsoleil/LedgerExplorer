@@ -1,14 +1,14 @@
-﻿Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
-2021-04,10A100020,122180406,113761011,Cash and deposits,0,8419395,Current assets
-2021-04,10A100060,39689677,24690618,Notes receivable - trade,0,14999059,Current assets
-2021-04,10A100090,60337616,98338289,Accounts receivable - trade,0,-38000673,Current assets
-2021-04,10A100610,0,40000,Short-term loans receivable,0,-40000,Current assets
-2021-04,10A230570,125000,0,Insurance funds,0,125000,Investments and other assets
-2021-04,10B100030,24104558,26027566,Notes payable - trade,0,1923008,Current liabilities
-2021-04,10B100040,51928919,35694061,Accounts payable - trade,0,-16234858,Current liabilities
-2021-04,10B100630,7584692,7369946,Accounts payable - other,0,-214746,Current liabilities
-2021-04,10B100690,1426819,2013716,Deposits received,0,586897,Current liabilities
-2021-04,10B100790,653500,0,Short-term borrowings,0,-653500,Current liabilities
+Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
+2021-04,10A100020,122180406,113761011,Cash and deposits,73659897,82079292,Current assets
+2021-04,10A100060,39689677,24690618,Notes receivable - trade,77631436,92630495,Current assets
+2021-04,10A100090,60337616,98338289,Accounts receivable - trade,8130812723,8092812050,Current assets
+2021-04,10A100610,0,40000,Short-term loans receivable,480000,440000,Current assets
+2021-04,10A230570,125000,0,Insurance funds,1528000,1653000,Investments and other assets
+2021-04,10B100030,24104558,26027566,Notes payable - trade,52251735,54174743,Current liabilities
+2021-04,10B100040,51928919,35694061,Accounts payable - trade,264051101,247816243,Current liabilities
+2021-04,10B100630,7584692,7369946,Accounts payable - other,57584692,57369946,Current liabilities
+2021-04,10B100690,1426819,2013716,Deposits received,2309575,2896472,Current liabilities
+2021-04,10B100790,653500,0,Short-term borrowings,7842000,7188500,Current liabilities
 2021-04,10D100100,0,60337616,Gross sales,0,60337616,Net sales
 2021-04,10D100110,167936,0,Sales allowance and returns,0,167936,Net sales
 2021-04,10E100120,202379,0,Purchase allowance and returns,0,-202379,Cost of sales

@@ -1,18 +1,18 @@
-﻿Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
-2022-03,10A100020,146113042,141986253,Cash and deposits,32304993,36431782,Current assets
-2022-03,10A100060,31338107,45169923,Notes receivable - trade,47691039,33859223,Current assets
-2022-03,10A100090,74446280,70676484,Accounts receivable - trade,-56579023,-52809227,Current assets
-2022-03,10A100280,63025546,63013226,Merchandise,0,12320,Current assets
-2022-03,10A100610,0,90000,Short-term loans receivable,10000,-80000,Current assets
-2022-03,10A210130,0,328000,Structures,0,-328000,"Property, plant and equipment"
-2022-03,10A210410,0,1911924,"Tools, furniture and fixtures",0,-1911924,"Property, plant and equipment"
-2022-03,10A230570,125000,0,Insurance funds,1375000,1500000,Investments and other assets
-2022-03,10B100030,13738257,8791534,Notes payable - trade,21383877,16437154,Current liabilities
-2022-03,10B100040,42792807,47236121,Accounts payable - trade,-12628291,-8184977,Current liabilities
-2022-03,10B100630,7030303,8909403,Accounts payable - other,-2496985,-617885,Current liabilities
-2022-03,10B100690,1880914,1933319,Deposits received,3994586,4046991,Current liabilities
-2022-03,10B100790,653500,0,Short-term borrowings,-7188500,-7842000,Current liabilities
-2022-03,10B200080,7000000,0,Long-term borrowings,0,-7000000,Non-current liabilities
+Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
+2022-03,10A100020,146113042,141986253,Cash and deposits,105964890,110091679,Current assets
+2022-03,10A100060,31338107,45169923,Notes receivable - trade,125322475,111490659,Current assets
+2022-03,10A100090,74446280,70676484,Accounts receivable - trade,8074233700,8078003496,Current assets
+2022-03,10A100280,63025546,63013226,Merchandise,63013226,63025546,Current assets
+2022-03,10A100610,0,90000,Short-term loans receivable,490000,400000,Current assets
+2022-03,10A210130,0,328000,Structures,2001693400,2001365400,"Property, plant and equipment"
+2022-03,10A210410,0,1911924,"Tools, furniture and fixtures",953769200,951857276,"Property, plant and equipment"
+2022-03,10A230570,125000,0,Insurance funds,2903000,3028000,Investments and other assets
+2022-03,10B100030,13738257,8791534,Notes payable - trade,73635612,68688889,Current liabilities
+2022-03,10B100040,42792807,47236121,Accounts payable - trade,251422810,255866124,Current liabilities
+2022-03,10B100630,7030303,8909403,Accounts payable - other,55087707,56966807,Current liabilities
+2022-03,10B100690,1880914,1933319,Deposits received,6304161,6356566,Current liabilities
+2022-03,10B100790,653500,0,Short-term borrowings,653500,0,Current liabilities
+2022-03,10B200080,7000000,0,Long-term borrowings,14000000,7000000,Non-current liabilities
 2022-03,10D100100,0,74446280,Gross sales,778149659,852595939,Net sales
 2022-03,10E100100,63013226,0,Beginning merchandise inventory,0,63013226,Cost of sales
 2022-03,10E100120,0,42840,Purchase allowance and returns,328825,371665,Cost of sales

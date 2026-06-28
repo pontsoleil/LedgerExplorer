@@ -1,14 +1,14 @@
-﻿Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
-2021-08,10A100020,100465238,94324769,Cash and deposits,9825686,15966155,Current assets
-2021-08,10A100060,34210798,29812387,Notes receivable - trade,1888210,6286621,Current assets
-2021-08,10A100090,67626279,67784238,Accounts receivable - trade,-67870477,-68028436,Current assets
-2021-08,10A100610,0,40000,Short-term loans receivable,-160000,-200000,Current assets
-2021-08,10A230570,125000,0,Insurance funds,500000,625000,Investments and other assets
-2021-08,10B100030,6591904,11730438,Notes payable - trade,-23487188,-18348654,Current liabilities
-2021-08,10B100040,37779377,38277589,Accounts payable - trade,-15861469,-15363257,Current liabilities
-2021-08,10B100630,7936710,7181008,Accounts payable - other,-346965,-1102667,Current liabilities
-2021-08,10B100690,1403735,1910537,Deposits received,2047904,2554706,Current liabilities
-2021-08,10B100790,653500,0,Short-term borrowings,-2614000,-3267500,Current liabilities
+Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
+2021-08,10A100020,100465238,94324769,Cash and deposits,83485583,89626052,Current assets
+2021-08,10A100060,34210798,29812387,Notes receivable - trade,79519646,83918057,Current assets
+2021-08,10A100090,67626279,67784238,Accounts receivable - trade,8062942246,8062784287,Current assets
+2021-08,10A100610,0,40000,Short-term loans receivable,320000,280000,Current assets
+2021-08,10A230570,125000,0,Insurance funds,2028000,2153000,Investments and other assets
+2021-08,10B100030,6591904,11730438,Notes payable - trade,28764547,33903081,Current liabilities
+2021-08,10B100040,37779377,38277589,Accounts payable - trade,248189632,248687844,Current liabilities
+2021-08,10B100630,7936710,7181008,Accounts payable - other,57237727,56482025,Current liabilities
+2021-08,10B100690,1403735,1910537,Deposits received,4357479,4864281,Current liabilities
+2021-08,10B100790,653500,0,Short-term borrowings,5228000,4574500,Current liabilities
 2021-08,10D100100,0,67626279,Gross sales,242865733,310492012,Net sales
 2021-08,10E100130,38277589,0,Cost of purchased goods,147809910,186087499,Cost of sales
 2021-08,10E200020,1913000,0,Sales commission,8945708,10858708,"Selling, general and administrative expenses"
