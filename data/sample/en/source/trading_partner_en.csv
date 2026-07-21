@@ -1,47 +1,48 @@
 ﻿category,code,name,digital_transaction,alias1,alias2
-Supplier,1,Y2 Co., Ltd.,,Y2 Co., Ltd.,Y2 Co., Ltd.
-Supplier,2,Pole Co., Ltd.,,Pole Co., Ltd.,Pole Co., Ltd.
-Supplier,3,Check Co., Ltd.,,Check Co., Ltd.,Check Co., Ltd.
-Supplier,4,Attach Co., Ltd.,,Attach Co., Ltd.,Attach Co., Ltd.
-Supplier,5,Kofujimaru Co., Ltd.,,Kofujimaru Co., Ltd.,Kofujimaru
-Supplier,6,Hanada Co., Ltd.,,Hanada Co., Ltd.,Hanada Co., Ltd.
-Supplier,7,Sunset Co., Ltd.,,Sunset Co., Ltd.,Sunset Co., Ltd.
-Supplier,8,Yamashita Co., Ltd.,,Yamashita Co., Ltd.,Yamashita Co., Ltd.
-Supplier,9,Saito Sangyo Co., Ltd.,,Saito Sangyo Co., Ltd.,Saito Sangyo
-Supplier,10,Suzuki Sales Co., Ltd.,1,Suzuki Sales Co., Ltd. Suzuki Sales
-Supplier, 11, Matsumura Co., Ltd., 1, Matsumura Co., Ltd., Matsumura Co., Ltd.
-Supplier, 12, Arikawa Co., Ltd., 1, Arikawa Co., Ltd., Arikawa Co., Ltd.
-Supplier, 13, Nakamura Sangyo Co., Ltd., 1, Nakamura Sangyo Co., Ltd.
-Supplier, 14, West LLC, 1, West LLC, West LLC
-Supplier, 15, Hanamaru Shoji Co., Ltd., 1, Hanamaru Shoji Co., Ltd., Hanamaru Co., Ltd. Commercial
-Customer 1: Gokoshi Co., Ltd.
-Customer 2: Imai Department Store
-Customer 4: Mark Market
-Customer 5: ABC Co., Ltd.
-Customer 6: Entry Co., Ltd.
-Customer 7: Sogo Keiei Co., Ltd.
-Customer 8: Tower Co., Ltd. Company, Tower Co., Ltd.
-Customer, 9, Takahashi Bussan Co., Ltd., Takahashi Bussan Co., Ltd.
-Customer, 10, Aim Shoji LLC, Aim Shoji LLC, Aim Shoji LLC
-Customer, 11, Saito Co., Ltd., Saito Co., Ltd., Saito Co., Ltd.
-Customer, 12, Momiji Department Store, Momiji Department Store
-Customer, 13, Abe Shoji Co., Ltd., Abe Shoji Co., Ltd.
-Customer, 14, Fujita Co., Ltd., Fujita Co., Ltd. Company: Fujita Tokyo Headquarters
-Customer, 19, Minami Co., Ltd., Minami Co., Ltd., Minami Co., Ltd.
-Customer, 20, Kujo Shoji Co., Ltd., 1, Kujo Shoji Co., Ltd., Kujo Shoji Co., Ltd.
-Customer, 21, Takada LLC, 1, Takada (same), Takada LLC
-Customer, 22, Watanabe Sangyo Co., Ltd., 1, Watanabe Sangyo Co., Ltd., Watanabe Sangyo Co., Ltd.
-Customer, 23, Kamada Shoten Co., Ltd., 1, Kamada Shoten Co., Ltd., Kamada Shoten Co., Ltd. Kamata Shoten
-Customer, 24, Hatakeyama Shoji Co., Ltd., 1, Hatakeyama Shoji Co., Ltd., Hatakeyama Shoji Co., Ltd.
-Customer, 25, Kobayashi Market Co., Ltd., 1, Kobayashi Market Co., Ltd., Kobayashi Market Co., Ltd.
-Customer, 26, Sasaki Sales Co., Ltd., 1, Sasaki Sales Co., Ltd.
-Customer, 27, Iwashita Bussan Co., Ltd., 1, Iwashita Bussan Co., Ltd.
-Customer, 28, Kameda Department Store, 1, Kameda Department Store
-Customer, 29, Co., Ltd. Chiyo Service Co., Ltd., 1, Chiyo Service Co., Ltd., Chiyo Service Co., Ltd.
-Customer, 30, YAG Co., Ltd., 1, YAG Co., Ltd., YAG Co., Ltd.
-Bank Account, 1, Mizuho Bank,,,
-Bank Account, 10, Hokkaido Ekimae,,,
-Bank Account, 20, Mizuho Head Office,,,
-Bank Account, 30, Mitsui Nagoya,,,
-Bank Account, 40, Mitsubishi Tokyo Umeda,,,
-Bank Account, 50, Fukuoka Kitakyushu,,,
+Supplier,1,"Y2 Co., Ltd.",,"Y2 Co., Ltd.",
+Supplier,2,"Pole Co., Ltd.",,"Pole Co., Ltd.",
+Supplier,3,"Check Co., Ltd.",,"Check Co., Ltd.",
+Supplier,4,"Attach Co., Ltd.",,"Attach Co., Ltd.",
+Supplier,5,"Kofujimaru Co., Ltd.",,"Kofujimaru Co., Ltd.",
+Supplier,6,"Hanada Co., Ltd.",,"Hanada Co., Ltd.",
+Supplier,7,"Sunset Co., Ltd.",,"Sunset Co., Ltd.",
+Supplier,8,"Yamashita Co., Ltd.",,"Yamashita Co., Ltd.",
+Supplier,9,"Saito Industries Co., Ltd.",,"Saito Industries Co., Ltd.",
+Supplier,10,"Suzuki Sales Co., Ltd.",1,"Suzuki Sales Co., Ltd.",
+Supplier,11,"Matsumura Co., Ltd.",1,"Matsumura Co., Ltd.",
+Supplier,12,"Arie Co., Ltd.",1,"Arie Co., Ltd.",
+Supplier,13,"Nakamura Industries Co., Ltd.",1,"Nakamura Industries Co., Ltd.",
+Supplier,14,West LLC,1,West LLC,
+Supplier,15,"Hanamaru Trading Co., Ltd.",1,"Hanamaru Trading Co., Ltd.",
+Customer,1,"Goketsu Co., Ltd.",,"Goketsu Co., Ltd.",
+Customer,2,Imai Department Store,,Imai Department Store,
+Customer,3,"Check Co., Ltd.",,"Check Co., Ltd.",
+Customer,4,Mark Market,,Mark Market,
+Customer,5,"ABC Co., Ltd.",,"ABC Co., Ltd.",
+Customer,6,"Entry Co., Ltd.",,"Entry Co., Ltd.",
+Customer,7,"Comprehensive Management Co., Ltd.",,"Comprehensive Management Co., Ltd.",
+Customer,8,"Tower Co., Ltd.",,"Tower Co., Ltd.",
+Customer,9,"Takahashi Trading Co., Ltd.",,"Takahashi Trading Co., Ltd.",
+Customer,10,Aim Trading LLC,,Aim Trading LLC,
+Customer,11,"Saito Co., Ltd.",,"Saito Co., Ltd.",
+Customer,12,Momiji Department Store,,Momiji Department Store,
+Customer,13,"Abe Trading Co., Ltd.",,"Abe Trading Co., Ltd.",
+Customer,14,"Fujita Co., Ltd.",,"Fujita Co., Ltd.",
+Customer,19,"Minami Co., Ltd.",,"Minami Co., Ltd.",
+Customer,20,"Kujou Trading Co., Ltd.",1,"Kujou Trading Co., Ltd.",
+Customer,21,Takada LLC,1,Takada LLC,
+Customer,22,"Watanabe Industries Co., Ltd.",1,"Watanabe Industries Co., Ltd.",
+Customer,23,"Kamata Shoten Co., Ltd.",1,"Kamata Shoten Co., Ltd.",
+Customer,24,"Hatakeyama Trading Co., Ltd.",1,"Hatakeyama Trading Co., Ltd.",
+Customer,25,"Kobayashi Market Co., Ltd.",1,"Kobayashi Market Co., Ltd.",
+Customer,26,"Sasaki Sales Co., Ltd.",1,"Sasaki Sales Co., Ltd.",
+Customer,27,"Iwashita Trading Co., Ltd.",1,"Iwashita Trading Co., Ltd.",
+Customer,28,Kameda Department Store,1,Kameda Department Store,
+Customer,29,"Chiyo Service Co., Ltd.",1,"Chiyo Service Co., Ltd.",
+Customer,30,"YAG Co., Ltd.",1,"YAG Co., Ltd.",
+Bank Account,1,Mizuho Bank,,Mizuho Bank,
+Bank Account,10,Hokkaido Ekimae,,Hokkaido Ekimae,
+Bank Account,20,Mizuho Head Office,,Mizuho Head Office,
+Bank Account,30,Mitsui Nagoya,,Mitsui Nagoya,
+Bank Account,40,Mitsubishi Tokyo Umeda,,Mitsubishi Tokyo Umeda,
+Bank Account,50,Fukuoka Kitakyushu,,Fukuoka Kitakyushu,

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ledger Explorer</title>
-  <link rel="stylesheet" href="./app.css">
+  <link rel="stylesheet" href="./app.css?v=202607211310">
 </head>
 <body>
 
@@ -28,7 +28,7 @@
       <select id="monthSelect"></select>
     </label>
 
-    <label>
+    <label id="accountLabel">
       科目 / Account
       <select id="accountSelect"></select>
     </label>
@@ -60,6 +60,10 @@
     </small>
   </div>
 
-  <script src="./app.js"></script>
+  <div class="build-timestamp" aria-label="この改訂版の生成日時">
+    生成日時：2026-07-21 13:10
+  </div>
+
+  <script src="./app.js?v=202607211310"></script>
 </body>
 </html>

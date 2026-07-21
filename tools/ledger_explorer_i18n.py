@@ -5,8 +5,11 @@ Copyright (c) 2024–2026 SAMBUICHI, Nobuyuki
 (Sambuichi Professional Engineers Office)
 
 Licence
-- Source code: MIT License
-- Documentation, screenshots, and sample / exported data: CC BY-SA 4.0
+- Executable program logic: MIT License
+- Original LHM definitions, join/mapping tables, semantic labels, documentation,
+  screenshots, and publishable sample data: CC BY-SA 4.0, including when these
+  items are embedded in this source file
+- Third-party standards and code lists retain their original rights and terms
 
 Overview
 This script reads a `parameters.json` file that points to one or more input CSV files
@@ -59,8 +62,12 @@ APP_ORG = "Sambuichi Professional Engineers Office"
 APP_WEBSITE = "https://www.sambuichi.jp/"
 
 # Licensing note:
-# - The Python source code is intended to be distributed under the MIT License.
-# - Exported data, documentation, and related web pages are shared under CC BY-SA 4.0.
+# - Executable Python logic is distributed under the MIT License.
+# - Original LHM definitions, join/mapping tables, semantic labels, translation
+#   dictionaries, documentation text, and publishable sample data are shared
+#   under CC BY-SA 4.0, including when embedded in this source file.
+# - Third-party standards and code lists retain their original rights and terms.
+# - See LICENSE-SCOPE.md for the detailed boundary.
 APP_CODE_LICENCE = "MIT License"
 APP_CONTENT_LICENCE = "CC BY-SA 4.0"
 APP_CONTENT_LICENCE_URL = "https://creativecommons.org/licenses/by-sa/4.0/"

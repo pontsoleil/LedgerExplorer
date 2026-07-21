@@ -5,7 +5,11 @@ https://www.sambuichi.jp/
 
 Licensing / ライセンス
 - MIT License: program source code in this file (software logic).
-- CC BY-SA 4.0: UI text, label/translation tables, and documentation comments contributed for this project.
+- CC BY-SA 4.0: original LHM-related definitions, join/mapping tables,
+  semantic labels, UI text, label/translation dictionaries, and documentation
+  comments contributed for this project, including when embedded in this file.
+- Third-party standards and code lists retain their original rights and terms.
+- See LICENSE-SCOPE.md for the detailed boundary.
 
 Note / 注意
 This script is a small, dependency-free CSV viewer for accounting/ledger CSV exports.
@@ -30,6 +34,8 @@ const DATASET_DEFAULT = "sample";
 let DATASET = DATASET_DEFAULT;
 let DATA_ROOT = null; // resolved at runtime
 let INDEX_URL = null; // resolved at runtime
+let INDEX_BOOTSTRAP = null; // validated index.json loaded during path resolution
+let DATASET_PATH_FAILURES = [];
 const DEFAULT_MAX_ROWS = 3000;     // 表示行数（重ければ下げる）
 const CSV_CACHE = new Map();       // key: url -> parsed rows
 
@@ -53,14 +59,14 @@ let toggleCodeColsBtn = null;
 let dataMode = "server";
 // ---- Data root / dataset resolution ----
 // dataset: "sample" | "full" (default: sample)
-// The web UI is served from /web. Data is stored in /data/{dataset}/...
-// Therefore, when the page URL is ".../web/", the correct relative data root is "../data/{dataset}".
+// Production may serve the UI directly from /ledger/ with data below /ledger/data/{dataset}.
+// The repository layout serves the UI from /web/ with data in the sibling /data/{dataset}.
 //
 // You can override with URL query:
 //   ?dataset=sample   (default)
 //   ?dataset=full
 //
-// We also try a few fallback locations so the same UI works if someone copies data under /web/data.
+// A candidate is accepted only after its response body has been parsed and validated as an index.
 async function initDatasetAndPaths() {
   const url = new URL(location.href);
 
@@ -72,30 +78,61 @@ async function initDatasetAndPaths() {
 
   // Candidate data roots (in priority order)
   const candidates = [
-    { root: `../data/${DATASET}`, index: `../data/${DATASET}/index.json` },
     { root: `./data/${DATASET}`,  index: `./data/${DATASET}/index.json`  },
+    { root: `../data/${DATASET}`, index: `../data/${DATASET}/index.json` },
     // legacy / alternate layouts
-    { root: `../data`, index: `../data/index.json` },
     { root: `./data`,  index: `./data/index.json`  },
+    { root: `../data`, index: `../data/index.json` },
   ];
 
-  // Pick first index.json that can be fetched.
+  DATA_ROOT = null;
+  INDEX_URL = null;
+  INDEX_BOOTSTRAP = null;
+  DATASET_PATH_FAILURES = [];
+
+  // Pick the first response that is both successful and a valid Ledger Explorer index.
   for (const c of candidates) {
     try {
       const res = await fetch(c.index, { cache: "no-store" });
-      if (res.ok) {
-        DATA_ROOT = c.root;
-        INDEX_URL = c.index;
-        return;
+      const finalUrl = res.url || c.index;
+      const contentType = res.headers.get("content-type") || "(not supplied)";
+
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status} ${res.statusText || ""}`.trim());
       }
-    } catch (e) {
-      // continue
+
+      const body = await res.text();
+      let parsed;
+      try {
+        parsed = JSON.parse(body);
+      } catch (error) {
+        const redirectNote = res.redirected ? `; redirected to ${finalUrl}` : "";
+        throw new Error(`invalid JSON (${contentType}${redirectNote}): ${error.message}`);
+      }
+
+      if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+        throw new Error(`JSON root must be an object (${contentType}; final URL ${finalUrl})`);
+      }
+      if (!parsed.views || typeof parsed.views !== "object" || Array.isArray(parsed.views)) {
+        throw new Error(`JSON does not contain a valid \"views\" object (${contentType}; final URL ${finalUrl})`);
+      }
+
+      DATA_ROOT = c.root;
+      INDEX_URL = c.index;
+      INDEX_BOOTSTRAP = parsed;
+      console.info(`Dataset index selected: ${c.index} (final URL: ${finalUrl})`);
+      return;
+    } catch (error) {
+      const reason = String(error?.message || error);
+      DATASET_PATH_FAILURES.push({ index: c.index, reason });
+      console.warn(`Dataset index rejected: ${c.index} - ${reason}`);
     }
   }
 
-  // Last resort: assume standard repo layout
-  DATA_ROOT = `../data/${DATASET}`;
-  INDEX_URL = `${DATA_ROOT}/index.json`;
+  const details = DATASET_PATH_FAILURES
+    .map(item => `${item.index}: ${item.reason}`)
+    .join("\n");
+  throw new Error(`No valid dataset index was found for dataset \"${DATASET}\".\n${details}`);
 }
 
 let localRowsAll = null; // uploaded CSV rows
@@ -108,6 +145,8 @@ const VIEW_LABELS_I18N = {
     trial_balance: "試算表",
     balance_sheet: "貸借対照表",
     pnl: "損益計算書",
+    receivables: "売掛金集計",
+    payables: "買掛金集計",
     tidy: "構造化CSV",
   },
   en: {
@@ -116,6 +155,8 @@ const VIEW_LABELS_I18N = {
     trial_balance: "Trial Balance",
     balance_sheet: "Balance Sheet",
     pnl: "Profit and Loss",
+    receivables: "A/R Summary",
+    payables: "A/P Summary",
     tidy: "Structured CSV",
   },
 };
@@ -543,6 +584,24 @@ const searchInput = document.getElementById("searchInput");
 const langSel = document.getElementById("langSelect");
 const fileInput = document.getElementById("fileInput");
 const useServerBtn = document.getElementById("useServerBtn");
+const accountLabelEl = document.getElementById("accountLabel");
+
+const PARTNER_REPORTS = {
+  receivables: {
+    partnerType: "C",
+    accountNumber: "10A100090",
+    normalSide: "debit",
+  },
+  payables: {
+    partnerType: "S",
+    accountNumber: "10B100040",
+    normalSide: "credit",
+  },
+};
+
+function isPartnerReportView(viewKey = currentView) {
+  return Object.prototype.hasOwnProperty.call(PARTNER_REPORTS, viewKey);
+}
 
 // -------- Helpers --------
 function setStatus(msg) { statusEl.textContent = msg; }
@@ -978,6 +1037,411 @@ function renderTable(rows, maxRows = DEFAULT_MAX_ROWS) {
   if (total > maxRows) setStatus(`${total} rows（先頭 ${maxRows} 行のみ表示）`);
 }
 
+function numberValue(value) {
+  const n = Number(String(value ?? "").replace(/,/g, "").trim());
+  return Number.isFinite(n) ? n : 0;
+}
+
+async function fetchOptionalCSV(url) {
+  try {
+    return await fetchCSV(url);
+  } catch (error) {
+    console.warn(`Optional CSV not available: ${url}`, error);
+    return [];
+  }
+}
+
+function ledgerRowIndexes(rows) {
+  const header = rows?.[0] || [];
+  return {
+    account: detectColumnIndexNorm(header, ["Ledger_Account_Number"]),
+    subCode: detectColumnIndexNorm(header, ["Subaccount_Code"]),
+    subName: detectColumnIndexNorm(header, ["Subaccount_Name"]),
+    debit: detectColumnIndexNorm(header, ["Debit_Amount"]),
+    credit: detectColumnIndexNorm(header, ["Credit_Amount"]),
+    counterpart: detectColumnIndexNorm(header, ["Counterpart_Account_Number"]),
+  };
+}
+
+function reportMovement(row, idx, config) {
+  const debit = numberValue(row[idx.debit]);
+  const credit = numberValue(row[idx.credit]);
+  return config.normalSide === "debit" ? debit - credit : credit - debit;
+}
+
+function classifySettlement(counterpart, viewKey) {
+  if (counterpart === "10A100020") return "cash";
+  if (viewKey === "receivables") {
+    if (counterpart === "10A100060") return "note";
+    if (counterpart === "10E200690") return "fee";
+    if (["10D100110", "10D100111", "10D100112"].includes(counterpart)) return "discount";
+  } else {
+    if (counterpart === "10B100030") return "note";
+    if (["10E100120", "10E100121", "10E100122"].includes(counterpart)) return "discount";
+  }
+  return "other";
+}
+
+function ensurePartner(map, code, name = "") {
+  const key = String(code ?? "").trim();
+  if (!key) return null;
+  if (!map.has(key)) {
+    map.set(key, {
+      code: key,
+      name: String(name || key).trim(),
+      opening: 0,
+      occurrence: 0,
+      discount: 0,
+      note: 0,
+      cash: 0,
+      fee: 0,
+      other: 0,
+      applied: 0,
+      balance: 0,
+    });
+  } else if (name && (!map.get(key).name || map.get(key).name === key)) {
+    map.get(key).name = String(name).trim();
+  }
+  return map.get(key);
+}
+
+async function loadPartnerMaster(config) {
+  const fileName = currentLang === "en" ? "trading_partner_en.csv" : "trading_partner.csv";
+  const rows = await fetchOptionalCSV(joinUrlPath(DATA_ROOT, currentLang, "source", fileName));
+  const partners = new Map();
+  if (!rows.length) return partners;
+  const header = rows[0];
+  const categoryIdx = detectColumnIndexNorm(header, ["category"]);
+  const codeIdx = detectColumnIndexNorm(header, ["code"]);
+  const nameIdx = detectColumnIndexNorm(header, ["name"]);
+  const expected = config.partnerType === "C"
+    ? new Set(["得意先", "customer"])
+    : new Set(["仕入先", "supplier"]);
+  for (const row of rows.slice(1)) {
+    const category = String(row[categoryIdx] || "").trim().toLowerCase();
+    if (expected.has(category)) partners.set(String(row[codeIdx]).trim(), String(row[nameIdx]).trim());
+  }
+  return partners;
+}
+
+async function loadInitialPartnerBalances(config) {
+  const candidates = [
+    joinUrlPath(DATA_ROOT, currentLang, "source", "trading_partner_balance.csv"),
+    joinUrlPath(DATA_ROOT, "ja", "source", "trading_partner_balance.csv"),
+  ];
+  let rows = [];
+  for (const url of [...new Set(candidates)]) {
+    try {
+      rows = await fetchCSV(url);
+    } catch (error) {
+      console.warn(`Opening balance CSV candidate failed: ${url}`, error);
+    }
+    if (rows.length) break;
+  }
+  const balances = new Map();
+  if (!rows.length) {
+    throw new Error(currentLang === "en"
+      ? "The required trading_partner_balance.csv could not be loaded. Annual balances were not calculated."
+      : "必須の trading_partner_balance.csv を読み込めません。ゼロ補完せず、年間残高計算を停止しました。");
+  }
+  const header = rows[0];
+  const typeIdx = detectColumnIndexNorm(header, ["partner_type"]);
+  const codeIdx = detectColumnIndexNorm(header, ["partner_code"]);
+  const balanceIdx = detectColumnIndexNorm(header, ["opening_balance"]);
+  for (const row of rows.slice(1)) {
+    if (String(row[typeIdx]).trim() !== config.partnerType) continue;
+    const code = String(row[codeIdx]).trim();
+    const raw = String(row[balanceIdx] ?? "").replace(/,/g, "").trim();
+    if (!code || !raw || !Number.isFinite(Number(raw))) throw new Error(`Invalid partner opening balance: ${config.partnerType}/${code || "(blank)"}`);
+    if (balances.has(code)) throw new Error(`Duplicate partner opening balance: ${config.partnerType}/${code}`);
+    balances.set(code, Number(raw));
+  }
+  if (!balances.size) throw new Error(`No opening balances found for partner type ${config.partnerType}.`);
+  return balances;
+}
+
+async function buildPartnerReport(viewKey, month) {
+  const config = PARTNER_REPORTS[viewKey];
+  if (dataMode === "local") {
+    throw new Error(currentLang === "en"
+      ? "Annual partner balances require all 12 server ledger files. Use server data."
+      : "年間取引先残高には12か月分の総勘定元帳が必要です。「Use server data」を選択してください。");
+  }
+  const partners = new Map();
+  const [master, initialBalances] = await Promise.all([
+    loadPartnerMaster(config),
+    loadInitialPartnerBalances(config),
+  ]);
+  if (!master.size) throw new Error(currentLang === "en" ? "Trading partner master is missing." : "取引先マスターがありません。");
+  for (const [code, name] of master.entries()) ensurePartner(partners, code, name);
+  for (const code of master.keys()) {
+    if (!initialBalances.has(code)) throw new Error(`Opening balance is missing: ${config.partnerType}/${code}`);
+  }
+  for (const [code, opening] of initialBalances.entries()) {
+    if (!master.has(code)) throw new Error(`Partner master entry is missing: ${config.partnerType}/${code}`);
+    ensurePartner(partners, code).balance = opening;
+  }
+
+  const months = (INDEX?.months || []).filter(value => value <= month);
+  if (!months.length || !months.includes(month)) throw new Error(`Invalid report month: ${month}`);
+  const ledgerMonths = await Promise.all(months.map(async value => ({
+    month: value,
+    rows: await fetchCSV(resolveCsvUrl("ledger", value)),
+  })));
+  const snapshots = new Map();
+
+  for (const item of ledgerMonths) {
+    const idx = ledgerRowIndexes(item.rows);
+    if (idx.account < 0 || idx.subCode < 0 || idx.debit < 0 || idx.credit < 0) throw new Error(`Required ledger columns are missing: ${item.month}`);
+    for (const partner of partners.values()) {
+      partner.opening = partner.balance;
+      partner.occurrence = partner.discount = partner.note = partner.cash = partner.fee = partner.other = partner.applied = 0;
+    }
+    for (const row of item.rows.slice(1)) {
+      if (String(row[idx.account]).trim() !== config.accountNumber) continue;
+      const code = String(row[idx.subCode] || "").trim();
+      if (!code) continue;
+      if (!partners.has(code)) throw new Error(`Partner master/opening balance is missing: ${config.partnerType}/${code} (${item.month})`);
+      const partner = ensurePartner(partners, code, row[idx.subName]);
+
+      const occurrence = config.normalSide === "debit"
+        ? numberValue(row[idx.debit])
+        : numberValue(row[idx.credit]);
+      const settlement = config.normalSide === "debit"
+        ? numberValue(row[idx.credit])
+        : numberValue(row[idx.debit]);
+      partner.occurrence += occurrence;
+      if (settlement) {
+        const bucket = classifySettlement(String(row[idx.counterpart] || "").trim(), viewKey);
+        partner[bucket] += settlement;
+        partner.applied += settlement;
+      }
+    }
+    for (const partner of partners.values()) partner.balance = partner.opening + partner.occurrence - partner.applied;
+    const rows = Array.from(partners.values(), partner => ({ ...partner }));
+    snapshots.set(item.month, rows);
+  }
+  const selected = snapshots.get(month).sort((a, b) =>
+    a.name.localeCompare(b.name, currentLang === "ja" ? "ja" : "en", { numeric: true })
+  );
+  return selected;
+}
+
+function reportText(viewKey) {
+  const receivables = viewKey === "receivables";
+  if (currentLang === "en") {
+    return {
+      title: receivables ? "Accounts Receivable Summary" : "Accounts Payable Summary",
+      partner: "Trading partner",
+      opening: "Opening balance",
+      occurrence: "New charges",
+      discount: "Discount / adjustment",
+      note: receivables ? "Notes received" : "Notes payable",
+      cash: "Cash / bank",
+      extra: receivables ? "Transfer fee" : "Offset / other",
+      other: "Offset / other",
+      applied: "Applied total",
+      balance: "Balance",
+      total: "Total",
+      unit: "Unit: JPY",
+      journalTitle: "Related journal entries",
+      journalIncludedTitle: receivables ? "A/R journal entries" : "A/P journal entries",
+      journalRelatedTitle: "Other transactions for this partner",
+      journalEmpty: "No related journal entries were found for this month.",
+      journalSectionEmpty: "No entries.",
+      selectHint: "Click a trading partner row to show related journal entries.",
+    };
+  }
+  return {
+    title: receivables ? "売掛金集計表" : "買掛金集計表",
+    partner: "取引先名",
+    opening: "前期繰越",
+    occurrence: "発生",
+    discount: "値引",
+    note: "手形",
+    cash: "現金",
+    extra: receivables ? "振込料" : "相殺他",
+    other: "相殺・その他",
+    applied: "消込欄計",
+    balance: "残高",
+    total: "合計",
+    unit: "単位（円）",
+    journalTitle: "関連する仕訳日記帳",
+    journalIncludedTitle: receivables ? "売掛金に関係する仕訳" : "買掛金に関係する仕訳",
+    journalRelatedTitle: "当月のその他の取引",
+    journalEmpty: "この月に関連する仕訳はありません。",
+    journalSectionEmpty: "該当する仕訳はありません。",
+    selectHint: "取引先の行をクリックすると、関連する仕訳を下に表示します。",
+  };
+}
+
+function journalDetailText(viewKey) {
+  return currentLang === "en" ? {
+    date: "Date", voucher: "Voucher", description: "Description",
+    debit: "Debit account", debitAmount: "Debit amount",
+    credit: "Credit account", creditAmount: "Credit amount",
+  } : {
+    date: "伝票日付", voucher: "伝票番号", description: "摘要文",
+    debit: "借方科目", debitAmount: "借方金額",
+    credit: "貸方科目", creditAmount: "貸方金額",
+  };
+}
+
+function journalRowIndexes(rows) {
+  const header = rows?.[0] || [];
+  return {
+    date: detectColumnIndexNorm(header, ["JP07a_GL03_03", "Transaction_Date"]),
+    voucher: detectColumnIndexNorm(header, ["JP07a_GL03_01", "Voucher_Number"]),
+    description: detectColumnIndexNorm(header, ["JP08a_GL04_03", "Description"]),
+    debitAccount: detectColumnIndexNorm(header, ["JP06e_GE24_01", "Debit_Account_Number"]),
+    debitName: detectColumnIndexNorm(header, ["JP06e_GE24_02", "Debit_Account_Name"]),
+    debitAmount: detectColumnIndexNorm(header, ["Debit_Amount"]),
+    debitSubCode: detectColumnIndexNorm(header, ["JP05a_01", "Debit_Subaccount_Code"]),
+    debitSubName: detectColumnIndexNorm(header, ["JP05a_02", "BS04fb_02", "Debit_Subaccount_Name"]),
+    creditAccount: detectColumnIndexNorm(header, ["JP06f_GE24_01", "Credit_Account_Number"]),
+    creditName: detectColumnIndexNorm(header, ["JP06f_GE24_02", "Credit_Account_Name"]),
+    creditAmount: detectColumnIndexNorm(header, ["Credit_Amount"]),
+    creditSubCode: detectColumnIndexNorm(header, ["JP05b_01", "Credit_Subaccount_Code"]),
+    creditSubName: detectColumnIndexNorm(header, ["JP05b_02", "BS04fc_02", "Credit_Subaccount_Name"]),
+  };
+}
+
+async function renderPartnerJournalDetail(viewKey, month, partner) {
+  const target = document.getElementById("partnerJournalDetail");
+  if (!target) return;
+  const text = reportText(viewKey);
+  target.innerHTML = `<h2>${escapeHtml(text.journalTitle)} — ${escapeHtml(partner.name)}</h2><p>${currentLang === "en" ? "Loading..." : "読込中..."}</p>`;
+  try {
+    const rows = await fetchCSV(resolveCsvUrl("journal", month));
+    const idx = journalRowIndexes(rows);
+    const required = [idx.date, idx.description, idx.debitAccount, idx.debitAmount, idx.debitSubCode, idx.creditAccount, idx.creditAmount, idx.creditSubCode];
+    if (required.some(value => value < 0)) throw new Error(`Required journal columns are missing: ${month}`);
+    const account = PARTNER_REPORTS[viewKey].accountNumber;
+    const normalizedPartnerName = String(partner.name).normalize("NFKC").replace(/\s+/g, "").toLowerCase();
+    const shortPartnerName = normalizedPartnerName.replace(/株式会社|有限会社|合同会社|合資会社|合名会社/g, "");
+    const partnerNameVariants = [...new Set([normalizedPartnerName, shortPartnerName].filter(value => value.length >= 2))];
+    const containsPartnerName = value => {
+      const normalized = String(value || "").normalize("NFKC").replace(/\s+/g, "").toLowerCase();
+      return partnerNameVariants.some(name => normalized.includes(name));
+    };
+    const classified = rows.slice(1).map(row => {
+      const reportAccountMatch =
+        (String(row[idx.debitAccount] || "").trim() === account && String(row[idx.debitSubCode] || "").trim() === partner.code) ||
+        (String(row[idx.creditAccount] || "").trim() === account && String(row[idx.creditSubCode] || "").trim() === partner.code);
+      const nameMatch =
+        (idx.debitSubName >= 0 && containsPartnerName(row[idx.debitSubName])) ||
+        (idx.creditSubName >= 0 && containsPartnerName(row[idx.creditSubName])) ||
+        containsPartnerName(row[idx.description]);
+      return { row, reportAccountMatch, related: reportAccountMatch || nameMatch };
+    }).filter(item => item.related);
+    const related = classified;
+    if (!related.length) {
+      target.innerHTML = `<h2>${escapeHtml(text.journalTitle)} — ${escapeHtml(partner.name)}</h2><p>${escapeHtml(text.journalEmpty)}</p>`;
+      return;
+    }
+    const label = journalDetailText(viewKey);
+    const accountLabel = (row, codeIdx, nameIdx) => [row[codeIdx], nameIdx >= 0 ? row[nameIdx] : ""].filter(Boolean).join(" ");
+    const renderTable = (title, items, sectionClass) => {
+      let html = `<section class="partner-journal-section ${sectionClass}"><h3>${escapeHtml(title)}</h3>`;
+      if (!items.length) return html + `<p class="partner-journal-empty">${escapeHtml(text.journalSectionEmpty)}</p></section>`;
+      html += `<div class="partner-journal-table-wrap"><table class="partner-journal-table"><thead><tr>
+        <th>${escapeHtml(label.date)}</th><th>${escapeHtml(label.voucher)}</th><th>${escapeHtml(label.description)}</th>
+        <th>${escapeHtml(label.debit)}</th><th>${escapeHtml(label.debitAmount)}</th>
+        <th>${escapeHtml(label.credit)}</th><th>${escapeHtml(label.creditAmount)}</th></tr></thead><tbody>`;
+      for (const item of items) {
+        const row = item.row;
+        html += `<tr><td>${escapeHtml(row[idx.date])}</td><td>${escapeHtml(idx.voucher >= 0 ? row[idx.voucher] : "")}</td><td>${escapeHtml(row[idx.description])}</td>
+          <td>${escapeHtml(accountLabel(row, idx.debitAccount, idx.debitName))}</td><td>${formatNumberLike(row[idx.debitAmount])}</td>
+          <td>${escapeHtml(accountLabel(row, idx.creditAccount, idx.creditName))}</td><td>${formatNumberLike(row[idx.creditAmount])}</td></tr>`;
+      }
+      return html + "</tbody></table></div></section>";
+    };
+    const included = related.filter(item => item.reportAccountMatch);
+    const others = related.filter(item => !item.reportAccountMatch);
+    target.innerHTML = `<h2>${escapeHtml(text.journalTitle)} — <span class="partner-code">${escapeHtml(partner.code)}</span>${escapeHtml(partner.name)}</h2>
+      <div class="partner-journal-grid">${renderTable(text.journalIncludedTitle, included, "is-included")}${renderTable(text.journalRelatedTitle, others, "is-related")}</div>`;
+  } catch (error) {
+    console.error(error);
+    target.innerHTML = `<h2>${escapeHtml(text.journalTitle)} — ${escapeHtml(partner.name)}</h2><p class="partner-report__error">${escapeHtml(error.message || error)}</p>`;
+  }
+}
+
+function renderPartnerReport(rows, viewKey, month) {
+  const text = reportText(viewKey);
+  const partnerFilter = acctSel.value;
+  const search = String(searchInput.value || "").trim().toLowerCase();
+  const filtered = rows.filter(row =>
+    (!partnerFilter || row.code === partnerFilter) &&
+    (!search || row.name.toLowerCase().includes(search) || row.code.toLowerCase().includes(search))
+  );
+  const categoryKeys = viewKey === "receivables"
+    ? ["discount", "note", "cash", "fee", "other"]
+    : ["discount", "note", "cash", "other"];
+  const amountKeys = ["opening", "occurrence", ...categoryKeys, "applied", "balance"];
+  const totals = Object.fromEntries(amountKeys.map(key => [key, filtered.reduce((sum, row) => sum + row[key], 0)]));
+  const amount = value => formatNumberLike(Math.round(value));
+
+  let html = `<section class="partner-report">
+    <div class="partner-report__heading">
+      <div><div class="partner-report__eyebrow">Ledger Explorer</div><h1>${escapeHtml(text.title)}</h1><div class="partner-report__period">${escapeHtml(month)}</div></div>
+      <div class="partner-report__unit">${escapeHtml(text.unit)}</div>
+    </div>
+    <div class="partner-report__summary">
+      <div><span>${escapeHtml(text.opening)}</span><strong>${amount(totals.opening)}</strong></div>
+      <div><span>${escapeHtml(text.occurrence)}</span><strong>${amount(totals.occurrence)}</strong></div>
+      <div><span>${escapeHtml(text.applied)}</span><strong>${amount(totals.applied)}</strong></div>
+      <div class="balance"><span>${escapeHtml(text.balance)}</span><strong>${amount(totals.balance)}</strong></div>
+    </div>
+    <div class="partner-report__table-wrap partner-report__status-wrap"><table id="dataTable" class="partner-report__table"><thead><tr>
+      <th>${escapeHtml(text.partner)}</th><th>${escapeHtml(text.opening)}</th><th>${escapeHtml(text.occurrence)}</th>
+      <th>${escapeHtml(text.discount)}</th><th>${escapeHtml(text.note)}</th><th>${escapeHtml(text.cash)}</th>
+      ${viewKey === "receivables" ? `<th>${escapeHtml(text.extra)}</th>` : ""}<th>${escapeHtml(text.other)}</th><th>${escapeHtml(text.applied)}</th><th>${escapeHtml(text.balance)}</th>
+    </tr></thead><tbody>`;
+  for (const row of filtered) {
+    html += `<tr class="partner-report__partner-row" data-partner-code="${escapeHtml(row.code)}" tabindex="0" role="button"><td><span class="partner-code">${escapeHtml(row.code)}</span>${escapeHtml(row.name)}</td>`;
+    for (const key of amountKeys) html += `<td>${amount(row[key])}</td>`;
+    html += "</tr>";
+  }
+  html += `</tbody><tfoot><tr><th>${escapeHtml(text.total)}</th>`;
+  for (const key of amountKeys) html += `<th>${amount(totals[key])}</th>`;
+  html += `</tr></tfoot></table></div><p class="partner-report__select-hint">${escapeHtml(text.selectHint)}</p>
+    <section id="partnerJournalDetail" class="partner-journal-detail" aria-live="polite"></section></section>`;
+  wrapEl.innerHTML = html;
+  const byCode = new Map(filtered.map(row => [row.code, row]));
+  const activate = event => {
+    const tr = event.currentTarget;
+    const partner = byCode.get(tr.dataset.partnerCode);
+    if (!partner) return;
+    for (const other of wrapEl.querySelectorAll(".partner-report__partner-row")) other.classList.toggle("is-selected", other === tr);
+    renderPartnerJournalDetail(viewKey, month, partner);
+  };
+  for (const tr of wrapEl.querySelectorAll(".partner-report__partner-row")) {
+    tr.addEventListener("click", activate);
+    tr.addEventListener("keydown", event => {
+      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); activate(event); }
+    });
+  }
+}
+
+async function refreshPartnerReport(month) {
+  if (dataMode === "local" && !localRowsAll) {
+    setStatus(currentLang === "en" ? "Upload a ledger CSV first." : "総勘定元帳CSVをアップロードしてください。");
+    wrapEl.innerHTML = "";
+    return;
+  }
+  setStatus(`${tViewLabel(currentView)} (${month})...`);
+  const previous = acctSel.value;
+  const rows = await buildPartnerReport(currentView, month);
+  const options = rows.map(row => ({ value: row.code, label: row.name }));
+  buildOptions(acctSel, options, {
+    includeAll: true,
+    allLabel: currentLang === "en" ? "(All partners)" : "（全取引先）",
+  });
+  if (previous && options.some(option => option.value === previous)) acctSel.value = previous;
+  renderPartnerReport(rows, currentView, month);
+  setStatus(`${tViewLabel(currentView)} / ${month} / ${dataMode} / ${currentLang}`);
+}
+
 // -------- Filtering (account + search + local month filter) --------
 /*
 EN: Filtering
@@ -1112,6 +1576,17 @@ function setActiveButton() {
   }
 }
 
+function updateViewControls() {
+  const partnerView = isPartnerReportView();
+  if (accountLabelEl) {
+    accountLabelEl.firstChild.textContent = partnerView
+      ? (currentLang === "en" ? "Partner " : "取引先 ")
+      : (currentLang === "en" ? "Account " : "科目 ");
+  }
+  if (toggleAcctNumBtn) toggleAcctNumBtn.hidden = partnerView;
+  if (toggleCodeColsBtn) toggleCodeColsBtn.hidden = partnerView;
+}
+
 function initMonthSelect(months) {
   buildOptions(monthSel, months || [], { includeAll: false });
 
@@ -1141,6 +1616,7 @@ function initLangSelect() {
     applyI18nTexts();
 
     updateColumnToggleButtons();
+    updateViewControls();
 
     // server mode: must reload a different file path
     // local mode: can keep rows, just re-render headers/format
@@ -1237,6 +1713,7 @@ async function refresh(opts = {}) {
   const { skipReloadCsv = false } = opts;
 
   setActiveButton();
+  updateViewControls();
 
   const month = monthSel.value || (INDEX?.months?.[0] ?? "");
   const q = String(searchInput.value || "").trim();
@@ -1246,6 +1723,20 @@ async function refresh(opts = {}) {
 
   try {
     wrapEl.innerHTML = "";
+
+    if (isPartnerReportView()) {
+      await refreshPartnerReport(month);
+      updateUrlQuery({
+        view: currentView,
+        month,
+        account: acctSel.value || "",
+        q,
+        mode: dataMode,
+        lang: currentLang,
+        dataset: (DATASET !== DATASET_DEFAULT ? DATASET : null),
+      });
+      return;
+    }
 
     // ---- Load rows ----
     if (dataMode === "server") {
@@ -1335,14 +1826,17 @@ data/index.json を読み込み、ナビ・月・科目・言語・検索・ア�
 refresh() で初期表示を行います。
 */
 async function main() {
-  await initDatasetAndPaths();
-  setStatus(`Loading index.json... (${INDEX_URL})`);
-  const res = await fetch(INDEX_URL, { cache: "no-store" });
-  if (!res.ok) {
-    setStatus(`Failed to load ${INDEX_URL} (${res.status})`);
+  try {
+    await initDatasetAndPaths();
+  } catch (error) {
+    const message = String(error?.message || error);
+    console.error(message);
+    setStatus(message);
+    wrapEl.innerHTML = `<div class="dataset-error"><strong>Dataset loading failed.</strong><pre>${escapeHtml(message)}</pre></div>`;
     return;
   }
-  INDEX = await res.json();
+  setStatus(`Loading index.json... (${INDEX_URL})`);
+  INDEX = INDEX_BOOTSTRAP;
   // Ensure "tidy" view exists for Structured CSV monthly files.
   // Even if index.json does not define it, we add it here so the "Structured CSV" button is always shown.
   if (!INDEX.views) INDEX.views = {};
@@ -1354,6 +1848,8 @@ async function main() {
       available: Array.isArray(INDEX.months) ? INDEX.months : []
     };
   }
+  INDEX.views.receivables = { virtual: true, source: "ledger" };
+  INDEX.views.payables = { virtual: true, source: "ledger" };
 
   // restore state from URL if any
   const url = new URL(location.href);
