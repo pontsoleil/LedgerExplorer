@@ -1,12 +1,12 @@
 {
-    "LHM_path": "ISO21926_2025-12-07/LHM/JP_LHM.csv",
-    "e-tax_file_path": "LedgerExplorer/server/data/ja/source/tidyGLeTax.csv",
-    "account_path": "LedgerExplorer/server/data/ja/source/account_list.csv",
-    "e-tax_beginning_balance_path": "LedgerExplorer/server/data/ja/source/beginning_balance.csv",
-    "tax_category_path": "LedgerExplorer/server/data/ja/source/tax_category.csv",
-    "trading_partner_path": "LedgerExplorer/server/data/ja/source/trading_partner.csv",
-    "HOT010_3.0_BS_10": "LedgerExplorer/server/data/ja/e-tax/HOT010_3.0_BS_10.csv",
-    "HOT010_3.0_PL_10": "LedgerExplorer/server/data/ja/e-tax/HOT010_3.0_PL_10.csv",
+    "LHM_path": "JP_LHM.csv",
+    "e-tax_file_path": "../data/sample/ja/source/tidyGLeTax.csv",
+    "account_path": "../data/sample/ja/source/account_list.csv",
+    "e-tax_beginning_balance_path": "../data/sample/ja/source/beginning_balance.csv",
+    "tax_category_path": "../data/sample/ja/source/tax_category.csv",
+    "trading_partner_path": "../data/sample/ja/source/trading_partner.csv",
+    "HOT010_3.0_BS_10": "../data/sample/ja/e-tax/HOT010_3.0_BS_10.csv",
+    "HOT010_3.0_PL_10": "../data/sample/ja/e-tax/HOT010_3.0_PL_10.csv",
     "columns": {
         "伝票": "JP07a",
         "明細行": "JP08a",
@@ -80,6 +80,7 @@
         "電子取引以外売上高": "10D100102"
     },
     "lang": "ja",
+    "write_language_index": false,
     "DEBUG": 0,
     "TRACE": 1
 }

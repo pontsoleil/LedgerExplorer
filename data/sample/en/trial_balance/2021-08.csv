@@ -1,203 +1,28 @@
 ﻿Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
-2021-08,10A100020,100465238,93299199,Cash and deposits,296140535,303306574,Current assets
-2021-08,10A100060,34210798,29812387,Notes receivable - trade,45221340,49619751,Current assets
-2021-08,10A100090,67626279,67343991,Accounts receivable - trade,99159572,99441860,Current assets
+2021-08,10A100020,100465238,94324769,Cash and deposits,63200764,69341233,Current assets
+2021-08,10A100060,34210798,29812387,Notes receivable - trade,3301297,7699708,Current assets
+2021-08,10A100090,67626279,67784238,Accounts receivable - trade,80110697,79952738,Current assets
 2021-08,10A100610,0,40000,Short-term loans receivable,120000,80000,Current assets
 2021-08,10A230570,125000,0,Insurance funds,527813,652813,Investments and other assets
-2021-08,10B100030,6591904,11730438,Notes payable - trade,0,5138534,Current liabilities
-2021-08,10B100040,37779377,38277589,Accounts payable - trade,253618357,254116569,Current liabilities
-2021-08,10B100630,7936710,8646825,Accounts payable - other,35606984,36317099,Current liabilities
-2021-08,10B100690,1403735,1910537,Deposits received,997946,1504748,Current liabilities
+2021-08,10B100030,6591904,11730438,Notes payable - trade,3766486,8905020,Current liabilities
+2021-08,10B100040,37779377,38277589,Accounts payable - trade,72851340,73349552,Current liabilities
+2021-08,10B100630,7936710,7181008,Accounts payable - other,701221,-54481,Current liabilities
+2021-08,10B100690,1403735,1910537,Deposits received,2948938,3455740,Current liabilities
 2021-08,10B100790,653500,0,Short-term borrowings,5228000,4574500,Current liabilities
-2021-08,10D100101,0,0,Sales from electronic transactions,74910813,74910813,Net sales
-2021-08,10D100102,0,67626279,Sales from traditional transactions,169380364,237006643,Net sales
+2021-08,10D100101,0,19961123,Sales from electronic transactions,71090027,91051150,Net sales
+2021-08,10D100102,0,47665156,Sales from traditional transactions,171775706,219440862,Net sales
 2021-08,10E100131,13333507,0,Cost of purchased goods from electronic transactions,51318012,64651519,Cost of sales
 2021-08,10E100132,24944082,0,Cost of purchased goods from traditional transactions,96491898,121435980,Cost of sales
 2021-08,10E200020,1913000,0,Sales commission,8945708,10858708,"Selling, general and administrative expenses"
 2021-08,10E200050,191500,0,Advertising expenses,646700,838200,"Selling, general and administrative expenses"
-2021-08,10E200090,6990379,0,Remuneration for directors (and other officers),23101977,30092356,"Selling, general and administrative expenses"
+2021-08,10E200090,1720000,0,Remuneration for directors (and other officers),6880000,8600000,"Selling, general and administrative expenses"
 2021-08,10E200140,681144,0,Welfare expenses,1590938,2272082,"Selling, general and administrative expenses"
 2021-08,10E200150,396398,0,Entertainment expenses,1315846,1712244,"Selling, general and administrative expenses"
 2021-08,10E200180,1047161,0,Communication expenses,4727650,5774811,"Selling, general and administrative expenses"
-2021-08,10E200200,562218,281109,Supplies expenses,996818,1277927,"Selling, general and administrative expenses"
+2021-08,10E200200,562218,281109,Supplies expenses,1149343,1430452,"Selling, general and administrative expenses"
 2021-08,10E200210,40000,0,Taxes and dues,135000,175000,"Selling, general and administrative expenses"
 2021-08,10E200240,318820,0,Insurance expenses,1275280,1594100,"Selling, general and administrative expenses"
-2021-08,10E200370,0,0,Salaries and allowances,5515630,5515630,"Selling, general and administrative expenses"
-2021-08,10E200520,529470,0,Other salaries,1272427,1801897,"Selling, general and administrative expenses"
-2021-08,10E200540,710659,0,Legal welfare expenses,3442539,4153198,"Selling, general and administrative expenses"
-2021-08,10E200600,139710,0,Fee expenses,558840,698550,"Selling, general and administrative expenses"
-2021-08,10E200690,12389,0,Commission expenses,47089,59478,"Selling, general and administrative expenses"
-2021-08,10E200720,3449000,0,Rent expenses on land and buildings,13766000,17215000,"Selling, general and administrative expenses"
-2021-08,10E200730,293850,0,Rent expenses on land and buildings,1175400,1469250,"Selling, general and administrative expenses"
-2021-08,10E200870,3579250,0,Freight costs,14566367,18145617,"Selling, general and administrative expenses"
-2021-08,10E201000,17850,0,Repair and maintenance expenses,212250,230100,"Selling, general and administrative expenses"
-2021-08,10E201040,536492,0,Utilities expenses,2385139,2921631,"Selling, general and administrative expenses"
-2021-08,10E201110,136993,0,Office supplies expenses,539210,676203,"Selling, general and administrative expenses"
-2021-08,10E201120,630353,0,Vehicle expenses,2273464,2903817,"Selling, general and administrative expenses"
-2021-08,10E201130,24995,0,Meeting expenses,130459,155454,"Selling, general and administrative expenses"
-2021-08,10E201140,116000,0,Membership fee,464000,580000,"Selling, general and administrative expenses"
-2021-08,10E201160,24982,0,Book expenses,99928,124910,"Selling, general and administrative expenses"
-2021-08,10E201230,924504,0,Travel and transportation expenses,4176847,5101351,"Selling, general and administrative expenses"
-2021-08,10E201270,479848,0,Miscellaneous expenses,1923383,2403231,"Selling, general and administrative expenses"
-2021-08,10E300020,151259,0,Interest expenses,539175,690434,Non-operating expenses
-2021-08,10A100020,100465238,93299199,Cash and deposits,296140535,303306574,Current assets
-2021-08,10A100040,0,0,Allowance for doubtful accounts,14974729,14974729,Current assets
-2021-08,10A100060,34210798,29812387,Notes receivable - trade,45221340,49619751,Current assets
-2021-08,10A100090,67626279,67343991,Accounts receivable - trade,99159572,99441860,Current assets
-2021-08,10A100230,0,0,Securities,23142,23142,Current assets
-2021-08,10A100280,0,0,Merchandise,1146999,1146999,Current assets
-2021-08,10A100610,0,40000,Short-term loans receivable,120000,80000,Current assets
-2021-08,10A100800,0,0,Guarantee deposits,21843,21843,Current assets
-2021-08,10A100851,0,0,"Prepaid consumption tax, etc.",50286,50286,Current assets
-2021-08,10A210130,0,0,Structures,36435838,36435838,"Property, plant and equipment"
-2021-08,10A210410,0,0,"Tools, furniture and fixtures",17360990,17360990,"Property, plant and equipment"
-2021-08,10A220190,0,0,Telephone subscription right,9320,9320,Intangible assets
-2021-08,10A230570,125000,0,Insurance funds,527813,652813,Investments and other assets
-2021-08,10A230650,0,0,Leasehold deposits,57156,57156,Investments and other assets
-2021-08,10B100030,6591904,11730438,Notes payable - trade,0,5138534,Current liabilities
-2021-08,10B100040,37779377,38277589,Accounts payable - trade,253618357,254116569,Current liabilities
-2021-08,10B100320,0,0,Provision for bonuses,582480,582480,Current liabilities
-2021-08,10B100630,7936710,8646825,Accounts payable - other,35606984,36317099,Current liabilities
-2021-08,10B100690,1403735,1910537,Deposits received,997946,1504748,Current liabilities
-2021-08,10B100790,653500,0,Short-term borrowings,5228000,4574500,Current liabilities
-2021-08,10B100890,0,0,Suspense receipt of consumption taxes,119056,119056,Current liabilities
-2021-08,10B200080,0,0,Long-term borrowings,7000000,7000000,Non-current liabilities
-2021-08,10B200120,0,0,Provision for retirement benefits,337839,337839,Non-current liabilities
-2021-08,10B200300,0,0,Other provisions,400455,400455,Non-current liabilities
-2021-08,10C110010,0,0,Share capital,162002311,162002311,Share capital
-2021-08,10C120020,0,0,Legal capital surplus,19749720,19749720,Capital surplus
-2021-08,10C130020,0,0,Legal retained earnings,131058,131058,Retained earnings
-2021-08,10C130360,0,0,General reserve,87918,87918,Retained earnings
-2021-08,10C130370,0,0,Retained earnings brought forward,90222,90222,Retained earnings
-2021-08,10D100102,0,67626279,Sales from traditional transactions,169380364,237006643,Net sales
-2021-08,10E100131,13333507,0,Cost of purchased goods from electronic transactions,51318012,64651519,Cost of sales
-2021-08,10E100132,24944082,0,Cost of purchased goods from traditional transactions,96491898,121435980,Cost of sales
-2021-08,10E200020,1913000,0,Sales commission,8945708,10858708,"Selling, general and administrative expenses"
-2021-08,10E200050,191500,0,Advertising expenses,646700,838200,"Selling, general and administrative expenses"
-2021-08,10E200090,6990379,0,Remuneration for directors (and other officers),23101977,30092356,"Selling, general and administrative expenses"
-2021-08,10E200140,681144,0,Welfare expenses,1590938,2272082,"Selling, general and administrative expenses"
-2021-08,10E200150,396398,0,Entertainment expenses,1315846,1712244,"Selling, general and administrative expenses"
-2021-08,10E200180,1047161,0,Communication expenses,4727650,5774811,"Selling, general and administrative expenses"
-2021-08,10E200200,562218,281109,Supplies expenses,996818,1277927,"Selling, general and administrative expenses"
-2021-08,10E200210,40000,0,Taxes and dues,135000,175000,"Selling, general and administrative expenses"
-2021-08,10E200240,318820,0,Insurance expenses,1275280,1594100,"Selling, general and administrative expenses"
-2021-08,10E200520,529470,0,Other salaries,1272427,1801897,"Selling, general and administrative expenses"
-2021-08,10E200540,710659,0,Legal welfare expenses,3442539,4153198,"Selling, general and administrative expenses"
-2021-08,10E200600,139710,0,Fee expenses,558840,698550,"Selling, general and administrative expenses"
-2021-08,10E200690,12389,0,Commission expenses,47089,59478,"Selling, general and administrative expenses"
-2021-08,10E200720,3449000,0,Rent expenses on land and buildings,13766000,17215000,"Selling, general and administrative expenses"
-2021-08,10E200730,293850,0,Rent expenses on land and buildings,1175400,1469250,"Selling, general and administrative expenses"
-2021-08,10E200870,3579250,0,Freight costs,14566367,18145617,"Selling, general and administrative expenses"
-2021-08,10E201000,17850,0,Repair and maintenance expenses,212250,230100,"Selling, general and administrative expenses"
-2021-08,10E201040,536492,0,Utilities expenses,2385139,2921631,"Selling, general and administrative expenses"
-2021-08,10E201110,136993,0,Office supplies expenses,539210,676203,"Selling, general and administrative expenses"
-2021-08,10E201120,630353,0,Vehicle expenses,2273464,2903817,"Selling, general and administrative expenses"
-2021-08,10E201130,24995,0,Meeting expenses,130459,155454,"Selling, general and administrative expenses"
-2021-08,10E201140,116000,0,Membership fee,464000,580000,"Selling, general and administrative expenses"
-2021-08,10E201160,24982,0,Book expenses,99928,124910,"Selling, general and administrative expenses"
-2021-08,10E201230,924504,0,Travel and transportation expenses,4176847,5101351,"Selling, general and administrative expenses"
-2021-08,10E201270,479848,0,Miscellaneous expenses,1923383,2403231,"Selling, general and administrative expenses"
-2021-08,10E300020,151259,0,Interest expenses,539175,690434,Non-operating expenses
-2021-08,10A100020,100465238,93299199,Cash and deposits,296140535,303306574,Current assets
-2021-08,10A100060,34210798,29812387,Notes receivable - trade,45221340,49619751,Current assets
-2021-08,10A100090,67626279,67343991,Accounts receivable - trade,99159572,99441860,Current assets
-2021-08,10A100610,0,40000,Short-term loans receivable,120000,80000,Current assets
-2021-08,10A230570,125000,0,Insurance funds,527813,652813,Investments and other assets
-2021-08,10B100030,6591904,11730438,Notes payable - trade,0,5138534,Current liabilities
-2021-08,10B100040,37779377,38277589,Accounts payable - trade,253618357,254116569,Current liabilities
-2021-08,10B100630,7936710,8646825,Accounts payable - other,35606984,36317099,Current liabilities
-2021-08,10B100690,1403735,1910537,Deposits received,997946,1504748,Current liabilities
-2021-08,10B100790,653500,0,Short-term borrowings,5228000,4574500,Current liabilities
-2021-08,10D100102,0,67626279,Sales from traditional transactions,169380364,237006643,Net sales
-2021-08,10E100131,13333507,0,Cost of purchased goods from electronic transactions,51318012,64651519,Cost of sales
-2021-08,10E100132,24944082,0,Cost of purchased goods from traditional transactions,96491898,121435980,Cost of sales
-2021-08,10E200020,1913000,0,Sales commission,8945708,10858708,"Selling, general and administrative expenses"
-2021-08,10E200050,191500,0,Advertising expenses,646700,838200,"Selling, general and administrative expenses"
-2021-08,10E200090,6990379,0,Remuneration for directors (and other officers),23101977,30092356,"Selling, general and administrative expenses"
-2021-08,10E200140,681144,0,Welfare expenses,1590938,2272082,"Selling, general and administrative expenses"
-2021-08,10E200150,396398,0,Entertainment expenses,1315846,1712244,"Selling, general and administrative expenses"
-2021-08,10E200180,1047161,0,Communication expenses,4727650,5774811,"Selling, general and administrative expenses"
-2021-08,10E200200,562218,281109,Supplies expenses,996818,1277927,"Selling, general and administrative expenses"
-2021-08,10E200210,40000,0,Taxes and dues,135000,175000,"Selling, general and administrative expenses"
-2021-08,10E200240,318820,0,Insurance expenses,1275280,1594100,"Selling, general and administrative expenses"
-2021-08,10E200520,529470,0,Other salaries,1272427,1801897,"Selling, general and administrative expenses"
-2021-08,10E200540,710659,0,Legal welfare expenses,3442539,4153198,"Selling, general and administrative expenses"
-2021-08,10E200600,139710,0,Fee expenses,558840,698550,"Selling, general and administrative expenses"
-2021-08,10E200690,12389,0,Commission expenses,47089,59478,"Selling, general and administrative expenses"
-2021-08,10E200720,3449000,0,Rent expenses on land and buildings,13766000,17215000,"Selling, general and administrative expenses"
-2021-08,10E200730,293850,0,Rent expenses on land and buildings,1175400,1469250,"Selling, general and administrative expenses"
-2021-08,10E200870,3579250,0,Freight costs,14566367,18145617,"Selling, general and administrative expenses"
-2021-08,10E201000,17850,0,Repair and maintenance expenses,212250,230100,"Selling, general and administrative expenses"
-2021-08,10E201040,536492,0,Utilities expenses,2385139,2921631,"Selling, general and administrative expenses"
-2021-08,10E201110,136993,0,Office supplies expenses,539210,676203,"Selling, general and administrative expenses"
-2021-08,10E201120,630353,0,Vehicle expenses,2273464,2903817,"Selling, general and administrative expenses"
-2021-08,10E201130,24995,0,Meeting expenses,130459,155454,"Selling, general and administrative expenses"
-2021-08,10E201140,116000,0,Membership fee,464000,580000,"Selling, general and administrative expenses"
-2021-08,10E201160,24982,0,Book expenses,99928,124910,"Selling, general and administrative expenses"
-2021-08,10E201230,924504,0,Travel and transportation expenses,4176847,5101351,"Selling, general and administrative expenses"
-2021-08,10E201270,479848,0,Miscellaneous expenses,1923383,2403231,"Selling, general and administrative expenses"
-2021-08,10E300020,151259,0,Interest expenses,539175,690434,Non-operating expenses
-2021-08,10A100020,100465238,93299199,Cash and deposits,296140535,303306574,Current assets
-2021-08,10A100060,34210798,29812387,Notes receivable - trade,45221340,49619751,Current assets
-2021-08,10A100090,67626279,67343991,Accounts receivable - trade,99159572,99441860,Current assets
-2021-08,10A100610,0,40000,Short-term loans receivable,120000,80000,Current assets
-2021-08,10A230570,125000,0,Insurance funds,527813,652813,Investments and other assets
-2021-08,10B100030,6591904,11730438,Notes payable - trade,0,5138534,Current liabilities
-2021-08,10B100040,37779377,38277589,Accounts payable - trade,253618357,254116569,Current liabilities
-2021-08,10B100630,7936710,8646825,Accounts payable - other,35606984,36317099,Current liabilities
-2021-08,10B100690,1403735,1910537,Deposits received,997946,1504748,Current liabilities
-2021-08,10B100790,653500,0,Short-term borrowings,5228000,4574500,Current liabilities
-2021-08,10D100102,0,67626279,Sales from traditional transactions,169380364,237006643,Net sales
-2021-08,10E100131,13333507,0,Cost of purchased goods from electronic transactions,51318012,64651519,Cost of sales
-2021-08,10E100132,24944082,0,Cost of purchased goods from traditional transactions,96491898,121435980,Cost of sales
-2021-08,10E200020,1913000,0,Sales commission,8945708,10858708,"Selling, general and administrative expenses"
-2021-08,10E200050,191500,0,Advertising expenses,646700,838200,"Selling, general and administrative expenses"
-2021-08,10E200090,6990379,0,Remuneration for directors (and other officers),23101977,30092356,"Selling, general and administrative expenses"
-2021-08,10E200140,681144,0,Welfare expenses,1590938,2272082,"Selling, general and administrative expenses"
-2021-08,10E200150,396398,0,Entertainment expenses,1315846,1712244,"Selling, general and administrative expenses"
-2021-08,10E200180,1047161,0,Communication expenses,4727650,5774811,"Selling, general and administrative expenses"
-2021-08,10E200200,562218,281109,Supplies expenses,996818,1277927,"Selling, general and administrative expenses"
-2021-08,10E200210,40000,0,Taxes and dues,135000,175000,"Selling, general and administrative expenses"
-2021-08,10E200240,318820,0,Insurance expenses,1275280,1594100,"Selling, general and administrative expenses"
-2021-08,10E200520,529470,0,Other salaries,1272427,1801897,"Selling, general and administrative expenses"
-2021-08,10E200540,710659,0,Legal welfare expenses,3442539,4153198,"Selling, general and administrative expenses"
-2021-08,10E200600,139710,0,Fee expenses,558840,698550,"Selling, general and administrative expenses"
-2021-08,10E200690,12389,0,Commission expenses,47089,59478,"Selling, general and administrative expenses"
-2021-08,10E200720,3449000,0,Rent expenses on land and buildings,13766000,17215000,"Selling, general and administrative expenses"
-2021-08,10E200730,293850,0,Rent expenses on land and buildings,1175400,1469250,"Selling, general and administrative expenses"
-2021-08,10E200870,3579250,0,Freight costs,14566367,18145617,"Selling, general and administrative expenses"
-2021-08,10E201000,17850,0,Repair and maintenance expenses,212250,230100,"Selling, general and administrative expenses"
-2021-08,10E201040,536492,0,Utilities expenses,2385139,2921631,"Selling, general and administrative expenses"
-2021-08,10E201110,136993,0,Office supplies expenses,539210,676203,"Selling, general and administrative expenses"
-2021-08,10E201120,630353,0,Vehicle expenses,2273464,2903817,"Selling, general and administrative expenses"
-2021-08,10E201130,24995,0,Meeting expenses,130459,155454,"Selling, general and administrative expenses"
-2021-08,10E201140,116000,0,Membership fee,464000,580000,"Selling, general and administrative expenses"
-2021-08,10E201160,24982,0,Book expenses,99928,124910,"Selling, general and administrative expenses"
-2021-08,10E201230,924504,0,Travel and transportation expenses,4176847,5101351,"Selling, general and administrative expenses"
-2021-08,10E201270,479848,0,Miscellaneous expenses,1923383,2403231,"Selling, general and administrative expenses"
-2021-08,10E300020,151259,0,Interest expenses,539175,690434,Non-operating expenses
-2021-08,10A100020,100465238,93299199,Cash and deposits,296140535,303306574,Current assets
-2021-08,10A100060,34210798,29812387,Notes receivable - trade,45221340,49619751,Current assets
-2021-08,10A100090,67626279,67343991,Accounts receivable - trade,99159572,99441860,Current assets
-2021-08,10A100610,0,40000,Short-term loans receivable,120000,80000,Current assets
-2021-08,10A230570,125000,0,Insurance funds,527813,652813,Investments and other assets
-2021-08,10B100030,6591904,11730438,Notes payable - trade,0,5138534,Current liabilities
-2021-08,10B100040,37779377,38277589,Accounts payable - trade,253618357,254116569,Current liabilities
-2021-08,10B100630,7936710,8646825,Accounts payable - other,35606984,36317099,Current liabilities
-2021-08,10B100690,1403735,1910537,Deposits received,997946,1504748,Current liabilities
-2021-08,10B100790,653500,0,Short-term borrowings,5228000,4574500,Current liabilities
-2021-08,10D100102,0,67626279,Sales from traditional transactions,169380364,237006643,Net sales
-2021-08,10E100131,13333507,0,Cost of purchased goods from electronic transactions,51318012,64651519,Cost of sales
-2021-08,10E100132,24944082,0,Cost of purchased goods from traditional transactions,96491898,121435980,Cost of sales
-2021-08,10E200020,1913000,0,Sales commission,8945708,10858708,"Selling, general and administrative expenses"
-2021-08,10E200050,191500,0,Advertising expenses,646700,838200,"Selling, general and administrative expenses"
-2021-08,10E200090,6990379,0,Remuneration for directors (and other officers),23101977,30092356,"Selling, general and administrative expenses"
-2021-08,10E200140,681144,0,Welfare expenses,1590938,2272082,"Selling, general and administrative expenses"
-2021-08,10E200150,396398,0,Entertainment expenses,1315846,1712244,"Selling, general and administrative expenses"
-2021-08,10E200180,1047161,0,Communication expenses,4727650,5774811,"Selling, general and administrative expenses"
-2021-08,10E200200,562218,281109,Supplies expenses,996818,1277927,"Selling, general and administrative expenses"
-2021-08,10E200210,40000,0,Taxes and dues,135000,175000,"Selling, general and administrative expenses"
-2021-08,10E200240,318820,0,Insurance expenses,1275280,1594100,"Selling, general and administrative expenses"
+2021-08,10E200370,5270379,0,Salaries and allowances,21737607,27007986,"Selling, general and administrative expenses"
 2021-08,10E200520,529470,0,Other salaries,1272427,1801897,"Selling, general and administrative expenses"
 2021-08,10E200540,710659,0,Legal welfare expenses,3442539,4153198,"Selling, general and administrative expenses"
 2021-08,10E200600,139710,0,Fee expenses,558840,698550,"Selling, general and administrative expenses"

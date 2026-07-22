@@ -610,18 +610,20 @@ def export_web_csv(tidy_data, out_dir: str) -> dict:
         },
     }
 
-    meta_path = os.path.join(out_lang_dir, "index.json")
-    with open(meta_path, "w", encoding="utf-8") as f:
-        json.dump(index, f, ensure_ascii=False, indent=2)
-
-    paths["index"] = meta_path
+    write_language_index = bool(params.get("write_language_index", True))
+    meta_path = None
+    if write_language_index:
+        meta_path = os.path.join(out_lang_dir, "index.json")
+        with open(meta_path, "w", encoding="utf-8") as f:
+            json.dump(index, f, ensure_ascii=False, indent=2)
+        paths["index"] = meta_path
     paths["output_root"] = out_lang_dir
 
     # Flatten file list for convenience
     def _rel(p: str) -> str:
         return os.path.relpath(p, out_lang_dir)
 
-    file_list: List[str] = [_rel(meta_path)]
+    file_list: List[str] = [_rel(meta_path)] if meta_path else []
     for k, v in paths.items():
         if k in ("index", "output_root"):
             continue
@@ -873,19 +875,36 @@ class TidyData:
             "Expenses": "Increase on Debit",
             "Revenue": "Increase on Credit",
         }
-        with open(param_file_path, "r", encoding="utf-8-sig") as param_file:
+        parameter_path = os.path.abspath(param_file_path)
+        parameter_dir = os.path.dirname(parameter_path)
+        with open(parameter_path, "r", encoding="utf-8-sig") as param_file:
             params = json.load(param_file)
+
+        def resolve_input_path(value):
+            """Resolve configured input paths relative to the parameter file."""
+            path = os.path.expanduser(str(value))
+            if not os.path.isabs(path):
+                path = os.path.join(parameter_dir, path)
+            return os.path.normpath(os.path.abspath(path))
+
         self.params = params
+        self.parameter_path = parameter_path
         self.DEBUG = 1 == params["DEBUG"]
         self.TRACE = 1 == params["TRACE"]
-        self.file_path = params["e-tax_file_path"]
-        self.etax_beginning_balance_path = params["e-tax_beginning_balance_path"]
-        self.account_path = params["account_path"]
-        self.tax_category_path = params["tax_category_path"]
-        self.trading_partner_path = params["trading_partner_path"]
-        self.LHM_path = params["LHM_path"]
-        self.BS_path = params["HOT010_3.0_BS_10"]
-        self.PL_path = params["HOT010_3.0_PL_10"]
+        self.file_path = resolve_input_path(params["e-tax_file_path"])
+        self.structural_file_path = resolve_input_path(
+            params.get("structural_file_path", params["e-tax_file_path"])
+        )
+        self.etax_beginning_balance_path = resolve_input_path(params["e-tax_beginning_balance_path"])
+        self.account_path = resolve_input_path(params["account_path"])
+        self.structural_account_path = resolve_input_path(
+            params.get("structural_account_path", params["account_path"])
+        )
+        self.tax_category_path = resolve_input_path(params["tax_category_path"])
+        self.trading_partner_path = resolve_input_path(params["trading_partner_path"])
+        self.LHM_path = resolve_input_path(params["LHM_path"])
+        self.BS_path = resolve_input_path(params["HOT010_3.0_BS_10"])
+        self.PL_path = resolve_input_path(params["HOT010_3.0_PL_10"])
         self.columns  = params["columns"]
         self.account_category = params["account_category"]
         self.lang = params["lang"]
@@ -1138,7 +1157,7 @@ class TidyData:
         # Display the modified DataFrame
         self.debug_print(self.pl_template_df.head())
 
-    def general_ledger(self):
+    def _general_ledger_legacy(self):
         # 伝票単位で処理を行う
         df_temp = pd.DataFrame(self.amount_rows).copy()
         for transaction_id, group in df_temp.groupby(self.columns["伝票"]):
@@ -1421,6 +1440,177 @@ class TidyData:
         self.debug_print("\n6. 総勘定元帳最終結果:")
         self.debug_print(final_entry.head())
         self.general_ledger_df = final_entry.copy()
+
+    def general_ledger(self):
+        """Build ledger rows from each journal detail's own account metadata."""
+        source = pd.DataFrame(self.amount_rows).copy()
+        transaction_col = "JP07a"
+        line_col = "JP08a"
+        date_col = "JP07a_GL03_03"
+        entry_col = "JP07a_GL03_01"
+        description_col = "JP08a_GL04_03"
+        debit = {
+            "account": "JP06e_GE24_01", "name": "JP06e_GE24_02",
+            "subaccount": "JP05a_01", "subaccount_name": "JP05a_02",
+            "department": "BS04fb_01", "department_name": "BS04fb_02",
+            "amount": "Debit_Amount", "side": "Debit",
+        }
+        credit = {
+            "account": "JP06f_GE24_01", "name": "JP06f_GE24_02",
+            "subaccount": "JP05b_01", "subaccount_name": "JP05b_02",
+            "department": "BS04fc_01", "department_name": "BS04fc_02",
+            "amount": "Credit_Amount", "side": "Credit",
+        }
+
+        def clean(value):
+            return "" if pd.isna(value) else str(value).strip()
+
+        def amount(value):
+            text = clean(value)
+            return 0 if not text else int(float(text))
+
+        def first_value(group, column):
+            for value in group[column]:
+                text = clean(value)
+                if text:
+                    return text
+            return ""
+
+        def side_has_amount(row, spec):
+            return bool(clean(row[spec["account"]])) and amount(row[spec["amount"]]) != 0
+
+        amount_mask = source.apply(
+            lambda row: side_has_amount(row, debit) or side_has_amount(row, credit), axis=1
+        )
+        for column, label in ((transaction_col, "Transaction_ID"), (line_col, "Line_ID")):
+            missing_mask = source.loc[amount_mask, column].apply(clean) == ""
+            if missing_mask.any():
+                rows = source.loc[amount_mask].loc[missing_mask].index.tolist()[:10]
+                raise ValueError(f"Missing {label} on amount-bearing journal rows: {rows}")
+
+        entries = []
+        for transaction_id, group in source.groupby(transaction_col, sort=False):
+            transaction_date = first_value(group, date_col)
+            source_entry_id = first_value(group, entry_col)
+            description = first_value(group, description_col)
+            if not transaction_date:
+                raise ValueError(f"Missing transaction date: Transaction_ID={transaction_id}")
+
+            def opposite_row(current_row, opposite):
+                if side_has_amount(current_row, opposite):
+                    return current_row
+                mask = group.apply(lambda candidate: side_has_amount(candidate, opposite), axis=1)
+                candidates = group.loc[mask]
+                return candidates.iloc[0] if not candidates.empty else None
+
+            for _, row in group.iterrows():
+                for own, opposite in ((debit, credit), (credit, debit)):
+                    own_amount = amount(row[own["amount"]])
+                    own_account = clean(row[own["account"]])
+                    if not own_account or own_amount == 0:
+                        continue
+                    other = opposite_row(row, opposite)
+                    entries.append({
+                        "Transaction_ID": clean(row[transaction_col]),
+                        "Line_ID": clean(row[line_col]),
+                        "Entry_ID": clean(row[entry_col]) or source_entry_id,
+                        "Ledger_Side": own["side"],
+                        "Transaction_Date": clean(row[date_col]) or transaction_date,
+                        "Description": clean(row[description_col]) or description,
+                        "Ledger_Account_Number": own_account,
+                        "Ledger_Account_Name": clean(row[own["name"]]),
+                        "Subaccount_Code": clean(row[own["subaccount"]]),
+                        "Subaccount_Name": clean(row[own["subaccount_name"]]),
+                        "Department_Code": clean(row[own["department"]]),
+                        "Department_Name": clean(row[own["department_name"]]),
+                        "Debit_Amount": own_amount if own["side"] == "Debit" else 0,
+                        "Credit_Amount": own_amount if own["side"] == "Credit" else 0,
+                        "Counterpart_Account_Number": clean(other[opposite["account"]]) if other is not None else "",
+                        "Counterpart_Account_Name": clean(other[opposite["name"]]) if other is not None else "",
+                        "Counterpart_Subaccount_Code": clean(other[opposite["subaccount"]]) if other is not None else "",
+                        "Counterpart_Subaccount_Name": clean(other[opposite["subaccount_name"]]) if other is not None else "",
+                        "Counterpart_Department_Code": clean(other[opposite["department"]]) if other is not None else "",
+                        "Counterpart_Department_Name": clean(other[opposite["department_name"]]) if other is not None else "",
+                    })
+
+        final_entry = pd.DataFrame(entries)
+        if final_entry.empty:
+            raise ValueError("No amount-bearing journal rows were available for the general ledger")
+        final_entry["_transaction_sort"] = pd.to_numeric(final_entry["Transaction_ID"], errors="coerce")
+        final_entry["_line_sort"] = pd.to_numeric(final_entry["Line_ID"], errors="coerce")
+        final_entry["_side_sort"] = final_entry["Ledger_Side"].map({"Debit": 0, "Credit": 1})
+        final_entry.sort_values(
+            by=["Transaction_Date", "_transaction_sort", "Transaction_ID", "_line_sort", "Line_ID", "_side_sort"],
+            inplace=True,
+            kind="stable",
+        )
+        final_entry.drop(columns=["_transaction_sort", "_line_sort", "_side_sort"], inplace=True)
+
+        balance_dict = {
+            account: self.beginning_balances.get(account, 0)
+            for account in final_entry["Ledger_Account_Number"].unique()
+        }
+        balances = []
+        current_month = None
+        for _, row in final_entry.iterrows():
+            account_number = row["Ledger_Account_Number"]
+            transaction_date = pd.Timestamp(row["Transaction_Date"])
+            transaction_month = transaction_date.strftime("%Y-%m")
+            if current_month != transaction_month:
+                current_month = transaction_month
+                for acc_number in sorted(balance_dict):
+                    account_info = self.etax_code_mapping_dict.get(
+                        acc_number, {"eTax_Account_Name": "NOT FOUND"}
+                    )
+                    account_name = account_info["eTax_Account_Name"]
+                    if self.lang == "en":
+                        replacement = self.bs_template_df.loc[
+                            self.bs_template_df["Ledger_Account_Number"] == acc_number, "Account_Name"
+                        ]
+                        if replacement.empty:
+                            replacement = self.pl_template_df.loc[
+                                self.pl_template_df["Ledger_Account_Number"] == acc_number, "Account_Name"
+                            ]
+                        if not replacement.empty:
+                            account_name = replacement.values[0]
+                    balances.append({
+                        "Transaction_ID": "", "Line_ID": "", "Entry_ID": "",
+                        "Ledger_Side": "Opening",
+                        "Transaction_Date": self.get_month_start(transaction_date).strftime("%Y-%m-%d"),
+                        "Description": "* beginning-of-month balance" if self.lang == "en" else "* \u6708\u521d\u6b8b\u9ad8",
+                        "Ledger_Account_Number": acc_number,
+                        "Ledger_Account_Name": account_name,
+                        "Subaccount_Code": "", "Subaccount_Name": "",
+                        "Department_Code": "", "Department_Name": "",
+                        "Debit_Amount": 0, "Credit_Amount": 0,
+                        "Counterpart_Account_Number": "", "Counterpart_Account_Name": "",
+                        "Counterpart_Subaccount_Code": "", "Counterpart_Subaccount_Name": "",
+                        "Counterpart_Department_Code": "", "Counterpart_Department_Name": "",
+                        "Balance": balance_dict[acc_number],
+                    })
+
+            debit_amount = int(row["Debit_Amount"])
+            credit_amount = int(row["Credit_Amount"])
+            account_category = self.etax_code_mapping_dict[account_number]["Category"]
+            if self.lang == "en":
+                direction = self.account_direction_dict_en.get(account_category)
+                debit_direction = "Increase on Debit"
+            else:
+                asset_category = self.etax_code_mapping_dict["10A100020"]["Category"]
+                direction = self.account_direction_dict.get(account_category)
+                debit_direction = self.account_direction_dict.get(asset_category)
+            if direction == debit_direction:
+                balance_dict[account_number] += debit_amount - credit_amount
+            elif direction:
+                balance_dict[account_number] += credit_amount - debit_amount
+            else:
+                raise ValueError(f"Unclassified account direction: {account_number} {account_category}")
+            output_row = row.to_dict()
+            output_row["Balance"] = balance_dict[account_number]
+            balances.append(output_row)
+
+        self.balances = balances
+        self.general_ledger_df = pd.DataFrame(balances).fillna("")
 
     def fill_account_dict(self):
         # 科目コードと科目名の対応辞書を作成
@@ -2201,7 +2391,25 @@ class TidyData:
 
     def code2etax(self):
         # account_list.csv を読み込み、変換用の辞書を作成
-        account_list_df = pd.read_csv(self.account_path, dtype={"Account_Code": str, "eTax_Account_Code": str})
+        display_account_df = pd.read_csv(
+            self.account_path, dtype={"Account_Code": str, "eTax_Account_Code": str}
+        )
+        display_account_df.columns = display_account_df.columns.str.strip()
+        structural_account_df = pd.read_csv(
+            self.structural_account_path,
+            dtype={"Account_Code": str, "eTax_Account_Code": str},
+        )
+        structural_account_df.columns = structural_account_df.columns.str.strip()
+        if set(display_account_df["Account_Code"]) != set(structural_account_df["Account_Code"]):
+            raise ValueError("Display and structural account lists have different Account_Code sets")
+        account_list_df = structural_account_df[["Account_Code", "eTax_Account_Code"]].merge(
+            display_account_df[
+                ["Account_Code", "Account_Name", "Category", "eTax_Account_Name", "eTax_Category"]
+            ],
+            on="Account_Code",
+            how="left",
+            validate="one_to_one",
+        )
         account_list_df.columns = account_list_df.columns.str.strip()  # 列名の空白を除去
         # Account_Code をキーにして eTax_Account_Code と eTax_Account_Name を持つ辞書を作成
         # debug_print(f"Columns in account_list_df:{account_list_df.columns}")
@@ -2279,6 +2487,49 @@ class TidyData:
         self.code2etax()
         df = pd.read_csv(self.file_path, encoding="utf-8-sig", dtype=str) # f tidy data csv
         df.columns = df.columns.str.strip()
+        if self.structural_file_path != self.file_path:
+            structural_df = pd.read_csv(
+                self.structural_file_path, encoding="utf-8-sig", dtype=str
+            )
+            structural_df.columns = structural_df.columns.str.strip()
+            if len(df) != len(structural_df):
+                raise ValueError(
+                    f"Display and structural journals have different row counts: {len(df)} != {len(structural_df)}"
+                )
+
+            def normalise_identifier(value):
+                text = "" if pd.isna(value) else str(value).strip()
+                return text[:-2] if text.endswith(".0") else text
+
+            for identifier in ("JP07a", "JP08a"):
+                display_ids = df[identifier].map(normalise_identifier)
+                structural_ids = structural_df[identifier].map(normalise_identifier)
+                mismatch = display_ids != structural_ids
+                if mismatch.any():
+                    indices = mismatch[mismatch].index.tolist()[:10]
+                    raise ValueError(
+                        f"Display and structural journals differ at {identifier}: rows {indices}"
+                    )
+            structural_columns = [
+                "JP07a", "JP08a", "BS04fb", "JP05a", "BS04fc", "JP05b",
+                "JP07a_GL03_01", "JP07a_GL03_03", "GL05c_01", "GE23c_01", "GE09eR_01",
+                "JP06e_GE24_01", "JP05a_01", "JP05a_03", "GE05ku_01", "GE05kw_01",
+                "JP02j_BS09_01", "BS04fb_01", "BS04fb_03",
+                "JP06f_GE24_01", "JP05b_01", "JP05b_03", "GE05kz_01", "GE05kB_01",
+                "JP02k_BS09_01", "BS04fc_01", "BS04fc_03",
+            ]
+            for column in structural_columns:
+                df[column] = structural_df[column]
+            account_name_map = {
+                str(code): str(properties.get("eTax_Account_Name", ""))
+                for code, properties in self.etax_code_mapping_dict.items()
+            }
+            for code_column, name_column in (
+                ("JP06e_GE24_01", "JP06e_GE24_02"),
+                ("JP06f_GE24_01", "JP06f_GE24_02"),
+            ):
+                mapped_names = df[code_column].map(account_name_map)
+                df[name_column] = mapped_names.where(mapped_names.notna(), df[name_column])
         # 関連する列を適切なデータ型に変換する
         df[self.columns["明細行"]] = pd.to_numeric(df[self.columns["明細行"]], errors="coerce").astype("Int64")  # 明細行
         df[self.columns["借方補助科目"]] = pd.to_numeric(df[self.columns["借方補助科目"]], errors="coerce").astype("Int64")  # 借方補助科目

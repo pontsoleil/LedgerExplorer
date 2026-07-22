@@ -1054,6 +1054,9 @@ async function fetchOptionalCSV(url) {
 function ledgerRowIndexes(rows) {
   const header = rows?.[0] || [];
   return {
+    transactionId: detectColumnIndexNorm(header, ["Transaction_ID", "JP07a"]),
+    lineId: detectColumnIndexNorm(header, ["Line_ID", "JP08a"]),
+    ledgerSide: detectColumnIndexNorm(header, ["Ledger_Side"]),
     account: detectColumnIndexNorm(header, ["Ledger_Account_Number"]),
     subCode: detectColumnIndexNorm(header, ["Subaccount_Code"]),
     subName: detectColumnIndexNorm(header, ["Subaccount_Name"]),
@@ -1189,6 +1192,7 @@ async function buildPartnerReport(viewKey, month) {
     rows: await fetchCSV(resolveCsvUrl("ledger", value)),
   })));
   const snapshots = new Map();
+  const dataIssues = [];
 
   for (const item of ledgerMonths) {
     const idx = ledgerRowIndexes(item.rows);
@@ -1200,7 +1204,23 @@ async function buildPartnerReport(viewKey, month) {
     for (const row of item.rows.slice(1)) {
       if (String(row[idx.account]).trim() !== config.accountNumber) continue;
       const code = String(row[idx.subCode] || "").trim();
-      if (!code) continue;
+      if (!code) {
+        const debit = numberValue(row[idx.debit]);
+        const credit = numberValue(row[idx.credit]);
+        if (debit || credit) {
+          const issue = {
+            month: item.month,
+            transactionId: idx.transactionId >= 0 ? String(row[idx.transactionId] || "").trim() : "",
+            lineId: idx.lineId >= 0 ? String(row[idx.lineId] || "").trim() : "",
+            ledgerSide: idx.ledgerSide >= 0 ? String(row[idx.ledgerSide] || "").trim() : "",
+            debit,
+            credit,
+          };
+          dataIssues.push(issue);
+          console.error("Trading partner ID is missing on a ledger row", issue);
+        }
+        continue;
+      }
       if (!partners.has(code)) throw new Error(`Partner master/opening balance is missing: ${config.partnerType}/${code} (${item.month})`);
       const partner = ensurePartner(partners, code, row[idx.subName]);
 
@@ -1224,6 +1244,7 @@ async function buildPartnerReport(viewKey, month) {
   const selected = snapshots.get(month).sort((a, b) =>
     a.name.localeCompare(b.name, currentLang === "ja" ? "ja" : "en", { numeric: true })
   );
+  selected.dataIssues = dataIssues.filter(issue => issue.month === month);
   return selected;
 }
 
@@ -1290,6 +1311,8 @@ function journalDetailText(viewKey) {
 function journalRowIndexes(rows) {
   const header = rows?.[0] || [];
   return {
+    transactionId: detectColumnIndexNorm(header, ["JP07a", "Transaction_ID"]),
+    lineId: detectColumnIndexNorm(header, ["JP08a", "Line_ID"]),
     date: detectColumnIndexNorm(header, ["JP07a_GL03_03", "Transaction_Date"]),
     voucher: detectColumnIndexNorm(header, ["JP07a_GL03_01", "Voucher_Number"]),
     description: detectColumnIndexNorm(header, ["JP08a_GL04_03", "Description"]),
@@ -1306,7 +1329,7 @@ function journalRowIndexes(rows) {
   };
 }
 
-async function renderPartnerJournalDetail(viewKey, month, partner) {
+async function renderPartnerJournalDetailLegacy(viewKey, month, partner) {
   const target = document.getElementById("partnerJournalDetail");
   if (!target) return;
   const text = reportText(viewKey);
@@ -1366,6 +1389,83 @@ async function renderPartnerJournalDetail(viewKey, month, partner) {
   }
 }
 
+async function renderPartnerJournalDetail(viewKey, month, partner) {
+  const target = document.getElementById("partnerJournalDetail");
+  if (!target) return;
+  const text = reportText(viewKey);
+  target.innerHTML = `<h2>${escapeHtml(text.journalTitle)} - ${escapeHtml(partner.name)}</h2><p>${currentLang === "en" ? "Loading..." : "\u8aad\u8fbc\u4e2d..."}</p>`;
+  try {
+    const [journalRows, ledgerRows] = await Promise.all([
+      fetchCSV(resolveCsvUrl("journal", month)),
+      fetchCSV(resolveCsvUrl("ledger", month)),
+    ]);
+    const idx = journalRowIndexes(journalRows);
+    const ledgerIdx = ledgerRowIndexes(ledgerRows);
+    const required = [
+      idx.transactionId, idx.lineId, idx.date, idx.description,
+      idx.debitAccount, idx.debitAmount, idx.debitSubCode,
+      idx.creditAccount, idx.creditAmount, idx.creditSubCode,
+      ledgerIdx.transactionId, ledgerIdx.lineId, ledgerIdx.account, ledgerIdx.subCode,
+    ];
+    if (required.some(value => value < 0)) throw new Error(`Required trace columns are missing: ${month}`);
+    const account = PARTNER_REPORTS[viewKey].accountNumber;
+    const exactLineKeys = new Set();
+    const transactionIds = new Set();
+    for (const row of ledgerRows.slice(1)) {
+      if (String(row[ledgerIdx.account] || "").trim() !== account) continue;
+      if (String(row[ledgerIdx.subCode] || "").trim() !== partner.code) continue;
+      const transactionId = String(row[ledgerIdx.transactionId] || "").trim();
+      const lineId = String(row[ledgerIdx.lineId] || "").trim();
+      if (!transactionId || !lineId) {
+        throw new Error(`Ledger trace ID is missing: ${month} ${partner.code}`);
+      }
+      transactionIds.add(transactionId);
+      exactLineKeys.add(`${transactionId}|${lineId}`);
+    }
+    const related = journalRows.slice(1).map(row => {
+      const transactionId = String(row[idx.transactionId] || "").trim();
+      const lineId = String(row[idx.lineId] || "").trim();
+      const key = `${transactionId}|${lineId}`;
+      return {
+        row,
+        reportAccountMatch: exactLineKeys.has(key),
+        related: transactionIds.has(transactionId),
+      };
+    }).filter(item => item.related);
+    if (!related.length) {
+      target.innerHTML = `<h2>${escapeHtml(text.journalTitle)} - ${escapeHtml(partner.name)}</h2><p>${escapeHtml(text.journalEmpty)}</p>`;
+      return;
+    }
+    const label = journalDetailText(viewKey);
+    const accountLabel = (row, codeIdx, nameIdx) => [row[codeIdx], nameIdx >= 0 ? row[nameIdx] : ""].filter(Boolean).join(" ");
+    const renderTable = (title, items, sectionClass) => {
+      let html = `<section class="partner-journal-section ${sectionClass}"><h3>${escapeHtml(title)}</h3>`;
+      if (!items.length) return html + `<p class="partner-journal-empty">${escapeHtml(text.journalSectionEmpty)}</p></section>`;
+      html += `<div class="partner-journal-table-wrap"><table class="partner-journal-table"><thead><tr>
+        <th>${currentLang === "en" ? "Transaction ID" : "\u4f1d\u7968ID"}</th>
+        <th>${currentLang === "en" ? "Line ID" : "\u660e\u7d30\u884cID"}</th>
+        <th>${escapeHtml(label.date)}</th><th>${escapeHtml(label.voucher)}</th><th>${escapeHtml(label.description)}</th>
+        <th>${escapeHtml(label.debit)}</th><th>${escapeHtml(label.debitAmount)}</th>
+        <th>${escapeHtml(label.credit)}</th><th>${escapeHtml(label.creditAmount)}</th></tr></thead><tbody>`;
+      for (const item of items) {
+        const row = item.row;
+        html += `<tr><td>${escapeHtml(row[idx.transactionId])}</td><td>${escapeHtml(row[idx.lineId])}</td>
+          <td>${escapeHtml(row[idx.date])}</td><td>${escapeHtml(idx.voucher >= 0 ? row[idx.voucher] : "")}</td><td>${escapeHtml(row[idx.description])}</td>
+          <td>${escapeHtml(accountLabel(row, idx.debitAccount, idx.debitName))}</td><td>${formatNumberLike(row[idx.debitAmount])}</td>
+          <td>${escapeHtml(accountLabel(row, idx.creditAccount, idx.creditName))}</td><td>${formatNumberLike(row[idx.creditAmount])}</td></tr>`;
+      }
+      return html + "</tbody></table></div></section>";
+    };
+    const included = related.filter(item => item.reportAccountMatch);
+    const others = related.filter(item => !item.reportAccountMatch);
+    target.innerHTML = `<h2>${escapeHtml(text.journalTitle)} - <span class="partner-code">${escapeHtml(partner.code)}</span>${escapeHtml(partner.name)}</h2>
+      <div class="partner-journal-grid">${renderTable(text.journalIncludedTitle, included, "is-included")}${renderTable(text.journalRelatedTitle, others, "is-related")}</div>`;
+  } catch (error) {
+    console.error(error);
+    target.innerHTML = `<h2>${escapeHtml(text.journalTitle)} - ${escapeHtml(partner.name)}</h2><p class="partner-report__error">${escapeHtml(error.message || error)}</p>`;
+  }
+}
+
 function renderPartnerReport(rows, viewKey, month) {
   const text = reportText(viewKey);
   const partnerFilter = acctSel.value;
@@ -1380,12 +1480,18 @@ function renderPartnerReport(rows, viewKey, month) {
   const amountKeys = ["opening", "occurrence", ...categoryKeys, "applied", "balance"];
   const totals = Object.fromEntries(amountKeys.map(key => [key, filtered.reduce((sum, row) => sum + row[key], 0)]));
   const amount = value => formatNumberLike(Math.round(value));
+  const dataIssues = Array.isArray(rows.dataIssues) ? rows.dataIssues : [];
+  const issueHtml = dataIssues.length ? `<div class="partner-report__error">
+    <strong>${currentLang === "en" ? "Data inconsistency" : "\u30c7\u30fc\u30bf\u4e0d\u6574\u5408"}</strong>: ${dataIssues.length}
+    <ul>${dataIssues.slice(0, 20).map(issue => `<li>${escapeHtml(issue.month)} / ${currentLang === "en" ? "Transaction" : "\u4f1d\u7968"} ${escapeHtml(issue.transactionId || "(blank)")} / ${currentLang === "en" ? "Line" : "\u660e\u7d30\u884c"} ${escapeHtml(issue.lineId || "(blank)")} / ${escapeHtml(issue.ledgerSide || "")}</li>`).join("")}</ul>
+  </div>` : "";
 
   let html = `<section class="partner-report">
     <div class="partner-report__heading">
       <div><div class="partner-report__eyebrow">Ledger Explorer</div><h1>${escapeHtml(text.title)}</h1><div class="partner-report__period">${escapeHtml(month)}</div></div>
       <div class="partner-report__unit">${escapeHtml(text.unit)}</div>
     </div>
+    ${issueHtml}
     <div class="partner-report__summary">
       <div><span>${escapeHtml(text.opening)}</span><strong>${amount(totals.opening)}</strong></div>
       <div><span>${escapeHtml(text.occurrence)}</span><strong>${amount(totals.occurrence)}</strong></div>

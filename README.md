@@ -69,6 +69,53 @@ The web UI defaults to `data/sample`. You can switch datasets with:
 
 `data/full` is ignored by Git and is intended for local/private exports.
 
+## Authoritative Sample Inputs and Rebuild
+
+The downstream rebuild starts from the existing Structured CSV files. Recreating
+them from the original PCA Accounting export is outside this repository's rebuild
+scope.
+
+Authoritative transaction inputs:
+
+- `data/sample/ja/source/tidyGLeTax.csv`
+- `data/sample/en/source/tidyGLeTax_en.csv`
+
+Supporting inputs are the language-specific `account_list`, `beginning_balance`,
+`tax_category`, and `trading_partner` CSV files under the same `source/`
+directories, plus the balance-sheet and profit-and-loss templates under each
+language's `e-tax/` directory. `tools/parameters.json` and
+`tools/parameters_en.json` resolve these paths relative to the parameter file,
+not the process working directory.
+
+The complete LHM used for type definitions is `tools/JP_LHM.csv`. Its expected
+SHA-256 is:
+
+```text
+9C17F91AF074DEBCCE3D90483C55D05A83CD90327B4BCE1B99685AD25B8774C0
+```
+
+The approved 1 April 2021 opening-balance reconstruction treats JPY 84,256,000
+of inventory as a fixed input. Accounts payable is calculated from April and May
+accounts-payable debits, and cash and deposits is the balancing amount. Scripts,
+candidate files, input hashes, formulas, and validation results are kept under
+`work/latest-opening-balance/`; the older `work/rebuilt-opening-balance/` results
+belong to a separate scenario.
+
+From the repository root, the reproducible commands are:
+
+```powershell
+python work/latest-opening-balance/rebuild_latest.py
+python work/latest-opening-balance/rebuild_latest.py --apply
+python tools/ledger_explorer_i18n.py tools/parameters.json --export-dir work/latest-opening-balance/generated-data --no-gui
+python tools/ledger_explorer_i18n.py tools/parameters_en.json --export-dir work/latest-opening-balance/generated-data --no-gui
+python work/latest-opening-balance/validate_latest.py
+```
+
+The Web UI reads the existing dataset index at `data/sample/index.json`. The
+generation parameters disable language-specific indexes with
+`write_language_index: false`; `data/sample/ja/index.json` and
+`data/sample/en/index.json` are not generated.
+
 ## GitHub Pages
 
 For GitHub Pages, publish the repository root or the `web/` entry point together
