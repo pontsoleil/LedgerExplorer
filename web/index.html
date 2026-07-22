@@ -4,66 +4,67 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ledger Explorer</title>
-  <link rel="stylesheet" href="./app.css?v=202607211310">
+  <link rel="stylesheet" href="./app.css?v=20260722155422">
 </head>
 <body>
 
+  <div id="companyHeader" class="company-header" hidden></div>
+
   <div class="row">
-    <div class="nav" id="nav"></div>
+    <div class="toolbar-row toolbar-primary">
+      <div class="nav" id="nav"></div>
 
-    <button id="about" type="button">
-      <a class="button" href="./about_en.html">ABOUT</a>
-    </button>
+      <button id="about" type="button">
+        <a class="button" href="./about_en.html">ABOUT</a>
+      </button>
 
-    <label>
-      Language / 言語
-      <select id="langSelect">
-        <option value="ja">日本語</option>
-        <option value="en">English</option>
-      </select>
-    </label>
+      <div id="columnToggleGroup" class="column-toggle-group" aria-label="Column display options"></div>
 
-    <label>
-      対象月 / Month
-      <select id="monthSelect"></select>
-    </label>
+      <label>
+        <span id="monthLabelText">対象月</span>
+        <select id="monthSelect"></select>
+      </label>
 
-    <label id="accountLabel">
-      科目 / Account
-      <select id="accountSelect"></select>
-    </label>
+      <label id="accountLabel">
+        科目 / Account
+        <select id="accountSelect"></select>
+      </label>
 
-    <label>
-      検索 / Search
-      <input id="searchInput" type="text" placeholder="摘要など（部分一致）" />
-    </label>
-
-    <label>
-      CSV Upload
-      <input id="fileInput" type="file" accept=".csv,text/csv" />
-    </label>
-
-    <button id="useServerBtn" type="button">Use server data</button>
+      <label>
+        <span id="searchLabelText">検索</span>
+        <input id="searchInput" type="text" placeholder="摘要など（部分一致）" />
+      </label>
+      <span class="status status--response" id="status"></span>
+    </div>
 
   </div>
-
-  <div class="status" id="status"></div>
-  <div class="status" style="margin-top:-2px">Tip: Select “構造化CSV / Structured CSV” to view monthly tidy files.</div>
 
   <div class="table-wrap" id="tableWrap"></div>
 
-  <div class="copyright">
-    <small>
-      © 2026 SAMBUICHI, Nobuyuki (Sambuichi Professional Engineers Office)
-      · <a href="https://www.sambuichi.jp/" target="_blank" rel="noopener">sambuichi.jp</a>
-      · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener">CC BY-SA 4.0</a>
-    </small>
+  <div class="footer-row">
+    <div class="copyright">
+      <small>
+        © 2026 SAMBUICHI, Nobuyuki (Sambuichi Professional Engineers Office)
+        · <a href="https://www.sambuichi.jp/" target="_blank" rel="noopener">sambuichi.jp</a>
+        · <a href="https://github.com/pontsoleil/LedgerExplorer/blob/main/LICENSE-CODE" target="_blank" rel="license noopener">MIT License</a>
+      </small>
+    </div>
+
+    <div class="footer-right">
+      <label class="footer-language">
+        Language / 言語
+        <select id="langSelect">
+          <option value="ja">日本語</option>
+          <option value="en">English</option>
+        </select>
+      </label>
+
+      <div class="build-timestamp" aria-label="この改訂版の生成日時">
+        生成日時：2026-07-21 13:10
+      </div>
+    </div>
   </div>
 
-  <div class="build-timestamp" aria-label="この改訂版の生成日時">
-    生成日時：2026-07-21 13:10
-  </div>
-
-  <script src="./app.js?v=202607220844"></script>
+  <script src="./app.js?v=20260722162228"></script>
 </body>
 </html>

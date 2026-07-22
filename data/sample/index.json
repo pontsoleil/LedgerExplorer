@@ -1,5 +1,14 @@
 {
   "generated_at": "2026-02-20T05:53:20.608956Z",
+  "company": {
+    "business_id": "BUS-000",
+    "name": "株式会社くらし日用品",
+    "postal_code": "000-0000",
+    "prefecture": "東京都",
+    "address": "千代田区テスト町1丁目1番1号",
+    "building": "台帳検証ビル1階",
+    "source_master": "2025事業者マスタ.csv"
+  },
   "lang": "en",
   "months": [
     "2021-04",

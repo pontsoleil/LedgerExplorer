@@ -45,17 +45,13 @@ let currentLang = localStorage.getItem("ledger_lang") || LANG_DEFAULT;
 
 // ---- Column visibility toggles ----
 // Show/hide *display* (filtering keeps using the underlying data)
-let showAccountNumberCols =
-  (localStorage.getItem("ledger_show_account_numbers") ?? "0") !== "0";
-
 let showCodeCols =
   (localStorage.getItem("ledger_show_code_cols") ?? "0") !== "0";
 
 // Toggle button elements (created at runtime)
-let toggleAcctNumBtn = null;
 let toggleCodeColsBtn = null;
 
-// Data mode: "server" | "local"
+// Public viewer data mode is fixed to server-hosted data.
 let dataMode = "server";
 // ---- Data root / dataset resolution ----
 // dataset: "sample" | "full" (default: sample)
@@ -585,6 +581,10 @@ const langSel = document.getElementById("langSelect");
 const fileInput = document.getElementById("fileInput");
 const useServerBtn = document.getElementById("useServerBtn");
 const accountLabelEl = document.getElementById("accountLabel");
+const columnToggleGroupEl = document.getElementById("columnToggleGroup");
+const companyHeaderEl = document.getElementById("companyHeader");
+const monthLabelTextEl = document.getElementById("monthLabelText");
+const searchLabelTextEl = document.getElementById("searchLabelText");
 
 const PARTNER_REPORTS = {
   receivables: {
@@ -855,64 +855,46 @@ function isCodeColumn(headerCellNorm, headerCellRaw) {
   return false;
 }
 
-function tToggleText(key, stateOn) {
+function tToggleText(stateOn) {
   // stateOn means "currently showing"
   const ja = {
-    acct_show: "科目番号を表示",
-    acct_hide: "科目番号を非表示",
     code_show: "コード列を表示",
     code_hide: "コード列を非表示",
   };
   const en = {
-    acct_show: "Show account numbers",
-    acct_hide: "Hide account numbers",
     code_show: "Show code columns",
     code_hide: "Hide code columns",
   };
   const dict = (currentLang === "en") ? en : ja;
-  if (key === "acct") return stateOn ? dict.acct_hide : dict.acct_show;
-  if (key === "code") return stateOn ? dict.code_hide : dict.code_show;
-  return "";
+  return stateOn ? dict.code_hide : dict.code_show;
 }
 
 function updateColumnToggleButtons() {
-  if (toggleAcctNumBtn) {
-    toggleAcctNumBtn.textContent = tToggleText("acct", showAccountNumberCols);
-    toggleAcctNumBtn.classList.toggle("active", !showAccountNumberCols);
-  }
   if (toggleCodeColsBtn) {
-    toggleCodeColsBtn.textContent = tToggleText("code", showCodeCols);
-    toggleCodeColsBtn.classList.toggle("active", !showCodeCols);
+    const actionText = tToggleText(showCodeCols);
+    toggleCodeColsBtn.textContent = currentLang === "en" ? "Code cols" : "コード列";
+    toggleCodeColsBtn.title = actionText;
+    toggleCodeColsBtn.setAttribute("aria-label", actionText);
+    toggleCodeColsBtn.setAttribute("aria-pressed", String(showCodeCols));
+    toggleCodeColsBtn.classList.toggle("active", showCodeCols);
   }
 }
 
 function initColumnToggleButtons() {
-  const rowEl = document.querySelector(".row");
-  if (!rowEl) return;
+  if (!columnToggleGroupEl) return;
 
-  // Create buttons only once
-  if (!toggleAcctNumBtn) {
-    toggleAcctNumBtn = document.createElement("button");
-    toggleAcctNumBtn.type = "button";
-    toggleAcctNumBtn.addEventListener("click", async () => {
-      showAccountNumberCols = !showAccountNumberCols;
-      localStorage.setItem("ledger_show_account_numbers", showAccountNumberCols ? "1" : "0");
-      updateColumnToggleButtons();
-      await refresh({ skipReloadCsv: true });
-    });
-    rowEl.appendChild(toggleAcctNumBtn);
-  }
-
+  // Create the button only once.
   if (!toggleCodeColsBtn) {
     toggleCodeColsBtn = document.createElement("button");
     toggleCodeColsBtn.type = "button";
+    toggleCodeColsBtn.className = "column-toggle-button";
     toggleCodeColsBtn.addEventListener("click", async () => {
       showCodeCols = !showCodeCols;
       localStorage.setItem("ledger_show_code_cols", showCodeCols ? "1" : "0");
       updateColumnToggleButtons();
       await refresh({ skipReloadCsv: true });
     });
-    rowEl.appendChild(toggleCodeColsBtn);
+    columnToggleGroupEl.appendChild(toggleCodeColsBtn);
   }
 
   updateColumnToggleButtons();
@@ -941,14 +923,13 @@ function getVisibleIdxs(header, viewKey) {
     }
   }
 
-  // 3) Apply runtime column toggles (Account_Number / xx_Code)
+  // 3) Apply the runtime code-column toggle (account/subaccount numbers and xx_Code columns).
   const hnAll = header.map(normLabel);
   const out = [];
   for (const i of baseIdxs) {
     const hn = hnAll[i];
     const raw = header[i];
-    if (!showAccountNumberCols && isAccountNumberColumn(hn, raw)) continue;
-    if (!showCodeCols && isCodeColumn(hn, raw)) continue;
+    if (!showCodeCols && (isAccountNumberColumn(hn, raw) || isCodeColumn(hn, raw))) continue;
     out.push(i);
   }
   return out;
@@ -958,13 +939,14 @@ function getVisibleIdxs(header, viewKey) {
 // -------- Rendering --------
 /*
 EN: Table rendering
-- Computes visible columns (per-view hidden columns + user toggles for account-number/code columns).
+- Computes visible columns (per-view hidden columns + the unified code-column toggle).
 - Applies alignment/formatting (int/number/text) and optional indentation for BS/PL account names.
 JA: 表描画
-- viewごとの非表示列 + ユーザ切替（科目番号/コード列）を反映して表示列を決定します。
+- viewごとの非表示列 + コード列の一括切替を反映して表示列を決定します。
 - 整数/数値/テキスト整形、B/S・P/Lの階層表示（Levelに基づくインデント）を適用します。
 */
 function renderTable(rows, maxRows = DEFAULT_MAX_ROWS) {
+  wrapEl.classList.remove("partner-report-wrap");
   if (!rows || rows.length === 0) {
     wrapEl.innerHTML = "<div style='padding:12px'>No data</div>";
     return;
@@ -1271,6 +1253,11 @@ function reportText(viewKey) {
       journalEmpty: "No related journal entries were found for this month.",
       journalSectionEmpty: "No entries.",
       selectHint: "Click a trading partner row to show related journal entries.",
+      appliedFormula: receivables
+        ? "Applied total = Discount / adjustment + Notes received + Cash / bank + Transfer fee + Offset / other"
+        : "Applied total = Discount / adjustment + Notes payable + Cash / bank + Offset / other",
+      balanceFormula: "Balance = Opening balance + New charges - Applied total",
+      appliedNote: "Each applied amount is shown as a positive value and is subtracted when calculating the balance.",
     };
   }
   return {
@@ -1293,6 +1280,11 @@ function reportText(viewKey) {
     journalEmpty: "この月に関連する仕訳はありません。",
     journalSectionEmpty: "該当する仕訳はありません。",
     selectHint: "取引先の行をクリックすると、関連する仕訳を下に表示します。",
+    appliedFormula: receivables
+      ? "消込欄計 ＝ 値引 ＋ 手形 ＋ 現金 ＋ 振込料 ＋ 相殺・その他"
+      : "消込欄計 ＝ 値引 ＋ 手形 ＋ 現金 ＋ 相殺・その他",
+    balanceFormula: "残高 ＝ 前期繰越 ＋ 発生 − 消込欄計",
+    appliedNote: "値引などの各欄は消込額を正数で表示し、残高計算時に差し引きます。",
   };
 }
 
@@ -1389,51 +1381,105 @@ async function renderPartnerJournalDetailLegacy(viewKey, month, partner) {
   }
 }
 
-async function renderPartnerJournalDetail(viewKey, month, partner) {
+async function renderPartnerJournalDetail(viewKey, month, partner, options = {}) {
   const target = document.getElementById("partnerJournalDetail");
   if (!target) return;
+  target.closest(".partner-report")?.classList.add("has-journal-detail");
   const text = reportText(viewKey);
-  target.innerHTML = `<h2>${escapeHtml(text.journalTitle)} - ${escapeHtml(partner.name)}</h2><p>${currentLang === "en" ? "Loading..." : "\u8aad\u8fbc\u4e2d..."}</p>`;
-  try {
-    const [journalRows, ledgerRows] = await Promise.all([
-      fetchCSV(resolveCsvUrl("journal", month)),
-      fetchCSV(resolveCsvUrl("ledger", month)),
-    ]);
-    const idx = journalRowIndexes(journalRows);
-    const ledgerIdx = ledgerRowIndexes(ledgerRows);
-    const required = [
-      idx.transactionId, idx.lineId, idx.date, idx.description,
-      idx.debitAccount, idx.debitAmount, idx.debitSubCode,
-      idx.creditAccount, idx.creditAmount, idx.creditSubCode,
-      ledgerIdx.transactionId, ledgerIdx.lineId, ledgerIdx.account, ledgerIdx.subCode,
-    ];
-    if (required.some(value => value < 0)) throw new Error(`Required trace columns are missing: ${month}`);
-    const account = PARTNER_REPORTS[viewKey].accountNumber;
-    const exactLineKeys = new Set();
-    const transactionIds = new Set();
-    for (const row of ledgerRows.slice(1)) {
-      if (String(row[ledgerIdx.account] || "").trim() !== account) continue;
-      if (String(row[ledgerIdx.subCode] || "").trim() !== partner.code) continue;
-      const transactionId = String(row[ledgerIdx.transactionId] || "").trim();
-      const lineId = String(row[ledgerIdx.lineId] || "").trim();
-      if (!transactionId || !lineId) {
-        throw new Error(`Ledger trace ID is missing: ${month} ${partner.code}`);
-      }
-      transactionIds.add(transactionId);
-      exactLineKeys.add(`${transactionId}|${lineId}`);
+  const pastMonths = Math.max(0, Math.min(3, Number(options.pastMonths) || 0));
+  const futureMonths = Math.max(0, Math.min(3, Number(options.futureMonths) || 0));
+  const availableJournalMonths = Array.isArray(INDEX?.views?.journal?.available)
+    ? INDEX.views.journal.available
+    : (INDEX?.months || []);
+  const availableLedgerMonths = new Set(Array.isArray(INDEX?.views?.ledger?.available)
+    ? INDEX.views.ledger.available
+    : (INDEX?.months || []));
+  const availableMonths = availableJournalMonths
+    .filter(value => value !== "ALL" && availableLedgerMonths.has(value))
+    .sort();
+  const selectedMonthIndex = availableMonths.indexOf(month);
+  const rangeText = currentLang === "en" ? {
+    current: "Current month only", past: "Past", future: "Future", month: "month(s)",
+    range: "Displayed period", loading: "Loading...",
+  } : {
+    current: "\u5f53\u6708\u306e\u307f", past: "\u904e\u53bb", future: "\u672a\u6765", month: "\u304b\u6708",
+    range: "\u8868\u793a\u671f\u9593", loading: "\u8aad\u8fbc\u4e2d...",
+  };
+  const rangeControls = () => {
+    const rangeButton = (direction, count, disabled) => {
+      const active = (direction === "past" ? pastMonths : futureMonths) === count;
+      const directionLabel = direction === "past" ? rangeText.past : rangeText.future;
+      const label = currentLang === "en"
+        ? `${directionLabel} ${count} ${count === 1 ? "month" : "months"}`
+        : `${directionLabel}${count}${rangeText.month}`;
+      return `<button type="button" class="partner-journal-range__button${active ? " is-active" : ""}" data-range-direction="${direction}" data-range-months="${count}"${disabled ? " disabled" : ""}>${escapeHtml(label)}</button>`;
+    };
+    const pastAvailable = selectedMonthIndex < 0 ? 0 : selectedMonthIndex;
+    const futureAvailable = selectedMonthIndex < 0 ? 0 : availableMonths.length - selectedMonthIndex - 1;
+    return `<div class="partner-journal-range" role="group" aria-label="${escapeHtml(rangeText.range)}">
+      <button type="button" class="partner-journal-range__button${pastMonths === 0 && futureMonths === 0 ? " is-active" : ""}" data-range-reset="true">${escapeHtml(rangeText.current)}</button>
+      <span class="partner-journal-range__group"><span class="partner-journal-range__label">${escapeHtml(rangeText.past)}</span>${[1, 2, 3].map(count => rangeButton("past", count, count > pastAvailable)).join("")}</span>
+      <span class="partner-journal-range__group"><span class="partner-journal-range__label">${escapeHtml(rangeText.future)}</span>${[1, 2, 3].map(count => rangeButton("future", count, count > futureAvailable)).join("")}</span>
+    </div>`;
+  };
+  const heading = () => `<h2>${escapeHtml(text.journalTitle)} - <span class="partner-code">${escapeHtml(partner.code)}</span>${escapeHtml(partner.name)}</h2>${rangeControls()}`;
+  const bindRangeControls = () => {
+    const reset = target.querySelector("[data-range-reset]");
+    if (reset) reset.addEventListener("click", () => renderPartnerJournalDetail(viewKey, month, partner, { pastMonths: 0, futureMonths: 0 }));
+    for (const button of target.querySelectorAll("[data-range-direction]")) {
+      button.addEventListener("click", () => {
+        const direction = button.dataset.rangeDirection;
+        const count = Number(button.dataset.rangeMonths) || 0;
+        renderPartnerJournalDetail(viewKey, month, partner, {
+          pastMonths: direction === "past" ? count : pastMonths,
+          futureMonths: direction === "future" ? count : futureMonths,
+        });
+      });
     }
-    const related = journalRows.slice(1).map(row => {
-      const transactionId = String(row[idx.transactionId] || "").trim();
-      const lineId = String(row[idx.lineId] || "").trim();
-      const key = `${transactionId}|${lineId}`;
-      return {
-        row,
-        reportAccountMatch: exactLineKeys.has(key),
-        related: transactionIds.has(transactionId),
-      };
-    }).filter(item => item.related);
+  };
+  target.innerHTML = `${heading()}<p>${escapeHtml(rangeText.loading)}</p>`;
+  bindRangeControls();
+  try {
+    if (selectedMonthIndex < 0) throw new Error(`Invalid journal month: ${month}`);
+    const firstMonthIndex = Math.max(0, selectedMonthIndex - pastMonths);
+    const lastMonthIndex = Math.min(availableMonths.length - 1, selectedMonthIndex + futureMonths);
+    const displayMonths = availableMonths.slice(firstMonthIndex, lastMonthIndex + 1);
+    const account = PARTNER_REPORTS[viewKey].accountNumber;
+    const related = [];
+    for (const detailMonth of displayMonths) {
+      const [journalRows, ledgerRows] = await Promise.all([
+        fetchCSV(resolveCsvUrl("journal", detailMonth)),
+        fetchCSV(resolveCsvUrl("ledger", detailMonth)),
+      ]);
+      const idx = journalRowIndexes(journalRows);
+      const ledgerIdx = ledgerRowIndexes(ledgerRows);
+      const required = [
+        idx.transactionId, idx.lineId, idx.date, idx.description,
+        idx.debitAccount, idx.debitAmount, idx.debitSubCode,
+        idx.creditAccount, idx.creditAmount, idx.creditSubCode,
+        ledgerIdx.transactionId, ledgerIdx.lineId, ledgerIdx.account, ledgerIdx.subCode,
+      ];
+      if (required.some(value => value < 0)) throw new Error(`Required trace columns are missing: ${detailMonth}`);
+      const exactLineKeys = new Set();
+      for (const row of ledgerRows.slice(1)) {
+        if (String(row[ledgerIdx.account] || "").trim() !== account) continue;
+        if (String(row[ledgerIdx.subCode] || "").trim() !== partner.code) continue;
+        const transactionId = String(row[ledgerIdx.transactionId] || "").trim();
+        const lineId = String(row[ledgerIdx.lineId] || "").trim();
+        if (!transactionId || !lineId) {
+          throw new Error(`Ledger trace ID is missing: ${detailMonth} ${partner.code}`);
+        }
+        exactLineKeys.add(`${transactionId}|${lineId}`);
+      }
+      for (const row of journalRows.slice(1)) {
+        const transactionId = String(row[idx.transactionId] || "").trim();
+        const lineId = String(row[idx.lineId] || "").trim();
+        if (exactLineKeys.has(`${transactionId}|${lineId}`)) related.push({ row, idx, month: detailMonth });
+      }
+    }
     if (!related.length) {
-      target.innerHTML = `<h2>${escapeHtml(text.journalTitle)} - ${escapeHtml(partner.name)}</h2><p>${escapeHtml(text.journalEmpty)}</p>`;
+      target.innerHTML = `${heading()}<p>${escapeHtml(text.journalEmpty)}</p>`;
+      bindRangeControls();
       return;
     }
     const label = journalDetailText(viewKey);
@@ -1442,6 +1488,7 @@ async function renderPartnerJournalDetail(viewKey, month, partner) {
       let html = `<section class="partner-journal-section ${sectionClass}"><h3>${escapeHtml(title)}</h3>`;
       if (!items.length) return html + `<p class="partner-journal-empty">${escapeHtml(text.journalSectionEmpty)}</p></section>`;
       html += `<div class="partner-journal-table-wrap"><table class="partner-journal-table"><thead><tr>
+        <th>${currentLang === "en" ? "Month" : "\u5bfe\u8c61\u6708"}</th>
         <th>${currentLang === "en" ? "Transaction ID" : "\u4f1d\u7968ID"}</th>
         <th>${currentLang === "en" ? "Line ID" : "\u660e\u7d30\u884cID"}</th>
         <th>${escapeHtml(label.date)}</th><th>${escapeHtml(label.voucher)}</th><th>${escapeHtml(label.description)}</th>
@@ -1449,24 +1496,27 @@ async function renderPartnerJournalDetail(viewKey, month, partner) {
         <th>${escapeHtml(label.credit)}</th><th>${escapeHtml(label.creditAmount)}</th></tr></thead><tbody>`;
       for (const item of items) {
         const row = item.row;
-        html += `<tr><td>${escapeHtml(row[idx.transactionId])}</td><td>${escapeHtml(row[idx.lineId])}</td>
+        const idx = item.idx;
+        html += `<tr${item.month === month ? " class=\"is-current-month\"" : ""}><td>${escapeHtml(item.month)}</td><td>${escapeHtml(row[idx.transactionId])}</td><td>${escapeHtml(row[idx.lineId])}</td>
           <td>${escapeHtml(row[idx.date])}</td><td>${escapeHtml(idx.voucher >= 0 ? row[idx.voucher] : "")}</td><td>${escapeHtml(row[idx.description])}</td>
           <td>${escapeHtml(accountLabel(row, idx.debitAccount, idx.debitName))}</td><td>${formatNumberLike(row[idx.debitAmount])}</td>
           <td>${escapeHtml(accountLabel(row, idx.creditAccount, idx.creditName))}</td><td>${formatNumberLike(row[idx.creditAmount])}</td></tr>`;
       }
       return html + "</tbody></table></div></section>";
     };
-    const included = related.filter(item => item.reportAccountMatch);
-    const others = related.filter(item => !item.reportAccountMatch);
-    target.innerHTML = `<h2>${escapeHtml(text.journalTitle)} - <span class="partner-code">${escapeHtml(partner.code)}</span>${escapeHtml(partner.name)}</h2>
-      <div class="partner-journal-grid">${renderTable(text.journalIncludedTitle, included, "is-included")}${renderTable(text.journalRelatedTitle, others, "is-related")}</div>`;
+    const displayedRange = `${displayMonths[0]} - ${displayMonths[displayMonths.length - 1]}`;
+    target.innerHTML = `${heading()}<p class="partner-journal-range__period">${escapeHtml(rangeText.range)}: ${escapeHtml(displayedRange)}</p>
+      <div class="partner-journal-grid">${renderTable(text.journalIncludedTitle, related, "is-included")}</div>`;
+    bindRangeControls();
   } catch (error) {
     console.error(error);
-    target.innerHTML = `<h2>${escapeHtml(text.journalTitle)} - ${escapeHtml(partner.name)}</h2><p class="partner-report__error">${escapeHtml(error.message || error)}</p>`;
+    target.innerHTML = `${heading()}<p class="partner-report__error">${escapeHtml(error.message || error)}</p>`;
+    bindRangeControls();
   }
 }
 
 function renderPartnerReport(rows, viewKey, month) {
+  wrapEl.classList.add("partner-report-wrap");
   const text = reportText(viewKey);
   const partnerFilter = acctSel.value;
   const search = String(searchInput.value || "").trim().toLowerCase();
@@ -1488,15 +1538,20 @@ function renderPartnerReport(rows, viewKey, month) {
 
   let html = `<section class="partner-report">
     <div class="partner-report__heading">
-      <div><div class="partner-report__eyebrow">Ledger Explorer</div><h1>${escapeHtml(text.title)}</h1><div class="partner-report__period">${escapeHtml(month)}</div></div>
-      <div class="partner-report__unit">${escapeHtml(text.unit)}</div>
+      <div class="partner-report__title"><h1>${escapeHtml(text.title)}</h1></div>
+      <div class="partner-report__summary">
+        <div><span>${escapeHtml(text.opening)}</span><strong>${amount(totals.opening)}</strong></div>
+        <div><span>${escapeHtml(text.occurrence)}</span><strong>${amount(totals.occurrence)}</strong></div>
+        <div><span>${escapeHtml(text.applied)}</span><strong>${amount(totals.applied)}</strong></div>
+        <div class="balance"><span>${escapeHtml(text.balance)}</span><strong>${amount(totals.balance)}</strong></div>
+      </div>
     </div>
     ${issueHtml}
-    <div class="partner-report__summary">
-      <div><span>${escapeHtml(text.opening)}</span><strong>${amount(totals.opening)}</strong></div>
-      <div><span>${escapeHtml(text.occurrence)}</span><strong>${amount(totals.occurrence)}</strong></div>
-      <div><span>${escapeHtml(text.applied)}</span><strong>${amount(totals.applied)}</strong></div>
-      <div class="balance"><span>${escapeHtml(text.balance)}</span><strong>${amount(totals.balance)}</strong></div>
+    <div class="partner-report__calculation-note" role="note">
+      <span>${escapeHtml(text.appliedFormula)}</span><span class="partner-report__calculation-separator" aria-hidden="true">｜</span>
+      <span>${escapeHtml(text.balanceFormula)}</span><span class="partner-report__calculation-separator" aria-hidden="true">｜</span>
+      <small>${escapeHtml(text.appliedNote)}</small>
+      <span class="partner-report__unit">${escapeHtml(text.unit)}</span>
     </div>
     <div class="partner-report__table-wrap partner-report__status-wrap"><table id="dataTable" class="partner-report__table"><thead><tr>
       <th>${escapeHtml(text.partner)}</th><th>${escapeHtml(text.opening)}</th><th>${escapeHtml(text.occurrence)}</th>
@@ -1545,7 +1600,7 @@ async function refreshPartnerReport(month) {
   });
   if (previous && options.some(option => option.value === previous)) acctSel.value = previous;
   renderPartnerReport(rows, currentView, month);
-  setStatus(`${tViewLabel(currentView)} / ${month} / ${dataMode} / ${currentLang}`);
+  setStatus("");
 }
 
 // -------- Filtering (account + search + local month filter) --------
@@ -1601,10 +1656,26 @@ function filterRows(rows, { accountValue = "", searchText = "", monthValue = "" 
 }
 
 function applyI18nTexts() {
+  if (monthLabelTextEl) monthLabelTextEl.textContent = currentLang === "en" ? "Month" : "対象月";
+  if (searchLabelTextEl) searchLabelTextEl.textContent = currentLang === "en" ? "Search" : "検索";
   const searchInput = document.getElementById("searchInput");
   if (searchInput) {
     searchInput.placeholder =
       SEARCH_PLACEHOLDER_I18N[currentLang] || SEARCH_PLACEHOLDER_I18N.en;
+  }
+  if (companyHeaderEl) {
+    const company = INDEX?.company;
+    if (company?.name) {
+      const locality = [company.prefecture, company.address].filter(Boolean).join("");
+      const address = [company.postal_code ? `〒${company.postal_code}` : "", locality, company.building]
+        .filter(Boolean)
+        .join(" ");
+      companyHeaderEl.innerHTML = `<span class="company-header__name">${escapeHtml(company.name)}</span><span class="company-header__address">${escapeHtml(address)}</span>`;
+      companyHeaderEl.hidden = false;
+    } else {
+      companyHeaderEl.innerHTML = "";
+      companyHeaderEl.hidden = true;
+    }
   }
 }
 
@@ -1613,6 +1684,8 @@ let INDEX = null;
 let currentView = "ledger";
 let lastLoadedUrl = "";
 let lastLoadedRows = null;
+let initialAccountFromUrl = "";
+const DEFAULT_LEDGER_ACCOUNT = "10A100020";
 
 // Build CSV URL using index.json (dataset + language + month)
 function joinUrlPath(...parts) {
@@ -1669,6 +1742,7 @@ function initNav() {
     btn.textContent = tViewLabel(key);
     btn.dataset.key = key;
     btn.addEventListener("click", async () => {
+      if (key === "ledger" && currentView !== "ledger") acctSel.value = "";
       currentView = key;
       await refresh({ skipReloadCsv: false }); // view change => reload (server)
     });
@@ -1684,13 +1758,16 @@ function setActiveButton() {
 
 function updateViewControls() {
   const partnerView = isPartnerReportView();
+  const allAccountsOnly = currentView === "trial_balance";
+  if (allAccountsOnly) acctSel.value = "";
   if (accountLabelEl) {
+    accountLabelEl.hidden = allAccountsOnly;
     accountLabelEl.firstChild.textContent = partnerView
       ? (currentLang === "en" ? "Partner " : "取引先 ")
       : (currentLang === "en" ? "Account " : "科目 ");
   }
-  if (toggleAcctNumBtn) toggleAcctNumBtn.hidden = partnerView;
   if (toggleCodeColsBtn) toggleCodeColsBtn.hidden = partnerView;
+  if (columnToggleGroupEl) columnToggleGroupEl.hidden = partnerView;
 }
 
 function initMonthSelect(months) {
@@ -1881,9 +1958,13 @@ async function refresh(opts = {}) {
 
           buildOptions(acctSel, options, { includeAll: true, allLabel: currentLang === "en" ? "(All accounts)" : "（全科目）" });
 
-          if (prevVal && Array.from(acctSel.options).some(o => o.value === prevVal)) {
-            acctSel.value = prevVal;
-          }
+          const preferredValue = currentView === "trial_balance"
+            ? ""
+            : (initialAccountFromUrl || prevVal || (currentView === "ledger" ? DEFAULT_LEDGER_ACCOUNT : ""));
+          if (preferredValue && Array.from(acctSel.options).some(o => o.value === preferredValue)) acctSel.value = preferredValue;
+          if (currentView === "trial_balance") acctSel.value = "";
+          initialAccountFromUrl = "";
+          updateUrlQuery({ account: acctSel.value || null });
         } else {
           buildOptions(acctSel, [], { includeAll: true, allLabel: currentLang === "en" ? "(No account)" : "（科目なし）" });
           acctSel.value = "";
@@ -1910,12 +1991,7 @@ async function refresh(opts = {}) {
 
     renderTable(filtered);
 
-    const modeLabel = (dataMode === "server") ? "server" : "local";
-    setStatus(
-      `${tViewLabel(currentView)} / ${month} / ${modeLabel} / ${currentLang}` +
-      (acctSel.value ? " / " + (acctSel.options[acctSel.selectedIndex]?.textContent || acctSel.value) : "") +
-      (q ? " / Search: " + q : "")
-    );
+    setStatus("");
 
   } catch (e) {
     setStatus(String(e?.message || e));
@@ -1961,23 +2037,21 @@ async function main() {
   const url = new URL(location.href);
   const qView = url.searchParams.get("view");
   const qLang = url.searchParams.get("lang");
-  const qMode = url.searchParams.get("mode");
+  const qMonth = url.searchParams.get("month");
+  initialAccountFromUrl = url.searchParams.get("account") || "";
 
   if (qLang && (qLang === "ja" || qLang === "en")) {
     currentLang = qLang;
     localStorage.setItem("ledger_lang", currentLang);
   }
   if (qView && INDEX.views && INDEX.views[qView]) currentView = qView;
-  if (qMode && (qMode === "server" || qMode === "local")) dataMode = qMode;
-
-
   // init UI
   initNav();
   initMonthSelect(INDEX.months || []);
+  if (qMonth && (INDEX.months || []).includes(qMonth)) monthSel.value = qMonth;
   initAccountSelect();
   initLangSelect();
   initSearch();
-  initUpload();
   initColumnToggleButtons();
 
   // set lang select
