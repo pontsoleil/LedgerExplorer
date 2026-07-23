@@ -1,11 +1,11 @@
 ﻿Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
-2022-01,10A100020,120382489,108892283,Cash and deposits,59900701,71390907,Current assets
-2022-01,10A100060,48543883,35387312,Notes receivable - trade,21645015,34801586,Current assets
-2022-01,10A100090,91476616,98313301,Accounts receivable - trade,133273620,126436935,Current assets
+2022-01,10A100020,106441763,104418863,Cash and deposits,29602761,31625661,Current assets
+2022-01,10A100060,33887299,35387312,Notes receivable - trade,-33203783,-34703796,Current assets
+2022-01,10A100090,91476616,70833354,Accounts receivable - trade,196935146,217578408,Current assets
 2022-01,10A100610,0,90000,Short-term loans receivable,470000,380000,Current assets
 2022-01,10A230570,125000,0,Insurance funds,1152813,1277813,Investments and other assets
-2022-01,10B100030,11210865,27368588,Notes payable - trade,11902924,28060647,Current liabilities
-2022-01,10B100040,59337763,54296895,Accounts payable - trade,103284111,98243243,Current liabilities
+2022-01,10B100030,11210865,20277945,Notes payable - trade,9202063,18269143,Current liabilities
+2022-01,10B100040,46735138,54296895,Accounts payable - trade,112882067,120443824,Current liabilities
 2022-01,10B100630,12442678,10119977,Accounts payable - other,4328315,2005614,Current liabilities
 2022-01,10B100690,2466437,1901781,Deposits received,4955737,4391081,Current liabilities
 2022-01,10B100790,653500,0,Short-term borrowings,1960500,1307000,Current liabilities
@@ -26,7 +26,7 @@
 2022-01,10E200520,313425,0,Other salaries,3790337,4103762,"Selling, general and administrative expenses"
 2022-01,10E200540,1591504,0,Legal welfare expenses,7008962,8600466,"Selling, general and administrative expenses"
 2022-01,10E200600,139710,0,Fee expenses,1257390,1397100,"Selling, general and administrative expenses"
-2022-01,10E200690,12021,0,Commission expenses,108770,120791,"Selling, general and administrative expenses"
+2022-01,10E200690,2167946,0,Commission expenses,12735423,14903369,"Selling, general and administrative expenses"
 2022-01,10E200720,3449000,0,Rent expenses on land and buildings,31011000,34460000,"Selling, general and administrative expenses"
 2022-01,10E200730,587700,0,Rent expenses on land and buildings,2350800,2938500,"Selling, general and administrative expenses"
 2022-01,10E200870,6260649,0,Freight costs,37366207,43626856,"Selling, general and administrative expenses"

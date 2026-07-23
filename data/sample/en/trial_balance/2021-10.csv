@@ -1,11 +1,11 @@
 ﻿Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
-2021-10,10A100020,109382815,93251447,Cash and deposits,54655240,70786608,Current assets
-2021-10,10A100060,34964923,47982412,Notes receivable - trade,21770353,8752864,Current assets
-2021-10,10A100090,61564282,64003565,Accounts receivable - trade,79381061,76941778,Current assets
+2021-10,10A100020,115512867,93740648,Cash and deposits,30245967,52018186,Current assets
+2021-10,10A100060,30943498,47982412,Notes receivable - trade,-23638123,-40677037,Current assets
+2021-10,10A100090,61564282,67626279,Accounts receivable - trade,127552062,121490065,Current assets
 2021-10,10A100610,0,40000,Short-term loans receivable,40000,0,Current assets
 2021-10,10A230570,125000,0,Insurance funds,777813,902813,Investments and other assets
-2021-10,10B100030,10880762,11210865,Notes payable - trade,9045544,9375647,Current liabilities
-2021-10,10B100040,37483187,38995768,Accounts payable - trade,72234688,73747269,Current liabilities
+2021-10,10B100030,10880762,12060054,Notes payable - trade,7109263,8288555,Current liabilities
+2021-10,10B100040,38277589,38995768,Accounts payable - trade,75465010,76183189,Current liabilities
 2021-10,10B100630,6940619,7681594,Accounts payable - other,-599919,141056,Current liabilities
 2021-10,10B100690,1395878,1945054,Deposits received,3902524,4451700,Current liabilities
 2021-10,10B100790,653500,0,Short-term borrowings,3921000,3267500,Current liabilities
@@ -26,7 +26,7 @@
 2021-10,10E200520,511380,0,Other salaries,2157927,2669307,"Selling, general and administrative expenses"
 2021-10,10E200540,721981,0,Legal welfare expenses,4869714,5591695,"Selling, general and administrative expenses"
 2021-10,10E200600,139710,0,Fee expenses,838260,977970,"Selling, general and administrative expenses"
-2021-10,10E200690,12021,0,Commission expenses,71762,83783,"Selling, general and administrative expenses"
+2021-10,10E200690,2070096,0,Commission expenses,7256897,9326993,"Selling, general and administrative expenses"
 2021-10,10E200720,3449000,0,Rent expenses on land and buildings,20664000,24113000,"Selling, general and administrative expenses"
 2021-10,10E200730,587700,0,Rent expenses on land and buildings,1469250,2056950,"Selling, general and administrative expenses"
 2021-10,10E200870,3809965,0,Freight costs,21674568,25484533,"Selling, general and administrative expenses"

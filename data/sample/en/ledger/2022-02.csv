@@ -1,15 +1,15 @@
 ﻿Transaction_ID,Line_ID,Entry_ID,Ledger_Side,Transaction_Date,Description,Ledger_Account_Number,Ledger_Account_Name,Subaccount_Code,Subaccount_Name,Department_Code,Department_Name,Debit_Amount,Credit_Amount,Counterpart_Account_Number,Counterpart_Account_Name,Counterpart_Subaccount_Code,Counterpart_Subaccount_Name,Counterpart_Department_Code,Counterpart_Department_Name,Balance,Month
-,,,Opening,2022-02-01,* beginning-of-month balance,10A100020,Cash and deposits,,,,,0,0,,,,,,,71390907,2022-02
-,,,Opening,2022-02-01,* beginning-of-month balance,10A100060,Notes receivable - trade,,,,,0,0,,,,,,,34801586,2022-02
-,,,Opening,2022-02-01,* beginning-of-month balance,10A100090,Accounts receivable - trade,,,,,0,0,,,,,,,126436935,2022-02
-,,,Opening,2022-02-01,* beginning-of-month balance,10A100200,Electronically recorded monetary claims - operating,,,,,0,0,,,,,,,40000,2022-02
+,,,Opening,2022-02-01,* beginning-of-month balance,10A100020,Cash and deposits,,,,,0,0,,,,,,,31625661,2022-02
+,,,Opening,2022-02-01,* beginning-of-month balance,10A100060,Notes receivable - trade,,,,,0,0,,,,,,,-34703796,2022-02
+,,,Opening,2022-02-01,* beginning-of-month balance,10A100090,Accounts receivable - trade,,,,,0,0,,,,,,,217578408,2022-02
+,,,Opening,2022-02-01,* beginning-of-month balance,10A100200,Electronically recorded monetary claims - operating,,,,,0,0,,,,,,,1369532,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10A100280,Merchandise,,,,,0,0,,,,,,,84256000,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10A100610,Short-term loans receivable,,,,,0,0,,,,,,,380000,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10A210130,Structures,,,,,0,0,,,,,,,36435838,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10A210410,"Tools, furniture and fixtures",,,,,0,0,,,,,,,17360990,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10A230570,Insurance funds,,,,,0,0,,,,,,,1277813,2022-02
-,,,Opening,2022-02-01,* beginning-of-month balance,10B100030,Notes payable - trade,,,,,0,0,,,,,,,28060647,2022-02
-,,,Opening,2022-02-01,* beginning-of-month balance,10B100040,Accounts payable - trade,,,,,0,0,,,,,,,98243243,2022-02
+,,,Opening,2022-02-01,* beginning-of-month balance,10B100030,Notes payable - trade,,,,,0,0,,,,,,,18269143,2022-02
+,,,Opening,2022-02-01,* beginning-of-month balance,10B100040,Accounts payable - trade,,,,,0,0,,,,,,,120443824,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10B100630,Accounts payable - other,,,,,0,0,,,,,,,2005614,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10B100640,Income taxes payable,,,,,0,0,,,,,,,0,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10B100650,Accrued business office tax,,,,,0,0,,,,,,,0,2022-02
@@ -19,11 +19,11 @@
 ,,,Opening,2022-02-01,* beginning-of-month balance,10B200080,Long-term borrowings,,,,,0,0,,,,,,,7000000,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10D100101,Sales from electronic transactions,,,,,0,0,,,,,,,207702515,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10D100102,Sales from traditional transactions,,,,,0,0,,,,,,,512691324,2022-02
-,,,Opening,2022-02-01,* beginning-of-month balance,10D100111,Sales allowance and returns from electronic transactions from electronic transactions,,,,,0,0,,,,,,,285568,2022-02
-,,,Opening,2022-02-01,* beginning-of-month balance,10D100112,Sales allowance and returns from traditional transactions,,,,,0,0,,,,,,,981876,2022-02
+,,,Opening,2022-02-01,* beginning-of-month balance,10D100111,Sales allowance and returns from electronic transactions from electronic transactions,,,,,0,0,,,,,,,149368,2022-02
+,,,Opening,2022-02-01,* beginning-of-month balance,10D100112,Sales allowance and returns from traditional transactions,,,,,0,0,,,,,,,27429095,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10E100100,Beginning merchandise inventory,,,,,0,0,,,,,,,0,2022-02
-,,,Opening,2022-02-01,* beginning-of-month balance,10E100121,Purchase allowance and returns from electronic transactions,,,,,0,0,,,,,,,271189,2022-02
-,,,Opening,2022-02-01,* beginning-of-month balance,10E100122,Purchase allowance and returns from traditional transactions,,,,,0,0,,,,,,,462394,2022-02
+,,,Opening,2022-02-01,* beginning-of-month balance,10E100121,Purchase allowance and returns from electronic transactions,,,,,0,0,,,,,,,5459985,2022-02
+,,,Opening,2022-02-01,* beginning-of-month balance,10E100122,Purchase allowance and returns from traditional transactions,,,,,0,0,,,,,,,7158495,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10E100131,Cost of purchased goods from electronic transactions,,,,,0,0,,,,,,,150611466,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10E100132,Cost of purchased goods from traditional transactions,,,,,0,0,,,,,,,278838184,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10E100140,Ending merchandise inventory,,,,,0,0,,,,,,,0,2022-02
@@ -42,7 +42,7 @@
 ,,,Opening,2022-02-01,* beginning-of-month balance,10E200520,Other salaries,,,,,0,0,,,,,,,4103762,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10E200540,Legal welfare expenses,,,,,0,0,,,,,,,8600466,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10E200600,Fee expenses,,,,,0,0,,,,,,,1397100,2022-02
-,,,Opening,2022-02-01,* beginning-of-month balance,10E200690,Commission expenses,,,,,0,0,,,,,,,120791,2022-02
+,,,Opening,2022-02-01,* beginning-of-month balance,10E200690,Commission expenses,,,,,0,0,,,,,,,14903369,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10E200720,Rent expenses on land and buildings,,,,,0,0,,,,,,,34460000,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10E200730,Rent expenses on land and buildings,,,,,0,0,,,,,,,2938500,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10E200870,Freight costs,,,,,0,0,,,,,,,43626856,2022-02
@@ -57,155 +57,147 @@
 ,,,Opening,2022-02-01,* beginning-of-month balance,10E201270,Miscellaneous expenses,,,,,0,0,,,,,,,4816476,2022-02
 ,,,Opening,2022-02-01,* beginning-of-month balance,10E300020,Interest expenses,,,,,0,0,,,,,,,1136418,2022-02
 2360,1,67,Debit,2022-02-01,Tissue and other,10E201270,Miscellaneous expenses,,,,,1029,0,10A100020,Cash and deposits,,,,,4817505,2022-02
-2360,1,67,Credit,2022-02-01,Tissue and other,10A100020,Cash and deposits,,,,,0,1029,10E201270,Miscellaneous expenses,,,,,71389878,2022-02
+2360,1,67,Credit,2022-02-01,Tissue and other,10A100020,Cash and deposits,,,,,0,1029,10E201270,Miscellaneous expenses,,,,,31624632,2022-02
 2361,1,18,Debit,2022-02-02,Travel Expenses,10E201230,Travel and transportation expenses,,,,,14500,0,10A100020,Cash and deposits,,,,,10870301,2022-02
-2361,1,18,Credit,2022-02-02,Travel Expenses,10A100020,Cash and deposits,,,,,0,14500,10E201230,Travel and transportation expenses,,,,,71375378,2022-02
+2361,1,18,Credit,2022-02-02,Travel Expenses,10A100020,Cash and deposits,,,,,0,14500,10E201230,Travel and transportation expenses,,,,,31610132,2022-02
 2362,1,94,Debit,2022-02-02,"Kitchen supplies, etc.",10E201270,Miscellaneous expenses,,,,,1012,0,10A100020,Cash and deposits,,,,,4818517,2022-02
-2362,1,94,Credit,2022-02-02,"Kitchen supplies, etc.",10A100020,Cash and deposits,,,,,0,1012,10E201270,Miscellaneous expenses,,,,,71374366,2022-02
+2362,1,94,Credit,2022-02-02,"Kitchen supplies, etc.",10A100020,Cash and deposits,,,,,0,1012,10E201270,Miscellaneous expenses,,,,,31609120,2022-02
 2363,1,102,Debit,2022-02-02,Golf prize Dai Abe Shoten,10E200150,Entertainment expenses,,,,,5250,0,10A100020,Cash and deposits,,,,,3647306,2022-02
-2363,1,102,Credit,2022-02-02,Golf prize Dai Abe Shoten,10A100020,Cash and deposits,,,,,0,5250,10E200150,Entertainment expenses,,,,,71369116,2022-02
+2363,1,102,Credit,2022-02-02,Golf prize Dai Abe Shoten,10A100020,Cash and deposits,,,,,0,5250,10E200150,Entertainment expenses,,,,,31603870,2022-02
 2364,1,150,Debit,2022-02-02,Food and Beverage Cost Izakaya Kayu 4 People,10E200150,Entertainment expenses,,,,,14172,0,10A100020,Cash and deposits,,,,,3661478,2022-02
-2364,1,150,Credit,2022-02-02,Food and Beverage Cost Izakaya Kayu 4 People,10A100020,Cash and deposits,,,,,0,29639,10E200150,Entertainment expenses,,,,,71339477,2022-02
+2364,1,150,Credit,2022-02-02,Food and Beverage Cost Izakaya Kayu 4 People,10A100020,Cash and deposits,,,,,0,29639,10E200150,Entertainment expenses,,,,,31574231,2022-02
 2364,2,150,Debit,2022-02-02,Food and Beverage Cost Bar Satsuma 4 People,10E200150,Entertainment expenses,,,,,15467,0,10A100020,Cash and deposits,,,,,3676945,2022-02
 2365,1,41,Debit,2022-02-03,Condolence Money,10E200150,Entertainment expenses,,,,,10000,0,10A100020,Cash and deposits,,,,,3686945,2022-02
-2365,1,41,Credit,2022-02-03,Condolence Money,10A100020,Cash and deposits,,,,,0,10000,10E200150,Entertainment expenses,,,,,71329477,2022-02
+2365,1,41,Credit,2022-02-03,Condolence Money,10A100020,Cash and deposits,,,,,0,10000,10E200150,Entertainment expenses,,,,,31564231,2022-02
 2366,1,134,Debit,2022-02-03,Paper,10E201110,Office supplies expenses,,,,,10500,0,10B100630,Accounts payable - other,,,,,1277014,2022-02
 2366,1,134,Credit,2022-02-03,Paper,10B100630,Accounts payable - other,,,,,0,10500,10E201110,Office supplies expenses,,,,,2016114,2022-02
 2367,1,19,Debit,2022-02-04,Travel Expenses,10E201230,Travel and transportation expenses,,,,,8500,0,10A100020,Cash and deposits,,,,,10878801,2022-02
-2367,1,19,Credit,2022-02-04,Travel Expenses,10A100020,Cash and deposits,,,,,0,8500,10E201230,Travel and transportation expenses,,,,,71320977,2022-02
+2367,1,19,Credit,2022-02-04,Travel Expenses,10A100020,Cash and deposits,,,,,0,8500,10E201230,Travel and transportation expenses,,,,,31555731,2022-02
 2368,1,147,Debit,2022-02-04,Gasoline Cost,10E201120,Vehicle expenses,,,,,6693,0,10B100630,Accounts payable - other,,,,,6255092,2022-02
 2368,1,147,Credit,2022-02-04,Gasoline Cost,10B100630,Accounts payable - other,,,,,0,6693,10E201120,Vehicle expenses,,,,,2022807,2022-02
 2369,1,20,Debit,2022-02-05,Travel Expenses,10E201230,Travel and transportation expenses,,,,,42000,0,10A100020,Cash and deposits,,,,,10920801,2022-02
-2369,1,20,Credit,2022-02-05,Travel Expenses,10A100020,Cash and deposits,,,,,0,42000,10E201230,Travel and transportation expenses,,,,,71278977,2022-02
+2369,1,20,Credit,2022-02-05,Travel Expenses,10A100020,Cash and deposits,,,,,0,42000,10E201230,Travel and transportation expenses,,,,,31513731,2022-02
 2370,1,76,Debit,2022-02-05,Employee meals,10E200140,Welfare expenses,,,,,15608,0,10B100630,Accounts payable - other,,,,,4536167,2022-02
 2370,1,76,Credit,2022-02-05,Employee meals,10B100630,Accounts payable - other,,,,,0,15608,10E200140,Welfare expenses,,,,,2038415,2022-02
-2371,1,85,Debit,2022-02-05,"February 5th Slip No. 432 Watanabe Industries Co., Ltd.",10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,1583709,0,10A100090,Accounts receivable - trade,22,"Watanabe Industries Co., Ltd.",,,72862686,2022-02
-2371,1,85,Credit,2022-02-05,"February 5th Slip No. 432 Watanabe Industries Co., Ltd.",10A100090,Accounts receivable - trade,22,"Watanabe Industries Co., Ltd.",,,0,1583709,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,124853226,2022-02
-2371,2,85,Debit,2022-02-05,"February 5th Slip No. 432 Watanabe Industries Co., Ltd.",10E200690,Commission expenses,,,,,472,0,10A100090,Accounts receivable - trade,22,"Watanabe Industries Co., Ltd.",,,121263,2022-02
-2371,2,85,Credit,2022-02-05,"February 5th Slip No. 432 Watanabe Industries Co., Ltd.",10A100090,Accounts receivable - trade,22,"Watanabe Industries Co., Ltd.",,,0,472,10E200690,Commission expenses,,,,,124852754,2022-02
-2372,1,86,Debit,2022-02-05,"February 5th Slip No. 433 Sasaki Sales Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,2049016,0,10A100090,Accounts receivable - trade,26,"Sasaki Sales Co., Ltd.",,,74911702,2022-02
-2372,1,86,Credit,2022-02-05,"February 5th Slip No. 433 Sasaki Sales Co., Ltd.",10A100090,Accounts receivable - trade,26,"Sasaki Sales Co., Ltd.",,,0,2049016,10A100020,Cash and deposits,20,Mizuho Main Branch,,,122803738,2022-02
-2372,2,86,Debit,2022-02-05,"February 5th Slip No. 433 Sasaki Sales Co., Ltd.",10E200690,Commission expenses,,,,,472,0,10A100090,Accounts receivable - trade,26,"Sasaki Sales Co., Ltd.",,,121735,2022-02
-2372,2,86,Credit,2022-02-05,"February 5th Slip No. 433 Sasaki Sales Co., Ltd.",10A100090,Accounts receivable - trade,26,"Sasaki Sales Co., Ltd.",,,0,472,10E200690,Commission expenses,,,,,122803266,2022-02
-2373,1,87,Debit,2022-02-05,"February 5th Slip No. 434 Iwashita Trading Co., Ltd.",10A100020,Cash and deposits,30,Mitsui Nagoya,,,1607260,0,10A100090,Accounts receivable - trade,27,"Iwashita Trading Co., Ltd.",,,76518962,2022-02
-2373,1,87,Credit,2022-02-05,"February 5th Slip No. 434 Iwashita Trading Co., Ltd.",10A100090,Accounts receivable - trade,27,"Iwashita Trading Co., Ltd.",,,0,1607260,10A100020,Cash and deposits,30,Mitsui Nagoya,,,121196006,2022-02
+2371,1,85,Debit,2022-02-05,"February 5th Slip No. 432 Watanabe Industries Co., Ltd.",10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,2036596,0,10A100090,Accounts receivable - trade,22,"Watanabe Industries Co., Ltd.",,,33550327,2022-02
+2371,1,85,Credit,2022-02-05,"February 5th Slip No. 432 Watanabe Industries Co., Ltd.",10A100090,Accounts receivable - trade,22,"Watanabe Industries Co., Ltd.",,,0,2036596,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,215541812,2022-02
+2372,1,86,Debit,2022-02-05,"February 5th Slip No. 433 Sasaki Sales Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,2366012,0,10A100090,Accounts receivable - trade,26,"Sasaki Sales Co., Ltd.",,,35916339,2022-02
+2372,1,86,Credit,2022-02-05,"February 5th Slip No. 433 Sasaki Sales Co., Ltd.",10A100090,Accounts receivable - trade,26,"Sasaki Sales Co., Ltd.",,,0,2366012,10A100020,Cash and deposits,20,Mizuho Main Branch,,,213175800,2022-02
+2373,1,87,Debit,2022-02-05,"February 5th Slip No. 434 Iwashita Trading Co., Ltd.",10A100020,Cash and deposits,30,Mitsui Nagoya,,,1655306,0,10A100090,Accounts receivable - trade,27,"Iwashita Trading Co., Ltd.",,,37571645,2022-02
+2373,1,87,Credit,2022-02-05,"February 5th Slip No. 434 Iwashita Trading Co., Ltd.",10A100090,Accounts receivable - trade,27,"Iwashita Trading Co., Ltd.",,,0,1655306,10A100020,Cash and deposits,30,Mitsui Nagoya,,,211520494,2022-02
 2374,1,133,Debit,2022-02-05,Tax Accountant Fee,10E200600,Fee expenses,,,,,139710,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,1536810,2022-02
-2374,1,133,Credit,2022-02-05,Tax Accountant Fee,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,139710,10E200600,Fee expenses,,,,,76379252,2022-02
+2374,1,133,Credit,2022-02-05,Tax Accountant Fee,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,139710,10E200600,Fee expenses,,,,,37431935,2022-02
 2375,1,142,Debit,2022-02-05,Highway Toll,10E201120,Vehicle expenses,,,,,4991,0,10A100020,Cash and deposits,,,,,6260083,2022-02
-2375,1,142,Credit,2022-02-05,Highway Toll,10A100020,Cash and deposits,,,,,0,12556,10E201120,Vehicle expenses,,,,,76366696,2022-02
+2375,1,142,Credit,2022-02-05,Highway Toll,10A100020,Cash and deposits,,,,,0,12556,10E201120,Vehicle expenses,,,,,37419379,2022-02
 2375,2,142,Debit,2022-02-05,Highway Toll,10E201120,Vehicle expenses,,,,,3004,0,10A100020,Cash and deposits,,,,,6263087,2022-02
 2375,3,142,Debit,2022-02-05,Highway Toll,10E201120,Vehicle expenses,,,,,4561,0,10A100020,Cash and deposits,,,,,6267648,2022-02
 2376,1,161,Debit,2022-02-05,Travel Expenses,10E201230,Travel and transportation expenses,,,,,6980,0,10A100020,Cash and deposits,,,,,10927781,2022-02
-2376,1,161,Credit,2022-02-05,Travel Expenses,10A100020,Cash and deposits,,,,,0,6980,10E201230,Travel and transportation expenses,,,,,76359716,2022-02
+2376,1,161,Credit,2022-02-05,Travel Expenses,10A100020,Cash and deposits,,,,,0,6980,10E201230,Travel and transportation expenses,,,,,37412399,2022-02
 2377,1,21,Debit,2022-02-06,JR,10E201230,Travel and transportation expenses,,,,,59600,0,10A100020,Cash and deposits,,,,,10987381,2022-02
-2377,1,21,Credit,2022-02-06,JR,10A100020,Cash and deposits,,,,,0,59600,10E201230,Travel and transportation expenses,,,,,76300116,2022-02
+2377,1,21,Credit,2022-02-06,JR,10A100020,Cash and deposits,,,,,0,59600,10E201230,Travel and transportation expenses,,,,,37352799,2022-02
 2378,1,106,Debit,2022-02-06,Golf Play Fee,10E200150,Entertainment expenses,,,,,18600,0,10A100020,Cash and deposits,,,,,3705545,2022-02
-2378,1,106,Credit,2022-02-06,Golf Play Fee,10A100020,Cash and deposits,,,,,0,18600,10E200150,Entertainment expenses,,,,,76281516,2022-02
+2378,1,106,Credit,2022-02-06,Golf Play Fee,10A100020,Cash and deposits,,,,,0,18600,10E200150,Entertainment expenses,,,,,37334199,2022-02
 2379,1,110,Debit,2022-02-06,Taxi Fare,10E201230,Travel and transportation expenses,,,,,2290,0,10A100020,Cash and deposits,,,,,10989671,2022-02
-2379,1,110,Credit,2022-02-06,Taxi Fare,10A100020,Cash and deposits,,,,,0,2290,10E201230,Travel and transportation expenses,,,,,76279226,2022-02
+2379,1,110,Credit,2022-02-06,Taxi Fare,10A100020,Cash and deposits,,,,,0,2290,10E201230,Travel and transportation expenses,,,,,37331909,2022-02
 2380,1,149,Debit,2022-02-06,Coffee fee 2 people,10E200150,Entertainment expenses,,,,,1260,0,10A100020,Cash and deposits,,,,,3706805,2022-02
-2380,1,149,Credit,2022-02-06,Coffee fee 2 people,10A100020,Cash and deposits,,,,,0,1260,10E200150,Entertainment expenses,,,,,76277966,2022-02
+2380,1,149,Credit,2022-02-06,Coffee fee 2 people,10A100020,Cash and deposits,,,,,0,1260,10E200150,Entertainment expenses,,,,,37330649,2022-02
 2381,1,43,Debit,2022-02-07,Coffee Cost OtherOthers 2 People,10E200150,Entertainment expenses,,,,,2210,0,10A100020,Cash and deposits,,,,,3709015,2022-02
-2381,1,43,Credit,2022-02-07,Coffee Cost OtherOthers 2 People,10A100020,Cash and deposits,,,,,0,2210,10E200150,Entertainment expenses,,,,,76275756,2022-02
+2381,1,43,Credit,2022-02-07,Coffee Cost OtherOthers 2 People,10A100020,Cash and deposits,,,,,0,2210,10E200150,Entertainment expenses,,,,,37328439,2022-02
 2382,1,58,Debit,2022-02-07,Travel Expenses,10E201230,Travel and transportation expenses,,,,,70000,0,10A100020,Cash and deposits,,,,,11059671,2022-02
-2382,1,58,Credit,2022-02-07,Travel Expenses,10A100020,Cash and deposits,,,,,0,70000,10E201230,Travel and transportation expenses,,,,,76205756,2022-02
+2382,1,58,Credit,2022-02-07,Travel Expenses,10A100020,Cash and deposits,,,,,0,70000,10E201230,Travel and transportation expenses,,,,,37258439,2022-02
 2383,1,143,Debit,2022-02-07,Vehicle management fee,10E201120,Vehicle expenses,,,,,23200,0,10A100020,Cash and deposits,,,,,6290848,2022-02
-2383,1,143,Credit,2022-02-07,Vehicle management fee,10A100020,Cash and deposits,,,,,0,23200,10E201120,Vehicle expenses,,,,,76182556,2022-02
+2383,1,143,Credit,2022-02-07,Vehicle management fee,10A100020,Cash and deposits,,,,,0,23200,10E201120,Vehicle expenses,,,,,37235239,2022-02
 2384,1,50,Debit,2022-02-08,Highway Toll,10E201120,Vehicle expenses,,,,,1200,0,10A100020,Cash and deposits,,,,,6292048,2022-02
-2384,1,50,Credit,2022-02-08,Highway Toll,10A100020,Cash and deposits,,,,,0,1200,10E201120,Vehicle expenses,,,,,76181356,2022-02
+2384,1,50,Credit,2022-02-08,Highway Toll,10A100020,Cash and deposits,,,,,0,1200,10E201120,Vehicle expenses,,,,,37234039,2022-02
 2385,1,75,Debit,2022-02-08,Gasoline Cost,10E201120,Vehicle expenses,,,,,6630,0,10A100020,Cash and deposits,,,,,6298678,2022-02
-2385,1,75,Credit,2022-02-08,Gasoline Cost,10A100020,Cash and deposits,,,,,0,9678,10E201120,Vehicle expenses,,,,,76171678,2022-02
+2385,1,75,Credit,2022-02-08,Gasoline Cost,10A100020,Cash and deposits,,,,,0,9678,10E201120,Vehicle expenses,,,,,37224361,2022-02
 2385,2,75,Debit,2022-02-08,Highway Toll,10E201120,Vehicle expenses,,,,,2286,0,10A100020,Cash and deposits,,,,,6300964,2022-02
 2385,3,75,Debit,2022-02-08,Parking Fee,10E201120,Vehicle expenses,,,,,762,0,10A100020,Cash and deposits,,,,,6301726,2022-02
 2386,1,164,Debit,2022-02-08,Office Supplies,10E201110,Office supplies expenses,,,,,898,0,10A100020,Cash and deposits,,,,,1277912,2022-02
-2386,1,164,Credit,2022-02-08,Office Supplies,10A100020,Cash and deposits,,,,,0,898,10E201110,Office supplies expenses,,,,,76170780,2022-02
+2386,1,164,Credit,2022-02-08,Office Supplies,10A100020,Cash and deposits,,,,,0,898,10E201110,Office supplies expenses,,,,,37223463,2022-02
 2387,1,152,Debit,2022-02-09,Golf Play Fee,10E200150,Entertainment expenses,,,,,12000,0,10A100020,Cash and deposits,,,,,3721015,2022-02
-2387,1,152,Credit,2022-02-09,Golf Play Fee,10A100020,Cash and deposits,,,,,0,12000,10E200150,Entertainment expenses,,,,,76158780,2022-02
+2387,1,152,Credit,2022-02-09,Golf Play Fee,10A100020,Cash and deposits,,,,,0,12000,10E200150,Entertainment expenses,,,,,37211463,2022-02
 2388,1,10,Debit,2022-02-10,Gasoline Cost,10E201120,Vehicle expenses,,,,,3000,0,10A100020,Cash and deposits,,,,,6304726,2022-02
-2388,1,10,Credit,2022-02-10,Gasoline Cost,10A100020,Cash and deposits,,,,,0,3000,10E201120,Vehicle expenses,,,,,76155780,2022-02
-2389,1,60,Debit,2022-02-10,Withdrawal,10A100020,Cash and deposits,,,,,500000,0,10A100020,Cash and deposits,1,Mizuho Bank,,,76655780,2022-02
-2389,1,60,Credit,2022-02-10,Withdrawal,10A100020,Cash and deposits,1,Mizuho Bank,,,0,500000,10A100020,Cash and deposits,,,,,76155780,2022-02
+2388,1,10,Credit,2022-02-10,Gasoline Cost,10A100020,Cash and deposits,,,,,0,3000,10E201120,Vehicle expenses,,,,,37208463,2022-02
+2389,1,60,Debit,2022-02-10,Withdrawal,10A100020,Cash and deposits,,,,,500000,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,37708463,2022-02
+2389,1,60,Credit,2022-02-10,Withdrawal,10A100020,Cash and deposits,20,Mizuho Head Office,,,0,500000,10A100020,Cash and deposits,,,,,37208463,2022-02
 2390,1,62,Debit,2022-02-10,Withholding Tax Payment,10B100690,Deposits received,3,Withholding Tax,,,232482,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,4158599,2022-02
-2390,1,62,Credit,2022-02-10,Withholding Tax Payment,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,681982,10B100690,Deposits received,3,Withholding Tax,,,75473798,2022-02
+2390,1,62,Credit,2022-02-10,Withholding Tax Payment,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,681982,10B100690,Deposits received,3,Withholding Tax,,,36526481,2022-02
 2390,2,62,Debit,2022-02-10,Resident Tax Payment,10B100690,Deposits received,2,Resident Tax,,,449500,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,3709099,2022-02
 2391,1,65,Debit,2022-02-10,Wired (Cable),10E201270,Miscellaneous expenses,,,,,5000,0,10B100630,Accounts payable - other,,,,,4823517,2022-02
 2391,1,65,Credit,2022-02-10,Wired (Cable),10B100630,Accounts payable - other,,,,,0,39286,10E201270,Miscellaneous expenses,,,,,2077701,2022-02
 2391,2,65,Debit,2022-02-10,Security Fee,10E201270,Miscellaneous expenses,,,,,34286,0,10B100630,Accounts payable - other,,,,,4857803,2022-02
 2392,1,76,Debit,2022-02-10,Gasoline Cost,10E201120,Vehicle expenses,,,,,6012,0,10A100020,Cash and deposits,,,,,6310738,2022-02
-2392,1,76,Credit,2022-02-10,Gasoline Cost,10A100020,Cash and deposits,,,,,0,6012,10E201120,Vehicle expenses,,,,,75467786,2022-02
+2392,1,76,Credit,2022-02-10,Gasoline Cost,10A100020,Cash and deposits,,,,,0,6012,10E201120,Vehicle expenses,,,,,36520469,2022-02
 2393,1,79,Debit,2022-02-10,Travel Expenses,10E201230,Travel and transportation expenses,,,,,22000,0,10A100020,Cash and deposits,,,,,11081671,2022-02
-2393,1,79,Credit,2022-02-10,Travel Expenses,10A100020,Cash and deposits,,,,,0,22000,10E201230,Travel and transportation expenses,,,,,75445786,2022-02
-2394,1,88,Debit,2022-02-10,"February 10th Slip No. 435 Check Co., Ltd.",10B100040,Accounts payable - trade,3,"Check Co., Ltd.",,,2151301,0,10A100090,Accounts receivable - trade,3,"Check Co., Ltd.",,,96091942,2022-02
-2394,1,88,Credit,2022-02-10,"February 10th Slip No. 435 Check Co., Ltd.",10A100090,Accounts receivable - trade,3,"Check Co., Ltd.",,,0,2151301,10B100040,Accounts payable - trade,3,"Check Co., Ltd.",,,119044705,2022-02
-2395,1,89,Debit,2022-02-10,"February 10th Slip No. 436 Fujita Tokyo Headquarters Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,16012587,0,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,91458373,2022-02
-2395,1,89,Credit,2022-02-10,"February 10th Slip No. 436 Fujita Tokyo Headquarters Co., Ltd.",10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,0,16012587,10A100020,Cash and deposits,20,Mizuho Main Branch,,,103032118,2022-02
-2395,2,89,Debit,2022-02-10,"February 10th Slip No. 436 Fujita Tokyo Headquarters Co., Ltd.",10E200690,Commission expenses,,,,,735,0,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,122470,2022-02
-2395,2,89,Credit,2022-02-10,"February 10th Slip No. 436 Fujita Tokyo Headquarters Co., Ltd.",10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,0,735,10E200690,Commission expenses,,,,,103031383,2022-02
-2396,1,90,Debit,2022-02-10,"February 10th Slip No. 437 Minami Co., Ltd.",10A100020,Cash and deposits,30,Mitsui Nagoya,,,649009,0,10A100090,Accounts receivable - trade,19,"Minami Co., Ltd.",,,92107382,2022-02
-2396,1,90,Credit,2022-02-10,"February 10th Slip No. 437 Minami Co., Ltd.",10A100090,Accounts receivable - trade,19,"Minami Co., Ltd.",,,0,649009,10A100020,Cash and deposits,30,Mitsui Nagoya,,,102382374,2022-02
-2396,2,90,Debit,2022-02-10,"February 10th Slip No. 437 Minami Co., Ltd.",10E200690,Commission expenses,,,,,735,0,10A100090,Accounts receivable - trade,19,"Minami Co., Ltd.",,,123205,2022-02
-2396,2,90,Credit,2022-02-10,"February 10th Slip No. 437 Minami Co., Ltd.",10A100090,Accounts receivable - trade,19,"Minami Co., Ltd.",,,0,735,10E200690,Commission expenses,,,,,102381639,2022-02
-2397,1,91,Debit,2022-02-10,February 10th Slip No. 438 Kameda Department Store,10A100060,Notes receivable - trade,,,,,10047298,0,10A100090,Accounts receivable - trade,28,Kameda Department Store,,,44848884,2022-02
-2397,1,91,Credit,2022-02-10,February 10th Slip No. 438 Kameda Department Store,10A100090,Accounts receivable - trade,28,Kameda Department Store,,,0,10047298,10A100060,Notes receivable - trade,,,,,92334341,2022-02
-2398,1,92,Debit,2022-02-10,"February 10th Slip No. 333 Check Co., Ltd.",10B100040,Accounts payable - trade,3,"Check Co., Ltd.",,,2624675,0,10B100030,Notes payable - trade,,,,,93467267,2022-02
-2398,1,92,Credit,2022-02-10,"February 10th Slip No. 333 Check Co., Ltd.",10B100030,Notes payable - trade,,,,,0,2624675,10B100040,Accounts payable - trade,3,"Check Co., Ltd.",,,30685322,2022-02
-2399,1,93,Debit,2022-02-10,"February 10th Slip No. 334 Yamashita Co., Ltd.",10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,560347,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,92906920,2022-02
-2399,1,93,Credit,2022-02-10,"February 10th Slip No. 334 Yamashita Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,560347,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,91547035,2022-02
-2400,1,137,Debit,2022-02-10,Bill Due Date Check,10B100030,Notes payable - trade,,,,,2953678,0,10A100020,Cash and deposits,1,Mizuho Bank,,,27731644,2022-02
-2400,1,137,Credit,2022-02-10,Bill Due Date Check,10A100020,Cash and deposits,1,Mizuho Bank,,,0,2953678,10B100030,Notes payable - trade,,,,,88593357,2022-02
+2393,1,79,Credit,2022-02-10,Travel Expenses,10A100020,Cash and deposits,,,,,0,22000,10E201230,Travel and transportation expenses,,,,,36498469,2022-02
+2395,1,89,Debit,2022-02-10,"February 10th Slip No. 436 Fujita Tokyo Headquarters Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,2823042,0,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,39321511,2022-02
+2395,1,89,Credit,2022-02-10,"February 10th Slip No. 436 Fujita Tokyo Headquarters Co., Ltd.",10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,0,2823042,10A100020,Cash and deposits,20,Mizuho Main Branch,,,208697452,2022-02
+2395,2,89,Debit,2022-02-10,"February 10th Slip No. 436 Fujita Tokyo Headquarters Co., Ltd.",10E200690,Commission expenses,,,,,3452470,0,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,18355839,2022-02
+2395,2,89,Credit,2022-02-10,"February 10th Slip No. 436 Fujita Tokyo Headquarters Co., Ltd.",10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,0,3452470,10E200690,Commission expenses,,,,,205244982,2022-02
+2396,1,90,Debit,2022-02-10,"February 10th Slip No. 437 Minami Co., Ltd.",10A100020,Cash and deposits,30,Mitsui Nagoya,,,906784,0,10A100090,Accounts receivable - trade,19,"Minami Co., Ltd.",,,40228295,2022-02
+2396,1,90,Credit,2022-02-10,"February 10th Slip No. 437 Minami Co., Ltd.",10A100090,Accounts receivable - trade,19,"Minami Co., Ltd.",,,0,906784,10A100020,Cash and deposits,30,Mitsui Nagoya,,,204338198,2022-02
+2397,1,91,Debit,2022-02-10,February 10th Slip No. 438 Kameda Department Store,10A100060,Notes receivable - trade,,,,,11930631,0,10A100090,Accounts receivable - trade,28,Kameda Department Store,,,-22773165,2022-02
+2397,1,91,Credit,2022-02-10,February 10th Slip No. 438 Kameda Department Store,10A100090,Accounts receivable - trade,28,Kameda Department Store,,,0,11930631,10A100060,Notes receivable - trade,,,,,192407567,2022-02
+2398,1,92,Debit,2022-02-10,"February 10th Slip No. 333 Check Co., Ltd.",10B100040,Accounts payable - trade,3,"Check Co., Ltd.",,,5031519,0,10B100030,Notes payable - trade,,,,,115412305,2022-02
+2398,1,92,Credit,2022-02-10,"February 10th Slip No. 333 Check Co., Ltd.",10B100030,Notes payable - trade,,,,,0,5031519,10B100040,Accounts payable - trade,3,"Check Co., Ltd.",,,23300662,2022-02
+2399,1,93,Debit,2022-02-10,"February 10th Slip No. 334 Yamashita Co., Ltd.",10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,102816,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,115309489,2022-02
+2399,1,93,Credit,2022-02-10,"February 10th Slip No. 334 Yamashita Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,102816,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,40125479,2022-02
+2400,1,137,Debit,2022-02-10,Bill Due Date Check,10B100030,Notes payable - trade,,,,,2953678,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,20346984,2022-02
+2400,1,137,Credit,2022-02-10,Bill Due Date Check,10A100020,Cash and deposits,20,Mizuho Head Office,,,0,2953678,10B100030,Notes payable - trade,,,,,37171801,2022-02
 2401,1,162,Debit,2022-02-10,Meeting Meal Cost,10E201130,Meeting expenses,,,,,24995,0,10A100020,Cash and deposits,,,,,305424,2022-02
-2401,1,162,Credit,2022-02-10,Meeting Meal Cost,10A100020,Cash and deposits,,,,,0,24995,10E201130,Meeting expenses,,,,,88568362,2022-02
+2401,1,162,Credit,2022-02-10,Meeting Meal Cost,10A100020,Cash and deposits,,,,,0,24995,10E201130,Meeting expenses,,,,,37146806,2022-02
 2402,1,168,Debit,2022-02-10,Wired (Cable),10E201270,Miscellaneous expenses,,,,,6000,0,10B100630,Accounts payable - other,,,,,4863803,2022-02
 2402,1,168,Credit,2022-02-10,Wired (Cable),10B100630,Accounts payable - other,,,,,0,48858,10E201270,Miscellaneous expenses,,,,,2126559,2022-02
 2402,2,168,Debit,2022-02-10,Security Fee,10E201270,Miscellaneous expenses,,,,,42858,0,10B100630,Accounts payable - other,,,,,4906661,2022-02
 2403,1,22,Debit,2022-02-11,Travel Expenses,10E201230,Travel and transportation expenses,,,,,23000,0,10A100020,Cash and deposits,,,,,11104671,2022-02
-2403,1,22,Credit,2022-02-11,Travel Expenses,10A100020,Cash and deposits,,,,,0,23000,10E201230,Travel and transportation expenses,,,,,88545362,2022-02
+2403,1,22,Credit,2022-02-11,Travel Expenses,10A100020,Cash and deposits,,,,,0,23000,10E201230,Travel and transportation expenses,,,,,37123806,2022-02
 2404,1,33,Debit,2022-02-11,Rent Payment,10E200720,Rent expenses on land and buildings,,,,,320000,0,10A100020,Cash and deposits,10,Hokkaido Station Front,,,34780000,2022-02
-2404,1,33,Credit,2022-02-11,Rent Payment,10A100020,Cash and deposits,10,Hokkaido Station Front,,,0,320000,10E200720,Rent expenses on land and buildings,,,,,88225362,2022-02
+2404,1,33,Credit,2022-02-11,Rent Payment,10A100020,Cash and deposits,10,Hokkaido Station Front,,,0,320000,10E200720,Rent expenses on land and buildings,,,,,36803806,2022-02
 2404,2,33,Debit,2022-02-11,Telephone Cost,10E200180,Communication expenses,,,,,171286,0,10A100020,Cash and deposits,10,Hokkaido Station Front,,,11215510,2022-02
-2404,2,33,Credit,2022-02-11,Telephone Cost,10A100020,Cash and deposits,10,Hokkaido Station Front,,,0,171286,10E200180,Communication expenses,,,,,88054076,2022-02
+2404,2,33,Credit,2022-02-11,Telephone Cost,10A100020,Cash and deposits,10,Hokkaido Station Front,,,0,171286,10E200180,Communication expenses,,,,,36632520,2022-02
 2405,1,63,Debit,2022-02-11,Rent Payment,10E200720,Rent expenses on land and buildings,,,,,1260000,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,36040000,2022-02
-2405,1,63,Credit,2022-02-11,Rent Payment,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,1260000,10E200720,Rent expenses on land and buildings,,,,,86794076,2022-02
+2405,1,63,Credit,2022-02-11,Rent Payment,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,1260000,10E200720,Rent expenses on land and buildings,,,,,35372520,2022-02
 2406,1,64,Debit,2022-02-11,Rent Payment,10E200720,Rent expenses on land and buildings,,,,,840000,0,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,36880000,2022-02
-2406,1,64,Credit,2022-02-11,Rent Payment,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,840000,10E200720,Rent expenses on land and buildings,,,,,85954076,2022-02
+2406,1,64,Credit,2022-02-11,Rent Payment,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,840000,10E200720,Rent expenses on land and buildings,,,,,34532520,2022-02
 2407,1,73,Debit,2022-02-11,Meal Cost,10E200150,Entertainment expenses,,,,,26530,0,10A100020,Cash and deposits,,,,,3747545,2022-02
-2407,1,73,Credit,2022-02-11,Meal Cost,10A100020,Cash and deposits,,,,,0,26530,10E200150,Entertainment expenses,,,,,85927546,2022-02
+2407,1,73,Credit,2022-02-11,Meal Cost,10A100020,Cash and deposits,,,,,0,26530,10E200150,Entertainment expenses,,,,,34505990,2022-02
 2408,1,80,Debit,2022-02-11,JR,10E201230,Travel and transportation expenses,,,,,10000,0,10A100020,Cash and deposits,,,,,11114671,2022-02
-2408,1,80,Credit,2022-02-11,JR,10A100020,Cash and deposits,,,,,0,10000,10E201230,Travel and transportation expenses,,,,,85917546,2022-02
+2408,1,80,Credit,2022-02-11,JR,10A100020,Cash and deposits,,,,,0,10000,10E201230,Travel and transportation expenses,,,,,34495990,2022-02
 2409,1,85,Debit,2022-02-11,Telephone Cost,10E200180,Communication expenses,,,,,83240,0,10A100020,Cash and deposits,30,Mitsui Nagoya,,,11298750,2022-02
-2409,1,85,Credit,2022-02-11,Telephone Cost,10A100020,Cash and deposits,30,Mitsui Nagoya,,,0,83240,10E200180,Communication expenses,,,,,85834306,2022-02
+2409,1,85,Credit,2022-02-11,Telephone Cost,10A100020,Cash and deposits,30,Mitsui Nagoya,,,0,83240,10E200180,Communication expenses,,,,,34412750,2022-02
 2410,1,112,Debit,2022-02-11,Telephone Cost,10E200180,Communication expenses,,,,,159346,0,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,11458096,2022-02
-2410,1,112,Credit,2022-02-11,Telephone Cost,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,159346,10E200180,Communication expenses,,,,,85674960,2022-02
+2410,1,112,Credit,2022-02-11,Telephone Cost,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,159346,10E200180,Communication expenses,,,,,34253404,2022-02
 2411,1,129,Debit,2022-02-11,Rent Payment,10E200720,Rent expenses on land and buildings,,,,,399000,0,10A100020,Cash and deposits,30,Mitsui Nagoya,,,37279000,2022-02
-2411,1,129,Credit,2022-02-11,Rent Payment,10A100020,Cash and deposits,30,Mitsui Nagoya,,,0,399000,10E200720,Rent expenses on land and buildings,,,,,85275960,2022-02
+2411,1,129,Credit,2022-02-11,Rent Payment,10A100020,Cash and deposits,30,Mitsui Nagoya,,,0,399000,10E200720,Rent expenses on land and buildings,,,,,33854404,2022-02
 2412,1,141,Debit,2022-02-11,JR,10E201230,Travel and transportation expenses,,,,,21500,0,10A100020,Cash and deposits,,,,,11136171,2022-02
-2412,1,141,Credit,2022-02-11,JR,10A100020,Cash and deposits,,,,,0,21500,10E201230,Travel and transportation expenses,,,,,85254460,2022-02
+2412,1,141,Credit,2022-02-11,JR,10A100020,Cash and deposits,,,,,0,21500,10E201230,Travel and transportation expenses,,,,,33832904,2022-02
 2413,1,165,Debit,2022-02-11,Tissue Cost and Others,10E201270,Miscellaneous expenses,,,,,1335,0,10A100020,Cash and deposits,,,,,4907996,2022-02
-2413,1,165,Credit,2022-02-11,Tissue Cost and Others,10A100020,Cash and deposits,,,,,0,1335,10E201270,Miscellaneous expenses,,,,,85253125,2022-02
+2413,1,165,Credit,2022-02-11,Tissue Cost and Others,10A100020,Cash and deposits,,,,,0,1335,10E201270,Miscellaneous expenses,,,,,33831569,2022-02
 2414,1,167,Debit,2022-02-11,Rent Payment,10E200720,Rent expenses on land and buildings,,,,,630000,0,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,37909000,2022-02
-2414,1,167,Credit,2022-02-11,Rent Payment,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,0,630000,10E200720,Rent expenses on land and buildings,,,,,84623125,2022-02
+2414,1,167,Credit,2022-02-11,Rent Payment,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,0,630000,10E200720,Rent expenses on land and buildings,,,,,33201569,2022-02
 2414,2,167,Debit,2022-02-11,Telephone Cost,10E200180,Communication expenses,,,,,130648,0,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,11588744,2022-02
-2414,2,167,Credit,2022-02-11,Telephone Cost,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,0,130648,10E200180,Communication expenses,,,,,84492477,2022-02
+2414,2,167,Credit,2022-02-11,Telephone Cost,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,0,130648,10E200180,Communication expenses,,,,,33070921,2022-02
 2415,1,44,Debit,2022-02-12,Food and Beverage Cost Snack Randy 5 People,10E200150,Entertainment expenses,,,,,33690,0,10A100020,Cash and deposits,,,,,3781235,2022-02
-2415,1,44,Credit,2022-02-12,Food and Beverage Cost Snack Randy 5 People,10A100020,Cash and deposits,,,,,0,33690,10E200150,Entertainment expenses,,,,,84458787,2022-02
+2415,1,44,Credit,2022-02-12,Food and Beverage Cost Snack Randy 5 People,10A100020,Cash and deposits,,,,,0,33690,10E200150,Entertainment expenses,,,,,33037231,2022-02
 2416,1,69,Debit,2022-02-12,Golf Play Fee,10E200150,Entertainment expenses,,,,,12600,0,10A100020,Cash and deposits,,,,,3793835,2022-02
-2416,1,69,Credit,2022-02-12,Golf Play Fee,10A100020,Cash and deposits,,,,,0,12600,10E200150,Entertainment expenses,,,,,84446187,2022-02
+2416,1,69,Credit,2022-02-12,Golf Play Fee,10A100020,Cash and deposits,,,,,0,12600,10E200150,Entertainment expenses,,,,,33024631,2022-02
 2417,1,71,Debit,2022-02-12,Golf Play Fee,10E200150,Entertainment expenses,,,,,13650,0,10A100020,Cash and deposits,,,,,3807485,2022-02
-2417,1,71,Credit,2022-02-12,Golf Play Fee,10A100020,Cash and deposits,,,,,0,13650,10E200150,Entertainment expenses,,,,,84432537,2022-02
+2417,1,71,Credit,2022-02-12,Golf Play Fee,10A100020,Cash and deposits,,,,,0,13650,10E200150,Entertainment expenses,,,,,33010981,2022-02
 2418,1,17,Debit,2022-02-13,Parking Fee,10E201120,Vehicle expenses,,,,,381,0,10A100020,Cash and deposits,,,,,6311119,2022-02
-2418,1,17,Credit,2022-02-13,Parking Fee,10A100020,Cash and deposits,,,,,0,2381,10E201120,Vehicle expenses,,,,,84430156,2022-02
+2418,1,17,Credit,2022-02-13,Parking Fee,10A100020,Cash and deposits,,,,,0,2381,10E201120,Vehicle expenses,,,,,33008600,2022-02
 2418,2,17,Debit,2022-02-13,Highway Toll,10E201120,Vehicle expenses,,,,,2000,0,10A100020,Cash and deposits,,,,,6313119,2022-02
 2419,1,23,Debit,2022-02-13,Travel Expenses,10E201230,Travel and transportation expenses,,,,,381,0,10A100020,Cash and deposits,,,,,11136552,2022-02
-2419,1,23,Credit,2022-02-13,Travel Expenses,10A100020,Cash and deposits,,,,,0,2381,10E201230,Travel and transportation expenses,,,,,84427775,2022-02
+2419,1,23,Credit,2022-02-13,Travel Expenses,10A100020,Cash and deposits,,,,,0,2381,10E201230,Travel and transportation expenses,,,,,33006219,2022-02
 2419,2,23,Debit,2022-02-13,Travel Expenses,10E201230,Travel and transportation expenses,,,,,2000,0,10A100020,Cash and deposits,,,,,11138552,2022-02
 2420,1,82,Debit,2022-02-13,Gasoline Cost,10E201120,Vehicle expenses,,,,,31529,0,10B100630,Accounts payable - other,,,,,6344648,2022-02
 2420,1,82,Credit,2022-02-13,Gasoline Cost,10B100630,Accounts payable - other,,,,,0,31529,10E201120,Vehicle expenses,,,,,2158088,2022-02
 2421,1,46,Debit,2022-02-14,Gasoline Cost,10E201120,Vehicle expenses,,,,,2341,0,10A100020,Cash and deposits,,,,,6346989,2022-02
-2421,1,46,Credit,2022-02-14,Gasoline Cost,10A100020,Cash and deposits,,,,,0,11988,10E201120,Vehicle expenses,,,,,84415787,2022-02
+2421,1,46,Credit,2022-02-14,Gasoline Cost,10A100020,Cash and deposits,,,,,0,11988,10E201120,Vehicle expenses,,,,,32994231,2022-02
 2421,2,46,Debit,2022-02-14,Gasoline Cost,10E201120,Vehicle expenses,,,,,4767,0,10A100020,Cash and deposits,,,,,6351756,2022-02
 2421,3,46,Debit,2022-02-14,Gasoline Cost,10E201120,Vehicle expenses,,,,,4880,0,10A100020,Cash and deposits,,,,,6356636,2022-02
 2422,1,51,Debit,2022-02-14,Highway Toll,10E201120,Vehicle expenses,,,,,1505,0,10A100020,Cash and deposits,,,,,6358141,2022-02
-2422,1,51,Credit,2022-02-14,Highway Toll,10A100020,Cash and deposits,,,,,0,7176,10E201120,Vehicle expenses,,,,,84408611,2022-02
+2422,1,51,Credit,2022-02-14,Highway Toll,10A100020,Cash and deposits,,,,,0,7176,10E201120,Vehicle expenses,,,,,32987055,2022-02
 2422,2,51,Debit,2022-02-14,Highway Toll,10E201120,Vehicle expenses,,,,,620,0,10A100020,Cash and deposits,,,,,6358761,2022-02
 2422,3,51,Debit,2022-02-14,Highway Toll,10E201120,Vehicle expenses,,,,,810,0,10A100020,Cash and deposits,,,,,6359571,2022-02
 2422,4,51,Debit,2022-02-14,Highway Toll,10E201120,Vehicle expenses,,,,,1096,0,10A100020,Cash and deposits,,,,,6360667,2022-02
@@ -213,103 +205,93 @@
 2422,6,51,Debit,2022-02-14,Highway Toll,10E201120,Vehicle expenses,,,,,1096,0,10A100020,Cash and deposits,,,,,6362859,2022-02
 2422,7,51,Debit,2022-02-14,Highway Toll,10E201120,Vehicle expenses,,,,,953,0,10A100020,Cash and deposits,,,,,6363812,2022-02
 2423,1,70,Debit,2022-02-14,Golf Play Fee,10E200150,Entertainment expenses,,,,,8600,0,10A100020,Cash and deposits,,,,,3816085,2022-02
-2423,1,70,Credit,2022-02-14,Golf Play Fee,10A100020,Cash and deposits,,,,,0,8600,10E200150,Entertainment expenses,,,,,84400011,2022-02
+2423,1,70,Credit,2022-02-14,Golf Play Fee,10A100020,Cash and deposits,,,,,0,8600,10E200150,Entertainment expenses,,,,,32978455,2022-02
 2424,1,4,Debit,2022-02-15,Advertising Expense,10E200050,Advertising expenses,,,,,31500,0,10B100630,Accounts payable - other,,,,,1827200,2022-02
 2424,1,4,Credit,2022-02-15,Advertising Expense,10B100630,Accounts payable - other,,,,,0,31500,10E200050,Advertising expenses,,,,,2189588,2022-02
 2425,1,57,Debit,2022-02-15,JR,10E201230,Travel and transportation expenses,,,,,68700,0,10A100020,Cash and deposits,,,,,11207252,2022-02
-2425,1,57,Credit,2022-02-15,JR,10A100020,Cash and deposits,,,,,0,68700,10E201230,Travel and transportation expenses,,,,,84331311,2022-02
+2425,1,57,Credit,2022-02-15,JR,10A100020,Cash and deposits,,,,,0,68700,10E201230,Travel and transportation expenses,,,,,32909755,2022-02
 2426,1,83,Debit,2022-02-15,February Salary Others 0060 Part-time and Temporary Workers,10E200520,Other salaries,,,,,210240,0,10A100020,Cash and deposits,,,,,4314002,2022-02
-2426,1,83,Credit,2022-02-15,February Salary Others 0060 Part-time and Temporary Workers,10A100020,Cash and deposits,,,,,0,205380,10E200520,Other salaries,,,,,84125931,2022-02
+2426,1,83,Credit,2022-02-15,February Salary Others 0060 Part-time and Temporary Workers,10A100020,Cash and deposits,,,,,0,205380,10E200520,Other salaries,,,,,32704375,2022-02
 2426,2,83,Credit,2022-02-15,February Salary Others 0060 Part-time and Temporary Workers,10B100690,Deposits received,9,Others,,,0,4860,10E200520,Other salaries,,,,,3713959,2022-02
-2427,1,94,Debit,2022-02-15,"February 15th Slip No. 439 Goketsu Co., Ltd.",10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,1695243,0,10A100090,Accounts receivable - trade,1,"Goketsu Co., Ltd.",,,85821174,2022-02
-2427,1,94,Credit,2022-02-15,"February 15th Slip No. 439 Goketsu Co., Ltd.",10A100090,Accounts receivable - trade,1,"Goketsu Co., Ltd.",,,0,1695243,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,90639098,2022-02
-2427,2,94,Debit,2022-02-15,"February 15th Slip No. 439 Goketsu Co., Ltd.",10E200690,Commission expenses,,,,,840,0,10A100090,Accounts receivable - trade,1,"Goketsu Co., Ltd.",,,124045,2022-02
-2427,2,94,Credit,2022-02-15,"February 15th Slip No. 439 Goketsu Co., Ltd.",10A100090,Accounts receivable - trade,1,"Goketsu Co., Ltd.",,,0,840,10E200690,Commission expenses,,,,,90638258,2022-02
-2428,1,95,Debit,2022-02-15,"February 15th Slip No. 440 Entry Co., Ltd.",10A100020,Cash and deposits,30,Mitsui Nagoya,,,2247097,0,10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,88068271,2022-02
-2428,1,95,Credit,2022-02-15,"February 15th Slip No. 440 Entry Co., Ltd.",10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,0,2247097,10A100020,Cash and deposits,30,Mitsui Nagoya,,,88391161,2022-02
-2428,2,95,Debit,2022-02-15,"February 15th Slip No. 440 Entry Co., Ltd.",10E200690,Commission expenses,,,,,840,0,10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,124885,2022-02
-2428,2,95,Credit,2022-02-15,"February 15th Slip No. 440 Entry Co., Ltd.",10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,0,840,10E200690,Commission expenses,,,,,88390321,2022-02
-2429,1,96,Debit,2022-02-15,"February 15th Slip No. 441 Tower Co., Ltd.",10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,1302279,0,10A100090,Accounts receivable - trade,8,"Tower Co., Ltd.",,,89370550,2022-02
-2429,1,96,Credit,2022-02-15,"February 15th Slip No. 441 Tower Co., Ltd.",10A100090,Accounts receivable - trade,8,"Tower Co., Ltd.",,,0,1302279,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,87088042,2022-02
-2429,2,96,Debit,2022-02-15,"February 15th Slip No. 441 Tower Co., Ltd.",10E200690,Commission expenses,,,,,840,0,10A100090,Accounts receivable - trade,8,"Tower Co., Ltd.",,,125725,2022-02
-2429,2,96,Credit,2022-02-15,"February 15th Slip No. 441 Tower Co., Ltd.",10A100090,Accounts receivable - trade,8,"Tower Co., Ltd.",,,0,840,10E200690,Commission expenses,,,,,87087202,2022-02
-2430,1,97,Debit,2022-02-15,"February 15th Slip No. 442 Takahashi Trading Co., Ltd.",10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,1750711,0,10A100090,Accounts receivable - trade,9,"Takahashi Trading Co., Ltd.",,,91121261,2022-02
-2430,1,97,Credit,2022-02-15,"February 15th Slip No. 442 Takahashi Trading Co., Ltd.",10A100090,Accounts receivable - trade,9,"Takahashi Trading Co., Ltd.",,,0,1750711,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,85336491,2022-02
-2430,2,97,Debit,2022-02-15,"February 15th Slip No. 442 Takahashi Trading Co., Ltd.",10E200690,Commission expenses,,,,,840,0,10A100090,Accounts receivable - trade,9,"Takahashi Trading Co., Ltd.",,,126565,2022-02
-2430,2,97,Credit,2022-02-15,"February 15th Slip No. 442 Takahashi Trading Co., Ltd.",10A100090,Accounts receivable - trade,9,"Takahashi Trading Co., Ltd.",,,0,840,10E200690,Commission expenses,,,,,85335651,2022-02
-2431,1,98,Debit,2022-02-15,"February 15th Slip No. 443 Abe Trading Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,1650103,0,10A100090,Accounts receivable - trade,13,"Abe Trading Co., Ltd.",,,92771364,2022-02
-2431,1,98,Credit,2022-02-15,"February 15th Slip No. 443 Abe Trading Co., Ltd.",10A100090,Accounts receivable - trade,13,"Abe Trading Co., Ltd.",,,0,1650103,10A100020,Cash and deposits,20,Mizuho Main Branch,,,83685548,2022-02
-2432,1,99,Debit,2022-02-15,"February 15th Slip No. 444 Kujou Trading Co., Ltd.",10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,2463335,0,10A100090,Accounts receivable - trade,20,"Kujou Trading Co., Ltd.",,,95234699,2022-02
-2432,1,99,Credit,2022-02-15,"February 15th Slip No. 444 Kujou Trading Co., Ltd.",10A100090,Accounts receivable - trade,20,"Kujou Trading Co., Ltd.",,,0,2463335,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,81222213,2022-02
-2432,2,99,Debit,2022-02-15,"February 15th Slip No. 444 Kujou Trading Co., Ltd.",10E200690,Commission expenses,,,,,315,0,10A100090,Accounts receivable - trade,20,"Kujou Trading Co., Ltd.",,,126880,2022-02
-2432,2,99,Credit,2022-02-15,"February 15th Slip No. 444 Kujou Trading Co., Ltd.",10A100090,Accounts receivable - trade,20,"Kujou Trading Co., Ltd.",,,0,315,10E200690,Commission expenses,,,,,81221898,2022-02
-2433,1,100,Debit,2022-02-15,"February 15th Slip No. 335 Y2 Co., Ltd.",10B100040,Accounts payable - trade,1,"Y2 Co., Ltd.",,,10823612,0,10B100030,Notes payable - trade,,,,,82083308,2022-02
-2433,1,100,Credit,2022-02-15,"February 15th Slip No. 335 Y2 Co., Ltd.",10B100030,Notes payable - trade,,,,,0,10823612,10B100040,Accounts payable - trade,1,"Y2 Co., Ltd.",,,38555256,2022-02
+2427,1,94,Debit,2022-02-15,"February 15th Slip No. 439 Goketsu Co., Ltd.",10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,1949895,0,10A100090,Accounts receivable - trade,1,"Goketsu Co., Ltd.",,,34654270,2022-02
+2427,1,94,Credit,2022-02-15,"February 15th Slip No. 439 Goketsu Co., Ltd.",10A100090,Accounts receivable - trade,1,"Goketsu Co., Ltd.",,,0,1949895,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,190457672,2022-02
+2428,1,95,Debit,2022-02-15,"February 15th Slip No. 440 Entry Co., Ltd.",10A100020,Cash and deposits,30,Mitsui Nagoya,,,1852360,0,10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,36506630,2022-02
+2428,1,95,Credit,2022-02-15,"February 15th Slip No. 440 Entry Co., Ltd.",10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,0,1852360,10A100020,Cash and deposits,30,Mitsui Nagoya,,,188605312,2022-02
+2429,1,96,Debit,2022-02-15,"February 15th Slip No. 441 Tower Co., Ltd.",10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,1218968,0,10A100090,Accounts receivable - trade,8,"Tower Co., Ltd.",,,37725598,2022-02
+2429,1,96,Credit,2022-02-15,"February 15th Slip No. 441 Tower Co., Ltd.",10A100090,Accounts receivable - trade,8,"Tower Co., Ltd.",,,0,1218968,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,187386344,2022-02
+2430,1,97,Debit,2022-02-15,"February 15th Slip No. 442 Takahashi Trading Co., Ltd.",10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,1347272,0,10A100090,Accounts receivable - trade,9,"Takahashi Trading Co., Ltd.",,,39072870,2022-02
+2430,1,97,Credit,2022-02-15,"February 15th Slip No. 442 Takahashi Trading Co., Ltd.",10A100090,Accounts receivable - trade,9,"Takahashi Trading Co., Ltd.",,,0,1347272,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,186039072,2022-02
+2431,1,98,Debit,2022-02-15,"February 15th Slip No. 443 Abe Trading Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,1632272,0,10A100090,Accounts receivable - trade,13,"Abe Trading Co., Ltd.",,,40705142,2022-02
+2431,1,98,Credit,2022-02-15,"February 15th Slip No. 443 Abe Trading Co., Ltd.",10A100090,Accounts receivable - trade,13,"Abe Trading Co., Ltd.",,,0,1632272,10A100020,Cash and deposits,20,Mizuho Main Branch,,,184406800,2022-02
+2432,1,99,Debit,2022-02-15,"February 15th Slip No. 444 Kujou Trading Co., Ltd.",10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,2361484,0,10A100090,Accounts receivable - trade,20,"Kujou Trading Co., Ltd.",,,43066626,2022-02
+2432,1,99,Credit,2022-02-15,"February 15th Slip No. 444 Kujou Trading Co., Ltd.",10A100090,Accounts receivable - trade,20,"Kujou Trading Co., Ltd.",,,0,2361484,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,182045316,2022-02
+2433,1,100,Debit,2022-02-15,"February 15th Slip No. 335 Y2 Co., Ltd.",10B100040,Accounts payable - trade,1,"Y2 Co., Ltd.",,,10823612,0,10B100030,Notes payable - trade,,,,,104485877,2022-02
+2433,1,100,Credit,2022-02-15,"February 15th Slip No. 335 Y2 Co., Ltd.",10B100030,Notes payable - trade,,,,,0,10823612,10B100040,Accounts payable - trade,1,"Y2 Co., Ltd.",,,31170596,2022-02
 2434,1,117,Debit,2022-02-15,Membership Fee,10E201140,Membership fee,,,,,20000,0,10A100020,Cash and deposits,,,,,1180000,2022-02
-2434,1,117,Credit,2022-02-15,Membership Fee,10A100020,Cash and deposits,,,,,0,20000,10E201140,Membership fee,,,,,95214699,2022-02
+2434,1,117,Credit,2022-02-15,Membership Fee,10A100020,Cash and deposits,,,,,0,20000,10E201140,Membership fee,,,,,43046626,2022-02
 2435,1,130,Debit,2022-02-15,Membership Fee,10E201140,Membership fee,,,,,24000,0,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,1204000,2022-02
-2435,1,130,Credit,2022-02-15,Membership Fee,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,24000,10E201140,Membership fee,,,,,95190699,2022-02
+2435,1,130,Credit,2022-02-15,Membership Fee,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,24000,10E201140,Membership fee,,,,,43022626,2022-02
 2436,1,151,Debit,2022-02-15,Food and drink izakaya Lucky,10E200150,Entertainment expenses,,,,,12750,0,10A100020,Cash and deposits,,,,,3828835,2022-02
-2436,1,151,Credit,2022-02-15,Food and drink izakaya Lucky,10A100020,Cash and deposits,,,,,0,12750,10E200150,Entertainment expenses,,,,,95177949,2022-02
+2436,1,151,Credit,2022-02-15,Food and drink izakaya Lucky,10A100020,Cash and deposits,,,,,0,12750,10E200150,Entertainment expenses,,,,,43009876,2022-02
 2437,1,158,Debit,2022-02-15,Business Trip Expense,10E201230,Travel and transportation expenses,,,,,14000,0,10A100020,Cash and deposits,,,,,11221252,2022-02
-2437,1,158,Credit,2022-02-15,Business Trip Expense,10A100020,Cash and deposits,,,,,0,14000,10E201230,Travel and transportation expenses,,,,,95163949,2022-02
+2437,1,158,Credit,2022-02-15,Business Trip Expense,10A100020,Cash and deposits,,,,,0,14000,10E201230,Travel and transportation expenses,,,,,42995876,2022-02
 2438,1,7,Debit,2022-02-16,Lunch Cost Karin 2 People,10E200150,Entertainment expenses,,,,,3750,0,10A100020,Cash and deposits,,,,,3832585,2022-02
-2438,1,7,Credit,2022-02-16,Lunch Cost Karin 2 People,10A100020,Cash and deposits,,,,,0,3750,10E200150,Entertainment expenses,,,,,95160199,2022-02
+2438,1,7,Credit,2022-02-16,Lunch Cost Karin 2 People,10A100020,Cash and deposits,,,,,0,3750,10E200150,Entertainment expenses,,,,,42992126,2022-02
 2439,1,11,Debit,2022-02-16,Gasoline Cost,10E201120,Vehicle expenses,,,,,3210,0,10A100020,Cash and deposits,,,,,6367022,2022-02
-2439,1,11,Credit,2022-02-16,Gasoline Cost,10A100020,Cash and deposits,,,,,0,3210,10E201120,Vehicle expenses,,,,,95156989,2022-02
+2439,1,11,Credit,2022-02-16,Gasoline Cost,10A100020,Cash and deposits,,,,,0,3210,10E201120,Vehicle expenses,,,,,42988916,2022-02
 2440,1,61,Debit,2022-02-16,Telephone Cost,10E200180,Communication expenses,,,,,176510,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,11765254,2022-02
-2440,1,61,Credit,2022-02-16,Telephone Cost,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,176510,10E200180,Communication expenses,,,,,94980479,2022-02
+2440,1,61,Credit,2022-02-16,Telephone Cost,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,176510,10E200180,Communication expenses,,,,,42812406,2022-02
 2441,1,79,Debit,2022-02-16,Prize Cost,10E200140,Welfare expenses,,,,,39415,0,10A100020,Cash and deposits,,,,,4575582,2022-02
-2441,1,79,Credit,2022-02-16,Prize Cost,10A100020,Cash and deposits,,,,,0,39415,10E200140,Welfare expenses,,,,,94941064,2022-02
+2441,1,79,Credit,2022-02-16,Prize Cost,10A100020,Cash and deposits,,,,,0,39415,10E200140,Welfare expenses,,,,,42772991,2022-02
 2442,1,136,Debit,2022-02-16,Duskin Service Fee,10E201270,Miscellaneous expenses,,,,,16500,0,10A100020,Cash and deposits,,,,,4924496,2022-02
-2442,1,136,Credit,2022-02-16,Duskin Service Fee,10A100020,Cash and deposits,,,,,0,16500,10E201270,Miscellaneous expenses,,,,,94924564,2022-02
+2442,1,136,Credit,2022-02-16,Duskin Service Fee,10A100020,Cash and deposits,,,,,0,16500,10E201270,Miscellaneous expenses,,,,,42756491,2022-02
 2443,1,148,Debit,2022-02-16,Gasoline Cost,10E201120,Vehicle expenses,,,,,3570,0,10A100020,Cash and deposits,,,,,6370592,2022-02
-2443,1,148,Credit,2022-02-16,Gasoline Cost,10A100020,Cash and deposits,,,,,0,3570,10E201120,Vehicle expenses,,,,,94920994,2022-02
+2443,1,148,Credit,2022-02-16,Gasoline Cost,10A100020,Cash and deposits,,,,,0,3570,10E201120,Vehicle expenses,,,,,42752921,2022-02
 2444,1,154,Debit,2022-02-16,"Otsuka & Co., Ltd.",10E200150,Entertainment expenses,,,,,6229,0,10B100630,Accounts payable - other,,,,,3838814,2022-02
 2444,1,154,Credit,2022-02-16,"Otsuka & Co., Ltd.",10B100630,Accounts payable - other,,,,,0,25068,10E200150,Entertainment expenses,,,,,2214656,2022-02
 2444,2,154,Debit,2022-02-16,Food and Beverage Cost Snack Kaerimichi 4 People,10E200150,Entertainment expenses,,,,,18839,0,10B100630,Accounts payable - other,,,,,3857653,2022-02
 2445,1,47,Debit,2022-02-17,Gasoline Cost,10E201120,Vehicle expenses,,,,,2540,0,10A100020,Cash and deposits,,,,,6373132,2022-02
-2445,1,47,Credit,2022-02-17,Gasoline Cost,10A100020,Cash and deposits,,,,,0,2540,10E201120,Vehicle expenses,,,,,94918454,2022-02
+2445,1,47,Credit,2022-02-17,Gasoline Cost,10A100020,Cash and deposits,,,,,0,2540,10E201120,Vehicle expenses,,,,,42750381,2022-02
 2446,1,52,Debit,2022-02-17,Highway Toll,10E201120,Vehicle expenses,,,,,1096,0,10A100020,Cash and deposits,,,,,6374228,2022-02
-2446,1,52,Credit,2022-02-17,Highway Toll,10A100020,Cash and deposits,,,,,0,3621,10E201120,Vehicle expenses,,,,,94914833,2022-02
+2446,1,52,Credit,2022-02-17,Highway Toll,10A100020,Cash and deposits,,,,,0,3621,10E201120,Vehicle expenses,,,,,42746760,2022-02
 2446,2,52,Debit,2022-02-17,Highway Toll,10E201120,Vehicle expenses,,,,,1096,0,10A100020,Cash and deposits,,,,,6375324,2022-02
 2446,3,52,Debit,2022-02-17,Highway Toll,10E201120,Vehicle expenses,,,,,1429,0,10A100020,Cash and deposits,,,,,6376753,2022-02
 2447,1,74,Debit,2022-02-17,Meal Cost Restaurant Family 5 People,10E200150,Entertainment expenses,,,,,8630,0,10A100020,Cash and deposits,,,,,3866283,2022-02
-2447,1,74,Credit,2022-02-17,Meal Cost Restaurant Family 5 People,10A100020,Cash and deposits,,,,,0,8630,10E200150,Entertainment expenses,,,,,94906203,2022-02
+2447,1,74,Credit,2022-02-17,Meal Cost Restaurant Family 5 People,10A100020,Cash and deposits,,,,,0,8630,10E200150,Entertainment expenses,,,,,42738130,2022-02
 2448,1,159,Debit,2022-02-18,Taxi Fare,10E201230,Travel and transportation expenses,,,,,7600,0,10A100020,Cash and deposits,,,,,11228852,2022-02
-2448,1,159,Credit,2022-02-18,Taxi Fare,10A100020,Cash and deposits,,,,,0,7600,10E201230,Travel and transportation expenses,,,,,94898603,2022-02
+2448,1,159,Credit,2022-02-18,Taxi Fare,10A100020,Cash and deposits,,,,,0,7600,10E201230,Travel and transportation expenses,,,,,42730530,2022-02
 2449,1,45,Debit,2022-02-19,Food and Beverage Cost Izakaya Shun 5 People,10E200150,Entertainment expenses,,,,,19991,0,10A100020,Cash and deposits,,,,,3886274,2022-02
-2449,1,45,Credit,2022-02-19,Food and Beverage Cost Izakaya Shun 5 People,10A100020,Cash and deposits,,,,,0,48353,10E200150,Entertainment expenses,,,,,94850250,2022-02
+2449,1,45,Credit,2022-02-19,Food and Beverage Cost Izakaya Shun 5 People,10A100020,Cash and deposits,,,,,0,48353,10E200150,Entertainment expenses,,,,,42682177,2022-02
 2449,2,45,Debit,2022-02-19,Food and drink fee Snack New World,10E200150,Entertainment expenses,,,,,28362,0,10A100020,Cash and deposits,,,,,3914636,2022-02
 2450,1,59,Debit,2022-02-19,Travel Expenses,10E201230,Travel and transportation expenses,,,,,45600,0,10A100020,Cash and deposits,,,,,11274452,2022-02
-2450,1,59,Credit,2022-02-19,Travel Expenses,10A100020,Cash and deposits,,,,,0,45600,10E201230,Travel and transportation expenses,,,,,94804650,2022-02
+2450,1,59,Credit,2022-02-19,Travel Expenses,10A100020,Cash and deposits,,,,,0,45600,10E201230,Travel and transportation expenses,,,,,42636577,2022-02
 2451,1,103,Debit,2022-02-19,Dietary lord -inserted ventose,10E200150,Entertainment expenses,,,,,2150,0,10A100020,Cash and deposits,,,,,3916786,2022-02
-2451,1,103,Credit,2022-02-19,Dietary lord -inserted ventose,10A100020,Cash and deposits,,,,,0,2150,10E200150,Entertainment expenses,,,,,94802500,2022-02
+2451,1,103,Credit,2022-02-19,Dietary lord -inserted ventose,10A100020,Cash and deposits,,,,,0,2150,10E200150,Entertainment expenses,,,,,42634427,2022-02
 2452,1,138,Debit,2022-02-19,Highway Toll,10E201120,Vehicle expenses,,,,,7187,0,10A100020,Cash and deposits,,,,,6383940,2022-02
-2452,1,138,Credit,2022-02-19,Highway Toll,10A100020,Cash and deposits,,,,,0,24088,10E201120,Vehicle expenses,,,,,94778412,2022-02
+2452,1,138,Credit,2022-02-19,Highway Toll,10A100020,Cash and deposits,,,,,0,24088,10E201120,Vehicle expenses,,,,,42610339,2022-02
 2452,2,138,Debit,2022-02-19,Parking Fee,10E201120,Vehicle expenses,,,,,3086,0,10A100020,Cash and deposits,,,,,6387026,2022-02
 2452,3,138,Debit,2022-02-19,Highway Toll,10E201120,Vehicle expenses,,,,,305,0,10A100020,Cash and deposits,,,,,6387331,2022-02
 2452,4,138,Debit,2022-02-19,Highway Toll,10E201120,Vehicle expenses,,,,,8329,0,10A100020,Cash and deposits,,,,,6395660,2022-02
 2452,5,138,Debit,2022-02-19,Highway Toll,10E201120,Vehicle expenses,,,,,5181,0,10A100020,Cash and deposits,,,,,6400841,2022-02
 2453,1,160,Debit,2022-02-19,Business Trip Expense,10E201230,Travel and transportation expenses,,,,,69700,0,10A100020,Cash and deposits,,,,,11344152,2022-02
-2453,1,160,Credit,2022-02-19,Business Trip Expense,10A100020,Cash and deposits,,,,,0,69700,10E201230,Travel and transportation expenses,,,,,94708712,2022-02
+2453,1,160,Credit,2022-02-19,Business Trip Expense,10A100020,Cash and deposits,,,,,0,69700,10E201230,Travel and transportation expenses,,,,,42540639,2022-02
 2454,1,1,Debit,2022-02-20,Overtime Night Meal Reduced Tax Rate,10E200140,Welfare expenses,,,,,21600,0,10A100020,Cash and deposits,,,,,4597182,2022-02
-2454,1,1,Credit,2022-02-20,Overtime Night Meal Reduced Tax Rate,10A100020,Cash and deposits,,,,,0,21600,10E200140,Welfare expenses,,,,,94687112,2022-02
+2454,1,1,Credit,2022-02-20,Overtime Night Meal Reduced Tax Rate,10A100020,Cash and deposits,,,,,0,21600,10E200140,Welfare expenses,,,,,42519039,2022-02
 2455,1,31,Debit,2022-02-20,Copy Cost,10E201110,Office supplies expenses,,,,,3118,0,10B100630,Accounts payable - other,,,,,1281030,2022-02
 2455,1,31,Credit,2022-02-20,Copy Cost,10B100630,Accounts payable - other,,,,,0,3118,10E201110,Office supplies expenses,,,,,2217774,2022-02
 2456,1,34,Debit,2022-02-20,Electricity Cost,10E201040,Utilities expenses,,,,,65379,0,10A100020,Cash and deposits,10,Hokkaido Station Front,,,6039808,2022-02
-2456,1,34,Credit,2022-02-20,Electricity Cost,10A100020,Cash and deposits,10,Hokkaido Station Front,,,0,69013,10E201040,Utilities expenses,,,,,94618099,2022-02
+2456,1,34,Credit,2022-02-20,Electricity Cost,10A100020,Cash and deposits,10,Hokkaido Station Front,,,0,69013,10E201040,Utilities expenses,,,,,42450026,2022-02
 2456,2,34,Debit,2022-02-20,Water Cost,10E201040,Utilities expenses,,,,,3634,0,10A100020,Cash and deposits,10,Hokkaido Station Front,,,6043442,2022-02
 2457,1,38,Debit,2022-02-20,Accommodation Expense,10E200140,Welfare expenses,,,,,48164,0,10B100630,Accounts payable - other,,,,,4645346,2022-02
 2457,1,38,Credit,2022-02-20,Accommodation Expense,10B100630,Accounts payable - other,,,,,0,48164,10E200140,Welfare expenses,,,,,2265938,2022-02
 2458,1,48,Debit,2022-02-20,Gasoline Cost,10E201120,Vehicle expenses,,,,,4303,0,10A100020,Cash and deposits,,,,,6405144,2022-02
-2458,1,48,Credit,2022-02-20,Gasoline Cost,10A100020,Cash and deposits,,,,,0,4303,10E201120,Vehicle expenses,,,,,94613796,2022-02
+2458,1,48,Credit,2022-02-20,Gasoline Cost,10A100020,Cash and deposits,,,,,0,4303,10E201120,Vehicle expenses,,,,,42445723,2022-02
 2459,1,53,Debit,2022-02-20,Highway Toll,10E201120,Vehicle expenses,,,,,381,0,10A100020,Cash and deposits,,,,,6405525,2022-02
-2459,1,53,Credit,2022-02-20,Highway Toll,10A100020,Cash and deposits,,,,,0,2381,10E201120,Vehicle expenses,,,,,94611415,2022-02
+2459,1,53,Credit,2022-02-20,Highway Toll,10A100020,Cash and deposits,,,,,0,2381,10E201120,Vehicle expenses,,,,,42443342,2022-02
 2459,2,53,Debit,2022-02-20,Highway Toll,10E201120,Vehicle expenses,,,,,1000,0,10A100020,Cash and deposits,,,,,6406525,2022-02
 2459,3,53,Debit,2022-02-20,Highway Toll,10E201120,Vehicle expenses,,,,,1000,0,10A100020,Cash and deposits,,,,,6407525,2022-02
 2460,1,64,Debit,2022-02-20,Electricity Bill,10E201040,Utilities expenses,,,,,156878,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,6200320,2022-02
-2460,1,64,Credit,2022-02-20,Electricity Bill,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,164068,10E201040,Utilities expenses,,,,,94447347,2022-02
+2460,1,64,Credit,2022-02-20,Electricity Bill,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,164068,10E201040,Utilities expenses,,,,,42279274,2022-02
 2460,2,64,Debit,2022-02-20,Water Bill,10E201040,Utilities expenses,,,,,7190,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,6207510,2022-02
 2461,1,66,Debit,2022-02-20,Wired (Cable),10E201270,Miscellaneous expenses,,,,,5000,0,10B100630,Accounts payable - other,,,,,4929496,2022-02
 2461,1,66,Credit,2022-02-20,Wired (Cable),10B100630,Accounts payable - other,,,,,0,5000,10E201270,Miscellaneous expenses,,,,,2270938,2022-02
@@ -323,7 +305,7 @@
 2464,2,74,Debit,2022-02-20,Drinking Water,10E200200,Supplies expenses,,,,,232915,0,10B100630,Accounts payable - other,,,,,2968054,2022-02
 2464,3,74,Debit,2022-02-20,Business Card Cost,10E200200,Supplies expenses,,,,,52096,0,10B100630,Accounts payable - other,,,,,3020150,2022-02
 2465,1,89,Debit,2022-02-20,Electricity Bill,10E201040,Utilities expenses,,,,,64140,0,10A100020,Cash and deposits,30,Mitsui Nagoya,,,6271650,2022-02
-2465,1,89,Credit,2022-02-20,Electricity Bill,10A100020,Cash and deposits,30,Mitsui Nagoya,,,0,70740,10E201040,Utilities expenses,,,,,94376607,2022-02
+2465,1,89,Credit,2022-02-20,Electricity Bill,10A100020,Cash and deposits,30,Mitsui Nagoya,,,0,70740,10E201040,Utilities expenses,,,,,42208534,2022-02
 2465,2,89,Debit,2022-02-20,Water Bill,10E201040,Utilities expenses,,,,,3072,0,10A100020,Cash and deposits,30,Mitsui Nagoya,,,6274722,2022-02
 2465,3,89,Debit,2022-02-20,Gas Cost,10E201040,Utilities expenses,,,,,3528,0,10A100020,Cash and deposits,30,Mitsui Nagoya,,,6278250,2022-02
 2466,1,97,Debit,2022-02-20,Copy Cost,10E201110,Office supplies expenses,,,,,40023,0,10B100630,Accounts payable - other,,,,,1362957,2022-02
@@ -332,47 +314,43 @@
 2467,1,98,Credit,2022-02-20,Office Supplies,10B100630,Accounts payable - other,,,,,0,3156,10E201110,Office supplies expenses,,,,,2660428,2022-02
 2468,1,101,Debit,2022-02-20,Advertisement Fee,10E200050,Advertising expenses,,,,,52500,0,10B100630,Accounts payable - other,,,,,1879700,2022-02
 2468,1,101,Credit,2022-02-20,Advertisement Fee,10B100630,Accounts payable - other,,,,,0,52500,10E200050,Advertising expenses,,,,,2712928,2022-02
-2468,2,101,Debit,2022-02-20,"February 20th Slip No. 445 Saito Co., Ltd.",10A100020,Cash and deposits,,,,,1391496,0,10A100090,Accounts receivable - trade,11,"Saito Co., Ltd.",,,95768103,2022-02
-2468,2,101,Credit,2022-02-20,"February 20th Slip No. 445 Saito Co., Ltd.",10A100090,Accounts receivable - trade,11,"Saito Co., Ltd.",,,0,1391496,10A100020,Cash and deposits,,,,,79830402,2022-02
-2469,1,102,Debit,2022-02-20,February 20th Slip No. 446 Takada LLC,10A100020,Cash and deposits,30,Mitsui Nagoya,,,1348582,0,10A100090,Accounts receivable - trade,21,Takada LLC,,,97116685,2022-02
-2469,1,102,Credit,2022-02-20,February 20th Slip No. 446 Takada LLC,10A100090,Accounts receivable - trade,21,Takada LLC,,,0,1348582,10A100020,Cash and deposits,30,Mitsui Nagoya,,,78481820,2022-02
-2469,2,102,Debit,2022-02-20,February 20th Slip No. 446 Takada LLC,10E200690,Commission expenses,,,,,472,0,10A100090,Accounts receivable - trade,21,Takada LLC,,,127352,2022-02
-2469,2,102,Credit,2022-02-20,February 20th Slip No. 446 Takada LLC,10A100090,Accounts receivable - trade,21,Takada LLC,,,0,472,10E200690,Commission expenses,,,,,78481348,2022-02
-2470,1,103,Debit,2022-02-20,"February 20th Slip No. 447 YAG Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,2510439,0,10A100090,Accounts receivable - trade,30,"YAG Co., Ltd.",,,99627124,2022-02
-2470,1,103,Credit,2022-02-20,"February 20th Slip No. 447 YAG Co., Ltd.",10A100090,Accounts receivable - trade,30,"YAG Co., Ltd.",,,0,2510439,10A100020,Cash and deposits,20,Mizuho Main Branch,,,75970909,2022-02
-2470,2,103,Debit,2022-02-20,"February 20th Slip No. 447 YAG Co., Ltd.",10E200690,Commission expenses,,,,,735,0,10A100090,Accounts receivable - trade,30,"YAG Co., Ltd.",,,128087,2022-02
-2470,2,103,Credit,2022-02-20,"February 20th Slip No. 447 YAG Co., Ltd.",10A100090,Accounts receivable - trade,30,"YAG Co., Ltd.",,,0,735,10E200690,Commission expenses,,,,,75970174,2022-02
-2471,1,104,Debit,2022-02-20,"February 20th Slip No. 336 Attach Co., Ltd.",10B100040,Accounts payable - trade,4,"Attach Co., Ltd.",,,1466688,0,10A100020,Cash and deposits,1,Mizuho Bank,,,80616620,2022-02
-2471,1,104,Credit,2022-02-20,"February 20th Slip No. 336 Attach Co., Ltd.",10A100020,Cash and deposits,1,Mizuho Bank,,,0,1466688,10B100040,Accounts payable - trade,4,"Attach Co., Ltd.",,,98160436,2022-02
-2472,1,105,Debit,2022-02-20,"February 20th Slip No. 337 Hanada Co., Ltd.",10B100040,Accounts payable - trade,6,"Hanada Co., Ltd.",,,6893004,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,73723616,2022-02
-2472,1,105,Credit,2022-02-20,"February 20th Slip No. 337 Hanada Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,6893004,10B100040,Accounts payable - trade,6,"Hanada Co., Ltd.",,,91267432,2022-02
-2473,1,106,Debit,2022-02-20,"February 20th Slip No. 338 Matsumura Co., Ltd.",10B100040,Accounts payable - trade,11,"Matsumura Co., Ltd.",,,6049943,0,10B100030,Notes payable - trade,,,,,67673673,2022-02
-2473,1,106,Credit,2022-02-20,"February 20th Slip No. 338 Matsumura Co., Ltd.",10B100030,Notes payable - trade,,,,,0,6049943,10B100040,Accounts payable - trade,11,"Matsumura Co., Ltd.",,,44605199,2022-02
+2468,2,101,Debit,2022-02-20,"February 20th Slip No. 445 Saito Co., Ltd.",10A100020,Cash and deposits,,,,,1182012,0,10A100090,Accounts receivable - trade,11,"Saito Co., Ltd.",,,43390546,2022-02
+2468,2,101,Credit,2022-02-20,"February 20th Slip No. 445 Saito Co., Ltd.",10A100090,Accounts receivable - trade,11,"Saito Co., Ltd.",,,0,1182012,10A100020,Cash and deposits,,,,,180863304,2022-02
+2469,1,102,Debit,2022-02-20,February 20th Slip No. 446 Takada LLC,10A100020,Cash and deposits,30,Mitsui Nagoya,,,1839420,0,10A100090,Accounts receivable - trade,21,Takada LLC,,,45229966,2022-02
+2469,1,102,Credit,2022-02-20,February 20th Slip No. 446 Takada LLC,10A100090,Accounts receivable - trade,21,Takada LLC,,,0,1839420,10A100020,Cash and deposits,30,Mitsui Nagoya,,,179023884,2022-02
+2470,1,103,Debit,2022-02-20,"February 20th Slip No. 447 YAG Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,2107935,0,10A100090,Accounts receivable - trade,30,"YAG Co., Ltd.",,,47337901,2022-02
+2470,1,103,Credit,2022-02-20,"February 20th Slip No. 447 YAG Co., Ltd.",10A100090,Accounts receivable - trade,30,"YAG Co., Ltd.",,,0,2107935,10A100020,Cash and deposits,20,Mizuho Main Branch,,,176915949,2022-02
+2471,1,104,Debit,2022-02-20,"February 20th Slip No. 336 Attach Co., Ltd.",10B100040,Accounts payable - trade,4,"Attach Co., Ltd.",,,1503036,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,102982841,2022-02
+2471,1,104,Credit,2022-02-20,"February 20th Slip No. 336 Attach Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Head Office,,,0,1503036,10B100040,Accounts payable - trade,4,"Attach Co., Ltd.",,,45834865,2022-02
+2472,1,105,Debit,2022-02-20,"February 20th Slip No. 337 Hanada Co., Ltd.",10B100040,Accounts payable - trade,6,"Hanada Co., Ltd.",,,6893004,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,96089837,2022-02
+2472,1,105,Credit,2022-02-20,"February 20th Slip No. 337 Hanada Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,6893004,10B100040,Accounts payable - trade,6,"Hanada Co., Ltd.",,,38941861,2022-02
+2473,1,106,Debit,2022-02-20,"February 20th Slip No. 338 Matsumura Co., Ltd.",10B100040,Accounts payable - trade,11,"Matsumura Co., Ltd.",,,8378109,0,10B100030,Notes payable - trade,,,,,87711728,2022-02
+2473,1,106,Credit,2022-02-20,"February 20th Slip No. 338 Matsumura Co., Ltd.",10B100030,Notes payable - trade,,,,,0,8378109,10B100040,Accounts payable - trade,11,"Matsumura Co., Ltd.",,,39548705,2022-02
 2474,1,118,Debit,2022-02-20,Copy Cost,10E201110,Office supplies expenses,,,,,8012,0,10B100630,Accounts payable - other,,,,,1374125,2022-02
 2474,1,118,Credit,2022-02-20,Copy Cost,10B100630,Accounts payable - other,,,,,0,8012,10E201110,Office supplies expenses,,,,,2720940,2022-02
 2475,1,132,Debit,2022-02-20,Electricity Cost,10E201040,Utilities expenses,,,,,83296,0,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,6361546,2022-02
-2475,1,132,Credit,2022-02-20,Electricity Cost,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,88946,10E201040,Utilities expenses,,,,,91178486,2022-02
+2475,1,132,Credit,2022-02-20,Electricity Cost,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,88946,10E201040,Utilities expenses,,,,,38852915,2022-02
 2475,2,132,Debit,2022-02-20,Water Cost,10E201040,Utilities expenses,,,,,5650,0,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,6367196,2022-02
 2476,1,135,Debit,2022-02-20,Office Supplies,10E201110,Office supplies expenses,,,,,2389,0,10B100630,Accounts payable - other,,,,,1376514,2022-02
 2476,1,135,Credit,2022-02-20,Office Supplies,10B100630,Accounts payable - other,,,,,0,2389,10E201110,Office supplies expenses,,,,,2723329,2022-02
 2477,1,144,Debit,2022-02-20,Gasoline Cost,10E201120,Vehicle expenses,,,,,4286,0,10A100020,Cash and deposits,,,,,6411811,2022-02
-2477,1,144,Credit,2022-02-20,Gasoline Cost,10A100020,Cash and deposits,,,,,0,10205,10E201120,Vehicle expenses,,,,,91168281,2022-02
+2477,1,144,Credit,2022-02-20,Gasoline Cost,10A100020,Cash and deposits,,,,,0,10205,10E201120,Vehicle expenses,,,,,38842710,2022-02
 2477,2,144,Debit,2022-02-20,Gasoline Cost,10E201120,Vehicle expenses,,,,,5919,0,10A100020,Cash and deposits,,,,,6417730,2022-02
 2478,1,153,Debit,2022-02-20,Meal Cost Japanese Restaurant Kawayoshi 2 People,10E200150,Entertainment expenses,,,,,9960,0,10A100020,Cash and deposits,,,,,3926746,2022-02
-2478,1,153,Credit,2022-02-20,Meal Cost Japanese Restaurant Kawayoshi 2 People,10A100020,Cash and deposits,,,,,0,9960,10E200150,Entertainment expenses,,,,,91158321,2022-02
+2478,1,153,Credit,2022-02-20,Meal Cost Japanese Restaurant Kawayoshi 2 People,10A100020,Cash and deposits,,,,,0,9960,10E200150,Entertainment expenses,,,,,38832750,2022-02
 2479,1,163,Debit,2022-02-20,Membership Fee,10E201140,Membership fee,,,,,18000,0,10A100020,Cash and deposits,,,,,1222000,2022-02
-2479,1,163,Credit,2022-02-20,Membership Fee,10A100020,Cash and deposits,,,,,0,18000,10E201140,Membership fee,,,,,91140321,2022-02
+2479,1,163,Credit,2022-02-20,Membership Fee,10A100020,Cash and deposits,,,,,0,18000,10E201140,Membership fee,,,,,38814750,2022-02
 2480,1,169,Debit,2022-02-20,Electricity Bill,10E201040,Utilities expenses,,,,,4286,0,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,6371482,2022-02
-2480,1,169,Credit,2022-02-20,Electricity Bill,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,0,10205,10E201040,Utilities expenses,,,,,91130116,2022-02
+2480,1,169,Credit,2022-02-20,Electricity Bill,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,0,10205,10E201040,Utilities expenses,,,,,38804545,2022-02
 2480,2,169,Debit,2022-02-20,Water Bill,10E201040,Utilities expenses,,,,,5919,0,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,6377401,2022-02
 2481,1,6,Debit,2022-02-21,Advertisement Fee,10E200050,Advertising expenses,,,,,5000,0,10A100020,Cash and deposits,,,,,1884700,2022-02
-2481,1,6,Credit,2022-02-21,Advertisement Fee,10A100020,Cash and deposits,,,,,0,5000,10E200050,Advertising expenses,,,,,91125116,2022-02
+2481,1,6,Credit,2022-02-21,Advertisement Fee,10A100020,Cash and deposits,,,,,0,5000,10E200050,Advertising expenses,,,,,38799545,2022-02
 2482,1,8,Debit,2022-02-21,Regular Meeting Membership Fee,10E200150,Entertainment expenses,,,,,20000,0,10A100020,Cash and deposits,,,,,3946746,2022-02
-2482,1,8,Credit,2022-02-21,Regular Meeting Membership Fee,10A100020,Cash and deposits,,,,,0,20000,10E200150,Entertainment expenses,,,,,91105116,2022-02
+2482,1,8,Credit,2022-02-21,Regular Meeting Membership Fee,10A100020,Cash and deposits,,,,,0,20000,10E200150,Entertainment expenses,,,,,38779545,2022-02
 2483,1,25,Debit,2022-02-21,Travel Expenses,10E201230,Travel and transportation expenses,,,,,56000,0,10A100020,Cash and deposits,,,,,11400152,2022-02
-2483,1,25,Credit,2022-02-21,Travel Expenses,10A100020,Cash and deposits,,,,,0,56000,10E201230,Travel and transportation expenses,,,,,91049116,2022-02
+2483,1,25,Credit,2022-02-21,Travel Expenses,10A100020,Cash and deposits,,,,,0,56000,10E201230,Travel and transportation expenses,,,,,38723545,2022-02
 2484,1,27,Debit,2022-02-21,Travel Expenses,10E201230,Travel and transportation expenses,,,,,41905,0,10A100020,Cash and deposits,,,,,11442057,2022-02
-2484,1,27,Credit,2022-02-21,Travel Expenses,10A100020,Cash and deposits,,,,,0,100363,10E201230,Travel and transportation expenses,,,,,90948753,2022-02
+2484,1,27,Credit,2022-02-21,Travel Expenses,10A100020,Cash and deposits,,,,,0,100363,10E201230,Travel and transportation expenses,,,,,38623182,2022-02
 2484,2,27,Debit,2022-02-21,Travel Expenses,10E201230,Travel and transportation expenses,,,,,28381,0,10A100020,Cash and deposits,,,,,11470438,2022-02
 2484,3,27,Debit,2022-02-21,Travel Expenses,10E201230,Travel and transportation expenses,,,,,30077,0,10A100020,Cash and deposits,,,,,11500515,2022-02
 2485,1,80,Debit,2022-02-21,Membership Fee Payment,10E200140,Welfare expenses,,,,,417375,0,10B100630,Accounts payable - other,,,,,5062721,2022-02
@@ -381,162 +359,156 @@
 2486,1,137,Credit,2022-02-21,Wired (Cable),10B100630,Accounts payable - other,,,,,0,48858,10E201270,Miscellaneous expenses,,,,,3189562,2022-02
 2486,2,137,Debit,2022-02-21,Security Fee,10E201270,Miscellaneous expenses,,,,,42858,0,10B100630,Accounts payable - other,,,,,4978354,2022-02
 2486,3,137,Debit,2022-02-21,Highway Toll,10E201120,Vehicle expenses,,,,,13541,0,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,6431271,2022-02
-2486,3,137,Credit,2022-02-21,Highway Toll,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,13541,10E201120,Vehicle expenses,,,,,90935212,2022-02
+2486,3,137,Credit,2022-02-21,Highway Toll,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,13541,10E201120,Vehicle expenses,,,,,38609641,2022-02
 2486,4,137,Debit,2022-02-21,Cleaning Fee,10E201270,Miscellaneous expenses,,,,,56421,0,10B100630,Accounts payable - other,,,,,5034775,2022-02
 2486,4,137,Credit,2022-02-21,Cleaning Fee,10B100630,Accounts payable - other,,,,,0,56421,10E201270,Miscellaneous expenses,,,,,3245983,2022-02
 2487,1,12,Debit,2022-02-22,Gasoline Cost,10E201120,Vehicle expenses,,,,,3810,0,10A100020,Cash and deposits,,,,,6435081,2022-02
-2487,1,12,Credit,2022-02-22,Gasoline Cost,10A100020,Cash and deposits,,,,,0,9525,10E201120,Vehicle expenses,,,,,90925687,2022-02
+2487,1,12,Credit,2022-02-22,Gasoline Cost,10A100020,Cash and deposits,,,,,0,9525,10E201120,Vehicle expenses,,,,,38600116,2022-02
 2487,2,12,Debit,2022-02-22,Gasoline Cost,10E201120,Vehicle expenses,,,,,5715,0,10A100020,Cash and deposits,,,,,6440796,2022-02
 2488,1,90,Debit,2022-02-22,Duskin Service Fee,10E201270,Miscellaneous expenses,,,,,10500,0,10A100020,Cash and deposits,,,,,5045275,2022-02
-2488,1,90,Credit,2022-02-22,Duskin Service Fee,10A100020,Cash and deposits,,,,,0,10500,10E201270,Miscellaneous expenses,,,,,90915187,2022-02
+2488,1,90,Credit,2022-02-22,Duskin Service Fee,10A100020,Cash and deposits,,,,,0,10500,10E201270,Miscellaneous expenses,,,,,38589616,2022-02
 2489,1,95,Debit,2022-02-22,Cleaning Fee,10E201270,Miscellaneous expenses,,,,,71675,0,10B100630,Accounts payable - other,,,,,5116950,2022-02
 2489,1,95,Credit,2022-02-22,Cleaning Fee,10B100630,Accounts payable - other,,,,,0,71675,10E201270,Miscellaneous expenses,,,,,3317658,2022-02
 2490,1,155,Debit,2022-02-22,Gasoline Cost,10E201120,Vehicle expenses,,,,,6222,0,10A100020,Cash and deposits,,,,,6447018,2022-02
-2490,1,155,Credit,2022-02-22,Gasoline Cost,10A100020,Cash and deposits,,,,,0,6222,10E201120,Vehicle expenses,,,,,90908965,2022-02
+2490,1,155,Credit,2022-02-22,Gasoline Cost,10A100020,Cash and deposits,,,,,0,6222,10E201120,Vehicle expenses,,,,,38583394,2022-02
 2491,1,166,Debit,2022-02-22,Duskin Service Fee,10E201270,Miscellaneous expenses,,,,,1890,0,10A100020,Cash and deposits,,,,,5118840,2022-02
-2491,1,166,Credit,2022-02-22,Duskin Service Fee,10A100020,Cash and deposits,,,,,0,1890,10E201270,Miscellaneous expenses,,,,,90907075,2022-02
+2491,1,166,Credit,2022-02-22,Duskin Service Fee,10A100020,Cash and deposits,,,,,0,1890,10E201270,Miscellaneous expenses,,,,,38581504,2022-02
 2492,1,3,Debit,2022-02-23,Accommodation Cost,10E200140,Welfare expenses,,,,,28815,0,10B100630,Accounts payable - other,,,,,5091536,2022-02
 2492,1,3,Credit,2022-02-23,Accommodation Cost,10B100630,Accounts payable - other,,,,,0,28815,10E200140,Welfare expenses,,,,,3346473,2022-02
 2493,1,9,Debit,2022-02-23,Condolence Money,10E200150,Entertainment expenses,,,,,10000,0,10A100020,Cash and deposits,,,,,3956746,2022-02
-2493,1,9,Credit,2022-02-23,Condolence Money,10A100020,Cash and deposits,,,,,0,22000,10E200150,Entertainment expenses,,,,,90885075,2022-02
+2493,1,9,Credit,2022-02-23,Condolence Money,10A100020,Cash and deposits,,,,,0,22000,10E200150,Entertainment expenses,,,,,38559504,2022-02
 2493,2,9,Debit,2022-02-23,Flower price,10E200150,Entertainment expenses,,,,,12000,0,10A100020,Cash and deposits,,,,,3968746,2022-02
 2494,1,26,Debit,2022-02-23,Travel Expenses,10E201230,Travel and transportation expenses,,,,,11000,0,10A100020,Cash and deposits,,,,,11511515,2022-02
-2494,1,26,Credit,2022-02-23,Travel Expenses,10A100020,Cash and deposits,,,,,0,11000,10E201230,Travel and transportation expenses,,,,,90874075,2022-02
+2494,1,26,Credit,2022-02-23,Travel Expenses,10A100020,Cash and deposits,,,,,0,11000,10E201230,Travel and transportation expenses,,,,,38548504,2022-02
 2495,1,28,Debit,2022-02-23,Taxi Fare,10E201230,Travel and transportation expenses,,,,,2420,0,10B100630,Accounts payable - other,,,,,11513935,2022-02
 2495,1,28,Credit,2022-02-23,Taxi Fare,10B100630,Accounts payable - other,,,,,0,2420,10E201230,Travel and transportation expenses,,,,,3348893,2022-02
 2496,1,54,Debit,2022-02-23,Highway Toll,10E201120,Vehicle expenses,,,,,1810,0,10A100020,Cash and deposits,,,,,6448828,2022-02
-2496,1,54,Credit,2022-02-23,Highway Toll,10A100020,Cash and deposits,,,,,0,4382,10E201120,Vehicle expenses,,,,,90869693,2022-02
+2496,1,54,Credit,2022-02-23,Highway Toll,10A100020,Cash and deposits,,,,,0,4382,10E201120,Vehicle expenses,,,,,38544122,2022-02
 2496,2,54,Debit,2022-02-23,Highway Toll,10E201120,Vehicle expenses,,,,,2572,0,10A100020,Cash and deposits,,,,,6451400,2022-02
 2497,1,61,Debit,2022-02-23,Tea Cost,10E200140,Welfare expenses,,,,,11080,0,10B100630,Accounts payable - other,,,,,5102616,2022-02
 2497,1,61,Credit,2022-02-23,Tea Cost,10B100630,Accounts payable - other,,,,,0,11080,10E200140,Welfare expenses,,,,,3359973,2022-02
 2498,1,84,Debit,2022-02-23,February Salary Others 0001 Executives,10E200090,Remuneration for directors (and other officers),,,,,1720000,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,18920000,2022-02
-2498,1,84,Credit,2022-02-23,February Salary Others 0001 Executives,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,1124255,10E200090,Remuneration for directors (and other officers),,,,,89745438,2022-02
+2498,1,84,Credit,2022-02-23,February Salary Others 0001 Executives,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,1124255,10E200090,Remuneration for directors (and other officers),,,,,37419867,2022-02
 2498,2,84,Credit,2022-02-23,February Salary Others 0001 Executives,10B100690,Deposits received,1,Insurance Premium,,,0,120411,10E200090,Remuneration for directors (and other officers),,,,,3834370,2022-02
 2498,3,84,Credit,2022-02-23,February Salary Others 0001 Executives,10B100690,Deposits received,2,Resident Tax,,,0,171200,10E200090,Remuneration for directors (and other officers),,,,,4005570,2022-02
 2498,4,84,Credit,2022-02-23,February Salary Others 0001 Executives,10B100690,Deposits received,3,Withholding Tax,,,0,164442,10E200090,Remuneration for directors (and other officers),,,,,4170012,2022-02
 2498,5,84,Credit,2022-02-23,February Salary Others 0001 Executives,10B100690,Deposits received,4,Savings & Insurance,,,0,133972,10E200090,Remuneration for directors (and other officers),,,,,4303984,2022-02
 2498,6,84,Credit,2022-02-23,February Salary Others 0001 Executives,10B100690,Deposits received,9,Others,,,0,5720,10E200090,Remuneration for directors (and other officers),,,,,4309704,2022-02
 2498,7,84,Debit,2022-02-23,February Salary Others 0020 Sales Department,10E200370,Salaries and allowances,,,,,1943331,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,53816156,2022-02
-2498,7,84,Credit,2022-02-23,February Salary Others 0020 Sales Department,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,1459122,10E200370,Salaries and allowances,,,,,88286316,2022-02
+2498,7,84,Credit,2022-02-23,February Salary Others 0020 Sales Department,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,1459122,10E200370,Salaries and allowances,,,,,35960745,2022-02
 2498,8,84,Credit,2022-02-23,February Salary Others 0020 Sales Department,10B100690,Deposits received,1,Insurance Premium,,,0,236045,10E200090,Remuneration for directors (and other officers),,,,,4545749,2022-02
 2498,9,84,Credit,2022-02-23,February Salary Others 0020 Sales Department,10B100690,Deposits received,2,Resident Tax,,,0,104300,10E200090,Remuneration for directors (and other officers),,,,,4650049,2022-02
 2498,10,84,Credit,2022-02-23,February Salary Others 0020 Sales Department,10B100690,Deposits received,3,Withholding Tax,,,0,35300,10E200090,Remuneration for directors (and other officers),,,,,4685349,2022-02
 2498,11,84,Credit,2022-02-23,February Salary Others 0020 Sales Department,10B100690,Deposits received,4,Savings & Insurance,,,0,43305,10E200090,Remuneration for directors (and other officers),,,,,4728654,2022-02
 2498,12,84,Credit,2022-02-23,February Salary Others 0020 Sales Department,10B100690,Deposits received,9,Others,,,0,65259,10E200090,Remuneration for directors (and other officers),,,,,4793913,2022-02
 2498,13,84,Debit,2022-02-23,February Salary Others 1000 Sapporo Office,10E200370,Salaries and allowances,,,,,872472,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,54688628,2022-02
-2498,13,84,Credit,2022-02-23,February Salary Others 1000 Sapporo Office,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,615966,10E200370,Salaries and allowances,,,,,87670350,2022-02
+2498,13,84,Credit,2022-02-23,February Salary Others 1000 Sapporo Office,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,615966,10E200370,Salaries and allowances,,,,,35344779,2022-02
 2498,14,84,Credit,2022-02-23,February Salary Others 1000 Sapporo Office,10B100690,Deposits received,1,Insurance Premium,,,0,103424,10E200090,Remuneration for directors (and other officers),,,,,4897337,2022-02
 2498,15,84,Credit,2022-02-23,February Salary Others 1000 Sapporo Office,10B100690,Deposits received,2,Resident Tax,,,0,46300,10E200090,Remuneration for directors (and other officers),,,,,4943637,2022-02
 2498,16,84,Credit,2022-02-23,February Salary Others 1000 Sapporo Office,10B100690,Deposits received,3,Withholding Tax,,,0,14100,10E200090,Remuneration for directors (and other officers),,,,,4957737,2022-02
 2498,17,84,Credit,2022-02-23,February Salary Others 1000 Sapporo Office,10B100690,Deposits received,4,Savings & Insurance,,,0,50648,10E200090,Remuneration for directors (and other officers),,,,,5008385,2022-02
 2498,18,84,Credit,2022-02-23,February Salary Others 1000 Sapporo Office,10B100690,Deposits received,9,Others,,,0,42034,10E200090,Remuneration for directors (and other officers),,,,,5050419,2022-02
 2498,19,84,Debit,2022-02-23,February Salary Others 3000 Nagoya Office,10E200370,Salaries and allowances,,,,,782039,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,55470667,2022-02
-2498,19,84,Credit,2022-02-23,February Salary Others 3000 Nagoya Office,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,557677,10E200370,Salaries and allowances,,,,,87112673,2022-02
+2498,19,84,Credit,2022-02-23,February Salary Others 3000 Nagoya Office,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,557677,10E200370,Salaries and allowances,,,,,34787102,2022-02
 2498,20,84,Credit,2022-02-23,February Salary Others 3000 Nagoya Office,10B100690,Deposits received,1,Insurance Premium,,,0,96352,10E200090,Remuneration for directors (and other officers),,,,,5146771,2022-02
 2498,21,84,Credit,2022-02-23,February Salary Others 3000 Nagoya Office,10B100690,Deposits received,2,Resident Tax,,,0,42600,10E200090,Remuneration for directors (and other officers),,,,,5189371,2022-02
 2498,22,84,Credit,2022-02-23,February Salary Others 3000 Nagoya Office,10B100690,Deposits received,3,Withholding Tax,,,0,7960,10E200090,Remuneration for directors (and other officers),,,,,5197331,2022-02
 2498,23,84,Credit,2022-02-23,February Salary Others 3000 Nagoya Office,10B100690,Deposits received,4,Savings & Insurance,,,0,40759,10E200090,Remuneration for directors (and other officers),,,,,5238090,2022-02
 2498,24,84,Credit,2022-02-23,February Salary Others 3000 Nagoya Office,10B100690,Deposits received,9,Others,,,0,36691,10E200090,Remuneration for directors (and other officers),,,,,5274781,2022-02
 2498,25,84,Debit,2022-02-23,February Salary Others 4000 Osaka Branch,10E200370,Salaries and allowances,,,,,998253,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,56468920,2022-02
-2498,25,84,Credit,2022-02-23,February Salary Others 4000 Osaka Branch,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,776468,10E200370,Salaries and allowances,,,,,86336205,2022-02
+2498,25,84,Credit,2022-02-23,February Salary Others 4000 Osaka Branch,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,776468,10E200370,Salaries and allowances,,,,,34010634,2022-02
 2498,26,84,Credit,2022-02-23,February Salary Others 4000 Osaka Branch,10B100690,Deposits received,1,Insurance Premium,,,0,119477,10E200090,Remuneration for directors (and other officers),,,,,5394258,2022-02
 2498,27,84,Credit,2022-02-23,February Salary Others 4000 Osaka Branch,10B100690,Deposits received,2,Resident Tax,,,0,53400,10E200090,Remuneration for directors (and other officers),,,,,5447658,2022-02
 2498,28,84,Credit,2022-02-23,February Salary Others 4000 Osaka Branch,10B100690,Deposits received,3,Withholding Tax,,,0,16950,10E200090,Remuneration for directors (and other officers),,,,,5464608,2022-02
 2498,29,84,Credit,2022-02-23,February Salary Others 4000 Osaka Branch,10B100690,Deposits received,4,Savings & Insurance,,,0,13570,10E200090,Remuneration for directors (and other officers),,,,,5478178,2022-02
 2498,30,84,Credit,2022-02-23,February Salary Others 4000 Osaka Branch,10B100690,Deposits received,9,Others,,,0,18388,10E200090,Remuneration for directors (and other officers),,,,,5496566,2022-02
 2498,31,84,Debit,2022-02-23,February Salary Others 5000 Kyushu Office,10E200370,Salaries and allowances,,,,,590589,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,57059509,2022-02
-2498,31,84,Credit,2022-02-23,February Salary Others 5000 Kyushu Office,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,448558,10E200370,Salaries and allowances,,,,,85887647,2022-02
+2498,31,84,Credit,2022-02-23,February Salary Others 5000 Kyushu Office,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,448558,10E200370,Salaries and allowances,,,,,33562076,2022-02
 2498,32,84,Credit,2022-02-23,February Salary Others 5000 Kyushu Office,10B100690,Deposits received,1,Insurance Premium,,,0,67268,10E200090,Remuneration for directors (and other officers),,,,,5563834,2022-02
 2498,33,84,Credit,2022-02-23,February Salary Others 5000 Kyushu Office,10B100690,Deposits received,2,Resident Tax,,,0,31700,10E200090,Remuneration for directors (and other officers),,,,,5595534,2022-02
 2498,34,84,Credit,2022-02-23,February Salary Others 5000 Kyushu Office,10B100690,Deposits received,3,Withholding Tax,,,0,8180,10E200090,Remuneration for directors (and other officers),,,,,5603714,2022-02
 2498,35,84,Credit,2022-02-23,February Salary Others 5000 Kyushu Office,10B100690,Deposits received,4,Savings & Insurance,,,0,18540,10E200090,Remuneration for directors (and other officers),,,,,5622254,2022-02
 2498,36,84,Credit,2022-02-23,February Salary Others 5000 Kyushu Office,10B100690,Deposits received,9,Others,,,0,16343,10E200090,Remuneration for directors (and other officers),,,,,5638597,2022-02
 2499,1,140,Debit,2022-02-23,Travel Expenses,10E201230,Travel and transportation expenses,,,,,7400,0,10A100020,Cash and deposits,,,,,11521335,2022-02
-2499,1,140,Credit,2022-02-23,Travel Expenses,10A100020,Cash and deposits,,,,,0,7400,10E201230,Travel and transportation expenses,,,,,85880247,2022-02
+2499,1,140,Credit,2022-02-23,Travel Expenses,10A100020,Cash and deposits,,,,,0,7400,10E201230,Travel and transportation expenses,,,,,33554676,2022-02
 2500,1,156,Debit,2022-02-23,Business Trip Expense,10E201230,Travel and transportation expenses,,,,,9500,0,10A100020,Cash and deposits,,,,,11530835,2022-02
-2500,1,156,Credit,2022-02-23,Business Trip Expense,10A100020,Cash and deposits,,,,,0,9500,10E201230,Travel and transportation expenses,,,,,85870747,2022-02
+2500,1,156,Credit,2022-02-23,Business Trip Expense,10A100020,Cash and deposits,,,,,0,9500,10E201230,Travel and transportation expenses,,,,,33545176,2022-02
 2501,1,75,Debit,2022-02-24,Coffee fee 2 people,10E200150,Entertainment expenses,,,,,1260,0,10A100020,Cash and deposits,,,,,3970006,2022-02
-2501,1,75,Credit,2022-02-24,Coffee fee 2 people,10A100020,Cash and deposits,,,,,0,1260,10E200150,Entertainment expenses,,,,,85869487,2022-02
+2501,1,75,Credit,2022-02-24,Coffee fee 2 people,10A100020,Cash and deposits,,,,,0,1260,10E200150,Entertainment expenses,,,,,33543916,2022-02
 2502,1,78,Debit,2022-02-24,Subcontracting Fee Payment,10E200020,Sales commission,,,,,189000,0,10B100630,Accounts payable - other,,,,,22699167,2022-02
 2502,1,78,Credit,2022-02-24,Subcontracting Fee Payment,10B100630,Accounts payable - other,,,,,0,189000,10E200020,Sales commission,,,,,3548973,2022-02
 2503,1,83,Debit,2022-02-24,Vehicle Management Cost,10E201120,Vehicle expenses,,,,,38700,0,10A100020,Cash and deposits,,,,,6490100,2022-02
-2503,1,83,Credit,2022-02-24,Vehicle Management Cost,10A100020,Cash and deposits,,,,,0,38700,10E201120,Vehicle expenses,,,,,85830787,2022-02
+2503,1,83,Credit,2022-02-24,Vehicle Management Cost,10A100020,Cash and deposits,,,,,0,38700,10E201120,Vehicle expenses,,,,,33505216,2022-02
 2504,1,87,Debit,2022-02-24,Mobile Phone Cost,10E200180,Communication expenses,,,,,71567,0,10A100020,Cash and deposits,30,Mitsui Nagoya,,,11836821,2022-02
-2504,1,87,Credit,2022-02-24,Mobile Phone Cost,10A100020,Cash and deposits,30,Mitsui Nagoya,,,0,71567,10E200180,Communication expenses,,,,,85759220,2022-02
+2504,1,87,Credit,2022-02-24,Mobile Phone Cost,10A100020,Cash and deposits,30,Mitsui Nagoya,,,0,71567,10E200180,Communication expenses,,,,,33433649,2022-02
 2505,1,104,Debit,2022-02-24,3 coffee,10E200150,Entertainment expenses,,,,,1890,0,10A100020,Cash and deposits,,,,,3971896,2022-02
-2505,1,104,Credit,2022-02-24,3 coffee,10A100020,Cash and deposits,,,,,0,1890,10E200150,Entertainment expenses,,,,,85757330,2022-02
+2505,1,104,Credit,2022-02-24,3 coffee,10A100020,Cash and deposits,,,,,0,1890,10E200150,Entertainment expenses,,,,,33431759,2022-02
 2506,1,120,Debit,2022-02-24,Subcontracting Cost,10E200020,Sales commission,,,,,315000,0,10B100630,Accounts payable - other,,,,,23014167,2022-02
 2506,1,120,Credit,2022-02-24,Subcontracting Cost,10B100630,Accounts payable - other,,,,,0,315000,10E200020,Sales commission,,,,,3863973,2022-02
 2507,1,157,Debit,2022-02-24,Airline Ticket Cost,10E201230,Travel and transportation expenses,,,,,44000,0,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,11574835,2022-02
-2507,1,157,Credit,2022-02-24,Airline Ticket Cost,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,0,44000,10E201230,Travel and transportation expenses,,,,,85713330,2022-02
+2507,1,157,Credit,2022-02-24,Airline Ticket Cost,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,0,44000,10E201230,Travel and transportation expenses,,,,,33387759,2022-02
 2508,1,172,Debit,2022-02-24,Subcontracting Fee Payment,10E200020,Sales commission,,,,,122000,0,10B100630,Accounts payable - other,,,,,23136167,2022-02
 2508,1,172,Credit,2022-02-24,Subcontracting Fee Payment,10B100630,Accounts payable - other,,,,,0,122000,10E200020,Sales commission,,,,,3985973,2022-02
 2509,1,24,Debit,2022-02-25,JR coupon,10E201230,Travel and transportation expenses,,,,,55850,0,10A100020,Cash and deposits,,,,,11630685,2022-02
-2509,1,24,Credit,2022-02-25,JR coupon,10A100020,Cash and deposits,,,,,0,55850,10E201230,Travel and transportation expenses,,,,,85657480,2022-02
+2509,1,24,Credit,2022-02-25,JR coupon,10A100020,Cash and deposits,,,,,0,55850,10E201230,Travel and transportation expenses,,,,,33331909,2022-02
 2510,1,35,Debit,2022-02-25,Newspaper Cost,10E201160,Book expenses,,,,,3925,0,10A100020,Cash and deposits,,,,,253745,2022-02
-2510,1,35,Credit,2022-02-25,Newspaper Cost,10A100020,Cash and deposits,,,,,0,3925,10E201160,Book expenses,,,,,85653555,2022-02
+2510,1,35,Credit,2022-02-25,Newspaper Cost,10A100020,Cash and deposits,,,,,0,3925,10E201160,Book expenses,,,,,33327984,2022-02
 2511,1,37,Debit,2022-02-25,Subcontracting Cost,10E200020,Sales commission,,,,,754100,0,10B100630,Accounts payable - other,,,,,23890267,2022-02
 2511,1,37,Credit,2022-02-25,Subcontracting Cost,10B100630,Accounts payable - other,,,,,0,754100,10E200020,Sales commission,,,,,4740073,2022-02
 2512,1,60,Debit,2022-02-25,Travel Expenses,10E201230,Travel and transportation expenses,,,,,10500,0,10A100020,Cash and deposits,,,,,11641185,2022-02
-2512,1,60,Credit,2022-02-25,Travel Expenses,10A100020,Cash and deposits,,,,,0,10500,10E201230,Travel and transportation expenses,,,,,85643055,2022-02
-2513,1,107,Debit,2022-02-25,February 25th Slip No. 448 Imai Department Store,10A100060,Notes receivable - trade,,,,,18354869,0,10A100090,Accounts receivable - trade,2,Imai Department Store,,,63203753,2022-02
-2513,1,107,Credit,2022-02-25,February 25th Slip No. 448 Imai Department Store,10A100090,Accounts receivable - trade,2,Imai Department Store,,,0,18354869,10A100060,Notes receivable - trade,,,,,57615305,2022-02
-2514,1,108,Debit,2022-02-25,"February 25th Slip No. 449 Comprehensive Management Co., Ltd.",10A100020,Cash and deposits,30,Mitsui Nagoya,,,1820058,0,10A100090,Accounts receivable - trade,7,"Comprehensive Management Co., Ltd.",,,87463113,2022-02
-2514,1,108,Credit,2022-02-25,"February 25th Slip No. 449 Comprehensive Management Co., Ltd.",10A100090,Accounts receivable - trade,7,"Comprehensive Management Co., Ltd.",,,0,1820058,10A100020,Cash and deposits,30,Mitsui Nagoya,,,55795247,2022-02
-2514,2,108,Debit,2022-02-25,"February 25th Slip No. 449 Comprehensive Management Co., Ltd.",10E200690,Commission expenses,,,,,735,0,10A100090,Accounts receivable - trade,7,"Comprehensive Management Co., Ltd.",,,128822,2022-02
-2514,2,108,Credit,2022-02-25,"February 25th Slip No. 449 Comprehensive Management Co., Ltd.",10A100090,Accounts receivable - trade,7,"Comprehensive Management Co., Ltd.",,,0,735,10E200690,Commission expenses,,,,,55794512,2022-02
-2515,1,109,Debit,2022-02-25,"February 25th Slip No. 450 Kamata Shoten Co., Ltd.",10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,1048454,0,10A100090,Accounts receivable - trade,23,"Kamata Shoten Co., Ltd.",,,88511567,2022-02
-2515,1,109,Credit,2022-02-25,"February 25th Slip No. 450 Kamata Shoten Co., Ltd.",10A100090,Accounts receivable - trade,23,"Kamata Shoten Co., Ltd.",,,0,1048454,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,54746058,2022-02
-2515,2,109,Debit,2022-02-25,"February 25th Slip No. 450 Kamata Shoten Co., Ltd.",10E200690,Commission expenses,,,,,630,0,10A100090,Accounts receivable - trade,23,"Kamata Shoten Co., Ltd.",,,129452,2022-02
-2515,2,109,Credit,2022-02-25,"February 25th Slip No. 450 Kamata Shoten Co., Ltd.",10A100090,Accounts receivable - trade,23,"Kamata Shoten Co., Ltd.",,,0,630,10E200690,Commission expenses,,,,,54745428,2022-02
-2516,1,110,Debit,2022-02-25,"February 25th Slip No. 451 Kobayashi Market Co., Ltd.",10A100020,Cash and deposits,10,Hokkaido Station Front,,,5021044,0,10A100090,Accounts receivable - trade,25,"Kobayashi Market Co., Ltd.",,,93532611,2022-02
-2516,1,110,Credit,2022-02-25,"February 25th Slip No. 451 Kobayashi Market Co., Ltd.",10A100090,Accounts receivable - trade,25,"Kobayashi Market Co., Ltd.",,,0,5021044,10A100020,Cash and deposits,10,Hokkaido Station Front,,,49724384,2022-02
-2516,2,110,Debit,2022-02-25,"February 25th Slip No. 451 Kobayashi Market Co., Ltd.",10E200690,Commission expenses,,,,,840,0,10A100090,Accounts receivable - trade,25,"Kobayashi Market Co., Ltd.",,,130292,2022-02
-2516,2,110,Credit,2022-02-25,"February 25th Slip No. 451 Kobayashi Market Co., Ltd.",10A100090,Accounts receivable - trade,25,"Kobayashi Market Co., Ltd.",,,0,840,10E200690,Commission expenses,,,,,49723544,2022-02
+2512,1,60,Credit,2022-02-25,Travel Expenses,10A100020,Cash and deposits,,,,,0,10500,10E201230,Travel and transportation expenses,,,,,33317484,2022-02
+2513,1,107,Debit,2022-02-25,February 25th Slip No. 448 Imai Department Store,10A100060,Notes receivable - trade,,,,,20467436,0,10A100090,Accounts receivable - trade,2,Imai Department Store,,,-2305729,2022-02
+2513,1,107,Credit,2022-02-25,February 25th Slip No. 448 Imai Department Store,10A100090,Accounts receivable - trade,2,Imai Department Store,,,0,20467436,10A100060,Notes receivable - trade,,,,,156448513,2022-02
+2514,1,108,Debit,2022-02-25,"February 25th Slip No. 449 Comprehensive Management Co., Ltd.",10A100020,Cash and deposits,30,Mitsui Nagoya,,,1478159,0,10A100090,Accounts receivable - trade,7,"Comprehensive Management Co., Ltd.",,,34795643,2022-02
+2514,1,108,Credit,2022-02-25,"February 25th Slip No. 449 Comprehensive Management Co., Ltd.",10A100090,Accounts receivable - trade,7,"Comprehensive Management Co., Ltd.",,,0,1478159,10A100020,Cash and deposits,30,Mitsui Nagoya,,,154970354,2022-02
+2515,1,109,Debit,2022-02-25,"February 25th Slip No. 450 Kamata Shoten Co., Ltd.",10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,1420364,0,10A100090,Accounts receivable - trade,23,"Kamata Shoten Co., Ltd.",,,36216007,2022-02
+2515,1,109,Credit,2022-02-25,"February 25th Slip No. 450 Kamata Shoten Co., Ltd.",10A100090,Accounts receivable - trade,23,"Kamata Shoten Co., Ltd.",,,0,1420364,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,153549990,2022-02
+2516,1,110,Debit,2022-02-25,"February 25th Slip No. 451 Kobayashi Market Co., Ltd.",10A100020,Cash and deposits,10,Hokkaido Station Front,,,6207618,0,10A100090,Accounts receivable - trade,25,"Kobayashi Market Co., Ltd.",,,42423625,2022-02
+2516,1,110,Credit,2022-02-25,"February 25th Slip No. 451 Kobayashi Market Co., Ltd.",10A100090,Accounts receivable - trade,25,"Kobayashi Market Co., Ltd.",,,0,6207618,10A100020,Cash and deposits,10,Hokkaido Station Front,,,147342372,2022-02
 2517,1,111,Debit,2022-02-25,Taxi Fare,10E201230,Travel and transportation expenses,,,,,14750,0,10B100630,Accounts payable - other,,,,,11655935,2022-02
 2517,1,111,Credit,2022-02-25,Taxi Fare,10B100630,Accounts payable - other,,,,,0,14750,10E201230,Travel and transportation expenses,,,,,4754823,2022-02
 2518,1,121,Debit,2022-02-25,Tea Cost,10E200140,Welfare expenses,,,,,9500,0,10A100020,Cash and deposits,,,,,5112116,2022-02
-2518,1,121,Credit,2022-02-25,Tea Cost,10A100020,Cash and deposits,,,,,0,9500,10E200140,Welfare expenses,,,,,93523111,2022-02
+2518,1,121,Credit,2022-02-25,Tea Cost,10A100020,Cash and deposits,,,,,0,9500,10E200140,Welfare expenses,,,,,42414125,2022-02
 2519,1,29,Debit,2022-02-26,Mobile Phone Bill,10E200180,Communication expenses,,,,,66751,0,10A100020,Cash and deposits,10,Hokkaido Station Front,,,11903572,2022-02
-2519,1,29,Credit,2022-02-26,Mobile Phone Bill,10A100020,Cash and deposits,10,Hokkaido Station Front,,,0,66751,10E200180,Communication expenses,,,,,93456360,2022-02
+2519,1,29,Credit,2022-02-26,Mobile Phone Bill,10A100020,Cash and deposits,10,Hokkaido Station Front,,,0,66751,10E200180,Communication expenses,,,,,42347374,2022-02
 2520,1,62,Debit,2022-02-26,Mobile Phone Cost,10E200180,Communication expenses,,,,,72648,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,11976220,2022-02
-2520,1,62,Credit,2022-02-26,Mobile Phone Cost,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,72648,10E200180,Communication expenses,,,,,93383712,2022-02
+2520,1,62,Credit,2022-02-26,Mobile Phone Cost,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,72648,10E200180,Communication expenses,,,,,42274726,2022-02
 2521,1,72,Debit,2022-02-26,Newspaper Cost,10E201160,Book expenses,,,,,2864,0,10A100020,Cash and deposits,,,,,256609,2022-02
-2521,1,72,Credit,2022-02-26,Newspaper Cost,10A100020,Cash and deposits,,,,,0,9078,10E201160,Book expenses,,,,,93374634,2022-02
+2521,1,72,Credit,2022-02-26,Newspaper Cost,10A100020,Cash and deposits,,,,,0,9078,10E201160,Book expenses,,,,,42265648,2022-02
 2521,2,72,Debit,2022-02-26,Newspaper Cost,10E201160,Book expenses,,,,,2815,0,10A100020,Cash and deposits,,,,,259424,2022-02
 2521,3,72,Debit,2022-02-26,Newspaper Cost,10E201160,Book expenses,,,,,3399,0,10A100020,Cash and deposits,,,,,262823,2022-02
 2522,1,82,Debit,2022-02-26,Taxi Fare,10E201230,Travel and transportation expenses,,,,,4500,0,10A100020,Cash and deposits,,,,,11660435,2022-02
-2522,1,82,Credit,2022-02-26,Taxi Fare,10A100020,Cash and deposits,,,,,0,4500,10E201230,Travel and transportation expenses,,,,,93370134,2022-02
+2522,1,82,Credit,2022-02-26,Taxi Fare,10A100020,Cash and deposits,,,,,0,4500,10E201230,Travel and transportation expenses,,,,,42261148,2022-02
 2523,1,88,Debit,2022-02-26,Newspaper Cost,10E201160,Book expenses,,,,,3568,0,10A100020,Cash and deposits,,,,,266391,2022-02
-2523,1,88,Credit,2022-02-26,Newspaper Cost,10A100020,Cash and deposits,,,,,0,3568,10E201160,Book expenses,,,,,93366566,2022-02
+2523,1,88,Credit,2022-02-26,Newspaper Cost,10A100020,Cash and deposits,,,,,0,3568,10E201160,Book expenses,,,,,42257580,2022-02
 2524,1,109,Debit,2022-02-26,Gasoline Cost,10E201120,Vehicle expenses,,,,,46487,0,10B100630,Accounts payable - other,,,,,6536587,2022-02
 2524,1,109,Credit,2022-02-26,Gasoline Cost,10B100630,Accounts payable - other,,,,,0,46487,10E201120,Vehicle expenses,,,,,4801310,2022-02
 2525,1,113,Debit,2022-02-26,Mobile Phone Cost,10E200180,Communication expenses,,,,,59831,0,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,12036051,2022-02
-2525,1,113,Credit,2022-02-26,Mobile Phone Cost,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,59831,10E200180,Communication expenses,,,,,93306735,2022-02
+2525,1,113,Credit,2022-02-26,Mobile Phone Cost,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,59831,10E200180,Communication expenses,,,,,42197749,2022-02
 2526,1,114,Debit,2022-02-26,Newspaper Cost,10E201160,Book expenses,,,,,2540,0,10A100020,Cash and deposits,,,,,268931,2022-02
-2526,1,114,Credit,2022-02-26,Newspaper Cost,10A100020,Cash and deposits,,,,,0,5404,10E201160,Book expenses,,,,,93301331,2022-02
+2526,1,114,Credit,2022-02-26,Newspaper Cost,10A100020,Cash and deposits,,,,,0,5404,10E201160,Book expenses,,,,,42192345,2022-02
 2526,2,114,Debit,2022-02-26,Newspaper Cost,10E201160,Book expenses,,,,,2864,0,10A100020,Cash and deposits,,,,,271795,2022-02
 2527,1,131,Debit,2022-02-26,Membership Fee,10E201140,Membership fee,,,,,24000,0,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,1246000,2022-02
-2527,1,131,Credit,2022-02-26,Membership Fee,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,24000,10E201140,Membership fee,,,,,93277331,2022-02
+2527,1,131,Credit,2022-02-26,Membership Fee,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,24000,10E201140,Membership fee,,,,,42168345,2022-02
 2528,1,146,Debit,2022-02-26,Subcontracting Cost,10E200020,Sales commission,,,,,168000,0,10B100630,Accounts payable - other,,,,,24058267,2022-02
 2528,1,146,Credit,2022-02-26,Subcontracting Cost,10B100630,Accounts payable - other,,,,,0,168000,10E200020,Sales commission,,,,,4969310,2022-02
 2529,1,170,Debit,2022-02-26,Newspaper Cost,10E201160,Book expenses,,,,,3007,0,10A100020,Cash and deposits,,,,,274802,2022-02
-2529,1,170,Credit,2022-02-26,Newspaper Cost,10A100020,Cash and deposits,,,,,0,3007,10E201160,Book expenses,,,,,93274324,2022-02
+2529,1,170,Credit,2022-02-26,Newspaper Cost,10A100020,Cash and deposits,,,,,0,3007,10E201160,Book expenses,,,,,42165338,2022-02
 2530,1,15,Debit,2022-02-27,Highway Toll,10E201120,Vehicle expenses,,,,,2100,0,10A100020,Cash and deposits,,,,,6538687,2022-02
-2530,1,15,Credit,2022-02-27,Highway Toll,10A100020,Cash and deposits,,,,,0,2100,10E201120,Vehicle expenses,,,,,93272224,2022-02
+2530,1,15,Credit,2022-02-27,Highway Toll,10A100020,Cash and deposits,,,,,0,2100,10E201120,Vehicle expenses,,,,,42163238,2022-02
 2531,1,30,Debit,2022-02-27,Insurance Premium Payment,10E200240,Insurance expenses,,,,,54320,0,10A100020,Cash and deposits,10,Hokkaido Station Front,,,3242520,2022-02
-2531,1,30,Credit,2022-02-27,Insurance Premium Payment,10A100020,Cash and deposits,10,Hokkaido Station Front,,,0,54320,10E200240,Insurance expenses,,,,,93217904,2022-02
+2531,1,30,Credit,2022-02-27,Insurance Premium Payment,10A100020,Cash and deposits,10,Hokkaido Station Front,,,0,54320,10E200240,Insurance expenses,,,,,42108918,2022-02
 2532,1,39,Debit,2022-02-27,Membership Fee,10E200140,Welfare expenses,,,,,9000,0,10A100020,Cash and deposits,,,,,5121116,2022-02
-2532,1,39,Credit,2022-02-27,Membership Fee,10A100020,Cash and deposits,,,,,0,9000,10E200140,Welfare expenses,,,,,93208904,2022-02
+2532,1,39,Credit,2022-02-27,Membership Fee,10A100020,Cash and deposits,,,,,0,9000,10E200140,Welfare expenses,,,,,42099918,2022-02
 2533,1,77,Debit,2022-02-27,Gasoline Cost,10E201120,Vehicle expenses,,,,,4893,0,10A100020,Cash and deposits,,,,,6543580,2022-02
-2533,1,77,Credit,2022-02-27,Gasoline Cost,10A100020,Cash and deposits,,,,,0,6036,10E201120,Vehicle expenses,,,,,93202868,2022-02
+2533,1,77,Credit,2022-02-27,Gasoline Cost,10A100020,Cash and deposits,,,,,0,6036,10E201120,Vehicle expenses,,,,,42093882,2022-02
 2533,2,77,Debit,2022-02-27,Car wash,10E201120,Vehicle expenses,,,,,1143,0,10A100020,Cash and deposits,,,,,6544723,2022-02
 2534,1,171,Debit,2022-02-27,Mobile Phone Cost,10E200180,Communication expenses,,,,,51396,0,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,12087447,2022-02
-2534,1,171,Credit,2022-02-27,Mobile Phone Cost,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,0,51396,10E200180,Communication expenses,,,,,93151472,2022-02
+2534,1,171,Credit,2022-02-27,Mobile Phone Cost,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,0,51396,10E200180,Communication expenses,,,,,42042486,2022-02
 2535,1,1,Debit,2022-02-28,Fare Sagawa Express,10E200870,Freight costs,,,,,129830,0,10B100630,Accounts payable - other,,,,,43756686,2022-02
 2535,1,1,Credit,2022-02-28,Fare Sagawa Express,10B100630,Accounts payable - other,,,,,0,129830,10E200870,Freight costs,,,,,5099140,2022-02
 2536,1,5,Debit,2022-02-28,Advertising Expense,10E200050,Advertising expenses,,,,,52500,0,10A100020,Cash and deposits,10,Hokkaido Station Front,,,1937200,2022-02
-2536,1,5,Credit,2022-02-28,Advertising Expense,10A100020,Cash and deposits,10,Hokkaido Station Front,,,0,52500,10E200050,Advertising expenses,,,,,93098972,2022-02
+2536,1,5,Credit,2022-02-28,Advertising Expense,10A100020,Cash and deposits,10,Hokkaido Station Front,,,0,52500,10E200050,Advertising expenses,,,,,41989986,2022-02
 2537,1,36,Debit,2022-02-28,Fare Yamato Transport,10E200870,Freight costs,,,,,1568981,0,10B100630,Accounts payable - other,,,,,45325667,2022-02
 2537,1,36,Credit,2022-02-28,Fare Yamato Transport,10B100630,Accounts payable - other,,,,,0,2302153,10E200870,Freight costs,,,,,7401293,2022-02
 2537,2,36,Debit,2022-02-28,Fare Sagawa Express,10E200870,Freight costs,,,,,733172,0,10B100630,Accounts payable - other,,,,,46058839,2022-02
@@ -545,29 +517,29 @@
 2539,1,49,Debit,2022-02-28,Gasoline Cost,10E201120,Vehicle expenses,,,,,163470,0,10B100630,Accounts payable - other,,,,,6708193,2022-02
 2539,1,49,Credit,2022-02-28,Gasoline Cost,10B100630,Accounts payable - other,,,,,0,163470,10E201120,Vehicle expenses,,,,,7614763,2022-02
 2539,2,49,Debit,2022-02-28,Gasoline Cost,10E201120,Vehicle expenses,,,,,2626,0,10A100020,Cash and deposits,,,,,6710819,2022-02
-2539,2,49,Credit,2022-02-28,Gasoline Cost,10A100020,Cash and deposits,,,,,0,8355,10E201120,Vehicle expenses,,,,,93090617,2022-02
+2539,2,49,Credit,2022-02-28,Gasoline Cost,10A100020,Cash and deposits,,,,,0,8355,10E201120,Vehicle expenses,,,,,41981631,2022-02
 2539,3,49,Debit,2022-02-28,Gasoline Cost,10E201120,Vehicle expenses,,,,,5729,0,10B100630,Accounts payable - other,,,,,6716548,2022-02
 2540,1,55,Debit,2022-02-28,Vehicle Management Cost,10E201120,Vehicle expenses,,,,,23810,0,10A100020,Cash and deposits,,,,,6740358,2022-02
-2540,1,55,Credit,2022-02-28,Vehicle Management Cost,10A100020,Cash and deposits,,,,,0,58144,10E201120,Vehicle expenses,,,,,93032473,2022-02
+2540,1,55,Credit,2022-02-28,Vehicle Management Cost,10A100020,Cash and deposits,,,,,0,58144,10E201120,Vehicle expenses,,,,,41923487,2022-02
 2540,2,55,Debit,2022-02-28,Vehicle Management Cost,10E201120,Vehicle expenses,,,,,26667,0,10A100020,Cash and deposits,,,,,6767025,2022-02
 2540,3,55,Debit,2022-02-28,Highway Toll,10E201120,Vehicle expenses,,,,,7667,0,10A100020,Cash and deposits,,,,,6774692,2022-02
 2541,1,63,Debit,2022-02-28,Insurance Premium,10E200240,Insurance expenses,,,,,81000,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,3323520,2022-02
-2541,1,63,Credit,2022-02-28,Insurance Premium,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,81000,10E200240,Insurance expenses,,,,,92951473,2022-02
+2541,1,63,Credit,2022-02-28,Insurance Premium,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,81000,10E200240,Insurance expenses,,,,,41842487,2022-02
 2542,1,66,Debit,2022-02-28,Lease Payments,10E200730,Rent expenses on land and buildings,,,,,209850,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,3148350,2022-02
-2542,1,66,Credit,2022-02-28,Lease Payments,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,209850,10E200730,Rent expenses on land and buildings,,,,,92741623,2022-02
+2542,1,66,Credit,2022-02-28,Lease Payments,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,209850,10E200730,Rent expenses on land and buildings,,,,,41632637,2022-02
 2543,1,67,Debit,2022-02-28,Membership Fee Payment,10E201140,Membership fee,,,,,30000,0,10A100020,Cash and deposits,,,,,1276000,2022-02
-2543,1,67,Credit,2022-02-28,Membership Fee Payment,10A100020,Cash and deposits,,,,,0,30000,10E201140,Membership fee,,,,,92711623,2022-02
+2543,1,67,Credit,2022-02-28,Membership Fee Payment,10A100020,Cash and deposits,,,,,0,30000,10E201140,Membership fee,,,,,41602637,2022-02
 2544,1,70,Debit,2022-02-28,Wired (Cable),10E201270,Miscellaneous expenses,,,,,6000,0,10B100630,Accounts payable - other,,,,,5124840,2022-02
 2544,1,70,Credit,2022-02-28,Wired (Cable),10B100630,Accounts payable - other,,,,,0,58381,10E201270,Miscellaneous expenses,,,,,7673144,2022-02
 2544,2,70,Debit,2022-02-28,Security Fee,10E201270,Miscellaneous expenses,,,,,52381,0,10B100630,Accounts payable - other,,,,,5177221,2022-02
 2544,3,70,Debit,2022-02-28,Highway Toll,10E201120,Vehicle expenses,,,,,73315,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,6848007,2022-02
-2544,3,70,Credit,2022-02-28,Highway Toll,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,73315,10E201120,Vehicle expenses,,,,,92638308,2022-02
+2544,3,70,Credit,2022-02-28,Highway Toll,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,73315,10E201120,Vehicle expenses,,,,,41529322,2022-02
 2544,4,70,Debit,2022-02-28,Cleaning Fee,10E201270,Miscellaneous expenses,,,,,73500,0,10B100630,Accounts payable - other,,,,,5250721,2022-02
 2544,4,70,Credit,2022-02-28,Cleaning Fee,10B100630,Accounts payable - other,,,,,0,73500,10E201270,Miscellaneous expenses,,,,,7746644,2022-02
 2545,1,72,Debit,2022-02-28,Insurance Premium,10E200240,Insurance expenses,,,,,62000,0,10A100020,Cash and deposits,30,Mitsui Nagoya,,,3385520,2022-02
-2545,1,72,Credit,2022-02-28,Insurance Premium,10A100020,Cash and deposits,30,Mitsui Nagoya,,,0,62000,10E200240,Insurance expenses,,,,,92576308,2022-02
+2545,1,72,Credit,2022-02-28,Insurance Premium,10A100020,Cash and deposits,30,Mitsui Nagoya,,,0,62000,10E200240,Insurance expenses,,,,,41467322,2022-02
 2546,1,73,Debit,2022-02-28,Insurance Premium Payment,10E200240,Insurance expenses,,,,,57000,0,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,3442520,2022-02
-2546,1,73,Credit,2022-02-28,Insurance Premium Payment,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,0,57000,10E200240,Insurance expenses,,,,,92519308,2022-02
+2546,1,73,Credit,2022-02-28,Insurance Premium Payment,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,0,57000,10E200240,Insurance expenses,,,,,41410322,2022-02
 2547,1,77,Debit,2022-02-28,Freight,10E200870,Freight costs,,,,,141620,0,10B100630,Accounts payable - other,,,,,46200459,2022-02
 2547,1,77,Credit,2022-02-28,Freight,10B100630,Accounts payable - other,,,,,0,141620,10E200870,Freight costs,,,,,7888264,2022-02
 2548,1,78,Credit,2022-02-28,Consumables Cost Department Allocation,10E200200,Supplies expenses,,,,,0,304407,10E200200,Supplies expenses,,,,,2715743,2022-02
@@ -581,13 +553,13 @@
 2550,1,93,Debit,2022-02-28,Maintenance Cost,10E201000,Repair and maintenance expenses,,,,,17850,0,10B100630,Accounts payable - other,,,,,319500,2022-02
 2550,1,93,Credit,2022-02-28,Maintenance Cost,10B100630,Accounts payable - other,,,,,0,17850,10E201000,Repair and maintenance expenses,,,,,7926014,2022-02
 2551,1,96,Debit,2022-02-28,Security Fee,10E201270,Miscellaneous expenses,,,,,22470,0,10A100020,Cash and deposits,30,Mitsui Nagoya,,,5273191,2022-02
-2551,1,96,Credit,2022-02-28,Security Fee,10A100020,Cash and deposits,30,Mitsui Nagoya,,,0,22470,10E201270,Miscellaneous expenses,,,,,92496838,2022-02
+2551,1,96,Credit,2022-02-28,Security Fee,10A100020,Cash and deposits,30,Mitsui Nagoya,,,0,22470,10E201270,Miscellaneous expenses,,,,,41387852,2022-02
 2552,1,99,Debit,2022-02-28,Freight,10E200870,Freight costs,,,,,798630,0,10B100630,Accounts payable - other,,,,,46999089,2022-02
 2552,1,99,Credit,2022-02-28,Freight,10B100630,Accounts payable - other,,,,,0,798630,10E200870,Freight costs,,,,,8724644,2022-02
 2553,1,100,Debit,2022-02-28,Membership Fee,10E200140,Welfare expenses,,,,,6000,0,10A100020,Cash and deposits,,,,,5147016,2022-02
-2553,1,100,Credit,2022-02-28,Membership Fee,10A100020,Cash and deposits,,,,,0,6000,10E200140,Welfare expenses,,,,,92490838,2022-02
+2553,1,100,Credit,2022-02-28,Membership Fee,10A100020,Cash and deposits,,,,,0,6000,10E200140,Welfare expenses,,,,,41381852,2022-02
 2554,1,102,Debit,2022-02-28,Insurance Premium Advance,10B100690,Deposits received,1,Insurance Premium,,,742977,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,4895620,2022-02
-2554,1,102,Credit,2022-02-28,Insurance Premium Advance,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,1497010,10B100690,Deposits received,1,Insurance Premium,,,90993828,2022-02
+2554,1,102,Credit,2022-02-28,Insurance Premium Advance,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,1497010,10B100690,Deposits received,1,Insurance Premium,,,39884842,2022-02
 2554,2,102,Debit,2022-02-28,Employer's Share of Insurance Premiums,10E200540,Legal welfare expenses,,,,,120411,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,8720877,2022-02
 2554,3,102,Debit,2022-02-28,Employer's Share of Insurance Premiums,10E200540,Legal welfare expenses,,,,,236045,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,8956922,2022-02
 2554,4,102,Debit,2022-02-28,Employer's Share of Insurance Premiums,10E200540,Legal welfare expenses,,,,,103424,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,9060346,2022-02
@@ -596,181 +568,197 @@
 2554,7,102,Debit,2022-02-28,Employer's Share of Insurance Premiums,10E200540,Legal welfare expenses,,,,,67268,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,9343443,2022-02
 2554,8,102,Debit,2022-02-28,Employer's Share of Child Contribution,10E200540,Legal welfare expenses,,,,,11056,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,9354499,2022-02
 2555,1,108,Debit,2022-02-28,Food and Beverage Cost Hotel Raffone 3 People,10E200150,Entertainment expenses,,,,,21330,0,10A100020,Cash and deposits,,,,,3993226,2022-02
-2555,1,108,Credit,2022-02-28,Food and Beverage Cost Hotel Raffone 3 People,10A100020,Cash and deposits,,,,,0,21330,10E200150,Entertainment expenses,,,,,90972498,2022-02
-2556,1,111,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,1492021,0,10D100102,Sales from traditional transactions,,,,,51215565,2022-02
+2555,1,108,Credit,2022-02-28,Food and Beverage Cost Hotel Raffone 3 People,10A100020,Cash and deposits,,,,,0,21330,10E200150,Entertainment expenses,,,,,39863512,2022-02
+2556,1,111,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,1492021,0,10D100102,Sales from traditional transactions,,,,,148834393,2022-02
 2556,1,111,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,1492021,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,514183345,2022-02
-2556,2,111,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,25,"Kobayashi Market Co., Ltd.",,,3741296,0,10D100101,Sales from electronic transactions,,,,,54956861,2022-02
+2556,2,111,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,25,"Kobayashi Market Co., Ltd.",,,3741296,0,10D100101,Sales from electronic transactions,,,,,152575689,2022-02
 2556,2,111,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100101,Sales from electronic transactions,,,,,0,3741296,10A100090,Accounts receivable - trade,25,"Kobayashi Market Co., Ltd.",,,211443811,2022-02
-2556,3,111,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,5,"ABC Co., Ltd.",,,1394098,0,10D100102,Sales from traditional transactions,,,,,56350959,2022-02
+2556,3,111,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,5,"ABC Co., Ltd.",,,1394098,0,10D100102,Sales from traditional transactions,,,,,153969787,2022-02
 2556,3,111,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,1394098,10A100090,Accounts receivable - trade,5,"ABC Co., Ltd.",,,515577443,2022-02
-2557,1,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,12,Momiji Department Store,,,7423367,0,10D100102,Sales from traditional transactions,,,,,63774326,2022-02
+2557,1,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,12,Momiji Department Store,,,7423367,0,10D100102,Sales from traditional transactions,,,,,161393154,2022-02
 2557,1,112,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,7423367,10A100090,Accounts receivable - trade,12,Momiji Department Store,,,523000810,2022-02
-2557,2,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,26,"Sasaki Sales Co., Ltd.",,,1096632,0,10D100101,Sales from electronic transactions,,,,,64870958,2022-02
+2557,2,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,26,"Sasaki Sales Co., Ltd.",,,1096632,0,10D100101,Sales from electronic transactions,,,,,162489786,2022-02
 2557,2,112,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100101,Sales from electronic transactions,,,,,0,1096632,10A100090,Accounts receivable - trade,26,"Sasaki Sales Co., Ltd.",,,212540443,2022-02
-2557,3,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,30,"YAG Co., Ltd.",,,1425220,0,10D100101,Sales from electronic transactions,,,,,66296178,2022-02
+2557,3,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,30,"YAG Co., Ltd.",,,1425220,0,10D100101,Sales from electronic transactions,,,,,163915006,2022-02
 2557,3,112,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100101,Sales from electronic transactions,,,,,0,1425220,10A100090,Accounts receivable - trade,30,"YAG Co., Ltd.",,,213965663,2022-02
-2557,4,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,2,Imai Department Store,,,13269523,0,10D100102,Sales from traditional transactions,,,,,79565701,2022-02
+2557,4,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,2,Imai Department Store,,,13269523,0,10D100102,Sales from traditional transactions,,,,,177184529,2022-02
 2557,4,112,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,13269523,10A100090,Accounts receivable - trade,2,Imai Department Store,,,536270333,2022-02
-2557,5,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,24,"Hatakeyama Trading Co., Ltd.",,,226620,0,10D100101,Sales from electronic transactions,,,,,79792321,2022-02
+2557,5,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,24,"Hatakeyama Trading Co., Ltd.",,,226620,0,10D100101,Sales from electronic transactions,,,,,177411149,2022-02
 2557,5,112,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100101,Sales from electronic transactions,,,,,0,226620,10A100090,Accounts receivable - trade,24,"Hatakeyama Trading Co., Ltd.",,,214192283,2022-02
-2557,6,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,11,"Saito Co., Ltd.",,,806985,0,10D100102,Sales from traditional transactions,,,,,80599306,2022-02
+2557,6,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,11,"Saito Co., Ltd.",,,806985,0,10D100102,Sales from traditional transactions,,,,,178218134,2022-02
 2557,6,112,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,806985,10A100090,Accounts receivable - trade,11,"Saito Co., Ltd.",,,537077318,2022-02
-2557,7,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,13,"Abe Trading Co., Ltd.",,,1024020,0,10D100102,Sales from traditional transactions,,,,,81623326,2022-02
+2557,7,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,13,"Abe Trading Co., Ltd.",,,1024020,0,10D100102,Sales from traditional transactions,,,,,179242154,2022-02
 2557,7,112,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,1024020,10A100090,Accounts receivable - trade,13,"Abe Trading Co., Ltd.",,,538101338,2022-02
-2557,8,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,1540024,0,10D100102,Sales from traditional transactions,,,,,83163350,2022-02
+2557,8,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,1540024,0,10D100102,Sales from traditional transactions,,,,,180782178,2022-02
 2557,8,112,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,1540024,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,539641362,2022-02
-2557,9,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,10,Aim Trading LLC,,,140000,0,10D100102,Sales from traditional transactions,,,,,83303350,2022-02
+2557,9,112,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,10,Aim Trading LLC,,,140000,0,10D100102,Sales from traditional transactions,,,,,180922178,2022-02
 2557,9,112,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,140000,10A100090,Accounts receivable - trade,10,Aim Trading LLC,,,539781362,2022-02
-2558,1,113,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,21,Takada LLC,,,482866,0,10D100101,Sales from electronic transactions,,,,,83786216,2022-02
+2558,1,113,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,21,Takada LLC,,,482866,0,10D100101,Sales from electronic transactions,,,,,181405044,2022-02
 2558,1,113,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100101,Sales from electronic transactions,,,,,0,482866,10A100090,Accounts receivable - trade,21,Takada LLC,,,214675149,2022-02
-2558,2,113,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,1033750,0,10D100102,Sales from traditional transactions,,,,,84819966,2022-02
+2558,2,113,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,1033750,0,10D100102,Sales from traditional transactions,,,,,182438794,2022-02
 2558,2,113,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,1033750,10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,540815112,2022-02
-2558,3,113,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,7,"Comprehensive Management Co., Ltd.",,,1323972,0,10D100102,Sales from traditional transactions,,,,,86143938,2022-02
+2558,3,113,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,7,"Comprehensive Management Co., Ltd.",,,1323972,0,10D100102,Sales from traditional transactions,,,,,183762766,2022-02
 2558,3,113,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,1323972,10A100090,Accounts receivable - trade,7,"Comprehensive Management Co., Ltd.",,,542139084,2022-02
-2558,4,113,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,1256285,0,10D100102,Sales from traditional transactions,,,,,87400223,2022-02
+2558,4,113,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,1256285,0,10D100102,Sales from traditional transactions,,,,,185019051,2022-02
 2558,4,113,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,1256285,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,543395369,2022-02
-2558,5,113,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,27,"Iwashita Trading Co., Ltd.",,,919584,0,10D100101,Sales from electronic transactions,,,,,88319807,2022-02
+2558,5,113,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,27,"Iwashita Trading Co., Ltd.",,,919584,0,10D100101,Sales from electronic transactions,,,,,185938635,2022-02
 2558,5,113,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100101,Sales from electronic transactions,,,,,0,919584,10A100090,Accounts receivable - trade,27,"Iwashita Trading Co., Ltd.",,,215594733,2022-02
-2558,6,113,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,19,"Minami Co., Ltd.",,,352450,0,10D100102,Sales from traditional transactions,,,,,88672257,2022-02
+2558,6,113,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,19,"Minami Co., Ltd.",,,352450,0,10D100102,Sales from traditional transactions,,,,,186291085,2022-02
 2558,6,113,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,352450,10A100090,Accounts receivable - trade,19,"Minami Co., Ltd.",,,543747819,2022-02
-2559,1,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,28,Kameda Department Store,,,6175852,0,10D100101,Sales from electronic transactions,,,,,94848109,2022-02
+2559,1,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,28,Kameda Department Store,,,6175852,0,10D100101,Sales from electronic transactions,,,,,192466937,2022-02
 2559,1,114,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100101,Sales from electronic transactions,,,,,0,6175852,10A100090,Accounts receivable - trade,28,Kameda Department Store,,,221770585,2022-02
-2559,2,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,2468352,0,10D100102,Sales from traditional transactions,,,,,97316461,2022-02
+2559,2,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,2468352,0,10D100102,Sales from traditional transactions,,,,,194935289,2022-02
 2559,2,114,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,2468352,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,546216171,2022-02
-2559,3,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,4,Mark Market,,,1290240,0,10D100102,Sales from traditional transactions,,,,,98606701,2022-02
+2559,3,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,4,Mark Market,,,1290240,0,10D100102,Sales from traditional transactions,,,,,196225529,2022-02
 2559,3,114,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,1290240,10A100090,Accounts receivable - trade,4,Mark Market,,,547506411,2022-02
-2559,4,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,9,"Takahashi Trading Co., Ltd.",,,1713160,0,10D100102,Sales from traditional transactions,,,,,100319861,2022-02
+2559,4,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,9,"Takahashi Trading Co., Ltd.",,,1713160,0,10D100102,Sales from traditional transactions,,,,,197938689,2022-02
 2559,4,114,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,1713160,10A100090,Accounts receivable - trade,9,"Takahashi Trading Co., Ltd.",,,549219571,2022-02
-2559,5,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,20,"Kujou Trading Co., Ltd.",,,794114,0,10D100101,Sales from electronic transactions,,,,,101113975,2022-02
+2559,5,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,20,"Kujou Trading Co., Ltd.",,,794114,0,10D100101,Sales from electronic transactions,,,,,198732803,2022-02
 2559,5,114,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100101,Sales from electronic transactions,,,,,0,794114,10A100090,Accounts receivable - trade,20,"Kujou Trading Co., Ltd.",,,222564699,2022-02
-2559,6,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,3,"Check Co., Ltd.",,,828232,0,10D100102,Sales from traditional transactions,,,,,101942207,2022-02
+2559,6,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,3,"Check Co., Ltd.",,,828232,0,10D100102,Sales from traditional transactions,,,,,199561035,2022-02
 2559,6,114,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,828232,10A100090,Accounts receivable - trade,3,"Check Co., Ltd.",,,550047803,2022-02
-2559,7,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,8,"Tower Co., Ltd.",,,649800,0,10D100102,Sales from traditional transactions,,,,,102592007,2022-02
+2559,7,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,8,"Tower Co., Ltd.",,,649800,0,10D100102,Sales from traditional transactions,,,,,200210835,2022-02
 2559,7,114,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,649800,10A100090,Accounts receivable - trade,8,"Tower Co., Ltd.",,,550697603,2022-02
-2559,8,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,23,"Kamata Shoten Co., Ltd.",,,534144,0,10D100101,Sales from electronic transactions,,,,,103126151,2022-02
+2559,8,114,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,23,"Kamata Shoten Co., Ltd.",,,534144,0,10D100101,Sales from electronic transactions,,,,,200744979,2022-02
 2559,8,114,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100101,Sales from electronic transactions,,,,,0,534144,10A100090,Accounts receivable - trade,23,"Kamata Shoten Co., Ltd.",,,223098843,2022-02
-2560,1,115,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,1202181,0,10D100102,Sales from traditional transactions,,,,,104328332,2022-02
+2560,1,115,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,1202181,0,10D100102,Sales from traditional transactions,,,,,201947160,2022-02
 2560,1,115,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,1202181,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,551899784,2022-02
-2560,2,115,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,22,"Watanabe Industries Co., Ltd.",,,1056168,0,10D100101,Sales from electronic transactions,,,,,105384500,2022-02
+2560,2,115,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,22,"Watanabe Industries Co., Ltd.",,,1056168,0,10D100101,Sales from electronic transactions,,,,,203003328,2022-02
 2560,2,115,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100101,Sales from electronic transactions,,,,,0,1056168,10A100090,Accounts receivable - trade,22,"Watanabe Industries Co., Ltd.",,,224155011,2022-02
-2560,3,115,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,1,"Goketsu Co., Ltd.",,,1608844,0,10D100102,Sales from traditional transactions,,,,,106993344,2022-02
+2560,3,115,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,1,"Goketsu Co., Ltd.",,,1608844,0,10D100102,Sales from traditional transactions,,,,,204612172,2022-02
 2560,3,115,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100102,Sales from traditional transactions,,,,,0,1608844,10A100090,Accounts receivable - trade,1,"Goketsu Co., Ltd.",,,553508628,2022-02
-2560,4,115,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,29,"Chiyo Service Co., Ltd.",,,486020,0,10D100101,Sales from electronic transactions,,,,,107479364,2022-02
+2560,4,115,Debit,2022-02-28,Sales for the period from February 1th to February 28th,10A100090,Accounts receivable - trade,29,"Chiyo Service Co., Ltd.",,,486020,0,10D100101,Sales from electronic transactions,,,,,205098192,2022-02
 2560,4,115,Credit,2022-02-28,Sales for the period from February 1th to February 28th,10D100101,Sales from electronic transactions,,,,,0,486020,10A100090,Accounts receivable - trade,29,"Chiyo Service Co., Ltd.",,,224641031,2022-02
 2560,5,115,Debit,2022-02-28,Insurance Premium,10E200240,Insurance expenses,,,,,64500,0,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,3507020,2022-02
-2560,5,115,Credit,2022-02-28,Insurance Premium,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,64500,10E200240,Insurance expenses,,,,,90907998,2022-02
+2560,5,115,Credit,2022-02-28,Insurance Premium,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,64500,10E200240,Insurance expenses,,,,,39799012,2022-02
 2561,1,116,Debit,2022-02-28,Lease Payments,10E200730,Rent expenses on land and buildings,,,,,84000,0,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,3232350,2022-02
-2561,1,116,Credit,2022-02-28,Lease Payments,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,84000,10E200730,Rent expenses on land and buildings,,,,,90823998,2022-02
-2561,2,116,Debit,2022-02-28,February 28th Slip No. 452 Mark Market,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,1076271,0,10A100090,Accounts receivable - trade,4,Mark Market,,,91900269,2022-02
-2561,2,116,Credit,2022-02-28,February 28th Slip No. 452 Mark Market,10A100090,Accounts receivable - trade,4,Mark Market,,,0,1076271,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,106403093,2022-02
-2561,3,116,Debit,2022-02-28,February 28th Slip No. 452 Mark Market,10E200690,Commission expenses,,,,,840,0,10A100090,Accounts receivable - trade,4,Mark Market,,,131132,2022-02
-2561,3,116,Credit,2022-02-28,February 28th Slip No. 452 Mark Market,10A100090,Accounts receivable - trade,4,Mark Market,,,0,840,10E200690,Commission expenses,,,,,106402253,2022-02
-2562,1,117,Debit,2022-02-28,"February 28th Slip No. 453 ABC Co., Ltd.",10A100020,Cash and deposits,10,Hokkaido Station Front,,,1706132,0,10A100090,Accounts receivable - trade,5,"ABC Co., Ltd.",,,93606401,2022-02
-2562,1,117,Credit,2022-02-28,"February 28th Slip No. 453 ABC Co., Ltd.",10A100090,Accounts receivable - trade,5,"ABC Co., Ltd.",,,0,1706132,10A100020,Cash and deposits,10,Hokkaido Station Front,,,104696121,2022-02
-2562,2,117,Debit,2022-02-28,"February 28th Slip No. 453 ABC Co., Ltd.",10E200690,Commission expenses,,,,,840,0,10A100090,Accounts receivable - trade,5,"ABC Co., Ltd.",,,131972,2022-02
-2562,2,117,Credit,2022-02-28,"February 28th Slip No. 453 ABC Co., Ltd.",10A100090,Accounts receivable - trade,5,"ABC Co., Ltd.",,,0,840,10E200690,Commission expenses,,,,,104695281,2022-02
-2563,1,118,Debit,2022-02-28,February 28th Slip No. 454 Aim Trading LLC,10A100020,Cash and deposits,,,,,187387,0,10A100090,Accounts receivable - trade,10,Aim Trading LLC,,,93793788,2022-02
-2563,1,118,Credit,2022-02-28,February 28th Slip No. 454 Aim Trading LLC,10A100090,Accounts receivable - trade,10,Aim Trading LLC,,,0,187387,10A100020,Cash and deposits,,,,,104507894,2022-02
-2564,1,119,Debit,2022-02-28,February 28th Slip No. 455 Momiji Department Store,10A100060,Notes receivable - trade,,,,,12162331,0,10A100090,Accounts receivable - trade,12,Momiji Department Store,,,75366084,2022-02
-2564,1,119,Credit,2022-02-28,February 28th Slip No. 455 Momiji Department Store,10A100090,Accounts receivable - trade,12,Momiji Department Store,,,0,12162331,10A100060,Notes receivable - trade,,,,,92345563,2022-02
-2565,1,120,Debit,2022-02-28,"February 28th Slip No. 456 Hatakeyama Trading Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,562212,0,10A100090,Accounts receivable - trade,24,"Hatakeyama Trading Co., Ltd.",,,94356000,2022-02
-2565,1,120,Credit,2022-02-28,"February 28th Slip No. 456 Hatakeyama Trading Co., Ltd.",10A100090,Accounts receivable - trade,24,"Hatakeyama Trading Co., Ltd.",,,0,562212,10A100020,Cash and deposits,20,Mizuho Main Branch,,,91783351,2022-02
-2565,2,120,Debit,2022-02-28,"February 28th Slip No. 456 Hatakeyama Trading Co., Ltd.",10E200690,Commission expenses,,,,,630,0,10A100090,Accounts receivable - trade,24,"Hatakeyama Trading Co., Ltd.",,,132602,2022-02
-2565,2,120,Credit,2022-02-28,"February 28th Slip No. 456 Hatakeyama Trading Co., Ltd.",10A100090,Accounts receivable - trade,24,"Hatakeyama Trading Co., Ltd.",,,0,630,10E200690,Commission expenses,,,,,91782721,2022-02
-2566,1,121,Debit,2022-02-28,"February 28th Slip No. 457 Chiyo Service Co., Ltd.",10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,380360,0,10A100090,Accounts receivable - trade,29,"Chiyo Service Co., Ltd.",,,94736360,2022-02
-2566,1,121,Credit,2022-02-28,"February 28th Slip No. 457 Chiyo Service Co., Ltd.",10A100090,Accounts receivable - trade,29,"Chiyo Service Co., Ltd.",,,0,380360,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,91402361,2022-02
-2566,2,121,Debit,2022-02-28,"February 28th Slip No. 457 Chiyo Service Co., Ltd.",10E200690,Commission expenses,,,,,210,0,10A100090,Accounts receivable - trade,29,"Chiyo Service Co., Ltd.",,,132812,2022-02
-2566,2,121,Credit,2022-02-28,"February 28th Slip No. 457 Chiyo Service Co., Ltd.",10A100090,Accounts receivable - trade,29,"Chiyo Service Co., Ltd.",,,0,210,10E200690,Commission expenses,,,,,91402151,2022-02
+2561,1,116,Credit,2022-02-28,Lease Payments,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,84000,10E200730,Rent expenses on land and buildings,,,,,39715012,2022-02
+2561,2,116,Debit,2022-02-28,February 28th Slip No. 452 Mark Market,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,1435084,0,10A100090,Accounts receivable - trade,4,Mark Market,,,41150096,2022-02
+2561,2,116,Credit,2022-02-28,February 28th Slip No. 452 Mark Market,10A100090,Accounts receivable - trade,4,Mark Market,,,0,1435084,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,203663108,2022-02
+2562,1,117,Debit,2022-02-28,"February 28th Slip No. 453 ABC Co., Ltd.",10A100020,Cash and deposits,10,Hokkaido Station Front,,,1585172,0,10A100090,Accounts receivable - trade,5,"ABC Co., Ltd.",,,42735268,2022-02
+2562,1,117,Credit,2022-02-28,"February 28th Slip No. 453 ABC Co., Ltd.",10A100090,Accounts receivable - trade,5,"ABC Co., Ltd.",,,0,1585172,10A100020,Cash and deposits,10,Hokkaido Station Front,,,202077936,2022-02
+2563,1,118,Debit,2022-02-28,February 28th Slip No. 454 Aim Trading LLC,10A100020,Cash and deposits,,,,,458172,0,10A100090,Accounts receivable - trade,10,Aim Trading LLC,,,43193440,2022-02
+2563,1,118,Credit,2022-02-28,February 28th Slip No. 454 Aim Trading LLC,10A100090,Accounts receivable - trade,10,Aim Trading LLC,,,0,458172,10A100020,Cash and deposits,,,,,201619764,2022-02
+2564,1,119,Debit,2022-02-28,February 28th Slip No. 455 Momiji Department Store,10A100060,Notes receivable - trade,,,,,17510543,0,10A100090,Accounts receivable - trade,12,Momiji Department Store,,,15204814,2022-02
+2564,1,119,Credit,2022-02-28,February 28th Slip No. 455 Momiji Department Store,10A100090,Accounts receivable - trade,12,Momiji Department Store,,,0,17510543,10A100060,Notes receivable - trade,,,,,184109221,2022-02
+2565,1,120,Debit,2022-02-28,"February 28th Slip No. 456 Hatakeyama Trading Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,600724,0,10A100090,Accounts receivable - trade,24,"Hatakeyama Trading Co., Ltd.",,,43794164,2022-02
+2565,1,120,Credit,2022-02-28,"February 28th Slip No. 456 Hatakeyama Trading Co., Ltd.",10A100090,Accounts receivable - trade,24,"Hatakeyama Trading Co., Ltd.",,,0,600724,10A100020,Cash and deposits,20,Mizuho Main Branch,,,183508497,2022-02
+2566,1,121,Debit,2022-02-28,"February 28th Slip No. 457 Chiyo Service Co., Ltd.",10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,1633676,0,10A100090,Accounts receivable - trade,29,"Chiyo Service Co., Ltd.",,,45427840,2022-02
+2566,1,121,Credit,2022-02-28,"February 28th Slip No. 457 Chiyo Service Co., Ltd.",10A100090,Accounts receivable - trade,29,"Chiyo Service Co., Ltd.",,,0,1633676,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,181874821,2022-02
 2567,1,122,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,224733,0,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,279062917,2022-02
-2567,1,122,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,0,224733,10E100132,Cost of purchased goods from traditional transactions,,,,,67898406,2022-02
+2567,1,122,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,0,224733,10E100132,Cost of purchased goods from traditional transactions,,,,,87936461,2022-02
 2567,2,122,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,26208,0,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,279089125,2022-02
-2567,2,122,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,0,26208,10E100132,Cost of purchased goods from traditional transactions,,,,,67924614,2022-02
+2567,2,122,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,0,26208,10E100132,Cost of purchased goods from traditional transactions,,,,,87962669,2022-02
 2568,1,123,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100131,Cost of purchased goods from electronic transactions,,,,,3385746,0,10B100040,Accounts payable - trade,14,West LLC,,,153997212,2022-02
-2568,1,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,14,West LLC,,,0,3385746,10E100131,Cost of purchased goods from electronic transactions,,,,,71310360,2022-02
+2568,1,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,14,West LLC,,,0,3385746,10E100131,Cost of purchased goods from electronic transactions,,,,,91348415,2022-02
 2568,2,123,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,3726253,0,10B100040,Accounts payable - trade,3,"Check Co., Ltd.",,,282815378,2022-02
-2568,2,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,3,"Check Co., Ltd.",,,0,3726253,10E100132,Cost of purchased goods from traditional transactions,,,,,75036613,2022-02
+2568,2,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,3,"Check Co., Ltd.",,,0,3726253,10E100132,Cost of purchased goods from traditional transactions,,,,,95074668,2022-02
 2568,3,123,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100131,Cost of purchased goods from electronic transactions,,,,,1292036,0,10B100040,Accounts payable - trade,13,"Nakamura Industries Co., Ltd.",,,155289248,2022-02
-2568,3,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,13,"Nakamura Industries Co., Ltd.",,,0,1292036,10E100131,Cost of purchased goods from electronic transactions,,,,,76328649,2022-02
+2568,3,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,13,"Nakamura Industries Co., Ltd.",,,0,1292036,10E100131,Cost of purchased goods from electronic transactions,,,,,96366704,2022-02
 2568,4,123,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,4705170,0,10B100040,Accounts payable - trade,1,"Y2 Co., Ltd.",,,287520548,2022-02
-2568,4,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,1,"Y2 Co., Ltd.",,,0,4705170,10E100132,Cost of purchased goods from traditional transactions,,,,,81033819,2022-02
+2568,4,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,1,"Y2 Co., Ltd.",,,0,4705170,10E100132,Cost of purchased goods from traditional transactions,,,,,101071874,2022-02
 2568,5,123,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100131,Cost of purchased goods from electronic transactions,,,,,3661476,0,10B100040,Accounts payable - trade,11,"Matsumura Co., Ltd.",,,158950724,2022-02
-2568,5,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,11,"Matsumura Co., Ltd.",,,0,3661476,10E100131,Cost of purchased goods from electronic transactions,,,,,84695295,2022-02
+2568,5,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,11,"Matsumura Co., Ltd.",,,0,3661476,10E100131,Cost of purchased goods from electronic transactions,,,,,104733350,2022-02
 2568,6,123,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100131,Cost of purchased goods from electronic transactions,,,,,255528,0,10B100040,Accounts payable - trade,12,"Arie Co., Ltd.",,,159206252,2022-02
-2568,6,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,12,"Arie Co., Ltd.",,,0,255528,10E100131,Cost of purchased goods from electronic transactions,,,,,84950823,2022-02
+2568,6,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,12,"Arie Co., Ltd.",,,0,255528,10E100131,Cost of purchased goods from electronic transactions,,,,,104988878,2022-02
 2568,7,123,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,361670,0,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,287882218,2022-02
-2568,7,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,0,361670,10E100132,Cost of purchased goods from traditional transactions,,,,,85312493,2022-02
+2568,7,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,0,361670,10E100132,Cost of purchased goods from traditional transactions,,,,,105350548,2022-02
 2568,8,123,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,554953,0,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,288437171,2022-02
-2568,8,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,0,554953,10E100132,Cost of purchased goods from traditional transactions,,,,,85867446,2022-02
+2568,8,123,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,0,554953,10E100132,Cost of purchased goods from traditional transactions,,,,,105905501,2022-02
 2569,1,124,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,2042022,0,10B100040,Accounts payable - trade,9,"Saito Industries Co., Ltd.",,,290479193,2022-02
-2569,1,124,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,9,"Saito Industries Co., Ltd.",,,0,2042022,10E100132,Cost of purchased goods from traditional transactions,,,,,87909468,2022-02
+2569,1,124,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,9,"Saito Industries Co., Ltd.",,,0,2042022,10E100132,Cost of purchased goods from traditional transactions,,,,,107947523,2022-02
 2569,2,124,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100131,Cost of purchased goods from electronic transactions,,,,,1144940,0,10B100040,Accounts payable - trade,15,"Hanamaru Trading Co., Ltd.",,,160351192,2022-02
-2569,2,124,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,15,"Hanamaru Trading Co., Ltd.",,,0,1144940,10E100131,Cost of purchased goods from electronic transactions,,,,,89054408,2022-02
+2569,2,124,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,15,"Hanamaru Trading Co., Ltd.",,,0,1144940,10E100131,Cost of purchased goods from electronic transactions,,,,,109092463,2022-02
 2569,3,124,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,3221820,0,10B100040,Accounts payable - trade,7,"Sunset Co., Ltd.",,,293701013,2022-02
-2569,3,124,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,7,"Sunset Co., Ltd.",,,0,3221820,10E100132,Cost of purchased goods from traditional transactions,,,,,92276228,2022-02
+2569,3,124,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,7,"Sunset Co., Ltd.",,,0,3221820,10E100132,Cost of purchased goods from traditional transactions,,,,,112314283,2022-02
 2569,4,124,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,105486,0,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,293806499,2022-02
-2569,4,124,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,0,105486,10E100132,Cost of purchased goods from traditional transactions,,,,,92381714,2022-02
+2569,4,124,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,0,105486,10E100132,Cost of purchased goods from traditional transactions,,,,,112419769,2022-02
 2569,5,124,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,52416,0,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,293858915,2022-02
-2569,5,124,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,0,52416,10E100132,Cost of purchased goods from traditional transactions,,,,,92434130,2022-02
+2569,5,124,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,0,52416,10E100132,Cost of purchased goods from traditional transactions,,,,,112472185,2022-02
 2570,1,125,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,4236496,0,10B100040,Accounts payable - trade,5,"Kofujimaru Co., Ltd.",,,298095411,2022-02
-2570,1,125,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,5,"Kofujimaru Co., Ltd.",,,0,4236496,10E100132,Cost of purchased goods from traditional transactions,,,,,96670626,2022-02
+2570,1,125,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,5,"Kofujimaru Co., Ltd.",,,0,4236496,10E100132,Cost of purchased goods from traditional transactions,,,,,116708681,2022-02
 2570,2,125,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,1046118,0,10B100040,Accounts payable - trade,4,"Attach Co., Ltd.",,,299141529,2022-02
-2570,2,125,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,4,"Attach Co., Ltd.",,,0,1046118,10E100132,Cost of purchased goods from traditional transactions,,,,,97716744,2022-02
+2570,2,125,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,4,"Attach Co., Ltd.",,,0,1046118,10E100132,Cost of purchased goods from traditional transactions,,,,,117754799,2022-02
 2570,3,125,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100131,Cost of purchased goods from electronic transactions,,,,,2656388,0,10B100040,Accounts payable - trade,10,"Suzuki Sales Co., Ltd.",,,163007580,2022-02
-2570,3,125,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,10,"Suzuki Sales Co., Ltd.",,,0,2656388,10E100131,Cost of purchased goods from electronic transactions,,,,,100373132,2022-02
+2570,3,125,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,10,"Suzuki Sales Co., Ltd.",,,0,2656388,10E100131,Cost of purchased goods from electronic transactions,,,,,120411187,2022-02
 2570,4,125,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,3218877,0,10B100040,Accounts payable - trade,6,"Hanada Co., Ltd.",,,302360406,2022-02
-2570,4,125,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,6,"Hanada Co., Ltd.",,,0,3218877,10E100132,Cost of purchased goods from traditional transactions,,,,,103592009,2022-02
+2570,4,125,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,6,"Hanada Co., Ltd.",,,0,3218877,10E100132,Cost of purchased goods from traditional transactions,,,,,123630064,2022-02
 2570,5,125,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,536607,0,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,302897013,2022-02
-2570,5,125,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,0,536607,10E100132,Cost of purchased goods from traditional transactions,,,,,104128616,2022-02
+2570,5,125,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,0,536607,10E100132,Cost of purchased goods from traditional transactions,,,,,124166671,2022-02
 2570,6,125,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,52416,0,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,302949429,2022-02
-2570,6,125,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,0,52416,10E100132,Cost of purchased goods from traditional transactions,,,,,104181032,2022-02
+2570,6,125,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,0,52416,10E100132,Cost of purchased goods from traditional transactions,,,,,124219087,2022-02
 2571,1,126,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,26208,0,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,302975637,2022-02
-2571,1,126,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,0,26208,10E100132,Cost of purchased goods from traditional transactions,,,,,104207240,2022-02
+2571,1,126,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,0,26208,10E100132,Cost of purchased goods from traditional transactions,,,,,124245295,2022-02
 2571,2,126,Debit,2022-02-28,Purchases for the period from February 1th to February 28th,10E100132,Cost of purchased goods from traditional transactions,,,,,165109,0,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,303140746,2022-02
-2571,2,126,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,0,165109,10E100132,Cost of purchased goods from traditional transactions,,,,,104372349,2022-02
-2572,1,127,Debit,2022-02-28,"February 28th Slip No. 339 Pole Co., Ltd.",10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,1377066,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,102995283,2022-02
-2572,1,127,Credit,2022-02-28,"February 28th Slip No. 339 Pole Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,1377066,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,93359294,2022-02
-2573,1,128,Debit,2022-02-28,"February 28th Slip No. 340 Kofujimaru Co., Ltd.",10B100040,Accounts payable - trade,5,"Kofujimaru Co., Ltd.",,,5649316,0,10B100030,Notes payable - trade,,,,,97345967,2022-02
-2573,1,128,Credit,2022-02-28,"February 28th Slip No. 340 Kofujimaru Co., Ltd.",10B100030,Notes payable - trade,,,,,0,5649316,10B100040,Accounts payable - trade,5,"Kofujimaru Co., Ltd.",,,50254515,2022-02
-2574,1,129,Debit,2022-02-28,"February 28th Slip No. 341 Sunset Co., Ltd.",10B100040,Accounts payable - trade,7,"Sunset Co., Ltd.",,,5256041,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,92089926,2022-02
-2574,1,129,Credit,2022-02-28,"February 28th Slip No. 341 Sunset Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,5256041,10B100040,Accounts payable - trade,7,"Sunset Co., Ltd.",,,88103253,2022-02
-2575,1,130,Debit,2022-02-28,"February 28th Slip No. 342 Saito Industries Co., Ltd.",10B100040,Accounts payable - trade,9,"Saito Industries Co., Ltd.",,,2620813,0,10B100030,Notes payable - trade,,,,,89469113,2022-02
-2575,1,130,Credit,2022-02-28,"February 28th Slip No. 342 Saito Industries Co., Ltd.",10B100030,Notes payable - trade,,,,,0,2620813,10B100040,Accounts payable - trade,9,"Saito Industries Co., Ltd.",,,52875328,2022-02
-2576,1,131,Debit,2022-02-28,"February 28th Slip No. 343 Suzuki Sales Co., Ltd.",10B100040,Accounts payable - trade,10,"Suzuki Sales Co., Ltd.",,,4760408,0,10B100030,Notes payable - trade,,,,,84708705,2022-02
-2576,1,131,Credit,2022-02-28,"February 28th Slip No. 343 Suzuki Sales Co., Ltd.",10B100030,Notes payable - trade,,,,,0,4760408,10B100040,Accounts payable - trade,10,"Suzuki Sales Co., Ltd.",,,57635736,2022-02
-2577,1,132,Debit,2022-02-28,"February 28th Slip No. 344 Arie Co., Ltd.",10B100040,Accounts payable - trade,12,"Arie Co., Ltd.",,,517154,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,84191551,2022-02
-2577,1,132,Credit,2022-02-28,"February 28th Slip No. 344 Arie Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,517154,10B100040,Accounts payable - trade,12,"Arie Co., Ltd.",,,87586099,2022-02
-2578,1,133,Debit,2022-02-28,"February 28th Slip No. 345 Nakamura Industries Co., Ltd.",10B100040,Accounts payable - trade,13,"Nakamura Industries Co., Ltd.",,,2069835,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,82121716,2022-02
-2578,1,133,Credit,2022-02-28,"February 28th Slip No. 345 Nakamura Industries Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,2069835,10B100040,Accounts payable - trade,13,"Nakamura Industries Co., Ltd.",,,85516264,2022-02
-2579,1,134,Debit,2022-02-28,February 28th Slip No. 346 West LLC,10B100040,Accounts payable - trade,14,West LLC,,,4344303,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,77777413,2022-02
-2579,1,134,Credit,2022-02-28,February 28th Slip No. 346 West LLC,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,4344303,10B100040,Accounts payable - trade,14,West LLC,,,81171961,2022-02
-2580,1,135,Debit,2022-02-28,"February 28th Slip No. 347 Hanamaru Trading Co., Ltd.",10B100040,Accounts payable - trade,15,"Hanamaru Trading Co., Ltd.",,,1692895,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,76084518,2022-02
-2580,1,135,Credit,2022-02-28,"February 28th Slip No. 347 Hanamaru Trading Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,1692895,10B100040,Accounts payable - trade,15,"Hanamaru Trading Co., Ltd.",,,79479066,2022-02
+2571,2,126,Credit,2022-02-28,Purchases for the period from February 1th to February 28th,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,0,165109,10E100132,Cost of purchased goods from traditional transactions,,,,,124410404,2022-02
+2572,1,127,Debit,2022-02-28,"February 28th Slip No. 339 Pole Co., Ltd.",10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,363331,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,124047073,2022-02
+2572,1,127,Credit,2022-02-28,"February 28th Slip No. 339 Pole Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,363331,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,45064509,2022-02
+2573,1,128,Debit,2022-02-28,"February 28th Slip No. 340 Kofujimaru Co., Ltd.",10B100040,Accounts payable - trade,5,"Kofujimaru Co., Ltd.",,,6301802,0,10B100030,Notes payable - trade,,,,,117745271,2022-02
+2573,1,128,Credit,2022-02-28,"February 28th Slip No. 340 Kofujimaru Co., Ltd.",10B100030,Notes payable - trade,,,,,0,6301802,10B100040,Accounts payable - trade,5,"Kofujimaru Co., Ltd.",,,45850507,2022-02
+2574,1,129,Debit,2022-02-28,"February 28th Slip No. 341 Sunset Co., Ltd.",10B100040,Accounts payable - trade,7,"Sunset Co., Ltd.",,,6922413,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,110822858,2022-02
+2574,1,129,Credit,2022-02-28,"February 28th Slip No. 341 Sunset Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,6922413,10B100040,Accounts payable - trade,7,"Sunset Co., Ltd.",,,38142096,2022-02
+2575,1,130,Debit,2022-02-28,"February 28th Slip No. 342 Saito Industries Co., Ltd.",10B100040,Accounts payable - trade,9,"Saito Industries Co., Ltd.",,,2897127,0,10B100030,Notes payable - trade,,,,,107925731,2022-02
+2575,1,130,Credit,2022-02-28,"February 28th Slip No. 342 Saito Industries Co., Ltd.",10B100030,Notes payable - trade,,,,,0,2897127,10B100040,Accounts payable - trade,9,"Saito Industries Co., Ltd.",,,48747634,2022-02
+2576,1,131,Debit,2022-02-28,"February 28th Slip No. 343 Suzuki Sales Co., Ltd.",10B100040,Accounts payable - trade,10,"Suzuki Sales Co., Ltd.",,,5798593,0,10B100030,Notes payable - trade,,,,,102127138,2022-02
+2576,1,131,Credit,2022-02-28,"February 28th Slip No. 343 Suzuki Sales Co., Ltd.",10B100030,Notes payable - trade,,,,,0,5798593,10B100040,Accounts payable - trade,10,"Suzuki Sales Co., Ltd.",,,54546227,2022-02
+2577,1,132,Debit,2022-02-28,"February 28th Slip No. 344 Arie Co., Ltd.",10B100040,Accounts payable - trade,12,"Arie Co., Ltd.",,,658954,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,101468184,2022-02
+2577,1,132,Credit,2022-02-28,"February 28th Slip No. 344 Arie Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,658954,10B100040,Accounts payable - trade,12,"Arie Co., Ltd.",,,37483142,2022-02
+2578,1,133,Debit,2022-02-28,"February 28th Slip No. 345 Nakamura Industries Co., Ltd.",10B100040,Accounts payable - trade,13,"Nakamura Industries Co., Ltd.",,,2069835,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,99398349,2022-02
+2578,1,133,Credit,2022-02-28,"February 28th Slip No. 345 Nakamura Industries Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,2069835,10B100040,Accounts payable - trade,13,"Nakamura Industries Co., Ltd.",,,35413307,2022-02
+2579,1,134,Debit,2022-02-28,February 28th Slip No. 346 West LLC,10B100040,Accounts payable - trade,14,West LLC,,,4570569,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,94827780,2022-02
+2579,1,134,Credit,2022-02-28,February 28th Slip No. 346 West LLC,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,4570569,10B100040,Accounts payable - trade,14,West LLC,,,30842738,2022-02
+2580,1,135,Debit,2022-02-28,"February 28th Slip No. 347 Hanamaru Trading Co., Ltd.",10B100040,Accounts payable - trade,15,"Hanamaru Trading Co., Ltd.",,,1840617,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,92987163,2022-02
+2580,1,135,Credit,2022-02-28,"February 28th Slip No. 347 Hanamaru Trading Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,1840617,10B100040,Accounts payable - trade,15,"Hanamaru Trading Co., Ltd.",,,29002121,2022-02
 2581,1,136,Debit,2022-02-28,Payment for January,10B100630,Accounts payable - other,,,,,10341593,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,-1616949,2022-02
-2581,1,136,Credit,2022-02-28,Payment for January,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,10341593,10B100630,Accounts payable - other,,,,,69137473,2022-02
-2582,1,138,Debit,2022-02-28,Date of bill dates Koto Maru,10B100030,Notes payable - trade,,,,,3923430,0,10A100020,Cash and deposits,1,Mizuho Bank,,,53712306,2022-02
-2582,1,138,Credit,2022-02-28,Date of bill dates Koto Maru,10A100020,Cash and deposits,1,Mizuho Bank,,,0,3923430,10B100030,Notes payable - trade,,,,,65214043,2022-02
-2582,2,138,Debit,2022-02-28,Date of bill dates Saito Sangyo,10B100030,Notes payable - trade,,,,,1859340,0,10A100020,Cash and deposits,1,Mizuho Bank,,,51852966,2022-02
-2582,2,138,Credit,2022-02-28,Date of bill dates Saito Sangyo,10A100020,Cash and deposits,1,Mizuho Bank,,,0,1859340,10B100030,Notes payable - trade,,,,,63354703,2022-02
-2582,3,138,Debit,2022-02-28,Salugary date of falling day Suzuki Sales,10B100030,Notes payable - trade,,,,,3215415,0,10A100020,Cash and deposits,1,Mizuho Bank,,,48637551,2022-02
-2582,3,138,Credit,2022-02-28,Salugary date of falling day Suzuki Sales,10A100020,Cash and deposits,1,Mizuho Bank,,,0,3215415,10B100030,Notes payable - trade,,,,,60139288,2022-02
-2583,1,140,Debit,2022-02-28,Film maturity Imai Department Store,10A100020,Cash and deposits,1,Mizuho Bank,,,15101377,0,10A100060,Notes receivable - trade,,,,,75240665,2022-02
-2583,1,140,Credit,2022-02-28,Film maturity Imai Department Store,10A100060,Notes receivable - trade,,,,,0,15101377,10A100020,Cash and deposits,1,Mizuho Bank,,,60264707,2022-02
-2584,1,141,Debit,2022-02-28,Maji department store Momiji department store,10A100020,Cash and deposits,1,Mizuho Bank,,,11160581,0,10A100060,Notes receivable - trade,,,,,86401246,2022-02
-2584,1,141,Credit,2022-02-28,Maji department store Momiji department store,10A100060,Notes receivable - trade,,,,,0,11160581,10A100020,Cash and deposits,1,Mizuho Bank,,,49104126,2022-02
-2585,1,143,Debit,2022-02-28,Fund Transfer,10A100020,Cash and deposits,20,Mizuho Main Branch,,,24000000,0,10A100020,Cash and deposits,10,Hokkaido Station Front,,,110401246,2022-02
-2585,1,143,Credit,2022-02-28,Fund Transfer,10A100020,Cash and deposits,10,Hokkaido Station Front,,,0,6500000,10A100020,Cash and deposits,20,Mizuho Main Branch,,,103901246,2022-02
-2585,2,143,Credit,2022-02-28,Fund Transfer,10A100020,Cash and deposits,30,Mitsui Nagoya,,,0,7000000,10A100020,Cash and deposits,20,Mizuho Main Branch,,,96901246,2022-02
-2585,3,143,Credit,2022-02-28,Fund Transfer,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,6500000,10A100020,Cash and deposits,20,Mizuho Main Branch,,,90401246,2022-02
-2585,4,143,Credit,2022-02-28,Fund Transfer,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,0,4000000,10A100020,Cash and deposits,20,Mizuho Main Branch,,,86401246,2022-02
-2586,1,144,Debit,2022-02-28,Loan Repayment,10A100020,Cash and deposits,20,Mizuho Main Branch,,,40000,0,10A100610,Short-term loans receivable,,,,,86441246,2022-02
+2581,1,136,Credit,2022-02-28,Payment for January,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,10341593,10B100630,Accounts payable - other,,,,,18660528,2022-02
+2582,1,138,Debit,2022-02-28,Date of bill dates Koto Maru,10B100030,Notes payable - trade,,,,,3923430,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,50622797,2022-02
+2582,1,138,Credit,2022-02-28,Date of bill dates Koto Maru,10A100020,Cash and deposits,20,Mizuho Head Office,,,0,3923430,10B100030,Notes payable - trade,,,,,14737098,2022-02
+2582,2,138,Debit,2022-02-28,Date of bill dates Saito Sangyo,10B100030,Notes payable - trade,,,,,1859340,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,48763457,2022-02
+2582,2,138,Credit,2022-02-28,Date of bill dates Saito Sangyo,10A100020,Cash and deposits,20,Mizuho Head Office,,,0,1859340,10B100030,Notes payable - trade,,,,,12877758,2022-02
+2582,3,138,Debit,2022-02-28,Salugary date of falling day Suzuki Sales,10B100030,Notes payable - trade,,,,,3215415,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,45548042,2022-02
+2582,3,138,Credit,2022-02-28,Salugary date of falling day Suzuki Sales,10A100020,Cash and deposits,20,Mizuho Head Office,,,0,3215415,10B100030,Notes payable - trade,,,,,9662343,2022-02
+2583,1,140,Debit,2022-02-28,Film maturity Imai Department Store,10A100020,Cash and deposits,20,Mizuho Head Office,,,15101377,0,10A100060,Notes receivable - trade,,,,,24763720,2022-02
+2583,1,140,Credit,2022-02-28,Film maturity Imai Department Store,10A100060,Notes receivable - trade,,,,,0,15101377,10A100020,Cash and deposits,20,Mizuho Head Office,,,103437,2022-02
+2584,1,141,Debit,2022-02-28,Maji department store Momiji department store,10A100020,Cash and deposits,20,Mizuho Head Office,,,11160581,0,10A100060,Notes receivable - trade,,,,,35924301,2022-02
+2584,1,141,Credit,2022-02-28,Maji department store Momiji department store,10A100060,Notes receivable - trade,,,,,0,11160581,10A100020,Cash and deposits,20,Mizuho Head Office,,,-11057144,2022-02
+2585,1,143,Debit,2022-02-28,Fund Transfer,10A100020,Cash and deposits,20,Mizuho Main Branch,,,24000000,0,10A100020,Cash and deposits,10,Hokkaido Station Front,,,59924301,2022-02
+2585,1,143,Credit,2022-02-28,Fund Transfer,10A100020,Cash and deposits,10,Hokkaido Station Front,,,0,6500000,10A100020,Cash and deposits,20,Mizuho Main Branch,,,53424301,2022-02
+2585,2,143,Credit,2022-02-28,Fund Transfer,10A100020,Cash and deposits,30,Mitsui Nagoya,,,0,7000000,10A100020,Cash and deposits,20,Mizuho Main Branch,,,46424301,2022-02
+2585,3,143,Credit,2022-02-28,Fund Transfer,10A100020,Cash and deposits,40,Mitsubishi Tokyo Umeda,,,0,6500000,10A100020,Cash and deposits,20,Mizuho Main Branch,,,39924301,2022-02
+2585,4,143,Credit,2022-02-28,Fund Transfer,10A100020,Cash and deposits,50,Fukuoka Kitakyushu,,,0,4000000,10A100020,Cash and deposits,20,Mizuho Main Branch,,,35924301,2022-02
+2586,1,144,Debit,2022-02-28,Loan Repayment,10A100020,Cash and deposits,20,Mizuho Main Branch,,,40000,0,10A100610,Short-term loans receivable,,,,,35964301,2022-02
 2586,1,144,Credit,2022-02-28,Loan Repayment,10A100610,Short-term loans receivable,,,,,0,90000,10A100020,Cash and deposits,20,Mizuho Main Branch,,,290000,2022-02
-2586,2,144,Debit,2022-02-28,Loan Repayment,10A100020,Cash and deposits,20,Mizuho Main Branch,,,50000,0,10A100610,Short-term loans receivable,,,,,86491246,2022-02
+2586,2,144,Debit,2022-02-28,Loan Repayment,10A100020,Cash and deposits,20,Mizuho Main Branch,,,50000,0,10A100610,Short-term loans receivable,,,,,36014301,2022-02
 2587,1,145,Debit,2022-02-28,Freight,10E200870,Freight costs,,,,,168150,0,10B100630,Accounts payable - other,,,,,47167239,2022-02
 2587,1,145,Credit,2022-02-28,Freight,10B100630,Accounts payable - other,,,,,0,168150,10E200870,Freight costs,,,,,-1448799,2022-02
-2587,2,145,Debit,2022-02-28,Regular Savings Deposit,10A100020,Cash and deposits,,,,,500000,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,86991246,2022-02
-2587,2,145,Credit,2022-02-28,Regular Savings Deposit,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,865000,10A100020,Cash and deposits,,,,,86126246,2022-02
-2587,3,145,Debit,2022-02-28,New regular reserve fund,10A100020,Cash and deposits,,,,,240000,0,10B100630,Accounts payable - other,,,,,86366246,2022-02
+2587,2,145,Debit,2022-02-28,Regular Savings Deposit,10A100020,Cash and deposits,,,,,500000,0,10A100020,Cash and deposits,20,Mizuho Main Branch,,,36514301,2022-02
+2587,2,145,Credit,2022-02-28,Regular Savings Deposit,10A100020,Cash and deposits,20,Mizuho Main Branch,,,0,865000,10A100020,Cash and deposits,,,,,35649301,2022-02
+2587,3,145,Debit,2022-02-28,New regular reserve fund,10A100020,Cash and deposits,,,,,240000,0,10B100630,Accounts payable - other,,,,,35889301,2022-02
 2587,4,145,Debit,2022-02-28,Insurance Reserve Fund,10A230570,Insurance funds,,,,,125000,0,10B100630,Accounts payable - other,,,,,1402813,2022-02
-2588,1,146,Debit,2022-02-28,Loan Repayment,10B100790,Short-term borrowings,,,,,653500,0,10A100020,Cash and deposits,1,Mizuho Bank,,,653500,2022-02
-2588,1,146,Credit,2022-02-28,Loan Repayment,10A100020,Cash and deposits,1,Mizuho Bank,,,0,686175,10B100790,Short-term borrowings,,,,,85680071,2022-02
-2588,2,146,Debit,2022-02-28,Interest,10E300020,Interest expenses,,,,,32675,0,10A100020,Cash and deposits,1,Mizuho Bank,,,1169093,2022-02
+2588,1,146,Debit,2022-02-28,Loan Repayment,10B100790,Short-term borrowings,,,,,653500,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,653500,2022-02
+2588,1,146,Credit,2022-02-28,Loan Repayment,10A100020,Cash and deposits,20,Mizuho Head Office,,,0,686175,10B100790,Short-term borrowings,,,,,35203126,2022-02
+2588,2,146,Debit,2022-02-28,Interest,10E300020,Interest expenses,,,,,32675,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,1169093,2022-02
+3090,1,993090,Debit,2022-02-28,"Receipt from Check Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Head Office,,,12141144,0,10A100090,Accounts receivable - trade,3,"Check Co., Ltd.",,,47344270,2022-02
+3090,1,993090,Credit,2022-02-28,"Receipt from Check Co., Ltd.",10A100090,Accounts receivable - trade,3,"Check Co., Ltd.",,,0,12141144,10A100020,Cash and deposits,20,Mizuho Head Office,,,169733677,2022-02
+3091,1,993091,Debit,2022-02-28,"Receipt from Fujita Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Head Office,,,3544224,0,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,50888494,2022-02
+3091,1,993091,Credit,2022-02-28,"Receipt from Fujita Co., Ltd.",10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,0,3544224,10A100020,Cash and deposits,20,Mizuho Head Office,,,166189453,2022-02
+3092,1,993092,Debit,2022-02-28,"Receipt from Fujita Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Head Office,,,14867459,0,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,65755953,2022-02
+3092,1,993092,Credit,2022-02-28,"Receipt from Fujita Co., Ltd.",10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,0,14867459,10A100020,Cash and deposits,20,Mizuho Head Office,,,151321994,2022-02
+3093,1,993093,Debit,2022-02-28,"Receipt from Fujita Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Head Office,,,2089558,0,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,67845511,2022-02
+3093,1,993093,Credit,2022-02-28,"Receipt from Fujita Co., Ltd.",10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,0,2089558,10A100020,Cash and deposits,20,Mizuho Head Office,,,149232436,2022-02
+3094,1,993094,Debit,2022-02-28,"Payment to Pole Co., Ltd.",10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,1085505,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,91901658,2022-02
+3094,1,993094,Credit,2022-02-28,"Payment to Pole Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Head Office,,,0,1085505,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,66760006,2022-02
+3095,1,993095,Debit,2022-02-28,"Payment to Pole Co., Ltd.",10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,183908,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,91717750,2022-02
+3095,1,993095,Credit,2022-02-28,"Payment to Pole Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Head Office,,,0,183908,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,66576098,2022-02
+3096,1,993096,Debit,2022-02-28,"Payment to Pole Co., Ltd.",10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,183908,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,91533842,2022-02
+3096,1,993096,Credit,2022-02-28,"Payment to Pole Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Head Office,,,0,183908,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,66392190,2022-02
+3097,1,993097,Debit,2022-02-28,"Payment to Pole Co., Ltd.",10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,80740,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,91453102,2022-02
+3097,1,993097,Credit,2022-02-28,"Payment to Pole Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Head Office,,,0,80740,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,66311450,2022-02
+3098,1,993098,Debit,2022-02-28,"Payment to Yamashita Co., Ltd.",10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,251899,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,91201203,2022-02
+3098,1,993098,Credit,2022-02-28,"Payment to Yamashita Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Head Office,,,0,251899,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,66059551,2022-02
+3099,1,993099,Debit,2022-02-28,"Payment to Yamashita Co., Ltd.",10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,25704,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,91175499,2022-02
+3099,1,993099,Credit,2022-02-28,"Payment to Yamashita Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Head Office,,,0,25704,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,66033847,2022-02
+3100,1,993100,Debit,2022-02-28,"Payment to Yamashita Co., Ltd.",10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,102816,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,91072683,2022-02
+3100,1,993100,Credit,2022-02-28,"Payment to Yamashita Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Head Office,,,0,102816,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,65931031,2022-02
+3101,1,993101,Debit,2022-02-28,"Payment to Yamashita Co., Ltd.",10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,77112,0,10A100020,Cash and deposits,20,Mizuho Head Office,,,90995571,2022-02
+3101,1,993101,Credit,2022-02-28,"Payment to Yamashita Co., Ltd.",10A100020,Cash and deposits,20,Mizuho Head Office,,,0,77112,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,65853919,2022-02

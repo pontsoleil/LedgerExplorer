@@ -572,6 +572,7 @@ function formatNumberLike(v) {
 
 // -------- DOM --------
 const navEl = document.getElementById("nav");
+const aboutLinkEl = document.getElementById("aboutLink");
 const statusEl = document.getElementById("status");
 const wrapEl = document.getElementById("tableWrap");
 const monthSel = document.getElementById("monthSelect");
@@ -581,10 +582,17 @@ const langSel = document.getElementById("langSelect");
 const fileInput = document.getElementById("fileInput");
 const useServerBtn = document.getElementById("useServerBtn");
 const accountLabelEl = document.getElementById("accountLabel");
+const searchLabelEl = document.getElementById("searchLabel");
 const columnToggleGroupEl = document.getElementById("columnToggleGroup");
 const companyHeaderEl = document.getElementById("companyHeader");
 const monthLabelTextEl = document.getElementById("monthLabelText");
 const searchLabelTextEl = document.getElementById("searchLabelText");
+const fontSizeControlEl = document.getElementById("fontSizeControl");
+const fontSizeLabelEl = document.getElementById("fontSizeLabel");
+
+const FONT_SIZE_OPTIONS = new Set(["small", "medium", "large"]);
+let currentFontSize = localStorage.getItem("ledger_font_size") || "medium";
+if (!FONT_SIZE_OPTIONS.has(currentFontSize)) currentFontSize = "medium";
 
 const PARTNER_REPORTS = {
   receivables: {
@@ -605,6 +613,35 @@ function isPartnerReportView(viewKey = currentView) {
 
 // -------- Helpers --------
 function setStatus(msg) { statusEl.textContent = msg; }
+
+function applyFontSize() {
+  document.documentElement.dataset.fontSize = currentFontSize;
+  if (!fontSizeControlEl) return;
+  const labels = currentLang === "en"
+    ? { label: "Text", aria: "Display text size", small: "Small", medium: "Medium", large: "Large" }
+    : { label: "文字", aria: "表示文字サイズ", small: "小", medium: "中", large: "大" };
+  fontSizeControlEl.setAttribute("aria-label", labels.aria);
+  if (fontSizeLabelEl) fontSizeLabelEl.textContent = labels.label;
+  for (const button of fontSizeControlEl.querySelectorAll("button[data-font-size]")) {
+    const size = button.dataset.fontSize;
+    button.textContent = labels[size] || size;
+    button.setAttribute("aria-pressed", String(size === currentFontSize));
+  }
+}
+
+function initFontSizeControl() {
+  if (!fontSizeControlEl) return;
+  for (const button of fontSizeControlEl.querySelectorAll("button[data-font-size]")) {
+    button.addEventListener("click", () => {
+      const size = button.dataset.fontSize;
+      if (!FONT_SIZE_OPTIONS.has(size)) return;
+      currentFontSize = size;
+      localStorage.setItem("ledger_font_size", currentFontSize);
+      applyFontSize();
+    });
+  }
+  applyFontSize();
+}
 
 function escapeHtml(s) {
   return String(s ?? "")
@@ -1321,6 +1358,450 @@ function journalRowIndexes(rows) {
   };
 }
 
+function documentDetailText() {
+  return currentLang === "en" ? {
+    title: "Related document",
+    close: "Close",
+    loading: "Loading document...",
+    none: "No related document is registered for this journal line.",
+    type: "Document type",
+    number: "Document number",
+    managementId: "Management ID",
+    partner: "Trading partner",
+    documentMonth: "Document month",
+    selectedEntry: "Selected journal entry",
+    description: "Description",
+    debit: "Debit",
+    credit: "Credit",
+    invoice: "Invoice reference",
+    settlement: "Settlement reference",
+    transaction: "Transaction / line",
+    amount: "Amount",
+    noticeDate: "Notice date",
+    account: "Bank / settlement account",
+    scheduled: "Scheduled settlement",
+    parties: "Document parties",
+    issuer: "Issuer",
+    recipient: "Recipient",
+    department: "Department",
+    person: "Person",
+    application: "Cash application",
+    recognitionBasis: "Recognition basis",
+    invoiceBasis: "Invoice basis",
+    original: "Original amount",
+    applied: "Applied amount",
+    open: "Open amount",
+    applicationDate: "Application date",
+    settlementDocument: "Settlement document",
+    cash: "Cash / bank",
+    note: "Note",
+    fee: "Bank fee",
+    discount: "Discount / return",
+    offset: "Offset",
+    adjustment: "Other adjustment",
+    itemDetails: "Document line items",
+    item: "Item",
+    quantity: "Qty",
+    unitPrice: "Unit price (gross)",
+    net: "Net",
+    taxCategory: "Tax category",
+    tax: "Tax",
+    gross: "Gross",
+    taxSummary: "Totals by tax category",
+    roundingNote: "Included tax is calculated from each tax-rate gross subtotal and rounded down to the nearest yen.",
+    total: "Document total",
+    referenceOnly: "Reference document (document line details are outside the published monthly data)",
+    sourceNote: "The document is identified by trading partner, transaction and line IDs; invoice-to-settlement relationships are shown from cash application records. The description is supporting context only.",
+  } : {
+    title: "関連文書",
+    close: "閉じる",
+    loading: "文書を読み込んでいます…",
+    none: "この仕訳明細に対応する関連文書は登録されていません。",
+    type: "文書種別",
+    number: "文書番号",
+    managementId: "管理番号",
+    partner: "取引先",
+    documentMonth: "文書月",
+    selectedEntry: "選択した仕訳",
+    description: "摘要文",
+    debit: "借方",
+    credit: "貸方",
+    invoice: "請求文書",
+    settlement: "精算情報",
+    transaction: "伝票ID／明細行ID",
+    amount: "金額",
+    noticeDate: "通知日",
+    account: "入出金口座",
+    scheduled: "精算予定月",
+    parties: "文書当事者",
+    issuer: "発行者",
+    recipient: "受領者",
+    department: "部署",
+    person: "担当者",
+    application: "消込確認",
+    recognitionBasis: "認識基準",
+    invoiceBasis: "請求書基準",
+    original: "請求金額",
+    applied: "消込額",
+    open: "未消込額",
+    applicationDate: "消込日",
+    settlementDocument: "入出金・調整文書",
+    cash: "現金・預金",
+    note: "手形",
+    fee: "振込料",
+    discount: "値引・返品",
+    offset: "相殺",
+    adjustment: "その他調整",
+    itemDetails: "文書明細",
+    item: "品目",
+    quantity: "数量",
+    unitPrice: "税込単価",
+    net: "税抜金額",
+    taxCategory: "税区分",
+    tax: "消費税額",
+    gross: "税込金額",
+    taxSummary: "税区分別合計",
+    roundingNote: "内税額は税率別の税込合計から計算し、1円未満を切り捨てています。",
+    total: "文書合計",
+    referenceOnly: "参照文書（文書明細は公開用月次データの対象外）",
+    sourceNote: "文書は取引先ID・伝票ID・明細行IDで特定し、請求と入出金の関係はCash Applicationから表示します。摘要文は照合の参考としてのみ使用します。",
+  };
+}
+
+function csvValue(rows, row, name) {
+  const index = (rows?.[0] || []).indexOf(name);
+  return index >= 0 ? String(row?.[index] || "").trim() : "";
+}
+
+function settlementDocumentInfo(viewKey, item, partner, link, linkValue) {
+  const row = item.row;
+  const idx = item.idx;
+  const receivables = viewKey === "receivables";
+  const accountCode = String(row[receivables ? idx.debitAccount : idx.creditAccount] || "").trim();
+  const accountNameIndex = receivables ? idx.debitSubName : idx.creditSubName;
+  const accountName = accountNameIndex >= 0 ? String(row[accountNameIndex] || "").trim() : "";
+  const cashSettlement = accountCode === "10A100020";
+  const documentType = currentLang === "en"
+    ? (receivables
+      ? (cashSettlement ? "Bank receipt notice" : "Customer remittance advice")
+      : (cashSettlement ? "Bank transfer receipt" : "Supplier payment notice"))
+    : (receivables
+      ? (cashSettlement ? "銀行入金通知" : "取引先入金通知")
+      : (cashSettlement ? "銀行振込受付書" : "仕入先支払通知"));
+  return {
+    type: documentType,
+    id: link ? linkValue(link, "settlement_document_id") : "",
+    number: link ? linkValue(link, "settlement_document_number") : "",
+    accountName,
+  };
+}
+
+async function journalEntryDate(month, transactionId, lineId) {
+  if (!month || !transactionId || !lineId) return "";
+  const rows = await fetchOptionalCSV(resolveCsvUrl("journal", month));
+  const idx = journalRowIndexes(rows);
+  if (idx.transactionId < 0 || idx.lineId < 0 || idx.date < 0) return "";
+  const matched = rows.slice(1).find(row =>
+    String(row[idx.transactionId] || "").trim() === String(transactionId).trim() &&
+    String(row[idx.lineId] || "").trim() === String(lineId).trim()
+  );
+  return matched ? String(matched[idx.date] || "").trim() : "";
+}
+
+async function relatedDocumentData(item, partner, viewKey) {
+  const row = item.row;
+  const idx = item.idx;
+  const transactionId = String(row[idx.transactionId] || "").trim();
+  const lineId = String(row[idx.lineId] || "").trim();
+  const description = String(row[idx.description] || "").trim();
+  const partnerType = viewKey === "receivables" ? "C" : "S";
+  const linkRows = await fetchOptionalCSV(joinUrlPath(DATA_ROOT, currentLang, "source", "transaction_document_link.csv"));
+  const linkHeader = linkRows[0] || [];
+  const linkIndex = name => linkHeader.indexOf(name);
+  const linkValue = (link, name) => {
+    const index = linkIndex(name);
+    return index >= 0 ? String(link[index] || "").trim() : "";
+  };
+  const links = linkRows.slice(1).filter(link =>
+    linkValue(link, "partner_type") === partnerType &&
+    linkValue(link, "partner_code") === String(partner.code) &&
+    ((linkValue(link, "invoice_month") === item.month &&
+      linkValue(link, "invoice_transaction_id") === transactionId &&
+      linkValue(link, "invoice_line_id") === lineId) ||
+     (linkValue(link, "settlement_month") === item.month &&
+      linkValue(link, "settlement_transaction_id") === transactionId &&
+      linkValue(link, "settlement_line_id") === lineId))
+  );
+
+  let tidyRows = [];
+  let tidyRow = null;
+  const tidyMonths = Array.isArray(INDEX?.views?.tidy?.available) ? INDEX.views.tidy.available : [];
+  if (tidyMonths.includes(item.month)) {
+    tidyRows = await fetchCSV(resolveCsvUrl("tidy", item.month));
+    const tidyHeader = tidyRows[0] || [];
+    const transactionIndex = tidyHeader.indexOf("JP07a");
+    const lineIndex = tidyHeader.indexOf("JP08a");
+    tidyRow = tidyRows.slice(1).find(candidate =>
+      String(candidate[transactionIndex] || "").trim() === transactionId &&
+      String(candidate[lineIndex] || "").trim() === lineId
+    ) || null;
+  }
+
+  const documentId = tidyRow ? csvValue(tidyRows, tidyRow, "Document_ID") : "";
+  const documentNumber = tidyRow ? csvValue(tidyRows, tidyRow, "Document_Number") : "";
+  const documentType = tidyRow ? csvValue(tidyRows, tidyRow, "Document_Type") : "";
+  const relatedDocumentId = tidyRow ? csvValue(tidyRows, tidyRow, "Related_Document_ID") : "";
+  const relatedDocumentNumber = tidyRow ? csvValue(tidyRows, tidyRow, "Related_Document_Number") : "";
+  const relatedDocumentType = tidyRow ? csvValue(tidyRows, tidyRow, "Related_Document_Type") : "";
+  const link = links[0] || null;
+  const invoiceId = link ? linkValue(link, "invoice_document_id") : "";
+  const invoiceNumber = link ? linkValue(link, "invoice_document_number") : "";
+  const isInvoice = Boolean(link &&
+    linkValue(link, "invoice_month") === item.month &&
+    linkValue(link, "invoice_transaction_id") === transactionId &&
+    linkValue(link, "invoice_line_id") === lineId);
+  const invoiceDate = isInvoice
+    ? String(row[idx.date] || "").trim()
+    : (link ? await journalEntryDate(
+      linkValue(link, "invoice_month"),
+      linkValue(link, "invoice_transaction_id"),
+      linkValue(link, "invoice_line_id")
+    ) : "");
+  const settlementInfo = settlementDocumentInfo(viewKey, item, partner, link, linkValue);
+  const resolvedDocumentId = isInvoice
+    ? (documentId || invoiceId)
+    : (documentId || settlementInfo.id);
+  const candidateNumber = isInvoice
+    ? (documentNumber || invoiceNumber)
+    : (documentNumber || settlementInfo.number);
+  const invoiceDocumentId = invoiceId || relatedDocumentId;
+  const [detailRows, businessDocumentRows, documentPartyRows, openItemRows, settlementRows, applicationRows] = await Promise.all([
+    fetchOptionalCSV(joinUrlPath(DATA_ROOT, currentLang, "source", "transaction_document_detail.csv")),
+    fetchOptionalCSV(joinUrlPath(DATA_ROOT, currentLang, "source", "business_document.csv")),
+    fetchOptionalCSV(joinUrlPath(DATA_ROOT, currentLang, "source", "business_document_party.csv")),
+    fetchOptionalCSV(joinUrlPath(DATA_ROOT, currentLang, "source", "ar_ap_open_item.csv")),
+    fetchOptionalCSV(joinUrlPath(DATA_ROOT, currentLang, "source", "cash_settlement.csv")),
+    fetchOptionalCSV(joinUrlPath(DATA_ROOT, currentLang, "source", "cash_application.csv")),
+  ]);
+  const documentDetails = isInvoice && resolvedDocumentId
+    ? detailRows.slice(1).filter(detail => csvValue(detailRows, detail, "Document_ID") === resolvedDocumentId)
+    : [];
+  const businessDocument = businessDocumentRows.slice(1).find(candidate =>
+    csvValue(businessDocumentRows, candidate, "Document_ID") === resolvedDocumentId
+  ) || null;
+  const resolvedNumber = businessDocument
+    ? csvValue(businessDocumentRows, businessDocument, "Document_Number")
+    : candidateNumber;
+  const resolvedType = businessDocument
+    ? csvValue(businessDocumentRows, businessDocument, "Document_Type_Name")
+    : (isInvoice ? (documentType || relatedDocumentType) : settlementInfo.type);
+  let openItem = openItemRows.slice(1).find(candidate =>
+    csvValue(openItemRows, candidate, "Invoice_Document_ID") === (isInvoice ? resolvedDocumentId : invoiceDocumentId)
+  ) || null;
+  let settlement = settlementRows.slice(1).find(candidate =>
+    csvValue(settlementRows, candidate, "Settlement_Document_ID") === (isInvoice ? settlementInfo.id : resolvedDocumentId)
+  ) || null;
+  let application = null;
+  if (openItem) {
+    const openItemId = csvValue(openItemRows, openItem, "Open_Item_ID");
+    application = applicationRows.slice(1).find(candidate =>
+      csvValue(applicationRows, candidate, "Open_Item_ID") === openItemId
+    ) || null;
+  }
+  if (!application && settlement) {
+    const settlementId = csvValue(settlementRows, settlement, "Settlement_ID");
+    application = applicationRows.slice(1).find(candidate =>
+      csvValue(applicationRows, candidate, "Settlement_ID") === settlementId
+    ) || null;
+  }
+  if (!openItem && application) {
+    const openItemId = csvValue(applicationRows, application, "Open_Item_ID");
+    openItem = openItemRows.slice(1).find(candidate =>
+      csvValue(openItemRows, candidate, "Open_Item_ID") === openItemId
+    ) || null;
+  }
+  if (!settlement && application) {
+    const settlementId = csvValue(applicationRows, application, "Settlement_ID");
+    settlement = settlementRows.slice(1).find(candidate =>
+      csvValue(settlementRows, candidate, "Settlement_ID") === settlementId
+    ) || null;
+  }
+  const businessDocumentId = businessDocument ? csvValue(businessDocumentRows, businessDocument, "Document_ID") : "";
+  const documentParties = businessDocumentId
+    ? documentPartyRows.slice(1).filter(candidate => csvValue(documentPartyRows, candidate, "Document_ID") === businessDocumentId)
+    : [];
+  const debitAccount = [row[idx.debitAccount], idx.debitName >= 0 ? row[idx.debitName] : ""].filter(Boolean).join(" ");
+  const creditAccount = [row[idx.creditAccount], idx.creditName >= 0 ? row[idx.creditName] : ""].filter(Boolean).join(" ");
+  return {
+    transactionId, lineId, description, partner,
+    date: String(row[idx.date] || "").trim(),
+    debitAccount, debitAmount: row[idx.debitAmount],
+    creditAccount, creditAmount: row[idx.creditAmount],
+    documentType: resolvedType,
+    documentId: resolvedDocumentId,
+    documentNumber: resolvedNumber,
+    documentMonth: isInvoice ? (link ? linkValue(link, "invoice_month") : item.month) : (link ? linkValue(link, "settlement_month") : item.month),
+    invoiceDate,
+    relatedDocumentId: isInvoice ? settlementInfo.id : invoiceDocumentId,
+    relatedDocumentNumber: isInvoice
+      ? settlementInfo.number
+      : (openItem ? csvValue(openItemRows, openItem, "Invoice_Document_Number") : invoiceNumber),
+    settlementAccount: settlementInfo.accountName,
+    scheduledMonth: tidyRow ? csvValue(tidyRows, tidyRow, "Settlement_Scheduled_Month") : "",
+    link, linkValue, isInvoice,
+    detailRows, documentDetails,
+    businessDocumentRows, businessDocument,
+    documentPartyRows, documentParties,
+    openItemRows, openItem,
+    settlementRows, settlement,
+    applicationRows, application,
+    referenceOnly: Boolean(link && !tidyMonths.includes(isInvoice ? linkValue(link, "invoice_month") : linkValue(link, "settlement_month"))),
+  };
+}
+
+async function renderRelatedDocumentDetail(target, item, partner, viewKey) {
+  const text = documentDetailText();
+  target.hidden = false;
+  target.innerHTML = `<div class="partner-document__header"><h3>${escapeHtml(text.title)}</h3><button type="button" class="partner-document__close" aria-label="${escapeHtml(text.close)}">×</button></div><p>${escapeHtml(text.loading)}</p>`;
+  const close = () => {
+    target.hidden = true;
+    target.closest(".partner-detail-layout")?.classList.remove("has-document");
+    target.closest(".partner-journal-detail")?.querySelectorAll(".partner-journal-table tbody tr.is-selected, .partner-journal-table tbody tr.is-related-entry").forEach(row => {
+      row.classList.remove("is-selected", "is-related-entry");
+    });
+  };
+  target.querySelector(".partner-document__close")?.addEventListener("click", close);
+  try {
+    const data = await relatedDocumentData(item, partner, viewKey);
+    if (!data.documentId && !data.documentNumber) {
+      target.innerHTML = `<div class="partner-document__header"><h3>${escapeHtml(text.title)}</h3><button type="button" class="partner-document__close" aria-label="${escapeHtml(text.close)}">×</button></div><p class="partner-document__empty">${escapeHtml(text.none)}</p><p class="partner-document__source-note">${escapeHtml(text.sourceNote)}</p>`;
+      target.querySelector(".partner-document__close")?.addEventListener("click", close);
+      return null;
+    }
+    const linkValue = data.linkValue;
+    const link = data.link;
+    const invoiceMonth = link ? linkValue(link, "invoice_month") : "";
+    const settlementMonth = link ? linkValue(link, "settlement_month") : data.scheduledMonth;
+    const invoiceTransaction = link ? `${linkValue(link, "invoice_transaction_id")} / ${linkValue(link, "invoice_line_id")}` : "";
+    const settlementTransaction = link ? `${linkValue(link, "settlement_transaction_id")} / ${linkValue(link, "settlement_line_id")}` : "";
+    const relationAmount = link ? linkValue(link, "amount") : "";
+    const type = data.documentType || (data.isInvoice
+      ? (viewKey === "receivables"
+        ? (currentLang === "en" ? "Sales invoice" : "売上請求書")
+        : (currentLang === "en" ? "Purchase invoice" : "仕入請求書"))
+      : (currentLang === "en" ? "Settlement document" : "入出金・調整文書"));
+    const documentReference = (number, id) => {
+      const shownNumber = String(number || "").trim() || (currentLang === "en" ? "\u2014" : "\uff0d");
+      if (!id) return shownNumber;
+      return currentLang === "en"
+        ? `${shownNumber} (${text.managementId}: ${id})`
+        : `${shownNumber}\uff08${text.managementId}\uff1a${id}\uff09`;
+    };
+    const detailAmount = (detail, name) => formatNumberLike(csvValue(data.detailRows, detail, name));
+    const taxGroups = new Map();
+    for (const detail of data.documentDetails) {
+      const category = csvValue(data.detailRows, detail, "Tax_Category");
+      const rate = numberValue(csvValue(data.detailRows, detail, "Tax_Rate")) ||
+        numberValue((category.match(/(\d+)\s*%/) || [])[1]);
+      const key = `${category}\u0000${rate}`;
+      const group = taxGroups.get(key) || { category, rate, gross: 0 };
+      group.gross += numberValue(csvValue(data.detailRows, detail, "Gross_Amount"));
+      taxGroups.set(key, group);
+    }
+    const detailRowsHtml = data.documentDetails.map(detail => `<tr>
+      <td>${escapeHtml(csvValue(data.detailRows, detail, "Line_Number"))}</td>
+      <td>${escapeHtml(csvValue(data.detailRows, detail, "Item_Description"))}</td>
+      <td>${escapeHtml(csvValue(data.detailRows, detail, "Quantity"))} ${escapeHtml(csvValue(data.detailRows, detail, "Unit"))}</td>
+      <td>${detailAmount(detail, "Unit_Price")}</td>
+      <td>${escapeHtml(csvValue(data.detailRows, detail, "Tax_Category"))}</td>
+      <td>${detailAmount(detail, "Gross_Amount")}</td>
+    </tr>`).join("");
+    const taxSummaryHtml = [...taxGroups.values()].map(group => {
+      const tax = group.rate > 0 ? Math.floor(group.gross * group.rate / (100 + group.rate)) : 0;
+      const net = group.gross - tax;
+      return `<tr><th>${escapeHtml(group.category)}</th><td>${formatNumberLike(net)}</td><td>${formatNumberLike(tax)}</td><td>${formatNumberLike(group.gross)}</td></tr>`;
+    }).join("");
+    const detailTotal = data.documentDetails.reduce((sum, detail) => sum + numberValue(csvValue(data.detailRows, detail, "Gross_Amount")), 0);
+    const formalValue = (rows, record, name) => record ? csvValue(rows, record, name) : "";
+    const partyByRole = role => data.documentParties.find(candidate =>
+      csvValue(data.documentPartyRows, candidate, "Role_Code") === role
+    ) || null;
+    const partyCard = (role, labelText) => {
+      const party = partyByRole(role);
+      if (!party) return "";
+      const partyName = formalValue(data.documentPartyRows, party, "Party_Name");
+      const department = formalValue(data.documentPartyRows, party, "Department_Name");
+      const person = formalValue(data.documentPartyRows, party, "Person_Name");
+      const position = formalValue(data.documentPartyRows, party, "Position_Name");
+      return `<div><dt>${escapeHtml(labelText)}</dt><dd><strong>${escapeHtml(partyName)}</strong><span>${escapeHtml(text.department)}: ${escapeHtml(department || "-")}</span><span>${escapeHtml(text.person)}: ${escapeHtml([person, position].filter(Boolean).join(" / ") || "-")}</span></dd></div>`;
+    };
+    const documentPartiesHtml = partyCard("ISSUER", text.issuer) + partyCard("RECIPIENT", text.recipient);
+    const openItemValue = name => formalValue(data.openItemRows, data.openItem, name);
+    const settlementValue = name => formalValue(data.settlementRows, data.settlement, name);
+    const applicationValue = name => formalValue(data.applicationRows, data.application, name);
+    const applicationComponents = [
+      [text.cash, "Cash_Amount"], [text.note, "Note_Amount"], [text.fee, "Fee_Amount"],
+      [text.discount, "Discount_Amount"], [text.offset, "Offset_Amount"], [text.adjustment, "Other_Adjustment_Amount"],
+    ].filter(([, name]) => numberValue(applicationValue(name)) !== 0);
+    const applicationHtml = data.openItem && data.application ? `<section class="partner-document__application"><h4>${escapeHtml(text.application)}</h4>
+      <dl>
+        <div><dt>${escapeHtml(text.invoice)}</dt><dd>${escapeHtml(documentReference(openItemValue("Invoice_Document_Number"), openItemValue("Invoice_Document_ID")))}</dd></div>
+        <div><dt>${escapeHtml(text.recognitionBasis)}</dt><dd>${escapeHtml(openItemValue("Recognition_Basis") === "INVOICE_BASIS" ? text.invoiceBasis : openItemValue("Recognition_Basis"))}</dd></div>
+        <div><dt>${escapeHtml(text.original)}</dt><dd class="amount">${formatNumberLike(openItemValue("Original_Amount"))}</dd></div>
+        <div><dt>${escapeHtml(text.applied)}</dt><dd class="amount">${formatNumberLike(applicationValue("Applied_Amount"))}</dd></div>
+        <div><dt>${escapeHtml(text.open)}</dt><dd class="amount">${formatNumberLike(openItemValue("Open_Amount"))}</dd></div>
+        <div><dt>${escapeHtml(text.applicationDate)}</dt><dd>${escapeHtml(applicationValue("Application_Date"))}</dd></div>
+        <div><dt>${escapeHtml(text.settlementDocument)}</dt><dd>${escapeHtml(documentReference(settlementValue("Settlement_Document_Number") || data.relatedDocumentNumber, settlementValue("Settlement_Document_ID") || data.relatedDocumentId))}</dd></div>
+      </dl>
+      ${applicationComponents.length ? `<table><thead><tr><th>${escapeHtml(currentLang === "en" ? "Component" : "消込区分")}</th><th>${escapeHtml(text.amount)}</th></tr></thead><tbody>${applicationComponents.map(([labelText, name]) => `<tr><th>${escapeHtml(labelText)}</th><td>${formatNumberLike(applicationValue(name))}</td></tr>`).join("")}</tbody></table>` : ""}
+    </section>` : "";
+    target.innerHTML = `<div class="partner-document__header"><h3>${escapeHtml(text.title)}</h3><button type="button" class="partner-document__close" aria-label="${escapeHtml(text.close)}">×</button></div>
+      <article class="partner-document__sheet">
+        <div class="partner-document__title"><span>${escapeHtml(type)}</span><strong>${escapeHtml(documentReference(data.documentNumber, data.documentId))}</strong></div>
+        ${data.referenceOnly ? `<p class="partner-document__reference">${escapeHtml(text.referenceOnly)}</p>` : ""}
+        <dl class="partner-document__meta">
+          <div><dt>${escapeHtml(text.partner)}</dt><dd>${escapeHtml(data.partner.name)}</dd></div>
+          <div><dt>${escapeHtml(data.isInvoice ? (currentLang === "en" ? "Document date" : "\u6587\u66f8\u65e5\u4ed8") : text.documentMonth)}</dt><dd>${escapeHtml(data.isInvoice ? (data.invoiceDate || data.date || "-") : data.documentMonth)}</dd></div>
+          <div><dt>${escapeHtml(text.number)}</dt><dd>${escapeHtml(documentReference(data.documentNumber, data.documentId))}</dd></div>
+          ${!data.isInvoice ? `<div><dt>${escapeHtml(text.noticeDate)}</dt><dd>${escapeHtml(data.date || "-")}</dd></div>` : ""}
+          ${!data.isInvoice && data.settlementAccount ? `<div><dt>${escapeHtml(text.account)}</dt><dd>${escapeHtml(data.settlementAccount)}</dd></div>` : ""}
+          ${!data.isInvoice ? `<div><dt>${escapeHtml(text.amount)}</dt><dd>${formatNumberLike(relationAmount || data.debitAmount || data.creditAmount)}</dd></div>` : ""}
+          ${data.scheduledMonth ? `<div><dt>${escapeHtml(text.scheduled)}</dt><dd>${escapeHtml(data.scheduledMonth)}</dd></div>` : ""}
+        </dl>
+        ${documentPartiesHtml ? `<section class="partner-document__parties"><h4>${escapeHtml(text.parties)}</h4><dl>${documentPartiesHtml}</dl></section>` : ""}
+        ${data.documentDetails.length ? `<section class="partner-document__items"><h4>${escapeHtml(text.itemDetails)}</h4>
+          <div class="partner-document__items-wrap"><table><thead><tr><th>#</th><th>${escapeHtml(text.item)}</th><th>${escapeHtml(text.quantity)}</th><th>${escapeHtml(text.unitPrice)}</th><th>${escapeHtml(text.taxCategory)}</th><th>${escapeHtml(text.gross)}</th></tr></thead><tbody>${detailRowsHtml}</tbody></table></div>
+          <div class="partner-document__tax-summary"><h4>${escapeHtml(text.taxSummary)}</h4><table><thead><tr><th>${escapeHtml(text.taxCategory)}</th><th>${escapeHtml(text.net)}</th><th>${escapeHtml(text.tax)}</th><th>${escapeHtml(text.gross)}</th></tr></thead><tbody>${taxSummaryHtml}<tr class="total"><th>${escapeHtml(text.total)}</th><td colspan="2"></td><td>${formatNumberLike(detailTotal)}</td></tr></tbody></table><p class="partner-document__rounding-note">${escapeHtml(text.roundingNote)}</p></div>
+        </section>` : ""}
+        <section class="partner-document__entry"><h4>${escapeHtml(text.selectedEntry)}</h4>
+          <p class="partner-document__description"><span>${escapeHtml(text.description)}</span>${escapeHtml(data.description || "-")}</p>
+          <table><tbody>
+            <tr><th>${escapeHtml(text.transaction)}</th><td>${escapeHtml(`${data.transactionId} / ${data.lineId}`)}</td></tr>
+            <tr><th>${escapeHtml(text.debit)}</th><td>${escapeHtml(data.debitAccount)}<strong>${formatNumberLike(data.debitAmount)}</strong></td></tr>
+            <tr><th>${escapeHtml(text.credit)}</th><td>${escapeHtml(data.creditAccount)}<strong>${formatNumberLike(data.creditAmount)}</strong></td></tr>
+          </tbody></table>
+        </section>
+        ${applicationHtml}
+        ${link ? `<section class="partner-document__relation"><h4>${escapeHtml(data.isInvoice ? text.settlement : text.invoice)}</h4>
+          <dl>
+            <div><dt>${escapeHtml(text.number)}</dt><dd>${escapeHtml(documentReference(data.relatedDocumentNumber, data.relatedDocumentId))}</dd></div>
+            <div><dt>${escapeHtml(data.isInvoice ? text.documentMonth : (currentLang === "en" ? "Document date" : "\u6587\u66f8\u65e5\u4ed8"))}</dt><dd>${escapeHtml(data.isInvoice ? settlementMonth : (data.invoiceDate || "-"))}</dd></div>
+            <div><dt>${escapeHtml(text.transaction)}</dt><dd>${escapeHtml(data.isInvoice ? settlementTransaction : invoiceTransaction)}</dd></div>
+            <div><dt>${escapeHtml(text.amount)}</dt><dd class="amount">${formatNumberLike(relationAmount)}</dd></div>
+          </dl>
+        </section>` : ""}
+        <p class="partner-document__source-note">${escapeHtml(text.sourceNote)}</p>
+      </article>`;
+    target.querySelector(".partner-document__close")?.addEventListener("click", close);
+    return data;
+  } catch (error) {
+    console.error(error);
+    target.innerHTML = `<div class="partner-document__header"><h3>${escapeHtml(text.title)}</h3><button type="button" class="partner-document__close" aria-label="${escapeHtml(text.close)}">×</button></div><p class="partner-report__error">${escapeHtml(error.message || error)}</p>`;
+    target.querySelector(".partner-document__close")?.addEventListener("click", close);
+    return null;
+  }
+}
+
 async function renderPartnerJournalDetailLegacy(viewKey, month, partner) {
   const target = document.getElementById("partnerJournalDetail");
   if (!target) return;
@@ -1386,7 +1867,9 @@ async function renderPartnerJournalDetail(viewKey, month, partner, options = {})
   if (!target) return;
   target.closest(".partner-report")?.classList.add("has-journal-detail");
   const text = reportText(viewKey);
-  const pastMonths = Math.max(0, Math.min(3, Number(options.pastMonths) || 0));
+  const pastMonths = options.pastMonths === undefined
+    ? 2
+    : Math.max(0, Math.min(3, Number(options.pastMonths) || 0));
   const futureMonths = Math.max(0, Math.min(3, Number(options.futureMonths) || 0));
   const availableJournalMonths = Array.isArray(INDEX?.views?.journal?.available)
     ? INDEX.views.journal.available
@@ -1494,10 +1977,10 @@ async function renderPartnerJournalDetail(viewKey, month, partner, options = {})
         <th>${escapeHtml(label.date)}</th><th>${escapeHtml(label.voucher)}</th><th>${escapeHtml(label.description)}</th>
         <th>${escapeHtml(label.debit)}</th><th>${escapeHtml(label.debitAmount)}</th>
         <th>${escapeHtml(label.credit)}</th><th>${escapeHtml(label.creditAmount)}</th></tr></thead><tbody>`;
-      for (const item of items) {
+      for (const [itemIndex, item] of items.entries()) {
         const row = item.row;
         const idx = item.idx;
-        html += `<tr${item.month === month ? " class=\"is-current-month\"" : ""}><td>${escapeHtml(item.month)}</td><td>${escapeHtml(row[idx.transactionId])}</td><td>${escapeHtml(row[idx.lineId])}</td>
+        html += `<tr class="partner-journal-row${item.month === month ? " is-current-month" : ""}" data-journal-index="${itemIndex}" data-month="${escapeHtml(item.month)}" data-transaction-id="${escapeHtml(row[idx.transactionId])}" data-line-id="${escapeHtml(row[idx.lineId])}" tabindex="0" role="button"><td>${escapeHtml(item.month)}</td><td>${escapeHtml(row[idx.transactionId])}</td><td>${escapeHtml(row[idx.lineId])}</td>
           <td>${escapeHtml(row[idx.date])}</td><td>${escapeHtml(idx.voucher >= 0 ? row[idx.voucher] : "")}</td><td>${escapeHtml(row[idx.description])}</td>
           <td>${escapeHtml(accountLabel(row, idx.debitAccount, idx.debitName))}</td><td>${formatNumberLike(row[idx.debitAmount])}</td>
           <td>${escapeHtml(accountLabel(row, idx.creditAccount, idx.creditName))}</td><td>${formatNumberLike(row[idx.creditAmount])}</td></tr>`;
@@ -1506,8 +1989,52 @@ async function renderPartnerJournalDetail(viewKey, month, partner, options = {})
     };
     const displayedRange = `${displayMonths[0]} - ${displayMonths[displayMonths.length - 1]}`;
     target.innerHTML = `${heading()}<p class="partner-journal-range__period">${escapeHtml(rangeText.range)}: ${escapeHtml(displayedRange)}</p>
-      <div class="partner-journal-grid">${renderTable(text.journalIncludedTitle, related, "is-included")}</div>`;
+      <div class="partner-detail-layout"><div class="partner-journal-grid">${renderTable(text.journalIncludedTitle, related, "is-included")}</div>
+      <aside id="partnerDocumentDetail" class="partner-document-detail" aria-live="polite" hidden></aside></div>`;
     bindRangeControls();
+    const detailLayout = target.querySelector(".partner-detail-layout");
+    const documentTarget = target.querySelector("#partnerDocumentDetail");
+    const selectJournalRow = async journalRow => {
+      const itemIndex = Number(journalRow.dataset.journalIndex);
+      const item = related[itemIndex];
+      if (!item || !documentTarget) return;
+      target.querySelectorAll(".partner-journal-row.is-selected, .partner-journal-row.is-related-entry").forEach(row => {
+        row.classList.remove("is-selected", "is-related-entry");
+      });
+      journalRow.classList.add("is-selected");
+      detailLayout?.classList.add("has-document");
+      const documentData = await renderRelatedDocumentDetail(documentTarget, item, partner, viewKey);
+      if (!documentData?.link) return;
+      const relatedMonth = documentData.isInvoice
+        ? documentData.linkValue(documentData.link, "settlement_month")
+        : documentData.linkValue(documentData.link, "invoice_month");
+      const relatedTransaction = documentData.isInvoice
+        ? documentData.linkValue(documentData.link, "settlement_transaction_id")
+        : documentData.linkValue(documentData.link, "invoice_transaction_id");
+      const relatedLine = documentData.isInvoice
+        ? documentData.linkValue(documentData.link, "settlement_line_id")
+        : documentData.linkValue(documentData.link, "invoice_line_id");
+      for (const candidate of target.querySelectorAll(".partner-journal-row")) {
+        if (candidate === journalRow) continue;
+        if (candidate.dataset.month === relatedMonth &&
+          candidate.dataset.transactionId === relatedTransaction &&
+            candidate.dataset.lineId === relatedLine) {
+          candidate.classList.add("is-related-entry");
+          candidate.title = currentLang === "en"
+            ? "Related journal entry — select to display its source document"
+            : "関連する仕訳です。選択すると、この仕訳の根拠文書を表示します。";
+        }
+      }
+    };
+    for (const journalRow of target.querySelectorAll(".partner-journal-row")) {
+      journalRow.addEventListener("click", () => selectJournalRow(journalRow));
+      journalRow.addEventListener("keydown", event => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          selectJournalRow(journalRow);
+        }
+      });
+    }
   } catch (error) {
     console.error(error);
     target.innerHTML = `${heading()}<p class="partner-report__error">${escapeHtml(error.message || error)}</p>`;
@@ -1573,14 +2100,23 @@ function renderPartnerReport(rows, viewKey, month) {
     const tr = event.currentTarget;
     const partner = byCode.get(tr.dataset.partnerCode);
     if (!partner) return;
-    for (const other of wrapEl.querySelectorAll(".partner-report__partner-row")) other.classList.toggle("is-selected", other === tr);
-    renderPartnerJournalDetail(viewKey, month, partner);
+    acctSel.value = partner.code;
+    updateUrlQuery({ account: partner.code });
+    renderPartnerReport(rows, viewKey, month);
   };
   for (const tr of wrapEl.querySelectorAll(".partner-report__partner-row")) {
     tr.addEventListener("click", activate);
     tr.addEventListener("keydown", event => {
       if (event.key === "Enter" || event.key === " ") { event.preventDefault(); activate(event); }
     });
+  }
+  if (partnerFilter) {
+    const selectedPartner = byCode.get(partnerFilter);
+    const selectedRow = wrapEl.querySelector(`.partner-report__partner-row[data-partner-code="${CSS.escape(partnerFilter)}"]`);
+    if (selectedPartner && selectedRow) {
+      selectedRow.classList.add("is-selected");
+      renderPartnerJournalDetail(viewKey, month, selectedPartner);
+    }
   }
 }
 
@@ -1658,6 +2194,10 @@ function filterRows(rows, { accountValue = "", searchText = "", monthValue = "" 
 function applyI18nTexts() {
   if (monthLabelTextEl) monthLabelTextEl.textContent = currentLang === "en" ? "Month" : "対象月";
   if (searchLabelTextEl) searchLabelTextEl.textContent = currentLang === "en" ? "Search" : "検索";
+  if (aboutLinkEl) {
+    aboutLinkEl.textContent = currentLang === "en" ? "ABOUT" : "概要";
+    aboutLinkEl.href = currentLang === "en" ? "./about_en.html" : "./about.html";
+  }
   const searchInput = document.getElementById("searchInput");
   if (searchInput) {
     searchInput.placeholder =
@@ -1670,13 +2210,17 @@ function applyI18nTexts() {
       const address = [company.postal_code ? `〒${company.postal_code}` : "", locality, company.building]
         .filter(Boolean)
         .join(" ");
-      companyHeaderEl.innerHTML = `<span class="company-header__name">${escapeHtml(company.name)}</span><span class="company-header__address">${escapeHtml(address)}</span>`;
+      const demoNotice = currentLang === "en"
+        ? "All data shown is fictional demonstration data. The accounting period is from April 2021 to March 2022; only transactions required to illustrate receipt and payment relationships include reference data from the two months before and after this period."
+        : "※ 本画面のデータはすべて架空のデモデータです。会計取引の対象期間は2021年4月から2022年3月までですが、入出金との対応確認に必要な取引に限り、対象期間外の前後2か月分も参考データとして設定しています。";
+      companyHeaderEl.innerHTML = `<span class="company-header__name">${escapeHtml(company.name)}</span><span class="company-header__address">${escapeHtml(address)}</span><span class="company-header__notice">${escapeHtml(demoNotice)}</span>`;
       companyHeaderEl.hidden = false;
     } else {
       companyHeaderEl.innerHTML = "";
       companyHeaderEl.hidden = true;
     }
   }
+  applyFontSize();
 }
 
 // -------- App state --------
@@ -1737,7 +2281,8 @@ function updateUrlQuery(params) {
 function initNav() {
   navEl.innerHTML = "";
   const viewKeys = Object.keys(INDEX.views || {});
-  for (const key of viewKeys) {
+  const groupEnds = new Set(["tidy", "trial_balance", "pnl"]);
+  for (const [index, key] of viewKeys.entries()) {
     const btn = document.createElement("button");
     btn.textContent = tViewLabel(key);
     btn.dataset.key = key;
@@ -1747,6 +2292,13 @@ function initNav() {
       await refresh({ skipReloadCsv: false }); // view change => reload (server)
     });
     navEl.appendChild(btn);
+    if (groupEnds.has(key) && index < viewKeys.length - 1) {
+      const separator = document.createElement("span");
+      separator.className = "nav-separator";
+      separator.textContent = "｜";
+      separator.setAttribute("aria-hidden", "true");
+      navEl.appendChild(separator);
+    }
   }
 }
 
@@ -1758,8 +2310,24 @@ function setActiveButton() {
 
 function updateViewControls() {
   const partnerView = isPartnerReportView();
-  const allAccountsOnly = currentView === "trial_balance";
+  const allAccountsOnly = currentView === "trial_balance" || currentView === "balance_sheet" || currentView === "pnl";
+  const annualReportView = currentView === "balance_sheet" || currentView === "pnl";
+  const searchableView = currentView === "tidy" || currentView === "journal";
   if (allAccountsOnly) acctSel.value = "";
+  if (!searchableView) searchInput.value = "";
+  if (searchLabelEl) searchLabelEl.hidden = !searchableView;
+  if (monthSel) monthSel.hidden = annualReportView;
+  if (monthLabelTextEl) {
+    if (annualReportView) {
+      const firstMonth = (INDEX?.months || []).find(value => /^\d{4}-\d{2}$/.test(String(value)));
+      const fiscalYear = firstMonth ? String(firstMonth).slice(0, 4) : "";
+      monthLabelTextEl.textContent = currentLang === "en"
+        ? `Fiscal year${fiscalYear ? ` ${fiscalYear}` : ""}`
+        : `対象年度${fiscalYear ? ` ${fiscalYear}年度` : ""}`;
+    } else {
+      monthLabelTextEl.textContent = currentLang === "en" ? "Month" : "対象月";
+    }
+  }
   if (accountLabelEl) {
     accountLabelEl.hidden = allAccountsOnly;
     accountLabelEl.firstChild.textContent = partnerView
@@ -1899,7 +2467,8 @@ async function refresh(opts = {}) {
   updateViewControls();
 
   const month = monthSel.value || (INDEX?.months?.[0] ?? "");
-  const q = String(searchInput.value || "").trim();
+  const searchableView = currentView === "tidy" || currentView === "journal";
+  const q = searchableView ? String(searchInput.value || "").trim() : "";
   const acct = acctSel.value || "";
 
   updateUrlQuery({ view: currentView, month, account: acct, q, mode: dataMode, lang: currentLang, dataset: (DATASET !== DATASET_DEFAULT ? DATASET : null) });
@@ -2051,6 +2620,7 @@ async function main() {
   if (qMonth && (INDEX.months || []).includes(qMonth)) monthSel.value = qMonth;
   initAccountSelect();
   initLangSelect();
+  initFontSizeControl();
   initSearch();
   initColumnToggleButtons();
 

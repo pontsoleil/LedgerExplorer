@@ -1,14 +1,14 @@
 ﻿Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
-2022-03,10A100020,146113042,141986253,Cash and deposits,85680071,89806860,Current assets
-2022-03,10A100060,31338107,45169923,Notes receivable - trade,49104126,35272310,Current assets
-2022-03,10A100090,74446280,70676484,Accounts receivable - trade,91402151,95171947,Current assets
+2022-03,10A100020,157914362,145731439,Cash and deposits,65853919,78036842,Current assets
+2022-03,10A100060,37982465,45169923,Notes receivable - trade,-11057144,-18244602,Current assets
+2022-03,10A100090,74446280,91476616,Accounts receivable - trade,149232436,132202100,Current assets
 2022-03,10A100280,63025546,63013226,Merchandise,84256000,84268320,Current assets
 2022-03,10A100610,0,90000,Short-term loans receivable,290000,200000,Current assets
 2022-03,10A210130,0,328000,Structures,36435838,36107838,"Property, plant and equipment"
 2022-03,10A210410,0,1911924,"Tools, furniture and fixtures",17360990,15449066,"Property, plant and equipment"
 2022-03,10A230570,125000,0,Insurance funds,1402813,1527813,Investments and other assets
-2022-03,10B100030,13738257,8791534,Notes payable - trade,48637551,43690828,Current liabilities
-2022-03,10B100040,42792807,47236121,Accounts payable - trade,76084518,80527832,Current liabilities
+2022-03,10B100030,13738257,13046105,Notes payable - trade,45548042,44855890,Current liabilities
+2022-03,10B100040,54296895,47236121,Accounts payable - trade,90995571,83934797,Current liabilities
 2022-03,10B100630,7030303,8909403,Accounts payable - other,-1448799,430301,Current liabilities
 2022-03,10B100690,1880914,1933319,Deposits received,4895620,4948025,Current liabilities
 2022-03,10B100790,653500,0,Short-term borrowings,653500,0,Current liabilities
@@ -16,7 +16,7 @@
 2022-03,10D100101,0,25574300,Sales from electronic transactions,224641031,250215331,Net sales
 2022-03,10D100102,0,48871980,Sales from traditional transactions,553508628,602380608,Net sales
 2022-03,10E100100,63013226,0,Beginning merchandise inventory,0,63013226,Cost of sales
-2022-03,10E100121,0,42840,Purchase allowance and returns from electronic transactions,271189,314029,Cost of sales
+2022-03,10E100121,0,4760408,Purchase allowance and returns from electronic transactions,5459985,10220393,Cost of sales
 2022-03,10E100131,16335953,0,Cost of purchased goods from electronic transactions,163007580,179343533,Cost of sales
 2022-03,10E100132,30900168,0,Cost of purchased goods from traditional transactions,303140746,334040914,Cost of sales
 2022-03,10E100140,0,63025546,Ending merchandise inventory,0,63025546,Cost of sales
@@ -34,7 +34,7 @@
 2022-03,10E200520,268960,0,Other salaries,4314002,4582962,"Selling, general and administrative expenses"
 2022-03,10E200540,1820130,0,Legal welfare expenses,9354499,11174629,"Selling, general and administrative expenses"
 2022-03,10E200600,139710,0,Fee expenses,1536810,1676520,"Selling, general and administrative expenses"
-2022-03,10E200690,12021,0,Commission expenses,132812,144833,"Selling, general and administrative expenses"
+2022-03,10E200690,3579712,0,Commission expenses,18355839,21935551,"Selling, general and administrative expenses"
 2022-03,10E200720,3449000,0,Rent expenses on land and buildings,37909000,41358000,"Selling, general and administrative expenses"
 2022-03,10E200730,293850,0,Rent expenses on land and buildings,3232350,3526200,"Selling, general and administrative expenses"
 2022-03,10E200870,4229621,0,Freight costs,47167239,51396860,"Selling, general and administrative expenses"

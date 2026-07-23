@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ledger Explorerデモ－xBRL GL 2.0のための構造化CSV</title>
+  <style>
+    :root {
+      --bg: #7DA3A1;
+      --panel: #ffffff;
+      --ink: #102a2a;
+      --muted: rgba(16, 42, 42, .75);
+      --accent: #34675C;
+      --header: #324851;
+      --border: #d9e2e2;
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      margin: 16px;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    .page { display: flex; justify-content: center; }
+    .body { width: min(960px, 100%); padding: 0 16px; }
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+    }
+    a.button.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: rgba(0,0,0,.1);
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      max-width: 980px;
+    }
+    h1 { font-size: 22px; margin: 0 0 10px; color: #fff; }
+    h2 { font-size: 16px; margin: 18px 0 8px; color: var(--header); }
+    p { margin: 8px 0; }
+    ul, ol { margin: 8px 0 8px 20px; }
+    .note {
+      background: rgba(50,72,81,.08);
+      border: 1px solid rgba(50,72,81,.18);
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: var(--muted);
+    }
+    .refs li { margin-bottom: 6px; }
+    footer { margin-top: 12px; font-size: 13px; color: #fff; }
+    footer a { color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="body">
+      <div class="topbar">
+        <a class="button primary" href="./?view=tidy&amp;month=2021-04&amp;mode=server&amp;lang=ja">デモを開く（構造化CSV）</a>
+        <a class="button" href="./?lang=ja">Ledger Explorerへ戻る</a>
+      </div>
+
+      <h1>Ledger Explorerデモ：xBRL GL 2.0のための構造化CSV／階層型tidy data</h1>
+
+      <div class="card">
+        <h2>1. このサイトについて</h2>
+        <p>
+          <strong>Ledger Explorer</strong>は、xBRL GL 2.0の実用的な基盤として、
+          構造化CSV（階層型tidy data）を実際に操作して確認するための軽量なブラウザーデモです。
+        </p>
+        <p class="note">
+          「構造化CSV」画面（tidy）を<strong>正本データ</strong>として扱います。
+          仕訳帳、総勘定元帳、試算表、貸借対照表及び損益計算書は同じデータセットから表示し、
+          複雑な結合処理で意味を再構築することなく、使い慣れた会計帳票として確認できます。
+        </p>
+
+        <h2>2. 構造化CSV（階層型tidy data）が重要な理由</h2>
+        <ul>
+          <li><strong>文脈を保持：</strong>伝票、ヘッダー及び明細レベルの情報関係を維持します。</li>
+          <li><strong>表形式で利用可能：</strong>一般的なCSVツールや拡張可能なデータ処理に適しています。</li>
+          <li><strong>運用が容易：</strong>月別ファイルに分けることで、大規模データへの対応と配布が容易になります。</li>
+          <li><strong>多言語表示：</strong>同じデータを日本語・英語の表示ラベルで確認できます。</li>
+        </ul>
+
+        <h2>3. 推奨する確認手順（5～8分）</h2>
+        <ol>
+          <li>対象月（例：2021年4月）の<strong>構造化CSV</strong>から確認を始めます。</li>
+          <li><strong>仕訳帳</strong>へ切り替え、会計上の原始記入簿として確認します。</li>
+          <li><strong>総勘定元帳</strong>へ切り替え、科目で絞り込んで明細を確認します。</li>
+          <li><strong>試算表</strong>、<strong>貸借対照表</strong>、<strong>損益計算書</strong>の順に確認します。</li>
+          <li><strong>言語</strong>を切り替え、多言語化が表示層として機能することを確認します。</li>
+        </ol>
+
+        <h2>4. xBRL GL 2.0の要件との関係（検討事項）</h2>
+        <p>このデモは、xBRL GL 2.0 IGで繰り返し議論される次の要件を検討するために設計しています。</p>
+        <ul>
+          <li><strong>高粒度データへの拡張性：</strong>月別ファイルと表形式により、大規模データを扱えます。</li>
+          <li><strong>相互運用性：</strong>CSV中心の処理は、XBRL Open Information Model及びxBRL-CSV表現と整合します。</li>
+          <li><strong>大規模な検証：</strong>表形式の制約は、CSVデータの効率的な検証に適しています。</li>
+          <li><strong>監査可能性と追跡可能性：</strong>安定した構造により、変換を再現し、レビューできます。</li>
+          <li><strong>多言語化：</strong>日英画面により、実用的な多言語表示を示します。</li>
+        </ul>
+
+        <h2>5. 参考資料</h2>
+        <ul class="refs">
+          <li>XBRL Open Information Model（OIM）仕様一覧： <a href="https://specifications.xbrl.org/work-product-index-open-information-model-open-information-model.html" target="_blank" rel="noopener">specifications.xbrl.org</a></li>
+          <li>xBRL-CSV仕様： <a href="https://www.xbrl.org/Specification/xbrl-csv/REC-2021-10-13+errata-2023-04-19/xbrl-csv-REC-2021-10-13+corrected-errata-2023-04-19.html" target="_blank" rel="noopener">xbrl.org</a></li>
+          <li>xBRL-CSV Table Constraints（公開草案）： <a href="https://www.xbrl.org/Specification/table-constraints/CR-2025-10-07/table-constraints-CR-2025-10-07.html" target="_blank" rel="noopener">xbrl.org</a></li>
+          <li>“Tidy Data”（Hadley Wickham、2014年）： <a href="https://www.jstatsoft.org/article/view/v059i10" target="_blank" rel="noopener">Journal of Statistical Software</a></li>
+        </ul>
+
+        <h2>6. ライセンス及び帰属表示</h2>
+        <p>
+          © 2026 SAMBUICHI, Nobuyuki (Sambuichi Professional Engineers Office)。
+          本ページは、xBRL GL 2.0 IGにおけるデモ及び検討のために共有することを想定しています。
+        </p>
+        <p class="note">IG資料で画面画像を再利用する場合は、帰属表示を維持し、記載されたライセンス条件に従ってください。</p>
+      </div>
+
+      <footer>
+        © 2026 SAMBUICHI, Nobuyuki · <a href="https://www.sambuichi.jp/" target="_blank" rel="noopener">sambuichi.jp</a> · CC BY-SA 4.0
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

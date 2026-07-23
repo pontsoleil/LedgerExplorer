@@ -1,20 +1,20 @@
 ﻿Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
-2021-04,10A100020,122180406,113761011,Cash and deposits,53375078,61794473,Current assets
-2021-04,10A100060,39689677,24690618,Notes receivable - trade,1413087,16412146,Current assets
-2021-04,10A100090,60337616,98338289,Accounts receivable - trade,148001174,110000501,Current assets
+2021-04,10A100020,111910911,113761011,Cash and deposits,53375078,51524978,Current assets
+2021-04,10A100060,28943083,24690618,Notes receivable - trade,1413087,5665552,Current assets
+2021-04,10A100090,60337616,75322051,Accounts receivable - trade,148001174,133016739,Current assets
 2021-04,10A100610,0,40000,Short-term loans receivable,280000,240000,Current assets
 2021-04,10A230570,125000,0,Insurance funds,27813,152813,Investments and other assets
-2021-04,10B100030,24104558,26027566,Notes payable - trade,27253674,29176682,Current liabilities
-2021-04,10B100040,52131298,35491682,Accounts payable - trade,89117567,72477951,Current liabilities
+2021-04,10B100030,24104558,28957203,Notes payable - trade,27253674,32106319,Current liabilities
+2021-04,10B100040,53107598,35491682,Accounts payable - trade,89117567,71501651,Current liabilities
 2021-04,10B100630,7584692,7369946,Accounts payable - other,1048186,833440,Current liabilities
 2021-04,10B100690,1426819,2013716,Deposits received,901034,1487931,Current liabilities
 2021-04,10B100790,653500,0,Short-term borrowings,7842000,7188500,Current liabilities
 2021-04,10D100101,0,15951282,Sales from electronic transactions,0,15951282,Net sales
 2021-04,10D100102,0,44386334,Sales from traditional transactions,0,44386334,Net sales
-2021-04,10D100111,24480,0,Sales allowance and returns from electronic transactions from electronic transactions,0,24480,Net sales
-2021-04,10D100112,143456,0,Sales allowance and returns from traditional transactions,0,143456,Net sales
+2021-04,10D100111,20058,0,Sales allowance and returns from electronic transactions from electronic transactions,0,20058,Net sales
+2021-04,10D100112,110927,0,Sales allowance and returns from traditional transactions,0,110927,Net sales
 2021-04,10E100121,0,51555,Purchase allowance and returns from electronic transactions,0,51555,Cost of sales
-2021-04,10E100122,0,150824,Purchase allowance and returns from traditional transactions,0,150824,Cost of sales
+2021-04,10E100122,0,159441,Purchase allowance and returns from traditional transactions,0,159441,Cost of sales
 2021-04,10E100131,12286234,0,Cost of purchased goods from electronic transactions,0,12286234,Cost of sales
 2021-04,10E100132,23205448,0,Cost of purchased goods from traditional transactions,0,23205448,Cost of sales
 2021-04,10E200020,2266000,0,Sales commission,0,2266000,"Selling, general and administrative expenses"
@@ -30,7 +30,7 @@
 2021-04,10E200520,396465,0,Other salaries,0,396465,"Selling, general and administrative expenses"
 2021-04,10E200540,743926,0,Legal welfare expenses,0,743926,"Selling, general and administrative expenses"
 2021-04,10E200600,139710,0,Fee expenses,0,139710,"Selling, general and administrative expenses"
-2021-04,10E200690,10552,0,Commission expenses,0,10552,"Selling, general and administrative expenses"
+2021-04,10E200690,9308,0,Commission expenses,0,9308,"Selling, general and administrative expenses"
 2021-04,10E200720,3449000,0,Rent expenses on land and buildings,0,3449000,"Selling, general and administrative expenses"
 2021-04,10E200730,293850,0,Rent expenses on land and buildings,0,293850,"Selling, general and administrative expenses"
 2021-04,10E200870,3580147,0,Freight costs,0,3580147,"Selling, general and administrative expenses"

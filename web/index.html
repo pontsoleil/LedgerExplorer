@@ -4,20 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ledger Explorer</title>
-  <link rel="stylesheet" href="./app.css?v=20260722155422">
+  <link rel="stylesheet" href="./app.css?v=202607231208">
 </head>
 <body>
 
-  <div id="companyHeader" class="company-header" hidden></div>
-
-  <div class="row">
-    <div class="toolbar-row toolbar-primary">
-      <div class="nav" id="nav"></div>
-
-      <button id="about" type="button">
-        <a class="button" href="./about_en.html">ABOUT</a>
-      </button>
-
+  <div class="top-layout">
+    <div id="companyHeader" class="company-header" hidden></div>
+    <div class="filter-panel toolbar-primary">
       <div id="columnToggleGroup" class="column-toggle-group" aria-label="Column display options"></div>
 
       <label>
@@ -30,11 +23,22 @@
         <select id="accountSelect"></select>
       </label>
 
-      <label>
+      <label id="searchLabel">
         <span id="searchLabelText">検索</span>
         <input id="searchInput" type="text" placeholder="摘要など（部分一致）" />
       </label>
       <span class="status status--response" id="status"></span>
+    </div>
+  </div>
+
+  <div class="row navigation-row">
+    <div class="toolbar-row toolbar-primary">
+      <div class="nav" id="nav"></div>
+
+      <span class="nav-separator" aria-hidden="true">｜</span>
+      <button id="about" type="button">
+        <a id="aboutLink" class="button" href="./about.html">概要</a>
+      </button>
     </div>
 
   </div>
@@ -51,6 +55,13 @@
     </div>
 
     <div class="footer-right">
+      <div id="fontSizeControl" class="font-size-control" role="group" aria-label="表示文字サイズ">
+        <span id="fontSizeLabel">文字</span>
+        <button type="button" data-font-size="small">小</button>
+        <button type="button" data-font-size="medium">中</button>
+        <button type="button" data-font-size="large">大</button>
+      </div>
+
       <label class="footer-language">
         Language / 言語
         <select id="langSelect">
@@ -65,6 +76,6 @@
     </div>
   </div>
 
-  <script src="./app.js?v=20260722162228"></script>
+  <script src="./app.js?v=202607231251"></script>
 </body>
 </html>

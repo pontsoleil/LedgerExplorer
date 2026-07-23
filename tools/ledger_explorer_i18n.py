@@ -460,7 +460,8 @@ def export_web_csv(tidy_data, out_dir: str) -> dict:
     except Exception:
         input_path = getattr(tidy_data, "file_path", "") or ""
 
-    lang = _guess_lang_subdir_from_input_path(input_path, default="ja")
+    configured_lang = str((getattr(tidy_data, "params", None) or {}).get("lang", "")).strip().lower()
+    lang = configured_lang if re.fullmatch(r"[a-z]{2,8}", configured_lang) else _guess_lang_subdir_from_input_path(input_path, default="ja")
     out_lang_dir = os.path.join(out_dir, lang)
     os.makedirs(out_lang_dir, exist_ok=True)
 
