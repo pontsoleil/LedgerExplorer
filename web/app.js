@@ -143,6 +143,7 @@ const VIEW_LABELS_I18N = {
     pnl: "損益計算書",
     receivables: "売掛金集計",
     payables: "買掛金集計",
+    documents: "業務文書",
     tidy: "構造化CSV",
   },
   en: {
@@ -153,6 +154,7 @@ const VIEW_LABELS_I18N = {
     pnl: "Profit and Loss",
     receivables: "A/R Summary",
     payables: "A/P Summary",
+    documents: "Business Documents",
     tidy: "Structured CSV",
   },
 };
@@ -572,10 +574,15 @@ function formatNumberLike(v) {
 
 // -------- DOM --------
 const navEl = document.getElementById("nav");
+const modeSwitchEl = document.getElementById("modeSwitch");
+const documentTypeNavEl = document.getElementById("documentTypeNav");
+const modeNavSeparatorEl = document.getElementById("modeNavSeparator");
+const aboutSeparatorEl = document.getElementById("aboutSeparator");
 const aboutLinkEl = document.getElementById("aboutLink");
 const statusEl = document.getElementById("status");
 const wrapEl = document.getElementById("tableWrap");
 const monthSel = document.getElementById("monthSelect");
+const asOfSel = document.getElementById("asOfSelect");
 const acctSel = document.getElementById("accountSelect");
 const searchInput = document.getElementById("searchInput");
 const langSel = document.getElementById("langSelect");
@@ -586,6 +593,8 @@ const searchLabelEl = document.getElementById("searchLabel");
 const columnToggleGroupEl = document.getElementById("columnToggleGroup");
 const companyHeaderEl = document.getElementById("companyHeader");
 const monthLabelTextEl = document.getElementById("monthLabelText");
+const asOfLabelEl = document.getElementById("asOfLabel");
+const asOfLabelTextEl = document.getElementById("asOfLabelText");
 const searchLabelTextEl = document.getElementById("searchLabelText");
 const fontSizeControlEl = document.getElementById("fontSizeControl");
 const fontSizeLabelEl = document.getElementById("fontSizeLabel");
@@ -609,6 +618,10 @@ const PARTNER_REPORTS = {
 
 function isPartnerReportView(viewKey = currentView) {
   return Object.prototype.hasOwnProperty.call(PARTNER_REPORTS, viewKey);
+}
+
+function isDocumentView(viewKey = currentView) {
+  return viewKey === "documents";
 }
 
 // -------- Helpers --------
@@ -2139,6 +2152,487 @@ async function refreshPartnerReport(month) {
   setStatus("");
 }
 
+function businessDocumentText() {
+  return currentLang === "en" ? {
+    title: "Business Documents",
+    all: "All",
+    salesInvoices: "Sales invoices",
+    purchaseInvoices: "Purchase invoices",
+    receipts: "Receipt-related",
+    payments: "Payment-related",
+    adjustments: "Adjustment documents",
+    month: "Target month",
+    asOfMonth: "As-of month",
+    partner: "Partner",
+    status: "Status",
+    allMonths: "All months",
+    allPartners: "All partners",
+    allStatuses: "All statuses",
+    issueOnly: "Issues only",
+    documentDate: "Document date",
+    documentNumber: "Document number",
+    managementId: "Management ID",
+    type: "Document type",
+    ledgerType: "AR/AP",
+    amount: "Amount",
+    applied: "Applied",
+    open: "Open",
+    relatedCount: "Related",
+    selectHint: "Select a document to display its related documents, journal entries and application status in the right-side panel.",
+    selected: "Selected document",
+    relatedDocuments: "Related documents",
+    relatedJournals: "Related journal entries",
+    applications: "Cash applications",
+    parties: "Issuer / recipient",
+    items: "Document line items",
+    noRelated: "No directly related document is registered.",
+    noRelatedAsOf: "No related document exists as of the selected month end.",
+    noJournal: "No related journal entry is registered.",
+    noApplication: "No cash application is registered.",
+    noApplicationAsOf: "No cash application exists as of the selected month end.",
+    noRows: "No documents match the selected filters.",
+    relation: "Relationship",
+    transaction: "Transaction / line",
+    description: "Description",
+    debit: "Debit",
+    credit: "Credit",
+    applicationDate: "Application date",
+    settlement: "Settlement",
+    matched: "Matched",
+    unposted: "Unposted",
+    unapplied: "Unsettled",
+    partial: "Partially settled",
+    overapplied: "Overapplied",
+    mismatch: "Amount mismatch",
+    invalid: "Invalid link",
+    issueTitle: "Inconsistency",
+    missingJournal: "No journal link",
+    missingOpenItem: "No AR/AP open item",
+    missingSettlement: "No settlement record",
+    amountMismatch: "Document and accounting amounts differ",
+  } : {
+    title: "業務文書",
+    all: "すべて",
+    salesInvoices: "売上請求書",
+    purchaseInvoices: "仕入請求書",
+    receipts: "入金関連",
+    payments: "支払関連",
+    adjustments: "調整文書",
+    month: "対象月",
+    asOfMonth: "基準月",
+    partner: "取引先",
+    status: "状態",
+    allMonths: "全期間",
+    allPartners: "全取引先",
+    allStatuses: "全状態",
+    issueOnly: "不一致のみ",
+    documentDate: "文書日付",
+    documentNumber: "文書番号",
+    managementId: "管理番号",
+    type: "文書種類",
+    ledgerType: "債権債務",
+    amount: "金額",
+    applied: "消込済額",
+    open: "未消込額",
+    relatedCount: "関連",
+    selectHint: "文書を選択すると、関連文書、関連仕訳及び消込状況を右ペインに表示します。",
+    selected: "選択した文書",
+    relatedDocuments: "関連する文書",
+    relatedJournals: "関連する仕訳",
+    applications: "消込状況",
+    parties: "発行者・受領者",
+    items: "文書明細",
+    noRelated: "直接関連する文書は登録されていません。",
+    noRelatedAsOf: "基準月末時点の関連文書はありません。",
+    noJournal: "関連仕訳は登録されていません。",
+    noApplication: "消込レコードは登録されていません。",
+    noApplicationAsOf: "基準月末時点の消込レコードはありません。",
+    noRows: "選択した条件に該当する文書はありません。",
+    relation: "関係",
+    transaction: "伝票ID／明細行ID",
+    description: "摘要文",
+    debit: "借方",
+    credit: "貸方",
+    applicationDate: "消込日",
+    settlement: "精算文書",
+    matched: "一致",
+    unposted: "未計上",
+    unapplied: "未清算",
+    partial: "一部清算",
+    overapplied: "過剰消込",
+    mismatch: "金額不一致",
+    invalid: "リンク不正",
+    issueTitle: "不一致内容",
+    missingJournal: "仕訳リンクがありません",
+    missingOpenItem: "債権債務明細がありません",
+    missingSettlement: "精算レコードがありません",
+    amountMismatch: "文書金額と会計金額が一致しません",
+  };
+}
+
+function documentTypeGroup(typeCode) {
+  const code = String(typeCode || "").toUpperCase();
+  if (code === "SALES_INVOICE") return "salesInvoices";
+  if (code === "PURCHASE_INVOICE") return "purchaseInvoices";
+  if (code === "BANK_RECEIPT_NOTICE" || code === "NOTE_RECEIPT") return "receipts";
+  if (code === "BANK_TRANSFER_RECEIPT" || code === "NOTE_ISSUE") return "payments";
+  return "adjustments";
+}
+
+const BUSINESS_DOCUMENT_MAX_AS_OF_MONTH = "2022-05";
+
+function businessDocumentMonthRange(startMonth, endMonth = BUSINESS_DOCUMENT_MAX_AS_OF_MONTH) {
+  const [startYear, startNumber] = String(startMonth || "").split("-").map(Number);
+  const [endYear, endNumber] = String(endMonth || "").split("-").map(Number);
+  if (!startYear || !startNumber || !endYear || !endNumber || startMonth > endMonth) return [endMonth];
+  const months = [];
+  let year = startYear;
+  let month = startNumber;
+  for (let count = 0; count < 36; count += 1) {
+    const value = `${year}-${String(month).padStart(2, "0")}`;
+    months.push(value);
+    if (value === endMonth) break;
+    month += 1;
+    if (month > 12) {
+      year += 1;
+      month = 1;
+    }
+  }
+  return months;
+}
+
+function businessDocumentMonthEnd(month) {
+  const [year, monthNumber] = String(month || "").split("-").map(Number);
+  if (!year || !monthNumber) return "9999-12-31";
+  return new Date(Date.UTC(year, monthNumber, 0)).toISOString().slice(0, 10);
+}
+
+function isBusinessDocumentWithinPeriod(document, cutoffDate) {
+  const date = String(document?.Document_Date || "").trim();
+  return !date || date <= cutoffDate;
+}
+
+function recordsFromCsv(rows) {
+  return (rows || []).slice(1).map(row => {
+    const record = {};
+    for (const [index, name] of (rows[0] || []).entries()) record[name] = String(row[index] || "").trim();
+    return record;
+  });
+}
+
+async function loadBusinessDocumentModel({ cutoffDate = businessDocumentMonthEnd(BUSINESS_DOCUMENT_MAX_AS_OF_MONTH) } = {}) {
+  const partnerFile = currentLang === "en" ? "trading_partner_en.csv" : "trading_partner.csv";
+  const source = name => joinUrlPath(DATA_ROOT, currentLang, "source", name);
+  const [documentRows, partyRows, detailRows, openRows, settlementRows, applicationRows, journalLinkRows, transactionLinkRows, partnerRows] = await Promise.all([
+    fetchCSV(source("business_document.csv")),
+    fetchOptionalCSV(source("business_document_party.csv")),
+    fetchOptionalCSV(source("transaction_document_detail.csv")),
+    fetchOptionalCSV(source("ar_ap_open_item.csv")),
+    fetchOptionalCSV(source("cash_settlement.csv")),
+    fetchOptionalCSV(source("cash_application.csv")),
+    fetchOptionalCSV(source("journal_document_link.csv")),
+    fetchOptionalCSV(source("transaction_document_link.csv")),
+    fetchOptionalCSV(source(partnerFile)),
+  ]);
+  const documents = recordsFromCsv(documentRows);
+  const parties = recordsFromCsv(partyRows);
+  const details = recordsFromCsv(detailRows);
+  const openItems = recordsFromCsv(openRows);
+  const settlements = recordsFromCsv(settlementRows);
+  const applications = recordsFromCsv(applicationRows);
+  const effectiveApplications = applications.filter(application =>
+    !application.Application_Date || application.Application_Date <= cutoffDate
+  );
+  const journalLinks = recordsFromCsv(journalLinkRows);
+  const transactionLinks = recordsFromCsv(transactionLinkRows);
+  const partners = recordsFromCsv(partnerRows);
+  const documentById = new Map(documents.map(document => [document.Document_ID, document]));
+  const openByDocument = new Map(openItems.map(item => [item.Invoice_Document_ID, item]));
+  const settlementByDocument = new Map(settlements.map(item => [item.Settlement_Document_ID, item]));
+  const applicationsByOpen = new Map();
+  const applicationsBySettlement = new Map();
+  for (const application of effectiveApplications) {
+    if (!applicationsByOpen.has(application.Open_Item_ID)) applicationsByOpen.set(application.Open_Item_ID, []);
+    applicationsByOpen.get(application.Open_Item_ID).push(application);
+    if (!applicationsBySettlement.has(application.Settlement_ID)) applicationsBySettlement.set(application.Settlement_ID, []);
+    applicationsBySettlement.get(application.Settlement_ID).push(application);
+  }
+  const journalLinksByDocument = new Map();
+  for (const link of journalLinks) {
+    if (!journalLinksByDocument.has(link.Document_ID)) journalLinksByDocument.set(link.Document_ID, []);
+    journalLinksByDocument.get(link.Document_ID).push(link);
+  }
+  const partnerNames = new Map();
+  for (const partner of partners) {
+    const category = String(partner.category || "").toLowerCase();
+    const partnerType = category.includes("得意") || category.includes("customer") ? "C"
+      : (category.includes("仕入") || category.includes("supplier") ? "S" : "");
+    if (partnerType) partnerNames.set(`${partnerType}:${partner.code}`, partner.name);
+  }
+  const statusFor = document => {
+    const text = businessDocumentText();
+    const issues = [];
+    const amount = numberValue(document.Gross_Amount);
+    const links = journalLinksByDocument.get(document.Document_ID) || [];
+    if (!links.length) issues.push(text.missingJournal);
+    const group = documentTypeGroup(document.Document_Type_Code);
+    let applied = 0;
+    let open = 0;
+    let status = "matched";
+    const invoiceDocument = group === "salesInvoices" || group === "purchaseInvoices";
+    if (invoiceDocument) {
+      const item = openByDocument.get(document.Document_ID);
+      if (!item) {
+        issues.push(text.missingOpenItem);
+        status = "invalid";
+      } else {
+        const original = numberValue(item.Original_Amount);
+        const matchedApplications = applicationsByOpen.get(item.Open_Item_ID) || [];
+        applied = matchedApplications.reduce((sum, application) => sum + numberValue(application.Applied_Amount), 0);
+        open = original - applied;
+        if (original !== amount) issues.push(text.amountMismatch);
+        if (applied > original) status = "overapplied";
+        else if (applied === 0 && original !== 0) status = "unapplied";
+        else if (applied < original) status = "partial";
+      }
+    } else {
+      const settlement = settlementByDocument.get(document.Document_ID);
+      if (!settlement) {
+        issues.push(text.missingSettlement);
+        status = "invalid";
+      } else {
+        const matchedApplications = applicationsBySettlement.get(settlement.Settlement_ID) || [];
+        applied = matchedApplications.reduce((sum, application) => sum + numberValue(application.Applied_Amount), 0);
+        open = amount - applied;
+        if (applied > amount) status = "overapplied";
+        else if (applied === 0 && amount !== 0) status = "unapplied";
+        else if (applied < amount) status = "partial";
+      }
+    }
+    if (issues.some(issue => issue === text.amountMismatch)) status = "mismatch";
+    else if (!links.length && status === "matched") status = "unposted";
+    return { status, issues, amount, applied, open };
+  };
+  const enriched = documents.map(document => {
+    const state = statusFor(document);
+    const partnerKey = `${document.Partner_Type}:${document.Partner_Code}`;
+    return {
+      ...document,
+      ...state,
+      partnerName: partnerNames.get(partnerKey) || partnerKey,
+      month: String(document.Document_Date || "").slice(0, 7),
+      typeGroup: documentTypeGroup(document.Document_Type_Code),
+    };
+  });
+  return {
+    documents: enriched, documentById, parties, details, openItems, settlements, applications: effectiveApplications,
+    journalLinksByDocument, openByDocument, settlementByDocument, applicationsByOpen,
+    applicationsBySettlement, transactionLinks, partnerNames,
+  };
+}
+
+function relatedDocumentIds(model, document) {
+  const ids = new Set();
+  const openItem = model.openByDocument.get(document.Document_ID);
+  const settlement = model.settlementByDocument.get(document.Document_ID);
+  if (openItem) {
+    for (const application of model.applicationsByOpen.get(openItem.Open_Item_ID) || []) {
+      const matched = model.settlements.find(item => item.Settlement_ID === application.Settlement_ID);
+      if (matched?.Settlement_Document_ID) ids.add(matched.Settlement_Document_ID);
+    }
+  }
+  if (settlement) {
+    for (const application of model.applicationsBySettlement.get(settlement.Settlement_ID) || []) {
+      const matched = model.openItems.find(item => item.Open_Item_ID === application.Open_Item_ID);
+      if (matched?.Invoice_Document_ID) ids.add(matched.Invoice_Document_ID);
+    }
+  }
+  for (const link of model.transactionLinks) {
+    if (link.invoice_document_id === document.Document_ID && link.settlement_document_id) ids.add(link.settlement_document_id);
+    if (link.settlement_document_id === document.Document_ID && link.invoice_document_id) ids.add(link.invoice_document_id);
+  }
+  ids.delete(document.Document_ID);
+  return [...ids];
+}
+
+async function documentJournalRows(model, document) {
+  const links = model.journalLinksByDocument.get(document.Document_ID) || [];
+  const month = String(document.Document_Date || "").slice(0, 7);
+  const available = Array.isArray(INDEX?.views?.journal?.available) ? INDEX.views.journal.available : [];
+  let rows = [];
+  let indexes = null;
+  if (month && available.includes(month)) {
+    rows = await fetchOptionalCSV(resolveCsvUrl("journal", month));
+    indexes = journalRowIndexes(rows);
+  }
+  return links.map(link => {
+    let row = null;
+    if (indexes && indexes.transactionId >= 0 && indexes.lineId >= 0) {
+      row = rows.slice(1).find(candidate =>
+        String(candidate[indexes.transactionId] || "").trim() === link.Transaction_ID &&
+        String(candidate[indexes.lineId] || "").trim() === link.Line_ID
+      ) || null;
+    }
+    return { link, row, indexes, month };
+  });
+}
+
+async function renderBusinessDocumentView() {
+  wrapEl.classList.remove("partner-report-wrap");
+  wrapEl.classList.add("business-documents-wrap");
+  const text = businessDocumentText();
+  setStatus(currentLang === "en" ? "Loading business documents..." : "業務文書を読み込んでいます…");
+  const url = new URL(location.href);
+  const selectedMonth = monthSel.value || "2021-04";
+  const asOfMonth = asOfSel?.value || selectedMonth;
+  const cutoffDate = businessDocumentMonthEnd(asOfMonth);
+  const model = await loadBusinessDocumentModel({ cutoffDate });
+  const requestedType = url.searchParams.get("docType") || "all";
+  const selectedType = requestedType === "invoices" ? "all" : requestedType;
+  const selectedPartner = url.searchParams.get("docPartner") || "";
+  const selectedStatus = url.searchParams.get("docStatus") || "";
+  const selectedDocumentId = url.searchParams.get("document") || "";
+  const scopedDocuments = model.documents.filter(document =>
+    isBusinessDocumentWithinPeriod(document, cutoffDate)
+  );
+  const targetMonthDocuments = scopedDocuments.filter(document => {
+    if (!selectedMonth || document.month === selectedMonth) return true;
+    const invoiceDocument = document.typeGroup === "salesInvoices" || document.typeGroup === "purchaseInvoices";
+    return invoiceDocument && document.month < selectedMonth && document.open > 0;
+  });
+  const partnerOptions = [...new Map(targetMonthDocuments.map(document => [
+    `${document.Partner_Type}:${document.Partner_Code}`,
+    { value: `${document.Partner_Type}:${document.Partner_Code}`, label: document.partnerName },
+  ])).values()].sort((a, b) => a.label.localeCompare(b.label, currentLang));
+  const statusKeys = ["matched", "unposted", "unapplied", "partial", "overapplied", "mismatch", "invalid"];
+  const filtered = targetMonthDocuments.filter(document =>
+    (selectedType === "all" || document.typeGroup === selectedType) &&
+    (!selectedPartner || `${document.Partner_Type}:${document.Partner_Code}` === selectedPartner) &&
+    (!selectedStatus || (selectedStatus === "issues" ? document.status !== "matched" : document.status === selectedStatus))
+  );
+  const documentReference = document => {
+    const number = document.Document_Number || "－";
+    return `${number}（${text.managementId}：${document.Document_ID}）`;
+  };
+  const statusLabel = key => text[key] || key;
+  const selected = scopedDocuments.find(document => document.Document_ID === selectedDocumentId) || null;
+  wrapEl.classList.toggle("has-business-document-detail", Boolean(selected));
+  let html = `<section class="business-documents">
+    <div class="business-documents__heading"><h1>${escapeHtml(text.title)}</h1></div>
+    <div class="business-documents__filters">
+      <label>${escapeHtml(text.partner)}<select id="documentPartnerFilter"><option value="">${escapeHtml(text.allPartners)}</option>${partnerOptions.map(option => `<option value="${escapeHtml(option.value)}"${option.value === selectedPartner ? " selected" : ""}>${escapeHtml(option.label)}</option>`).join("")}</select></label>
+      <label>${escapeHtml(text.status)}<select id="documentStatusFilter"><option value="">${escapeHtml(text.allStatuses)}</option><option value="issues"${selectedStatus === "issues" ? " selected" : ""}>${escapeHtml(text.issueOnly)}</option>${statusKeys.map(key => `<option value="${key}"${selectedStatus === key ? " selected" : ""}>${escapeHtml(statusLabel(key))}</option>`).join("")}</select></label>
+    </div>
+    <div class="business-documents__table-wrap"><table class="business-documents__table"><thead><tr>
+      <th>${escapeHtml(text.status)}</th><th>${escapeHtml(text.documentDate)}</th><th>${escapeHtml(text.documentNumber)}</th>
+      <th>${escapeHtml(text.managementId)}</th><th>${escapeHtml(text.type)}</th><th>${escapeHtml(text.ledgerType)}</th>
+      <th>${escapeHtml(text.partner)}</th><th>${escapeHtml(text.amount)}</th><th>${escapeHtml(text.applied)}</th><th>${escapeHtml(text.open)}</th>
+    </tr></thead><tbody>`;
+  if (!filtered.length) html += `<tr><td colspan="10">${escapeHtml(text.noRows)}</td></tr>`;
+  for (const document of filtered) {
+    html += `<tr class="business-documents__row status-${escapeHtml(document.status)}${document.Document_ID === selectedDocumentId ? " is-selected" : ""}" data-document-id="${escapeHtml(document.Document_ID)}" tabindex="0" role="button">
+      <td><span class="document-status document-status--${escapeHtml(document.status)}">${escapeHtml(statusLabel(document.status))}</span></td>
+      <td>${escapeHtml(document.Document_Date)}</td><td>${escapeHtml(document.Document_Number || "－")}</td><td>${escapeHtml(document.Document_ID)}</td>
+      <td>${escapeHtml(document.Document_Type_Name)}</td><td>${escapeHtml(document.Partner_Type === "C" ? "AR" : "AP")}</td>
+      <td>${escapeHtml(document.partnerName)}</td><td>${formatNumberLike(document.amount)}</td><td>${formatNumberLike(document.applied)}</td><td>${formatNumberLike(document.open)}</td></tr>`;
+  }
+  html += `</tbody></table></div><p class="business-documents__hint">${escapeHtml(text.selectHint)}</p>`;
+  if (selected) {
+    const relatedIds = relatedDocumentIds(model, selected);
+    const related = relatedIds
+      .map(id => model.documents.find(document => document.Document_ID === id))
+      .filter(document => document && isBusinessDocumentWithinPeriod(document, cutoffDate));
+    const journalRows = await documentJournalRows(model, selected);
+    const openItem = model.openByDocument.get(selected.Document_ID);
+    const settlement = model.settlementByDocument.get(selected.Document_ID);
+    const selectedApplications = openItem
+      ? (model.applicationsByOpen.get(openItem.Open_Item_ID) || [])
+      : (settlement ? (model.applicationsBySettlement.get(settlement.Settlement_ID) || []) : []);
+    const selectedParties = model.parties.filter(party => party.Document_ID === selected.Document_ID);
+    const selectedDetails = model.details.filter(detail => detail.Document_ID === selected.Document_ID);
+    const closeLabel = currentLang === "en" ? "Close document details" : "文書詳細を閉じる";
+    html += `<aside class="business-document-detail" aria-label="${escapeHtml(text.selected)}">
+      <div class="business-document-detail__header">
+        <h2>${escapeHtml(text.selected)}：${escapeHtml(documentReference(selected))}</h2>
+        <button type="button" class="business-document-detail__close" aria-label="${escapeHtml(closeLabel)}" title="${escapeHtml(closeLabel)}">×</button>
+      </div>
+      <div class="business-document-detail__body">
+      <dl class="business-document-detail__meta">
+        <div><dt>${escapeHtml(text.type)}</dt><dd>${escapeHtml(selected.Document_Type_Name)}</dd></div>
+        <div><dt>${escapeHtml(text.partner)}</dt><dd>${escapeHtml(selected.partnerName)}</dd></div>
+        <div><dt>${escapeHtml(text.amount)}</dt><dd class="amount">${formatNumberLike(selected.amount)}</dd></div>
+        <div><dt>${escapeHtml(text.status)}</dt><dd>${escapeHtml(statusLabel(selected.status))}</dd></div>
+      </dl>`;
+    if (selected.issues.length) {
+      html += `<div class="business-document-detail__issues"><strong>${escapeHtml(text.issueTitle)}</strong><ul>${selected.issues.map(issue => `<li>${escapeHtml(issue)}</li>`).join("")}</ul></div>`;
+    }
+    if (selectedParties.length) {
+      html += `<h3>${escapeHtml(text.parties)}</h3><div class="business-document-detail__parties">${selectedParties.map(party =>
+        `<div><strong>${escapeHtml(party.Role_Code)}</strong><span>${escapeHtml(party.Party_Name)}</span><span>${escapeHtml([party.Department_Name, party.Person_Name].filter(Boolean).join(" / "))}</span></div>`
+      ).join("")}</div>`;
+    }
+    if (selectedDetails.length) {
+      html += `<h3>${escapeHtml(text.items)}</h3><div class="business-document-detail__table-wrap"><table><thead><tr><th>#</th><th>${escapeHtml(documentDetailText().item)}</th><th>${escapeHtml(documentDetailText().quantity)}</th><th>${escapeHtml(documentDetailText().taxCategory)}</th><th>${escapeHtml(documentDetailText().gross)}</th></tr></thead><tbody>${selectedDetails.map(detail =>
+        `<tr><td>${escapeHtml(detail.Line_Number)}</td><td>${escapeHtml(detail.Item_Description)}</td><td>${escapeHtml(detail.Quantity)} ${escapeHtml(detail.Unit)}</td><td>${escapeHtml(detail.Tax_Category)}</td><td>${formatNumberLike(detail.Gross_Amount)}</td></tr>`
+      ).join("")}</tbody></table></div>`;
+    }
+    html += `<h3>${escapeHtml(text.relatedDocuments)}</h3><div class="business-document-detail__table-wrap"><table class="business-document-related"><thead><tr><th>${escapeHtml(text.documentDate)}</th><th>${escapeHtml(text.type)}</th><th>${escapeHtml(text.documentNumber)}</th><th>${escapeHtml(text.managementId)}</th><th>${escapeHtml(text.amount)}</th><th>${escapeHtml(text.status)}</th></tr></thead><tbody>`;
+    html += related.length ? related.map(document => `<tr data-document-id="${escapeHtml(document.Document_ID)}" tabindex="0" role="button"><td>${escapeHtml(document.Document_Date)}</td><td>${escapeHtml(document.Document_Type_Name)}</td><td>${escapeHtml(document.Document_Number || "－")}</td><td>${escapeHtml(document.Document_ID)}</td><td>${formatNumberLike(document.amount)}</td><td>${escapeHtml(statusLabel(document.status))}</td></tr>`).join("")
+      : `<tr><td colspan="6">${escapeHtml(text.noRelatedAsOf)}</td></tr>`;
+    html += `</tbody></table></div><h3>${escapeHtml(text.relatedJournals)}</h3><div class="business-document-detail__table-wrap"><table><thead><tr><th>${escapeHtml(text.transaction)}</th><th>${escapeHtml(text.documentDate)}</th><th>${escapeHtml(text.description)}</th><th>${escapeHtml(text.debit)}</th><th>${escapeHtml(text.credit)}</th></tr></thead><tbody>`;
+    html += journalRows.length ? journalRows.map(item => {
+      const idx = item.indexes;
+      const row = item.row;
+      const account = (code, name) => [code, name].filter(Boolean).join(" ");
+      return `<tr><td>${escapeHtml(`${item.link.Transaction_ID} / ${item.link.Line_ID}`)}</td><td>${escapeHtml(row && idx ? row[idx.date] : item.month)}</td>
+        <td>${escapeHtml(row && idx ? row[idx.description] : item.link.Relationship_Type)}</td>
+        <td>${escapeHtml(row && idx ? account(row[idx.debitAccount], idx.debitName >= 0 ? row[idx.debitName] : "") : "")}${row && idx ? `<strong>${formatNumberLike(row[idx.debitAmount])}</strong>` : ""}</td>
+        <td>${escapeHtml(row && idx ? account(row[idx.creditAccount], idx.creditName >= 0 ? row[idx.creditName] : "") : "")}${row && idx ? `<strong>${formatNumberLike(row[idx.creditAmount])}</strong>` : ""}</td></tr>`;
+    }).join("") : `<tr><td colspan="5">${escapeHtml(text.noJournal)}</td></tr>`;
+    html += `</tbody></table></div><h3>${escapeHtml(text.applications)}</h3><div class="business-document-detail__table-wrap"><table><thead><tr><th>${escapeHtml(text.applicationDate)}</th><th>${escapeHtml(text.amount)}</th><th>${escapeHtml(text.settlement)}</th><th>${escapeHtml(text.status)}</th></tr></thead><tbody>`;
+    html += selectedApplications.length ? selectedApplications.map(application => {
+      const matchedSettlement = model.settlements.find(item => item.Settlement_ID === application.Settlement_ID);
+      return `<tr><td>${escapeHtml(application.Application_Date)}</td><td>${formatNumberLike(application.Applied_Amount)}</td><td>${escapeHtml(matchedSettlement?.Settlement_Document_ID || application.Settlement_ID)}</td><td>${escapeHtml(application.Status)}</td></tr>`;
+    }).join("") : `<tr><td colspan="4">${escapeHtml(text.noApplicationAsOf)}</td></tr>`;
+    html += `</tbody></table></div></div></aside>`;
+  }
+  html += "</section>";
+  wrapEl.innerHTML = html;
+  const updateFilter = (key, value) => {
+    updateUrlQuery({ [key]: value || null, document: null });
+    renderBusinessDocumentView().catch(error => {
+      console.error(error);
+      setStatus(String(error?.message || error));
+    });
+  };
+  wrapEl.querySelector("#documentPartnerFilter")?.addEventListener("change", event => updateFilter("docPartner", event.target.value));
+  wrapEl.querySelector("#documentStatusFilter")?.addEventListener("change", event => updateFilter("docStatus", event.target.value));
+  wrapEl.querySelector(".business-document-detail__close")?.addEventListener("click", () => {
+    updateUrlQuery({ document: null });
+    renderBusinessDocumentView().catch(error => {
+      console.error(error);
+      setStatus(String(error?.message || error));
+    });
+  });
+  const selectDocument = element => {
+    updateUrlQuery({ document: element.dataset.documentId });
+    renderBusinessDocumentView().catch(error => {
+      console.error(error);
+      setStatus(String(error?.message || error));
+    });
+  };
+  for (const row of wrapEl.querySelectorAll(".business-documents__row, .business-document-related tr[data-document-id]")) {
+    row.addEventListener("click", () => selectDocument(row));
+    row.addEventListener("keydown", event => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        selectDocument(row);
+      }
+    });
+  }
+  setStatus("");
+}
+
 // -------- Filtering (account + search + local month filter) --------
 /*
 EN: Filtering
@@ -2193,6 +2687,7 @@ function filterRows(rows, { accountValue = "", searchText = "", monthValue = "" 
 
 function applyI18nTexts() {
   if (monthLabelTextEl) monthLabelTextEl.textContent = currentLang === "en" ? "Month" : "対象月";
+  if (asOfLabelTextEl) asOfLabelTextEl.textContent = currentLang === "en" ? "As-of month" : "基準月";
   if (searchLabelTextEl) searchLabelTextEl.textContent = currentLang === "en" ? "Search" : "検索";
   if (aboutLinkEl) {
     aboutLinkEl.textContent = currentLang === "en" ? "ABOUT" : "概要";
@@ -2220,12 +2715,14 @@ function applyI18nTexts() {
       companyHeaderEl.hidden = true;
     }
   }
+  renderModeSwitch();
   applyFontSize();
 }
 
 // -------- App state --------
 let INDEX = null;
 let currentView = "ledger";
+let lastAccountingView = "ledger";
 let lastLoadedUrl = "";
 let lastLoadedRows = null;
 let initialAccountFromUrl = "";
@@ -2280,7 +2777,7 @@ function updateUrlQuery(params) {
 // -------- UI init --------
 function initNav() {
   navEl.innerHTML = "";
-  const viewKeys = Object.keys(INDEX.views || {});
+  const viewKeys = Object.keys(INDEX.views || {}).filter(key => key !== "documents");
   const groupEnds = new Set(["tidy", "trial_balance", "pnl"]);
   for (const [index, key] of viewKeys.entries()) {
     const btn = document.createElement("button");
@@ -2288,6 +2785,7 @@ function initNav() {
     btn.dataset.key = key;
     btn.addEventListener("click", async () => {
       if (key === "ledger" && currentView !== "ledger") acctSel.value = "";
+      lastAccountingView = key;
       currentView = key;
       await refresh({ skipReloadCsv: false }); // view change => reload (server)
     });
@@ -2295,6 +2793,7 @@ function initNav() {
     if (groupEnds.has(key) && index < viewKeys.length - 1) {
       const separator = document.createElement("span");
       separator.className = "nav-separator";
+      separator.dataset.after = key;
       separator.textContent = "｜";
       separator.setAttribute("aria-hidden", "true");
       navEl.appendChild(separator);
@@ -2302,21 +2801,95 @@ function initNav() {
   }
 }
 
+function renderModeSwitch() {
+  if (!modeSwitchEl) return;
+  const accountingLabel = isDocumentView()
+    ? (currentLang === "en" ? "Back to accounting" : "会計帳簿へ戻る")
+    : (currentLang === "en" ? "Accounting ledgers" : "会計帳簿");
+  const documentsLabel = currentLang === "en" ? "Business documents" : "業務文書";
+  modeSwitchEl.setAttribute("aria-label", currentLang === "en" ? "Display mode" : "表示モード");
+  modeSwitchEl.innerHTML = `<button type="button" data-app-mode="accounting">${escapeHtml(accountingLabel)}</button><button type="button" data-app-mode="documents">${escapeHtml(documentsLabel)}</button>`;
+  for (const button of modeSwitchEl.querySelectorAll("[data-app-mode]")) {
+    const documentsMode = button.dataset.appMode === "documents";
+    button.classList.toggle("active", documentsMode === isDocumentView());
+    button.addEventListener("click", async () => {
+      if (documentsMode) {
+        if (!isDocumentView()) lastAccountingView = currentView;
+        currentView = "documents";
+      } else {
+        currentView = lastAccountingView && lastAccountingView !== "documents" ? lastAccountingView : "ledger";
+      }
+      await refresh({ skipReloadCsv: false });
+    });
+  }
+  renderDocumentTypeNav();
+}
+
+function renderDocumentTypeNav() {
+  if (!documentTypeNavEl) return;
+  const documentView = isDocumentView();
+  documentTypeNavEl.hidden = !documentView;
+  if (!documentView) {
+    documentTypeNavEl.innerHTML = "";
+    return;
+  }
+  const text = businessDocumentText();
+  const requestedType = new URL(location.href).searchParams.get("docType") || "all";
+  const selectedType = requestedType === "invoices" ? "all" : requestedType;
+  const typeKeys = ["all", "salesInvoices", "purchaseInvoices", "receipts", "payments", "adjustments"];
+  documentTypeNavEl.setAttribute("aria-label", currentLang === "en" ? "Document type" : "対象文書");
+  documentTypeNavEl.innerHTML = typeKeys.map(key =>
+    `<button type="button" data-document-type="${key}" class="${selectedType === key ? "active" : ""}">${escapeHtml(text[key])}</button>`
+  ).join("");
+  for (const button of documentTypeNavEl.querySelectorAll("[data-document-type]")) {
+    button.addEventListener("click", async () => {
+      const key = button.dataset.documentType;
+      updateUrlQuery({ docType: key === "all" ? null : key, document: null });
+      await refresh({ skipReloadCsv: true });
+    });
+  }
+}
+
 function setActiveButton() {
   for (const btn of navEl.querySelectorAll("button")) {
     btn.classList.toggle("active", btn.dataset.key === currentView);
   }
+  updateStatementNavAvailability();
+  renderModeSwitch();
+}
+
+function currentAsOfMonth() {
+  return asOfSel?.value || monthSel?.value || "";
+}
+
+function statementsAvailable() {
+  return currentAsOfMonth() >= "2022-03";
+}
+
+function updateStatementNavAvailability() {
+  const available = statementsAvailable();
+  for (const button of navEl?.querySelectorAll('button[data-key="balance_sheet"], button[data-key="pnl"]') || []) {
+    button.hidden = !available;
+  }
+  const statementSeparator = navEl?.querySelector('.nav-separator[data-after="pnl"]');
+  if (statementSeparator) statementSeparator.hidden = !available;
 }
 
 function updateViewControls() {
   const partnerView = isPartnerReportView();
+  const documentView = isDocumentView();
   const allAccountsOnly = currentView === "trial_balance" || currentView === "balance_sheet" || currentView === "pnl";
   const annualReportView = currentView === "balance_sheet" || currentView === "pnl";
   const searchableView = currentView === "tidy" || currentView === "journal";
   if (allAccountsOnly) acctSel.value = "";
   if (!searchableView) searchInput.value = "";
   if (searchLabelEl) searchLabelEl.hidden = !searchableView;
-  if (monthSel) monthSel.hidden = annualReportView;
+  if (monthSel) {
+    monthSel.hidden = annualReportView;
+    const monthLabel = monthSel.closest("label");
+    if (monthLabel) monthLabel.hidden = annualReportView;
+  }
+  if (asOfLabelEl) asOfLabelEl.hidden = annualReportView;
   if (monthLabelTextEl) {
     if (annualReportView) {
       const firstMonth = (INDEX?.months || []).find(value => /^\d{4}-\d{2}$/.test(String(value)));
@@ -2329,20 +2902,46 @@ function updateViewControls() {
     }
   }
   if (accountLabelEl) {
-    accountLabelEl.hidden = allAccountsOnly;
+    accountLabelEl.hidden = allAccountsOnly || documentView;
     accountLabelEl.firstChild.textContent = partnerView
       ? (currentLang === "en" ? "Partner " : "取引先 ")
       : (currentLang === "en" ? "Account " : "科目 ");
   }
-  if (toggleCodeColsBtn) toggleCodeColsBtn.hidden = partnerView;
-  if (columnToggleGroupEl) columnToggleGroupEl.hidden = partnerView;
+  if (toggleCodeColsBtn) toggleCodeColsBtn.hidden = partnerView || documentView;
+  if (columnToggleGroupEl) columnToggleGroupEl.hidden = partnerView || documentView;
+  if (navEl) navEl.hidden = documentView;
+  if (aboutLinkEl?.closest("button")) aboutLinkEl.closest("button").hidden = documentView;
+  if (aboutSeparatorEl) aboutSeparatorEl.hidden = documentView;
+  if (modeNavSeparatorEl) modeNavSeparatorEl.hidden = false;
+  renderDocumentTypeNav();
 }
 
 function initMonthSelect(months) {
   buildOptions(monthSel, months || [], { includeAll: false });
 
   monthSel.addEventListener("change", async () => {
+    setAsOfMonthOptions(asOfSel?.value);
     await refresh({ skipReloadCsv: false });
+  });
+}
+
+function setAsOfMonthOptions(preferredValue = "") {
+  if (!asOfSel) return;
+  const targetMonth = monthSel.value || (INDEX?.months?.[0] ?? "2021-04");
+  const options = businessDocumentMonthRange(targetMonth);
+  buildOptions(asOfSel, options, { includeAll: false });
+  asOfSel.value = options.includes(preferredValue) ? preferredValue : targetMonth;
+  updateStatementNavAvailability();
+}
+
+function initAsOfSelect(initialValue = "") {
+  if (!asOfSel) return;
+  setAsOfMonthOptions(initialValue);
+  asOfSel.addEventListener("change", async () => {
+    if (!statementsAvailable() && (currentView === "balance_sheet" || currentView === "pnl")) {
+      currentView = "trial_balance";
+    }
+    await refresh({ skipReloadCsv: !isDocumentView() });
   });
 }
 
@@ -2463,18 +3062,49 @@ function initUpload() {
 async function refresh(opts = {}) {
   const { skipReloadCsv = false } = opts;
 
+  if (!statementsAvailable() && (currentView === "balance_sheet" || currentView === "pnl")) {
+    currentView = "trial_balance";
+  }
   setActiveButton();
   updateViewControls();
 
   const month = monthSel.value || (INDEX?.months?.[0] ?? "");
+  const asOfMonth = currentAsOfMonth() || month;
   const searchableView = currentView === "tidy" || currentView === "journal";
   const q = searchableView ? String(searchInput.value || "").trim() : "";
-  const acct = acctSel.value || "";
+  const acct = isDocumentView() ? "" : (acctSel.value || "");
 
-  updateUrlQuery({ view: currentView, month, account: acct, q, mode: dataMode, lang: currentLang, dataset: (DATASET !== DATASET_DEFAULT ? DATASET : null) });
+  updateUrlQuery({
+    view: currentView,
+    month,
+    asOf: asOfMonth === month ? null : asOfMonth,
+    account: acct,
+    q,
+    mode: dataMode,
+    lang: currentLang,
+    dataset: (DATASET !== DATASET_DEFAULT ? DATASET : null),
+  });
 
   try {
     wrapEl.innerHTML = "";
+    wrapEl.classList.remove("business-documents-wrap", "has-business-document-detail");
+
+    if (isDocumentView()) {
+      await renderBusinessDocumentView();
+      updateUrlQuery({
+        view: currentView,
+        month,
+        asOf: asOfMonth === month ? null : asOfMonth,
+        docMonth: null,
+        subsequent: null,
+        account: null,
+        q: null,
+        mode: dataMode,
+        lang: currentLang,
+        dataset: (DATASET !== DATASET_DEFAULT ? DATASET : null),
+      });
+      return;
+    }
 
     if (isPartnerReportView()) {
       await refreshPartnerReport(month);
@@ -2601,12 +3231,14 @@ async function main() {
   }
   INDEX.views.receivables = { virtual: true, source: "ledger" };
   INDEX.views.payables = { virtual: true, source: "ledger" };
+  INDEX.views.documents = { virtual: true, source: "business_document" };
 
   // restore state from URL if any
   const url = new URL(location.href);
   const qView = url.searchParams.get("view");
   const qLang = url.searchParams.get("lang");
   const qMonth = url.searchParams.get("month");
+  const qAsOf = url.searchParams.get("asOf");
   initialAccountFromUrl = url.searchParams.get("account") || "";
 
   if (qLang && (qLang === "ja" || qLang === "en")) {
@@ -2614,15 +3246,18 @@ async function main() {
     localStorage.setItem("ledger_lang", currentLang);
   }
   if (qView && INDEX.views && INDEX.views[qView]) currentView = qView;
+  if (currentView !== "documents") lastAccountingView = currentView;
   // init UI
   initNav();
   initMonthSelect(INDEX.months || []);
   if (qMonth && (INDEX.months || []).includes(qMonth)) monthSel.value = qMonth;
+  initAsOfSelect(qAsOf || "");
   initAccountSelect();
   initLangSelect();
   initFontSizeControl();
   initSearch();
   initColumnToggleButtons();
+  renderModeSwitch();
 
   // set lang select
   if (langSel) langSel.value = currentLang;

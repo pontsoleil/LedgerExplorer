@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Ledger Explorer</title>
-  <link rel="stylesheet" href="./app.css?v=202607231208">
+  <link rel="stylesheet" href="./app.css?v=202607231500">
 </head>
 <body>
 
@@ -16,6 +16,11 @@
       <label>
         <span id="monthLabelText">対象月</span>
         <select id="monthSelect"></select>
+      </label>
+
+      <label id="asOfLabel">
+        <span id="asOfLabelText">基準月</span>
+        <select id="asOfSelect"></select>
       </label>
 
       <label id="accountLabel">
@@ -33,10 +38,13 @@
 
   <div class="row navigation-row">
     <div class="toolbar-row toolbar-primary">
+      <div id="modeSwitch" class="mode-switch" role="group" aria-label="表示モード"></div>
+      <span id="modeNavSeparator" class="nav-separator" aria-hidden="true">｜</span>
+      <div id="documentTypeNav" class="document-type-nav" role="group" aria-label="対象文書" hidden></div>
       <div class="nav" id="nav"></div>
 
-      <span class="nav-separator" aria-hidden="true">｜</span>
-      <button id="about" type="button">
+      <span id="aboutSeparator" class="nav-separator" aria-hidden="true">｜</span>
+      <button id="about" class="about-button" type="button">
         <a id="aboutLink" class="button" href="./about.html">概要</a>
       </button>
     </div>
@@ -76,6 +84,6 @@
     </div>
   </div>
 
-  <script src="./app.js?v=202607231251"></script>
+  <script src="./app.js?v=202607231525"></script>
 </body>
 </html>
