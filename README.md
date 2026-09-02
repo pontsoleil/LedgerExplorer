@@ -360,6 +360,11 @@ the Structured CSV format.
 For GitHub Pages, publish the repository root or the `web/` entry point together
 with `data/sample`. See `docs/github-pages.md` for details.
 
+## Architecture Documentation
+
+- [LedgerExplorer Architecture and Design Specification](docs/architecture/LedgerExplorer_Architecture_and_Design_Specification.md)
+- [UADC and LedgerExplorer Reference Architecture](docs/architecture/UADC_LedgerExplorer_Reference_Architecture.md)
+
 ## What To Commit
 
 Commit:
