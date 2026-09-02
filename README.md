@@ -1,5 +1,77 @@
 # Ledger Explorer
 
+Ledger Explorer is a reference implementation for exploring, tracing, and
+exporting accounting data represented through Structured CSV.
+
+It is designed to consume accounting data that has already been converted into
+a common semantic structure, rather than depending directly on a particular
+accounting package, ERP database, proprietary CSV layout, XML syntax, or vendor
+API.
+
+The intended relationship with UADC (Universal Adapter for Data Conversion) is:
+
+```text
+Source accounting / business systems
+        |
+        | proprietary CSV / XML / JSON / XBRL / other formats
+        v
+UADC
+Universal Adapter for Data Conversion
+        |
+        | semantic / syntax binding
+        v
+Structured CSV
+        |
+        v
+Ledger Explorer
+        |
+        +-- accounting ledgers
+        +-- AR / AP
+        +-- business documents
+        +-- journal-document relationships
+        +-- settlement / cash application
+        `-- exports and review views
+```
+
+Structured CSV is therefore the interchange and preservation layer between
+source-system-specific conversion and downstream visualization or analysis.
+
+Ledger Explorer does not require the original accounting application's screen
+layout or database schema in order to present the converted data. Python tooling
+under `tools/` prepares and exports the datasets used by the viewer, while the
+static browser UI under `web/` provides interactive visualization and tracing.
+
+## Public Technical Record and Reference Implementation
+
+This repository publicly documents the Ledger Explorer design and provides a
+working reference implementation.
+
+The publication is intended to establish a dated public technical record of the
+architecture, data relationships, processing approach, user-interface behavior,
+and example implementation described in this repository.
+
+The disclosed design includes, among other things:
+
+- use of Structured CSV / hierarchical tidy data as the common input layer
+- separation of source-system conversion from downstream visualization
+- use of UADC as an upstream conversion mechanism
+- browser-based exploration of accounting ledgers derived from Structured CSV
+- tracing between journal entries and business documents
+- AR/AP open-item, settlement, and cash-application relationships
+- reverse tracing from business documents to accounting records
+- multilingual datasets sharing common identifiers and relationships
+- static publication of a reviewable accounting dataset through ordinary web
+  technologies
+- Python-based preparation, export, and bootstrap tooling separated from the
+  browser presentation layer
+
+The repository is a reference implementation and technical publication. It is
+not intended to make the data model dependent on Ledger Explorer itself.
+Other applications may consume the same Structured CSV or implement the same
+published relationships independently.
+
+## Scope
+
 Ledger Explorer is a static web viewer and export toolkit for accounting ledger
 data represented as Structured CSV / hierarchical tidy data.
 
@@ -45,6 +117,33 @@ with Git LFS, GitHub Releases, a separate data repository, or object storage.
 |-- LICENSE-CODE
 `-- LICENSE-CONTENT
 ```
+
+## Architectural Boundary
+
+Ledger Explorer begins at the Structured CSV layer.
+
+Recreating Structured CSV from a proprietary accounting-system export is not
+part of Ledger Explorer's core responsibility. That conversion belongs to UADC
+or another upstream adapter.
+
+This separation is intentional:
+
+```text
+Source syntax
+    -> conversion / binding
+    -> Structured CSV
+    -> exploration / tracing / export
+```
+
+As a result, the Ledger Explorer presentation layer can remain independent of
+the original accounting product and can be reused with different source systems
+as long as their data is converted into the expected Structured CSV semantic
+structure.
+
+The sample repository also contains derived tables used for efficient document,
+AR/AP, and settlement views. Those tables are downstream representations of the
+published accounting relationships; they do not replace the authoritative
+Structured CSV transaction inputs.
 
 ## Local Preview
 
@@ -220,6 +319,41 @@ this demo. Remaining project work includes standards validation for UBL
 bindings, UBL XML and evidence-PDF generation, generic accounting-source
 conversion, financial-statement-to-document tracing, a portable audit package,
 and AI/OCR-assisted exception review.
+
+## Relationship to UADC
+
+UADC and Ledger Explorer have separate responsibilities.
+
+**UADC** converts source-system data into a common semantic representation.
+Its bindings describe how proprietary or standardized physical formats map to
+that representation.
+
+**Ledger Explorer** starts from the resulting Structured CSV and demonstrates
+how standardized accounting data can be reviewed, traced, and reused without
+returning to the original application's proprietary storage model.
+
+The combination demonstrates the following architecture:
+
+```text
+multiple source formats
+        |
+        v
+       UADC
+        |
+        v
+common Structured CSV
+        |
+        +----------------------+
+        |                      |
+        v                      v
+ Ledger Explorer        other applications
+        |
+        v
+human review / tracing / export
+```
+
+Ledger Explorer is therefore one consumer of Structured CSV, not the owner of
+the Structured CSV format.
 
 ## GitHub Pages
 
