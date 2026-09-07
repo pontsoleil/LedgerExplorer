@@ -9,12 +9,7 @@
 <body>
 
   <div class="top-layout">
-    <div id="companyHeader" class="company-header" hidden>
-      <label class="dataset-menu">
-        <select id="datasetSelect" aria-label="データセット"></select>
-      </label>
-      <span id="companyDetails" class="company-header__details"></span>
-    </div>
+    <div id="companyHeader" class="company-header" hidden></div>
     <div class="filter-panel toolbar-primary">
       <div id="columnToggleGroup" class="column-toggle-group" aria-label="Column display options"></div>
 
@@ -37,10 +32,6 @@
         <span id="searchLabelText">検索</span>
         <input id="searchInput" type="text" placeholder="摘要など（部分一致）" />
       </label>
-      <span id="structuredDownloads" hidden>
-        <a id="structuredCsvDownload" class="button" download aria-label="Structured CSV download">Structured CSV download</a>
-        <a id="structuredJsonDownload" class="button" download aria-label="Structured JSON metadata download">Structured JSON metadata download</a>
-      </span>
       <span class="status status--response" id="status"></span>
     </div>
   </div>
@@ -87,11 +78,12 @@
         </select>
       </label>
 
-      <div id="buildTimestamp" class="build-timestamp" aria-label="プログラム作成日時"></div>
+      <div class="build-timestamp" aria-label="この改訂版の生成日時">
+        生成日時：2026-07-21 13:10
+      </div>
     </div>
   </div>
 
-  <script src="./journal-display.js?v=202609071551"></script>
-  <script src="./app.js?v=202609072018"></script>
+  <script src="./app.js?v=202607231525"></script>
 </body>
 </html>

@@ -1,33 +1,16 @@
 {
-  "generated_at": "2026-09-07T19:28:44+09:00",
-  "dataset_id": "pca-synthetic-fy2021-v3-structured-tidy-16m",
-  "predecessor_dataset_id": "pca-synthetic-fy2021-v2-settlement-16m",
-  "default_month": "2021-04",
+  "generated_at": "2026-07-22T21:31:22.003090Z",
   "company": {
-    "business_id": "SYNTHETIC-DEMO",
-    "name": "Harbor Lantern Demo",
-    "synthetic": true
+    "business_id": "BUS-000",
+    "name": "株式会社くらし日用品",
+    "postal_code": "000-0000",
+    "prefecture": "東京都",
+    "address": "千代田区テスト町1丁目1番1号",
+    "building": "台帳検証ビル1階",
+    "source_master": "2025事業者マスタ.csv"
   },
   "lang": "en",
   "months": [
-    "2021-02",
-    "2021-03",
-    "2021-04",
-    "2021-05",
-    "2021-06",
-    "2021-07",
-    "2021-08",
-    "2021-09",
-    "2021-10",
-    "2021-11",
-    "2021-12",
-    "2022-01",
-    "2022-02",
-    "2022-03",
-    "2022-04",
-    "2022-05"
-  ],
-  "reporting_months": [
     "2021-04",
     "2021-05",
     "2021-06",
@@ -41,28 +24,12 @@
     "2022-02",
     "2022-03"
   ],
-  "reference_before_months": [
-    "2021-02",
-    "2021-03"
-  ],
-  "reference_after_months": [
-    "2022-04",
-    "2022-05"
-  ],
-  "features": {
-    "business_documents": true,
-    "as_of_settlement": true,
-    "structured_tidy": true
-  },
   "views": {
     "tidy": {
       "by": "month",
-      "path": "structured/{month}.csv",
-      "metadata_path": "structured/{month}.json",
-      "display_metadata_path": "structured/columns.json",
+      "path": "tidy/{month}.csv",
+      "fallback": "tidy/ALL.csv",
       "available": [
-        "2021-02",
-        "2021-03",
         "2021-04",
         "2021-05",
         "2021-06",
@@ -74,18 +41,13 @@
         "2021-12",
         "2022-01",
         "2022-02",
-        "2022-03",
-        "2022-04",
-        "2022-05"
-      ],
-      "language_neutral": true,
-      "schema_id": "xbrl-gl-next-ae-structured-tidy-v2",
-      "schema_version": "2.0.0",
-      "display_name": "Structured Tidy Data"
+        "2022-03"
+      ]
     },
     "journal": {
       "by": "month",
-      "path": "{lang}/journal/{month}.csv",
+      "path": "journal/{month}.csv",
+      "fallback": "journal/ALL.csv",
       "available": [
         "2021-02",
         "2021-03",
@@ -107,7 +69,8 @@
     },
     "ledger": {
       "by": "month",
-      "path": "{lang}/ledger/{month}.csv",
+      "path": "ledger/{month}.csv",
+      "fallback": "ledger/ALL.csv",
       "available": [
         "2021-02",
         "2021-03",
@@ -129,7 +92,8 @@
     },
     "trial_balance": {
       "by": "month",
-      "path": "{lang}/trial_balance/{month}.csv",
+      "path": "trial_balance/{month}.csv",
+      "fallback": "trial_balance/ALL.csv",
       "available": [
         "2021-04",
         "2021-05",
@@ -147,66 +111,19 @@
     },
     "balance_sheet": {
       "by": "month",
-      "path": "{lang}/balance_sheet/{month}.csv",
+      "path": "balance_sheet/{month}.csv",
+      "fallback": "balance_sheet/ALL.csv",
       "available": [
-        "2021-04",
-        "2021-05",
-        "2021-06",
-        "2021-07",
-        "2021-08",
-        "2021-09",
-        "2021-10",
-        "2021-11",
-        "2021-12",
-        "2022-01",
-        "2022-02",
-        "2022-03"
+        "ALL"
       ]
     },
     "pnl": {
       "by": "month",
-      "path": "{lang}/pnl/{month}.csv",
+      "path": "pnl/{month}.csv",
+      "fallback": "pnl/ALL.csv",
       "available": [
-        "2021-04",
-        "2021-05",
-        "2021-06",
-        "2021-07",
-        "2021-08",
-        "2021-09",
-        "2021-10",
-        "2021-11",
-        "2021-12",
-        "2022-01",
-        "2022-02",
-        "2022-03"
+        "ALL"
       ]
-    },
-    "structured": {
-      "by": "month",
-      "path": "structured/{month}.csv",
-      "metadata_path": "structured/{month}.json",
-      "display_metadata_path": "structured/columns.json",
-      "available": [
-        "2021-02",
-        "2021-03",
-        "2021-04",
-        "2021-05",
-        "2021-06",
-        "2021-07",
-        "2021-08",
-        "2021-09",
-        "2021-10",
-        "2021-11",
-        "2021-12",
-        "2022-01",
-        "2022-02",
-        "2022-03",
-        "2022-04",
-        "2022-05"
-      ],
-      "language_neutral": true,
-      "schema_id": "xbrl-gl-next-ae-structured-tidy-v2",
-      "schema_version": "2.0.0"
     }
   }
 }

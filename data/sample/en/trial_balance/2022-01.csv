@@ -1,59 +1,41 @@
-Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
-2022-01,1000,0,0,Demo Cash,600000,600000,Assets
-2022-01,1010,0,0,Demo Petty Cash,120000,120000,Assets
-2022-01,1100,682240,3320850,Demo Central Ordinary Deposit,4637170,1998560,Assets
-2022-01,1110,1670920,2259290,Demo North Current Deposit,3637320,3048950,Assets
-2022-01,1120,329330,3226670,Demo Harbor Ordinary Deposit,4825850,1928510,Assets
-2022-01,1200,5170400,1428230,Demo Accounts Receivable,24199300,27941470,Assets
-2022-01,1210,0,0,Demo Notes Receivable,800000,800000,Assets
-2022-01,1300,0,0,Demo Inventory,1200000,1200000,Assets
-2022-01,1400,642130,0,Demo Prepaid Expenses,5711580,6353710,Assets
-2022-01,1410,0,0,Demo Advances Paid,250000,250000,Assets
-2022-01,1420,0,0,Demo Temporary Payments,150000,150000,Assets
-2022-01,1430,0,0,Demo Input Tax Receivable,400000,400000,Assets
-2022-01,1500,0,0,Demo Equipment,2000000,2000000,Assets
-2022-01,1510,0,0,Demo Vehicles,1200000,1200000,Assets
-2022-01,1520,0,0,Demo Software,700000,700000,Assets
-2022-01,1590,0,0,Demo Accumulated Depreciation,900000,900000,Assets
-2022-01,2000,2146950,1881240,Demo Accounts Payable,1677280,1411570,Liabilities
-2022-01,2010,0,0,Demo Notes Payable,600000,600000,Liabilities
-2022-01,2100,732320,0,Demo Accrued Payables,1647900,915580,Liabilities
-2022-01,2110,578870,0,Demo Payroll Withholding,1359950,781080,Liabilities
-2022-01,2120,0,0,Demo Output Tax Payable,450000,450000,Liabilities
-2022-01,2130,0,0,Demo Temporary Receipts,120000,120000,Liabilities
-2022-01,2200,1189900,0,Demo Short-term Loans,2766880,1576980,Liabilities
-2022-01,2300,0,0,Demo Long-term Loans,2500000,2500000,Liabilities
-2022-01,2400,0,0,Demo Unearned Revenue,350000,350000,Liabilities
-2022-01,3000,0,0,Demo Capital,5000000,5000000,Equity
-2022-01,3100,0,0,Demo Retained Earnings,26159010,26159010,Equity
-2022-01,4000,0,1653680,Demo Product Sales,21317730,22971410,Revenue
-2022-01,4010,0,3431160,Demo Service Revenue,20497480,23928640,Revenue
-2022-01,4020,0,1339820,Demo Other Operating Revenue,10814600,12154420,Revenue
-2022-01,4030,0,0,Demo Interest Income,0,0,Revenue
-2022-01,4040,0,0,Demo Miscellaneous Income,0,0,Revenue
-2022-01,5000,750210,0,Demo Purchases,3494150,4244360,Cost of sales
-2022-01,5010,651480,0,Demo Freight-in,5873650,6525130,Cost of sales
-2022-01,5020,479550,0,Demo Inventory Adjustment,5360660,5840210,Cost of sales
-2022-01,6000,392210,0,Demo Salaries,4620740,5012950,Operating expenses
-2022-01,6010,464550,0,Demo Statutory Welfare,2557310,3021860,Operating expenses
-2022-01,6020,178370,0,Demo Office Rent,374850,553220,Operating expenses
-2022-01,6030,297940,0,Demo Utilities,4567100,4865040,Operating expenses
-2022-01,6040,152750,0,Demo Communication,3622580,3775330,Operating expenses
-2022-01,6050,0,0,Demo Business Travel,0,0,Operating expenses
-2022-01,6060,524500,0,Demo Office Supplies,5000390,5524890,Operating expenses
-2022-01,6070,450200,0,Demo Bank Fees,2337740,2787940,Operating expenses
-2022-01,6080,0,0,Demo Advertising,382480,382480,Operating expenses
-2022-01,6090,0,0,Demo Insurance,0,0,Operating expenses
-2022-01,6100,26960,0,Demo Repairs,574570,601530,Operating expenses
-2022-01,6110,0,0,Demo Depreciation Expense,0,0,Operating expenses
-2022-01,6120,0,0,Demo Professional Fees,339230,339230,Operating expenses
-2022-01,6130,0,0,Demo Training,0,0,Operating expenses
-2022-01,6140,161750,0,Demo Vehicle Expense,679750,841500,Operating expenses
-2022-01,6150,0,0,Demo Software Subscription,0,0,Operating expenses
-2022-01,6160,0,0,Demo Shipping,177720,177720,Operating expenses
-2022-01,6170,0,0,Demo Miscellaneous Expense,0,0,Operating expenses
-2022-01,7000,867410,0,Demo Taxes and Dues,5766690,6634100,Taxes
-2022-01,7010,0,0,Demo Corporate Tax,0,0,Taxes
-2022-01,7020,0,0,Demo Consumption Tax Expense,0,0,Taxes
-2022-01,8000,0,0,Demo Suspense,50000,50000,Clearing / temporary
-2022-01,8010,0,0,Demo Clearing,50000,50000,Clearing / temporary
+﻿Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
+2022-01,10A100020,106441763,104418863,Cash and deposits,29602761,31625661,Current assets
+2022-01,10A100060,33887299,35387312,Notes receivable - trade,-33203783,-34703796,Current assets
+2022-01,10A100090,91476616,70833354,Accounts receivable - trade,196935146,217578408,Current assets
+2022-01,10A100610,0,90000,Short-term loans receivable,470000,380000,Current assets
+2022-01,10A230570,125000,0,Insurance funds,1152813,1277813,Investments and other assets
+2022-01,10B100030,11210865,20277945,Notes payable - trade,9202063,18269143,Current liabilities
+2022-01,10B100040,46735138,54296895,Accounts payable - trade,112882067,120443824,Current liabilities
+2022-01,10B100630,12442678,10119977,Accounts payable - other,4328315,2005614,Current liabilities
+2022-01,10B100690,2466437,1901781,Deposits received,4955737,4391081,Current liabilities
+2022-01,10B100790,653500,0,Short-term borrowings,1960500,1307000,Current liabilities
+2022-01,10D100101,0,28505344,Sales from electronic transactions,179197171,207702515,Net sales
+2022-01,10D100102,0,62971272,Sales from traditional transactions,449720052,512691324,Net sales
+2022-01,10E100131,19274050,0,Cost of purchased goods from electronic transactions,131337416,150611466,Cost of sales
+2022-01,10E100132,35022845,0,Cost of purchased goods from traditional transactions,243815339,278838184,Cost of sales
+2022-01,10E200020,2509900,0,Sales commission,20000267,22510167,"Selling, general and administrative expenses"
+2022-01,10E200050,191500,0,Advertising expenses,1604200,1795700,"Selling, general and administrative expenses"
+2022-01,10E200090,1720000,0,Remuneration for directors (and other officers),15480000,17200000,"Selling, general and administrative expenses"
+2022-01,10E200140,220092,0,Welfare expenses,4300467,4520559,"Selling, general and administrative expenses"
+2022-01,10E200150,391213,0,Entertainment expenses,3250843,3642056,"Selling, general and administrative expenses"
+2022-01,10E200180,1114572,0,Communication expenses,9929652,11044224,"Selling, general and administrative expenses"
+2022-01,10E200200,551936,275968,Supplies expenses,2439775,2715743,"Selling, general and administrative expenses"
+2022-01,10E200210,4000,0,Taxes and dues,239000,243000,"Selling, general and administrative expenses"
+2022-01,10E200240,318820,0,Insurance expenses,2869380,3188200,"Selling, general and administrative expenses"
+2022-01,10E200370,4813853,0,Salaries and allowances,47058972,51872825,"Selling, general and administrative expenses"
+2022-01,10E200520,313425,0,Other salaries,3790337,4103762,"Selling, general and administrative expenses"
+2022-01,10E200540,1591504,0,Legal welfare expenses,7008962,8600466,"Selling, general and administrative expenses"
+2022-01,10E200600,139710,0,Fee expenses,1257390,1397100,"Selling, general and administrative expenses"
+2022-01,10E200690,2167946,0,Commission expenses,12735423,14903369,"Selling, general and administrative expenses"
+2022-01,10E200720,3449000,0,Rent expenses on land and buildings,31011000,34460000,"Selling, general and administrative expenses"
+2022-01,10E200730,587700,0,Rent expenses on land and buildings,2350800,2938500,"Selling, general and administrative expenses"
+2022-01,10E200870,6260649,0,Freight costs,37366207,43626856,"Selling, general and administrative expenses"
+2022-01,10E201040,560492,0,Utilities expenses,5413937,5974429,"Selling, general and administrative expenses"
+2022-01,10E201110,119083,0,Office supplies expenses,1147431,1266514,"Selling, general and administrative expenses"
+2022-01,10E201120,631347,0,Vehicle expenses,5617052,6248399,"Selling, general and administrative expenses"
+2022-01,10E201130,24995,0,Meeting expenses,255434,280429,"Selling, general and administrative expenses"
+2022-01,10E201140,116000,0,Membership fee,1044000,1160000,"Selling, general and administrative expenses"
+2022-01,10E201160,24982,0,Book expenses,224838,249820,"Selling, general and administrative expenses"
+2022-01,10E201230,959678,0,Travel and transportation expenses,9896123,10855801,"Selling, general and administrative expenses"
+2022-01,10E201270,473790,0,Miscellaneous expenses,4342686,4816476,"Selling, general and administrative expenses"
+2022-01,10E300020,86333,0,Interest expenses,1050085,1136418,Non-operating expenses

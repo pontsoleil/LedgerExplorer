@@ -1,213 +1,785 @@
-Transaction_ID,Line_ID,Entry_ID,Ledger_Side,Transaction_Date,Description,Ledger_Account_Number,Ledger_Account_Name,Subaccount_Code,Subaccount_Name,Department_Code,Department_Name,Debit_Amount,Credit_Amount,Counterpart_Account_Number,Counterpart_Account_Name,Counterpart_Subaccount_Code,Counterpart_Subaccount_Name,Counterpart_Department_Code,Counterpart_Department_Name,Balance,Source_Row,Entry_Key,Occurrence,Semantic_Path,Month
-,,,Opening,2022-01-01,* Opening balance,1000,Demo Cash,,,,,0,0,,,,,,,600000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1010,Demo Petty Cash,,,,,0,0,,,,,,,120000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1100,Demo Central Ordinary Deposit,,,,,0,0,,,,,,,4637170,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1110,Demo North Current Deposit,,,,,0,0,,,,,,,3637320,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1120,Demo Harbor Ordinary Deposit,,,,,0,0,,,,,,,4825850,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,,,0,0,,,,,,,24199300,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1210,Demo Notes Receivable,,,,,0,0,,,,,,,800000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1300,Demo Inventory,,,,,0,0,,,,,,,1200000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1400,Demo Prepaid Expenses,,,,,0,0,,,,,,,5711580,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1410,Demo Advances Paid,,,,,0,0,,,,,,,250000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1420,Demo Temporary Payments,,,,,0,0,,,,,,,150000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1430,Demo Input Tax Receivable,,,,,0,0,,,,,,,400000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1500,Demo Equipment,,,,,0,0,,,,,,,2000000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1510,Demo Vehicles,,,,,0,0,,,,,,,1200000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1520,Demo Software,,,,,0,0,,,,,,,700000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,1590,Demo Accumulated Depreciation,,,,,0,0,,,,,,,900000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,,,0,0,,,,,,,1677280,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,2010,Demo Notes Payable,,,,,0,0,,,,,,,600000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,2100,Demo Accrued Payables,,,,,0,0,,,,,,,1647900,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,2110,Demo Payroll Withholding,,,,,0,0,,,,,,,1359950,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,2120,Demo Output Tax Payable,,,,,0,0,,,,,,,450000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,2130,Demo Temporary Receipts,,,,,0,0,,,,,,,120000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,2200,Demo Short-term Loans,,,,,0,0,,,,,,,2766880,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,2300,Demo Long-term Loans,,,,,0,0,,,,,,,2500000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,2400,Demo Unearned Revenue,,,,,0,0,,,,,,,350000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,3000,Demo Capital,,,,,0,0,,,,,,,5000000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,3100,Demo Retained Earnings,,,,,0,0,,,,,,,26159010,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,4000,Demo Product Sales,,,,,0,0,,,,,,,21317730,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,4010,Demo Service Revenue,,,,,0,0,,,,,,,20497480,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,4020,Demo Other Operating Revenue,,,,,0,0,,,,,,,10814600,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,4030,Demo Interest Income,,,,,0,0,,,,,,,0,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,4040,Demo Miscellaneous Income,,,,,0,0,,,,,,,0,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,5000,Demo Purchases,,,,,0,0,,,,,,,3494150,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,5010,Demo Freight-in,,,,,0,0,,,,,,,5873650,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,5020,Demo Inventory Adjustment,,,,,0,0,,,,,,,5360660,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6000,Demo Salaries,,,,,0,0,,,,,,,4620740,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6010,Demo Statutory Welfare,,,,,0,0,,,,,,,2557310,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6020,Demo Office Rent,,,,,0,0,,,,,,,374850,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6030,Demo Utilities,,,,,0,0,,,,,,,4567100,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6040,Demo Communication,,,,,0,0,,,,,,,3622580,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6050,Demo Business Travel,,,,,0,0,,,,,,,0,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6060,Demo Office Supplies,,,,,0,0,,,,,,,5000390,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6070,Demo Bank Fees,,,,,0,0,,,,,,,2337740,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6080,Demo Advertising,,,,,0,0,,,,,,,382480,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6090,Demo Insurance,,,,,0,0,,,,,,,0,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6100,Demo Repairs,,,,,0,0,,,,,,,574570,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6110,Demo Depreciation Expense,,,,,0,0,,,,,,,0,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6120,Demo Professional Fees,,,,,0,0,,,,,,,339230,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6130,Demo Training,,,,,0,0,,,,,,,0,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6140,Demo Vehicle Expense,,,,,0,0,,,,,,,679750,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6150,Demo Software Subscription,,,,,0,0,,,,,,,0,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6160,Demo Shipping,,,,,0,0,,,,,,,177720,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,6170,Demo Miscellaneous Expense,,,,,0,0,,,,,,,0,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,7000,Demo Taxes and Dues,,,,,0,0,,,,,,,5766690,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,7010,Demo Corporate Tax,,,,,0,0,,,,,,,0,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,7020,Demo Consumption Tax Expense,,,,,0,0,,,,,,,0,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,8000,Demo Suspense,,,,,0,0,,,,,,,50000,,,,,2022-01
-,,,Opening,2022-01-01,* Opening balance,8010,Demo Clearing,,,,,0,0,,,,,,,50000,,,,,2022-01
-1,1,900588,Credit,2022-01-01,Synthetic demo operating expense 900588,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D02,Demo Administration,0,161750,6140,Demo Vehicle Expense,,,,,4475420,955,"[""20220101"",""900588""]",955-C,cor:monetaryAmount,2022-01
-1,2,900588,Debit,2022-01-01,Synthetic demo operating expense 900588,6140,Demo Vehicle Expense,V001,Demo Vendor Keystone,D02,Demo Administration,161750,0,1100,Demo Central Ordinary Deposit,,,,,841500,955,"[""20220101"",""900588""]",955-D,cor:monetaryAmount,2022-01
-2,1,900584,Credit,2022-01-02,Synthetic demo financing settlement 900584,1120,Demo Harbor Ordinary Deposit,B003,Harbor Demo Bank,D06,Demo Management,0,746400,,,,,,,4079450,956,"[""20220102"",""900584""]",956-C,cor:monetaryAmount,2022-01
-2,2,900584,Debit,2022-01-02,Synthetic demo financing settlement 900584,2200,Demo Short-term Loans,,,D06,Demo Management,328410,0,1120,Demo Harbor Ordinary Deposit,,,,,2438470,956,"[""20220102"",""900584""]",956-D,cor:monetaryAmount,2022-01
-2,3,900584,Debit,2022-01-02,Synthetic demo financing settlement 900584,6070,Demo Bank Fees,B003,Harbor Demo Bank,D06,Demo Management,186600,0,1120,Demo Harbor Ordinary Deposit,,,,,2524340,957,"[""20220102"",""900584""]",957-D,cor:monetaryAmount,2022-01
-2,4,900584,Debit,2022-01-02,Synthetic demo financing settlement 900584,7000,Demo Taxes and Dues,,,D06,Demo Management,231390,0,1120,Demo Harbor Ordinary Deposit,,,,,5998080,958,"[""20220102"",""900584""]",958-D,cor:monetaryAmount,2022-01
-3,1,900535,Credit,2022-01-03,Synthetic demo purchase on account 900535,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D04,Demo Logistics,0,376950,5010,Demo Freight-in,,,,,2054230,959,"[""20220103"",""900535""]",959-C,cor:monetaryAmount,2022-01
-3,2,900535,Debit,2022-01-03,Synthetic demo purchase on account 900535,5010,Demo Freight-in,V006,Demo Vendor Prairie,D04,Demo Logistics,376950,0,2000,Demo Accounts Payable,,,,,6250600,959,"[""20220103"",""900535""]",959-D,cor:monetaryAmount,2022-01
-4,1,900534,Credit,2022-01-04,Synthetic demo customer receipt 900534,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,0,252020,1100,Demo Central Ordinary Deposit,,,,,23947280,960,"[""20220104"",""900534""]",960-C,cor:monetaryAmount,2022-01
-4,2,900534,Debit,2022-01-04,Synthetic demo customer receipt 900534,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D01,Demo Sales,252020,0,1200,Demo Accounts Receivable,,,,,4727440,960,"[""20220104"",""900534""]",960-D,cor:monetaryAmount,2022-01
-5,1,900583,Credit,2022-01-04,Synthetic demo customer receipt 900583,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,0,181110,1110,Demo North Current Deposit,,,,,23766170,961,"[""20220104"",""900583""]",961-C,cor:monetaryAmount,2022-01
-5,2,900583,Debit,2022-01-04,Synthetic demo customer receipt 900583,1110,Demo North Current Deposit,B002,North Demo Bank,D01,Demo Sales,181110,0,1200,Demo Accounts Receivable,,,,,3818430,961,"[""20220104"",""900583""]",961-D,cor:monetaryAmount,2022-01
-6,1,900573,Credit,2022-01-05,Synthetic demo customer receipt 900573,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,0,335470,1100,Demo Central Ordinary Deposit,,,,,23430700,962,"[""20220105"",""900573""]",962-C,cor:monetaryAmount,2022-01
-6,2,900573,Debit,2022-01-05,Synthetic demo customer receipt 900573,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D01,Demo Sales,335470,0,1200,Demo Accounts Receivable,,,,,5062910,962,"[""20220105"",""900573""]",962-D,cor:monetaryAmount,2022-01
-7,1,900563,Credit,2022-01-06,Synthetic demo customer receipt 900563,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,0,86730,1120,Demo Harbor Ordinary Deposit,,,,,23343970,963,"[""20220106"",""900563""]",963-C,cor:monetaryAmount,2022-01
-7,2,900563,Debit,2022-01-06,Synthetic demo customer receipt 900563,1120,Demo Harbor Ordinary Deposit,B003,Harbor Demo Bank,D01,Demo Sales,86730,0,1200,Demo Accounts Receivable,,,,,4166180,963,"[""20220106"",""900563""]",963-D,cor:monetaryAmount,2022-01
-8,1,900572,Credit,2022-01-06,Synthetic demo financing settlement 900572,1120,Demo Harbor Ordinary Deposit,B003,Harbor Demo Bank,D06,Demo Management,0,726130,,,,,,,3440050,964,"[""20220106"",""900572""]",964-C,cor:monetaryAmount,2022-01
-8,2,900572,Debit,2022-01-06,Synthetic demo financing settlement 900572,2200,Demo Short-term Loans,,,D06,Demo Management,377580,0,1120,Demo Harbor Ordinary Deposit,,,,,2060890,964,"[""20220106"",""900572""]",964-D,cor:monetaryAmount,2022-01
-8,3,900572,Debit,2022-01-06,Synthetic demo financing settlement 900572,6070,Demo Bank Fees,B003,Harbor Demo Bank,D06,Demo Management,7260,0,1120,Demo Harbor Ordinary Deposit,,,,,2531600,965,"[""20220106"",""900572""]",965-D,cor:monetaryAmount,2022-01
-8,4,900572,Debit,2022-01-06,Synthetic demo financing settlement 900572,7000,Demo Taxes and Dues,,,D06,Demo Management,341290,0,1120,Demo Harbor Ordinary Deposit,,,,,6339370,966,"[""20220106"",""900572""]",966-D,cor:monetaryAmount,2022-01
-9,1,900536,Credit,2022-01-07,Synthetic demo purchase on account 900536,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D04,Demo Logistics,0,46110,5020,Demo Inventory Adjustment,,,,,2100340,967,"[""20220107"",""900536""]",967-C,cor:monetaryAmount,2022-01
-9,2,900536,Debit,2022-01-07,Synthetic demo purchase on account 900536,5020,Demo Inventory Adjustment,V001,Demo Vendor Keystone,D04,Demo Logistics,46110,0,2000,Demo Accounts Payable,,,,,5406770,967,"[""20220107"",""900536""]",967-D,cor:monetaryAmount,2022-01
-10,1,900538,Credit,2022-01-07,Synthetic demo operating expense 900538,1110,Demo North Current Deposit,B002,North Demo Bank,D03,Demo Operations,0,57370,7000,Demo Taxes and Dues,,,,,3761060,968,"[""20220107"",""900538""]",968-C,cor:monetaryAmount,2022-01
-10,2,900538,Debit,2022-01-07,Synthetic demo operating expense 900538,7000,Demo Taxes and Dues,V001,Demo Vendor Keystone,D03,Demo Operations,57370,0,1110,Demo North Current Deposit,,,,,6396740,968,"[""20220107"",""900538""]",968-D,cor:monetaryAmount,2022-01
-11,1,900548,Credit,2022-01-07,Synthetic demo operating expense 900548,1120,Demo Harbor Ordinary Deposit,B003,Harbor Demo Bank,D05,Demo Digital Services,0,26960,6100,Demo Repairs,,,,,3413090,969,"[""20220107"",""900548""]",969-C,cor:monetaryAmount,2022-01
-11,2,900548,Debit,2022-01-07,Synthetic demo operating expense 900548,6100,Demo Repairs,V001,Demo Vendor Keystone,D05,Demo Digital Services,26960,0,1120,Demo Harbor Ordinary Deposit,,,,,601530,969,"[""20220107"",""900548""]",969-D,cor:monetaryAmount,2022-01
-12,1,900552,Credit,2022-01-07,Synthetic demo monthly payroll bundle 900552,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D02,Demo Administration,0,403430,,,,,,,4659480,970,"[""20220107"",""900552""]",970-C,cor:monetaryAmount,2022-01
-12,2,900552,Debit,2022-01-07,Synthetic demo monthly payroll bundle 900552,6000,Demo Salaries,,,D02,Demo Administration,88750,0,1100,Demo Central Ordinary Deposit,,,,,4709490,970,"[""20220107"",""900552""]",970-D,cor:monetaryAmount,2022-01
-12,3,900552,Debit,2022-01-07,Synthetic demo monthly payroll bundle 900552,6010,Demo Statutory Welfare,,,D02,Demo Administration,56480,0,1100,Demo Central Ordinary Deposit,,,,,2613790,971,"[""20220107"",""900552""]",971-D,cor:monetaryAmount,2022-01
-12,4,900552,Debit,2022-01-07,Synthetic demo monthly payroll bundle 900552,2110,Demo Payroll Withholding,,,D02,Demo Administration,258200,0,1100,Demo Central Ordinary Deposit,,,,,1101750,972,"[""20220107"",""900552""]",972-D,cor:monetaryAmount,2022-01
-13,1,900566,Credit,2022-01-07,Synthetic demo purchase on account 900566,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D04,Demo Logistics,0,154460,5020,Demo Inventory Adjustment,,,,,2254800,973,"[""20220107"",""900566""]",973-C,cor:monetaryAmount,2022-01
-13,2,900566,Debit,2022-01-07,Synthetic demo purchase on account 900566,5020,Demo Inventory Adjustment,V001,Demo Vendor Keystone,D04,Demo Logistics,154460,0,2000,Demo Accounts Payable,,,,,5561230,973,"[""20220107"",""900566""]",973-D,cor:monetaryAmount,2022-01
-14,1,900567,Credit,2022-01-07,Synthetic demo vendor settlement 900567,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D04,Demo Logistics,0,132130,2000,Demo Accounts Payable,,,,,4527350,974,"[""20220107"",""900567""]",974-C,cor:monetaryAmount,2022-01
-14,2,900567,Debit,2022-01-07,Synthetic demo vendor settlement 900567,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D04,Demo Logistics,132130,0,1100,Demo Central Ordinary Deposit,,,,,2122670,974,"[""20220107"",""900567""]",974-D,cor:monetaryAmount,2022-01
-15,1,900569,Credit,2022-01-07,Synthetic demo prepaid service 900569,1120,Demo Harbor Ordinary Deposit,B003,Harbor Demo Bank,D05,Demo Digital Services,0,64800,1400,Demo Prepaid Expenses,,,,,3348290,975,"[""20220107"",""900569""]",975-C,cor:monetaryAmount,2022-01
-15,2,900569,Debit,2022-01-07,Synthetic demo prepaid service 900569,1400,Demo Prepaid Expenses,S006,Demo Insurance Services,D05,Demo Digital Services,64800,0,1120,Demo Harbor Ordinary Deposit,,,,,5776380,975,"[""20220107"",""900569""]",975-D,cor:monetaryAmount,2022-01
-16,1,900590,Credit,2022-01-07,Synthetic demo credit sale 900590,4020,Demo Other Operating Revenue,C001,Demo Customer Aurora,D01,Demo Sales,0,441180,1200,Demo Accounts Receivable,,,,,11255780,976,"[""20220107"",""900590""]",976-C,cor:monetaryAmount,2022-01
-16,2,900590,Debit,2022-01-07,Synthetic demo credit sale 900590,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,441180,0,4020,Demo Other Operating Revenue,,,,,23785150,976,"[""20220107"",""900590""]",976-D,cor:monetaryAmount,2022-01
-17,1,900532,Credit,2022-01-08,Synthetic demo credit sale 900532,4010,Demo Service Revenue,C007,Demo Customer Grove,D01,Demo Sales,0,278710,1200,Demo Accounts Receivable,,,,,20776190,977,"[""20220108"",""900532""]",977-C,cor:monetaryAmount,2022-01
-17,2,900532,Debit,2022-01-08,Synthetic demo credit sale 900532,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,278710,0,4010,Demo Service Revenue,,,,,24063860,977,"[""20220108"",""900532""]",977-D,cor:monetaryAmount,2022-01
-18,1,900539,Credit,2022-01-08,Synthetic demo prepaid service 900539,1120,Demo Harbor Ordinary Deposit,B003,Harbor Demo Bank,D05,Demo Digital Services,0,142580,1400,Demo Prepaid Expenses,,,,,3205710,978,"[""20220108"",""900539""]",978-C,cor:monetaryAmount,2022-01
-18,2,900539,Debit,2022-01-08,Synthetic demo prepaid service 900539,1400,Demo Prepaid Expenses,S006,Demo Insurance Services,D05,Demo Digital Services,142580,0,1120,Demo Harbor Ordinary Deposit,,,,,5918960,978,"[""20220108"",""900539""]",978-D,cor:monetaryAmount,2022-01
-19,1,900545,Credit,2022-01-08,Synthetic demo purchase on account 900545,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D04,Demo Logistics,0,145800,5020,Demo Inventory Adjustment,,,,,2268470,979,"[""20220108"",""900545""]",979-C,cor:monetaryAmount,2022-01
-19,2,900545,Debit,2022-01-08,Synthetic demo purchase on account 900545,5020,Demo Inventory Adjustment,V006,Demo Vendor Prairie,D04,Demo Logistics,145800,0,2000,Demo Accounts Payable,,,,,5707030,979,"[""20220108"",""900545""]",979-D,cor:monetaryAmount,2022-01
-20,1,900547,Credit,2022-01-08,Synthetic demo vendor settlement 900547,1110,Demo North Current Deposit,B002,North Demo Bank,D04,Demo Logistics,0,29050,2000,Demo Accounts Payable,,,,,3732010,980,"[""20220108"",""900547""]",980-C,cor:monetaryAmount,2022-01
-20,2,900547,Debit,2022-01-08,Synthetic demo vendor settlement 900547,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D04,Demo Logistics,29050,0,1110,Demo North Current Deposit,,,,,2239420,980,"[""20220108"",""900547""]",980-D,cor:monetaryAmount,2022-01
-21,1,900571,Credit,2022-01-08,Synthetic demo credit sale 900571,4010,Demo Service Revenue,C004,Demo Customer Dawn,D01,Demo Sales,0,462720,1200,Demo Accounts Receivable,,,,,21238910,981,"[""20220108"",""900571""]",981-C,cor:monetaryAmount,2022-01
-21,2,900571,Debit,2022-01-08,Synthetic demo credit sale 900571,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,462720,0,4010,Demo Service Revenue,,,,,24526580,981,"[""20220108"",""900571""]",981-D,cor:monetaryAmount,2022-01
-22,1,900550,Credit,2022-01-09,Synthetic demo credit sale 900550,4010,Demo Service Revenue,C001,Demo Customer Aurora,D01,Demo Sales,0,257130,1200,Demo Accounts Receivable,,,,,21496040,982,"[""20220109"",""900550""]",982-C,cor:monetaryAmount,2022-01
-22,2,900550,Debit,2022-01-09,Synthetic demo credit sale 900550,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,257130,0,4010,Demo Service Revenue,,,,,24783710,982,"[""20220109"",""900550""]",982-D,cor:monetaryAmount,2022-01
-23,1,900562,Debit,2022-01-09,Synthetic demo mixed sales and receipt 900562,1110,Demo North Current Deposit,B002,North Demo Bank,D01,Demo Sales,602730,0,,,,,,,4334740,983,"[""20220109"",""900562""]",983-D,cor:monetaryAmount,2022-01
-23,2,900562,Debit,2022-01-09,Synthetic demo mixed sales and receipt 900562,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,141390,0,,,,,,,24925100,984,"[""20220109"",""900562""]",984-D,cor:monetaryAmount,2022-01
-23,3,900562,Credit,2022-01-09,Synthetic demo mixed sales and receipt 900562,4000,Demo Product Sales,C004,Demo Customer Dawn,D01,Demo Sales,0,186030,,,,,,,21503760,985,"[""20220109"",""900562""]",985-C,cor:monetaryAmount,2022-01
-23,4,900562,Credit,2022-01-09,Synthetic demo mixed sales and receipt 900562,4010,Demo Service Revenue,C005,Demo Customer Elm,D01,Demo Sales,0,558090,,,,,,,22054130,986,"[""20220109"",""900562""]",986-C,cor:monetaryAmount,2022-01
-24,1,900589,Credit,2022-01-09,Synthetic demo prepaid service 900589,1110,Demo North Current Deposit,B002,North Demo Bank,D05,Demo Digital Services,0,199900,1400,Demo Prepaid Expenses,,,,,4134840,987,"[""20220109"",""900589""]",987-C,cor:monetaryAmount,2022-01
-24,2,900589,Debit,2022-01-09,Synthetic demo prepaid service 900589,1400,Demo Prepaid Expenses,S002,Demo Energy Services,D05,Demo Digital Services,199900,0,1110,Demo North Current Deposit,,,,,6118860,987,"[""20220109"",""900589""]",987-D,cor:monetaryAmount,2022-01
-25,1,900553,Credit,2022-01-10,Synthetic demo customer receipt 900553,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,0,60010,1110,Demo North Current Deposit,,,,,24865090,988,"[""20220110"",""900553""]",988-C,cor:monetaryAmount,2022-01
-25,2,900553,Debit,2022-01-10,Synthetic demo customer receipt 900553,1110,Demo North Current Deposit,B002,North Demo Bank,D01,Demo Sales,60010,0,1200,Demo Accounts Receivable,,,,,4194850,988,"[""20220110"",""900553""]",988-D,cor:monetaryAmount,2022-01
-26,1,900558,Credit,2022-01-10,Synthetic demo operating expense 900558,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D02,Demo Administration,0,178370,6020,Demo Office Rent,,,,,4348980,989,"[""20220110"",""900558""]",989-C,cor:monetaryAmount,2022-01
-26,2,900558,Debit,2022-01-10,Synthetic demo operating expense 900558,6020,Demo Office Rent,V001,Demo Vendor Keystone,D02,Demo Administration,178370,0,1100,Demo Central Ordinary Deposit,,,,,553220,989,"[""20220110"",""900558""]",989-D,cor:monetaryAmount,2022-01
-27,1,900565,Credit,2022-01-11,Synthetic demo operating cost bundle 900565,1110,Demo North Current Deposit,B002,North Demo Bank,D03,Demo Operations,0,452200,,,,,,,3742650,990,"[""20220111"",""900565""]",990-C,cor:monetaryAmount,2022-01
-27,2,900565,Debit,2022-01-11,Synthetic demo operating cost bundle 900565,6030,Demo Utilities,S002,Demo Energy Services,D03,Demo Operations,67830,0,1110,Demo North Current Deposit,,,,,4634930,990,"[""20220111"",""900565""]",990-D,cor:monetaryAmount,2022-01
-27,3,900565,Debit,2022-01-11,Synthetic demo operating cost bundle 900565,6040,Demo Communication,S003,Demo Network Services,D03,Demo Operations,126610,0,1110,Demo North Current Deposit,,,,,3749190,991,"[""20220111"",""900565""]",991-D,cor:monetaryAmount,2022-01
-27,4,900565,Debit,2022-01-11,Synthetic demo operating cost bundle 900565,6060,Demo Office Supplies,V006,Demo Vendor Prairie,D03,Demo Operations,257760,0,1110,Demo North Current Deposit,,,,,5258150,992,"[""20220111"",""900565""]",992-D,cor:monetaryAmount,2022-01
-28,1,900577,Credit,2022-01-11,Synthetic demo vendor settlement 900577,1110,Demo North Current Deposit,B002,North Demo Bank,D04,Demo Logistics,0,300330,2000,Demo Accounts Payable,,,,,3442320,993,"[""20220111"",""900577""]",993-C,cor:monetaryAmount,2022-01
-28,2,900577,Debit,2022-01-11,Synthetic demo vendor settlement 900577,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D04,Demo Logistics,300330,0,1110,Demo North Current Deposit,,,,,1939090,993,"[""20220111"",""900577""]",993-D,cor:monetaryAmount,2022-01
-29,1,900579,Credit,2022-01-11,Synthetic demo prepaid service 900579,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D05,Demo Digital Services,0,234850,1400,Demo Prepaid Expenses,,,,,4114130,994,"[""20220111"",""900579""]",994-C,cor:monetaryAmount,2022-01
-29,2,900579,Debit,2022-01-11,Synthetic demo prepaid service 900579,1400,Demo Prepaid Expenses,S004,Demo Logistics Services,D05,Demo Digital Services,234850,0,1100,Demo Central Ordinary Deposit,,,,,6353710,994,"[""20220111"",""900579""]",994-D,cor:monetaryAmount,2022-01
-30,1,900551,Credit,2022-01-12,Synthetic demo credit sale 900551,4020,Demo Other Operating Revenue,C004,Demo Customer Dawn,D01,Demo Sales,0,199900,1200,Demo Accounts Receivable,,,,,11455680,995,"[""20220112"",""900551""]",995-C,cor:monetaryAmount,2022-01
-30,2,900551,Debit,2022-01-12,Synthetic demo credit sale 900551,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,199900,0,4020,Demo Other Operating Revenue,,,,,25064990,995,"[""20220112"",""900551""]",995-D,cor:monetaryAmount,2022-01
-31,1,900556,Debit,2022-01-13,Synthetic demo mixed sales and receipt 900556,1110,Demo North Current Deposit,B002,North Demo Bank,D01,Demo Sales,381270,0,,,,,,,3823590,996,"[""20220113"",""900556""]",996-D,cor:monetaryAmount,2022-01
-31,2,900556,Debit,2022-01-13,Synthetic demo mixed sales and receipt 900556,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,324790,0,,,,,,,25389780,997,"[""20220113"",""900556""]",997-D,cor:monetaryAmount,2022-01
-31,3,900556,Credit,2022-01-13,Synthetic demo mixed sales and receipt 900556,4000,Demo Product Sales,C008,Demo Customer Halo,D01,Demo Sales,0,105900,,,,,,,21609660,998,"[""20220113"",""900556""]",998-C,cor:monetaryAmount,2022-01
-31,4,900556,Credit,2022-01-13,Synthetic demo mixed sales and receipt 900556,4010,Demo Service Revenue,C009,Demo Customer Indigo,D01,Demo Sales,0,600160,,,,,,,22654290,999,"[""20220113"",""900556""]",999-C,cor:monetaryAmount,2022-01
-32,1,900575,Credit,2022-01-13,Synthetic demo purchase on account 900575,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D04,Demo Logistics,0,133180,5020,Demo Inventory Adjustment,,,,,2072270,1000,"[""20220113"",""900575""]",1000-C,cor:monetaryAmount,2022-01
-32,2,900575,Debit,2022-01-13,Synthetic demo purchase on account 900575,5020,Demo Inventory Adjustment,V006,Demo Vendor Prairie,D04,Demo Logistics,133180,0,2000,Demo Accounts Payable,,,,,5840210,1000,"[""20220113"",""900575""]",1000-D,cor:monetaryAmount,2022-01
-33,1,900559,Credit,2022-01-14,Synthetic demo operating cost bundle 900559,1110,Demo North Current Deposit,B002,North Demo Bank,D03,Demo Operations,0,522990,,,,,,,3300600,1001,"[""20220114"",""900559""]",1001-C,cor:monetaryAmount,2022-01
-33,2,900559,Debit,2022-01-14,Synthetic demo operating cost bundle 900559,6030,Demo Utilities,S002,Demo Energy Services,D03,Demo Operations,230110,0,1110,Demo North Current Deposit,,,,,4865040,1001,"[""20220114"",""900559""]",1001-D,cor:monetaryAmount,2022-01
-33,3,900559,Debit,2022-01-14,Synthetic demo operating cost bundle 900559,6040,Demo Communication,S003,Demo Network Services,D03,Demo Operations,26140,0,1110,Demo North Current Deposit,,,,,3775330,1002,"[""20220114"",""900559""]",1002-D,cor:monetaryAmount,2022-01
-33,4,900559,Debit,2022-01-14,Synthetic demo operating cost bundle 900559,6060,Demo Office Supplies,V010,Demo Vendor Tandem,D03,Demo Operations,266740,0,1110,Demo North Current Deposit,,,,,5524890,1003,"[""20220114"",""900559""]",1003-D,cor:monetaryAmount,2022-01
-34,1,900576,Credit,2022-01-14,Synthetic demo purchase on account 900576,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D04,Demo Logistics,0,394400,5000,Demo Purchases,,,,,2466670,1004,"[""20220114"",""900576""]",1004-C,cor:monetaryAmount,2022-01
-34,2,900576,Debit,2022-01-14,Synthetic demo purchase on account 900576,5000,Demo Purchases,V001,Demo Vendor Keystone,D04,Demo Logistics,394400,0,2000,Demo Accounts Payable,,,,,3888550,1004,"[""20220114"",""900576""]",1004-D,cor:monetaryAmount,2022-01
-35,1,900578,Credit,2022-01-15,Synthetic demo financing settlement 900578,1120,Demo Harbor Ordinary Deposit,B003,Harbor Demo Bank,D06,Demo Management,0,271640,,,,,,,2934070,1005,"[""20220115"",""900578""]",1005-C,cor:monetaryAmount,2022-01
-35,2,900578,Debit,2022-01-15,Synthetic demo financing settlement 900578,2200,Demo Short-term Loans,,,D06,Demo Management,152110,0,1120,Demo Harbor Ordinary Deposit,,,,,1908780,1005,"[""20220115"",""900578""]",1005-D,cor:monetaryAmount,2022-01
-35,3,900578,Debit,2022-01-15,Synthetic demo financing settlement 900578,6070,Demo Bank Fees,B003,Harbor Demo Bank,D06,Demo Management,51610,0,1120,Demo Harbor Ordinary Deposit,,,,,2583210,1006,"[""20220115"",""900578""]",1006-D,cor:monetaryAmount,2022-01
-35,4,900578,Debit,2022-01-15,Synthetic demo financing settlement 900578,7000,Demo Taxes and Dues,,,D06,Demo Management,67920,0,1120,Demo Harbor Ordinary Deposit,,,,,6464660,1007,"[""20220115"",""900578""]",1007-D,cor:monetaryAmount,2022-01
-36,1,900537,Debit,2022-01-16,Synthetic demo multi-vendor settlement 900537,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D01,Demo Sales,217690,0,,,,,,,2248980,1008,"[""20220116"",""900537""]",1008-D,cor:monetaryAmount,2022-01
-36,2,900537,Debit,2022-01-16,Synthetic demo multi-vendor settlement 900537,2100,Demo Accrued Payables,V001,Demo Vendor Keystone,D01,Demo Sales,209160,0,,,,,,,1438740,1009,"[""20220116"",""900537""]",1009-D,cor:monetaryAmount,2022-01
-36,3,900537,Credit,2022-01-16,Synthetic demo multi-vendor settlement 900537,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D01,Demo Sales,0,115240,,,,,,,3998890,1010,"[""20220116"",""900537""]",1010-C,cor:monetaryAmount,2022-01
-36,4,900537,Credit,2022-01-16,Synthetic demo multi-vendor settlement 900537,1110,Demo North Current Deposit,B002,North Demo Bank,D01,Demo Sales,0,311610,,,,,,,2988990,1011,"[""20220116"",""900537""]",1011-C,cor:monetaryAmount,2022-01
-37,1,900587,Debit,2022-01-16,Synthetic demo multi-vendor settlement 900587,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D01,Demo Sales,59520,0,,,,,,,2189460,1012,"[""20220116"",""900587""]",1012-D,cor:monetaryAmount,2022-01
-37,2,900587,Debit,2022-01-16,Synthetic demo multi-vendor settlement 900587,2100,Demo Accrued Payables,V001,Demo Vendor Keystone,D01,Demo Sales,115540,0,,,,,,,1323200,1013,"[""20220116"",""900587""]",1013-D,cor:monetaryAmount,2022-01
-37,3,900587,Credit,2022-01-16,Synthetic demo multi-vendor settlement 900587,1120,Demo Harbor Ordinary Deposit,B003,Harbor Demo Bank,D01,Demo Sales,0,77020,,,,,,,2857050,1014,"[""20220116"",""900587""]",1014-C,cor:monetaryAmount,2022-01
-37,4,900587,Credit,2022-01-16,Synthetic demo multi-vendor settlement 900587,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D01,Demo Sales,0,98040,,,,,,,3900850,1015,"[""20220116"",""900587""]",1015-C,cor:monetaryAmount,2022-01
-38,1,900544,Credit,2022-01-17,Synthetic demo customer receipt 900544,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,0,175540,1110,Demo North Current Deposit,,,,,25214240,1016,"[""20220117"",""900544""]",1016-C,cor:monetaryAmount,2022-01
-38,2,900544,Debit,2022-01-17,Synthetic demo customer receipt 900544,1110,Demo North Current Deposit,B002,North Demo Bank,D01,Demo Sales,175540,0,1200,Demo Accounts Receivable,,,,,3164530,1016,"[""20220117"",""900544""]",1016-D,cor:monetaryAmount,2022-01
-39,1,900557,Credit,2022-01-17,Synthetic demo vendor settlement 900557,1120,Demo Harbor Ordinary Deposit,B003,Harbor Demo Bank,D04,Demo Logistics,0,308740,2000,Demo Accounts Payable,,,,,2548310,1017,"[""20220117"",""900557""]",1017-C,cor:monetaryAmount,2022-01
-39,2,900557,Debit,2022-01-17,Synthetic demo vendor settlement 900557,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D04,Demo Logistics,308740,0,1120,Demo Harbor Ordinary Deposit,,,,,1880720,1017,"[""20220117"",""900557""]",1017-D,cor:monetaryAmount,2022-01
-40,1,900546,Credit,2022-01-19,Synthetic demo monthly payroll bundle 900546,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D02,Demo Administration,0,762150,,,,,,,3138700,1018,"[""20220119"",""900546""]",1018-C,cor:monetaryAmount,2022-01
-40,2,900546,Debit,2022-01-19,Synthetic demo monthly payroll bundle 900546,6000,Demo Salaries,,,D02,Demo Administration,198150,0,1100,Demo Central Ordinary Deposit,,,,,4907640,1018,"[""20220119"",""900546""]",1018-D,cor:monetaryAmount,2022-01
-40,3,900546,Debit,2022-01-19,Synthetic demo monthly payroll bundle 900546,6010,Demo Statutory Welfare,,,D02,Demo Administration,381070,0,1100,Demo Central Ordinary Deposit,,,,,2994860,1019,"[""20220119"",""900546""]",1019-D,cor:monetaryAmount,2022-01
-40,4,900546,Debit,2022-01-19,Synthetic demo monthly payroll bundle 900546,2110,Demo Payroll Withholding,,,D02,Demo Administration,182930,0,1100,Demo Central Ordinary Deposit,,,,,918820,1020,"[""20220119"",""900546""]",1020-D,cor:monetaryAmount,2022-01
-41,1,900540,Credit,2022-01-20,Synthetic demo monthly payroll bundle 900540,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D02,Demo Administration,0,270050,,,,,,,2868650,1021,"[""20220120"",""900540""]",1021-C,cor:monetaryAmount,2022-01
-41,2,900540,Debit,2022-01-20,Synthetic demo monthly payroll bundle 900540,6000,Demo Salaries,,,D02,Demo Administration,105310,0,1100,Demo Central Ordinary Deposit,,,,,5012950,1021,"[""20220120"",""900540""]",1021-D,cor:monetaryAmount,2022-01
-41,3,900540,Debit,2022-01-20,Synthetic demo monthly payroll bundle 900540,6010,Demo Statutory Welfare,,,D02,Demo Administration,27000,0,1100,Demo Central Ordinary Deposit,,,,,3021860,1022,"[""20220120"",""900540""]",1022-D,cor:monetaryAmount,2022-01
-41,4,900540,Debit,2022-01-20,Synthetic demo monthly payroll bundle 900540,2110,Demo Payroll Withholding,,,D02,Demo Administration,137740,0,1100,Demo Central Ordinary Deposit,,,,,781080,1023,"[""20220120"",""900540""]",1023-D,cor:monetaryAmount,2022-01
-42,1,900543,Debit,2022-01-20,Synthetic demo multi-vendor settlement 900543,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D01,Demo Sales,471830,0,,,,,,,1408890,1024,"[""20220120"",""900543""]",1024-D,cor:monetaryAmount,2022-01
-42,2,900543,Debit,2022-01-20,Synthetic demo multi-vendor settlement 900543,2100,Demo Accrued Payables,V007,Demo Vendor Quartz,D01,Demo Sales,222050,0,,,,,,,1101150,1025,"[""20220120"",""900543""]",1025-D,cor:monetaryAmount,2022-01
-42,3,900543,Credit,2022-01-20,Synthetic demo multi-vendor settlement 900543,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D01,Demo Sales,0,451020,,,,,,,2417630,1026,"[""20220120"",""900543""]",1026-C,cor:monetaryAmount,2022-01
-42,4,900543,Credit,2022-01-20,Synthetic demo multi-vendor settlement 900543,1110,Demo North Current Deposit,B002,North Demo Bank,D01,Demo Sales,0,242860,,,,,,,2921670,1027,"[""20220120"",""900543""]",1027-C,cor:monetaryAmount,2022-01
-43,1,900554,Credit,2022-01-20,Synthetic demo customer receipt 900554,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,0,242600,1120,Demo Harbor Ordinary Deposit,,,,,24971640,1028,"[""20220120"",""900554""]",1028-C,cor:monetaryAmount,2022-01
-43,2,900554,Debit,2022-01-20,Synthetic demo customer receipt 900554,1120,Demo Harbor Ordinary Deposit,B003,Harbor Demo Bank,D01,Demo Sales,242600,0,1200,Demo Accounts Receivable,,,,,2790910,1028,"[""20220120"",""900554""]",1028-D,cor:monetaryAmount,2022-01
-44,1,900574,Debit,2022-01-20,Synthetic demo mixed sales and receipt 900574,1110,Demo North Current Deposit,B002,North Demo Bank,D01,Demo Sales,93230,0,,,,,,,3014900,1029,"[""20220120"",""900574""]",1029-D,cor:monetaryAmount,2022-01
-44,2,900574,Debit,2022-01-20,Synthetic demo mixed sales and receipt 900574,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,158760,0,,,,,,,25130400,1030,"[""20220120"",""900574""]",1030-D,cor:monetaryAmount,2022-01
-44,3,900574,Credit,2022-01-20,Synthetic demo mixed sales and receipt 900574,4000,Demo Product Sales,C006,Demo Customer Fjord,D01,Demo Sales,0,148670,,,,,,,21758330,1031,"[""20220120"",""900574""]",1031-C,cor:monetaryAmount,2022-01
-44,4,900574,Credit,2022-01-20,Synthetic demo mixed sales and receipt 900574,4010,Demo Service Revenue,C007,Demo Customer Grove,D01,Demo Sales,0,103320,,,,,,,22757610,1032,"[""20220120"",""900574""]",1032-C,cor:monetaryAmount,2022-01
-45,1,900561,Credit,2022-01-22,Synthetic demo credit sale 900561,4000,Demo Product Sales,C004,Demo Customer Dawn,D01,Demo Sales,0,470100,1200,Demo Accounts Receivable,,,,,22228430,1033,"[""20220122"",""900561""]",1033-C,cor:monetaryAmount,2022-01
-45,2,900561,Debit,2022-01-22,Synthetic demo credit sale 900561,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,470100,0,4000,Demo Product Sales,,,,,25600500,1033,"[""20220122"",""900561""]",1033-D,cor:monetaryAmount,2022-01
-46,1,900570,Credit,2022-01-22,Synthetic demo credit sale 900570,4000,Demo Product Sales,C001,Demo Customer Aurora,D01,Demo Sales,0,594780,1200,Demo Accounts Receivable,,,,,22823210,1034,"[""20220122"",""900570""]",1034-C,cor:monetaryAmount,2022-01
-46,2,900570,Debit,2022-01-22,Synthetic demo credit sale 900570,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,594780,0,4000,Demo Product Sales,,,,,26195280,1034,"[""20220122"",""900570""]",1034-D,cor:monetaryAmount,2022-01
-47,1,900585,Credit,2022-01-22,Synthetic demo purchase on account 900585,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D04,Demo Logistics,0,184820,5000,Demo Purchases,,,,,1593710,1035,"[""20220122"",""900585""]",1035-C,cor:monetaryAmount,2022-01
-47,2,900585,Debit,2022-01-22,Synthetic demo purchase on account 900585,5000,Demo Purchases,V006,Demo Vendor Prairie,D04,Demo Logistics,184820,0,2000,Demo Accounts Payable,,,,,4073370,1035,"[""20220122"",""900585""]",1035-D,cor:monetaryAmount,2022-01
-48,1,900549,Debit,2022-01-24,Synthetic demo multi-vendor settlement 900549,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D01,Demo Sales,189650,0,,,,,,,1404060,1036,"[""20220124"",""900549""]",1036-D,cor:monetaryAmount,2022-01
-48,2,900549,Debit,2022-01-24,Synthetic demo multi-vendor settlement 900549,2100,Demo Accrued Payables,V003,Demo Vendor Mosaic,D01,Demo Sales,102130,0,,,,,,,999020,1037,"[""20220124"",""900549""]",1037-D,cor:monetaryAmount,2022-01
-48,3,900549,Credit,2022-01-24,Synthetic demo multi-vendor settlement 900549,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D01,Demo Sales,0,148800,,,,,,,2268830,1038,"[""20220124"",""900549""]",1038-C,cor:monetaryAmount,2022-01
-48,4,900549,Credit,2022-01-24,Synthetic demo multi-vendor settlement 900549,1110,Demo North Current Deposit,B002,North Demo Bank,D01,Demo Sales,0,142980,,,,,,,2871920,1039,"[""20220124"",""900549""]",1039-C,cor:monetaryAmount,2022-01
-49,1,900564,Credit,2022-01-25,Synthetic demo customer receipt 900564,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,0,94750,1100,Demo Central Ordinary Deposit,,,,,26100530,1040,"[""20220125"",""900564""]",1040-C,cor:monetaryAmount,2022-01
-49,2,900564,Debit,2022-01-25,Synthetic demo customer receipt 900564,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D01,Demo Sales,94750,0,1200,Demo Accounts Receivable,,,,,2363580,1040,"[""20220125"",""900564""]",1040-D,cor:monetaryAmount,2022-01
-50,1,900582,Credit,2022-01-26,Synthetic demo credit sale 900582,4000,Demo Product Sales,C007,Demo Customer Grove,D01,Demo Sales,0,69520,1200,Demo Accounts Receivable,,,,,22892730,1041,"[""20220126"",""900582""]",1041-C,cor:monetaryAmount,2022-01
-50,2,900582,Debit,2022-01-26,Synthetic demo credit sale 900582,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,69520,0,4000,Demo Product Sales,,,,,26170050,1041,"[""20220126"",""900582""]",1041-D,cor:monetaryAmount,2022-01
-51,1,900586,Credit,2022-01-26,Synthetic demo purchase on account 900586,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D04,Demo Logistics,0,274530,5010,Demo Freight-in,,,,,1678590,1042,"[""20220126"",""900586""]",1042-C,cor:monetaryAmount,2022-01
-51,2,900586,Debit,2022-01-26,Synthetic demo purchase on account 900586,5010,Demo Freight-in,V001,Demo Vendor Keystone,D04,Demo Logistics,274530,0,2000,Demo Accounts Payable,,,,,6525130,1042,"[""20220126"",""900586""]",1042-D,cor:monetaryAmount,2022-01
-52,1,900542,Credit,2022-01-28,Synthetic demo credit sale 900542,4020,Demo Other Operating Revenue,C007,Demo Customer Grove,D01,Demo Sales,0,555200,1200,Demo Accounts Receivable,,,,,12010880,1043,"[""20220128"",""900542""]",1043-C,cor:monetaryAmount,2022-01
-52,2,900542,Debit,2022-01-28,Synthetic demo credit sale 900542,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,555200,0,4020,Demo Other Operating Revenue,,,,,26725250,1043,"[""20220128"",""900542""]",1043-D,cor:monetaryAmount,2022-01
-53,1,900555,Credit,2022-01-28,Synthetic demo purchase on account 900555,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D04,Demo Logistics,0,170990,5000,Demo Purchases,,,,,1849580,1044,"[""20220128"",""900555""]",1044-C,cor:monetaryAmount,2022-01
-53,2,900555,Debit,2022-01-28,Synthetic demo purchase on account 900555,5000,Demo Purchases,V006,Demo Vendor Prairie,D04,Demo Logistics,170990,0,2000,Demo Accounts Payable,,,,,4244360,1044,"[""20220128"",""900555""]",1044-D,cor:monetaryAmount,2022-01
-54,1,900533,Credit,2022-01-29,Synthetic demo financing settlement 900533,1120,Demo Harbor Ordinary Deposit,B003,Harbor Demo Bank,D06,Demo Management,0,705970,,,,,,,2084940,1045,"[""20220129"",""900533""]",1045-C,cor:monetaryAmount,2022-01
-54,2,900533,Debit,2022-01-29,Synthetic demo financing settlement 900533,2200,Demo Short-term Loans,,,D06,Demo Management,331800,0,1120,Demo Harbor Ordinary Deposit,,,,,1576980,1045,"[""20220129"",""900533""]",1045-D,cor:monetaryAmount,2022-01
-54,3,900533,Debit,2022-01-29,Synthetic demo financing settlement 900533,6070,Demo Bank Fees,B003,Harbor Demo Bank,D06,Demo Management,204730,0,1120,Demo Harbor Ordinary Deposit,,,,,2787940,1046,"[""20220129"",""900533""]",1046-D,cor:monetaryAmount,2022-01
-54,4,900533,Debit,2022-01-29,Synthetic demo financing settlement 900533,7000,Demo Taxes and Dues,,,D06,Demo Management,169440,0,1120,Demo Harbor Ordinary Deposit,,,,,6634100,1047,"[""20220129"",""900533""]",1047-D,cor:monetaryAmount,2022-01
-55,1,900560,Credit,2022-01-29,Synthetic demo credit sale 900560,4020,Demo Other Operating Revenue,C001,Demo Customer Aurora,D01,Demo Sales,0,143540,1200,Demo Accounts Receivable,,,,,12154420,1048,"[""20220129"",""900560""]",1048-C,cor:monetaryAmount,2022-01
-55,2,900560,Debit,2022-01-29,Synthetic demo credit sale 900560,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,143540,0,4020,Demo Other Operating Revenue,,,,,26868790,1048,"[""20220129"",""900560""]",1048-D,cor:monetaryAmount,2022-01
-56,1,900568,Debit,2022-01-29,Synthetic demo mixed sales and receipt 900568,1110,Demo North Current Deposit,B002,North Demo Bank,D01,Demo Sales,177030,0,,,,,,,3048950,1049,"[""20220129"",""900568""]",1049-D,cor:monetaryAmount,2022-01
-56,2,900568,Debit,2022-01-29,Synthetic demo mixed sales and receipt 900568,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,103980,0,,,,,,,26972770,1050,"[""20220129"",""900568""]",1050-D,cor:monetaryAmount,2022-01
-56,3,900568,Credit,2022-01-29,Synthetic demo mixed sales and receipt 900568,4000,Demo Product Sales,C010,Demo Customer Juniper,D01,Demo Sales,0,78680,,,,,,,22971410,1051,"[""20220129"",""900568""]",1051-C,cor:monetaryAmount,2022-01
-56,4,900568,Credit,2022-01-29,Synthetic demo mixed sales and receipt 900568,4010,Demo Service Revenue,C001,Demo Customer Aurora,D01,Demo Sales,0,202330,,,,,,,22959940,1052,"[""20220129"",""900568""]",1052-C,cor:monetaryAmount,2022-01
-57,1,900581,Debit,2022-01-29,Synthetic demo multi-vendor settlement 900581,2000,Demo Accounts Payable,V001,Demo Vendor Keystone,D01,Demo Sales,438010,0,,,,,,,1411570,1053,"[""20220129"",""900581""]",1053-D,cor:monetaryAmount,2022-01
-57,2,900581,Debit,2022-01-29,Synthetic demo multi-vendor settlement 900581,2100,Demo Accrued Payables,V005,Demo Vendor Orchid,D01,Demo Sales,83440,0,,,,,,,915580,1054,"[""20220129"",""900581""]",1054-D,cor:monetaryAmount,2022-01
-57,3,900581,Credit,2022-01-29,Synthetic demo multi-vendor settlement 900581,1120,Demo Harbor Ordinary Deposit,B003,Harbor Demo Bank,D01,Demo Sales,0,156430,,,,,,,1928510,1055,"[""20220129"",""900581""]",1055-C,cor:monetaryAmount,2022-01
-57,4,900581,Credit,2022-01-29,Synthetic demo multi-vendor settlement 900581,1100,Demo Central Ordinary Deposit,B001,Demo Central Bank,D01,Demo Sales,0,365020,,,,,,,1998560,1056,"[""20220129"",""900581""]",1056-C,cor:monetaryAmount,2022-01
-58,1,900541,Credit,2022-01-31,Synthetic demo credit sale 900541,4010,Demo Service Revenue,C004,Demo Customer Dawn,D01,Demo Sales,0,470430,1200,Demo Accounts Receivable,,,,,23430370,1057,"[""20220131"",""900541""]",1057-C,cor:monetaryAmount,2022-01
-58,2,900541,Debit,2022-01-31,Synthetic demo credit sale 900541,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,470430,0,4010,Demo Service Revenue,,,,,27443200,1057,"[""20220131"",""900541""]",1057-D,cor:monetaryAmount,2022-01
-59,1,900580,Credit,2022-01-31,Synthetic demo credit sale 900580,4010,Demo Service Revenue,C001,Demo Customer Aurora,D01,Demo Sales,0,498270,1200,Demo Accounts Receivable,,,,,23928640,1058,"[""20220131"",""900580""]",1058-C,cor:monetaryAmount,2022-01
-59,2,900580,Debit,2022-01-31,Synthetic demo credit sale 900580,1200,Demo Accounts Receivable,C001,Demo Customer Aurora,D01,Demo Sales,498270,0,4010,Demo Service Revenue,,,,,27941470,1058,"[""20220131"",""900580""]",1058-D,cor:monetaryAmount,2022-01
+﻿Transaction_ID,Line_ID,Entry_ID,Ledger_Side,Transaction_Date,Description,Ledger_Account_Number,Ledger_Account_Name,Subaccount_Code,Subaccount_Name,Department_Code,Department_Name,Debit_Amount,Credit_Amount,Counterpart_Account_Number,Counterpart_Account_Name,Counterpart_Subaccount_Code,Counterpart_Subaccount_Name,Counterpart_Department_Code,Counterpart_Department_Name,Balance,Month
+,,,Opening,2022-01-01,* 月初残高,10A100020,現金及び預金,,,,,0,0,,,,,,,29602761,2022-01
+,,,Opening,2022-01-01,* 月初残高,10A100060,受取手形,,,,,0,0,,,,,,,-33203783,2022-01
+,,,Opening,2022-01-01,* 月初残高,10A100090,売掛金,,,,,0,0,,,,,,,196935146,2022-01
+,,,Opening,2022-01-01,* 月初残高,10A100200,電子記録債権,,,,,0,0,,,,,,,1369532,2022-01
+,,,Opening,2022-01-01,* 月初残高,10A100280,商品,,,,,0,0,,,,,,,84256000,2022-01
+,,,Opening,2022-01-01,* 月初残高,10A100610,短期貸付金,,,,,0,0,,,,,,,470000,2022-01
+,,,Opening,2022-01-01,* 月初残高,10A210130,構築物,,,,,0,0,,,,,,,36435838,2022-01
+,,,Opening,2022-01-01,* 月初残高,10A210410,工具、器具及び備品,,,,,0,0,,,,,,,17360990,2022-01
+,,,Opening,2022-01-01,* 月初残高,10A230570,保険積立金,,,,,0,0,,,,,,,1152813,2022-01
+,,,Opening,2022-01-01,* 月初残高,10B100030,支払手形,,,,,0,0,,,,,,,9202063,2022-01
+,,,Opening,2022-01-01,* 月初残高,10B100040,買掛金,,,,,0,0,,,,,,,112882067,2022-01
+,,,Opening,2022-01-01,* 月初残高,10B100630,未払金,,,,,0,0,,,,,,,4328315,2022-01
+,,,Opening,2022-01-01,* 月初残高,10B100640,未払法人税等,,,,,0,0,,,,,,,0,2022-01
+,,,Opening,2022-01-01,* 月初残高,10B100650,未払事業所税,,,,,0,0,,,,,,,0,2022-01
+,,,Opening,2022-01-01,* 月初残高,10B100660,未払消費税等,,,,,0,0,,,,,,,0,2022-01
+,,,Opening,2022-01-01,* 月初残高,10B100690,預り金,,,,,0,0,,,,,,,4955737,2022-01
+,,,Opening,2022-01-01,* 月初残高,10B100790,短期借入金,,,,,0,0,,,,,,,1960500,2022-01
+,,,Opening,2022-01-01,* 月初残高,10B200080,長期借入金,,,,,0,0,,,,,,,7000000,2022-01
+,,,Opening,2022-01-01,* 月初残高,10D100101,電子取引売上高,,,,,0,0,,,,,,,179197171,2022-01
+,,,Opening,2022-01-01,* 月初残高,10D100102,電子取引以外売上高,,,,,0,0,,,,,,,449720052,2022-01
+,,,Opening,2022-01-01,* 月初残高,10D100111,電子取引売上値引及び戻り高,,,,,0,0,,,,,,,149368,2022-01
+,,,Opening,2022-01-01,* 月初残高,10D100112,電子取引以外売上値引及び戻り高,,,,,0,0,,,,,,,27429095,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E100100,商品期首たな卸高,,,,,0,0,,,,,,,0,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E100121,電子取引仕入値引及び戻し高,,,,,0,0,,,,,,,5459985,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E100122,電子取引以外仕入値引及び戻し高,,,,,0,0,,,,,,,7158495,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E100131,電子取引当期商品仕入高,,,,,0,0,,,,,,,131337416,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E100132,電子取引以外当期商品仕入高,,,,,0,0,,,,,,,243815339,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E100140,商品期末たな卸高,,,,,0,0,,,,,,,0,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200020,販売手数料,,,,,0,0,,,,,,,20000267,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200050,広告宣伝費,,,,,0,0,,,,,,,1604200,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200090,役員報酬,,,,,0,0,,,,,,,15480000,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200130,賞与,,,,,0,0,,,,,,,11082000,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200140,福利厚生費,,,,,0,0,,,,,,,4300467,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200150,交際費,,,,,0,0,,,,,,,3250843,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200180,通信費,,,,,0,0,,,,,,,9929652,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200200,消耗品費,,,,,0,0,,,,,,,2439775,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200210,租税公課,,,,,0,0,,,,,,,239000,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200220,減価償却費,,,,,0,0,,,,,,,0,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200240,保険料,,,,,0,0,,,,,,,2869380,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200370,給料及び手当,,,,,0,0,,,,,,,47058972,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200520,雑給,,,,,0,0,,,,,,,3790337,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200540,法定福利費,,,,,0,0,,,,,,,7008962,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200600,支払報酬,,,,,0,0,,,,,,,1257390,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200690,支払手数料,,,,,0,0,,,,,,,12735423,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200720,地代家賃,,,,,0,0,,,,,,,31011000,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200730,借地借家料,,,,,0,0,,,,,,,2350800,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E200870,運賃,,,,,0,0,,,,,,,37366207,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E201000,修繕維持費,,,,,0,0,,,,,,,301650,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E201040,水道光熱費,,,,,0,0,,,,,,,5413937,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E201110,事務用消耗品費,,,,,0,0,,,,,,,1147431,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E201120,車両費,,,,,0,0,,,,,,,5617052,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E201130,会議費,,,,,0,0,,,,,,,255434,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E201140,諸会費,,,,,0,0,,,,,,,1044000,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E201160,図書費,,,,,0,0,,,,,,,224838,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E201230,旅費及び交通費,,,,,0,0,,,,,,,9896123,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E201270,雑費,,,,,0,0,,,,,,,4342686,2022-01
+,,,Opening,2022-01-01,* 月初残高,10E300020,支払利息,,,,,0,0,,,,,,,1050085,2022-01
+2123,1,18,Debit,2022-01-01,旅費,10E201230,旅費及び交通費,,,,,19500,0,10A100020,現金及び預金,,,,,9915623,2022-01
+2123,1,18,Credit,2022-01-01,旅費,10A100020,現金及び預金,,,,,0,19500,10E201230,旅費及び交通費,,,,,29583261,2022-01
+2124,1,19,Debit,2022-01-02,旅費,10E201230,旅費及び交通費,,,,,11000,0,10A100020,現金及び預金,,,,,9926623,2022-01
+2124,1,19,Credit,2022-01-02,旅費,10A100020,現金及び預金,,,,,0,11000,10E201230,旅費及び交通費,,,,,29572261,2022-01
+2125,1,134,Debit,2022-01-03,用紙,10E201110,事務用消耗品費,,,,,8400,0,10B100630,未払金,,,,,1155831,2022-01
+2125,1,134,Credit,2022-01-03,用紙,10B100630,未払金,,,,,0,8400,10E201110,事務用消耗品費,,,,,4336715,2022-01
+2126,1,66,Debit,2022-01-04,リース料,10E200730,借地借家料,,,,,209850,0,10A100020,現金及び預金,20,みずほ 本店,,,2560650,2022-01
+2126,1,66,Credit,2022-01-04,リース料,10A100020,現金及び預金,20,みずほ 本店,,,0,209850,10E200730,借地借家料,,,,,29362411,2022-01
+2127,1,116,Debit,2022-01-04,リース料,10E200730,借地借家料,,,,,84000,0,10A100020,現金及び預金,40,三菱東京 梅田,,,2644650,2022-01
+2127,1,116,Credit,2022-01-04,リース料,10A100020,現金及び預金,40,三菱東京 梅田,,,0,84000,10E200730,借地借家料,,,,,29278411,2022-01
+2128,1,86,Debit,2022-01-05,1月5日伝票No406株式会社 渡辺産業,10A100020,現金及び預金,50,福岡 北九州,,,986824,0,10A100090,売掛金,22,㈱渡辺産業,,,30265235,2022-01
+2128,1,86,Credit,2022-01-05,1月5日伝票No406株式会社 渡辺産業,10A100090,売掛金,22,㈱渡辺産業,,,0,986824,10A100020,現金及び預金,50,福岡 北九州,,,195948322,2022-01
+2129,1,87,Debit,2022-01-05,1月5日伝票No407佐々木販売株式会社,10A100020,現金及び預金,20,みずほ 本店,,,778520,0,10A100090,売掛金,26,佐々木販売㈱,,,31043755,2022-01
+2129,1,87,Credit,2022-01-05,1月5日伝票No407佐々木販売株式会社,10A100090,売掛金,26,佐々木販売㈱,,,0,778520,10A100020,現金及び預金,20,みずほ 本店,,,195169802,2022-01
+2130,1,88,Debit,2022-01-05,1月5日伝票No408岩下物産株式会社,10A100020,現金及び預金,30,三井 名古屋,,,1176124,0,10A100090,売掛金,27,岩下物産㈱,,,32219879,2022-01
+2130,1,88,Credit,2022-01-05,1月5日伝票No408岩下物産株式会社,10A100090,売掛金,27,岩下物産㈱,,,0,1176124,10A100020,現金及び預金,30,三井 名古屋,,,193993678,2022-01
+2131,1,143,Debit,2022-01-05,点検作業料,10E201120,車両費,,,,,31200,0,10A100020,現金及び預金,,,,,5648252,2022-01
+2131,1,143,Credit,2022-01-05,点検作業料,10A100020,現金及び預金,,,,,0,31200,10E201120,車両費,,,,,32188679,2022-01
+2132,1,110,Debit,2022-01-06,タクシー代,10E201230,旅費及び交通費,,,,,2290,0,10A100020,現金及び預金,,,,,9928913,2022-01
+2132,1,110,Credit,2022-01-06,タクシー代,10A100020,現金及び預金,,,,,0,2290,10E201230,旅費及び交通費,,,,,32186389,2022-01
+2133,1,123,Debit,2022-01-06,切手代,10E200180,通信費,,,,,8000,0,10A100020,現金及び預金,,,,,9937652,2022-01
+2133,1,123,Credit,2022-01-06,切手代,10A100020,現金及び預金,,,,,0,8000,10E200180,通信費,,,,,32178389,2022-01
+2134,1,124,Debit,2022-01-06,収入印紙,10E200210,租税公課,,,,,2000,0,10A100020,現金及び預金,,,,,241000,2022-01
+2134,1,124,Credit,2022-01-06,収入印紙,10A100020,現金及び預金,,,,,0,2000,10E200210,租税公課,,,,,32176389,2022-01
+2135,1,7,Debit,2022-01-07,新年会会費 エイム,10E200150,交際費,,,,,10000,0,10A100020,現金及び預金,,,,,3260843,2022-01
+2135,1,7,Credit,2022-01-07,新年会会費 エイム,10A100020,現金及び預金,,,,,0,10000,10E200150,交際費,,,,,32166389,2022-01
+2136,1,20,Debit,2022-01-07,旅費,10E201230,旅費及び交通費,,,,,39000,0,10A100020,現金及び預金,,,,,9967913,2022-01
+2136,1,20,Credit,2022-01-07,旅費,10A100020,現金及び預金,,,,,0,39000,10E201230,旅費及び交通費,,,,,32127389,2022-01
+2137,1,21,Debit,2022-01-07,JR代,10E201230,旅費及び交通費,,,,,69500,0,10A100020,現金及び預金,,,,,10037413,2022-01
+2137,1,21,Credit,2022-01-07,JR代,10A100020,現金及び預金,,,,,0,69500,10E201230,旅費及び交通費,,,,,32057889,2022-01
+2138,1,22,Debit,2022-01-07,旅費,10E201230,旅費及び交通費,,,,,50000,0,10A100020,現金及び預金,,,,,10087413,2022-01
+2138,1,22,Credit,2022-01-07,旅費,10A100020,現金及び預金,,,,,0,50000,10E201230,旅費及び交通費,,,,,32007889,2022-01
+2139,1,102,Debit,2022-01-07,差し入れ,10E200150,交際費,,,,,1050,0,10A100020,現金及び預金,,,,,3261893,2022-01
+2139,1,102,Credit,2022-01-07,差し入れ,10A100020,現金及び預金,,,,,0,1050,10E200150,交際費,,,,,32006839,2022-01
+2140,1,106,Debit,2022-01-07,新年会会費2名,10E200150,交際費,,,,,20000,0,10A100020,現金及び預金,,,,,3281893,2022-01
+2140,1,106,Credit,2022-01-07,新年会会費2名,10A100020,現金及び預金,,,,,0,20000,10E200150,交際費,,,,,31986839,2022-01
+2141,1,133,Debit,2022-01-07,税理士報酬,10E200600,支払報酬,,,,,139710,0,10A100020,現金及び預金,20,みずほ 本店,,,1397100,2022-01
+2141,1,133,Credit,2022-01-07,税理士報酬,10A100020,現金及び預金,20,みずほ 本店,,,0,139710,10E200600,支払報酬,,,,,31847129,2022-01
+2142,1,45,Debit,2022-01-08,新年会会費,10E200150,交際費,,,,,12000,0,10A100020,現金及び預金,,,,,3293893,2022-01
+2142,1,45,Credit,2022-01-08,新年会会費,10A100020,現金及び預金,,,,,0,12000,10E200150,交際費,,,,,31835129,2022-01
+2143,1,50,Debit,2022-01-08,高速代,10E201120,車両費,,,,,1200,0,10A100020,現金及び預金,,,,,5649452,2022-01
+2143,1,50,Credit,2022-01-08,高速代,10A100020,現金及び預金,,,,,0,1200,10E201120,車両費,,,,,31833929,2022-01
+2144,1,75,Debit,2022-01-08,飲食代 スナックランディ,10E200150,交際費,,,,,26480,0,10A100020,現金及び預金,,,,,3320373,2022-01
+2144,1,75,Credit,2022-01-08,飲食代 スナックランディ,10A100020,現金及び預金,,,,,0,26480,10E200150,交際費,,,,,31807449,2022-01
+2145,1,79,Debit,2022-01-08,景品代,10E200140,福利厚生費,,,,,39568,0,10A100020,現金及び預金,,,,,4340035,2022-01
+2145,1,79,Credit,2022-01-08,景品代,10A100020,現金及び預金,,,,,0,39568,10E200140,福利厚生費,,,,,31767881,2022-01
+2146,1,150,Debit,2022-01-08,新年会会費2名,10E200150,交際費,,,,,16000,0,10A100020,現金及び預金,,,,,3336373,2022-01
+2146,1,150,Credit,2022-01-08,新年会会費2名,10A100020,現金及び預金,,,,,0,16000,10E200150,交際費,,,,,31751881,2022-01
+2147,1,85,Debit,2022-01-09,電話代,10E200180,通信費,,,,,106577,0,10A100020,現金及び預金,30,三井 名古屋,,,10044229,2022-01
+2147,1,85,Credit,2022-01-09,電話代,10A100020,現金及び預金,30,三井 名古屋,,,0,106577,10E200180,通信費,,,,,31645304,2022-01
+2148,1,112,Debit,2022-01-09,電話代,10E200180,通信費,,,,,171053,0,10A100020,現金及び預金,40,三菱東京 梅田,,,10215282,2022-01
+2148,1,112,Credit,2022-01-09,電話代,10A100020,現金及び預金,40,三菱東京 梅田,,,0,171053,10E200180,通信費,,,,,31474251,2022-01
+2149,1,16,Debit,2022-01-10,高速代,10E201120,車両費,,,,,381,0,10A100020,現金及び預金,,,,,5649833,2022-01
+2149,1,16,Credit,2022-01-10,高速代,10A100020,現金及び預金,,,,,0,1143,10E201120,車両費,,,,,31473108,2022-01
+2149,2,16,Debit,2022-01-10,駐車代,10E201120,車両費,,,,,762,0,10A100020,現金及び預金,,,,,5650595,2022-01
+2150,1,42,Debit,2022-01-10,年始挨拶手土産品 五越百貨店,10E200150,交際費,,,,,24260,0,10A100020,現金及び預金,,,,,3360633,2022-01
+2150,1,42,Credit,2022-01-10,年始挨拶手土産品 五越百貨店,10A100020,現金及び預金,,,,,0,24260,10E200150,交際費,,,,,31448848,2022-01
+2151,1,44,Debit,2022-01-10,新年会会費,10E200150,交際費,,,,,12000,0,10A100020,現金及び預金,,,,,3372633,2022-01
+2151,1,44,Credit,2022-01-10,新年会会費,10A100020,現金及び預金,,,,,0,12000,10E200150,交際費,,,,,31436848,2022-01
+2152,1,56,Debit,2022-01-10,旅費,10E201230,旅費及び交通費,,,,,19800,0,10A100020,現金及び預金,,,,,10107213,2022-01
+2152,1,56,Credit,2022-01-10,旅費,10A100020,現金及び預金,,,,,0,19800,10E201230,旅費及び交通費,,,,,31417048,2022-01
+2153,1,62,Debit,2022-01-10,引き出し,10A100020,現金及び預金,,,,,1000000,0,10A100020,現金及び預金,20,みずほ本店,,,32417048,2022-01
+2153,1,62,Credit,2022-01-10,引き出し,10A100020,現金及び預金,20,みずほ本店,,,0,1000000,10A100020,現金及び預金,,,,,31417048,2022-01
+2154,1,64,Debit,2022-01-10,源泉税支払,10B100690,預り金,3,源泉税,,,436489,0,10A100020,現金及び預金,20,みずほ 本店,,,4519248,2022-01
+2154,1,64,Credit,2022-01-10,源泉税支払,10A100020,現金及び預金,20,みずほ 本店,,,0,885989,10B100690,預り金,3,源泉税,,,30531059,2022-01
+2154,2,64,Debit,2022-01-10,住民税支払,10B100690,預り金,2,住民税,,,449500,0,10A100020,現金及び預金,20,みずほ 本店,,,4069748,2022-01
+2155,1,67,Debit,2022-01-10,有線,10E201270,雑費,,,,,5000,0,10B100630,未払金,,,,,4347686,2022-01
+2155,1,67,Credit,2022-01-10,有線,10B100630,未払金,,,,,0,39286,10E201270,雑費,,,,,4376001,2022-01
+2155,2,67,Debit,2022-01-10,警備料,10E201270,雑費,,,,,34286,0,10B100630,未払金,,,,,4381972,2022-01
+2156,1,71,Debit,2022-01-10,お茶他,10E201270,雑費,,,,,3155,0,10A100020,現金及び預金,,,,,4385127,2022-01
+2156,1,71,Credit,2022-01-10,お茶他,10A100020,現金及び預金,,,,,0,3155,10E201270,雑費,,,,,30527904,2022-01
+2158,1,90,Debit,2022-01-10,1月10日伝票No410株式会社 藤田東京本社,10A100020,現金及び預金,20,みずほ 本店,,,1398520,0,10A100090,売掛金,14,㈱藤田,,,31926424,2022-01
+2158,1,90,Credit,2022-01-10,1月10日伝票No410株式会社 藤田東京本社,10A100090,売掛金,14,㈱藤田,,,0,1398520,10A100020,現金及び預金,20,みずほ 本店,,,192595158,2022-01
+2158,2,90,Debit,2022-01-10,1月10日伝票No410株式会社 藤田東京本社,10E200690,支払手数料,,,,,2167946,0,10A100090,売掛金,14,㈱藤田,,,14903369,2022-01
+2158,2,90,Credit,2022-01-10,1月10日伝票No410株式会社 藤田東京本社,10A100090,売掛金,14,㈱藤田,,,0,2167946,10E200690,支払手数料,,,,,190427212,2022-01
+2159,1,91,Debit,2022-01-10,1月10日伝票No411株式会社 ミナミ,10A100020,現金及び預金,30,三井 名古屋,,,727515,0,10A100090,売掛金,19,㈱ﾐﾅﾐ,,,32653939,2022-01
+2159,1,91,Credit,2022-01-10,1月10日伝票No411株式会社 ミナミ,10A100090,売掛金,19,㈱ﾐﾅﾐ,,,0,727515,10A100020,現金及び預金,30,三井 名古屋,,,189699697,2022-01
+2160,1,92,Debit,2022-01-10,1月10日伝票No412かめだデパート,10A100060,受取手形,,,,,6004022,0,10A100090,売掛金,28,かめだﾃﾞﾊﾟｰﾄ,,,-27199761,2022-01
+2160,1,92,Credit,2022-01-10,1月10日伝票No412かめだデパート,10A100090,売掛金,28,かめだﾃﾞﾊﾟｰﾄ,,,0,6004022,10A100060,受取手形,,,,,183695675,2022-01
+2161,1,93,Debit,2022-01-10,1月10日伝票No318株式会社 チェック,10B100040,買掛金,3,㈱ﾁｪｯｸ,,,4077586,0,10B100030,支払手形,,,,,108804481,2022-01
+2161,1,93,Credit,2022-01-10,1月10日伝票No318株式会社 チェック,10B100030,支払手形,,,,,0,4077586,10B100040,買掛金,3,㈱ﾁｪｯｸ,,,13279649,2022-01
+2162,1,94,Debit,2022-01-10,1月10日伝票No319株式会社 山下,10B100040,買掛金,8,㈱山下,,,25704,0,10A100020,現金及び預金,20,みずほ 本店,,,108778777,2022-01
+2162,1,94,Credit,2022-01-10,1月10日伝票No319株式会社 山下,10A100020,現金及び預金,20,みずほ 本店,,,0,25704,10B100040,買掛金,8,㈱山下,,,32628235,2022-01
+2163,1,138,Debit,2022-01-10,手形期日落日 チェック,10B100030,支払手形,,,,,2609859,0,10A100020,現金及び預金,20,みずほ本店,,,10669790,2022-01
+2163,1,138,Credit,2022-01-10,手形期日落日 チェック,10A100020,現金及び預金,20,みずほ本店,,,0,2609859,10B100030,支払手形,,,,,30018376,2022-01
+2164,1,142,Debit,2022-01-10,高速代,10E201120,車両費,,,,,3382,0,10A100020,現金及び預金,,,,,5653977,2022-01
+2164,1,142,Credit,2022-01-10,高速代,10A100020,現金及び預金,,,,,0,15683,10E201120,車両費,,,,,30002693,2022-01
+2164,2,142,Debit,2022-01-10,駐車代,10E201120,車両費,,,,,5343,0,10A100020,現金及び預金,,,,,5659320,2022-01
+2164,3,142,Debit,2022-01-10,高速代,10E201120,車両費,,,,,2223,0,10A100020,現金及び預金,,,,,5661543,2022-01
+2164,4,142,Debit,2022-01-10,高速代,10E201120,車両費,,,,,4306,0,10A100020,現金及び預金,,,,,5665849,2022-01
+2164,5,142,Debit,2022-01-10,高速代,10E201120,車両費,,,,,429,0,10A100020,現金及び預金,,,,,5666278,2022-01
+2165,1,149,Debit,2022-01-10,新年会会費,10E200150,交際費,,,,,12000,0,10A100020,現金及び預金,,,,,3384633,2022-01
+2165,1,149,Credit,2022-01-10,新年会会費,10A100020,現金及び預金,,,,,0,12000,10E200150,交際費,,,,,29990693,2022-01
+2166,1,152,Debit,2022-01-10,新年会会費,10E200150,交際費,,,,,10000,0,10A100020,現金及び預金,,,,,3394633,2022-01
+2166,1,152,Credit,2022-01-10,新年会会費,10A100020,現金及び預金,,,,,0,10000,10E200150,交際費,,,,,29980693,2022-01
+2167,1,159,Debit,2022-01-10,タクシー代,10E201230,旅費及び交通費,,,,,4200,0,10A100020,現金及び預金,,,,,10111413,2022-01
+2167,1,159,Credit,2022-01-10,タクシー代,10A100020,現金及び預金,,,,,0,4200,10E201230,旅費及び交通費,,,,,29976493,2022-01
+2168,1,162,Debit,2022-01-10,会議 食事代,10E201130,会議費,,,,,24995,0,10A100020,現金及び預金,,,,,280429,2022-01
+2168,1,162,Credit,2022-01-10,会議 食事代,10A100020,現金及び預金,,,,,0,24995,10E201130,会議費,,,,,29951498,2022-01
+2169,1,168,Debit,2022-01-10,有線,10E201270,雑費,,,,,6000,0,10B100630,未払金,,,,,4391127,2022-01
+2169,1,168,Credit,2022-01-10,有線,10B100630,未払金,,,,,0,48858,10E201270,雑費,,,,,4424859,2022-01
+2169,2,168,Debit,2022-01-10,警備料,10E201270,雑費,,,,,42858,0,10B100630,未払金,,,,,4433985,2022-01
+2170,1,33,Debit,2022-01-11,家賃支払い,10E200720,地代家賃,,,,,320000,0,10A100020,現金及び預金,10,北海道 駅前,,,31331000,2022-01
+2170,1,33,Credit,2022-01-11,家賃支払い,10A100020,現金及び預金,10,北海道 駅前,,,0,320000,10E200720,地代家賃,,,,,29631498,2022-01
+2170,2,33,Debit,2022-01-11,電話代,10E200180,通信費,,,,,176983,0,10A100020,現金及び預金,10,北海道 駅前,,,10392265,2022-01
+2170,2,33,Credit,2022-01-11,電話代,10A100020,現金及び預金,10,北海道 駅前,,,0,176983,10E200180,通信費,,,,,29454515,2022-01
+2171,1,65,Debit,2022-01-11,家賃支払,10E200720,地代家賃,,,,,1260000,0,10A100020,現金及び預金,20,みずほ 本店,,,32591000,2022-01
+2171,1,65,Credit,2022-01-11,家賃支払,10A100020,現金及び預金,20,みずほ 本店,,,0,1260000,10E200720,地代家賃,,,,,28194515,2022-01
+2172,1,66,Debit,2022-01-11,家賃支払,10E200720,地代家賃,,,,,840000,0,10A100020,現金及び預金,40,三菱東京 梅田,,,33431000,2022-01
+2172,1,66,Credit,2022-01-11,家賃支払,10A100020,現金及び預金,40,三菱東京 梅田,,,0,840000,10E200720,地代家賃,,,,,27354515,2022-01
+2173,1,73,Debit,2022-01-11,新年会会費2名,10E200150,交際費,,,,,16000,0,10A100020,現金及び預金,,,,,3410633,2022-01
+2173,1,73,Credit,2022-01-11,新年会会費2名,10A100020,現金及び預金,,,,,0,16000,10E200150,交際費,,,,,27338515,2022-01
+2174,1,76,Debit,2022-01-11,社員食事代,10E200140,福利厚生費,,,,,28910,0,10B100630,未払金,,,,,4368945,2022-01
+2174,1,76,Credit,2022-01-11,社員食事代,10B100630,未払金,,,,,0,28910,10E200140,福利厚生費,,,,,4453769,2022-01
+2175,1,94,Debit,2022-01-11,お茶代他,10E201270,雑費,,,,,2036,0,10A100020,現金及び預金,,,,,4436021,2022-01
+2175,1,94,Credit,2022-01-11,お茶代他,10A100020,現金及び預金,,,,,0,2036,10E201270,雑費,,,,,27336479,2022-01
+2176,1,129,Debit,2022-01-11,家賃支払い,10E200720,地代家賃,,,,,399000,0,10A100020,現金及び預金,30,三井 名古屋,,,33830000,2022-01
+2176,1,129,Credit,2022-01-11,家賃支払い,10A100020,現金及び預金,30,三井 名古屋,,,0,399000,10E200720,地代家賃,,,,,26937479,2022-01
+2177,1,147,Debit,2022-01-11,ガソリン代,10E201120,車両費,,,,,6578,0,10B100630,未払金,,,,,5672856,2022-01
+2177,1,147,Credit,2022-01-11,ガソリン代,10B100630,未払金,,,,,0,6578,10E201120,車両費,,,,,4460347,2022-01
+2178,1,167,Debit,2022-01-11,家賃支払い,10E200720,地代家賃,,,,,630000,0,10A100020,現金及び預金,50,福岡 北九州,,,34460000,2022-01
+2178,1,167,Credit,2022-01-11,家賃支払い,10A100020,現金及び預金,50,福岡 北九州,,,0,630000,10E200720,地代家賃,,,,,26307479,2022-01
+2178,2,167,Debit,2022-01-11,電話代,10E200180,通信費,,,,,121564,0,10A100020,現金及び預金,50,福岡 北九州,,,10513829,2022-01
+2178,2,167,Credit,2022-01-11,電話代,10A100020,現金及び預金,50,福岡 北九州,,,0,121564,10E200180,通信費,,,,,26185915,2022-01
+2179,1,9,Debit,2022-01-12,新年会会費 たかだ,10E200150,交際費,,,,,7000,0,10A100020,現金及び預金,,,,,3417633,2022-01
+2179,1,9,Credit,2022-01-12,新年会会費 たかだ,10A100020,現金及び預金,,,,,0,7000,10E200150,交際費,,,,,26178915,2022-01
+2180,1,43,Debit,2022-01-12,コーヒー代3名,10E200150,交際費,,,,,1575,0,10A100020,現金及び預金,,,,,3419208,2022-01
+2180,1,43,Credit,2022-01-12,コーヒー代3名,10A100020,現金及び預金,,,,,0,1575,10E200150,交際費,,,,,26177340,2022-01
+2181,1,57,Debit,2022-01-12,JR代,10E201230,旅費及び交通費,,,,,105670,0,10A100020,現金及び預金,,,,,10217083,2022-01
+2181,1,57,Credit,2022-01-12,JR代,10A100020,現金及び預金,,,,,0,105670,10E201230,旅費及び交通費,,,,,26071670,2022-01
+2182,1,151,Debit,2022-01-12,飲食代 居酒屋佐助4名,10E200150,交際費,,,,,18642,0,10A100020,現金及び預金,,,,,3437850,2022-01
+2182,1,151,Credit,2022-01-12,飲食代 居酒屋佐助4名,10A100020,現金及び預金,,,,,0,18642,10E200150,交際費,,,,,26053028,2022-01
+2183,1,153,Debit,2022-01-12,新年会会費2名,10E200150,交際費,,,,,16000,0,10A100020,現金及び預金,,,,,3453850,2022-01
+2183,1,153,Credit,2022-01-12,新年会会費2名,10A100020,現金及び預金,,,,,0,16000,10E200150,交際費,,,,,26037028,2022-01
+2184,1,11,Debit,2022-01-13,ガソリン代,10E201120,車両費,,,,,3210,0,10A100020,現金及び預金,,,,,5676066,2022-01
+2184,1,11,Credit,2022-01-13,ガソリン代,10A100020,現金及び預金,,,,,0,3210,10E201120,車両費,,,,,26033818,2022-01
+2185,1,17,Debit,2022-01-13,駐車代,10E201120,車両費,,,,,286,0,10A100020,現金及び預金,,,,,5676352,2022-01
+2185,1,17,Credit,2022-01-13,駐車代,10A100020,現金及び預金,,,,,0,1048,10E201120,車両費,,,,,26032770,2022-01
+2185,2,17,Debit,2022-01-13,駐車代,10E201120,車両費,,,,,762,0,10A100020,現金及び預金,,,,,5677114,2022-01
+2186,1,23,Debit,2022-01-14,旅費,10E201230,旅費及び交通費,,,,,26667,0,10A100020,現金及び預金,,,,,10243750,2022-01
+2186,1,23,Credit,2022-01-14,旅費,10A100020,現金及び預金,,,,,0,92858,10E201230,旅費及び交通費,,,,,25939912,2022-01
+2186,2,23,Debit,2022-01-14,旅費,10E201230,旅費及び交通費,,,,,29524,0,10A100020,現金及び預金,,,,,10273274,2022-01
+2186,3,23,Debit,2022-01-14,旅費,10E201230,旅費及び交通費,,,,,36667,0,10A100020,現金及び預金,,,,,10309941,2022-01
+2187,1,46,Debit,2022-01-14,ガソリン代,10E201120,車両費,,,,,2341,0,10A100020,現金及び預金,,,,,5679455,2022-01
+2187,1,46,Credit,2022-01-14,ガソリン代,10A100020,現金及び預金,,,,,0,11988,10E201120,車両費,,,,,25927924,2022-01
+2187,2,46,Debit,2022-01-14,ガソリン代,10E201120,車両費,,,,,4767,0,10A100020,現金及び預金,,,,,5684222,2022-01
+2187,3,46,Debit,2022-01-14,ガソリン代,10E201120,車両費,,,,,4880,0,10A100020,現金及び預金,,,,,5689102,2022-01
+2188,1,51,Debit,2022-01-14,高速代,10E201120,車両費,,,,,1505,0,10A100020,現金及び預金,,,,,5690607,2022-01
+2188,1,51,Credit,2022-01-14,高速代,10A100020,現金及び預金,,,,,0,7176,10E201120,車両費,,,,,25920748,2022-01
+2188,2,51,Debit,2022-01-14,高速代,10E201120,車両費,,,,,620,0,10A100020,現金及び預金,,,,,5691227,2022-01
+2188,3,51,Debit,2022-01-14,高速代,10E201120,車両費,,,,,810,0,10A100020,現金及び預金,,,,,5692037,2022-01
+2188,4,51,Debit,2022-01-14,高速代,10E201120,車両費,,,,,1096,0,10A100020,現金及び預金,,,,,5693133,2022-01
+2188,5,51,Debit,2022-01-14,高速代,10E201120,車両費,,,,,1096,0,10A100020,現金及び預金,,,,,5694229,2022-01
+2188,6,51,Debit,2022-01-14,高速代,10E201120,車両費,,,,,1096,0,10A100020,現金及び預金,,,,,5695325,2022-01
+2188,7,51,Debit,2022-01-14,高速代,10E201120,車両費,,,,,953,0,10A100020,現金及び預金,,,,,5696278,2022-01
+2189,1,61,Debit,2022-01-14,電話代,10E200180,通信費,,,,,121642,0,10A100020,現金及び預金,20,みずほ 本店,,,10635471,2022-01
+2189,1,61,Credit,2022-01-14,電話代,10A100020,現金及び預金,20,みずほ 本店,,,0,121642,10E200180,通信費,,,,,25799106,2022-01
+2190,1,4,Debit,2022-01-15,広告費,10E200050,広告宣伝費,,,,,31500,0,10B100630,未払金,,,,,1635700,2022-01
+2190,1,4,Credit,2022-01-15,広告費,10B100630,未払金,,,,,0,31500,10E200050,広告宣伝費,,,,,4491847,2022-01
+2191,1,58,Debit,2022-01-15,旅費,10E201230,旅費及び交通費,,,,,86000,0,10A100020,現金及び預金,,,,,10395941,2022-01
+2191,1,58,Credit,2022-01-15,旅費,10A100020,現金及び預金,,,,,0,86000,10E201230,旅費及び交通費,,,,,25713106,2022-01
+2192,1,81,Debit,2022-01-15,ＪＲ代,10E201230,旅費及び交通費,,,,,12000,0,10A100020,現金及び預金,,,,,10407941,2022-01
+2192,1,81,Credit,2022-01-15,ＪＲ代,10A100020,現金及び預金,,,,,0,12000,10E201230,旅費及び交通費,,,,,25701106,2022-01
+2193,1,84,Debit,2022-01-15,1月給与その他 0060 パート･アルバイト,10E200520,雑給,,,,,313425,0,10A100020,現金及び預金,,,,,4103762,2022-01
+2193,1,84,Credit,2022-01-15,1月給与その他 0060 パート･アルバイト,10A100020,現金及び預金,,,,,0,303937,10E200520,雑給,,,,,25397169,2022-01
+2193,2,84,Credit,2022-01-15,1月給与その他 0060 パート･アルバイト,10B100690,預り金,3,源泉税,,,0,860,10E200520,雑給,,,,,4070608,2022-01
+2193,3,84,Credit,2022-01-15,1月給与その他 0060 パート･アルバイト,10B100690,預り金,9,その他,,,0,8628,10E200520,雑給,,,,,4079236,2022-01
+2194,1,95,Debit,2022-01-15,1月15日伝票No413五越株式会社,10A100020,現金及び預金,50,福岡 北九州,,,1615320,0,10A100090,売掛金,1,五越㈱,,,27012489,2022-01
+2194,1,95,Credit,2022-01-15,1月15日伝票No413五越株式会社,10A100090,売掛金,1,五越㈱,,,0,1615320,10A100020,現金及び預金,50,福岡 北九州,,,182080355,2022-01
+2195,1,96,Debit,2022-01-15,1月15日伝票No414株式会社 エントリー,10A100020,現金及び預金,30,三井 名古屋,,,2099052,0,10A100090,売掛金,6,㈱ｴﾝﾄﾘｰ,,,29111541,2022-01
+2195,1,96,Credit,2022-01-15,1月15日伝票No414株式会社 エントリー,10A100090,売掛金,6,㈱ｴﾝﾄﾘｰ,,,0,2099052,10A100020,現金及び預金,30,三井 名古屋,,,179981303,2022-01
+2196,1,97,Debit,2022-01-15,1月15日伝票No415タワー株式会社,10A100020,現金及び預金,40,三菱東京 梅田,,,1448504,0,10A100090,売掛金,8,ﾀﾜｰ㈱,,,30560045,2022-01
+2196,1,97,Credit,2022-01-15,1月15日伝票No415タワー株式会社,10A100090,売掛金,8,ﾀﾜｰ㈱,,,0,1448504,10A100020,現金及び預金,40,三菱東京 梅田,,,178532799,2022-01
+2197,1,98,Debit,2022-01-15,1月15日伝票No416高橋物産株式会社,10A100020,現金及び預金,40,三菱東京 梅田,,,1303424,0,10A100090,売掛金,9,高橋物産㈱,,,31863469,2022-01
+2197,1,98,Credit,2022-01-15,1月15日伝票No416高橋物産株式会社,10A100090,売掛金,9,高橋物産㈱,,,0,1303424,10A100020,現金及び預金,40,三菱東京 梅田,,,177229375,2022-01
+2198,1,99,Debit,2022-01-15,1月15日伝票No417阿部商事株式会社,10A100020,現金及び預金,20,みずほ 本店,,,1108516,0,10A100090,売掛金,13,阿部商事㈱,,,32971985,2022-01
+2198,1,99,Credit,2022-01-15,1月15日伝票No417阿部商事株式会社,10A100090,売掛金,13,阿部商事㈱,,,0,1108516,10A100020,現金及び預金,20,みずほ 本店,,,176120859,2022-01
+2199,1,100,Debit,2022-01-15,1月15日伝票No418株式会社 久城商事,10A100020,現金及び預金,40,三菱東京 梅田,,,1210614,0,10A100090,売掛金,20,㈱久城商事,,,34182599,2022-01
+2199,1,100,Credit,2022-01-15,1月15日伝票No418株式会社 久城商事,10A100090,売掛金,20,㈱久城商事,,,0,1210614,10A100020,現金及び預金,40,三菱東京 梅田,,,174910245,2022-01
+2200,1,101,Debit,2022-01-15,1月15日伝票No320株式会社 Y2,10B100040,買掛金,1,㈱Y2,,,7285614,0,10A100020,現金及び預金,20,みずほ 本店,,,101493163,2022-01
+2200,1,101,Credit,2022-01-15,1月15日伝票No320株式会社 Y2,10A100020,現金及び預金,20,みずほ 本店,,,0,7285614,10B100040,買掛金,1,㈱Y2,,,26896985,2022-01
+2201,1,103,Debit,2022-01-15,コーヒー代2名,10E200150,交際費,,,,,1260,0,10A100020,現金及び預金,,,,,3455110,2022-01
+2201,1,103,Credit,2022-01-15,コーヒー代2名,10A100020,現金及び預金,,,,,0,1260,10E200150,交際費,,,,,26895725,2022-01
+2202,1,109,Debit,2022-01-15,ガソリン代,10E201120,車両費,,,,,50400,0,10B100630,未払金,,,,,5746678,2022-01
+2202,1,109,Credit,2022-01-15,ガソリン代,10B100630,未払金,,,,,0,50400,10E201120,車両費,,,,,4542247,2022-01
+2203,1,130,Debit,2022-01-15,会費,10E201140,諸会費,,,,,24000,0,10A100020,現金及び預金,40,三菱東京 梅田,,,1068000,2022-01
+2203,1,130,Credit,2022-01-15,会費,10A100020,現金及び預金,40,三菱東京 梅田,,,0,24000,10E201140,諸会費,,,,,26871725,2022-01
+2204,1,156,Debit,2022-01-15,出張旅費,10E201230,旅費及び交通費,,,,,7700,0,10A100020,現金及び預金,,,,,10415641,2022-01
+2204,1,156,Credit,2022-01-15,出張旅費,10A100020,現金及び預金,,,,,0,7700,10E201230,旅費及び交通費,,,,,26864025,2022-01
+2205,1,165,Debit,2022-01-15,電池代他,10E201270,雑費,,,,,1007,0,10A100020,現金及び預金,,,,,4437028,2022-01
+2205,1,165,Credit,2022-01-15,電池代他,10A100020,現金及び預金,,,,,0,1007,10E201270,雑費,,,,,26863018,2022-01
+2206,1,73,Debit,2022-01-16,ゴルフプレー代2名,10E200150,交際費,,,,,28000,0,10A100020,現金及び預金,,,,,3483110,2022-01
+2206,1,73,Credit,2022-01-16,ゴルフプレー代2名,10A100020,現金及び預金,,,,,0,28000,10E200150,交際費,,,,,26835018,2022-01
+2207,1,74,Debit,2022-01-16,新年会会費,10E200150,交際費,,,,,10000,0,10A100020,現金及び預金,,,,,3493110,2022-01
+2207,1,74,Credit,2022-01-16,新年会会費,10A100020,現金及び預金,,,,,0,10000,10E200150,交際費,,,,,26825018,2022-01
+2208,1,117,Debit,2022-01-16,会費,10E201140,諸会費,,,,,20000,0,10A100020,現金及び預金,,,,,1088000,2022-01
+2208,1,117,Credit,2022-01-16,会費,10A100020,現金及び預金,,,,,0,20000,10E201140,諸会費,,,,,26805018,2022-01
+2209,1,136,Debit,2022-01-16,ダスキン代,10E201270,雑費,,,,,16500,0,10A100020,現金及び預金,,,,,4453528,2022-01
+2209,1,136,Credit,2022-01-16,ダスキン代,10A100020,現金及び預金,,,,,0,16500,10E201270,雑費,,,,,26788518,2022-01
+2210,1,157,Debit,2022-01-16,航空券代,10E201230,旅費及び交通費,,,,,38700,0,10A100020,現金及び預金,50,福岡 北九州,,,10454341,2022-01
+2210,1,157,Credit,2022-01-16,航空券代,10A100020,現金及び預金,50,福岡 北九州,,,0,38700,10E201230,旅費及び交通費,,,,,26749818,2022-01
+2211,1,47,Debit,2022-01-17,ガソリン代,10E201120,車両費,,,,,2540,0,10A100020,現金及び預金,,,,,5749218,2022-01
+2211,1,47,Credit,2022-01-17,ガソリン代,10A100020,現金及び預金,,,,,0,2540,10E201120,車両費,,,,,26747278,2022-01
+2212,1,52,Debit,2022-01-17,高速代,10E201120,車両費,,,,,1096,0,10A100020,現金及び預金,,,,,5750314,2022-01
+2212,1,52,Credit,2022-01-17,高速代,10A100020,現金及び預金,,,,,0,3621,10E201120,車両費,,,,,26743657,2022-01
+2212,2,52,Debit,2022-01-17,高速代,10E201120,車両費,,,,,1096,0,10A100020,現金及び預金,,,,,5751410,2022-01
+2212,3,52,Debit,2022-01-17,高速代,10E201120,車両費,,,,,1429,0,10A100020,現金及び預金,,,,,5752839,2022-01
+2213,1,104,Debit,2022-01-17,手土産代 阿部商店,10E200150,交際費,,,,,2100,0,10A100020,現金及び預金,,,,,3495210,2022-01
+2213,1,104,Credit,2022-01-17,手土産代 阿部商店,10A100020,現金及び預金,,,,,0,2100,10E200150,交際費,,,,,26741557,2022-01
+2214,1,68,Debit,2022-01-18,飲食代 居酒屋田舎3名,10E200150,交際費,,,,,11684,0,10A100020,現金及び預金,,,,,3506894,2022-01
+2214,1,68,Credit,2022-01-18,飲食代 居酒屋田舎3名,10A100020,現金及び預金,,,,,0,11684,10E200150,交際費,,,,,26729873,2022-01
+2215,1,82,Debit,2022-01-18,タクシー代,10E201230,旅費及び交通費,,,,,5000,0,10A100020,現金及び預金,,,,,10459341,2022-01
+2215,1,82,Credit,2022-01-18,タクシー代,10A100020,現金及び預金,,,,,0,5000,10E201230,旅費及び交通費,,,,,26724873,2022-01
+2216,1,148,Debit,2022-01-18,ガソリン代,10E201120,車両費,,,,,6613,0,10A100020,現金及び預金,,,,,5759452,2022-01
+2216,1,148,Credit,2022-01-18,ガソリン代,10A100020,現金及び預金,,,,,0,7233,10E201120,車両費,,,,,26717640,2022-01
+2216,2,148,Debit,2022-01-18,高速代,10E201120,車両費,,,,,620,0,10A100020,現金及び預金,,,,,5760072,2022-01
+2217,1,69,Debit,2022-01-19,お茶代他,10E201270,雑費,,,,,2746,0,10A100020,現金及び預金,,,,,4456274,2022-01
+2217,1,69,Credit,2022-01-19,お茶代他,10A100020,現金及び預金,,,,,0,2746,10E201270,雑費,,,,,26714894,2022-01
+2218,1,105,Debit,2022-01-19,飲食代 和食ダイニング彩6名,10E200150,交際費,,,,,23372,0,10A100020,現金及び預金,,,,,3530266,2022-01
+2218,1,105,Credit,2022-01-19,飲食代 和食ダイニング彩6名,10A100020,現金及び預金,,,,,0,83802,10E200150,交際費,,,,,26631092,2022-01
+2218,2,105,Debit,2022-01-19,飲食代 スナック北新地,10E200150,交際費,,,,,39096,0,10A100020,現金及び預金,,,,,3569362,2022-01
+2218,3,105,Debit,2022-01-19,飲食代 スナック寺地,10E200150,交際費,,,,,21334,0,10A100020,現金及び預金,,,,,3590696,2022-01
+2219,1,1,Debit,2022-01-20,残業夜食 軽減税率,10E200140,福利厚生費,,,,,21600,0,10A100020,現金及び預金,,,,,4390545,2022-01
+2219,1,1,Credit,2022-01-20,残業夜食 軽減税率,10A100020,現金及び預金,,,,,0,21600,10E200140,福利厚生費,,,,,26609492,2022-01
+2220,1,6,Debit,2022-01-20,広告料,10E200050,広告宣伝費,,,,,5000,0,10A100020,現金及び預金,,,,,1640700,2022-01
+2220,1,6,Credit,2022-01-20,広告料,10A100020,現金及び預金,,,,,0,5000,10E200050,広告宣伝費,,,,,26604492,2022-01
+2221,1,12,Debit,2022-01-20,ガソリン代,10E201120,車両費,,,,,4762,0,10A100020,現金及び預金,,,,,5764834,2022-01
+2221,1,12,Credit,2022-01-20,ガソリン代,10A100020,現金及び預金,,,,,0,9193,10E201120,車両費,,,,,26595299,2022-01
+2221,2,12,Debit,2022-01-20,ガソリン代,10E201120,車両費,,,,,4431,0,10A100020,現金及び預金,,,,,5769265,2022-01
+2222,1,24,Debit,2022-01-20,JR回数券,10E201230,旅費及び交通費,,,,,82620,0,10A100020,現金及び預金,,,,,10541961,2022-01
+2222,1,24,Credit,2022-01-20,JR回数券,10A100020,現金及び預金,,,,,0,82620,10E201230,旅費及び交通費,,,,,26512679,2022-01
+2223,1,31,Debit,2022-01-20,コピー代,10E201110,事務用消耗品費,,,,,3152,0,10B100630,未払金,,,,,1158983,2022-01
+2223,1,31,Credit,2022-01-20,コピー代,10B100630,未払金,,,,,0,3152,10E201110,事務用消耗品費,,,,,4545399,2022-01
+2224,1,34,Debit,2022-01-20,電気代,10E201040,水道光熱費,,,,,69196,0,10A100020,現金及び預金,10,北海道 駅前,,,5483133,2022-01
+2224,1,34,Credit,2022-01-20,電気代,10A100020,現金及び預金,10,北海道 駅前,,,0,72921,10E201040,水道光熱費,,,,,26439758,2022-01
+2224,2,34,Debit,2022-01-20,水道代,10E201040,水道光熱費,,,,,3725,0,10A100020,現金及び預金,10,北海道 駅前,,,5486858,2022-01
+2225,1,48,Debit,2022-01-20,ガソリン代,10E201120,車両費,,,,,4303,0,10A100020,現金及び預金,,,,,5773568,2022-01
+2225,1,48,Credit,2022-01-20,ガソリン代,10A100020,現金及び預金,,,,,0,4303,10E201120,車両費,,,,,26435455,2022-01
+2226,1,53,Debit,2022-01-20,高速代,10E201120,車両費,,,,,381,0,10A100020,現金及び預金,,,,,5773949,2022-01
+2226,1,53,Credit,2022-01-20,高速代,10A100020,現金及び預金,,,,,0,2381,10E201120,車両費,,,,,26433074,2022-01
+2226,2,53,Debit,2022-01-20,高速代,10E201120,車両費,,,,,1000,0,10A100020,現金及び預金,,,,,5774949,2022-01
+2226,3,53,Debit,2022-01-20,高速代,10E201120,車両費,,,,,1000,0,10A100020,現金及び預金,,,,,5775949,2022-01
+2227,1,63,Debit,2022-01-20,お茶代,10E200140,福利厚生費,,,,,10100,0,10B100630,未払金,,,,,4400645,2022-01
+2227,1,63,Credit,2022-01-20,お茶代,10B100630,未払金,,,,,0,10100,10E200140,福利厚生費,,,,,4555499,2022-01
+2228,1,64,Debit,2022-01-20,電気料,10E201040,水道光熱費,,,,,168910,0,10A100020,現金及び預金,20,みずほ 本店,,,5655768,2022-01
+2228,1,64,Credit,2022-01-20,電気料,10A100020,現金及び預金,20,みずほ 本店,,,0,176650,10E201040,水道光熱費,,,,,26256424,2022-01
+2228,2,64,Debit,2022-01-20,水道料,10E201040,水道光熱費,,,,,7740,0,10A100020,現金及び預金,20,みずほ 本店,,,5663508,2022-01
+2229,1,70,Debit,2022-01-20,有線,10E201270,雑費,,,,,5000,0,10B100630,未払金,,,,,4461274,2022-01
+2229,1,70,Credit,2022-01-20,有線,10B100630,未払金,,,,,0,5000,10E201270,雑費,,,,,4560499,2022-01
+2230,1,71,Debit,2022-01-20,事務用品,10E201110,事務用消耗品費,,,,,3509,0,10B100630,未払金,,,,,1162492,2022-01
+2230,1,71,Credit,2022-01-20,事務用品,10B100630,未払金,,,,,0,38646,10E201110,事務用消耗品費,,,,,4599145,2022-01
+2230,2,71,Debit,2022-01-20,カウンター料金,10E201110,事務用消耗品費,,,,,35137,0,10B100630,未払金,,,,,1197629,2022-01
+2231,1,72,Debit,2022-01-20,カウンター料金,10E201110,事務用消耗品費,,,,,6300,0,10B100630,未払金,,,,,1203929,2022-01
+2231,1,72,Credit,2022-01-20,カウンター料金,10B100630,未払金,,,,,0,6300,10E201110,事務用消耗品費,,,,,4605445,2022-01
+2232,1,76,Debit,2022-01-20,ファイル等,10E200200,消耗品費,,,,,10147,0,10B100630,未払金,,,,,2449922,2022-01
+2232,1,76,Credit,2022-01-20,ファイル等,10B100630,未払金,,,,,0,275968,10E200200,消耗品費,,,,,4881413,2022-01
+2232,2,76,Debit,2022-01-20,飲料水,10E200200,消耗品費,,,,,222011,0,10B100630,未払金,,,,,2671933,2022-01
+2232,3,76,Debit,2022-01-20,名刺代,10E200200,消耗品費,,,,,43810,0,10B100630,未払金,,,,,2715743,2022-01
+2233,1,89,Debit,2022-01-20,電気料,10E201040,水道光熱費,,,,,89831,0,10A100020,現金及び預金,30,三井 名古屋,,,5753339,2022-01
+2233,1,89,Credit,2022-01-20,電気料,10A100020,現金及び預金,30,三井 名古屋,,,0,98372,10E201040,水道光熱費,,,,,26158052,2022-01
+2233,2,89,Debit,2022-01-20,水道料,10E201040,水道光熱費,,,,,4038,0,10A100020,現金及び預金,30,三井 名古屋,,,5757377,2022-01
+2233,3,89,Debit,2022-01-20,ガス代,10E201040,水道光熱費,,,,,4503,0,10A100020,現金及び預金,30,三井 名古屋,,,5761880,2022-01
+2234,1,97,Debit,2022-01-20,コピー代,10E201110,事務用消耗品費,,,,,39887,0,10B100630,未払金,,,,,1243816,2022-01
+2234,1,97,Credit,2022-01-20,コピー代,10B100630,未払金,,,,,0,39887,10E201110,事務用消耗品費,,,,,4921300,2022-01
+2235,1,98,Debit,2022-01-20,事務用品,10E201110,事務用消耗品費,,,,,7063,0,10B100630,未払金,,,,,1250879,2022-01
+2235,1,98,Credit,2022-01-20,事務用品,10B100630,未払金,,,,,0,7063,10E201110,事務用消耗品費,,,,,4928363,2022-01
+2236,1,101,Debit,2022-01-20,広告料,10E200050,広告宣伝費,,,,,52500,0,10B100630,未払金,,,,,1693200,2022-01
+2236,1,101,Credit,2022-01-20,広告料,10B100630,未払金,,,,,0,52500,10E200050,広告宣伝費,,,,,4980863,2022-01
+2237,1,102,Debit,2022-01-20,1月20日伝票No419株式会社 斉藤,10A100020,現金及び預金,,,,,1158996,0,10A100090,売掛金,11,㈱斉藤,,,27317048,2022-01
+2237,1,102,Credit,2022-01-20,1月20日伝票No419株式会社 斉藤,10A100090,売掛金,11,㈱斉藤,,,0,1158996,10A100020,現金及び預金,,,,,173751249,2022-01
+2238,1,103,Debit,2022-01-20,1月20日伝票No420合同会社 たかだ,10A100020,現金及び預金,30,三井 名古屋,,,571347,0,10A100090,売掛金,21,(同)たかだ,,,27888395,2022-01
+2238,1,103,Credit,2022-01-20,1月20日伝票No420合同会社 たかだ,10A100090,売掛金,21,(同)たかだ,,,0,571347,10A100020,現金及び預金,30,三井 名古屋,,,173179902,2022-01
+2239,1,104,Debit,2022-01-20,1月20日伝票No421株式会社 ＹＡＧ,10A100020,現金及び預金,20,みずほ 本店,,,1327677,0,10A100090,売掛金,30,㈱YAG,,,29216072,2022-01
+2239,1,104,Credit,2022-01-20,1月20日伝票No421株式会社 ＹＡＧ,10A100090,売掛金,30,㈱YAG,,,0,1327677,10A100020,現金及び預金,20,みずほ 本店,,,171852225,2022-01
+2240,1,105,Debit,2022-01-20,1月20日伝票No321株式会社 アタッチ,10B100040,買掛金,4,㈱ｱﾀｯﾁ,,,1155555,0,10A100020,現金及び預金,20,みずほ本店,,,100337608,2022-01
+2240,1,105,Credit,2022-01-20,1月20日伝票No321株式会社 アタッチ,10A100020,現金及び預金,20,みずほ本店,,,0,1155555,10B100040,買掛金,4,㈱ｱﾀｯﾁ,,,28060517,2022-01
+2241,1,106,Debit,2022-01-20,1月20日伝票No322株式会社 ハナダ,10B100040,買掛金,6,㈱ﾊﾅﾀﾞ,,,4043244,0,10A100020,現金及び預金,20,みずほ 本店,,,96294364,2022-01
+2241,1,106,Credit,2022-01-20,1月20日伝票No322株式会社 ハナダ,10A100020,現金及び預金,20,みずほ 本店,,,0,4043244,10B100040,買掛金,6,㈱ﾊﾅﾀﾞ,,,24017273,2022-01
+2242,1,107,Debit,2022-01-20,1月20日伝票No323株式会社 まつむら,10B100040,買掛金,11,㈱まつむら,,,5286009,0,10B100030,支払手形,,,,,91008355,2022-01
+2242,1,107,Credit,2022-01-20,1月20日伝票No323株式会社 まつむら,10B100030,支払手形,,,,,0,5286009,10B100040,買掛金,11,㈱まつむら,,,15955799,2022-01
+2243,1,118,Debit,2022-01-20,コピー代,10E201110,事務用消耗品費,,,,,7980,0,10B100630,未払金,,,,,1258859,2022-01
+2243,1,118,Credit,2022-01-20,コピー代,10B100630,未払金,,,,,0,7980,10E201110,事務用消耗品費,,,,,4988843,2022-01
+2244,1,119,Debit,2022-01-20,事務用品,10E201110,事務用消耗品費,,,,,3778,0,10B100630,未払金,,,,,1262637,2022-01
+2244,1,119,Credit,2022-01-20,事務用品,10B100630,未払金,,,,,0,3778,10E201110,事務用消耗品費,,,,,4992621,2022-01
+2245,1,132,Debit,2022-01-20,電気代,10E201040,水道光熱費,,,,,106066,0,10A100020,現金及び預金,40,三菱東京 梅田,,,5867946,2022-01
+2245,1,132,Credit,2022-01-20,電気代,10A100020,現金及び預金,40,三菱東京 梅田,,,0,111948,10E201040,水道光熱費,,,,,23905325,2022-01
+2245,2,132,Debit,2022-01-20,水道代,10E201040,水道光熱費,,,,,5882,0,10A100020,現金及び預金,40,三菱東京 梅田,,,5873828,2022-01
+2246,1,139,Debit,2022-01-20,手形割引 かめだデパート,10A100020,現金及び預金,20,みずほ本店,,,7154819,0,10A100060,受取手形,,,,,31060144,2022-01
+2246,1,139,Credit,2022-01-20,手形割引 かめだデパート,10A100060,受取手形,,,,,0,7208477,10A100020,現金及び預金,20,みずほ本店,,,-34408238,2022-01
+2246,2,139,Debit,2022-01-20,手形割引料,10E300020,支払利息,,,,,53658,0,10A100060,受取手形,,,,,1103743,2022-01
+2247,1,144,Debit,2022-01-20,ガソリン代,10E201120,車両費,,,,,4351,0,10A100020,現金及び預金,,,,,5780300,2022-01
+2247,1,144,Credit,2022-01-20,ガソリン代,10A100020,現金及び預金,,,,,0,11818,10E201120,車両費,,,,,31048326,2022-01
+2247,2,144,Debit,2022-01-20,ガソリン代,10E201120,車両費,,,,,7162,0,10A100020,現金及び預金,,,,,5787462,2022-01
+2247,3,144,Debit,2022-01-20,ガソリン代,10E201120,車両費,,,,,305,0,10A100020,現金及び預金,,,,,5787767,2022-01
+2248,1,169,Debit,2022-01-20,電気料,10E201040,水道光熱費,,,,,94520,0,10A100020,現金及び預金,50,福岡 北九州,,,5968348,2022-01
+2248,1,169,Credit,2022-01-20,電気料,10A100020,現金及び預金,50,福岡 北九州,,,0,100601,10E201040,水道光熱費,,,,,30947725,2022-01
+2248,2,169,Debit,2022-01-20,水道料,10E201040,水道光熱費,,,,,6081,0,10A100020,現金及び預金,50,福岡 北九州,,,5974429,2022-01
+2249,1,8,Debit,2022-01-21,定例ミーティング会費,10E200150,交際費,,,,,20000,0,10A100020,現金及び預金,,,,,3610696,2022-01
+2249,1,8,Credit,2022-01-21,定例ミーティング会費,10A100020,現金及び預金,,,,,0,20000,10E200150,交際費,,,,,30927725,2022-01
+2250,1,25,Debit,2022-01-21,旅費,10E201230,旅費及び交通費,,,,,56000,0,10A100020,現金及び預金,,,,,10597961,2022-01
+2250,1,25,Credit,2022-01-21,旅費,10A100020,現金及び預金,,,,,0,56000,10E201230,旅費及び交通費,,,,,30871725,2022-01
+2251,1,69,Debit,2022-01-21,お茶代他,10E201270,雑費,,,,,2388,0,10A100020,現金及び預金,,,,,4463662,2022-01
+2251,1,69,Credit,2022-01-21,お茶代他,10A100020,現金及び預金,,,,,0,2388,10E201270,雑費,,,,,30869337,2022-01
+2252,1,82,Debit,2022-01-21,ガソリン代,10E201120,車両費,,,,,21324,0,10B100630,未払金,,,,,5809091,2022-01
+2252,1,82,Credit,2022-01-21,ガソリン代,10B100630,未払金,,,,,0,21324,10E201120,車両費,,,,,5013945,2022-01
+2253,1,126,Debit,2022-01-21,収入印紙,10E200210,租税公課,,,,,2000,0,10A100020,現金及び預金,,,,,243000,2022-01
+2253,1,126,Credit,2022-01-21,収入印紙,10A100020,現金及び預金,,,,,0,2000,10E200210,租税公課,,,,,30867337,2022-01
+2254,1,160,Debit,2022-01-21,出張旅費,10E201230,旅費及び交通費,,,,,70000,0,10A100020,現金及び預金,,,,,10667961,2022-01
+2254,1,160,Credit,2022-01-21,出張旅費,10A100020,現金及び預金,,,,,0,70000,10E201230,旅費及び交通費,,,,,30797337,2022-01
+2255,1,163,Debit,2022-01-21,会費,10E201140,諸会費,,,,,18000,0,10A100020,現金及び預金,,,,,1106000,2022-01
+2255,1,163,Credit,2022-01-21,会費,10A100020,現金及び預金,,,,,0,18000,10E201140,諸会費,,,,,30779337,2022-01
+2256,1,3,Debit,2022-01-22,宿泊代,10E200140,福利厚生費,,,,,25450,0,10B100630,未払金,,,,,4426095,2022-01
+2256,1,3,Credit,2022-01-22,宿泊代,10B100630,未払金,,,,,0,25450,10E200140,福利厚生費,,,,,5039395,2022-01
+2257,1,90,Debit,2022-01-22,ダスキン代,10E201270,雑費,,,,,10500,0,10A100020,現金及び預金,,,,,4474162,2022-01
+2257,1,90,Credit,2022-01-22,ダスキン代,10A100020,現金及び預金,,,,,0,10500,10E201270,雑費,,,,,30768837,2022-01
+2258,1,95,Debit,2022-01-22,清掃料,10E201270,雑費,,,,,71675,0,10B100630,未払金,,,,,4545837,2022-01
+2258,1,95,Credit,2022-01-22,清掃料,10B100630,未払金,,,,,0,71675,10E201270,雑費,,,,,5111070,2022-01
+2259,1,138,Debit,2022-01-22,駐車代,10E201120,車両費,,,,,4430,0,10A100020,現金及び預金,,,,,5813521,2022-01
+2259,1,138,Credit,2022-01-22,駐車代,10A100020,現金及び預金,,,,,0,31140,10E201120,車両費,,,,,30737697,2022-01
+2259,2,138,Debit,2022-01-22,高速代,10E201120,車両費,,,,,8115,0,10A100020,現金及び預金,,,,,5821636,2022-01
+2259,3,138,Debit,2022-01-22,高速代,10E201120,車両費,,,,,1166,0,10A100020,現金及び預金,,,,,5822802,2022-01
+2259,4,138,Debit,2022-01-22,高速代,10E201120,車両費,,,,,6230,0,10A100020,現金及び預金,,,,,5829032,2022-01
+2259,5,138,Debit,2022-01-22,高速代,10E201120,車両費,,,,,2140,0,10A100020,現金及び預金,,,,,5831172,2022-01
+2259,6,138,Debit,2022-01-22,ガソリン代,10E201120,車両費,,,,,9059,0,10A100020,現金及び預金,,,,,5840231,2022-01
+2260,1,161,Debit,2022-01-22,旅費,10E201230,旅費及び交通費,,,,,7260,0,10A100020,現金及び預金,,,,,10675221,2022-01
+2260,1,161,Credit,2022-01-22,旅費,10A100020,現金及び預金,,,,,0,7260,10E201230,旅費及び交通費,,,,,30730437,2022-01
+2261,1,166,Debit,2022-01-22,ダスキン代,10E201270,雑費,,,,,1890,0,10A100020,現金及び預金,,,,,4547727,2022-01
+2261,1,166,Credit,2022-01-22,ダスキン代,10A100020,現金及び預金,,,,,0,1890,10E201270,雑費,,,,,30728547,2022-01
+2262,1,26,Debit,2022-01-23,旅費,10E201230,旅費及び交通費,,,,,11000,0,10A100020,現金及び預金,,,,,10686221,2022-01
+2262,1,26,Credit,2022-01-23,旅費,10A100020,現金及び預金,,,,,0,11000,10E201230,旅費及び交通費,,,,,30717547,2022-01
+2263,1,28,Debit,2022-01-23,タクシー代,10E201230,旅費及び交通費,,,,,2420,0,10B100630,未払金,,,,,10688641,2022-01
+2263,1,28,Credit,2022-01-23,タクシー代,10B100630,未払金,,,,,0,2420,10E201230,旅費及び交通費,,,,,5113490,2022-01
+2264,1,54,Debit,2022-01-23,高速代,10E201120,車両費,,,,,1810,0,10A100020,現金及び預金,,,,,5842041,2022-01
+2264,1,54,Credit,2022-01-23,高速代,10A100020,現金及び預金,,,,,0,4382,10E201120,車両費,,,,,30713165,2022-01
+2264,2,54,Debit,2022-01-23,高速代,10E201120,車両費,,,,,2572,0,10A100020,現金及び預金,,,,,5844613,2022-01
+2265,1,140,Debit,2022-01-23,旅費,10E201230,旅費及び交通費,,,,,4970,0,10A100020,現金及び預金,,,,,10693611,2022-01
+2265,1,140,Credit,2022-01-23,旅費,10A100020,現金及び預金,,,,,0,4970,10E201230,旅費及び交通費,,,,,30708195,2022-01
+2266,1,158,Debit,2022-01-23,出張旅費,10E201230,旅費及び交通費,,,,,9500,0,10A100020,現金及び預金,,,,,10703111,2022-01
+2266,1,158,Credit,2022-01-23,出張旅費,10A100020,現金及び預金,,,,,0,9500,10E201230,旅費及び交通費,,,,,30698695,2022-01
+2267,1,108,Debit,2022-01-24,コーヒー代2名,10E200150,交際費,,,,,1360,0,10A100020,現金及び預金,,,,,3612056,2022-01
+2267,1,108,Credit,2022-01-24,コーヒー代2名,10A100020,現金及び預金,,,,,0,1360,10E200150,交際費,,,,,30697335,2022-01
+2268,1,114,Debit,2022-01-24,新聞代,10E201160,図書費,,,,,2540,0,10A100020,現金及び預金,,,,,227378,2022-01
+2268,1,114,Credit,2022-01-24,新聞代,10A100020,現金及び預金,,,,,0,5404,10E201160,図書費,,,,,30691931,2022-01
+2268,2,114,Debit,2022-01-24,新聞代,10E201160,図書費,,,,,2864,0,10A100020,現金及び預金,,,,,230242,2022-01
+2269,1,120,Debit,2022-01-24,業務委託費,10E200020,販売手数料,,,,,651000,0,10B100630,未払金,,,,,20651267,2022-01
+2269,1,120,Credit,2022-01-24,業務委託費,10B100630,未払金,,,,,0,651000,10E200020,販売手数料,,,,,5764490,2022-01
+2270,1,137,Debit,2022-01-24,有線,10E201270,雑費,,,,,6000,0,10B100630,未払金,,,,,4553727,2022-01
+2270,1,137,Credit,2022-01-24,有線,10B100630,未払金,,,,,0,48858,10E201270,雑費,,,,,5813348,2022-01
+2270,2,137,Debit,2022-01-24,警備料,10E201270,雑費,,,,,42858,0,10B100630,未払金,,,,,4596585,2022-01
+2270,3,137,Debit,2022-01-24,高速料,10E201120,車両費,,,,,23547,0,10A100020,現金及び預金,40,三菱東京 梅田,,,5868160,2022-01
+2270,3,137,Credit,2022-01-24,高速料,10A100020,現金及び預金,40,三菱東京 梅田,,,0,23547,10E201120,車両費,,,,,30668384,2022-01
+2270,4,137,Debit,2022-01-24,清掃料,10E201270,雑費,,,,,65540,0,10B100630,未払金,,,,,4662125,2022-01
+2270,4,137,Credit,2022-01-24,清掃料,10B100630,未払金,,,,,0,65540,10E201270,雑費,,,,,5878888,2022-01
+2270,5,137,Debit,2022-01-24,ガソリン代,10E201120,車両費,,,,,13211,0,10A100020,現金及び預金,,,,,5881371,2022-01
+2270,5,137,Credit,2022-01-24,ガソリン代,10A100020,現金及び預金,,,,,0,13211,10E201120,車両費,,,,,30655173,2022-01
+2271,1,146,Debit,2022-01-24,業務委託費,10E200020,販売手数料,,,,,168000,0,10B100630,未払金,,,,,20819267,2022-01
+2271,1,146,Credit,2022-01-24,業務委託費,10B100630,未払金,,,,,0,168000,10E200020,販売手数料,,,,,6046888,2022-01
+2272,1,155,Debit,2022-01-24,ガソリン代,10E201120,車両費,,,,,7099,0,10A100020,現金及び預金,,,,,5888470,2022-01
+2272,1,155,Credit,2022-01-24,ガソリン代,10A100020,現金及び預金,,,,,0,7099,10E201120,車両費,,,,,30648074,2022-01
+2273,1,62,Debit,2022-01-25,携帯代,10E200180,通信費,,,,,79525,0,10A100020,現金及び預金,20,みずほ 本店,,,10714996,2022-01
+2273,1,62,Credit,2022-01-25,携帯代,10A100020,現金及び預金,20,みずほ 本店,,,0,79525,10E200180,通信費,,,,,30568549,2022-01
+2274,1,72,Debit,2022-01-25,新聞代,10E201160,図書費,,,,,2864,0,10A100020,現金及び預金,,,,,233106,2022-01
+2274,1,72,Credit,2022-01-25,新聞代,10A100020,現金及び預金,,,,,0,9078,10E201160,図書費,,,,,30559471,2022-01
+2274,2,72,Debit,2022-01-25,新聞代,10E201160,図書費,,,,,2815,0,10A100020,現金及び預金,,,,,235921,2022-01
+2274,3,72,Debit,2022-01-25,新聞代,10E201160,図書費,,,,,3399,0,10A100020,現金及び預金,,,,,239320,2022-01
+2275,1,85,Debit,2022-01-25,1月給与その他 0001 役員,10E200090,役員報酬,,,,,1720000,0,10A100020,現金及び預金,20,みずほ 本店,,,17200000,2022-01
+2275,1,85,Credit,2022-01-25,1月給与その他 0001 役員,10A100020,現金及び預金,20,みずほ 本店,,,0,1124255,10E200090,役員報酬,,,,,29435216,2022-01
+2275,2,85,Credit,2022-01-25,1月給与その他 0001 役員,10B100690,預り金,1,保険料,,,0,120411,10E200090,役員報酬,,,,,4199647,2022-01
+2275,3,85,Credit,2022-01-25,1月給与その他 0001 役員,10B100690,預り金,2,住民税,,,0,171200,10E200090,役員報酬,,,,,4370847,2022-01
+2275,4,85,Credit,2022-01-25,1月給与その他 0001 役員,10B100690,預り金,3,源泉税,,,0,164442,10E200090,役員報酬,,,,,4535289,2022-01
+2275,5,85,Credit,2022-01-25,1月給与その他 0001 役員,10B100690,預り金,4,貯蓄・保険,,,0,133972,10E200090,役員報酬,,,,,4669261,2022-01
+2275,6,85,Credit,2022-01-25,1月給与その他 0001 役員,10B100690,預り金,9,その他,,,0,5720,10E200090,役員報酬,,,,,4674981,2022-01
+2275,7,85,Debit,2022-01-25,1月給与その他 0020 営業部,10E200370,給料及び手当,,,,,1820930,0,10A100020,現金及び預金,20,みずほ 本店,,,48879902,2022-01
+2275,7,85,Credit,2022-01-25,1月給与その他 0020 営業部,10A100020,現金及び預金,20,みずほ 本店,,,0,1349186,10E200370,給料及び手当,,,,,28086030,2022-01
+2275,8,85,Credit,2022-01-25,1月給与その他 0020 営業部,10B100690,預り金,1,保険料,,,0,236045,10E200090,役員報酬,,,,,4911026,2022-01
+2275,9,85,Credit,2022-01-25,1月給与その他 0020 営業部,10B100690,預り金,2,住民税,,,0,104300,10E200090,役員報酬,,,,,5015326,2022-01
+2275,10,85,Credit,2022-01-25,1月給与その他 0020 営業部,10B100690,預り金,3,源泉税,,,0,28970,10E200090,役員報酬,,,,,5044296,2022-01
+2275,11,85,Credit,2022-01-25,1月給与その他 0020 営業部,10B100690,預り金,4,貯蓄・保険,,,0,43305,10E200090,役員報酬,,,,,5087601,2022-01
+2275,12,85,Credit,2022-01-25,1月給与その他 0020 営業部,10B100690,預り金,9,その他,,,0,59124,10E200090,役員報酬,,,,,5146725,2022-01
+2275,13,85,Debit,2022-01-25,1月給与その他 1000 札幌営業所,10E200370,給料及び手当,,,,,790713,0,10A100020,現金及び預金,20,みずほ 本店,,,49670615,2022-01
+2275,13,85,Credit,2022-01-25,1月給与その他 1000 札幌営業所,10A100020,現金及び預金,20,みずほ 本店,,,0,543137,10E200370,給料及び手当,,,,,27542893,2022-01
+2275,14,85,Credit,2022-01-25,1月給与その他 1000 札幌営業所,10B100690,預り金,1,保険料,,,0,103424,10E200090,役員報酬,,,,,5250149,2022-01
+2275,15,85,Credit,2022-01-25,1月給与その他 1000 札幌営業所,10B100690,預り金,2,住民税,,,0,46300,10E200090,役員報酬,,,,,5296449,2022-01
+2275,16,85,Credit,2022-01-25,1月給与その他 1000 札幌営業所,10B100690,預り金,3,源泉税,,,0,11060,10E200090,役員報酬,,,,,5307509,2022-01
+2275,17,85,Credit,2022-01-25,1月給与その他 1000 札幌営業所,10B100690,預り金,4,貯蓄・保険,,,0,50648,10E200090,役員報酬,,,,,5358157,2022-01
+2275,18,85,Credit,2022-01-25,1月給与その他 1000 札幌営業所,10B100690,預り金,9,その他,,,0,36144,10E200090,役員報酬,,,,,5394301,2022-01
+2275,19,85,Debit,2022-01-25,1月給与その他 3000 名古屋営業所,10E200370,給料及び手当,,,,,735510,0,10A100020,現金及び預金,20,みずほ 本店,,,50406125,2022-01
+2275,19,85,Credit,2022-01-25,1月給与その他 3000 名古屋営業所,10A100020,現金及び預金,20,みずほ 本店,,,0,514007,10E200370,給料及び手当,,,,,27028886,2022-01
+2275,20,85,Credit,2022-01-25,1月給与その他 3000 名古屋営業所,10B100690,預り金,1,保険料,,,0,96352,10E200090,役員報酬,,,,,5490653,2022-01
+2275,21,85,Credit,2022-01-25,1月給与その他 3000 名古屋営業所,10B100690,預り金,2,住民税,,,0,42600,10E200090,役員報酬,,,,,5533253,2022-01
+2275,22,85,Credit,2022-01-25,1月給与その他 3000 名古屋営業所,10B100690,預り金,3,源泉税,,,0,6380,10E200090,役員報酬,,,,,5539633,2022-01
+2275,23,85,Credit,2022-01-25,1月給与その他 3000 名古屋営業所,10B100690,預り金,4,貯蓄・保険,,,0,40759,10E200090,役員報酬,,,,,5580392,2022-01
+2275,24,85,Credit,2022-01-25,1月給与その他 3000 名古屋営業所,10B100690,預り金,9,その他,,,0,35412,10E200090,役員報酬,,,,,5615804,2022-01
+2275,25,85,Debit,2022-01-25,1月給与その他 4000 大阪支店,10E200370,給料及び手当,,,,,917200,0,10A100020,現金及び預金,20,みずほ 本店,,,51323325,2022-01
+2275,25,85,Credit,2022-01-25,1月給与その他 4000 大阪支店,10A100020,現金及び預金,20,みずほ 本店,,,0,698220,10E200370,給料及び手当,,,,,26330666,2022-01
+2275,26,85,Credit,2022-01-25,1月給与その他 4000 大阪支店,10B100690,預り金,1,保険料,,,0,119477,10E200090,役員報酬,,,,,5735281,2022-01
+2275,27,85,Credit,2022-01-25,1月給与その他 4000 大阪支店,10B100690,預り金,2,住民税,,,0,53400,10E200090,役員報酬,,,,,5788681,2022-01
+2275,28,85,Credit,2022-01-25,1月給与その他 4000 大阪支店,10B100690,預り金,3,源泉税,,,0,14030,10E200090,役員報酬,,,,,5802711,2022-01
+2275,29,85,Credit,2022-01-25,1月給与その他 4000 大阪支店,10B100690,預り金,4,貯蓄・保険,,,0,13570,10E200090,役員報酬,,,,,5816281,2022-01
+2275,30,85,Credit,2022-01-25,1月給与その他 4000 大阪支店,10B100690,預り金,9,その他,,,0,18503,10E200090,役員報酬,,,,,5834784,2022-01
+2275,31,85,Debit,2022-01-25,1月給与その他 5000 九州営業所,10E200370,給料及び手当,,,,,549500,0,10A100020,現金及び預金,20,みずほ 本店,,,51872825,2022-01
+2275,31,85,Credit,2022-01-25,1月給与その他 5000 九州営業所,10A100020,現金及び預金,20,みずほ 本店,,,0,412755,10E200370,給料及び手当,,,,,25917911,2022-01
+2275,32,85,Credit,2022-01-25,1月給与その他 5000 九州営業所,10B100690,預り金,1,保険料,,,0,67268,10E200090,役員報酬,,,,,5902052,2022-01
+2275,33,85,Credit,2022-01-25,1月給与その他 5000 九州営業所,10B100690,預り金,2,住民税,,,0,31700,10E200090,役員報酬,,,,,5933752,2022-01
+2275,34,85,Credit,2022-01-25,1月給与その他 5000 九州営業所,10B100690,預り金,3,源泉税,,,0,6740,10E200090,役員報酬,,,,,5940492,2022-01
+2275,35,85,Credit,2022-01-25,1月給与その他 5000 九州営業所,10B100690,預り金,4,貯蓄・保険,,,0,18540,10E200090,役員報酬,,,,,5959032,2022-01
+2275,36,85,Credit,2022-01-25,1月給与その他 5000 九州営業所,10B100690,預り金,9,その他,,,0,12497,10E200090,役員報酬,,,,,5971529,2022-01
+2276,1,88,Debit,2022-01-25,新聞代,10E201160,図書費,,,,,3568,0,10A100020,現金及び預金,,,,,242888,2022-01
+2276,1,88,Credit,2022-01-25,新聞代,10A100020,現金及び預金,,,,,0,3568,10E201160,図書費,,,,,25914343,2022-01
+2277,1,108,Debit,2022-01-25,1月25日伝票No422今井百貨店,10A100060,受取手形,,,,,17254140,0,10A100090,売掛金,2,今井百貨店,,,-17154098,2022-01
+2277,1,108,Credit,2022-01-25,1月25日伝票No422今井百貨店,10A100090,売掛金,2,今井百貨店,,,0,17254140,10A100060,受取手形,,,,,154598085,2022-01
+2278,1,109,Debit,2022-01-25,1月25日伝票No423株式会社 総合経営,10A100020,現金及び預金,30,三井 名古屋,,,1748532,0,10A100090,売掛金,7,㈱総合経営,,,27662875,2022-01
+2278,1,109,Credit,2022-01-25,1月25日伝票No423株式会社 総合経営,10A100090,売掛金,7,㈱総合経営,,,0,1748532,10A100020,現金及び預金,30,三井 名古屋,,,152849553,2022-01
+2279,1,110,Debit,2022-01-25,1月25日伝票No424株式会社 鎌田商店,10A100020,現金及び預金,40,三菱東京 梅田,,,835689,0,10A100090,売掛金,23,㈱鎌田商店,,,28498564,2022-01
+2279,1,110,Credit,2022-01-25,1月25日伝票No424株式会社 鎌田商店,10A100090,売掛金,23,㈱鎌田商店,,,0,835689,10A100020,現金及び預金,40,三菱東京 梅田,,,152013864,2022-01
+2280,1,111,Debit,2022-01-25,タクシー代,10E201230,旅費及び交通費,,,,,13570,0,10B100630,未払金,,,,,10716681,2022-01
+2280,1,111,Credit,2022-01-25,タクシー代,10B100630,未払金,,,,,0,13570,10E201230,旅費及び交通費,,,,,6060458,2022-01
+2280,2,111,Debit,2022-01-25,1月25日伝票No425株式会社 小林マーケット,10A100020,現金及び預金,10,北海道 駅前,,,4567306,0,10A100090,売掛金,25,㈱小林ﾏｰｹｯﾄ,,,33065870,2022-01
+2280,2,111,Credit,2022-01-25,1月25日伝票No425株式会社 小林マーケット,10A100090,売掛金,25,㈱小林ﾏｰｹｯﾄ,,,0,4567306,10A100020,現金及び預金,10,北海道 駅前,,,147446558,2022-01
+2281,1,131,Debit,2022-01-25,会費,10E201140,諸会費,,,,,24000,0,10A100020,現金及び預金,40,三菱東京 梅田,,,1130000,2022-01
+2281,1,131,Credit,2022-01-25,会費,10A100020,現金及び預金,40,三菱東京 梅田,,,0,24000,10E201140,諸会費,,,,,33041870,2022-01
+2282,1,171,Debit,2022-01-25,携帯代,10E200180,通信費,,,,,93574,0,10A100020,現金及び預金,50,福岡 北九州,,,10808570,2022-01
+2282,1,171,Credit,2022-01-25,携帯代,10A100020,現金及び預金,50,福岡 北九州,,,0,93574,10E200180,通信費,,,,,32948296,2022-01
+2283,1,172,Debit,2022-01-25,業務委託費支払い,10E200020,販売手数料,,,,,144000,0,10B100630,未払金,,,,,20963267,2022-01
+2283,1,172,Credit,2022-01-25,業務委託費支払い,10B100630,未払金,,,,,0,144000,10E200020,販売手数料,,,,,6204458,2022-01
+2284,1,29,Debit,2022-01-26,携帯電話代,10E200180,通信費,,,,,77698,0,10A100020,現金及び預金,10,北海道 駅前,,,10886268,2022-01
+2284,1,29,Credit,2022-01-26,携帯電話代,10A100020,現金及び預金,10,北海道 駅前,,,0,77698,10E200180,通信費,,,,,32870598,2022-01
+2285,1,37,Debit,2022-01-26,業務委託費,10E200020,販売手数料,,,,,1357900,0,10B100630,未払金,,,,,22321167,2022-01
+2285,1,37,Credit,2022-01-26,業務委託費,10B100630,未払金,,,,,0,1357900,10E200020,販売手数料,,,,,7562358,2022-01
+2286,1,59,Debit,2022-01-26,旅費,10E201230,旅費及び交通費,,,,,42000,0,10A100020,現金及び預金,,,,,10758681,2022-01
+2286,1,59,Credit,2022-01-26,旅費,10A100020,現金及び預金,,,,,0,42000,10E201230,旅費及び交通費,,,,,32828598,2022-01
+2287,1,78,Debit,2022-01-26,業務委託費支払い,10E200020,販売手数料,,,,,189000,0,10B100630,未払金,,,,,22510167,2022-01
+2287,1,78,Credit,2022-01-26,業務委託費支払い,10B100630,未払金,,,,,0,189000,10E200020,販売手数料,,,,,7751358,2022-01
+2288,1,87,Debit,2022-01-26,携帯代,10E200180,通信費,,,,,57592,0,10A100020,現金及び預金,30,三井 名古屋,,,10943860,2022-01
+2288,1,87,Credit,2022-01-26,携帯代,10A100020,現金及び預金,30,三井 名古屋,,,0,57592,10E200180,通信費,,,,,32771006,2022-01
+2289,1,107,Debit,2022-01-26,出産祝い,10E200150,交際費,,,,,10000,0,10A100020,現金及び預金,,,,,3622056,2022-01
+2289,1,107,Credit,2022-01-26,出産祝い,10A100020,現金及び預金,,,,,0,10000,10E200150,交際費,,,,,32761006,2022-01
+2290,1,113,Debit,2022-01-26,携帯代,10E200180,通信費,,,,,100364,0,10A100020,現金及び預金,40,三菱東京 梅田,,,11044224,2022-01
+2290,1,113,Credit,2022-01-26,携帯代,10A100020,現金及び預金,40,三菱東京 梅田,,,0,100364,10E200180,通信費,,,,,32660642,2022-01
+2291,1,14,Debit,2022-01-27,ガソリン代,10E201120,車両費,,,,,3000,0,10A100020,現金及び預金,,,,,5891470,2022-01
+2291,1,14,Credit,2022-01-27,ガソリン代,10A100020,現金及び預金,,,,,0,3000,10E201120,車両費,,,,,32657642,2022-01
+2292,1,30,Debit,2022-01-27,保険料支払,10E200240,保険料,,,,,54320,0,10A100020,現金及び預金,10,北海道 駅前,,,2923700,2022-01
+2292,1,30,Credit,2022-01-27,保険料支払,10A100020,現金及び預金,10,北海道 駅前,,,0,54320,10E200240,保険料,,,,,32603322,2022-01
+2293,1,38,Debit,2022-01-27,宿泊費,10E200140,福利厚生費,,,,,48164,0,10B100630,未払金,,,,,4474259,2022-01
+2293,1,38,Credit,2022-01-27,宿泊費,10B100630,未払金,,,,,0,48164,10E200140,福利厚生費,,,,,7799522,2022-01
+2294,1,39,Debit,2022-01-27,会費,10E200140,福利厚生費,,,,,9000,0,10A100020,現金及び預金,,,,,4483259,2022-01
+2294,1,39,Credit,2022-01-27,会費,10A100020,現金及び預金,,,,,0,9000,10E200140,福利厚生費,,,,,32594322,2022-01
+2295,1,121,Debit,2022-01-27,お茶代,10E200140,福利厚生費,,,,,11100,0,10A100020,現金及び預金,,,,,4494359,2022-01
+2295,1,121,Credit,2022-01-27,お茶代,10A100020,現金及び預金,,,,,0,11100,10E200140,福利厚生費,,,,,32583222,2022-01
+2296,1,170,Debit,2022-01-27,新聞代,10E201160,図書費,,,,,3007,0,10A100020,現金及び預金,,,,,245895,2022-01
+2296,1,170,Credit,2022-01-27,新聞代,10A100020,現金及び預金,,,,,0,3007,10E201160,図書費,,,,,32580215,2022-01
+2297,1,13,Debit,2022-01-28,タイヤ交換代,10E201120,車両費,,,,,2520,0,10A100020,現金及び預金,,,,,5893990,2022-01
+2297,1,13,Credit,2022-01-28,タイヤ交換代,10A100020,現金及び預金,,,,,0,2520,10E201120,車両費,,,,,32577695,2022-01
+2298,1,27,Debit,2022-01-28,旅費,10E201230,旅費及び交通費,,,,,26667,0,10A100020,現金及び預金,,,,,10785348,2022-01
+2298,1,27,Credit,2022-01-28,旅費,10A100020,現金及び預金,,,,,0,77620,10E201230,旅費及び交通費,,,,,32500075,2022-01
+2298,2,27,Debit,2022-01-28,旅費,10E201230,旅費及び交通費,,,,,29524,0,10A100020,現金及び預金,,,,,10814872,2022-01
+2298,3,27,Debit,2022-01-28,旅費,10E201230,旅費及び交通費,,,,,21429,0,10A100020,現金及び預金,,,,,10836301,2022-01
+2299,1,35,Debit,2022-01-28,新聞代,10E201160,図書費,,,,,3925,0,10A100020,現金及び預金,,,,,249820,2022-01
+2299,1,35,Credit,2022-01-28,新聞代,10A100020,現金及び預金,,,,,0,3925,10E201160,図書費,,,,,32496150,2022-01
+2300,1,81,Debit,2022-01-28,お茶代,10E200140,福利厚生費,,,,,20200,0,10B100630,未払金,,,,,4514559,2022-01
+2300,1,81,Credit,2022-01-28,お茶代,10B100630,未払金,,,,,0,20200,10E200140,福利厚生費,,,,,7819722,2022-01
+2301,1,83,Debit,2022-01-28,車両管理費,10E201120,車両費,,,,,45000,0,10A100020,現金及び預金,,,,,5938990,2022-01
+2301,1,83,Credit,2022-01-28,車両管理費,10A100020,現金及び預金,,,,,0,45000,10E201120,車両費,,,,,32451150,2022-01
+2302,1,32,Debit,2022-01-29,事務用品費,10E201110,事務用消耗品費,,,,,2570,0,10B100630,未払金,,,,,1265207,2022-01
+2302,1,32,Credit,2022-01-29,事務用品費,10B100630,未払金,,,,,0,2570,10E201110,事務用消耗品費,,,,,7822292,2022-01
+2303,1,49,Debit,2022-01-30,ガソリン代,10E201120,車両費,,,,,163470,0,10B100630,未払金,,,,,6102460,2022-01
+2303,1,49,Credit,2022-01-30,ガソリン代,10B100630,未払金,,,,,0,163470,10E201120,車両費,,,,,7985762,2022-01
+2303,2,49,Debit,2022-01-30,ガソリン代,10E201120,車両費,,,,,2626,0,10A100020,現金及び預金,,,,,6105086,2022-01
+2303,2,49,Credit,2022-01-30,ガソリン代,10A100020,現金及び預金,,,,,0,8355,10E201120,車両費,,,,,32442795,2022-01
+2303,3,49,Debit,2022-01-30,ガソリン代,10E201120,車両費,,,,,5729,0,10B100630,未払金,,,,,6110815,2022-01
+2304,1,55,Debit,2022-01-30,車両管理費,10E201120,車両費,,,,,23810,0,10A100020,現金及び預金,,,,,6134625,2022-01
+2304,1,55,Credit,2022-01-30,車両管理費,10A100020,現金及び預金,,,,,0,58144,10E201120,車両費,,,,,32384651,2022-01
+2304,2,55,Debit,2022-01-30,車両管理費,10E201120,車両費,,,,,26667,0,10A100020,現金及び預金,,,,,6161292,2022-01
+2304,3,55,Debit,2022-01-30,高速代,10E201120,車両費,,,,,7667,0,10A100020,現金及び預金,,,,,6168959,2022-01
+2305,1,70,Debit,2022-01-30,有線,10E201270,雑費,,,,,6000,0,10B100630,未払金,,,,,4668125,2022-01
+2305,1,70,Credit,2022-01-30,有線,10B100630,未払金,,,,,0,58381,10E201270,雑費,,,,,8044143,2022-01
+2305,2,70,Debit,2022-01-30,警備料,10E201270,雑費,,,,,52381,0,10B100630,未払金,,,,,4720506,2022-01
+2305,3,70,Debit,2022-01-30,高速料,10E201120,車両費,,,,,73315,0,10A100020,現金及び預金,20,みずほ 本店,,,6242274,2022-01
+2305,3,70,Credit,2022-01-30,高速料,10A100020,現金及び預金,20,みずほ 本店,,,0,73315,10E201120,車両費,,,,,32311336,2022-01
+2305,4,70,Debit,2022-01-30,清掃料,10E201270,雑費,,,,,73500,0,10B100630,未払金,,,,,4794006,2022-01
+2305,4,70,Credit,2022-01-30,清掃料,10B100630,未払金,,,,,0,73500,10E201270,雑費,,,,,8117643,2022-01
+2306,1,80,Debit,2022-01-30,ガソリン代,10E201120,車両費,,,,,6125,0,10A100020,現金及び預金,,,,,6248399,2022-01
+2306,1,80,Credit,2022-01-30,ガソリン代,10A100020,現金及び預金,,,,,0,6125,10E201120,車両費,,,,,32305211,2022-01
+2307,1,83,Debit,2022-01-30,ＪＲ代,10E201230,旅費及び交通費,,,,,9000,0,10A100020,現金及び預金,,,,,10845301,2022-01
+2307,1,83,Credit,2022-01-30,ＪＲ代,10A100020,現金及び預金,,,,,0,9000,10E201230,旅費及び交通費,,,,,32296211,2022-01
+2308,1,96,Debit,2022-01-30,警備料,10E201270,雑費,,,,,22470,0,10A100020,現金及び預金,30,三井 名古屋,,,4816476,2022-01
+2308,1,96,Credit,2022-01-30,警備料,10A100020,現金及び預金,30,三井 名古屋,,,0,22470,10E201270,雑費,,,,,32273741,2022-01
+2309,1,100,Debit,2022-01-30,会費,10E200140,福利厚生費,,,,,6000,0,10A100020,現金及び預金,,,,,4520559,2022-01
+2309,1,100,Credit,2022-01-30,会費,10A100020,現金及び預金,,,,,0,6000,10E200140,福利厚生費,,,,,32267741,2022-01
+2310,1,115,Debit,2022-01-30,保険料,10E200240,保険料,,,,,64500,0,10A100020,現金及び預金,40,三菱東京 梅田,,,2988200,2022-01
+2310,1,115,Credit,2022-01-30,保険料,10A100020,現金及び預金,40,三菱東京 梅田,,,0,64500,10E200240,保険料,,,,,32203241,2022-01
+2311,1,116,Debit,2022-01-30,リース料,10E200730,借地借家料,,,,,84000,0,10A100020,現金及び預金,40,三菱東京 梅田,,,2728650,2022-01
+2311,1,116,Credit,2022-01-30,リース料,10A100020,現金及び預金,40,三菱東京 梅田,,,0,84000,10E200730,借地借家料,,,,,32119241,2022-01
+2312,1,143,Debit,2022-01-30,資金移動,10A100020,現金及び預金,20,みずほ 本店,,,22500000,0,10A100020,現金及び預金,10,北海道 駅前,,,54619241,2022-01
+2312,1,143,Credit,2022-01-30,資金移動,10A100020,現金及び預金,10,北海道 駅前,,,0,8000000,10A100020,現金及び預金,20,みずほ 本店,,,46619241,2022-01
+2312,2,143,Credit,2022-01-30,資金移動,10A100020,現金及び預金,30,三井 名古屋,,,0,6000000,10A100020,現金及び預金,20,みずほ 本店,,,40619241,2022-01
+2312,3,143,Credit,2022-01-30,資金移動,10A100020,現金及び預金,40,三菱東京 梅田,,,0,6000000,10A100020,現金及び預金,20,みずほ 本店,,,34619241,2022-01
+2312,4,143,Credit,2022-01-30,資金移動,10A100020,現金及び預金,50,福岡 北九州,,,0,2500000,10A100020,現金及び預金,20,みずほ 本店,,,32119241,2022-01
+2313,1,154,Debit,2022-01-30,お花代,10E200150,交際費,,,,,10000,0,10B100630,未払金,,,,,3632056,2022-01
+2313,1,154,Credit,2022-01-30,お花代,10B100630,未払金,,,,,0,20000,10E200150,交際費,,,,,8137643,2022-01
+2313,2,154,Debit,2022-01-30,香典代,10E200150,交際費,,,,,10000,0,10B100630,未払金,,,,,3642056,2022-01
+2314,1,1,Debit,2022-01-31,運賃 佐川急便,10E200870,運賃,,,,,532550,0,10B100630,未払金,,,,,37898757,2022-01
+2314,1,1,Credit,2022-01-31,運賃 佐川急便,10B100630,未払金,,,,,0,532550,10E200870,運賃,,,,,8670193,2022-01
+2315,1,5,Debit,2022-01-31,広告費,10E200050,広告宣伝費,,,,,52500,0,10A100020,現金及び預金,10,北海道 駅前,,,1745700,2022-01
+2315,1,5,Credit,2022-01-31,広告費,10A100020,現金及び預金,10,北海道 駅前,,,0,52500,10E200050,広告宣伝費,,,,,32066741,2022-01
+2316,1,36,Debit,2022-01-31,運賃 ヤマト運輸,10E200870,運賃,,,,,2709067,0,10B100630,未払金,,,,,40607824,2022-01
+2316,1,36,Credit,2022-01-31,運賃 ヤマト運輸,10B100630,未払金,,,,,0,3912439,10E200870,運賃,,,,,12582632,2022-01
+2316,2,36,Debit,2022-01-31,運賃 佐川急便,10E200870,運賃,,,,,1203372,0,10B100630,未払金,,,,,41811196,2022-01
+2317,1,40,Debit,2022-01-31,広告掲載,10E200050,広告宣伝費,,,,,50000,0,10B100630,未払金,,,,,1795700,2022-01
+2317,1,40,Credit,2022-01-31,広告掲載,10B100630,未払金,,,,,0,50000,10E200050,広告宣伝費,,,,,12632632,2022-01
+2318,1,63,Debit,2022-01-31,保険料,10E200240,保険料,,,,,81000,0,10A100020,現金及び預金,20,みずほ 本店,,,3069200,2022-01
+2318,1,63,Credit,2022-01-31,保険料,10A100020,現金及び預金,20,みずほ 本店,,,0,81000,10E200240,保険料,,,,,31985741,2022-01
+2319,1,66,Debit,2022-01-31,リース料,10E200730,借地借家料,,,,,209850,0,10A100020,現金及び預金,20,みずほ 本店,,,2938500,2022-01
+2319,1,66,Credit,2022-01-31,リース料,10A100020,現金及び預金,20,みずほ 本店,,,0,209850,10E200730,借地借家料,,,,,31775891,2022-01
+2320,1,67,Debit,2022-01-31,会費支払い,10E201140,諸会費,,,,,30000,0,10A100020,現金及び預金,,,,,1160000,2022-01
+2320,1,67,Credit,2022-01-31,会費支払い,10A100020,現金及び預金,,,,,0,30000,10E201140,諸会費,,,,,31745891,2022-01
+2321,1,74,Debit,2022-01-31,保険料,10E200240,保険料,,,,,62000,0,10A100020,現金及び預金,30,三井 名古屋,,,3131200,2022-01
+2321,1,74,Credit,2022-01-31,保険料,10A100020,現金及び預金,30,三井 名古屋,,,0,62000,10E200240,保険料,,,,,31683891,2022-01
+2322,1,75,Debit,2022-01-31,保険料支払い,10E200240,保険料,,,,,57000,0,10A100020,現金及び預金,50,福岡 北九州,,,3188200,2022-01
+2322,1,75,Credit,2022-01-31,保険料支払い,10A100020,現金及び預金,50,福岡 北九州,,,0,57000,10E200240,保険料,,,,,31626891,2022-01
+2323,1,77,Credit,2022-01-31,消耗品費 部門配賦,10E200200,消耗品費,,,,,0,275968,10E200200,消耗品費,,,,,2439775,2022-01
+2323,2,77,Debit,2022-01-31,消耗品費 部門配賦,10E200200,消耗品費,,,,,30356,0,10E200200,消耗品費,,,,,2470131,2022-01
+2323,3,77,Debit,2022-01-31,消耗品費 部門配賦,10E200200,消耗品費,,,,,132467,0,10E200200,消耗品費,,,,,2602598,2022-01
+2323,4,77,Debit,2022-01-31,消耗品費 部門配賦,10E200200,消耗品費,,,,,27596,0,10E200200,消耗品費,,,,,2630194,2022-01
+2323,5,77,Debit,2022-01-31,消耗品費 部門配賦,10E200200,消耗品費,,,,,66232,0,10E200200,消耗品費,,,,,2696426,2022-01
+2323,6,77,Debit,2022-01-31,消耗品費 部門配賦,10E200200,消耗品費,,,,,19317,0,10E200200,消耗品費,,,,,2715743,2022-01
+2323,7,77,Debit,2022-01-31,運賃,10E200870,運賃,,,,,219670,0,10B100630,未払金,,,,,42030866,2022-01
+2323,7,77,Credit,2022-01-31,運賃,10B100630,未払金,,,,,0,219670,10E200870,運賃,,,,,12852302,2022-01
+2324,1,99,Debit,2022-01-31,運賃,10E200870,運賃,,,,,1426410,0,10B100630,未払金,,,,,43457276,2022-01
+2324,1,99,Credit,2022-01-31,運賃,10B100630,未払金,,,,,0,1426410,10E200870,運賃,,,,,14278712,2022-01
+2325,1,105,Debit,2022-01-31,保険料預かり分,10B100690,預り金,1,保険料,,,1580448,0,10A100020,現金及び預金,20,みずほ 本店,,,4391081,2022-01
+2325,1,105,Credit,2022-01-31,保険料預かり分,10A100020,現金及び預金,20,みずほ 本店,,,0,3171952,10B100690,預り金,1,保険料,,,28454939,2022-01
+2325,2,105,Debit,2022-01-31,保険料 事業主負担分,10E200540,法定福利費,,,,,120411,0,10A100020,現金及び預金,20,みずほ 本店,,,7129373,2022-01
+2325,3,105,Debit,2022-01-31,保険料 事業主負担分,10E200540,法定福利費,,,,,560376,0,10A100020,現金及び預金,20,みずほ 本店,,,7689749,2022-01
+2325,4,105,Debit,2022-01-31,保険料 事業主負担分,10E200540,法定福利費,,,,,238593,0,10A100020,現金及び預金,20,みずほ 本店,,,7928342,2022-01
+2325,5,105,Debit,2022-01-31,保険料 事業主負担分,10E200540,法定福利費,,,,,225063,0,10A100020,現金及び預金,20,みずほ 本店,,,8153405,2022-01
+2325,6,105,Debit,2022-01-31,保険料 事業主負担分,10E200540,法定福利費,,,,,273633,0,10A100020,現金及び預金,20,みずほ 本店,,,8427038,2022-01
+2325,7,105,Debit,2022-01-31,保険料 事業主負担分,10E200540,法定福利費,,,,,162372,0,10A100020,現金及び預金,20,みずほ 本店,,,8589410,2022-01
+2325,8,105,Debit,2022-01-31,児童拠出金 事業主負担分,10E200540,法定福利費,,,,,11056,0,10A100020,現金及び預金,20,みずほ 本店,,,8600466,2022-01
+2326,1,112,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,5,㈱ABC,,,1625694,0,10D100102,電子取引以外総売上高,,,,,149072252,2022-01
+2326,1,112,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,1625694,10A100090,売掛金,5,㈱ABC,,,451345746,2022-01
+2326,2,112,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,14,㈱藤田,,,2366508,0,10D100102,電子取引以外総売上高,,,,,151438760,2022-01
+2326,2,112,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,2366508,10A100090,売掛金,14,㈱藤田,,,453712254,2022-01
+2326,3,112,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,25,㈱小林ﾏｰｹｯﾄ,,,4782758,0,10D100101,電子取引総売上高,,,,,156221518,2022-01
+2326,3,112,Credit,2022-01-31,1月1日～1月31日分売上,10D100101,電子取引総売上高,,,,,0,4782758,10A100090,売掛金,25,㈱小林ﾏｰｹｯﾄ,,,183979929,2022-01
+2327,1,113,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,30,㈱YAG,,,2291872,0,10D100101,電子取引総売上高,,,,,158513390,2022-01
+2327,1,113,Credit,2022-01-31,1月1日～1月31日分売上,10D100101,電子取引総売上高,,,,,0,2291872,10A100090,売掛金,30,㈱YAG,,,186271801,2022-01
+2327,2,113,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,2,今井百貨店,,,17480828,0,10D100102,電子取引以外総売上高,,,,,175994218,2022-01
+2327,2,113,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,17480828,10A100090,売掛金,2,今井百貨店,,,471193082,2022-01
+2327,3,113,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,11,㈱斉藤,,,1325236,0,10D100102,電子取引以外総売上高,,,,,177319454,2022-01
+2327,3,113,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,1325236,10A100090,売掛金,11,㈱斉藤,,,472518318,2022-01
+2327,4,113,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,12,もみじﾃﾞﾊﾟｰﾄ,,,11583188,0,10D100102,電子取引以外総売上高,,,,,188902642,2022-01
+2327,4,113,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,11583188,10A100090,売掛金,12,もみじﾃﾞﾊﾟｰﾄ,,,484101506,2022-01
+2327,5,113,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,14,㈱藤田,,,3579712,0,10D100102,電子取引以外総売上高,,,,,192482354,2022-01
+2327,5,113,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,3579712,10A100090,売掛金,14,㈱藤田,,,487681218,2022-01
+2327,6,113,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,26,佐々木販売㈱,,,1442475,0,10D100101,電子取引総売上高,,,,,193924829,2022-01
+2327,6,113,Credit,2022-01-31,1月1日～1月31日分売上,10D100101,電子取引総売上高,,,,,0,1442475,10A100090,売掛金,26,佐々木販売㈱,,,187714276,2022-01
+2327,7,113,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,13,阿部商事㈱,,,1280304,0,10D100102,電子取引以外総売上高,,,,,195205133,2022-01
+2327,7,113,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,1280304,10A100090,売掛金,13,阿部商事㈱,,,488961522,2022-01
+2327,8,113,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,10,(同)ｴｲﾑ商事,,,357664,0,10D100102,電子取引以外総売上高,,,,,195562797,2022-01
+2327,8,113,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,357664,10A100090,売掛金,10,(同)ｴｲﾑ商事,,,489319186,2022-01
+2327,9,113,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,24,㈱畠山商事,,,536040,0,10D100101,電子取引総売上高,,,,,196098837,2022-01
+2327,9,113,Credit,2022-01-31,1月1日～1月31日分売上,10D100101,電子取引総売上高,,,,,0,536040,10A100090,売掛金,24,㈱畠山商事,,,188250316,2022-01
+2328,1,114,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,6,㈱ｴﾝﾄﾘｰ,,,1298020,0,10D100102,電子取引以外総売上高,,,,,197396857,2022-01
+2328,1,114,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,1298020,10A100090,売掛金,6,㈱ｴﾝﾄﾘｰ,,,490617206,2022-01
+2328,2,114,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,7,㈱総合経営,,,1734092,0,10D100102,電子取引以外総売上高,,,,,199130949,2022-01
+2328,2,114,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,1734092,10A100090,売掛金,7,㈱総合経営,,,492351298,2022-01
+2328,3,114,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,19,㈱ﾐﾅﾐ,,,664590,0,10D100102,電子取引以外総売上高,,,,,199795539,2022-01
+2328,3,114,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,664590,10A100090,売掛金,19,㈱ﾐﾅﾐ,,,493015888,2022-01
+2328,4,114,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,21,(同)たかだ,,,526938,0,10D100101,電子取引総売上高,,,,,200322477,2022-01
+2328,4,114,Credit,2022-01-31,1月1日～1月31日分売上,10D100101,電子取引総売上高,,,,,0,526938,10A100090,売掛金,21,(同)たかだ,,,188777254,2022-01
+2328,5,114,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,27,岩下物産㈱,,,1918584,0,10D100101,電子取引総売上高,,,,,202241061,2022-01
+2328,5,114,Credit,2022-01-31,1月1日～1月31日分売上,10D100101,電子取引総売上高,,,,,0,1918584,10A100090,売掛金,27,岩下物産㈱,,,190695838,2022-01
+2328,6,114,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,14,㈱藤田,,,2765300,0,10D100102,電子取引以外総売上高,,,,,205006361,2022-01
+2328,6,114,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,2765300,10A100090,売掛金,14,㈱藤田,,,495781188,2022-01
+2329,1,115,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,4,ﾏｰｸﾏｰｹｯﾄ,,,1025820,0,10D100102,電子取引以外総売上高,,,,,206032181,2022-01
+2329,1,115,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,1025820,10A100090,売掛金,4,ﾏｰｸﾏｰｹｯﾄ,,,496807008,2022-01
+2329,2,115,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,9,高橋物産㈱,,,1668144,0,10D100102,電子取引以外総売上高,,,,,207700325,2022-01
+2329,2,115,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,1668144,10A100090,売掛金,9,高橋物産㈱,,,498475152,2022-01
+2329,3,115,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,14,㈱藤田,,,5786774,0,10D100102,電子取引以外総売上高,,,,,213487099,2022-01
+2329,3,115,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,5786774,10A100090,売掛金,14,㈱藤田,,,504261926,2022-01
+2329,4,115,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,20,㈱久城商事,,,2217906,0,10D100101,電子取引総売上高,,,,,215705005,2022-01
+2329,4,115,Credit,2022-01-31,1月1日～1月31日分売上,10D100101,電子取引総売上高,,,,,0,2217906,10A100090,売掛金,20,㈱久城商事,,,192913744,2022-01
+2329,5,115,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,23,㈱鎌田商店,,,3999128,0,10D100101,電子取引総売上高,,,,,219704133,2022-01
+2329,5,115,Credit,2022-01-31,1月1日～1月31日分売上,10D100101,電子取引総売上高,,,,,0,3999128,10A100090,売掛金,23,㈱鎌田商店,,,196912872,2022-01
+2329,6,115,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,28,かめだﾃﾞﾊﾟｰﾄ,,,8918449,0,10D100101,電子取引総売上高,,,,,228622582,2022-01
+2329,6,115,Credit,2022-01-31,1月1日～1月31日分売上,10D100101,電子取引総売上高,,,,,0,8918449,10A100090,売掛金,28,かめだﾃﾞﾊﾟｰﾄ,,,205831321,2022-01
+2329,7,115,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,8,ﾀﾜｰ㈱,,,1241068,0,10D100102,電子取引以外総売上高,,,,,229863650,2022-01
+2329,7,115,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,1241068,10A100090,売掛金,8,ﾀﾜｰ㈱,,,505502994,2022-01
+2329,8,115,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,3,㈱ﾁｪｯｸ,,,4318710,0,10D100102,電子取引以外総売上高,,,,,234182360,2022-01
+2329,8,115,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,4318710,10A100090,売掛金,3,㈱ﾁｪｯｸ,,,509821704,2022-01
+2330,1,116,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,1,五越㈱,,,1438024,0,10D100102,電子取引以外総売上高,,,,,235620384,2022-01
+2330,1,116,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,1438024,10A100090,売掛金,1,五越㈱,,,511259728,2022-01
+2330,2,116,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,22,㈱渡辺産業,,,1508744,0,10D100101,電子取引総売上高,,,,,237129128,2022-01
+2330,2,116,Credit,2022-01-31,1月1日～1月31日分売上,10D100101,電子取引総売上高,,,,,0,1508744,10A100090,売掛金,22,㈱渡辺産業,,,207340065,2022-01
+2330,3,116,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,14,㈱藤田,,,1431596,0,10D100102,電子取引以外総売上高,,,,,238560724,2022-01
+2330,3,116,Credit,2022-01-31,1月1日～1月31日分売上,10D100102,電子取引以外総売上高,,,,,0,1431596,10A100090,売掛金,14,㈱藤田,,,512691324,2022-01
+2330,4,116,Debit,2022-01-31,1月1日～1月31日分売上,10A100090,売掛金,29,㈱千代ｻｰﾋﾞｽ,,,362450,0,10D100101,電子取引総売上高,,,,,238923174,2022-01
+2330,4,116,Credit,2022-01-31,1月1日～1月31日分売上,10D100101,電子取引総売上高,,,,,0,362450,10A100090,売掛金,29,㈱千代ｻｰﾋﾞｽ,,,207702515,2022-01
+2331,1,117,Debit,2022-01-31,1月31日伝票No426マークマーケット,10A100020,現金及び預金,40,三菱東京 梅田,,,1300832,0,10A100090,売掛金,4,ﾏｰｸﾏｰｹｯﾄ,,,29755771,2022-01
+2331,1,117,Credit,2022-01-31,1月31日伝票No426マークマーケット,10A100090,売掛金,4,ﾏｰｸﾏｰｹｯﾄ,,,0,1300832,10A100020,現金及び預金,40,三菱東京 梅田,,,237622342,2022-01
+2332,1,118,Debit,2022-01-31,1月31日伝票No427株式会社 ＡＢＣ,10A100020,現金及び預金,10,北海道 駅前,,,2041948,0,10A100090,売掛金,5,㈱ABC,,,31797719,2022-01
+2332,1,118,Credit,2022-01-31,1月31日伝票No427株式会社 ＡＢＣ,10A100090,売掛金,5,㈱ABC,,,0,2041948,10A100020,現金及び預金,10,北海道 駅前,,,235580394,2022-01
+2333,1,119,Debit,2022-01-31,1月31日伝票No428合同会社 エイム商事,10A100020,現金及び預金,,,,,320480,0,10A100090,売掛金,10,(同)ｴｲﾑ商事,,,32118199,2022-01
+2333,1,119,Credit,2022-01-31,1月31日伝票No428合同会社 エイム商事,10A100090,売掛金,10,(同)ｴｲﾑ商事,,,0,320480,10A100020,現金及び預金,,,,,235259914,2022-01
+2334,1,120,Debit,2022-01-31,1月31日伝票No429もみじデパート,10A100060,受取手形,,,,,10629137,0,10A100090,売掛金,12,もみじﾃﾞﾊﾟｰﾄ,,,-6524961,2022-01
+2334,1,120,Credit,2022-01-31,1月31日伝票No429もみじデパート,10A100090,売掛金,12,もみじﾃﾞﾊﾟｰﾄ,,,0,10629137,10A100060,受取手形,,,,,224630777,2022-01
+2335,1,121,Debit,2022-01-31,1月31日伝票No430株式会社 畠山商事,10A100020,現金及び預金,20,みずほ 本店,,,459212,0,10A100090,売掛金,24,㈱畠山商事,,,32577411,2022-01
+2335,1,121,Credit,2022-01-31,1月31日伝票No430株式会社 畠山商事,10A100090,売掛金,24,㈱畠山商事,,,0,459212,10A100020,現金及び預金,20,みずほ 本店,,,224171565,2022-01
+2336,1,122,Debit,2022-01-31,1月31日伝票No431株式会社 千代サービス,10A100020,現金及び預金,50,福岡 北九州,,,488898,0,10A100090,売掛金,29,㈱千代ｻｰﾋﾞｽ,,,33066309,2022-01
+2336,1,122,Credit,2022-01-31,1月31日伝票No431株式会社 千代サービス,10A100090,売掛金,29,㈱千代ｻｰﾋﾞｽ,,,0,488898,10A100020,現金及び預金,50,福岡 北九州,,,223682667,2022-01
+2337,1,123,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,77112,0,10B100040,買掛金,8,㈱山下,,,243892451,2022-01
+2337,1,123,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,8,㈱山下,,,0,77112,10E100132,電子取引以外当期商品仕入高,,,,,91085467,2022-01
+2337,2,123,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,17942,0,10B100040,買掛金,2,㈱Pole,,,243910393,2022-01
+2337,2,123,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,2,㈱Pole,,,0,17942,10E100132,電子取引以外当期商品仕入高,,,,,91103409,2022-01
+2338,1,124,Debit,2022-01-31,1月1日～1月31日分仕入,10E100131,電子取引当期商品仕入高,,,,,4344303,0,10B100040,買掛金,14,(同)ｳｪｽﾄ,,,135681719,2022-01
+2338,1,124,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,14,(同)ｳｪｽﾄ,,,0,4344303,10E100131,電子取引当期商品仕入高,,,,,95447712,2022-01
+2338,2,124,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,4775976,0,10B100040,買掛金,3,㈱ﾁｪｯｸ,,,248686369,2022-01
+2338,2,124,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,3,㈱ﾁｪｯｸ,,,0,4775976,10E100132,電子取引以外当期商品仕入高,,,,,100223688,2022-01
+2338,3,124,Debit,2022-01-31,1月1日～1月31日分仕入,10E100131,電子取引当期商品仕入高,,,,,1909347,0,10B100040,買掛金,13,ﾅｶﾑﾗ産業㈱,,,137591066,2022-01
+2338,3,124,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,13,ﾅｶﾑﾗ産業㈱,,,0,1909347,10E100131,電子取引当期商品仕入高,,,,,102133035,2022-01
+2338,4,124,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,8427411,0,10B100040,買掛金,1,㈱Y2,,,257113780,2022-01
+2338,4,124,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,1,㈱Y2,,,0,8427411,10E100132,電子取引以外当期商品仕入高,,,,,110560446,2022-01
+2338,5,124,Debit,2022-01-31,1月1日～1月31日分仕入,10E100131,電子取引当期商品仕入高,,,,,6049943,0,10B100040,買掛金,11,㈱まつむら,,,143641009,2022-01
+2338,5,124,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,11,㈱まつむら,,,0,6049943,10E100131,電子取引当期商品仕入高,,,,,116610389,2022-01
+2338,6,124,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,1072048,0,10B100040,買掛金,2,㈱Pole,,,258185828,2022-01
+2338,6,124,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,2,㈱Pole,,,0,1072048,10E100132,電子取引以外当期商品仕入高,,,,,117682437,2022-01
+2338,7,124,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,128520,0,10B100040,買掛金,8,㈱山下,,,258314348,2022-01
+2338,7,124,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,8,㈱山下,,,0,128520,10E100132,電子取引以外当期商品仕入高,,,,,117810957,2022-01
+2338,8,124,Debit,2022-01-31,1月1日～1月31日分仕入,10E100131,電子取引当期商品仕入高,,,,,517154,0,10B100040,買掛金,12,㈱有江,,,144158163,2022-01
+2338,8,124,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,12,㈱有江,,,0,517154,10E100131,電子取引当期商品仕入高,,,,,118328111,2022-01
+2339,1,125,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,2620813,0,10B100040,買掛金,9,斉藤産業㈱,,,260935161,2022-01
+2339,1,125,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,9,斉藤産業㈱,,,0,2620813,10E100132,電子取引以外当期商品仕入高,,,,,120948924,2022-01
+2339,2,125,Debit,2022-01-31,1月1日～1月31日分仕入,10E100131,電子取引当期商品仕入高,,,,,1692895,0,10B100040,買掛金,15,㈱はなまる商事,,,145851058,2022-01
+2339,2,125,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,15,㈱はなまる商事,,,0,1692895,10E100131,電子取引当期商品仕入高,,,,,122641819,2022-01
+2339,3,125,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,5256041,0,10B100040,買掛金,7,㈱ｻﾝｾｯﾄ,,,266191202,2022-01
+2339,3,125,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,7,㈱ｻﾝｾｯﾄ,,,0,5256041,10E100132,電子取引以外当期商品仕入高,,,,,127897860,2022-01
+2339,4,125,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,77112,0,10B100040,買掛金,8,㈱山下,,,266268314,2022-01
+2339,4,125,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,8,㈱山下,,,0,77112,10E100132,電子取引以外当期商品仕入高,,,,,127974972,2022-01
+2340,1,126,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,5649316,0,10B100040,買掛金,5,小藤丸㈱,,,271917630,2022-01
+2340,1,126,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,5,小藤丸㈱,,,0,5649316,10E100132,電子取引以外当期商品仕入高,,,,,133624288,2022-01
+2340,2,126,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,1466688,0,10B100040,買掛金,4,㈱ｱﾀｯﾁ,,,273384318,2022-01
+2340,2,126,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,4,㈱ｱﾀｯﾁ,,,0,1466688,10E100132,電子取引以外当期商品仕入高,,,,,135090976,2022-01
+2340,3,126,Debit,2022-01-31,1月1日～1月31日分仕入,10E100131,電子取引当期商品仕入高,,,,,4760408,0,10B100040,買掛金,10,鈴木販売㈱,,,150611466,2022-01
+2340,3,126,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,10,鈴木販売㈱,,,0,4760408,10E100131,電子取引当期商品仕入高,,,,,139851384,2022-01
+2340,4,126,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,5017707,0,10B100040,買掛金,6,㈱ﾊﾅﾀﾞ,,,278402025,2022-01
+2340,4,126,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,6,㈱ﾊﾅﾀﾞ,,,0,5017707,10E100132,電子取引以外当期商品仕入高,,,,,144869091,2022-01
+2340,5,126,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,269134,0,10B100040,買掛金,2,㈱Pole,,,278671159,2022-01
+2340,5,126,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,2,㈱Pole,,,0,269134,10E100132,電子取引以外当期商品仕入高,,,,,145138225,2022-01
+2340,6,126,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,123379,0,10B100040,買掛金,8,㈱山下,,,278794538,2022-01
+2340,6,126,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,8,㈱山下,,,0,123379,10E100132,電子取引以外当期商品仕入高,,,,,145261604,2022-01
+2341,1,127,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,17942,0,10B100040,買掛金,2,㈱Pole,,,278812480,2022-01
+2341,1,127,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,2,㈱Pole,,,0,17942,10E100132,電子取引以外当期商品仕入高,,,,,145279546,2022-01
+2341,2,127,Debit,2022-01-31,1月1日～1月31日分仕入,10E100132,電子取引以外当期商品仕入高,,,,,25704,0,10B100040,買掛金,8,㈱山下,,,278838184,2022-01
+2341,2,127,Credit,2022-01-31,1月1日～1月31日分仕入,10B100040,買掛金,8,㈱山下,,,0,25704,10E100132,電子取引以外当期商品仕入高,,,,,145305250,2022-01
+2342,1,128,Debit,2022-01-31,1月31日伝票No324株式会社 Pole,10B100040,買掛金,2,㈱Pole,,,183908,0,10A100020,現金及び預金,20,みずほ 本店,,,145121342,2022-01
+2342,1,128,Credit,2022-01-31,1月31日伝票No324株式会社 Pole,10A100020,現金及び預金,20,みずほ 本店,,,0,183908,10B100040,買掛金,2,㈱Pole,,,32882401,2022-01
+2343,1,129,Debit,2022-01-31,1月31日伝票No325小藤丸株式会社,10B100040,買掛金,5,小藤丸㈱,,,4897778,0,10B100030,支払手形,,,,,140223564,2022-01
+2343,1,129,Credit,2022-01-31,1月31日伝票No325小藤丸株式会社,10B100030,支払手形,,,,,0,4897778,10B100040,買掛金,5,小藤丸㈱,,,20853577,2022-01
+2343,2,129,Debit,2022-01-31,資金移動,10A100020,現金及び預金,20,みずほ 本店,,,12000000,0,10A100020,現金及び預金,20,みずほ本店,,,44882401,2022-01
+2343,2,129,Credit,2022-01-31,資金移動,10A100020,現金及び預金,20,みずほ本店,,,0,12000000,10A100020,現金及び預金,20,みずほ 本店,,,32882401,2022-01
+2344,1,130,Debit,2022-01-31,1月31日伝票No326株式会社 サンセット,10B100040,買掛金,7,㈱ｻﾝｾｯﾄ,,,4597303,0,10A100020,現金及び預金,20,みずほ 本店,,,135626261,2022-01
+2344,1,130,Credit,2022-01-31,1月31日伝票No326株式会社 サンセット,10A100020,現金及び預金,20,みずほ 本店,,,0,4597303,10B100040,買掛金,7,㈱ｻﾝｾｯﾄ,,,28285098,2022-01
+2345,1,131,Debit,2022-01-31,1月31日伝票No327斉藤産業株式会社,10B100040,買掛金,9,斉藤産業㈱,,,2224739,0,10B100030,支払手形,,,,,133401522,2022-01
+2345,1,131,Credit,2022-01-31,1月31日伝票No327斉藤産業株式会社,10B100030,支払手形,,,,,0,2224739,10B100040,買掛金,9,斉藤産業㈱,,,23078316,2022-01
+2346,1,132,Debit,2022-01-31,1月31日伝票No328鈴木販売株式会社,10B100040,買掛金,10,鈴木販売㈱,,,3791833,0,10B100030,支払手形,,,,,129609689,2022-01
+2346,1,132,Credit,2022-01-31,1月31日伝票No328鈴木販売株式会社,10B100030,支払手形,,,,,0,3791833,10B100040,買掛金,10,鈴木販売㈱,,,26870149,2022-01
+2347,1,133,Debit,2022-01-31,1月31日伝票No329株式会社 有江,10B100040,買掛金,12,㈱有江,,,433742,0,10A100020,現金及び預金,20,みずほ 本店,,,129175947,2022-01
+2347,1,133,Credit,2022-01-31,1月31日伝票No329株式会社 有江,10A100020,現金及び預金,20,みずほ 本店,,,0,433742,10B100040,買掛金,12,㈱有江,,,27851356,2022-01
+2348,1,134,Debit,2022-01-31,1月31日伝票No330ナカムラ産業株式会社,10B100040,買掛金,13,ﾅｶﾑﾗ産業㈱,,,1802651,0,10A100020,現金及び預金,20,みずほ 本店,,,127373296,2022-01
+2348,1,134,Credit,2022-01-31,1月31日伝票No330ナカムラ産業株式会社,10A100020,現金及び預金,20,みずほ 本店,,,0,1802651,10B100040,買掛金,13,ﾅｶﾑﾗ産業㈱,,,26048705,2022-01
+2349,1,135,Debit,2022-01-31,1月31日伝票No331合同会社 ウェスト,10B100040,買掛金,14,(同)ｳｪｽﾄ,,,3875434,0,10A100020,現金及び預金,20,みずほ 本店,,,123497862,2022-01
+2349,1,135,Credit,2022-01-31,1月31日伝票No331合同会社 ウェスト,10A100020,現金及び預金,20,みずほ 本店,,,0,3875434,10B100040,買掛金,14,(同)ｳｪｽﾄ,,,22173271,2022-01
+2350,1,136,Debit,2022-01-31,1月31日伝票No332株式会社 はなまる商事,10B100040,買掛金,15,㈱はなまる商事,,,1543059,0,10A100020,現金及び預金,20,みずほ 本店,,,121954803,2022-01
+2350,1,136,Credit,2022-01-31,1月31日伝票No332株式会社 はなまる商事,10A100020,現金及び預金,20,みずほ 本店,,,0,1543059,10B100040,買掛金,15,㈱はなまる商事,,,20630212,2022-01
+2351,1,137,Debit,2022-01-31,12月分支払,10B100630,未払金,,,,,12442678,0,10A100020,現金及び預金,20,みずほ 本店,,,1836034,2022-01
+2351,1,137,Credit,2022-01-31,12月分支払,10A100020,現金及び預金,20,みずほ 本店,,,0,12442678,10B100630,未払金,,,,,8187534,2022-01
+2352,1,138,Debit,2022-01-31,手形満期 今井百貨店,10A100020,現金及び預金,20,みずほ本店,,,16830269,0,10A100060,受取手形,,,,,25017803,2022-01
+2352,1,138,Credit,2022-01-31,手形満期 今井百貨店,10A100060,受取手形,,,,,0,16830269,10A100020,現金及び預金,20,みずほ本店,,,-23355230,2022-01
+2353,1,139,Debit,2022-01-31,手形期日落日 小藤丸,10B100030,支払手形,,,,,3730512,0,10A100020,現金及び預金,20,みずほ本店,,,23139637,2022-01
+2353,1,139,Credit,2022-01-31,手形期日落日 小藤丸,10A100020,現金及び預金,20,みずほ本店,,,0,3730512,10B100030,支払手形,,,,,21287291,2022-01
+2353,2,139,Debit,2022-01-31,手形期日落日 斉藤産業,10B100030,支払手形,,,,,1819272,0,10A100020,現金及び預金,20,みずほ本店,,,21320365,2022-01
+2353,2,139,Credit,2022-01-31,手形期日落日 斉藤産業,10A100020,現金及び預金,20,みずほ本店,,,0,1819272,10B100030,支払手形,,,,,19468019,2022-01
+2353,3,139,Debit,2022-01-31,手形期日落日 鈴木販売,10B100030,支払手形,,,,,3051222,0,10A100020,現金及び預金,20,みずほ本店,,,18269143,2022-01
+2353,3,139,Credit,2022-01-31,手形期日落日 鈴木販売,10A100020,現金及び預金,20,みずほ本店,,,0,3051222,10B100030,支払手形,,,,,16416797,2022-01
+2354,1,141,Debit,2022-01-31,JR代,10E201230,旅費及び交通費,,,,,10500,0,10A100020,現金及び預金,,,,,10855801,2022-01
+2354,1,141,Credit,2022-01-31,JR代,10A100020,現金及び預金,,,,,0,10500,10E201230,旅費及び交通費,,,,,16406297,2022-01
+2355,1,142,Debit,2022-01-31,手形満期 もみじデパート,10A100020,現金及び預金,20,みずほ本店,,,11348566,0,10A100060,受取手形,,,,,27754863,2022-01
+2355,1,142,Credit,2022-01-31,手形満期 もみじデパート,10A100060,受取手形,,,,,0,11348566,10A100020,現金及び預金,20,みずほ本店,,,-34703796,2022-01
+2356,1,145,Debit,2022-01-31,貸付金返済,10A100020,現金及び預金,20,みずほ 本店,,,40000,0,10A100610,短期貸付金,,,,,27794863,2022-01
+2356,1,145,Credit,2022-01-31,貸付金返済,10A100610,短期貸付金,,,,,0,90000,10A100020,現金及び預金,20,みずほ 本店,,,380000,2022-01
+2356,2,145,Debit,2022-01-31,貸付金返済,10A100020,現金及び預金,20,みずほ 本店,,,50000,0,10A100610,短期貸付金,,,,,27844863,2022-01
+2356,3,145,Debit,2022-01-31,運賃,10E200870,運賃,,,,,169580,0,10B100630,未払金,,,,,43626856,2022-01
+2356,3,145,Credit,2022-01-31,運賃,10B100630,未払金,,,,,0,169580,10E200870,運賃,,,,,2005614,2022-01
+2357,1,146,Debit,2022-01-31,定期積立金,10A100020,現金及び預金,,,,,500000,0,10A100020,現金及び預金,20,みずほ 本店,,,28344863,2022-01
+2357,1,146,Credit,2022-01-31,定期積立金,10A100020,現金及び預金,20,みずほ 本店,,,0,865000,10A100020,現金及び預金,,,,,27479863,2022-01
+2357,2,146,Debit,2022-01-31,新規定期積立金,10A100020,現金及び預金,,,,,240000,0,10A100020,現金及び預金,20,みずほ 本店,,,27719863,2022-01
+2357,3,146,Debit,2022-01-31,保険積立金,10A230570,保険積立金,,,,,125000,0,10A100020,現金及び預金,20,みずほ 本店,,,1277813,2022-01
+2358,1,147,Debit,2022-01-31,借入金返済,10B100790,短期借入金,,,,,653500,0,10A100020,現金及び預金,20,みずほ本店,,,1307000,2022-01
+2358,1,147,Credit,2022-01-31,借入金返済,10A100020,現金及び預金,20,みずほ本店,,,0,686175,10B100790,短期借入金,,,,,27033688,2022-01
+2358,2,147,Debit,2022-01-31,利息,10E300020,支払利息,,,,,32675,0,10A100020,現金及び預金,20,みずほ本店,,,1136418,2022-01
+2359,1,164,Debit,2022-01-31,事務用品,10E201110,事務用消耗品費,,,,,1307,0,10A100020,現金及び預金,,,,,1266514,2022-01
+2359,1,164,Credit,2022-01-31,事務用品,10A100020,現金及び預金,,,,,0,1307,10E201110,事務用消耗品費,,,,,27032381,2022-01
+3078,1,993078,Debit,2022-01-31,株式会社チェックからの入金,10A100020,現金及び預金,20,みずほ本店,,,1074280,0,10A100090,売掛金,3,株式会社チェック,,,28106661,2022-01
+3078,1,993078,Credit,2022-01-31,株式会社チェックからの入金,10A100090,売掛金,3,株式会社チェック,,,0,1074280,10A100020,現金及び預金,20,みずほ本店,,,222608387,2022-01
+3079,1,993079,Debit,2022-01-31,株式会社藤田からの入金,10A100020,現金及び預金,20,みずほ本店,,,1446278,0,10A100090,売掛金,14,株式会社藤田,,,29552939,2022-01
+3079,1,993079,Credit,2022-01-31,株式会社藤田からの入金,10A100090,売掛金,14,株式会社藤田,,,0,1446278,10A100020,現金及び預金,20,みずほ本店,,,221162109,2022-01
+3080,1,993080,Debit,2022-01-31,株式会社藤田からの入金,10A100020,現金及び預金,20,みずほ本店,,,2901037,0,10A100090,売掛金,14,株式会社藤田,,,32453976,2022-01
+3080,1,993080,Credit,2022-01-31,株式会社藤田からの入金,10A100090,売掛金,14,株式会社藤田,,,0,2901037,10A100020,現金及び預金,20,みずほ本店,,,218261072,2022-01
+3081,1,993081,Debit,2022-01-31,株式会社藤田からの入金,10A100020,現金及び預金,20,みずほ本店,,,682664,0,10A100090,売掛金,14,株式会社藤田,,,33136640,2022-01
+3081,1,993081,Credit,2022-01-31,株式会社藤田からの入金,10A100090,売掛金,14,株式会社藤田,,,0,682664,10A100020,現金及び預金,20,みずほ本店,,,217578408,2022-01
+3082,1,993082,Debit,2022-01-31,株式会社Ｐｏｌｅへの支払,10B100040,買掛金,2,株式会社Ｐｏｌｅ,,,322960,0,10A100020,現金及び預金,20,みずほ本店,,,121631843,2022-01
+3082,1,993082,Credit,2022-01-31,株式会社Ｐｏｌｅへの支払,10A100020,現金及び預金,20,みずほ本店,,,0,322960,10B100040,買掛金,2,株式会社Ｐｏｌｅ,,,32813680,2022-01
+3083,1,993083,Debit,2022-01-31,株式会社Ｐｏｌｅへの支払,10B100040,買掛金,2,株式会社Ｐｏｌｅ,,,103168,0,10A100020,現金及び預金,20,みずほ本店,,,121528675,2022-01
+3083,1,993083,Credit,2022-01-31,株式会社Ｐｏｌｅへの支払,10A100020,現金及び預金,20,みずほ本店,,,0,103168,10B100040,買掛金,2,株式会社Ｐｏｌｅ,,,32710512,2022-01
+3084,1,993084,Debit,2022-01-31,株式会社Ｐｏｌｅへの支払,10B100040,買掛金,2,株式会社Ｐｏｌｅ,,,502382,0,10A100020,現金及び預金,20,みずほ本店,,,121026293,2022-01
+3084,1,993084,Credit,2022-01-31,株式会社Ｐｏｌｅへの支払,10A100020,現金及び預金,20,みずほ本店,,,0,502382,10B100040,買掛金,2,株式会社Ｐｏｌｅ,,,32208130,2022-01
+3085,1,993085,Debit,2022-01-31,株式会社Ｐｏｌｅへの支払,10B100040,買掛金,2,株式会社Ｐｏｌｅ,,,202050,0,10A100020,現金及び預金,20,みずほ本店,,,120824243,2022-01
+3085,1,993085,Credit,2022-01-31,株式会社Ｐｏｌｅへの支払,10A100020,現金及び預金,20,みずほ本店,,,0,202050,10B100040,買掛金,2,株式会社Ｐｏｌｅ,,,32006080,2022-01
+3086,1,993086,Debit,2022-01-31,株式会社山下への支払,10B100040,買掛金,8,株式会社山下,,,179928,0,10A100020,現金及び預金,20,みずほ本店,,,120644315,2022-01
+3086,1,993086,Credit,2022-01-31,株式会社山下への支払,10A100020,現金及び預金,20,みずほ本店,,,0,179928,10B100040,買掛金,8,株式会社山下,,,31826152,2022-01
+3087,1,993087,Debit,2022-01-31,株式会社山下への支払,10B100040,買掛金,8,株式会社山下,,,51408,0,10A100020,現金及び預金,20,みずほ本店,,,120592907,2022-01
+3087,1,993087,Credit,2022-01-31,株式会社山下への支払,10A100020,現金及び預金,20,みずほ本店,,,0,51408,10B100040,買掛金,8,株式会社山下,,,31774744,2022-01
+3088,1,993088,Debit,2022-01-31,株式会社山下への支払,10B100040,買掛金,8,株式会社山下,,,102816,0,10A100020,現金及び預金,20,みずほ本店,,,120490091,2022-01
+3088,1,993088,Credit,2022-01-31,株式会社山下への支払,10A100020,現金及び預金,20,みずほ本店,,,0,102816,10B100040,買掛金,8,株式会社山下,,,31671928,2022-01
+3089,1,993089,Debit,2022-01-31,株式会社山下への支払,10B100040,買掛金,8,株式会社山下,,,46267,0,10A100020,現金及び預金,20,みずほ本店,,,120443824,2022-01
+3089,1,993089,Credit,2022-01-31,株式会社山下への支払,10A100020,現金及び預金,20,みずほ本店,,,0,46267,10B100040,買掛金,8,株式会社山下,,,31625661,2022-01

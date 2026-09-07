@@ -54,27 +54,6 @@ body {
     display: none;
 }
 
-.dataset-menu select {
-    max-width: min(320px, 42vw);
-    padding: 3px 7px;
-    border: 1px solid rgba(255, 255, 255, .8);
-    border-radius: 5px;
-    color: #163b38;
-    background: #fff;
-    font: inherit;
-    font-weight: 700;
-}
-
-.company-header__details {
-    display: flex;
-    flex: 1 1 260px;
-    min-width: 0;
-    flex-wrap: wrap;
-    align-items: baseline;
-    column-gap: 12px;
-    row-gap: 2px;
-}
-
 .company-header__name {
     font-size: 14px;
     font-weight: 700;
@@ -301,20 +280,6 @@ input[type="file"] {
     white-space: pre-wrap;
     overflow-wrap: anywhere;
     font: 12px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
-}
-
-.tidy-view__heading {
-  padding: 0.75rem 1rem 0.5rem;
-}
-
-.tidy-view__heading h1 {
-  font-size: 1.05rem;
-  margin: 0 0 0.25rem;
-}
-
-.tidy-view__heading p {
-  color: #4b5563;
-  margin: 0;
 }
 
 .table-wrap {
