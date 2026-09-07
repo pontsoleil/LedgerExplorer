@@ -14,3 +14,5 @@ The authoritative conversion package, including the physical PCA April subset an
 The current sample does not include the optional business-document, A/R, or A/P demonstration tables; those UI modes are enabled only when a dataset explicitly declares that feature.
 
 EPSON import files are not included because the exact target product, edition, version, journal-import contract, and opening-balance import contract remain unresolved.
+
+The managed copy of the independently designed Accounts Period Balances HMD is under `model/accounts-period-balances/`. UADC-PoC is the model authority. The model used ISO 21378 as a reference, but it is not an ISO publication or ISO-certified model, and the FDIS source is not included.
