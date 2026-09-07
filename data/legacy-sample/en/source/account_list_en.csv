@@ -1,0 +1,167 @@
+﻿Account_Code,Account_Name,Category,eTax_Account_Code,eTax_Account_Name,eTax_Category
+111,Cash and deposits,Assets,10A100020,Cash and deposits,Current assets
+112,Cash and deposits,Assets,10A100020,Cash and deposits,Current assets
+121,Cash and deposits,Assets,10A100020,Cash and deposits,Current assets
+131,Cash and deposits,Assets,10A100020,Cash and deposits,Current assets
+139,Cash and deposits,Assets,10A100020,Cash and deposits,Current assets
+140,Cash and deposits,Assets,10A100020,Cash and deposits,Current assets
+141,Cash and deposits,Assets,10A100020,Cash and deposits,Current assets
+142,Cash and deposits,Assets,10A100020,Cash and deposits,Current assets
+143,Cash and deposits,Assets,10A100020,Cash and deposits,Current assets
+148,Cash and deposits,Assets,10A100020,Cash and deposits,Current assets
+149,Cash and deposits,Assets,10A100020,Cash and deposits,Current assets
+150,Notes receivable - trade,Assets,10A100060,Notes receivable - trade,Current assets
+151,Electronically recorded monetary claims - operating,Assets,10A100200,Electronically recorded monetary claims - operating,Current assets
+152,Accounts receivable - trade,Assets,10A100090,Accounts receivable - trade,Current assets
+159,Allowance for doubtful accounts,Liabilities,10A100040,Allowance for doubtful accounts,Current assets
+161,Securities,Assets,10A100230,Securities,Current assets
+171,Merchandise,Assets,10A100280,Merchandise,Current assets
+175,Finished goods,Assets,10A100310,Finished goods,Current assets
+176,Raw materials,Assets,10A100360,Raw materials,Current assets
+177,Work in process,Assets,10A100400,Work in process,Current assets
+178,Supplies,Assets,10A100430,Supplies,Current assets
+180,Accrued income,Assets,10A100550,Accrued income,Current assets
+181,Advance payments - trade,Assets,10A100520,Advance payments - trade,Current assets
+182,Advances paid,Assets,10A100840,Advances paid,Current assets
+183,Short-term loans receivable,Assets,10A100610,Short-term loans receivable,Current assets
+184,Accounts receivable - other,Assets,10A100670,Accounts receivable - other,Current assets
+185,Prepaid expenses,Assets,10A100540,Prepaid expenses,Current assets
+187,Suspense payments,Assets,10A100850,Suspense payments,Current assets
+189,Electronically recorded monetary claims - non-operating,Assets,10A100720,Electronically recorded monetary claims - non-operating,Current assets
+191,"Prepaid consumption tax, etc.",Assets,10A100851,"Prepaid consumption tax, etc.",Current assets
+197,Consumption taxes receivable,Assets,10A100690,Consumption taxes receivable,Current assets
+199,Allowance for doubtful accounts,Liabilities,10A100040,Allowance for doubtful accounts,Current assets
+259,Allowance for doubtful accounts,Liabilities,10A100040,Allowance for doubtful accounts,Current assets
+244,Guarantee deposits,Assets,10A100800,Guarantee deposits,Current assets
+211,Buildings,Assets,10A210030,Buildings,"Property, plant and equipment"
+212,Structures,Assets,10A210130,Structures,"Property, plant and equipment"
+213,Structures,Assets,10A210130,Structures,"Property, plant and equipment"
+214,Machinery and equipment,Assets,10A210240,Machinery and equipment,"Property, plant and equipment"
+215,Vehicles,Assets,10A210360,Vehicles,"Property, plant and equipment"
+216,"Tools, furniture and fixtures",Assets,10A210410,"Tools, furniture and fixtures","Property, plant and equipment"
+221,Land,Assets,10A210610,Land,"Property, plant and equipment"
+222,Construction in progress,Assets,10A210670,Construction in progress,"Property, plant and equipment"
+229,Accumulated impairment loss,Liabilities,10A210050,Accumulated impairment loss,"Property, plant and equipment"
+231,Leasehold interests in land,Assets,10A220030,Leasehold interests in land,Intangible assets
+232,Telephone subscription right,Assets,10A220190,Telephone subscription right,Intangible assets
+186,Deferred tax assets,Assets,10A230370,Deferred tax assets,Investments and other assets
+241,Investment securities,Assets,10A230030,Investment securities,Investments and other assets
+242,Investments in capital,Assets,10A230090,Investments in capital,Investments and other assets
+243,Long-term loans receivable,Assets,10A230130,Long-term loans receivable,Investments and other assets
+245,Long-term prepaid expenses,Assets,10A230330,Long-term prepaid expenses,Investments and other assets
+246,Deferred tax assets,Assets,10A230370,Deferred tax assets,Investments and other assets
+248,Insurance funds,Assets,10A230570,Insurance funds,Investments and other assets
+249,Leasehold deposits,Assets,10A230650,Leasehold deposits,Investments and other assets
+443,Treasury shares,Assets,10C100020,Treasury shares,Shareholders’ equity
+301,Notes payable - trade,Liabilities,10B100030,Notes payable - trade,Current liabilities
+306,Electronically recorded obligations - operating,Liabilities,10B100070,Electronically recorded obligations - operating,Current liabilities
+312,Accounts payable - trade,Liabilities,10B100040,Accounts payable - trade,Current liabilities
+320,Electronically recorded obligations - non-operating,Liabilities,10B100770,Electronically recorded obligations - non-operating,Current liabilities
+321,Short-term borrowings,Liabilities,10B100790,Short-term borrowings,Current liabilities
+322,Accounts payable - other,Liabilities,10B100630,Accounts payable - other,Current liabilities
+323,Accrued expenses,Liabilities,10B100160,Accrued expenses,Current liabilities
+324,Advances received,Liabilities,10B100170,Advances received,Current liabilities
+325,Unearned revenue,Liabilities,10B100190,Unearned revenue,Current liabilities
+326,Deposits received,Liabilities,10B100690,Deposits received,Current liabilities
+327,Accrued business office tax,Liabilities,10B100650,Accrued business office tax,Current liabilities
+328,Income taxes payable,Liabilities,10B100640,Income taxes payable,Current liabilities
+330,Dividends payable,Liabilities,10B100920,Dividends payable,Current liabilities
+331,Suspense receipt,Liabilities,10B100880,Suspense receipt,Current liabilities
+333,Electronically recorded obligations - operating,Liabilities,10B100070,Electronically recorded obligations - operating,Current liabilities
+334,Electronically recorded obligations - operating,Liabilities,10B100070,Electronically recorded obligations - operating,Current liabilities
+335,Suspense receipt of consumption taxes,Liabilities,10B100890,Suspense receipt of consumption taxes,Current liabilities
+336,Accrued consumption taxes,Liabilities,10B100660,Accrued consumption taxes,Current liabilities
+337,Provision for bonuses,Liabilities,10B100320,Provision for bonuses,Current liabilities
+338,Notes payable - trade,Liabilities,10B100030,Notes payable - trade,Current liabilities
+339,Notes payable - trade,Liabilities,10B100030,Notes payable - trade,Current liabilities
+329,Deferred tax liabilities,Liabilities,10B200610,Deferred tax liabilities,Non-current liabilities
+341,Long-term borrowings,Liabilities,10B200080,Long-term borrowings,Non-current liabilities
+342,Deferred tax liabilities,Liabilities,10B200610,Deferred tax liabilities,Non-current liabilities
+359,Provision for retirement benefits,Liabilities,10B200120,Provision for retirement benefits,Non-current liabilities
+360,Other provisions,Liabilities,10B200300,Other provisions,Non-current liabilities
+411,Share capital,Liabilities,10C110010,Share capital,Share capital
+421,Legal capital surplus,Liabilities,10C120020,Legal capital surplus,Capital surplus
+431,Legal retained earnings,Liabilities,10C130020,Legal retained earnings,Retained earnings
+432,General reserve,Liabilities,10C130360,General reserve,Retained earnings
+437,Retained earnings brought forward,Liabilities,10C130370,Retained earnings brought forward,Retained earnings
+441,Revaluation reserve for land,Liabilities,10C200040,Revaluation reserve for land,Valuation and translation adjustments
+442,Valuation difference on available-for-sale securities,Liabilities,10C200020,Valuation difference on available-for-sale securities,Valuation and translation adjustments
+511,Gross sales,Revenue,10D100100,Gross sales,Net sales
+512,Sales from electronic transactions,Revenue,10D100101,Sales from electronic transactions,Net sales
+513,Sales from traditional transactions,Revenue,10D100102,Sales from traditional transactions,Net sales
+521,Sales allowance and returns,Expenses,10D100110,Sales allowance and returns,Net sales
+524,Sales allowance and returns from electronic transactions from electronic transactions,Expenses,10D100111,Sales allowance and returns from electronic transactions from electronic transactions,Net sales
+525,Sales allowance and returns from traditional transactions,Expenses,10D100112,Sales allowance and returns from traditional transactions,Net sales
+523,Sales allowance and returns,Expenses,10D100110,Sales allowance and returns,Net sales
+526,Sales allowance and returns from electronic transactions from electronic transactions,Expenses,10D100111,Sales allowance and returns from electronic transactions from electronic transactions,Net sales
+527,Sales allowance and returns from traditional transactions,Expenses,10D100112,Sales allowance and returns from traditional transactions,Net sales
+812,Dividend income,Revenue,10D100390,Dividend income,Net sales
+531,Beginning merchandise inventory,Expenses,10E100100,Beginning merchandise inventory,Cost of sales
+541,Cost of purchased goods,Expenses,10E100130,Cost of purchased goods,Cost of sales
+542,Cost of purchased goods from electronic transactions,Expenses,10E100131,Cost of purchased goods from electronic transactions,Cost of sales
+543,Cost of purchased goods from traditional transactions,Expenses,10E100132,Cost of purchased goods from traditional transactions,Cost of sales
+551,Purchase allowance and returns,Revenue,10E100120,Purchase allowance and returns,Cost of sales
+554,Purchase allowance and returns from electronic transactions,Revenue,10E100121,Purchase allowance and returns from electronic transactions,Cost of sales
+555,Purchase allowance and returns from traditional transactions,Revenue,10E100122,Purchase allowance and returns from traditional transactions,Cost of sales
+553,Purchase allowance and returns,Revenue,10E100120,Purchase allowance and returns,Cost of sales
+556,Purchase allowance and returns from electronic transactions,Revenue,10E100121,Purchase allowance and returns from electronic transactions,Cost of sales
+557,Purchase allowance and returns from traditional transactions,Revenue,10E100122,Purchase allowance and returns from traditional transactions,Cost of sales
+561,Ending merchandise inventory,Revenue,10E100140,Ending merchandise inventory,Cost of sales
+571,Beginning finished goods inventory,Expenses,10E100220,Beginning finished goods inventory,Cost of sales
+745,Outsourcing expenses,Expenses,10E110660,Outsourcing expenses,Cost of sales
+711,Remuneration for directors (and other officers),Expenses,10E200090,Remuneration for directors (and other officers),"Selling, general and administrative expenses"
+712,Salaries and allowances,Expenses,10E200370,Salaries and allowances,"Selling, general and administrative expenses"
+713,Bonuses,Expenses,10E200130,Bonuses,"Selling, general and administrative expenses"
+714,Retirement benefit expenses,Expenses,10E200310,Retirement benefit expenses,"Selling, general and administrative expenses"
+721,Other salaries,Expenses,10E200520,Other salaries,"Selling, general and administrative expenses"
+722,Retirement payments,Expenses,10E200490,Retirement payments,"Selling, general and administrative expenses"
+723,Legal welfare expenses,Expenses,10E200540,Legal welfare expenses,"Selling, general and administrative expenses"
+724,Welfare expenses,Expenses,10E200140,Welfare expenses,"Selling, general and administrative expenses"
+726,Travel and transportation expenses,Expenses,10E201230,Travel and transportation expenses,"Selling, general and administrative expenses"
+727,Communication expenses,Expenses,10E200180,Communication expenses,"Selling, general and administrative expenses"
+728,Sales commission,Expenses,10E200020,Sales commission,"Selling, general and administrative expenses"
+731,Freight costs,Expenses,10E200870,Freight costs,"Selling, general and administrative expenses"
+732,Advertising expenses,Expenses,10E200050,Advertising expenses,"Selling, general and administrative expenses"
+733,Entertainment expenses,Expenses,10E200150,Entertainment expenses,"Selling, general and administrative expenses"
+734,Meeting expenses,Expenses,10E201130,Meeting expenses,"Selling, general and administrative expenses"
+735,Utilities expenses,Expenses,10E201040,Utilities expenses,"Selling, general and administrative expenses"
+736,Utilities expenses,Expenses,10E201040,Utilities expenses,"Selling, general and administrative expenses"
+737,Supplies expenses,Expenses,10E200200,Supplies expenses,"Selling, general and administrative expenses"
+738,Taxes and dues,Expenses,10E200210,Taxes and dues,"Selling, general and administrative expenses"
+739,Book expenses,Expenses,10E201160,Book expenses,"Selling, general and administrative expenses"
+740,Vehicle expenses,Expenses,10E201120,Vehicle expenses,"Selling, general and administrative expenses"
+741,Commission expenses,Expenses,10E200690,Commission expenses,"Selling, general and administrative expenses"
+742,Membership fee,Expenses,10E201140,Membership fee,"Selling, general and administrative expenses"
+743,Donations,Expenses,10E201010,Donations,"Selling, general and administrative expenses"
+744,Rent expenses on land and buildings,Expenses,10E200730,Rent expenses on land and buildings,"Selling, general and administrative expenses"
+746,Fee expenses,Expenses,10E200600,Fee expenses,"Selling, general and administrative expenses"
+747,Rent expenses on land and buildings,Expenses,10E200720,Rent expenses on land and buildings,"Selling, general and administrative expenses"
+751,Rent expenses,Expenses,10E200700,Rent expenses,"Selling, general and administrative expenses"
+752,Insurance expenses,Expenses,10E200240,Insurance expenses,"Selling, general and administrative expenses"
+753,Repair and maintenance expenses,Expenses,10E201000,Repair and maintenance expenses,"Selling, general and administrative expenses"
+754,Office supplies expenses,Expenses,10E201110,Office supplies expenses,"Selling, general and administrative expenses"
+763,Depreciation,Expenses,10E200220,Depreciation,"Selling, general and administrative expenses"
+781,Bad debts expenses,Expenses,10E200270,Bad debts expenses,"Selling, general and administrative expenses"
+791,Miscellaneous expenses,Expenses,10E201270,Miscellaneous expenses,"Selling, general and administrative expenses"
+829,Bad debts expenses,Expenses,10E200270,Bad debts expenses,"Selling, general and administrative expenses"
+811,Interest income,Revenue,10D200020,Interest income,Non-operating income
+815,Gain on sales of securities,Revenue,10D200110,Gain on sales of securities,Non-operating income
+818,Purchase discounts,Revenue,10D200050,Purchase discounts,Non-operating income
+819,Electricity sale income,Revenue,10D200510,Electricity sale income,Non-operating income
+911,Gain on sales of non-current assets,Revenue,10D200570,Gain on sales of non-current assets,Non-operating income
+918,Gain on sales of investment securities,Revenue,10D200120,Gain on sales of investment securities,Non-operating income
+919,Gain on bad debts recovered,Revenue,10D200640,Gain on bad debts recovered,Non-operating income
+821,Interest expenses,Expenses,10E300020,Interest expenses,Non-operating expenses
+823,Loss on sales of securities,Expenses,10E300050,Loss on sales of securities,Non-operating expenses
+824,Loss on sales of notes receivable - trade,Expenses,10E300370,Loss on sales of notes receivable - trade,Non-operating expenses
+825,Loss on sales of electronically recorded monetary claims,Expenses,10E300380,Loss on sales of electronically recorded monetary claims,Non-operating expenses
+859,Sales discounts,Expenses,10E300040,Sales discounts,Non-operating expenses
+899,Miscellaneous loss,Expenses,10E300890,Miscellaneous loss,Non-operating expenses
+921,Loss on sales of non-current assets,Expenses,10E300490,Loss on sales of non-current assets,Non-operating expenses
+924,Loss on retirement of non-current assets,Expenses,10E300500,Loss on retirement of non-current assets,Non-operating expenses
+927,Loss on sales of investment securities,Expenses,10E300090,Loss on sales of investment securities,Non-operating expenses
+916,Reversal of provision for retirement benefits,Revenue,10D300290,Reversal of provision for retirement benefits,Extraordinary income
+917,Reversal of provision for bonuses,Revenue,10D300270,Reversal of provision for bonuses,Extraordinary income
+928,Impairment loss,Expenses,10E400090,Impairment loss,Extraordinary loss
+932,Income taxes - deferred,Expenses,10F100090,Income taxes - deferred,Other
+999,Sundry accounts,Expenses,10X000000,Sundry accounts,

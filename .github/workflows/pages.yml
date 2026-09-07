@@ -31,14 +31,23 @@ jobs:
           mkdir -p "${site}/data"
           cp -a web/. "${site}/"
           cp -a data/sample "${site}/data/sample"
+          cp -a data/legacy-sample "${site}/data/legacy-sample"
+          cp data/datasets.json "${site}/data/datasets.json"
 
           test -f "${site}/index.html"
           test -f "${site}/app.js"
           test -f "${site}/app.css"
+          test -f "${site}/journal-display.js"
+          test -f "${site}/build-info.json"
           test -d "${site}/i18n"
+          test -f "${site}/data/datasets.json"
           test -f "${site}/data/sample/index.json"
+          test -f "${site}/data/legacy-sample/index.json"
+          test -f "${site}/data/legacy-sample/structured-metadata.json"
           test -f "${site}/data/sample/ja/tidy/2021-04.csv"
           test -f "${site}/data/sample/en/tidy/2021-04.csv"
+          test -f "${site}/data/legacy-sample/ja/journal/2021-04.csv"
+          test -f "${site}/data/legacy-sample/en/journal/2021-04.csv"
 
           if find "${site}" -type l -print -quit | grep -q .; then
             echo "Symbolic links are not allowed in the Pages artifact." >&2

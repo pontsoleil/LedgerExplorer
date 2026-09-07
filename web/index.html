@@ -9,7 +9,12 @@
 <body>
 
   <div class="top-layout">
-    <div id="companyHeader" class="company-header" hidden></div>
+    <div id="companyHeader" class="company-header" hidden>
+      <label class="dataset-menu">
+        <select id="datasetSelect" aria-label="データセット"></select>
+      </label>
+      <span id="companyDetails" class="company-header__details"></span>
+    </div>
     <div class="filter-panel toolbar-primary">
       <div id="columnToggleGroup" class="column-toggle-group" aria-label="Column display options"></div>
 
@@ -82,12 +87,11 @@
         </select>
       </label>
 
-      <div class="build-timestamp" aria-label="この改訂版の生成日時">
-        生成日時：2026-07-21 13:10
-      </div>
+      <div id="buildTimestamp" class="build-timestamp" aria-label="プログラム作成日時"></div>
     </div>
   </div>
 
-  <script src="./app.js?v=202609071405"></script>
+  <script src="./journal-display.js?v=202609071551"></script>
+  <script src="./app.js?v=202609071551"></script>
 </body>
 </html>

@@ -1,0 +1,119 @@
+﻿Transaction_ID,Line_ID,Entry_ID,Ledger_Side,Transaction_Date,Description,Ledger_Account_Number,Ledger_Account_Name,Subaccount_Code,Subaccount_Name,Department_Code,Department_Name,Debit_Amount,Credit_Amount,Counterpart_Account_Number,Counterpart_Account_Name,Counterpart_Subaccount_Code,Counterpart_Subaccount_Name,Counterpart_Department_Code,Counterpart_Department_Name,Balance,Month
+4000,1,904000,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,1,"Goketsu Co., Ltd.",,,3267499,0,10D100102,Sales from traditional transactions,,,,,3267499,2021-02
+4000,1,904000,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,3267499,10A100090,Accounts receivable - trade,1,"Goketsu Co., Ltd.",,,3267499,2021-02
+4001,1,904001,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,1,"Goketsu Co., Ltd.",,,1985,0,10D100102,Sales from traditional transactions,,,,,3269484,2021-02
+4001,1,904001,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,1985,10A100090,Accounts receivable - trade,1,"Goketsu Co., Ltd.",,,3269484,2021-02
+4005,1,904005,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,2,Imai Department Store,,,13483517,0,10D100102,Sales from traditional transactions,,,,,13483517,2021-02
+4005,1,904005,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,13483517,10A100090,Accounts receivable - trade,2,Imai Department Store,,,16753001,2021-02
+4008,1,904008,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,3,"Check Co., Ltd.",,,1585979,0,10D100102,Sales from traditional transactions,,,,,1585979,2021-02
+4008,1,904008,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,1585979,10A100090,Accounts receivable - trade,3,"Check Co., Ltd.",,,18338980,2021-02
+4010,1,904010,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,4,Mark Market,,,2226774,0,10D100102,Sales from traditional transactions,,,,,2226774,2021-02
+4010,1,904010,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,2226774,10A100090,Accounts receivable - trade,4,Mark Market,,,20565754,2021-02
+4011,1,904011,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,4,Mark Market,,,651,0,10D100102,Sales from traditional transactions,,,,,2227425,2021-02
+4011,1,904011,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,651,10A100090,Accounts receivable - trade,4,Mark Market,,,20566405,2021-02
+4014,1,904014,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,5,"ABC Co., Ltd.",,,2999742,0,10D100102,Sales from traditional transactions,,,,,2999742,2021-02
+4014,1,904014,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,2999742,10A100090,Accounts receivable - trade,5,"ABC Co., Ltd.",,,23566147,2021-02
+4015,1,904015,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,5,"ABC Co., Ltd.",,,628,0,10D100102,Sales from traditional transactions,,,,,3000370,2021-02
+4015,1,904015,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,628,10A100090,Accounts receivable - trade,5,"ABC Co., Ltd.",,,23566775,2021-02
+4019,1,904019,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,1020783,0,10D100102,Sales from traditional transactions,,,,,1020783,2021-02
+4019,1,904019,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,1020783,10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,24587558,2021-02
+4020,1,904020,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,675,0,10D100102,Sales from traditional transactions,,,,,1021458,2021-02
+4020,1,904020,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,675,10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,24588233,2021-02
+4021,1,904021,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,27339,0,10D100102,Sales from traditional transactions,,,,,1048797,2021-02
+4021,1,904021,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,27339,10A100090,Accounts receivable - trade,6,"Entry Co., Ltd.",,,24615572,2021-02
+4024,1,904024,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,7,"Comprehensive Management Co., Ltd.",,,1534105,0,10D100102,Sales from traditional transactions,,,,,1534105,2021-02
+4024,1,904024,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,1534105,10A100090,Accounts receivable - trade,7,"Comprehensive Management Co., Ltd.",,,26149677,2021-02
+4025,1,904025,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,7,"Comprehensive Management Co., Ltd.",,,516,0,10D100102,Sales from traditional transactions,,,,,1534621,2021-02
+4025,1,904025,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,516,10A100090,Accounts receivable - trade,7,"Comprehensive Management Co., Ltd.",,,26150193,2021-02
+4029,1,904029,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,9,"Takahashi Trading Co., Ltd.",,,2584696,0,10D100102,Sales from traditional transactions,,,,,2584696,2021-02
+4029,1,904029,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,2584696,10A100090,Accounts receivable - trade,9,"Takahashi Trading Co., Ltd.",,,28734889,2021-02
+4030,1,904030,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,9,"Takahashi Trading Co., Ltd.",,,642,0,10D100102,Sales from traditional transactions,,,,,2585338,2021-02
+4030,1,904030,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,642,10A100090,Accounts receivable - trade,9,"Takahashi Trading Co., Ltd.",,,28735531,2021-02
+4036,1,904036,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,12,Momiji Department Store,,,30547,0,10D100102,Sales from traditional transactions,,,,,30547,2021-02
+4036,1,904036,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,30547,10A100090,Accounts receivable - trade,12,Momiji Department Store,,,28766078,2021-02
+4037,1,904037,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,12,Momiji Department Store,,,9017603,0,10D100102,Sales from traditional transactions,,,,,9048150,2021-02
+4037,1,904037,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,9017603,10A100090,Accounts receivable - trade,12,Momiji Department Store,,,37783681,2021-02
+4040,1,904040,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,13,"Abe Trading Co., Ltd.",,,2114596,0,10D100102,Sales from traditional transactions,,,,,2114596,2021-02
+4040,1,904040,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,2114596,10A100090,Accounts receivable - trade,13,"Abe Trading Co., Ltd.",,,39898277,2021-02
+4041,1,904041,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,13,"Abe Trading Co., Ltd.",,,53041,0,10D100102,Sales from traditional transactions,,,,,2167637,2021-02
+4041,1,904041,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,53041,10A100090,Accounts receivable - trade,13,"Abe Trading Co., Ltd.",,,39951318,2021-02
+4043,1,904043,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,13888575,0,10D100102,Sales from traditional transactions,,,,,13888575,2021-02
+4043,1,904043,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,13888575,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,53839893,2021-02
+4044,1,904044,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,633,0,10D100102,Sales from traditional transactions,,,,,13889208,2021-02
+4044,1,904044,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,633,10A100090,Accounts receivable - trade,14,"Fujita Co., Ltd.",,,53840526,2021-02
+4049,1,904049,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,19,"Minami Co., Ltd.",,,1080093,0,10D100102,Sales from traditional transactions,,,,,1080093,2021-02
+4049,1,904049,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,1080093,10A100090,Accounts receivable - trade,19,"Minami Co., Ltd.",,,54920619,2021-02
+4050,1,904050,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,19,"Minami Co., Ltd.",,,556,0,10D100102,Sales from traditional transactions,,,,,1080649,2021-02
+4050,1,904050,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,556,10A100090,Accounts receivable - trade,19,"Minami Co., Ltd.",,,54921175,2021-02
+4053,1,904053,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,20,"Kujou Trading Co., Ltd.",,,1770912,0,10D100102,Sales from traditional transactions,,,,,1770912,2021-02
+4053,1,904053,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,1770912,10A100090,Accounts receivable - trade,20,"Kujou Trading Co., Ltd.",,,56692087,2021-02
+4054,1,904054,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,20,"Kujou Trading Co., Ltd.",,,492,0,10D100102,Sales from traditional transactions,,,,,1771404,2021-02
+4054,1,904054,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,492,10A100090,Accounts receivable - trade,20,"Kujou Trading Co., Ltd.",,,56692579,2021-02
+4060,1,904060,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,22,"Watanabe Industries Co., Ltd.",,,2380294,0,10D100102,Sales from traditional transactions,,,,,2380294,2021-02
+4060,1,904060,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,2380294,10A100090,Accounts receivable - trade,22,"Watanabe Industries Co., Ltd.",,,59072873,2021-02
+4061,1,904061,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,22,"Watanabe Industries Co., Ltd.",,,507,0,10D100102,Sales from traditional transactions,,,,,2380801,2021-02
+4061,1,904061,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,507,10A100090,Accounts receivable - trade,22,"Watanabe Industries Co., Ltd.",,,59073380,2021-02
+4066,1,904066,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,25,"Kobayashi Market Co., Ltd.",,,4660833,0,10D100102,Sales from traditional transactions,,,,,4660833,2021-02
+4066,1,904066,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,4660833,10A100090,Accounts receivable - trade,25,"Kobayashi Market Co., Ltd.",,,63734213,2021-02
+4067,1,904067,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,25,"Kobayashi Market Co., Ltd.",,,590,0,10D100102,Sales from traditional transactions,,,,,4661423,2021-02
+4067,1,904067,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,590,10A100090,Accounts receivable - trade,25,"Kobayashi Market Co., Ltd.",,,63734803,2021-02
+4071,1,904071,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,26,"Sasaki Sales Co., Ltd.",,,1206280,0,10D100102,Sales from traditional transactions,,,,,1206280,2021-02
+4071,1,904071,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,1206280,10A100090,Accounts receivable - trade,26,"Sasaki Sales Co., Ltd.",,,64941083,2021-02
+4072,1,904072,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,26,"Sasaki Sales Co., Ltd.",,,377,0,10D100102,Sales from traditional transactions,,,,,1206657,2021-02
+4072,1,904072,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,377,10A100090,Accounts receivable - trade,26,"Sasaki Sales Co., Ltd.",,,64941460,2021-02
+4076,1,904076,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,27,"Iwashita Trading Co., Ltd.",,,1419759,0,10D100102,Sales from traditional transactions,,,,,1419759,2021-02
+4076,1,904076,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,1419759,10A100090,Accounts receivable - trade,27,"Iwashita Trading Co., Ltd.",,,66361219,2021-02
+4077,1,904077,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,27,"Iwashita Trading Co., Ltd.",,,481,0,10D100102,Sales from traditional transactions,,,,,1420240,2021-02
+4077,1,904077,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,481,10A100090,Accounts receivable - trade,27,"Iwashita Trading Co., Ltd.",,,66361700,2021-02
+4079,1,904079,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,28,Kameda Department Store,,,6441963,0,10D100102,Sales from traditional transactions,,,,,6441963,2021-02
+4079,1,904079,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,6441963,10A100090,Accounts receivable - trade,28,Kameda Department Store,,,72803663,2021-02
+4080,1,904080,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,28,Kameda Department Store,,,20058,0,10D100102,Sales from traditional transactions,,,,,6462021,2021-02
+4080,1,904080,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,20058,10A100090,Accounts receivable - trade,28,Kameda Department Store,,,72823721,2021-02
+4083,1,904083,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,30,"YAG Co., Ltd.",,,2497755,0,10D100102,Sales from traditional transactions,,,,,2497755,2021-02
+4083,1,904083,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,2497755,10A100090,Accounts receivable - trade,30,"YAG Co., Ltd.",,,75321476,2021-02
+4084,1,904084,Debit,2021-02-28,Sales invoice,10A100090,Accounts receivable - trade,30,"YAG Co., Ltd.",,,575,0,10D100102,Sales from traditional transactions,,,,,2498330,2021-02
+4084,1,904084,Credit,2021-02-28,Sales invoice,10D100102,Sales from traditional transactions,,,,,0,575,10A100090,Accounts receivable - trade,30,"YAG Co., Ltd.",,,75322051,2021-02
+4087,1,904087,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,3557473,0,10B100040,Accounts payable - trade,1,"Y2 Co., Ltd.",,,3557473,2021-02
+4087,1,904087,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,1,"Y2 Co., Ltd.",,,0,3557473,10E100132,Cost of purchased goods from traditional transactions,,,,,3557473,2021-02
+4088,1,904088,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,73207,0,10B100040,Accounts payable - trade,1,"Y2 Co., Ltd.",,,3630680,2021-02
+4088,1,904088,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,1,"Y2 Co., Ltd.",,,0,73207,10E100132,Cost of purchased goods from traditional transactions,,,,,3630680,2021-02
+4090,1,904090,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,1829520,0,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,5460200,2021-02
+4090,1,904090,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,2,"Pole Co., Ltd.",,,0,1829520,10E100132,Cost of purchased goods from traditional transactions,,,,,1829520,2021-02
+4092,1,904092,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,10297986,0,10B100040,Accounts payable - trade,3,"Check Co., Ltd.",,,15758186,2021-02
+4092,1,904092,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,3,"Check Co., Ltd.",,,0,10297986,10E100132,Cost of purchased goods from traditional transactions,,,,,10297986,2021-02
+4093,1,904093,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,30289,0,10B100040,Accounts payable - trade,3,"Check Co., Ltd.",,,15788475,2021-02
+4093,1,904093,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,3,"Check Co., Ltd.",,,0,30289,10E100132,Cost of purchased goods from traditional transactions,,,,,10328275,2021-02
+4096,1,904096,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,1416910,0,10B100040,Accounts payable - trade,4,"Attach Co., Ltd.",,,17205385,2021-02
+4096,1,904096,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,4,"Attach Co., Ltd.",,,0,1416910,10E100132,Cost of purchased goods from traditional transactions,,,,,1416910,2021-02
+4098,1,904098,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,21674,0,10B100040,Accounts payable - trade,5,"Kofujimaru Co., Ltd.",,,17227059,2021-02
+4098,1,904098,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,5,"Kofujimaru Co., Ltd.",,,0,21674,10E100132,Cost of purchased goods from traditional transactions,,,,,21674,2021-02
+4099,1,904099,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,5237507,0,10B100040,Accounts payable - trade,5,"Kofujimaru Co., Ltd.",,,22464566,2021-02
+4099,1,904099,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,5,"Kofujimaru Co., Ltd.",,,0,5237507,10E100132,Cost of purchased goods from traditional transactions,,,,,5259181,2021-02
+4102,1,904102,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,3596039,0,10B100040,Accounts payable - trade,6,"Hanada Co., Ltd.",,,26060605,2021-02
+4102,1,904102,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,6,"Hanada Co., Ltd.",,,0,3596039,10E100132,Cost of purchased goods from traditional transactions,,,,,3596039,2021-02
+4103,1,904103,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,22478,0,10B100040,Accounts payable - trade,6,"Hanada Co., Ltd.",,,26083083,2021-02
+4103,1,904103,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,6,"Hanada Co., Ltd.",,,0,22478,10E100132,Cost of purchased goods from traditional transactions,,,,,3618517,2021-02
+4105,1,904105,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,5522383,0,10B100040,Accounts payable - trade,7,"Sunset Co., Ltd.",,,31605466,2021-02
+4105,1,904105,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,7,"Sunset Co., Ltd.",,,0,5522383,10E100132,Cost of purchased goods from traditional transactions,,,,,5522383,2021-02
+4108,1,904108,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,402696,0,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,32008162,2021-02
+4108,1,904108,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,8,"Yamashita Co., Ltd.",,,0,402696,10E100132,Cost of purchased goods from traditional transactions,,,,,402696,2021-02
+4110,1,904110,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,11793,0,10B100040,Accounts payable - trade,9,"Saito Industries Co., Ltd.",,,32019955,2021-02
+4110,1,904110,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,9,"Saito Industries Co., Ltd.",,,0,11793,10E100132,Cost of purchased goods from traditional transactions,,,,,11793,2021-02
+4111,1,904111,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,2599235,0,10B100040,Accounts payable - trade,9,"Saito Industries Co., Ltd.",,,34619190,2021-02
+4111,1,904111,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,9,"Saito Industries Co., Ltd.",,,0,2599235,10E100132,Cost of purchased goods from traditional transactions,,,,,2611028,2021-02
+4114,1,904114,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,34587,0,10B100040,Accounts payable - trade,10,"Suzuki Sales Co., Ltd.",,,34653777,2021-02
+4114,1,904114,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,10,"Suzuki Sales Co., Ltd.",,,0,34587,10E100132,Cost of purchased goods from traditional transactions,,,,,34587,2021-02
+4115,1,904115,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,4640751,0,10B100040,Accounts payable - trade,10,"Suzuki Sales Co., Ltd.",,,39294528,2021-02
+4115,1,904115,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,10,"Suzuki Sales Co., Ltd.",,,0,4640751,10E100132,Cost of purchased goods from traditional transactions,,,,,4675338,2021-02
+4118,1,904118,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,6181724,0,10B100040,Accounts payable - trade,11,"Matsumura Co., Ltd.",,,45476252,2021-02
+4118,1,904118,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,11,"Matsumura Co., Ltd.",,,0,6181724,10E100132,Cost of purchased goods from traditional transactions,,,,,6181724,2021-02
+4121,1,904121,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,497372,0,10B100040,Accounts payable - trade,12,"Arie Co., Ltd.",,,45973624,2021-02
+4121,1,904121,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,12,"Arie Co., Ltd.",,,0,497372,10E100132,Cost of purchased goods from traditional transactions,,,,,497372,2021-02
+4123,1,904123,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,1370598,0,10B100040,Accounts payable - trade,13,"Nakamura Industries Co., Ltd.",,,47344222,2021-02
+4123,1,904123,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,13,"Nakamura Industries Co., Ltd.",,,0,1370598,10E100132,Cost of purchased goods from traditional transactions,,,,,1370598,2021-02
+4125,1,904125,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,4036321,0,10B100040,Accounts payable - trade,14,West LLC,,,51380543,2021-02
+4125,1,904125,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,14,West LLC,,,0,4036321,10E100132,Cost of purchased goods from traditional transactions,,,,,4036321,2021-02
+4127,1,904127,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,16968,0,10B100040,Accounts payable - trade,15,"Hanamaru Trading Co., Ltd.",,,51397511,2021-02
+4127,1,904127,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,15,"Hanamaru Trading Co., Ltd.",,,0,16968,10E100132,Cost of purchased goods from traditional transactions,,,,,16968,2021-02
+4128,1,904128,Debit,2021-02-28,Purchase invoice,10E100132,Cost of purchased goods from traditional transactions,,,,,1710087,0,10B100040,Accounts payable - trade,15,"Hanamaru Trading Co., Ltd.",,,53107598,2021-02
+4128,1,904128,Credit,2021-02-28,Purchase invoice,10B100040,Accounts payable - trade,15,"Hanamaru Trading Co., Ltd.",,,0,1710087,10E100132,Cost of purchased goods from traditional transactions,,,,,1727055,2021-02

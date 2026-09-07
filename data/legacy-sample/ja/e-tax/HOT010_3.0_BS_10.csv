@@ -1,0 +1,588 @@
+﻿name,B,category,seq,account_name,amount,type,level,Ledger_Account_Number,element_name,English_Label
+　貸借対照表,,,5,貸借対照表,,T,1,10_000000,#N/A,Balance Sheet
+　　資産の部,,資産,,資産の部,,T,2,10A000010,AssetsAbstract,Assets
+　　　流動資産,,流動資産,,流動資産,,T,3,10A100010,CurrentAssetsAbstract,Current assets
+　　　　現金及び預金,0,流動資産,,現金及び預金,,1,4,10A100020,CashAndDeposits,Cash and deposits
+　　　　受取手形及び売掛金,0,流動資産,,受取手形及び売掛金,,1,4,10A100030,NotesAndAccountsReceivableTrade,Notes and accounts receivable - trade
+　　　　　貸倒引当金,0,流動資産,,貸倒引当金,,1,5,10A100040,AllowanceForDoubtfulAccountsNotesAndAccountsReceivableTrade,Allowance for doubtful accounts
+　　　　　受取手形及び売掛金（純額）,0,流動資産,,受取手形及び売掛金（純額）,,1,5,10A100050,NotesAndAccountsReceivableTradeNet,"Notes and accounts receivable - trade, net"
+　　　　受取手形,0,流動資産,,受取手形,,1,4,10A100060,NotesReceivableTrade,Notes receivable - trade
+　　　　　貸倒引当金,0,流動資産,,貸倒引当金,,1,5,10A100070,AllowanceForDoubtfulAccountsNotesReceivableTrade,Allowance for doubtful accounts
+　　　　　受取手形（純額）,0,流動資産,,受取手形（純額）,,1,5,10A100080,NotesReceivableTradeNet,"Notes receivable - trade, net"
+　　　　売掛金,0,流動資産,,売掛金,,1,4,10A100090,AccountsReceivableTrade,Accounts receivable - trade
+　　　　　貸倒引当金,0,流動資産,,貸倒引当金,,1,5,10A100100,AllowanceForDoubtfulAccountsAccountsReceivableTrade,Allowance for doubtful accounts
+　　　　　売掛金（純額）,0,流動資産,,売掛金（純額）,,1,5,10A100110,AccountsReceivableTradeNet,"Accounts receivable - trade, net"
+　　　　関係会社売掛金,0,流動資産,,関係会社売掛金,,1,4,10A100120,AccountsReceivableFromSubsidiariesAndAffiliatesTrade,Accounts receivable from subsidiaries and associates - trade
+　　　　割賦売掛金,0,流動資産,,割賦売掛金,,1,4,10A100130,AccountsReceivableInstallment,Accounts receivable - installment
+　　　　開発事業未収入金,0,流動資産,,開発事業未収入金,,1,4,10A100140,AccountsReceivableDevelopmentBusiness,Accounts receivable - development business
+　　　　不動産事業未収入金,0,流動資産,,不動産事業未収入金,,1,4,10A100150,AccountsReceivableRealEstateBusiness,Accounts receivable - real estate business
+　　　　完成業務未収入金,0,流動資産,,完成業務未収入金,,1,4,10A100160,AccountsReceivableCompletedOperation,Accounts receivable - completed service contracts
+　　　　加盟店貸勘定,0,流動資産,,加盟店貸勘定,,1,4,10A100170,AccountsReceivableDueFromFranchisedStores,Accounts receivable - due from franchised stores
+　　　　受取手形及び営業未収入金,0,流動資産,,受取手形及び営業未収入金,,1,4,10A100180,NotesAndOperatingAccountsReceivableCA,Trade notes and accounts receivable
+　　　　営業未収入金,0,流動資産,,営業未収入金,,1,4,10A100190,OperatingAccountsReceivableCA,Trade accounts receivable
+　　　　電子記録債権,0,流動資産,,電子記録債権,,1,4,10A100200,ElectronicallyRecordedMonetaryClaimsOperatingCA,Electronically recorded monetary claims - operating
+　　　　営業貸付金,0,流動資産,,営業貸付金,,1,4,10A100210,OperatingLoansCA,Operating loans
+　　　　売買目的有価証券及び1年内に満期の到来する有価証券,,流動資産,,売買目的有価証券及び1年内に満期の到来する有価証券,,T,4,10A100220,abstract,Securities - trading and matured within one year
+　　　　　有価証券,0,流動資産,,有価証券,,1,5,10A100230,ShortTermInvestmentSecurities,Securities
+　　　　親会社株式,0,流動資産,,親会社株式,,1,4,10A100240,StocksOfParentCompanyCA,Shares of parent
+　　　　金銭の信託,0,流動資産,,金銭の信託,,1,4,10A100250,MoneyHeldInTrustCA,Money held in trust
+　　　　営業投資有価証券,0,流動資産,,営業投資有価証券,,1,4,10A100260,OperationalInvestmentSecuritiesCA,Operational investment securities
+　　　　たな卸資産,0,流動資産,,たな卸資産,,1,4,10A100270,Inventories,Inventories
+　　　　　商品,0,流動資産,,商品,,1,5,10A100280,Merchandise,Merchandise
+　　　　　　未着商品,0,流動資産,,未着商品,,1,6,10A100290,Merchandise,Goods in transit
+　　　　　製品、副産物及び作業くず,,流動資産,,製品、副産物及び作業くず,,T,5,10A100300,abstract,"Finished goods, by-products and scraps"
+　　　　　　製品,0,流動資産,,製品,,1,6,10A100310,FinishedGoods,Finished goods
+　　　　　　副産物,0,流動資産,,副産物,,1,6,10A100320,ByProduct,By-product
+　　　　　商品及び製品,0,流動資産,,商品及び製品,,1,5,10A100330,MerchandiseAndFinishedGoods,Merchandise and finished goods
+　　　　　半製品,0,流動資産,,半製品,,1,5,10A100340,SemiFinishedGoods,Semi-finished goods
+　　　　　原料及び材料,,流動資産,,原料及び材料,,T,5,10A100350,abstract,Raw materials and materials
+　　　　　　原材料,0,流動資産,,原材料,,1,6,10A100360,RawMaterials,Raw materials
+　　　　　　原材料及び貯蔵品,0,流動資産,,原材料及び貯蔵品,,1,6,10A100370,RawMaterialsAndSupplies,Raw materials and supplies
+　　　　　　未着原材料,0,流動資産,,未着原材料,,1,6,10A100380,RawMaterialsInTransit,Raw materials in transit
+　　　　　仕掛品及び半成工事,,流動資産,,仕掛品及び半成工事,,T,5,10A100390,abstract,Work in process and partly-finished work
+　　　　　　仕掛品,0,流動資産,,仕掛品,,1,6,10A100400,WorkInProcess,Work in process
+　　　　　　半成工事,0,流動資産,,半成工事,,1,6,10A100410,PartlyFinishedWork,Partly-finished work
+　　　　　消耗品、消耗工具、器具及び備品その他の貯蔵品で相当額以上のもの,,流動資産,,消耗品、消耗工具、器具及び備品その他の貯蔵品で相当額以上のもの,,T,5,10A100420,abstract,Supplies and other - reasonable value
+　　　　　　貯蔵品,0,流動資産,,貯蔵品,,1,6,10A100430,Supplies,Supplies
+　　　　　販売用不動産,0,流動資産,,販売用不動産,,1,5,10A100440,RealEstateForSale,Real estate for sale
+　　　　　仕掛販売用不動産,0,流動資産,,仕掛販売用不動産,,1,5,10A100450,RealEstateForSaleInProcess,Real estate for sale in process
+　　　　　開発事業等支出金,0,流動資産,,開発事業等支出金,,1,5,10A100460,DevelopmentProjectsInProgress,Development projects in progress
+　　　　　不動産事業支出金,0,流動資産,,不動産事業支出金,,1,5,10A100470,CostsOnRealEstateBusiness,Costs on real estate business
+　　　　　未成業務支出金,0,流動資産,,未成業務支出金,,1,5,10A100480,CostsOnUncompletedServices,Costs on service contracts in progress
+　　　　　分譲土地建物,0,流動資産,,分譲土地建物,,1,5,10A100490,LandAndBuildingsForSaleInLots,Land and buildings for sale in lots
+　　　　　分譲土地,0,流動資産,,分譲土地,,1,5,10A100500,LandForSaleInLots,Land for sale in lots
+　　　　　その他のたな卸資産,0,流動資産,,その他のたな卸資産,,1,5,10A100510,InventoriesOtherInventoriesOtherOperation,Other inventories
+　　　　前渡金,0,流動資産,,前渡金,,1,4,10A100520,AdvancePaymentsTrade,Advance payments - trade
+　　　　前払金,0,流動資産,,前払金,,1,4,10A100530,AdvancePaymentsOther,Advance payments - other
+　　　　前払費用,0,流動資産,,前払費用,,1,4,10A100540,PrepaidExpenses,Prepaid expenses
+　　　　未収収益,0,流動資産,,未収収益,,1,4,10A100550,AccruedIncome,Accrued income
+　　　　　未収利息,0,流動資産,,未収利息,,1,5,10A100560,AccruedInterest,Accrued interest
+　　　　その他の資産で1年内に現金化できると認められるもの,,流動資産,,その他の資産で1年内に現金化できると認められるもの,,T,4,10A100570,OtherAssetsEncashedWithinOneYearAbstract,Other assets - encashed within one year
+　　　　　株主、役員又は従業員に対する短期債権,0,流動資産,,株主、役員又は従業員に対する短期債権,,1,5,10A100580,ShortTermClaimsOnShareholdersDirectorsOrEmployees,"Short-term claims on shareholders, directors (and other officers) or employees"
+　　　　　　貸倒引当金,0,流動資産,,貸倒引当金,,1,6,10A100590,AllowanceForDoubtfulAccountsShortTermClaimsOnShareholdersDirectorsOrEmployees,Allowance for doubtful accounts
+　　　　　　株主、役員又は従業員に対する短期債権（純額）,0,流動資産,,株主、役員又は従業員に対する短期債権（純額）,,1,6,10A100600,ShortTermClaimsOnShareholdersDirectorsOrEmployeesNet,"Short-term claims on shareholders, directors (and other officers) or employees, net"
+　　　　　短期貸付金,0,流動資産,,短期貸付金,,1,5,10A100610,ShortTermLoansReceivable,Short-term loans receivable
+　　　　　　貸倒引当金,0,流動資産,,貸倒引当金,,1,6,10A100620,AllowanceForDoubtfulAccountsShortTermLoans,Allowance for doubtful accounts
+　　　　　　短期貸付金（純額）,0,流動資産,,短期貸付金（純額）,,1,6,10A100630,ShortTermLoansReceivableNet,"Short-term loans receivable, net"
+　　　　　関係会社短期貸付金,0,流動資産,,関係会社短期貸付金,,1,5,10A100640,ShortTermLoansReceivableToSubsidiariesAndAffiliates,Short-term loans receivable from subsidiaries and associates
+　　　　　　貸倒引当金,0,流動資産,,貸倒引当金,,1,6,10A100650,AllowanceForDoubtfulAccountsShortTermLoansReceivableFromSubsidiariesAndAffiliates,Allowance for doubtful accounts
+　　　　　　関係会社短期貸付金（純額）,0,流動資産,,関係会社短期貸付金（純額）,,1,6,10A100660,ShortTermLoansReceivableToSubsidiariesAndAffiliatesNet,"Short-term loans receivable from subsidiaries and associates, net"
+　　　　　未収入金,0,流動資産,,未収入金,,1,5,10A100670,AccountsReceivableOther,Accounts receivable - other
+　　　　　関係会社未収入金,0,流動資産,,関係会社未収入金,,1,5,10A100680,AccountsReceivableOtherFromSubsidiariesAndAffiliates,Accounts receivable from subsidiaries and associates - other
+　　　　　未収消費税等,0,流動資産,,未収消費税等,,1,5,10A100690,ConsumptionTaxesReceivable,Consumption taxes receivable
+　　　　　未収還付法人税等,0,流動資産,,未収還付法人税等,,1,5,10A100700,IncomeTaxesReceivable,Income taxes receivable
+　　　　　営業外受取手形,0,流動資産,,営業外受取手形,,1,5,10A100710,NonOperatingNotesReceivable,Non-operating notes receivable
+　　　　　営業外電子記録債権,0,流動資産,,営業外電子記録債権,,1,5,10A100720,ElectronicallyRecordedMonetaryClaimsNonOperatingCA,Electronically recorded monetary claims - non-operating
+　　　　　1年内回収予定の長期貸付金,0,流動資産,,1年内回収予定の長期貸付金,,1,5,10A100730,CurrentPortionOfLongTermLoansReceivable,Current portion of long-term loans receivable
+　　　　　1年内回収予定の関係会社長期貸付金,0,流動資産,,1年内回収予定の関係会社長期貸付金,,1,5,10A100740,CurrentPortionOfLongTermLoansReceivableFromSubsidiariesAndAffiliates,Current portion of long-term loans receivable from subsidiaries and associates
+　　　　　1年内回収予定の差入保証金,0,流動資産,,1年内回収予定の差入保証金,,1,5,10A100750,CurrentPortionOfGuaranteeDeposits,Current portion of guarantee deposits
+　　　　　その他の未収入金,0,流動資産,,その他の未収入金,,1,5,10A100760,OtherAccountsReceivable,Other accounts receivable
+　　　　　関係会社預け金,0,流動資産,,関係会社預け金,,1,5,10A100770,DepositPaidInSubsidiariesAndAffiliates,Deposits paid to subsidiaries and associates
+　　　　　関係会社短期債権,0,流動資産,,関係会社短期債権,,1,5,10A100780,ShortTermReceivablesFromSubsidiariesAndAffiliates,Short-term receivables from subsidiaries and associates
+　　　　　金銭債権信託受益権,0,流動資産,,金銭債権信託受益権,,1,5,10A100790,BeneficiaryRightOfAccountsReceivableInTrust,Beneficial interests in receivables trust
+　　　　　差入保証金,0,流動資産,,差入保証金,,1,5,10A100800,GuaranteeDepositsCA,Guarantee deposits
+　　　　　従業員に対する短期債権,0,流動資産,,従業員に対する短期債権,,1,5,10A100810,ShortTermClaimsOnEmployees,Short-term claims on employees
+　　　　　従業員に対する短期貸付金,0,流動資産,,従業員に対する短期貸付金,,1,5,10A100820,ShortTermLoansToEmployees,Short-term loans receivable from employees
+　　　　　信託受益権,0,流動資産,,信託受益権,,1,5,10A100830,TrustBeneficiaryRightCA,Beneficial interests in trust
+　　　　　立替金,0,流動資産,,立替金,,1,5,10A100840,AdvancesPaid,Advances paid
+　　　　　仮払金,0,流動資産,,仮払金,,1,5,10A100850,SuspensePayments,Suspense payments
+　　　　　預け金,0,流動資産,,預け金,,1,5,10A100860,DepositsPaid,Deposits paid
+　　　　リース債権,0,流動資産,,リース債権,,1,4,10A100870,LeaseReceivablesCA,Lease receivables
+　　　　　貸倒引当金,0,流動資産,,貸倒引当金,,1,5,10A100880,AllowanceForDoubtfulAccountsLeaseReceivablesCA,Allowance for doubtful accounts
+　　　　　リース債権（純額）,0,流動資産,,リース債権（純額）,,1,5,10A100890,LeaseReceivablesNetCA,"Lease receivables, net"
+　　　　リース投資資産,0,流動資産,,リース投資資産,,1,4,10A100900,LeaseInvestmentAssetsCA,Investments in leases
+　　　　　貸倒引当金,0,流動資産,,貸倒引当金,,1,5,10A100910,AllowanceForDoubtfulAccountsLeaseInvestmentAssetsCA,Allowance for doubtful accounts
+　　　　　リース投資資産（純額）,0,流動資産,,リース投資資産（純額）,,1,5,10A100920,LeaseInvestmentAssetsNetCA,"Investments in leases, net"
+　　　　リース債権及びリース投資資産,0,流動資産,,リース債権及びリース投資資産,,1,4,10A100930,LeaseReceivablesAndInvestmentAssetsCA,Lease receivables and investments in leases
+　　　　　貸倒引当金,0,流動資産,,貸倒引当金,,1,5,10A100940,AllowanceForDoubtfulAccountsLeaseReceivablesAndInvestmentAssetsCA,Allowance for doubtful accounts
+　　　　　リース債権及びリース投資資産（純額）,0,流動資産,,リース債権及びリース投資資産（純額）,,1,5,10A100950,LeaseReceivablesAndInvestmentAssetsNetCA,"Lease receivables and investments in leases, net"
+　　　　デリバティブ債権,0,流動資産,,デリバティブ債権,,1,4,10A100960,DerivativesCA,Derivatives
+　　　　　為替予約,0,流動資産,,為替予約,,1,5,10A100970,ForwardExchangeContractsCA,Forward exchange contracts
+　　　　　金利スワップ資産,0,流動資産,,金利スワップ資産,,1,5,10A100980,InterestRateSwapAssetsCA,Interest rate swap assets
+　　　　　金利スワップ,0,流動資産,,金利スワップ,,1,5,10A100990,InterestRateSwapCA,Interest rate swaps
+　　　　　買建通貨オプション,0,流動資産,,買建通貨オプション,,1,5,10A101000,PurchasedCurrencyOptionCA,Purchased currency options
+　　　　　通貨オプション,0,流動資産,,通貨オプション,,1,5,10A101010,CurrencyOptionCA,Currency options
+　　　　　オプション資産,0,流動資産,,オプション資産,,1,5,10A101020,OptionCA,Options
+　　　　前払年金費用,0,流動資産,,前払年金費用,,1,4,10A101030,PrepaidPensionCostCA,Prepaid pension cost
+　　　　流動資産に属する資産に係る引当金,,流動資産,,流動資産に属する資産に係る引当金,,T,4,10A101040,AllowanceCurrentAssetsAbstract,Allowance - current assets
+　　　　　貸倒引当金,0,流動資産,,貸倒引当金,,1,5,10A101050,AllowanceForDoubtfulAccountsCA,Allowance for doubtful accounts
+　　　　信用保証割賦売掛金,0,流動資産,,信用保証割賦売掛金,,1,4,10A101060,AccountsReceivableInstallment,Accounts receivable - installment sales - credit guarantee
+　　　　寄託有価証券,0,流動資産,,寄託有価証券,,1,4,10A101070,SecuritiesInDepositCA,Securities in deposit
+　　　　商業手形,0,流動資産,,商業手形,,1,4,10A101080,CommercialNotesCA,Commercial notes
+　　　　貸借取引貸付金,0,流動資産,,貸借取引貸付金,,1,4,10A101090,LoansOnMarginTransactionCA,Loans on margin transaction
+　　　　一般貸付金,0,流動資産,,一般貸付金,,1,4,10A101100,GeneralLoansCA,General loans
+　　　　公社債貸付金,0,流動資産,,公社債貸付金,,1,4,10A101110,BondFinancingCA,Bond financing
+　　　　貸付有価証券,0,流動資産,,貸付有価証券,,1,4,10A101120,SecuritiesLentCA,Securities lent
+　　　　借入有価証券代り金,0,流動資産,,借入有価証券代り金,,1,4,10A101130,CollateralMoneyForSecuritiesBorrowedCA,Collateral money for securities borrowed
+　　　　買取債権,0,流動資産,,買取債権,,1,4,10A101140,PurchasedReceivablesCA,Purchased receivables
+　　　　その他,0,流動資産,,その他,,1,4,10A101150,OtherCA,Other
+　　　　流動資産,0,流動資産,,流動資産,,1,4,10A101160,CurrentAssets,Current assets
+　　　固定資産,,固定資産,,固定資産,,T,3,10A200010,NoncurrentAssetsAbstract,Non-current assets
+　　　　有形固定資産,,有形固定資産,,有形固定資産,,T,4,10A210010,PropertyPlantAndEquipmentAbstract,"Property, plant and equipment"
+　　　　　建物及び暖房、照明、通風等の附属設備,,有形固定資産,,建物及び暖房、照明、通風等の附属設備,,T,5,10A210020,abstract,"Buildings and other facilities - heating, illumination, ventilation and other"
+　　　　　　建物,0,有形固定資産,,建物,,1,6,10A210030,Buildings,Buildings
+　　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,7,10A210040,AccumulatedDepreciationBuildings,Accumulated depreciation
+　　　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,7,10A210050,AccumulatedImpairmentLossBuildings,Accumulated impairment loss
+　　　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,7,10A210060,AccumulatedDepreciationAndImpairmentLossBuildings,Accumulated depreciation and impairment loss
+　　　　　　　建物（純額）,0,有形固定資産,,建物（純額）,,1,7,10A210070,BuildingsNet,"Buildings, net"
+　　　　　　建物附属設備,0,有形固定資産,,建物附属設備,,1,6,10A210080,BuildingsAndAccompanyingFacilities,Facilities attached to buildings
+　　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,7,10A210090,AccumulatedDepreciationBuildingsAndAccompanyingFacilities,Accumulated depreciation
+　　　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,7,10A210100,AccumulatedImpairmentLossBuildingsAndAccompanyingFacilities,Accumulated impairment loss
+　　　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,7,10A210110,AccumulatedDepreciationAndImpairmentLossBuildingsAndAccompanyingFacilities,Accumulated depreciation and impairment loss
+　　　　　　　建物附属設備（純額）,0,有形固定資産,,建物附属設備（純額）,,1,7,10A210120,BuildingsAndAccompanyingFacilitiesNet,"Facilities attached to buildings, net"
+　　　　　構築物,0,有形固定資産,,構築物,,1,5,10A210130,Structures,Structures
+　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,6,10A210140,AccumulatedDepreciationStructures,Accumulated depreciation
+　　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,6,10A210150,AccumulatedImpairmentLossStructures,Accumulated impairment loss
+　　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,6,10A210160,AccumulatedDepreciationAndImpairmentLossStructures,Accumulated depreciation and impairment loss
+　　　　　　構築物（純額）,0,有形固定資産,,構築物（純額）,,1,6,10A210170,StructuresNet,"Structures, net"
+　　　　　建物及び構築物,0,有形固定資産,,建物及び構築物,,1,5,10A210180,BuildingsAndStructures,Buildings and structures
+　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,6,10A210190,AccumulatedDepreciationBuildingsAndStructures,Accumulated depreciation
+　　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,6,10A210200,AccumulatedImpairmentLossBuildingsAndStructures,Accumulated impairment loss
+　　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,6,10A210210,AccumulatedDepreciationAndImpairmentLossBuildingsAndStructures,Accumulated depreciation and impairment loss
+　　　　　　建物及び構築物（純額）,0,有形固定資産,,建物及び構築物（純額）,,1,6,10A210220,BuildingsAndStructuresNet,"Buildings and structures, net"
+　　　　　機械及び装置並びにコンベヤー、ホイスト、起重機等の搬送設備その他の附属設備,,有形固定資産,,機械及び装置並びにコンベヤー、ホイスト、起重機等の搬送設備その他の附属設備,,T,5,10A210230,abstract,"Machinery, equipment and other facilities - conveyor, hoist, crane and other"
+　　　　　　機械及び装置,0,有形固定資産,,機械及び装置,,1,6,10A210240,MachineryAndEquipment,Machinery and equipment
+　　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,7,10A210250,AccumulatedDepreciationMachineryAndEquipment,Accumulated depreciation
+　　　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,7,10A210260,AccumulatedImpairmentLossMachineryAndEquipment,Accumulated impairment loss
+　　　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,7,10A210270,AccumulatedDepreciationAndImpairmentLossMachineryAndEquipment,Accumulated depreciation and impairment loss
+　　　　　　　機械及び装置（純額）,0,有形固定資産,,機械及び装置（純額）,,1,7,10A210280,MachineryAndEquipmentNet,"Machinery and equipment, net"
+　　　　　船舶及び水上運搬具,,有形固定資産,,船舶及び水上運搬具,,T,5,10A210290,abstract,Vessels and water delivery equipment
+　　　　　　船舶,0,有形固定資産,,船舶,,1,6,10A210300,Vessels,Vessels
+　　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,7,10A210310,AccumulatedDepreciationVessels,Accumulated depreciation
+　　　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,7,10A210320,AccumulatedImpairmentLossVessels,Accumulated impairment loss
+　　　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,7,10A210330,AccumulatedDepreciationAndImpairmentLossVessels,Accumulated depreciation and impairment loss
+　　　　　　　船舶（純額）,0,有形固定資産,,船舶（純額）,,1,7,10A210340,VesselsNet,"Vessels, net"
+　　　　　鉄道車両、自動車その他の陸上運搬具,,有形固定資産,,鉄道車両、自動車その他の陸上運搬具,,T,5,10A210350,abstract,"Railway, car and other land delivery equipment"
+　　　　　　車両運搬具,0,有形固定資産,,車両運搬具,,1,6,10A210360,Vehicles,Vehicles
+　　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,7,10A210370,AccumulatedDepreciationVehicles,Accumulated depreciation
+　　　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,7,10A210380,AccumulatedImpairmentLossVehicles,Accumulated impairment loss
+　　　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,7,10A210390,AccumulatedDepreciationAndImpairmentLossVehicles,Accumulated depreciation and impairment loss
+　　　　　　　車両運搬具（純額）,0,有形固定資産,,車両運搬具（純額）,,1,7,10A210400,VehiclesNet,"Vehicles, net"
+　　　　　工具、器具及び備品,0,有形固定資産,,工具、器具及び備品,,1,5,10A210410,ToolsFurnitureAndFixtures,"Tools, furniture and fixtures"
+　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,6,10A210420,AccumulatedDepreciationToolsFurnitureAndFixtures,Accumulated depreciation
+　　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,6,10A210430,AccumulatedImpairmentLossToolsFurnitureAndFixtures,Accumulated impairment loss
+　　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,6,10A210440,AccumulatedDepreciationAndImpairmentLossToolsFurnitureAndFixtures,Accumulated depreciation and impairment loss
+　　　　　　工具、器具及び備品（純額）,0,有形固定資産,,工具、器具及び備品（純額）,,1,6,10A210450,ToolsFurnitureAndFixturesNet,"Tools, furniture and fixtures, net"
+　　　　　機械装置及び運搬具,0,有形固定資産,,機械装置及び運搬具,,1,5,10A210460,MachineryEquipmentAndVehicles,"Machinery, equipment and vehicles"
+　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,6,10A210470,AccumulatedDepreciationMachineryEquipmentAndVehicles,Accumulated depreciation
+　　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,6,10A210480,AccumulatedImpairmentLossMachineryEquipmentAndVehicles,Accumulated impairment loss
+　　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,6,10A210490,AccumulatedDepreciationAndImpairmentLossMachineryEquipmentAndVehicles,Accumulated depreciation and impairment loss
+　　　　　　機械装置及び運搬具（純額）,0,有形固定資産,,機械装置及び運搬具（純額）,,1,6,10A210500,MachineryEquipmentAndVehiclesNet,"Machinery, equipment and vehicles, net"
+　　　　　車両運搬具及び工具器具備品,0,有形固定資産,,車両運搬具及び工具器具備品,,1,5,10A210510,VehiclesToolsFurnitureAndFixtures,"Vehicles, tools, furniture and fixtures"
+　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,6,10A210520,AccumulatedDepreciationVehiclesToolsFurnitureAndFixtures,Accumulated depreciation
+　　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,6,10A210530,AccumulatedImpairmentLossVehiclesToolsFurnitureAndFixtures,Accumulated impairment loss
+　　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,6,10A210540,AccumulatedDepreciationAndImpairmentLossVehiclesToolsFurnitureAndFixtures,Accumulated depreciation and impairment loss
+　　　　　　車両運搬具及び工具器具備品（純額）,0,有形固定資産,,車両運搬具及び工具器具備品（純額）,,1,6,10A210550,VehiclesToolsFurnitureAndFixturesNet,"Vehicles, tools, furniture and fixtures, net"
+　　　　　機械、運搬具及び工具器具備品,0,有形固定資産,,機械、運搬具及び工具器具備品,,1,5,10A210560,MachineryVehiclesToolsFurnitureAndFixtures,"Machinery, vehicles, tools, furniture and fixtures"
+　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,6,10A210570,AccumulatedDepreciationMachineryVehiclesToolsFurnitureAndFixtures,Accumulated depreciation
+　　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,6,10A210580,AccumulatedImpairmentLossMachineryVehiclesToolsFurnitureAndFixtures,Accumulated impairment loss
+　　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,6,10A210590,AccumulatedDepreciationAndImpairmentLossMachineryVehiclesToolsFurnitureAndFixtures,Accumulated depreciation and impairment loss
+　　　　　　機械、運搬具及び工具器具備品（純額）,0,有形固定資産,,機械、運搬具及び工具器具備品（純額）,,1,6,10A210600,MachineryVehiclesToolsFurnitureAndFixturesNet,"Machinery, vehicles, tools, furniture and fixtures, net"
+　　　　　土地,0,有形固定資産,,土地,,1,5,10A210610,Land,Land
+　　　　　リース資産,0,有形固定資産,,リース資産,,1,5,10A210620,LeaseAssetsPPE,Leased assets
+　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,6,10A210630,AccumulatedDepreciationLeaseAssetsPPE,Accumulated depreciation
+　　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,6,10A210640,AccumulatedImpairmentLossLeaseAssetsPPE,Accumulated impairment loss
+　　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,6,10A210650,AccumulatedDepreciationAndImpairmentLossLeaseAssetsPPE,Accumulated depreciation and impairment loss
+　　　　　　リース資産（純額）,0,有形固定資産,,リース資産（純額）,,1,6,10A210660,LeaseAssetsNetPPE,"Leased assets, net"
+　　　　　建設仮勘定,0,有形固定資産,,建設仮勘定,,1,5,10A210670,ConstructionInProgress,Construction in progress
+　　　　　その他の有形固定資産で流動資産または投資たる資産に属しないもの,,有形固定資産,,その他の有形固定資産で流動資産または投資たる資産に属しないもの,,T,5,10A210680,OtherTangibleAssetsNotCurrentOrInvestmentsAbstract,Other tangible assets not classified as current assets or investments
+　　　　　　航空機,0,有形固定資産,,航空機,,1,6,10A210690,Aircraft,Aircraft
+　　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,7,10A210700,AccumulatedDepreciationAircraft,Accumulated depreciation
+　　　　　　　航空機（純額）,0,有形固定資産,,航空機（純額）,,1,7,10A210710,AircraftNet,"Aircraft, net"
+　　　　　　山林,0,有形固定資産,,山林,,1,6,10A210720,MountainForests,Mountain forests
+　　　　　　貸与資産,0,有形固定資産,,貸与資産,,1,6,10A210730,AssetsForRent,Assets for rent
+　　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,7,10A210740,AccumulatedDepreciationAssetsForRent,Accumulated depreciation
+　　　　　　　貸与資産（純額）,0,有形固定資産,,貸与資産（純額）,,1,7,10A210750,AssetsForRentNet,"Assets for rent, net"
+　　　　　　賃貸不動産,0,有形固定資産,,賃貸不動産,,1,6,10A210760,RealEstateForRent,Real estate for rent
+　　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,7,10A210770,AccumulatedDepreciationRealEstateForRent,Accumulated depreciation
+　　　　　　　賃貸不動産（純額）,0,有形固定資産,,賃貸不動産（純額）,,1,7,10A210780,RealEstateForRentNet,"Real estate for rent, net"
+　　　　　　立木,0,有形固定資産,,立木,,1,6,10A210790,TreesPPE,Trees
+　　　　　　その他の設備,0,有形固定資産,,その他の設備,,1,6,10A210800,OtherFacilitiesPPE,Other facilities
+　　　　　　コース勘定,0,有形固定資産,,コース勘定,,1,6,10A210810,GolfCourses,Golf courses
+　　　　　　ドック船台,0,有形固定資産,,ドック船台,,1,6,10A210820,OtherPPE,Docks and building berths
+　　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,7,10A210830,AccumulatedDepreciationOtherPPE,Accumulated depreciation
+　　　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,7,10A210840,AccumulatedImpairmentLossOtherPPE,Accumulated impairment loss
+　　　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,7,10A210850,AccumulatedDepreciationAndImpairmentLossOtherPPE,Accumulated depreciation and impairment loss
+　　　　　　　ドック船台（純額）,0,有形固定資産,,ドック船台（純額）,,1,7,10A210860,OtherNetPPE,"Docks and building berths, net"
+　　　　　　その他,0,有形固定資産,,その他,,1,6,10A210870,OtherPPE,Other
+　　　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,7,10A210880,AccumulatedDepreciationOtherPPE,Accumulated depreciation
+　　　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,7,10A210890,AccumulatedImpairmentLossOtherPPE,Accumulated impairment loss
+　　　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,7,10A210900,AccumulatedDepreciationAndImpairmentLossOtherPPE,Accumulated depreciation and impairment loss
+　　　　　　　その他（純額）,0,有形固定資産,,その他（純額）,,1,7,10A210910,OtherNetPPE,"Other, net"
+　　　　　減価償却累計額,0,有形固定資産,,減価償却累計額,,1,5,10A210920,AccumulatedDepreciationPPEByGroup,Accumulated depreciation
+　　　　　減損損失累計額,0,有形固定資産,,減損損失累計額,,1,5,10A210930,AccumulatedImpairmentLossPPEByGroup,Accumulated impairment loss
+　　　　　減価償却累計額及び減損損失累計額,0,有形固定資産,,減価償却累計額及び減損損失累計額,,1,5,10A210940,AccumulatedDepreciationAndImpairmentLossPPEByGroup,Accumulated depreciation and impairment loss
+　　　　　有形固定資産,0,有形固定資産,,有形固定資産,,1,5,10A210950,PropertyPlantAndEquipment,"Property, plant and equipment"
+　　　　無形固定資産,,無形固定資産,,無形固定資産,,T,4,10A220010,IntangibleAssetsAbstract,Intangible assets
+　　　　　特許権,0,無形固定資産,,特許権,,1,5,10A220020,PatentRight,Patent right
+　　　　　借地権,0,無形固定資産,,借地権,,1,5,10A220030,LeaseholdRight,Leasehold interests in land
+　　　　　地上権,,無形固定資産,,地上権,,T,5,10A220040,abstract,Surface right
+　　　　　商標権,0,無形固定資産,,商標権,,1,5,10A220050,RightOfTrademark,Trademark right
+　　　　　実用新案権,0,無形固定資産,,実用新案権,,1,5,10A220060,UtilityModelRight,Utility model right
+　　　　　意匠権,0,無形固定資産,,意匠権,,1,5,10A220070,DesignRight,Design right
+　　　　　鉱業権,0,無形固定資産,,鉱業権,,1,5,10A220080,MiningRight,Mining right
+　　　　　漁業権,0,無形固定資産,,漁業権,,1,5,10A220090,FisheryRight,Fishery right
+　　　　　入漁権,,無形固定資産,,入漁権,,T,5,10A220100,abstract,Common of piscary
+　　　　　ソフトウエア,0,無形固定資産,,ソフトウエア,,1,5,10A220110,Software,Software
+　　　　　ソフトウエア仮勘定,0,無形固定資産,,ソフトウエア仮勘定,,1,5,10A220120,SoftwareInProgress,Software in progress
+　　　　　のれん,0,無形固定資産,,のれん,,1,5,10A220130,Goodwill,Goodwill
+　　　　　リース資産,0,無形固定資産,,リース資産,,1,5,10A220140,LeaseAssetsIA,Leased assets
+　　　　　公共施設等運営権,0,無形固定資産,,公共施設等運営権,,1,5,10A220150,RightOfUsingPublicFacilities,Right to operate public facilities
+　　　　　仕掛研究開発,0,無形固定資産,,仕掛研究開発,,1,5,10A220160,InProcessResearchAndDevelopmentIA,In-process research and development
+　　　　　その他の無形資産で流動資産又は投資たる資産に属しないもの,,無形固定資産,,その他の無形資産で流動資産又は投資たる資産に属しないもの,,T,5,10A220170,OtherIntangibleAssetsIAAbstract,Other intangible assets not classified as current assets or investments
+　　　　　　施設利用権,0,無形固定資産,,施設利用権,,1,6,10A220180,RightOfUsingFacilitiesIA,Right to use facilities
+　　　　　　電話加入権,0,無形固定資産,,電話加入権,,1,6,10A220190,TelephoneSubscriptionRight,Telephone subscription right
+　　　　　　電気供給施設利用権,0,無形固定資産,,電気供給施設利用権,,1,6,10A220200,RightOfUsingElectricSupplyFacilities,Right to use electricity supply facilities
+　　　　　　電気通信施設利用権,0,無形固定資産,,電気通信施設利用権,,1,6,10A220210,RightOfUsingTelecommunicationFacilities,Right to use telecommunication facilities
+　　　　　　電信電話専用施設利用権,0,無形固定資産,,電信電話専用施設利用権,,1,6,10A220220,RightOfUsingTelephoneAndTelegraphFacilities,Right to use telephone and telegraph facilities
+　　　　　　公共施設利用権,0,無形固定資産,,公共施設利用権,,1,6,10A220230,RightOfUsingPublicFacilities,Right to use public facilities
+　　　　　　水道施設利用権,0,無形固定資産,,水道施設利用権,,1,6,10A220240,RightOfUsingWaterFacilities,Right to use water facilities
+　　　　　　その他の施設利用権,0,無形固定資産,,その他の施設利用権,,1,6,10A220250,RightOfUsingOtherFacilities,Right to use other facilities
+　　　　　　工業所有権,0,無形固定資産,,工業所有権,,1,6,10A220260,IndustrialProperty,Industrial property
+　　　　　　借家権,0,無形固定資産,,借家権,,1,6,10A220270,OtherIA,Leasehold interests in buildings
+　　　　　　特許実施権,0,無形固定資産,,特許実施権,,1,6,10A220280,RightOfUsingPatent,Right to use patent
+　　　　　　水利権,0,無形固定資産,,水利権,,1,6,10A220290,WaterRight,Water right
+　　　　　　版権,0,無形固定資産,,版権,,1,6,10A220300,CopyrightPublishing,Copyright
+　　　　　　著作権,0,無形固定資産,,著作権,,1,6,10A220310,Copyright,Copyright
+　　　　　　その他,0,無形固定資産,,その他,,1,6,10A220320,OtherIA,Other
+　　　　　無形固定資産,0,無形固定資産,,無形固定資産,,1,5,10A220330,IntangibleAssets,Intangible assets
+　　　　投資その他の資産,,投資その他の資産,,投資その他の資産,,T,4,10A230010,InvestmentsAndOtherAssetsAbstract,Investments and other assets
+　　　　　関係会社株式その他流動資産に属しない有価証券,,投資その他の資産,,関係会社株式その他流動資産に属しない有価証券,,T,5,10A230020,StocksOfSubsidiariesAndAffiliatesAndOtherNoncurrentSecuritiesIOAAbstract,Shares of subsidiaries and associates and other non-current securities
+　　　　　　投資有価証券,0,投資その他の資産,,投資有価証券,,1,6,10A230030,InvestmentSecurities,Investment securities
+　　　　　　関係会社株式,0,投資その他の資産,,関係会社株式,,1,6,10A230040,StocksOfSubsidiariesAndAffiliates,Shares of subsidiaries and associates
+　　　　　　関係会社社債,0,投資その他の資産,,関係会社社債,,1,6,10A230050,BondsOfSubsidiariesAndAffiliates,Bonds of subsidiaries and associates
+　　　　　　その他の関係会社有価証券,0,投資その他の資産,,その他の関係会社有価証券,,1,6,10A230060,InvestmentsInOtherSecuritiesOfSubsidiariesAndAffiliates,Investments in other securities of subsidiaries and associates
+　　　　　　営業投資有価証券,0,投資その他の資産,,営業投資有価証券,,1,6,10A230070,OperationalInvestmentSecuritiesIOA,Operational investment securities
+　　　　　出資金,,投資その他の資産,,出資金,,T,5,10A230080,abstract,Investments in capital
+　　　　　　出資金,0,投資その他の資産,,出資金,,1,6,10A230090,InvestmentsInCapital,Investments in capital
+　　　　　　関係会社出資金,0,投資その他の資産,,関係会社出資金,,1,6,10A230100,InvestmentsInCapitalOfSubsidiariesAndAffiliates,Investments in capital of subsidiaries and associates
+　　　　　　営業出資金,0,投資その他の資産,,営業出資金,,1,6,10A230110,OperatingInvestmentsInCapital,Operating investments in capital
+　　　　　　匿名組合出資金,0,投資その他の資産,,匿名組合出資金,,1,6,10A230120,InvestmentsInSilentPartnership,Investments in silent partnerships
+　　　　　長期貸付金,,投資その他の資産,,長期貸付金,,T,5,10A230130,LongTermLoansReceivableAbstract,Long-term loans receivable
+　　　　　　長期貸付金,0,投資その他の資産,,長期貸付金,,1,6,10A230140,LongTermLoansReceivable,Long-term loans receivable
+　　　　　　　貸倒引当金,0,投資その他の資産,,貸倒引当金,,1,7,10A230150,AllowanceForDoubtfulAccountsLongTermLoansReceivable,Allowance for doubtful accounts
+　　　　　　　長期貸付金（純額）,0,投資その他の資産,,長期貸付金（純額）,,1,7,10A230160,LongTermLoansReceivableNet,"Long-term loans receivable, net"
+　　　　　　関係会社長期貸付金,0,投資その他の資産,,関係会社長期貸付金,,1,6,10A230170,LongTermLoansReceivableFromSubsidiariesAndAffiliates,Long-term loans receivable from subsidiaries and associates
+　　　　　　　貸倒引当金,0,投資その他の資産,,貸倒引当金,,1,7,10A230180,AllowanceForDoubtfulAccountsLongTermLoansReceivableFromSubsidiariesAndAffiliates,Allowance for doubtful accounts
+　　　　　　　関係会社長期貸付金（純額）,0,投資その他の資産,,関係会社長期貸付金（純額）,,1,7,10A230190,LongTermLoansReceivableFromSubsidiariesAndAffiliatesNet,"Long-term loans receivable from subsidiaries and associates, net"
+　　　　　　株主、役員又は従業員に対する長期貸付金,0,投資その他の資産,,株主、役員又は従業員に対する長期貸付金,,1,6,10A230200,LongTermLoansReceivableFromShareholdersDirectorsOrEmployees,"Long-term loans receivable from shareholders, directors (and other officers) or employees"
+　　　　　　　貸倒引当金,0,投資その他の資産,,貸倒引当金,,1,7,10A230210,AllowanceForDoubtfulAccountsLongTermLoansReceivableFromShareholdersDirectorsOrEmployees,Allowance for doubtful accounts
+　　　　　　　株主、役員又は従業員に対する長期貸付金（純額）,0,投資その他の資産,,株主、役員又は従業員に対する長期貸付金（純額）,,1,7,10A230220,LongTermLoansReceivableFromShareholdersDirectorsOrEmployeesNet,"Long-term loans receivable from shareholders, directors (and other officers) or employees, net"
+　　　　　　従業員に対する長期貸付金,0,投資その他の資産,,従業員に対する長期貸付金,,1,6,10A230230,LongTermLoansReceivableFromEmployees,Long-term loans receivable from employees
+　　　　　　　貸倒引当金,0,投資その他の資産,,貸倒引当金,,1,7,10A230240,AllowanceForDoubtfulAccountsLongTermLoansReceivableFromEmployees,Allowance for doubtful accounts
+　　　　　　　従業員に対する長期貸付金（純額）,0,投資その他の資産,,従業員に対する長期貸付金（純額）,,1,7,10A230250,LongTermLoansReceivableFromEmployeesNet,"Long-term loans receivable from employees, net"
+　　　　　　役員及び従業員に対する長期貸付金,0,投資その他の資産,,役員及び従業員に対する長期貸付金,,1,6,10A230260,LongTermLoansReceivableFromDirectorsAndEmployees,Long-term loans receivable from directors (and other officers) and employees
+　　　　　　役員に対する長期貸付金,0,投資その他の資産,,役員に対する長期貸付金,,1,6,10A230270,LongTermLoansReceivableFromDirectors,Long-term loans receivable from directors (and other officers)
+　　　　　前各号に掲げられるものの外、流動資産、有形固定資産、無形固定資産又は繰延資産に属するもの以外の長期資産,,投資その他の資産,,前各号に掲げられるものの外、流動資産、有形固定資産、無形固定資産又は繰延資産に属するもの以外の長期資産,,T,5,10A230280,OtherLongTermAssetsIOAAbstract,Other long-term assets
+　　　　　　親会社株式,0,投資その他の資産,,親会社株式,,1,6,10A230290,StocksOfParentCompanyIOA,Shares of parent
+　　　　　　破産更生債権等,0,投資その他の資産,,破産更生債権等,,1,6,10A230300,ClaimsProvableInBankruptcyClaimsProvableInRehabilitationAndOther,"Claims provable in bankruptcy, claims provable in rehabilitation and other"
+　　　　　　　貸倒引当金,0,投資その他の資産,,貸倒引当金,,1,7,10A230310,AllowanceForDoubtfulAccountsClaimsInBankruptcyReorganizationClaimsAndOther,Allowance for doubtful accounts
+　　　　　　　破産更生債権等（純額）,0,投資その他の資産,,破産更生債権等（純額）,,1,7,10A230320,ClaimsProvableInBankruptcyClaimsProvableInRehabilitationAndOtherNet,"Claims provable in bankruptcy, claims provable in rehabilitation and other, net"
+　　　　　　長期前払費用,0,投資その他の資産,,長期前払費用,,1,6,10A230330,LongTermPrepaidExpenses,Long-term prepaid expenses
+　　　　　　長期前払消費税等,0,投資その他の資産,,長期前払消費税等,,1,6,10A230340,LongTermPrepaidConsumptionTaxes,Long-term prepaid consumption taxes
+　　　　　　前払年金費用,0,投資その他の資産,,前払年金費用,,1,6,10A230350,PrepaidPensionCostIOA,Prepaid pension cost
+　　　　　　退職給付に係る資産,0,投資その他の資産,,退職給付に係る資産,,1,6,10A230360,OtherIOA,Retirement benefit asset
+　　　　　　繰延税金資産,0,投資その他の資産,,繰延税金資産,,1,6,10A230370,DeferredTaxAssetsIOA,Deferred tax assets
+　　　　　　再評価に係る繰延税金資産,0,投資その他の資産,,再評価に係る繰延税金資産,,1,6,10A230380,DeferredTaxAssetsForLandRevaluation,Deferred tax assets for land revaluation
+　　　　　　投資不動産,0,投資その他の資産,,投資不動産,,1,6,10A230390,RealEstateForInvestment,Investment property
+　　　　　　　減価償却累計額,0,投資その他の資産,,減価償却累計額,,1,7,10A230400,AccumulatedDepreciationRealEstateForInvestment,Accumulated depreciation
+　　　　　　　減損損失累計額,0,投資その他の資産,,減損損失累計額,,1,7,10A230410,AccumulatedImpairmentLossRealEstateForInvestment,Accumulated impairment loss
+　　　　　　　減価償却累計額及び減損損失累計額,0,投資その他の資産,,減価償却累計額及び減損損失累計額,,1,7,10A230420,AccumulatedDepreciationAndImpairmentLossRealEstateForInvestment,Accumulated depreciation and impairment loss
+　　　　　　　投資不動産（純額）,0,投資その他の資産,,投資不動産（純額）,,1,7,10A230430,RealEstateForInvestmentNet,"Investment property, net"
+　　　　　　不動産信託受益権,0,投資その他の資産,,不動産信託受益権,,1,6,10A230440,BeneficiaryRightOfRealEstateInTrust,Beneficial interests in real estate trust
+　　　　　　信託土地,0,投資その他の資産,,信託土地,,1,6,10A230450,LandInTrust,Land in trust
+　　　　　　信託建物,0,投資その他の資産,,信託建物,,1,6,10A230460,BuildingsInTrust,Buildings in trust
+　　　　　　リース投資資産,0,投資その他の資産,,リース投資資産,,1,6,10A230470,LeaseInvestmentAssetsIOA,Investments in leases
+　　　　　　デリバティブ債権,0,投資その他の資産,,デリバティブ債権,,1,6,10A230480,DerivativesIOA,Derivatives
+　　　　　　　為替予約,0,投資その他の資産,,為替予約,,1,7,10A230490,ForwardExchangeContractsIOA,Forward exchange contracts
+　　　　　　　金利スワップ資産,0,投資その他の資産,,金利スワップ資産,,1,7,10A230500,InterestRateSwapAssetsIOA,Interest rate swap assets
+　　　　　　　金利スワップ,0,投資その他の資産,,金利スワップ,,1,7,10A230510,InterestRateSwapIOA,Interest rate swaps
+　　　　　　　買建通貨オプション,0,投資その他の資産,,買建通貨オプション,,1,7,10A230520,PurchasedCurrencyOptionIOA,Purchased currency options
+　　　　　　　通貨オプション,0,投資その他の資産,,通貨オプション,,1,7,10A230530,CurrencyOptionIOA,Currency options
+　　　　　　　オプション資産,0,投資その他の資産,,オプション資産,,1,7,10A230540,OptionIOA,Options
+　　　　　　長期預け金,0,投資その他の資産,,長期預け金,,1,6,10A230550,LongTermDeposits,Long-term deposits
+　　　　　　長期預金,0,投資その他の資産,,長期預金,,1,6,10A230560,LongTermTimeDeposits,Long-term time deposits
+　　　　　　保険積立金,0,投資その他の資産,,保険積立金,,1,6,10A230570,InsuranceFunds,Insurance funds
+　　　　　　生命保険積立金,0,投資その他の資産,,生命保険積立金,,1,6,10A230580,LifeInsuranceFunds,Life insurance funds
+　　　　　　団体生命保険金,0,投資その他の資産,,団体生命保険金,,1,6,10A230590,GroupLifeInsurance,Group life insurance
+　　　　　　会員権,0,投資その他の資産,,会員権,,1,6,10A230600,Membership,Membership
+　　　　　　　ゴルフ会員権,0,投資その他の資産,,ゴルフ会員権,,1,7,10A230610,GolfClubMembership,Golf club membership
+　　　　　　　施設利用会員権,0,投資その他の資産,,施設利用会員権,,1,7,10A230620,FacilityMembership,Facility membership
+　　　　　　差入保証金,0,投資その他の資産,,差入保証金,,1,6,10A230630,GuaranteeDepositsIOA,Guarantee deposits
+　　　　　　関係会社長期未収入金,0,投資その他の資産,,関係会社長期未収入金,,1,6,10A230640,LongTermAccountsReceivableFromSubsidiariesAndAffiliates,Long-term accounts receivable from subsidiaries and associates - other
+　　　　　　敷金,0,投資その他の資産,,敷金,,1,6,10A230650,LeaseDepositsIOA,Leasehold deposits
+　　　　　　敷金及び保証金,0,投資その他の資産,,敷金及び保証金,,1,6,10A230660,LeaseAndGuaranteeDeposits,Leasehold and guarantee deposits
+　　　　　　固定化営業債権,0,投資その他の資産,,固定化営業債権,,1,6,10A230670,BadDebts,Bad debts
+　　　　　　事業保険積立金,0,投資その他の資産,,事業保険積立金,,1,6,10A230680,BusinessInsuranceFunds,Business insurance funds
+　　　　　　事業保険金,0,投資その他の資産,,事業保険金,,1,6,10A230690,BusinessInsurance,Business insurance
+　　　　　　入会金,0,投資その他の資産,,入会金,,1,6,10A230700,AdmissionFeeIOA,Admission fee
+　　　　　　入会保証金,0,投資その他の資産,,入会保証金,,1,6,10A230710,DepositsOnAdmission,Deposits on admission
+　　　　　　信託受益権,0,投資その他の資産,,信託受益権,,1,6,10A230720,TrustBeneficiaryRightIOA,Beneficial interests in trust
+　　　　　　長期営業外未収入金,0,投資その他の資産,,長期営業外未収入金,,1,6,10A230730,LongTermNonOperatingAccountsReceivable,Long-term non-operating accounts receivable
+　　　　　　長期未収入金,0,投資その他の資産,,長期未収入金,,1,6,10A230740,LongTermAccountsReceivableOther,Long-term accounts receivable - other
+　　　　　　建設協力金,0,投資その他の資産,,建設協力金,,1,6,10A230750,ConstructionAssistanceFundReceivables,Construction assistance fund receivables
+　　　　　　店舗賃借仮勘定,0,投資その他の資産,,店舗賃借仮勘定,,1,6,10A230760,DepositsForStoresInPreparation,Deposits for stores in preparation
+　　　　　　役員退職積立金,0,投資その他の資産,,役員退職積立金,,1,6,10A230770,FundForRetirementBenefitsForDirectorsIOA,Fund for retirement benefits for directors (and other officers)
+　　　　　　役員に対する保険積立金,0,投資その他の資産,,役員に対する保険積立金,,1,6,10A230780,InsuranceFundsForDirectors,Insurance funds for directors (and other officers)
+　　　　　　長期投資,0,投資その他の資産,,長期投資,,1,6,10A230790,LongTermInvestments,Long-term investments
+　　　　　　その他,0,投資その他の資産,,その他,,1,6,10A230800,OtherIOA,Other
+　　　　　　投資その他の資産に属する資産に係る引当金,,投資その他の資産,,投資その他の資産に属する資産に係る引当金,,T,6,10A230810,AllowanceInvestmentAndOtherAssetsAbstract,Allowance - investment and other assets
+　　　　　　　貸倒引当金,0,投資その他の資産,,貸倒引当金,,1,7,10A230820,AllowanceForDoubtfulAccountsIOAByGroup,Allowance for doubtful accounts
+　　　　　　　投資損失引当金,0,投資その他の資産,,投資損失引当金,,1,7,10A230830,AllowanceForInvestmentLoss,Allowance for investment loss
+　　　　　投資その他の資産,0,投資その他の資産,,投資その他の資産,,1,5,10A230840,InvestmentsAndOtherAssetsGross,"Investments and other assets, gross"
+　　　　　減価償却累計額,0,投資その他の資産,,減価償却累計額,,1,5,10A230850,AccumulatedDepreciationIOAByGroup,Accumulated depreciation
+　　　　　減損損失累計額,0,投資その他の資産,,減損損失累計額,,1,5,10A230860,AccumulatedImpairmentLossIOAByGroup,Accumulated impairment loss
+　　　　　減価償却累計額及び減損損失累計額,0,投資その他の資産,,減価償却累計額及び減損損失累計額,,1,5,10A230870,AccumulatedDepreciationAndImpairmentLossIOAByGroup,Accumulated depreciation and impairment loss
+　　　　　投資その他の資産,0,投資その他の資産,,投資その他の資産,,1,5,10A230880,InvestmentsAndOtherAssets,Investments and other assets
+　　　　固定資産,0,固定資産,,固定資産,,1,4,10A200020,NoncurrentAssets,Non-current assets
+　　　繰延資産,,繰延資産,,繰延資産,,T,3,10A300010,DeferredAssetsAbstract,Deferred assets
+　　　　創立費,0,繰延資産,,創立費,,1,4,10A300020,DeferredOrganizationExpensesDA,Organization expenses
+　　　　開業費,0,繰延資産,,開業費,,1,4,10A300030,BusinessCommencementExpensesDA,Business commencement expenses
+　　　　株式交付費,0,繰延資産,,株式交付費,,1,4,10A300040,StockIssuanceCostDA,Share issuance cost
+　　　　社債発行費,0,繰延資産,,社債発行費,,1,4,10A300050,BondIssuanceCostDA,Bond issuance cost
+　　　　開発費,0,繰延資産,,開発費,,1,4,10A300060,DevelopmentExpensesDA,Development expenses
+　　　　その他,0,繰延資産,,その他,,1,4,10A300070,OtherDA,Other
+　　　　繰延資産,0,繰延資産,,繰延資産,,1,4,10A300080,DeferredAssets,Deferred assets
+　　　資産,0,資産,,資産,,1,3,10A000020,Assets,Assets
+　　負債の部,,負債,,負債の部,,T,2,10B000010,LiabilitiesAbstract,Liabilities
+　　　流動負債,,流動負債,,流動負債,,T,3,10B100010,CurrentLiabilitiesAbstract,Current liabilities
+　　　　支払手形及び買掛金,0,流動負債,,支払手形及び買掛金,,1,4,10B100020,NotesAndAccountsPayableTrade,Notes and accounts payable - trade
+　　　　支払手形,0,流動負債,,支払手形,,1,4,10B100030,NotesPayableTrade,Notes payable - trade
+　　　　買掛金,0,流動負債,,買掛金,,1,4,10B100040,AccountsPayableTrade,Accounts payable - trade
+　　　　営業未払金,0,流動負債,,営業未払金,,1,4,10B100050,OperatingAccountsPayable,Trade accounts payable
+　　　　支払手形及び営業未払金,0,流動負債,,支払手形及び営業未払金,,1,4,10B100060,NotesAndOperatingAccountsPayableTrade,Trade notes and accounts payable
+　　　　電子記録債務,0,流動負債,,電子記録債務,,1,4,10B100070,ElectronicallyRecordedObligationsOperatingCL,Electronically recorded obligations - operating
+　　　　業務未払金,0,流動負債,,業務未払金,,1,4,10B100080,AccountsPayableOperatingSpecific,Accounts payable - operating
+　　　　受託販売未払金,0,流動負債,,受託販売未払金,,1,4,10B100090,AccountsPayableConsignment,Accounts payable - consignment
+　　　　不動産事業未払金,0,流動負債,,不動産事業未払金,,1,4,10B100100,AccountsPayableRealEstate,Accounts payable - real estate business
+　　　　加盟店借勘定,0,流動負債,,加盟店借勘定,,1,4,10B100110,DueToFranchisedStores,Accounts payable - due to franchised stores
+　　　　商品券,0,流動負債,,商品券,,1,4,10B100120,GiftCertificates,Gift certificates
+　　　　未成業務受入金,0,流動負債,,未成業務受入金,,1,4,10B100130,AdvancesReceivedOnUncompletedContracts,Advances received on service contracts in progress
+　　　　不動産事業受入金,0,流動負債,,不動産事業受入金,,1,4,10B100140,DepositReceivedRealEstate,Deposits received - real estate business
+　　　　未払金及び未払費用,0,流動負債,,未払金及び未払費用,,1,4,10B100150,AccountsPayableOtherAndAccruedExpenses,"Accounts payable - other, and accrued expenses"
+　　　　未払費用,0,流動負債,,未払費用,,1,4,10B100160,AccruedExpenses,Accrued expenses
+　　　　前受金,0,流動負債,,前受金,,1,4,10B100170,AdvancesReceived,Advances received
+　　　　前受工事負担金,0,流動負債,,前受工事負担金,,1,4,10B100180,AdvancesReceived,Deferred contribution for construction
+　　　　前受収益,0,流動負債,,前受収益,,1,4,10B100190,UnearnedRevenue,Unearned revenue
+　　　　リース債務,0,流動負債,,リース債務,,1,4,10B100200,LeaseObligationsCL,Lease obligations
+　　　　資産除去債務,0,流動負債,,資産除去債務,,1,4,10B100210,AssetRetirementObligationsCL,Asset retirement obligations
+　　　　公共施設等運営権に係る負債,0,流動負債,,公共施設等運営権に係る負債,,1,4,10B100220,OtherCL,Liabilities related to right to operate public facilities
+　　　　デリバティブ債務,0,流動負債,,デリバティブ債務,,1,4,10B100230,DerivativesLiabilitiesCL,Derivatives liabilities
+　　　　　為替予約,0,流動負債,,為替予約,,1,5,10B100240,ForwardExchangeContractsCL,Forward exchange contracts
+　　　　　金利スワップ負債,0,流動負債,,金利スワップ負債,,1,5,10B100250,InterestRateSwapLiabilitiesCL,Interest rate swap liabilities
+　　　　　金利スワップ,0,流動負債,,金利スワップ,,1,5,10B100260,InterestRateSwapCL,Interest rate swaps
+　　　　　売建通貨オプション,0,流動負債,,売建通貨オプション,,1,5,10B100270,SoldCurrencyOptionCL,Sold currency options
+　　　　　通貨オプション,0,流動負債,,通貨オプション,,1,5,10B100280,CurrencyOptionCL,Currency options
+　　　　　オプション負債,0,流動負債,,オプション負債,,1,5,10B100290,OptionCL,Options
+　　　　引当金,,流動負債,,引当金,,T,4,10B100300,ProvisionCLAbstract,Provisions
+　　　　　製品保証引当金,0,流動負債,,製品保証引当金,,1,5,10B100310,ProvisionForProductWarranties,Provision for product warranties
+　　　　　賞与引当金,0,流動負債,,賞与引当金,,1,5,10B100320,ProvisionForBonuses,Provision for bonuses
+　　　　　修繕引当金,0,流動負債,,修繕引当金,,1,5,10B100330,ProvisionForRepairs,Provision for repairs
+　　　　　役員賞与引当金,0,流動負債,,役員賞与引当金,,1,5,10B100340,ProvisionForDirectorsBonuses,Provision for bonuses for directors (and other officers)
+　　　　　債務保証損失引当金,0,流動負債,,債務保証損失引当金,,1,5,10B100350,ProvisionForLossOnGuaranteesCL,Provision for loss on guarantees
+　　　　　ポイント引当金,0,流動負債,,ポイント引当金,,1,5,10B100360,ProvisionForPointCardCertificatesCL,Provision for point card certificates
+　　　　　株主優待引当金,0,流動負債,,株主優待引当金,,1,5,10B100370,OtherProvisionCL,Provision for shareholder benefit program
+　　　　　売上割戻引当金,0,流動負債,,売上割戻引当金,,1,5,10B100380,ProvisionForSalesRebates,Provision for sales rebates
+　　　　　工事損失引当金,0,流動負債,,工事損失引当金,,1,5,10B100390,ProvisionForLossOnConstructionContracts,Provision for loss on construction contracts
+　　　　　完成工事補償引当金,0,流動負債,,完成工事補償引当金,,1,5,10B100400,ProvisionForWarrantiesForCompletedConstruction,Provision for warranties for completed construction
+　　　　　店舗閉鎖損失引当金,0,流動負債,,店舗閉鎖損失引当金,,1,5,10B100410,ProvisionForLossOnStoreClosing,Provision for loss on store closings
+　　　　　販売促進引当金,0,流動負債,,販売促進引当金,,1,5,10B100420,ProvisionForSalesPromotionExpenses,Provision for sales promotion expenses
+　　　　　返品調整引当金,0,流動負債,,返品調整引当金,,1,5,10B100430,ProvisionForSalesReturns,Provision for sales returns
+　　　　　受注損失引当金,0,流動負債,,受注損失引当金,,1,5,10B100440,ProvisionForLossOnOrderReceivedCL,Provision for loss on order received
+　　　　　関係会社整理損失引当金,0,流動負債,,関係会社整理損失引当金,,1,5,10B100450,ProvisionForLossOnLiquidationOfSubsidiariesAndAffiliatesCL,Provision for loss on liquidation of subsidiaries and associates
+　　　　　事業整理損失引当金,0,流動負債,,事業整理損失引当金,,1,5,10B100460,ProvisionForLossOnBusinessLiquidationCL,Provision for loss on business liquidation
+　　　　　関係会社事業損失引当金,0,流動負債,,関係会社事業損失引当金,,1,5,10B100470,ProvisionForLossOnBusinessOfSubsidiariesAndAffiliatesCL,Provision for loss on business of subsidiaries and associates
+　　　　　事業構造改善引当金,0,流動負債,,事業構造改善引当金,,1,5,10B100480,ProvisionForBusinessStructureImprovementCL,Provision for business restructuring
+　　　　　環境対策引当金,0,流動負債,,環境対策引当金,,1,5,10B100490,ProvisionForEnvironmentalMeasuresCL,Provision for environmental measures
+　　　　　訴訟損失引当金,0,流動負債,,訴訟損失引当金,,1,5,10B100500,ProvisionForLossOnLitigationCL,Provision for loss on litigation
+　　　　　利息返還損失引当金,0,流動負債,,利息返還損失引当金,,1,5,10B100510,ProvisionForLossOnInterestRepaymentCL,Provision for loss on interest repayment
+　　　　　偶発損失引当金,0,流動負債,,偶発損失引当金,,1,5,10B100520,ProvisionForContingentLossCL,Provision for contingent loss
+　　　　　ローン保証引当金,0,流動負債,,ローン保証引当金,,1,5,10B100530,ProvisionForGuaranteeForLoansCL,Provision for guarantee for loans
+　　　　　災害損失引当金,0,流動負債,,災害損失引当金,,1,5,10B100540,ProvisionForLossOnDisasterCL,Provision for loss on disaster
+　　　　　受注工事損失引当金,0,流動負債,,受注工事損失引当金,,1,5,10B100550,OtherProvisionCL,Provision for loss on construction contracts
+　　　　　船舶保証工事引当金,0,流動負債,,船舶保証工事引当金,,1,5,10B100560,OtherProvisionCL,Provision for construction warranties for vessel
+　　　　　保証工事引当金,0,流動負債,,保証工事引当金,,1,5,10B100570,OtherProvisionCL,Provision for construction warranties
+　　　　　株式給付引当金,0,流動負債,,株式給付引当金,,1,5,10B100580,OtherProvisionCL,Provision for share-based remuneration
+　　　　　役員株式給付引当金,0,流動負債,,役員株式給付引当金,,1,5,10B100590,OtherProvisionCL,Provision for share-based remuneration for directors (and other officers)
+　　　　　その他の引当金,0,流動負債,,その他の引当金,,1,5,10B100600,OtherProvisionCL,Other provisions
+　　　　　引当金,0,流動負債,,引当金,,1,5,10B100610,ProvisionCL,Provisions
+　　　　通常の取引に関連して発生する未払金又は預り金で一般の取引慣行として発生後短期間に支払われるもの,,流動負債,,通常の取引に関連して発生する未払金又は預り金で一般の取引慣行として発生後短期間に支払われるもの,,T,4,10B100620,AccountsPayableOrdinaryTransactionsPaidInShortTermCLAbstract,"Accounts payable - ordinary transactions, paid in short term"
+　　　　　未払金,0,流動負債,,未払金,,1,5,10B100630,AccountsPayableOther,Accounts payable - other
+　　　　　未払法人税等,0,流動負債,,未払法人税等,,1,5,10B100640,IncomeTaxesPayable,Income taxes payable
+　　　　　未払事業所税,0,流動負債,,未払事業所税,,1,5,10B100650,AccruedBusinessOfficeTaxes,Accrued business office tax
+　　　　　未払消費税等,0,流動負債,,未払消費税等,,1,5,10B100660,AccruedConsumptionTaxes,Accrued consumption taxes
+　　　　　未払税金,0,流動負債,,未払税金,,1,5,10B100670,AccruedTaxes,Accrued taxes
+　　　　　未払酒税,0,流動負債,,未払酒税,,1,5,10B100680,AccruedAlcoholTax,Accrued alcohol tax
+　　　　　預り金,0,流動負債,,預り金,,1,5,10B100690,DepositsReceived,Deposits received
+　　　　　関係会社預り金,0,流動負債,,関係会社預り金,,1,5,10B100700,DepositsReceivedFromSubsidiariesAndAffiliates,Deposits received from subsidiaries and associates
+　　　　　未払代理店手数料,0,流動負債,,未払代理店手数料,,1,5,10B100710,AccruedAgencyCommission,Accrued agency commission
+　　　　　1年内返還予定の預り保証金,0,流動負債,,1年内返還予定の預り保証金,,1,5,10B100720,CurrentPortionOfGuaranteeDepositsReceived,Current portion of guarantee deposits received
+　　　　その他の負債で1年内に支払又は返済されると認められるもの,,流動負債,,その他の負債で1年内に支払又は返済されると認められるもの,,T,4,10B100730,OtherLiabilitiesPayableWithinOneYearAbstract,Other liabilities - payable within one year
+　　　　　設備関係支払手形,0,流動負債,,設備関係支払手形,,1,5,10B100740,NotesPayableFacilities,Notes payable - facilities
+　　　　　設備関係未払金,0,流動負債,,設備関係未払金,,1,5,10B100750,AccountsPayableFacilities,Accounts payable - facilities
+　　　　　営業外支払手形,0,流動負債,,営業外支払手形,,1,5,10B100760,NotesPayableNonOperating,Non-operating notes payable
+　　　　　営業外電子記録債務,0,流動負債,,営業外電子記録債務,,1,5,10B100770,ElectronicallyRecordedObligationsNonOperatingCL,Electronically recorded obligations - non-operating
+　　　　　短期社債,0,流動負債,,短期社債,,1,5,10B100780,ShortTermBondsPayable,Short-term bonds payable
+　　　　　短期借入金,0,流動負債,,短期借入金,,1,5,10B100790,ShortTermLoansPayable,Short-term borrowings
+　　　　　関係会社短期借入金,0,流動負債,,関係会社短期借入金,,1,5,10B100800,ShortTermLoansPayableToSubsidiariesAndAffiliates,Short-term borrowings from subsidiaries and associates
+　　　　　コマーシャル・ペーパー,0,流動負債,,コマーシャル・ペーパー,,1,5,10B100810,CommercialPapersLiabilities,Commercial papers
+　　　　　1年内償還予定の社債,0,流動負債,,1年内償還予定の社債,,1,5,10B100820,CurrentPortionOfBonds,Current portion of bonds
+　　　　　1年内返済予定の長期借入金,0,流動負債,,1年内返済予定の長期借入金,,1,5,10B100830,CurrentPortionOfLongTermLoansPayable,Current portion of long-term borrowings
+　　　　　1年内返済予定の関係会社長期借入金,0,流動負債,,1年内返済予定の関係会社長期借入金,,1,5,10B100840,CurrentPortionOfLongTermLoansPayableToSubsidiariesAndAffiliates,Current portion of long-term borrowings from subsidiaries and associates
+　　　　　1年内償還予定の転換社債,0,流動負債,,1年内償還予定の転換社債,,1,5,10B100850,CurrentPortionOfConvertibleBonds,Current portion of convertible bonds
+　　　　　1年内償還予定の新株予約権付社債,0,流動負債,,1年内償還予定の新株予約権付社債,,1,5,10B100860,CurrentPortionOfBondsWithSubscriptionRightsToShares,Current portion of bonds with share acquisition rights
+　　　　　1年内期限到来予定のその他の固定負債,0,流動負債,,1年内期限到来予定のその他の固定負債,,1,5,10B100870,CurrentPortionOfOtherNoncurrentLiabilities,Current portion of other non-current liabilities
+　　　　　仮受金,0,流動負債,,仮受金,,1,5,10B100880,SuspenseReceipt,Suspense receipt
+　　　　　仮受消費税等,0,流動負債,,仮受消費税等,,1,5,10B100890,SuspenseReceiptOfConsumptionTaxes,Suspense receipt of consumption taxes
+　　　　　未払賞与,0,流動負債,,未払賞与,,1,5,10B100900,AccruedBonuses,Accrued bonuses
+　　　　　未払役員報酬,0,流動負債,,未払役員報酬,,1,5,10B100910,DirectorsCompensationPayable,Remuneration payable for directors (and other officers)
+　　　　　未払配当金,0,流動負債,,未払配当金,,1,5,10B100920,DividendsPayable,Dividends payable
+　　　　　株主、役員又は従業員からの短期借入金,0,流動負債,,株主、役員又は従業員からの短期借入金,,1,5,10B100930,ShortTermLoansPayableToShareholdersDirectorsOrEmployees,"Short-term borrowings from shareholders, directors (and other officers) or employees"
+　　　　　株主、役員又は従業員からの預り金,0,流動負債,,株主、役員又は従業員からの預り金,,1,5,10B100940,DepositsReceivedFromShareholdersDirectorsOrEmployees,"Deposits received from shareholders, directors (and other officers) or employees"
+　　　　　従業員預り金,0,流動負債,,従業員預り金,,1,5,10B100950,DepositsReceivedFromEmployees,Deposits received from employees
+　　　　圧縮未決算特別勘定,0,流動負債,,圧縮未決算特別勘定,,1,4,10B100960,SpecialSuspenseAccountForReductionEntry,Special suspense account for tax purpose reduction entry
+　　　　リース資産減損勘定,0,流動負債,,リース資産減損勘定,,1,4,10B100970,AccumulatedImpairmentLossOnLeasedAssetsCL,Accumulated impairment loss on leased assets
+　　　　持分法適用に伴う負債,0,流動負債,,持分法適用に伴う負債,,1,4,10B100980,LiabilitiesFromApplicationOfEquityMethodCL,Liabilities from application of equity method
+　　　　企業結合に係る特定勘定,0,流動負債,,企業結合に係る特定勘定,,1,4,10B100990,ProvisionIncurredFromABusinessCombinationCL,Provision incurred from business combination
+　　　　組織再編により生じた株式の特別勘定,0,流動負債,,組織再編により生じた株式の特別勘定,,1,4,10B101000,StockSpecialAccountCausedByRestructuringCL,Special account for shares arising from restructuring
+　　　　割賦利益繰延,0,流動負債,,割賦利益繰延,,1,4,10B101010,DeferredInstallmentIncomeCL,Deferred installment income
+　　　　借入有価証券,0,流動負債,,借入有価証券,,1,4,10B101020,SecuritiesBorrowedCL,Securities borrowed
+　　　　信用保証買掛金,0,流動負債,,信用保証買掛金,,1,4,10B101030,AccountsPayableCreditGuaranteeCL,Accounts payable - credit guarantee
+　　　　貸借取引担保金,0,流動負債,,貸借取引担保金,,1,4,10B101040,CollateralMoneyReceivedForLoanTransactionsCL,Collateral money received for loan transactions
+　　　　貸付有価証券代り金,0,流動負債,,貸付有価証券代り金,,1,4,10B101050,CollateralMoneyReceivedForSecuritiesLentCL,Collateral money received for securities lent
+　　　　その他,0,流動負債,,その他,,1,4,10B101060,OtherCL,Other
+　　　　流動負債,0,流動負債,,流動負債,,1,4,10B101070,CurrentLiabilities,Current liabilities
+　　　固定負債,,固定負債,,固定負債,,T,3,10B200010,NoncurrentLiabilitiesAbstract,Non-current liabilities
+　　　　社債,,固定負債,,社債,,T,4,10B200020,abstract,Bonds payable
+　　　　　社債,0,固定負債,,社債,,1,5,10B200030,BondsPayable,Bonds payable
+　　　　　転換社債,0,固定負債,,転換社債,,1,5,10B200040,BondsPayable,Convertible bonds
+　　　　　転換社債型新株予約権付社債,0,固定負債,,転換社債型新株予約権付社債,,1,5,10B200050,BondsPayable,Convertible bond-type bonds with share acquisition rights
+　　　　　新株予約権付社債,0,固定負債,,新株予約権付社債,,1,5,10B200060,BondsPayable,Bonds with share acquisition rights
+　　　　長期借入金,,固定負債,,長期借入金,,T,4,10B200070,abstract,Long-term borrowings
+　　　　　長期借入金,0,固定負債,,長期借入金,,1,5,10B200080,LongTermLoansPayable,Long-term borrowings
+　　　　　株主、役員又は従業員からの長期借入金,0,固定負債,,株主、役員又は従業員からの長期借入金,,1,5,10B200090,LongTermLoansPayableToShareholdersDirectorsOrEmployees,"Long-term borrowings from shareholders, directors (and other officers) or employees"
+　　　　　関係会社長期借入金,0,固定負債,,関係会社長期借入金,,1,5,10B200100,LongTermLoansPayableToSubsidiariesAndAffiliates,Long-term borrowings from subsidiaries and associates
+　　　　引当金,,固定負債,,引当金,,T,4,10B200110,ProvisionNCLAbstract,Provisions
+　　　　　退職給付引当金,0,固定負債,,退職給付引当金,,1,5,10B200120,ProvisionForRetirementBenefits,Provision for retirement benefits
+　　　　　役員退職慰労引当金,0,固定負債,,役員退職慰労引当金,,1,5,10B200130,ProvisionForDirectorsRetirementBenefits,Provision for retirement benefits for directors (and other officers)
+　　　　　債務保証損失引当金,0,固定負債,,債務保証損失引当金,,1,5,10B200140,ProvisionForLossOnGuarantees,Provision for loss on guarantees
+　　　　　ポイント引当金,0,固定負債,,ポイント引当金,,1,5,10B200150,ProvisionForPointCardCertificatesNCL,Provision for point card certificates
+　　　　　特別修繕引当金,0,固定負債,,特別修繕引当金,,1,5,10B200160,ProvisionForSpecialRepairs,Provision for special repairs
+　　　　　修繕引当金,0,固定負債,,修繕引当金,,1,5,10B200170,ProvisionForRepairsNCL,Provision for repairs
+　　　　　製品保証引当金,0,固定負債,,製品保証引当金,,1,5,10B200180,ProvisionForProductWarrantiesNCL,Provision for product warranties
+　　　　　関係会社整理損失引当金,0,固定負債,,関係会社整理損失引当金,,1,5,10B200190,ProvisionForLossOnLiquidationOfSubsidiariesAndAffiliatesNCL,Provision for loss on liquidation of subsidiaries and associates
+　　　　　事業整理損失引当金,0,固定負債,,事業整理損失引当金,,1,5,10B200200,ProvisionForLossOnBusinessLiquidationNCL,Provision for loss on business liquidation
+　　　　　関係会社事業損失引当金,0,固定負債,,関係会社事業損失引当金,,1,5,10B200210,ProvisionForLossOnBusinessOfSubsidiariesAndAffiliatesNCL,Provision for loss on business of subsidiaries and associates
+　　　　　事業構造改善引当金,0,固定負債,,事業構造改善引当金,,1,5,10B200220,ProvisionForBusinessStructureImprovementNCL,Provision for business restructuring
+　　　　　環境対策引当金,0,固定負債,,環境対策引当金,,1,5,10B200230,ProvisionForEnvironmentalMeasuresNCL,Provision for environmental measures
+　　　　　訴訟損失引当金,0,固定負債,,訴訟損失引当金,,1,5,10B200240,ProvisionForLossOnLitigationNCL,Provision for loss on litigation
+　　　　　利息返還損失引当金,0,固定負債,,利息返還損失引当金,,1,5,10B200250,ProvisionForLossOnInterestRepaymentNCL,Provision for loss on interest repayment
+　　　　　偶発損失引当金,0,固定負債,,偶発損失引当金,,1,5,10B200260,ProvisionForContingentLossNCL,Provision for contingent loss
+　　　　　災害損失引当金,0,固定負債,,災害損失引当金,,1,5,10B200270,ProvisionForLossOnDisasterNCL,Provision for loss on disaster
+　　　　　株式給付引当金,0,固定負債,,株式給付引当金,,1,5,10B200280,OtherProvisionNCL,Provision for share-based remuneration
+　　　　　役員株式給付引当金,0,固定負債,,役員株式給付引当金,,1,5,10B200290,ProvisionForDirectorsRetirementBenefits,Provision for share-based remuneration for directors (and other officers)
+　　　　　その他の引当金,0,固定負債,,その他の引当金,,1,5,10B200300,OtherProvisionNCL,Other provisions
+　　　　　引当金,0,固定負債,,引当金,,1,5,10B200310,ProvisionNCL,Provisions
+　　　　退職給付に係る負債,0,固定負債,,退職給付に係る負債,,1,4,10B200320,ProvisionForRetirementBenefits,Retirement benefit liability
+　　　　負ののれん,0,固定負債,,負ののれん,,1,4,10B200330,NegativeGoodwill,Negative goodwill
+　　　　リース債務,0,固定負債,,リース債務,,1,4,10B200340,LeaseObligationsNCL,Lease obligations
+　　　　資産除去債務,0,固定負債,,資産除去債務,,1,4,10B200350,AssetRetirementObligationsNCL,Asset retirement obligations
+　　　　公共施設等運営権に係る負債,0,固定負債,,公共施設等運営権に係る負債,,1,4,10B200360,OtherNCL,Liabilities related to right to operate public facilities
+　　　　その他の負債で流動負債に属しないもの,,固定負債,,その他の負債で流動負債に属しないもの,,T,4,10B200370,OtherLiabilitiesNotCurrentLiabilitiesNCLAbstract,Other liabilities - not current liabilities
+　　　　　受入保証金,0,固定負債,,受入保証金,,1,5,10B200380,GuaranteeDepositsReceivedNCL,Guarantee deposits received
+　　　　　長期預り金,0,固定負債,,長期預り金,,1,5,10B200390,LongTermDepositsReceived,Long-term deposits received
+　　　　　会員預り金,0,固定負債,,会員預り金,,1,5,10B200400,DepositsReceivedFromMembers,Deposits received from members
+　　　　　長期割賦未払金,0,固定負債,,長期割賦未払金,,1,5,10B200410,LongTermAccountsPayableInstallmentPurchase,Long-term accounts payable - installment purchase
+　　　　　受入敷金保証金,0,固定負債,,受入敷金保証金,,1,5,10B200420,LeaseAndGuaranteeDepositsReceived,Leasehold and guarantee deposits received
+　　　　　長期設備関係支払手形,0,固定負債,,長期設備関係支払手形,,1,5,10B200430,LongTermNotesPayableFacilities,Long-term notes payable - facilities
+　　　　　長期設備関係未払金,0,固定負債,,長期設備関係未払金,,1,5,10B200440,LongTermAccountsPayableFacilities,Long-term accounts payable - facilities
+　　　　　長期前受金,0,固定負債,,長期前受金,,1,5,10B200450,LongTermAdvancesReceived,Long-term advances received
+　　　　　長期前受工事負担金,0,固定負債,,長期前受工事負担金,,1,5,10B200460,LongTermDeferredContributionForConstruction,Long-term deferred contribution for construction
+　　　　　長期預り敷金,0,固定負債,,長期預り敷金,,1,5,10B200470,LongTermLeaseDeposited,Long-term leasehold deposits received
+　　　　　長期預り敷金保証金,0,固定負債,,長期預り敷金保証金,,1,5,10B200480,LongTermLeaseAndGuaranteeDeposited,Long-term leasehold and guarantee deposits received
+　　　　　長期預り保証金,0,固定負債,,長期預り保証金,,1,5,10B200490,LongTermGuaranteeDeposited,Long-term guarantee deposits
+　　　　　保険契約準備金,0,固定負債,,保険契約準備金,,1,5,10B200500,ReserveForContractOfInsurance,Reserve for contract of insurance
+　　　　　長期未払金,0,固定負債,,長期未払金,,1,5,10B200510,LongTermAccountsPayableOther,Long-term accounts payable - other
+　　　　　長期前受収益,0,固定負債,,長期前受収益,,1,5,10B200520,LongTermUnearnedRevenue,Long-term unearned revenue
+　　　　　デリバティブ債務,0,固定負債,,デリバティブ債務,,1,5,10B200530,DerivativesLiabilitiesNCL,Derivatives liabilities
+　　　　　　為替予約,0,固定負債,,為替予約,,1,6,10B200540,ForwardExchangeContractsNCL,Forward exchange contracts
+　　　　　　金利スワップ負債,0,固定負債,,金利スワップ負債,,1,6,10B200550,InterestRateSwapLiabilitiesNCL,Interest rate swap liabilities
+　　　　　　金利スワップ,0,固定負債,,金利スワップ,,1,6,10B200560,InterestRateSwapNCL,Interest rate swaps
+　　　　　　売建通貨オプション,0,固定負債,,売建通貨オプション,,1,6,10B200570,SoldCurrencyOptionNCL,Sold currency options
+　　　　　　通貨オプション,0,固定負債,,通貨オプション,,1,6,10B200580,CurrencyOptionNCL,Currency options
+　　　　　　オプション負債,0,固定負債,,オプション負債,,1,6,10B200590,OptionNCL,Options
+　　　　　長期リース資産減損勘定,0,固定負債,,長期リース資産減損勘定,,1,5,10B200600,AccumulatedImpairmentLossOnLongTermLeasedAssetsNCL,Accumulated impairment loss on long-term leased assets
+　　　　　繰延税金負債,0,固定負債,,繰延税金負債,,1,5,10B200610,DeferredTaxLiabilitiesNCL,Deferred tax liabilities
+　　　　　再評価に係る繰延税金負債,0,固定負債,,再評価に係る繰延税金負債,,1,5,10B200620,DeferredTaxLiabilitiesForLandRevaluation,Deferred tax liabilities for land revaluation
+　　　　　持分法適用に伴う負債,0,固定負債,,持分法適用に伴う負債,,1,5,10B200630,LiabilitiesFromApplicationOfEquityMethodNCL,Liabilities from application of equity method
+　　　　　企業結合に係る特定勘定,0,固定負債,,企業結合に係る特定勘定,,1,5,10B200640,ProvisionIncurredFromABusinessCombinationNCL,Provision incurred from business combination
+　　　　　組織再編により生じた株式の特別勘定,0,固定負債,,組織再編により生じた株式の特別勘定,,1,5,10B200650,StockSpecialAccountCausedByRestructuringNCL,Special account for shares arising from restructuring
+　　　　　その他,0,固定負債,,その他,,1,5,10B200660,OtherNCL,Other
+　　　　固定負債,0,固定負債,,固定負債,,1,4,10B200670,NoncurrentLiabilities,Non-current liabilities
+　　　特別法上の準備金,,特別法上の準備金等,,特別法上の準備金,,T,3,10B300010,ReservesUnderTheSpecialLawsAbstract1,Reserves under special laws
+　　　　特別法上の準備金,0,特別法上の準備金等,,特別法上の準備金,,1,4,10B300020,ReservesUnderTheSpecialLaws1,Reserves under special laws
+　　　特別法上の引当金,,特別法上の準備金等,,特別法上の引当金,,T,3,10B300030,ReservesUnderTheSpecialLawsAbstract2,Reserves under special laws
+　　　　特別法上の引当金,0,特別法上の準備金等,,特別法上の引当金,,1,4,10B300040,ReservesUnderTheSpecialLaws2,Reserves under special laws
+　　　負債,0,負債,,負債,,1,3,10B000020,Liabilities,Liabilities
+　　純資産の部,,純資産,,純資産の部,,T,2,10C000010,NetAssetsAbstract,Net assets
+　　　株主資本,,株主資本,,株主資本,,T,3,10C100010,ShareholdersEquityAbstract,Shareholders' equity
+　　　　資本金,0,資本金,,資本金,,1,4,10C110010,CapitalStock,Share capital
+　　　　新株式申込証拠金,0,資本金,,新株式申込証拠金,,1,4,10C110020,DepositForSubscriptionsToShares,Deposit for subscriptions to shares
+　　　　資本剰余金,,資本剰余金,,資本剰余金,,T,4,10C120010,CapitalSurplusAbstract,Capital surplus
+　　　　　資本準備金,0,資本剰余金,,資本準備金,,1,5,10C120020,LegalCapitalSurplus,Legal capital surplus
+　　　　　その他資本剰余金,0,資本剰余金,,その他資本剰余金,,1,5,10C120030,OtherCapitalSurplus,Other capital surplus
+　　　　　資本剰余金,0,資本剰余金,,資本剰余金,,1,5,10C120040,CapitalSurplus,Capital surplus
+　　　　利益剰余金,,利益剰余金,,利益剰余金,,T,4,10C130010,RetainedEarningsAbstract,Retained earnings
+　　　　　利益準備金,0,利益剰余金,,利益準備金,,1,5,10C130020,LegalRetainedEarnings,Legal retained earnings
+　　　　　その他利益剰余金,,利益剰余金,,その他利益剰余金,,T,5,10C130030,OtherRetainedEarningsAbstract,Other retained earnings
+　　　　　　減債積立金,0,利益剰余金,,減債積立金,,1,6,10C130040,ReserveForBondSinkingFund,Reserve for bond sinking fund
+　　　　　　中間配当積立金,0,利益剰余金,,中間配当積立金,,1,6,10C130050,ReserveForInterimDividends,Reserve for interim dividends
+　　　　　　配当平均積立金,0,利益剰余金,,配当平均積立金,,1,6,10C130060,ReserveForDividendEqualization,Reserve for dividend equalization
+　　　　　　事業拡張積立金,0,利益剰余金,,事業拡張積立金,,1,6,10C130070,ReserveForBusinessExpansion,Reserve for business expansion
+　　　　　　自家保険積立金,0,利益剰余金,,自家保険積立金,,1,6,10C130080,ReserveForPrivateInsurance,Reserve for private insurance
+　　　　　　固定資産圧縮積立金,0,利益剰余金,,固定資産圧縮積立金,,1,6,10C130090,ReserveForAdvancedDepreciationOfNoncurrentAssets,Reserve for tax purpose reduction entry of non-current assets
+　　　　　　固定資産圧縮特別勘定積立金,0,利益剰余金,,固定資産圧縮特別勘定積立金,,1,6,10C130100,ReserveForSpecialAccountForAdvancedDepreciationOfNoncurrentAssets,Reserve for special account for tax purpose reduction entry of non-current assets
+　　　　　　特別償却準備金,0,利益剰余金,,特別償却準備金,,1,6,10C130110,ReserveForSpecialDepreciation,Reserve for special depreciation
+　　　　　　プログラム等準備金,0,利益剰余金,,プログラム等準備金,,1,6,10C130120,ReserveForSoftwarePrograms,Reserve for software programs
+　　　　　　海外投資等損失準備金,0,利益剰余金,,海外投資等損失準備金,,1,6,10C130130,ReserveForOverseasInvestmentLoss,Reserve for overseas investment loss
+　　　　　　研究開発積立金,0,利益剰余金,,研究開発積立金,,1,6,10C130140,ReserveForResearchAndDevelopment,Reserve for research and development
+　　　　　　配当積立金,0,利益剰余金,,配当積立金,,1,6,10C130150,ReserveForDividends1,Reserve for dividends
+　　　　　　配当準備金,0,利益剰余金,,配当準備金,,1,6,10C130160,ReserveForDividends2,Reserve for dividends
+　　　　　　配当準備積立金,0,利益剰余金,,配当準備積立金,,1,6,10C130170,ReserveForDividends3,Reserve for dividends
+　　　　　　配当引当積立金,0,利益剰余金,,配当引当積立金,,1,6,10C130180,ReserveForDividends4,Reserve for dividends
+　　　　　　退職給与積立金,0,利益剰余金,,退職給与積立金,,1,6,10C130190,ReserveForRetirementAllowance1,Reserve for retirement allowance
+　　　　　　退職積立金,0,利益剰余金,,退職積立金,,1,6,10C130200,ReserveForRetirementAllowance2,Reserve for retirement allowance
+　　　　　　退職手当積立金,0,利益剰余金,,退職手当積立金,,1,6,10C130210,ReserveForRetirementAllowance3,Reserve for retirement allowance
+　　　　　　退職慰労積立金,0,利益剰余金,,退職慰労積立金,,1,6,10C130220,ReserveForRetirementAllowance4,Reserve for retirement allowance
+　　　　　　役員退職積立金,0,利益剰余金,,役員退職積立金,,1,6,10C130230,ReserveForDirectorsRetirementAllowance,Reserve for retirement allowance for directors (and other officers)
+　　　　　　圧縮記帳積立金,0,利益剰余金,,圧縮記帳積立金,,1,6,10C130240,ReserveForReductionEntry1,Reserve for tax purpose reduction entry
+　　　　　　圧縮積立金,0,利益剰余金,,圧縮積立金,,1,6,10C130250,ReserveForReductionEntry2,Reserve for tax purpose reduction entry
+　　　　　　土地圧縮積立金,0,利益剰余金,,土地圧縮積立金,,1,6,10C130260,ReserveForReductionEntryOfLand,Reserve for tax purpose reduction entry of land
+　　　　　　建物圧縮積立金,0,利益剰余金,,建物圧縮積立金,,1,6,10C130270,ReserveForReductionEntryOfBuildings,Reserve for tax purpose reduction entry of buildings
+　　　　　　不動産圧縮積立金,0,利益剰余金,,不動産圧縮積立金,,1,6,10C130280,ReserveForReductionEntryOfRealEstate,Reserve for tax purpose reduction entry of real estate
+　　　　　　資産圧縮積立金,0,利益剰余金,,資産圧縮積立金,,1,6,10C130290,ReserveForReductionEntryOfAssets,Reserve for tax purpose reduction entry of assets
+　　　　　　償却資産圧縮積立金,0,利益剰余金,,償却資産圧縮積立金,,1,6,10C130300,ReserveForReductionEntryOfDepreciableAssets,Reserve for tax purpose reduction entry of depreciable assets
+　　　　　　買換資産圧縮積立金,0,利益剰余金,,買換資産圧縮積立金,,1,6,10C130310,ReserveForReductionEntryOfReplacedProperty,Reserve for tax purpose reduction entry of replacement assets
+　　　　　　買換資産積立金,0,利益剰余金,,買換資産積立金,,1,6,10C130320,ReserveForPropertyReplacement,Reserve for property replacement
+　　　　　　特別償却積立金,0,利益剰余金,,特別償却積立金,,1,6,10C130330,ReserveForSpecialDepreciationGeneral,Reserve for special depreciation
+　　　　　　特別積立金,0,利益剰余金,,特別積立金,,1,6,10C130340,SpecialReserve,Special reserve
+　　　　　　任意積立金,0,利益剰余金,,任意積立金,,1,6,10C130350,VoluntaryRetainedEarnings,Voluntary retained earnings
+　　　　　　別途積立金,0,利益剰余金,,別途積立金,,1,6,10C130360,GeneralReserve,General reserve
+　　　　　　繰越利益剰余金,0,利益剰余金,,繰越利益剰余金,,1,6,10C130370,RetainedEarningsBroughtForward,Retained earnings brought forward
+　　　　　　その他利益剰余金,0,利益剰余金,,その他利益剰余金,,1,6,10C130380,OtherRetainedEarnings,Other retained earnings
+　　　　　利益剰余金,0,利益剰余金,,利益剰余金,,1,5,10C130390,RetainedEarnings,Retained earnings
+　　　　自己株式,0,株主資本,,自己株式,,1,4,10C100020,TreasuryStock,Treasury shares
+　　　　自己株式申込証拠金,0,株主資本,,自己株式申込証拠金,,1,4,10C100030,DepositForSubscriptionsToTreasuryStock,Deposit for subscriptions to treasury shares
+　　　　株主資本,0,株主資本,,株主資本,,1,4,10C100040,ShareholdersEquity,Shareholders' equity
+　　　評価・換算差額等,,評価・換算差額等,,評価・換算差額等,,T,3,10C200010,ValuationAndTranslationAdjustmentsAbstract,Valuation and translation adjustments
+　　　　その他有価証券評価差額金,0,評価・換算差額等,,その他有価証券評価差額金,,1,4,10C200020,ValuationDifferenceOnAvailableForSaleSecurities,Valuation difference on available-for-sale securities
+　　　　繰延ヘッジ損益,0,評価・換算差額等,,繰延ヘッジ損益,,1,4,10C200030,DeferredGainsOrLossesOnHedges,Deferred gains or losses on hedges
+　　　　土地再評価差額金,0,評価・換算差額等,,土地再評価差額金,,1,4,10C200040,RevaluationReserveForLand,Revaluation reserve for land
+　　　　為替換算調整勘定,0,評価・換算差額等,,為替換算調整勘定,,1,4,10C200050,ForeignCurrencyTranslationAdjustment,Foreign currency translation adjustment
+　　　　退職給付に係る調整累計額,0,評価・換算差額等,,退職給付に係る調整累計額,,1,4,10C200060,ValuationAndTranslationAdjustmentsAbstract,Remeasurements of defined benefit plans
+　　　　評価・換算差額等,0,評価・換算差額等,,評価・換算差額等,,1,4,10C200070,ValuationAndTranslationAdjustments,Valuation and translation adjustments
+　　　新株予約権,0,新株予約権,,新株予約権,,1,3,10C300010,SubscriptionRightsToShares,Share acquisition rights
+　　　自己新株予約権,0,新株予約権,,自己新株予約権,,1,3,10C300020,TreasurySubscriptionRightsToShares,Treasury share acquisition rights
+　　　非支配株主持分,0,純資産,,非支配株主持分,,1,3,10C000020,MinorityInterests,Non-controlling interests
+　　　純資産,0,純資産,,純資産,,1,3,10C000030,NetAssets,Net assets
+　　負債純資産,0,純資産,,負債純資産,,1,2,10C000040,LiabilitiesAndNetAssets,Liabilities and net assets

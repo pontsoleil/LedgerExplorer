@@ -54,6 +54,27 @@ body {
     display: none;
 }
 
+.dataset-menu select {
+    max-width: min(320px, 42vw);
+    padding: 3px 7px;
+    border: 1px solid rgba(255, 255, 255, .8);
+    border-radius: 5px;
+    color: #163b38;
+    background: #fff;
+    font: inherit;
+    font-weight: 700;
+}
+
+.company-header__details {
+    display: flex;
+    flex: 1 1 260px;
+    min-width: 0;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 12px;
+    row-gap: 2px;
+}
+
 .company-header__name {
     font-size: 14px;
     font-weight: 700;

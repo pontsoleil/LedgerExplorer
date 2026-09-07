@@ -26,12 +26,13 @@ index.json で定義された view（仕訳帳/総勘定元帳/試算表/BS/PL/�
 // -------- Settings --------
 /*
 Data location
-- This repo keeps web assets in /web and datasets in /data/{sample|full}.
-- When hosting GitHub Pages from /web, the data folder is a sibling of /web, so we use "../data/...".
-- You can switch dataset with ?dataset=sample or ?dataset=full.
+- This repo keeps web assets in /web and public datasets below /data.
+- data/datasets.json is the only runtime allowlist. A dataset root is never guessed.
 */
-const DATASET_DEFAULT = "sample";
+const DATASET_DEFAULT = "pca-synthetic-fy2021-v2-settlement-16m";
 let DATASET = DATASET_DEFAULT;
+let DATASET_REGISTRY = null;
+let DATASET_INFO = null;
 let DATA_ROOT = null; // resolved at runtime
 let INDEX_URL = null; // resolved at runtime
 let INDEX_BOOTSTRAP = null; // validated index.json loaded during path resolution
@@ -54,29 +55,34 @@ let toggleCodeColsBtn = null;
 // Public viewer data mode is fixed to server-hosted data.
 let dataMode = "server";
 // ---- Data root / dataset resolution ----
-// dataset: "sample" | "full" (default: sample)
-// Production may serve the UI directly from /ledger/ with data below /ledger/data/{dataset}.
-// The repository layout serves the UI from /web/ with data in the sibling /data/{dataset}.
-//
-// You can override with URL query:
-//   ?dataset=sample   (default)
-//   ?dataset=full
-//
-// A candidate is accepted only after its response body has been parsed and validated as an index.
+// data/datasets.json is the only runtime allowlist. Dataset roots are never guessed.
 async function initDatasetAndPaths() {
   const url = new URL(location.href);
-
-  // dataset selection
-  const qDataset = url.searchParams.get("dataset");
-  if (qDataset && (qDataset === "sample" || qDataset === "full")) {
-    DATASET = qDataset;
-  }
-
-  // Candidate data roots (in priority order)
   const repositoryWebLayout = /\/web(?:\/|$)/.test(location.pathname);
-  const candidates = repositoryWebLayout
-    ? [{ root: `../data/${DATASET}`, index: `../data/${DATASET}/index.json` }]
-    : [{ root: `./data/${DATASET}`, index: `./data/${DATASET}/index.json` }];
+  const dataBase = repositoryWebLayout ? "../data" : "./data";
+  const registryUrl = dataBase + "/datasets.json";
+  const registryResponse = await fetch(registryUrl, { cache: "no-store" });
+  if (!registryResponse.ok) throw new Error("Failed to load public dataset registry (" + registryResponse.status + ").");
+  const registry = await registryResponse.json();
+  const datasets = Array.isArray(registry?.datasets) ? registry.datasets : [];
+  if (!registry?.default_dataset_id || datasets.length !== 2 || datasets.some(item => item?.public !== true)) {
+    throw new Error("Public dataset registry must contain exactly two explicitly public datasets.");
+  }
+  const ids = new Set(datasets.map(item => item.id));
+  if (ids.size !== datasets.length || !ids.has(registry.default_dataset_id)) {
+    throw new Error("Public dataset registry contains duplicate IDs or an invalid default.");
+  }
+  const requested = url.searchParams.get("dataset");
+  DATASET = (requested === "sample" ? registry.default_dataset_id : requested) || registry.default_dataset_id;
+  const selected = datasets.find(item => item.id === DATASET);
+  if (!selected || !/^[a-z0-9][a-z0-9._-]*$/.test(selected.root)) {
+    throw new Error("Dataset is not in the public allowlist: " + DATASET);
+  }
+  DATASET_REGISTRY = registry;
+  DATASET_INFO = selected;
+
+  // Use the registry-selected public root only. There is deliberately no fallback.
+  const candidates = [{ root: dataBase + "/" + selected.root, index: dataBase + "/" + selected.root + "/index.json" }];
 
   DATA_ROOT = null;
   INDEX_URL = null;
@@ -110,6 +116,9 @@ async function initDatasetAndPaths() {
         throw new Error(`JSON does not contain a valid \"views\" object (${contentType}; final URL ${finalUrl})`);
       }
 
+      if (parsed.dataset_id !== DATASET) {
+        throw new Error("Dataset index identity does not match the public registry.");
+      }
       DATA_ROOT = c.root;
       INDEX_URL = c.index;
       INDEX_BOOTSTRAP = parsed;
@@ -594,6 +603,9 @@ const accountLabelEl = document.getElementById("accountLabel");
 const searchLabelEl = document.getElementById("searchLabel");
 const columnToggleGroupEl = document.getElementById("columnToggleGroup");
 const companyHeaderEl = document.getElementById("companyHeader");
+const datasetSelectEl = document.getElementById("datasetSelect");
+const companyDetailsEl = document.getElementById("companyDetails");
+const buildTimestampEl = document.getElementById("buildTimestamp");
 const monthLabelTextEl = document.getElementById("monthLabelText");
 const asOfLabelEl = document.getElementById("asOfLabel");
 const asOfLabelTextEl = document.getElementById("asOfLabelText");
@@ -1044,7 +1056,11 @@ function renderTable(rows, maxRows = DEFAULT_MAX_ROWS) {
   html += "</tr></thead><tbody>";
 
   for (const r of body) {
-    html += "<tr>";
+    const trace = r.journalTrace || {};
+    const traceAttrs = currentView === "journal" && trace.entryKey
+      ? ` data-dataset-id="${escapeHtml(trace.datasetId)}" data-entry-key="${escapeHtml(trace.entryKey)}" data-debit-occurrence="${escapeHtml(trace.debitOccurrence)}" data-credit-occurrence="${escapeHtml(trace.creditOccurrence)}"`
+      : "";
+    html += `<tr${traceAttrs}>`;
     for (const i of visibleIdxs) {
       const st = colStyles[i] || { align: "left", fmt: "text" };
       const raw = r[i] ?? "";
@@ -2712,7 +2728,14 @@ function applyI18nTexts() {
     searchInput.placeholder =
       SEARCH_PLACEHOLDER_I18N[currentLang] || SEARCH_PLACEHOLDER_I18N.en;
   }
-  if (companyHeaderEl) {
+  if (datasetSelectEl && DATASET_REGISTRY) {
+    datasetSelectEl.setAttribute("aria-label", currentLang === "en" ? "Dataset" : "データセット");
+    datasetSelectEl.innerHTML = DATASET_REGISTRY.datasets.map(item => {
+      const label = currentLang === "en" ? item.label_en : item.label_ja;
+      return `<option value="${escapeHtml(item.id)}"${item.id === DATASET ? " selected" : ""}>${escapeHtml(label || item.id)}</option>`;
+    }).join("");
+  }
+  if (companyHeaderEl && companyDetailsEl) {
     const company = INDEX?.company;
     if (company?.name) {
       const locality = [company.prefecture, company.address].filter(Boolean).join("");
@@ -2722,12 +2745,16 @@ function applyI18nTexts() {
       const demoNotice = currentLang === "en"
         ? "All data shown is fictional demonstration data. The accounting period is from April 2021 to March 2022; only transactions required to illustrate receipt and payment relationships include reference data from the two months before and after this period."
         : "※ 本画面のデータはすべて架空のデモデータです。会計取引の対象期間は2021年4月から2022年3月までですが、入出金との対応確認に必要な取引に限り、対象期間外の前後2か月分も参考データとして設定しています。";
-      companyHeaderEl.innerHTML = `<span class="company-header__name">${escapeHtml(company.name)}</span><span class="company-header__address">${escapeHtml(address)}</span><span class="company-header__notice">${escapeHtml(demoNotice)}</span>`;
+      companyDetailsEl.innerHTML = `<span class="company-header__name">${escapeHtml(company.name)}</span><span class="company-header__address">${escapeHtml(address)}</span><span class="company-header__notice">${escapeHtml(demoNotice)}</span>`;
       companyHeaderEl.hidden = false;
     } else {
-      companyHeaderEl.innerHTML = "";
+      companyDetailsEl.innerHTML = "";
       companyHeaderEl.hidden = true;
     }
+  }
+  if (buildTimestampEl) {
+    const label = currentLang === "en" ? "Program build date" : "プログラム作成日時";
+    buildTimestampEl.textContent = `${label}: ${BUILD_INFO?.built_at || "Unknown"}`;
   }
   renderModeSwitch();
   applyFontSize();
@@ -2740,7 +2767,8 @@ let lastAccountingView = "ledger";
 let lastLoadedUrl = "";
 let lastLoadedRows = null;
 let initialAccountFromUrl = "";
-const DEFAULT_LEDGER_ACCOUNT = "10A100020";
+const DEFAULT_LEDGER_ACCOUNT = "";
+let BUILD_INFO = null;
 
 // Build CSV URL using index.json (dataset + language + month)
 function joinUrlPath(...parts) {
@@ -2817,6 +2845,14 @@ function initNav() {
 
 function renderModeSwitch() {
   if (!modeSwitchEl) return;
+  const businessDocumentsEnabled = INDEX?.features?.business_documents === true;
+  modeSwitchEl.hidden = !businessDocumentsEnabled;
+  if (!businessDocumentsEnabled) {
+    modeSwitchEl.innerHTML = "";
+    if (isDocumentView()) currentView = "ledger";
+    renderDocumentTypeNav();
+    return;
+  }
   const accountingLabel = isDocumentView()
     ? (currentLang === "en" ? "Back to accounting" : "会計帳簿へ戻る")
     : (currentLang === "en" ? "Accounting ledgers" : "会計帳簿");
@@ -2877,7 +2913,7 @@ function currentAsOfMonth() {
 }
 
 function statementsAvailable() {
-  return currentAsOfMonth() >= "2022-03";
+  return true;
 }
 
 function updateStatementNavAvailability() {
@@ -2893,7 +2929,7 @@ function updateViewControls() {
   const partnerView = isPartnerReportView();
   const documentView = isDocumentView();
   const allAccountsOnly = currentView === "trial_balance" || currentView === "balance_sheet" || currentView === "pnl";
-  const annualReportView = currentView === "balance_sheet" || currentView === "pnl";
+  const annualReportView = false;
   const searchableView = currentView === "structured" || currentView === "tidy" || currentView === "journal";
   if (allAccountsOnly) acctSel.value = "";
   if (!searchableView) searchInput.value = "";
@@ -2927,7 +2963,7 @@ function updateViewControls() {
   if (navEl) navEl.hidden = documentView;
   if (aboutLinkEl?.closest("button")) aboutLinkEl.closest("button").hidden = documentView;
   if (aboutSeparatorEl) aboutSeparatorEl.hidden = documentView;
-  if (modeNavSeparatorEl) modeNavSeparatorEl.hidden = false;
+  if (modeNavSeparatorEl) modeNavSeparatorEl.hidden = INDEX?.features?.business_documents !== true;
   renderDocumentTypeNav();
 }
 
@@ -3085,7 +3121,8 @@ async function refresh(opts = {}) {
 
   const physicalView = INDEX?.views?.[currentView];
   const availableMonths = Array.isArray(physicalView?.available) ? physicalView.available : [];
-  if (!isDocumentView() && !isPartnerReportView() && availableMonths.length && !availableMonths.includes(monthSel.value)) {
+  const allOnly = availableMonths.length === 1 && availableMonths[0] === "ALL";
+  if (!isDocumentView() && !isPartnerReportView() && availableMonths.length && !allOnly && !availableMonths.includes(monthSel.value)) {
     monthSel.value = availableMonths.includes(INDEX.default_month) ? INDEX.default_month : availableMonths[0];
   }
   const month = monthSel.value || (INDEX?.months?.[0] ?? "");
@@ -3216,7 +3253,10 @@ async function refresh(opts = {}) {
     }
 
     // ---- Filter + render ----
-    const filtered = filterRows(lastLoadedRows, {
+    const displayRows = currentView === "journal" && globalThis.LedgerJournalDisplay
+      ? globalThis.LedgerJournalDisplay.buildDisplayRows(lastLoadedRows, DATASET)
+      : lastLoadedRows;
+    const filtered = filterRows(displayRows, {
       accountValue: acctSel.value || "",
       searchText: q,
       monthValue: month
@@ -3253,9 +3293,21 @@ async function main() {
   setStatus(`Loading index.json... (${INDEX_URL})`);
   INDEX = INDEX_BOOTSTRAP;
   if (!INDEX.views) INDEX.views = {};
-  INDEX.views.receivables = { virtual: true, source: "ledger" };
-  INDEX.views.payables = { virtual: true, source: "ledger" };
-  INDEX.views.documents = { virtual: true, source: "business_document" };
+  if (INDEX.features?.business_documents === true) {
+    INDEX.views.receivables = { virtual: true, source: "ledger" };
+    INDEX.views.payables = { virtual: true, source: "ledger" };
+    INDEX.views.documents = { virtual: true, source: "business_document" };
+  }
+
+  try {
+    const buildResponse = await fetch("./build-info.json", { cache: "no-store" });
+    if (!buildResponse.ok) throw new Error(`HTTP ${buildResponse.status}`);
+    BUILD_INFO = await buildResponse.json();
+    if (!/[+-]\d\d:\d\d$|Z$/.test(String(BUILD_INFO?.built_at || ""))) throw new Error("built_at must include a timezone");
+  } catch (error) {
+    console.error(`Build metadata unavailable: ${error.message}`);
+    BUILD_INFO = null;
+  }
 
   // restore state from URL if any
   const url = new URL(location.href);
@@ -3283,6 +3335,16 @@ async function main() {
   initSearch();
   initColumnToggleButtons();
   renderModeSwitch();
+  if (datasetSelectEl) {
+    datasetSelectEl.addEventListener("change", () => {
+      const selected = datasetSelectEl.value;
+      if (!DATASET_REGISTRY.datasets.some(item => item.id === selected && item.public === true)) return;
+      const next = new URL(location.href);
+      if (selected === DATASET_REGISTRY.default_dataset_id) next.searchParams.delete("dataset");
+      else next.searchParams.set("dataset", selected);
+      location.assign(next.toString());
+    });
+  }
 
   // set lang select
   if (langSel) langSel.value = currentLang;

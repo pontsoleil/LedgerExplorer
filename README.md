@@ -81,7 +81,7 @@ The repository is prepared for publishing:
 - local/static serving helpers under `server/`
 - export and bootstrap tooling under `tools/`
 - documentation under `docs/`
-- small public sample datasets under `data/sample/`
+- the two allowlisted public sample datasets under `data/sample/` and `data/legacy-sample/`
 
 Large or private exports should stay outside Git, or be published separately
 with Git LFS, GitHub Releases, a separate data repository, or object storage.
@@ -93,7 +93,9 @@ with Git LFS, GitHub Releases, a separate data repository, or object storage.
 |-- .github/                  # Pull request template and CI workflow
 |-- data/
 |   |-- README.md
-|   |-- sample/               # Commit small public demo data
+|   |-- datasets.json         # Runtime public-dataset allowlist
+|   |-- sample/               # Default PCA synthetic 16-month dataset
+|   |-- legacy-sample/        # Earlier public demonstration dataset
 |   `-- full/                 # Ignored; local/private generated exports
 |-- docs/
 |   |-- architecture.md
@@ -109,6 +111,8 @@ with Git LFS, GitHub Releases, a separate data repository, or object storage.
 |-- web/
 |   |-- index.html
 |   |-- app.js
+|   |-- journal-display.js    # Entry-key-based debit/credit display mapping
+|   |-- build-info.json       # Timezone-qualified program build metadata
 |   |-- app.css
 |   `-- i18n/
 |-- Dockerfile.tools
@@ -159,24 +163,29 @@ Then open:
 http://localhost:8000/web/?view=ledger&month=2021-04&mode=server&lang=ja
 ```
 
-The web UI defaults to `data/sample`. You can switch datasets with:
+The web UI defaults to `pca-synthetic-fy2021-v2-settlement-16m`. The company
+selector switches between the two entries in `data/datasets.json`; the same
+selection can be made with:
 
 ```text
-?dataset=sample
-?dataset=full
+?dataset=pca-synthetic-fy2021-v2-settlement-16m
+?dataset=ledger-public-demo-v1
 ```
 
-`data/full` is ignored by Git and is intended for local/private exports.
+No private or `data/full` dataset is reachable from the public UI.
 
 ## Authoritative Sample Inputs and Rebuild
 
 ### Current default sample (2026-09-07)
 
-The current `data/sample` is `pca-synthetic-fy2021-v1`, a wholly fictional
-PCA-derived evaluation set generated from the accepted UADC-PoC Structured CSV.
-It covers April 2021 through March 2022, defaults to April 2021, and provides
-monthly xBRL-CSV plus monthly journal, ledger, trial-balance, balance-sheet, and
-profit-and-loss views in Japanese and English. Rebuild it with
+The current `data/sample` is `pca-synthetic-fy2021-v2-settlement-16m`, a wholly
+fictional PCA-derived evaluation set generated from the accepted UADC-PoC
+Structured CSV. It covers the exact 16 months from February 2021 through May
+2022. The fiscal-year reports remain April 2021 through March 2022, while the
+two months before and after are reference periods for explicit settlement
+relationships. It defaults to April 2021 and provides C1...C14 Structured CSV
+plus journal, ledger, trial-balance, balance-sheet, profit-and-loss, business
+document and settlement views in Japanese and English. Rebuild it with
 `tools/generate_uadc_pca_synthetic_dataset.py`; see `data/sample/README.md` for
 the exact scope and counts.
 

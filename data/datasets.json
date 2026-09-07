@@ -1,0 +1,23 @@
+{
+  "registry_version": "1.0.0",
+  "default_dataset_id": "pca-synthetic-fy2021-v2-settlement-16m",
+  "datasets": [
+    {
+      "id": "pca-synthetic-fy2021-v2-settlement-16m",
+      "root": "sample",
+      "version": "2.0.0",
+      "public": true,
+      "label_ja": "公開PCA合成データ（16か月）",
+      "label_en": "Public PCA synthetic data (16 months)"
+    },
+    {
+      "id": "ledger-public-demo-v1",
+      "root": "legacy-sample",
+      "version": "1.0.0",
+      "public": true,
+      "authority_commit": "a188f70e10fdecacf1a9649cabbf0661576f7844",
+      "label_ja": "従来の公開サンプル",
+      "label_en": "Legacy public sample"
+    }
+  ]
+}
