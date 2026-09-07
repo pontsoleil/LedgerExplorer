@@ -1,0 +1,59 @@
+dataset_id,as_of_date,account,account_name,normal_balance,opening_balance,source_type,source_reference
+pca-synthetic-fy2021-v1,2021-04-01,1000,Demo Cash,D,600000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,1010,Demo Petty Cash,D,120000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,1100,Demo Central Ordinary Deposit,D,17049930,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,1110,Demo North Current Deposit,D,20425970,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,1120,Demo Harbor Ordinary Deposit,D,16688910,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,1200,Demo Accounts Receivable,D,1500000,PRE_PERIOD_DERIVED,800001;800002;800003
+pca-synthetic-fy2021-v1,2021-04-01,1210,Demo Notes Receivable,D,800000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,1300,Demo Inventory,D,1200000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,1400,Demo Prepaid Expenses,D,300000,PRE_PERIOD_DERIVED,800013;800014;800015
+pca-synthetic-fy2021-v1,2021-04-01,1410,Demo Advances Paid,D,250000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,1420,Demo Temporary Payments,D,150000,PRE_PERIOD_DERIVED,800017;800018;800019
+pca-synthetic-fy2021-v1,2021-04-01,1430,Demo Input Tax Receivable,D,400000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,1500,Demo Equipment,D,2000000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,1510,Demo Vehicles,D,1200000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,1520,Demo Software,D,700000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,1590,Demo Accumulated Depreciation,C,900000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,2000,Demo Accounts Payable,C,3423720,PRE_PERIOD_DERIVED,800005;800006;800007
+pca-synthetic-fy2021-v1,2021-04-01,2010,Demo Notes Payable,C,600000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,2100,Demo Accrued Payables,C,11150830,PRE_PERIOD_DERIVED,800009;800010;800011
+pca-synthetic-fy2021-v1,2021-04-01,2110,Demo Payroll Withholding,C,6159250,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,2120,Demo Output Tax Payable,C,450000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,2130,Demo Temporary Receipts,C,120000,PRE_PERIOD_DERIVED,800021;800022;800023
+pca-synthetic-fy2021-v1,2021-04-01,2200,Demo Short-term Loans,C,6572000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,2300,Demo Long-term Loans,C,2500000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,2400,Demo Unearned Revenue,C,350000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,3000,Demo Capital,C,5000000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,3100,Demo Retained Earnings,C,26159010,BALANCING_EQUITY,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,4000,Demo Product Sales,C,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,4010,Demo Service Revenue,C,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,4020,Demo Other Operating Revenue,C,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,4030,Demo Interest Income,C,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,4040,Demo Miscellaneous Income,C,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,5000,Demo Purchases,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,5010,Demo Freight-in,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,5020,Demo Inventory Adjustment,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6000,Demo Salaries,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6010,Demo Statutory Welfare,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6020,Demo Office Rent,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6030,Demo Utilities,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6040,Demo Communication,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6050,Demo Business Travel,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6060,Demo Office Supplies,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6070,Demo Bank Fees,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6080,Demo Advertising,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6090,Demo Insurance,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6100,Demo Repairs,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6110,Demo Depreciation Expense,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6120,Demo Professional Fees,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6130,Demo Training,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6140,Demo Vehicle Expense,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6150,Demo Software Subscription,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6160,Demo Shipping,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,6170,Demo Miscellaneous Expense,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,7000,Demo Taxes and Dues,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,7010,Demo Corporate Tax,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,7020,Demo Consumption Tax Expense,D,0,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,8000,Demo Suspense,D,50000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario
+pca-synthetic-fy2021-v1,2021-04-01,8010,Demo Clearing,C,50000,SCENARIO_DESIGNED,seed 20260903 synthetic scenario

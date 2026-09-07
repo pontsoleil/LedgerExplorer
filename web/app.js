@@ -73,13 +73,10 @@ async function initDatasetAndPaths() {
   }
 
   // Candidate data roots (in priority order)
-  const candidates = [
-    { root: `./data/${DATASET}`,  index: `./data/${DATASET}/index.json`  },
-    { root: `../data/${DATASET}`, index: `../data/${DATASET}/index.json` },
-    // legacy / alternate layouts
-    { root: `./data`,  index: `./data/index.json`  },
-    { root: `../data`, index: `../data/index.json` },
-  ];
+  const repositoryWebLayout = /\/web(?:\/|$)/.test(location.pathname);
+  const candidates = repositoryWebLayout
+    ? [{ root: `../data/${DATASET}`, index: `../data/${DATASET}/index.json` }]
+    : [{ root: `./data/${DATASET}`, index: `./data/${DATASET}/index.json` }];
 
   DATA_ROOT = null;
   INDEX_URL = null;
@@ -136,6 +133,7 @@ let localRowsAll = null; // uploaded CSV rows
 // View labels (button labels)
 const VIEW_LABELS_I18N = {
   ja: {
+    structured: "xBRL-CSV",
     journal: "仕訳帳",
     ledger: "総勘定元帳",
     trial_balance: "試算表",
@@ -144,9 +142,10 @@ const VIEW_LABELS_I18N = {
     receivables: "売掛金集計",
     payables: "買掛金集計",
     documents: "業務文書",
-    tidy: "構造化CSV",
+    tidy: "表示用Tidy",
   },
   en: {
+    structured: "xBRL-CSV",
     journal: "Journal",
     ledger: "General Ledger",
     trial_balance: "Trial Balance",
@@ -155,7 +154,7 @@ const VIEW_LABELS_I18N = {
     receivables: "A/R Summary",
     payables: "A/P Summary",
     documents: "Business Documents",
-    tidy: "Structured CSV",
+    tidy: "Display Tidy",
   },
 };
 
@@ -580,6 +579,9 @@ const modeNavSeparatorEl = document.getElementById("modeNavSeparator");
 const aboutSeparatorEl = document.getElementById("aboutSeparator");
 const aboutLinkEl = document.getElementById("aboutLink");
 const statusEl = document.getElementById("status");
+const structuredDownloadsEl = document.getElementById("structuredDownloads");
+const structuredCsvDownloadEl = document.getElementById("structuredCsvDownload");
+const structuredJsonDownloadEl = document.getElementById("structuredJsonDownload");
 const wrapEl = document.getElementById("tableWrap");
 const monthSel = document.getElementById("monthSelect");
 const asOfSel = document.getElementById("asOfSelect");
@@ -2705,9 +2707,10 @@ function applyI18nTexts() {
       const address = [company.postal_code ? `〒${company.postal_code}` : "", locality, company.building]
         .filter(Boolean)
         .join(" ");
+      const datasetId = INDEX?.dataset_id || DATASET;
       const demoNotice = currentLang === "en"
-        ? "All data shown is fictional demonstration data. The accounting period is from April 2021 to March 2022; only transactions required to illustrate receipt and payment relationships include reference data from the two months before and after this period."
-        : "※ 本画面のデータはすべて架空のデモデータです。会計取引の対象期間は2021年4月から2022年3月までですが、入出金との対応確認に必要な取引に限り、対象期間外の前後2か月分も参考データとして設定しています。";
+        ? `All data shown is fictional. Dataset: ${datasetId}; period: April 2021 through March 2022.`
+        : `※ 本画面のデータはすべて架空です。データセット: ${datasetId}、対象期間: 2021年4月～2022年3月。`;
       companyHeaderEl.innerHTML = `<span class="company-header__name">${escapeHtml(company.name)}</span><span class="company-header__address">${escapeHtml(address)}</span><span class="company-header__notice">${escapeHtml(demoNotice)}</span>`;
       companyHeaderEl.hidden = false;
     } else {
@@ -2726,7 +2729,7 @@ let lastAccountingView = "ledger";
 let lastLoadedUrl = "";
 let lastLoadedRows = null;
 let initialAccountFromUrl = "";
-const DEFAULT_LEDGER_ACCOUNT = "10A100020";
+const DEFAULT_LEDGER_ACCOUNT = "";
 
 // Build CSV URL using index.json (dataset + language + month)
 function joinUrlPath(...parts) {
@@ -2758,7 +2761,7 @@ function resolveCsvUrl(viewKey, month) {
 
   // Most datasets are stored under DATA_ROOT/{lang}/... and index.json paths are view-relative.
   // If the path already begins with "{lang}/", do not double-prefix.
-  const needsLangPrefix = !(rel.startsWith(`${lang}/`) || rel.startsWith(`./${lang}/`) || rel.startsWith(`../${lang}/`));
+  const needsLangPrefix = !v.language_neutral && !(rel.startsWith(`${lang}/`) || rel.startsWith(`./${lang}/`) || rel.startsWith(`../${lang}/`));
   const rel2 = needsLangPrefix ? `${lang}/${rel}` : rel;
 
   return joinUrlPath(DATA_ROOT, rel2);
@@ -2778,7 +2781,7 @@ function updateUrlQuery(params) {
 function initNav() {
   navEl.innerHTML = "";
   const viewKeys = Object.keys(INDEX.views || {}).filter(key => key !== "documents");
-  const groupEnds = new Set(["tidy", "trial_balance", "pnl"]);
+  const groupEnds = new Set(["structured", "tidy", "trial_balance", "pnl"]);
   for (const [index, key] of viewKeys.entries()) {
     const btn = document.createElement("button");
     btn.textContent = tViewLabel(key);
@@ -2803,6 +2806,14 @@ function initNav() {
 
 function renderModeSwitch() {
   if (!modeSwitchEl) return;
+  const businessDocumentsEnabled = INDEX?.features?.business_documents === true;
+  modeSwitchEl.hidden = !businessDocumentsEnabled;
+  if (!businessDocumentsEnabled) {
+    modeSwitchEl.innerHTML = "";
+    if (isDocumentView()) currentView = "ledger";
+    renderDocumentTypeNav();
+    return;
+  }
   const accountingLabel = isDocumentView()
     ? (currentLang === "en" ? "Back to accounting" : "会計帳簿へ戻る")
     : (currentLang === "en" ? "Accounting ledgers" : "会計帳簿");
@@ -2863,7 +2874,7 @@ function currentAsOfMonth() {
 }
 
 function statementsAvailable() {
-  return currentAsOfMonth() >= "2022-03";
+  return true;
 }
 
 function updateStatementNavAvailability() {
@@ -2879,8 +2890,8 @@ function updateViewControls() {
   const partnerView = isPartnerReportView();
   const documentView = isDocumentView();
   const allAccountsOnly = currentView === "trial_balance" || currentView === "balance_sheet" || currentView === "pnl";
-  const annualReportView = currentView === "balance_sheet" || currentView === "pnl";
-  const searchableView = currentView === "tidy" || currentView === "journal";
+  const annualReportView = false;
+  const searchableView = currentView === "structured" || currentView === "tidy" || currentView === "journal";
   if (allAccountsOnly) acctSel.value = "";
   if (!searchableView) searchInput.value = "";
   if (searchLabelEl) searchLabelEl.hidden = !searchableView;
@@ -2909,10 +2920,11 @@ function updateViewControls() {
   }
   if (toggleCodeColsBtn) toggleCodeColsBtn.hidden = partnerView || documentView;
   if (columnToggleGroupEl) columnToggleGroupEl.hidden = partnerView || documentView;
+  if (structuredDownloadsEl) structuredDownloadsEl.hidden = currentView !== "structured" || documentView;
   if (navEl) navEl.hidden = documentView;
   if (aboutLinkEl?.closest("button")) aboutLinkEl.closest("button").hidden = documentView;
   if (aboutSeparatorEl) aboutSeparatorEl.hidden = documentView;
-  if (modeNavSeparatorEl) modeNavSeparatorEl.hidden = false;
+  if (modeNavSeparatorEl) modeNavSeparatorEl.hidden = INDEX?.features?.business_documents !== true;
   renderDocumentTypeNav();
 }
 
@@ -3070,7 +3082,7 @@ async function refresh(opts = {}) {
 
   const month = monthSel.value || (INDEX?.months?.[0] ?? "");
   const asOfMonth = currentAsOfMonth() || month;
-  const searchableView = currentView === "tidy" || currentView === "journal";
+  const searchableView = currentView === "structured" || currentView === "tidy" || currentView === "journal";
   const q = searchableView ? String(searchInput.value || "").trim() : "";
   const acct = isDocumentView() ? "" : (acctSel.value || "");
 
@@ -3123,6 +3135,12 @@ async function refresh(opts = {}) {
     // ---- Load rows ----
     if (dataMode === "server") {
       const url = resolveCsvUrl(currentView, month);
+      if (currentView === "structured") {
+        const view = INDEX.views.structured;
+        const metadataRel = String(view.metadata_path || "structured/{month}.json").replace(/\{month\}/g, month);
+        if (structuredCsvDownloadEl) structuredCsvDownloadEl.href = url;
+        if (structuredJsonDownloadEl) structuredJsonDownloadEl.href = joinUrlPath(DATA_ROOT, metadataRel);
+      }
       setStatus(`Loading ${tViewLabel(currentView)} (${month}) [${currentLang}]...`);
 
       if (!skipReloadCsv || url !== lastLoadedUrl || !lastLoadedRows) {
@@ -3218,20 +3236,12 @@ async function main() {
   }
   setStatus(`Loading index.json... (${INDEX_URL})`);
   INDEX = INDEX_BOOTSTRAP;
-  // Ensure "tidy" view exists for Structured CSV monthly files.
-  // Even if index.json does not define it, we add it here so the "Structured CSV" button is always shown.
   if (!INDEX.views) INDEX.views = {};
-  if (!INDEX.views.tidy) {
-    INDEX.views.tidy = {
-      by: "month",
-      path: "tidy/{month}.csv",
-      fallback: "tidy/{month}.csv",
-      available: Array.isArray(INDEX.months) ? INDEX.months : []
-    };
+  if (INDEX.features?.business_documents === true) {
+    INDEX.views.receivables = { virtual: true, source: "ledger" };
+    INDEX.views.payables = { virtual: true, source: "ledger" };
+    INDEX.views.documents = { virtual: true, source: "business_document" };
   }
-  INDEX.views.receivables = { virtual: true, source: "ledger" };
-  INDEX.views.payables = { virtual: true, source: "ledger" };
-  INDEX.views.documents = { virtual: true, source: "business_document" };
 
   // restore state from URL if any
   const url = new URL(location.href);
@@ -3250,6 +3260,7 @@ async function main() {
   // init UI
   initNav();
   initMonthSelect(INDEX.months || []);
+  if (INDEX.default_month && (INDEX.months || []).includes(INDEX.default_month)) monthSel.value = INDEX.default_month;
   if (qMonth && (INDEX.months || []).includes(qMonth)) monthSel.value = qMonth;
   initAsOfSelect(qAsOf || "");
   initAccountSelect();

@@ -1,0 +1,37 @@
+{
+  "structured": {
+    "fact_count": 26339,
+    "voucher_count": 708,
+    "namespace": "https://www.xbrl.or.jp/taxonomy/xbrl-gl-next/experimental/cor/2026-12-31"
+  },
+  "journal_rows": 1866,
+  "vouchers": 708,
+  "accounts": 58,
+  "debit": 211762480,
+  "credit": 211762480,
+  "opening_assets": 63434810,
+  "opening_liabilities_equity": 63434810,
+  "opening_balance_difference": 0,
+  "ending_assets": 51219690,
+  "ending_liabilities_equity": 38907830,
+  "revenue": 71956900,
+  "expenses": 59645040,
+  "net_income": 12311860,
+  "bs_equation_difference": 0,
+  "semantic_path_loss": 0,
+  "old_id_dependency": 0,
+  "months": [
+    "2021-04",
+    "2021-05",
+    "2021-06",
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03"
+  ]
+}

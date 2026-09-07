@@ -1,0 +1,697 @@
+Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
+2021-04,1000,0,0,Demo Cash,600000,600000,Assets
+2021-04,1010,0,0,Demo Petty Cash,120000,120000,Assets
+2021-04,1100,504900,2869630,Demo Central Ordinary Deposit,17049930,14685200,Assets
+2021-04,1110,1626790,3460020,Demo North Current Deposit,20425970,18592740,Assets
+2021-04,1120,1409200,2228640,Demo Harbor Ordinary Deposit,16688910,15869470,Assets
+2021-04,1200,4960930,2690580,Demo Accounts Receivable,1500000,3770350,Assets
+2021-04,1210,0,0,Demo Notes Receivable,800000,800000,Assets
+2021-04,1300,0,0,Demo Inventory,1200000,1200000,Assets
+2021-04,1400,600140,0,Demo Prepaid Expenses,300000,900140,Assets
+2021-04,1410,0,0,Demo Advances Paid,250000,250000,Assets
+2021-04,1420,0,0,Demo Temporary Payments,150000,150000,Assets
+2021-04,1430,0,0,Demo Input Tax Receivable,400000,400000,Assets
+2021-04,1500,0,0,Demo Equipment,2000000,2000000,Assets
+2021-04,1510,0,0,Demo Vehicles,1200000,1200000,Assets
+2021-04,1520,0,0,Demo Software,700000,700000,Assets
+2021-04,1590,0,0,Demo Accumulated Depreciation,900000,900000,Assets
+2021-04,2000,2597880,1443230,Demo Accounts Payable,3423720,2269070,Liabilities
+2021-04,2010,0,0,Demo Notes Payable,600000,600000,Liabilities
+2021-04,2100,995140,0,Demo Accrued Payables,11150830,10155690,Liabilities
+2021-04,2110,602730,0,Demo Payroll Withholding,6159250,5556520,Liabilities
+2021-04,2120,0,0,Demo Output Tax Payable,450000,450000,Liabilities
+2021-04,2130,0,0,Demo Temporary Receipts,120000,120000,Liabilities
+2021-04,2200,210430,0,Demo Short-term Loans,6572000,6361570,Liabilities
+2021-04,2300,0,0,Demo Long-term Loans,2500000,2500000,Liabilities
+2021-04,2400,0,0,Demo Unearned Revenue,350000,350000,Liabilities
+2021-04,3000,0,0,Demo Capital,5000000,5000000,Equity
+2021-04,3100,0,0,Demo Retained Earnings,26159010,26159010,Equity
+2021-04,4000,0,2055290,Demo Product Sales,0,2055290,Revenue
+2021-04,4010,0,2383820,Demo Service Revenue,0,2383820,Revenue
+2021-04,4020,0,1372130,Demo Other Operating Revenue,0,1372130,Revenue
+2021-04,4030,0,0,Demo Interest Income,0,0,Revenue
+2021-04,4040,0,0,Demo Miscellaneous Income,0,0,Revenue
+2021-04,5000,532190,0,Demo Purchases,0,532190,Cost of sales
+2021-04,5010,429080,0,Demo Freight-in,0,429080,Cost of sales
+2021-04,5020,481960,0,Demo Inventory Adjustment,0,481960,Cost of sales
+2021-04,6000,630350,0,Demo Salaries,0,630350,Operating expenses
+2021-04,6010,410810,0,Demo Statutory Welfare,0,410810,Operating expenses
+2021-04,6020,0,0,Demo Office Rent,0,0,Operating expenses
+2021-04,6030,672050,0,Demo Utilities,0,672050,Operating expenses
+2021-04,6040,351620,0,Demo Communication,0,351620,Operating expenses
+2021-04,6050,0,0,Demo Business Travel,0,0,Operating expenses
+2021-04,6060,734700,0,Demo Office Supplies,0,734700,Operating expenses
+2021-04,6070,208960,0,Demo Bank Fees,0,208960,Operating expenses
+2021-04,6080,0,0,Demo Advertising,0,0,Operating expenses
+2021-04,6090,0,0,Demo Insurance,0,0,Operating expenses
+2021-04,6100,71340,0,Demo Repairs,0,71340,Operating expenses
+2021-04,6110,0,0,Demo Depreciation Expense,0,0,Operating expenses
+2021-04,6120,0,0,Demo Professional Fees,0,0,Operating expenses
+2021-04,6130,0,0,Demo Training,0,0,Operating expenses
+2021-04,6140,132570,0,Demo Vehicle Expense,0,132570,Operating expenses
+2021-04,6150,0,0,Demo Software Subscription,0,0,Operating expenses
+2021-04,6160,0,0,Demo Shipping,0,0,Operating expenses
+2021-04,6170,0,0,Demo Miscellaneous Expense,0,0,Operating expenses
+2021-04,7000,339570,0,Demo Taxes and Dues,0,339570,Taxes
+2021-04,7010,0,0,Demo Corporate Tax,0,0,Taxes
+2021-04,7020,0,0,Demo Consumption Tax Expense,0,0,Taxes
+2021-04,8000,0,0,Demo Suspense,50000,50000,Clearing / temporary
+2021-04,8010,0,0,Demo Clearing,50000,50000,Clearing / temporary
+2021-05,1000,0,0,Demo Cash,600000,600000,Assets
+2021-05,1010,0,0,Demo Petty Cash,120000,120000,Assets
+2021-05,1100,602370,2310790,Demo Central Ordinary Deposit,14685200,12976780,Assets
+2021-05,1110,1254260,2681180,Demo North Current Deposit,18592740,17165820,Assets
+2021-05,1120,1606110,2091620,Demo Harbor Ordinary Deposit,15869470,15383960,Assets
+2021-05,1200,5646470,2499300,Demo Accounts Receivable,3770350,6917520,Assets
+2021-05,1210,0,0,Demo Notes Receivable,800000,800000,Assets
+2021-05,1300,0,0,Demo Inventory,1200000,1200000,Assets
+2021-05,1400,351550,0,Demo Prepaid Expenses,900140,1251690,Assets
+2021-05,1410,0,0,Demo Advances Paid,250000,250000,Assets
+2021-05,1420,0,0,Demo Temporary Payments,150000,150000,Assets
+2021-05,1430,0,0,Demo Input Tax Receivable,400000,400000,Assets
+2021-05,1500,0,0,Demo Equipment,2000000,2000000,Assets
+2021-05,1510,0,0,Demo Vehicles,1200000,1200000,Assets
+2021-05,1520,0,0,Demo Software,700000,700000,Assets
+2021-05,1590,0,0,Demo Accumulated Depreciation,900000,900000,Assets
+2021-05,2000,1373290,1554320,Demo Accounts Payable,2269070,2450100,Liabilities
+2021-05,2010,0,0,Demo Notes Payable,600000,600000,Liabilities
+2021-05,2100,690450,0,Demo Accrued Payables,10155690,9465240,Liabilities
+2021-05,2110,428220,0,Demo Payroll Withholding,5556520,5128300,Liabilities
+2021-05,2120,0,0,Demo Output Tax Payable,450000,450000,Liabilities
+2021-05,2130,0,0,Demo Temporary Receipts,120000,120000,Liabilities
+2021-05,2200,409340,0,Demo Short-term Loans,6361570,5952230,Liabilities
+2021-05,2300,0,0,Demo Long-term Loans,2500000,2500000,Liabilities
+2021-05,2400,0,0,Demo Unearned Revenue,350000,350000,Liabilities
+2021-05,3000,0,0,Demo Capital,5000000,5000000,Equity
+2021-05,3100,0,0,Demo Retained Earnings,26159010,26159010,Equity
+2021-05,4000,0,2860770,Demo Product Sales,2055290,4916060,Revenue
+2021-05,4010,0,2672330,Demo Service Revenue,2383820,5056150,Revenue
+2021-05,4020,0,1076810,Demo Other Operating Revenue,1372130,2448940,Revenue
+2021-05,4030,0,0,Demo Interest Income,0,0,Revenue
+2021-05,4040,0,0,Demo Miscellaneous Income,0,0,Revenue
+2021-05,5000,613950,0,Demo Purchases,532190,1146140,Cost of sales
+2021-05,5010,589780,0,Demo Freight-in,429080,1018860,Cost of sales
+2021-05,5020,350590,0,Demo Inventory Adjustment,481960,832550,Cost of sales
+2021-05,6000,1071590,0,Demo Salaries,630350,1701940,Operating expenses
+2021-05,6010,228000,0,Demo Statutory Welfare,410810,638810,Operating expenses
+2021-05,6020,6210,0,Demo Office Rent,0,6210,Operating expenses
+2021-05,6030,838900,0,Demo Utilities,672050,1510950,Operating expenses
+2021-05,6040,356970,0,Demo Communication,351620,708590,Operating expenses
+2021-05,6050,0,0,Demo Business Travel,0,0,Operating expenses
+2021-05,6060,426980,0,Demo Office Supplies,734700,1161680,Operating expenses
+2021-05,6070,110680,0,Demo Bank Fees,208960,319640,Operating expenses
+2021-05,6080,0,0,Demo Advertising,0,0,Operating expenses
+2021-05,6090,0,0,Demo Insurance,0,0,Operating expenses
+2021-05,6100,147960,0,Demo Repairs,71340,219300,Operating expenses
+2021-05,6110,0,0,Demo Depreciation Expense,0,0,Operating expenses
+2021-05,6120,0,0,Demo Professional Fees,0,0,Operating expenses
+2021-05,6130,0,0,Demo Training,0,0,Operating expenses
+2021-05,6140,0,0,Demo Vehicle Expense,132570,132570,Operating expenses
+2021-05,6150,0,0,Demo Software Subscription,0,0,Operating expenses
+2021-05,6160,0,0,Demo Shipping,0,0,Operating expenses
+2021-05,6170,0,0,Demo Miscellaneous Expense,0,0,Operating expenses
+2021-05,7000,643450,0,Demo Taxes and Dues,339570,983020,Taxes
+2021-05,7010,0,0,Demo Corporate Tax,0,0,Taxes
+2021-05,7020,0,0,Demo Consumption Tax Expense,0,0,Taxes
+2021-05,8000,0,0,Demo Suspense,50000,50000,Clearing / temporary
+2021-05,8010,0,0,Demo Clearing,50000,50000,Clearing / temporary
+2021-06,1000,0,0,Demo Cash,600000,600000,Assets
+2021-06,1010,0,0,Demo Petty Cash,120000,120000,Assets
+2021-06,1100,389210,3164470,Demo Central Ordinary Deposit,12976780,10201520,Assets
+2021-06,1110,1286510,3395070,Demo North Current Deposit,17165820,15057260,Assets
+2021-06,1120,619920,1363430,Demo Harbor Ordinary Deposit,15383960,14640450,Assets
+2021-06,1200,4024700,1573800,Demo Accounts Receivable,6917520,9368420,Assets
+2021-06,1210,0,0,Demo Notes Receivable,800000,800000,Assets
+2021-06,1300,0,0,Demo Inventory,1200000,1200000,Assets
+2021-06,1400,402840,0,Demo Prepaid Expenses,1251690,1654530,Assets
+2021-06,1410,0,0,Demo Advances Paid,250000,250000,Assets
+2021-06,1420,0,0,Demo Temporary Payments,150000,150000,Assets
+2021-06,1430,0,0,Demo Input Tax Receivable,400000,400000,Assets
+2021-06,1500,0,0,Demo Equipment,2000000,2000000,Assets
+2021-06,1510,0,0,Demo Vehicles,1200000,1200000,Assets
+2021-06,1520,0,0,Demo Software,700000,700000,Assets
+2021-06,1590,0,0,Demo Accumulated Depreciation,900000,900000,Assets
+2021-06,2000,1613500,1876160,Demo Accounts Payable,2450100,2712760,Liabilities
+2021-06,2010,0,0,Demo Notes Payable,600000,600000,Liabilities
+2021-06,2100,972700,0,Demo Accrued Payables,9465240,8492540,Liabilities
+2021-06,2110,639750,0,Demo Payroll Withholding,5128300,4488550,Liabilities
+2021-06,2120,0,0,Demo Output Tax Payable,450000,450000,Liabilities
+2021-06,2130,0,0,Demo Temporary Receipts,120000,120000,Liabilities
+2021-06,2200,320690,0,Demo Short-term Loans,5952230,5631540,Liabilities
+2021-06,2300,0,0,Demo Long-term Loans,2500000,2500000,Liabilities
+2021-06,2400,0,0,Demo Unearned Revenue,350000,350000,Liabilities
+2021-06,3000,0,0,Demo Capital,5000000,5000000,Equity
+2021-06,3100,0,0,Demo Retained Earnings,26159010,26159010,Equity
+2021-06,4000,0,2059490,Demo Product Sales,4916060,6975550,Revenue
+2021-06,4010,0,1183330,Demo Service Revenue,5056150,6239480,Revenue
+2021-06,4020,0,1503720,Demo Other Operating Revenue,2448940,3952660,Revenue
+2021-06,4030,0,0,Demo Interest Income,0,0,Revenue
+2021-06,4040,0,0,Demo Miscellaneous Income,0,0,Revenue
+2021-06,5000,436960,0,Demo Purchases,1146140,1583100,Cost of sales
+2021-06,5010,731120,0,Demo Freight-in,1018860,1749980,Cost of sales
+2021-06,5020,708080,0,Demo Inventory Adjustment,832550,1540630,Cost of sales
+2021-06,6000,529020,0,Demo Salaries,1701940,2230960,Operating expenses
+2021-06,6010,217620,0,Demo Statutory Welfare,638810,856430,Operating expenses
+2021-06,6020,0,0,Demo Office Rent,6210,6210,Operating expenses
+2021-06,6030,417440,0,Demo Utilities,1510950,1928390,Operating expenses
+2021-06,6040,447380,0,Demo Communication,708590,1155970,Operating expenses
+2021-06,6050,0,0,Demo Business Travel,0,0,Operating expenses
+2021-06,6060,1240580,0,Demo Office Supplies,1161680,2402260,Operating expenses
+2021-06,6070,151820,0,Demo Bank Fees,319640,471460,Operating expenses
+2021-06,6080,146860,0,Demo Advertising,0,146860,Operating expenses
+2021-06,6090,0,0,Demo Insurance,0,0,Operating expenses
+2021-06,6100,0,0,Demo Repairs,219300,219300,Operating expenses
+2021-06,6110,0,0,Demo Depreciation Expense,0,0,Operating expenses
+2021-06,6120,0,0,Demo Professional Fees,0,0,Operating expenses
+2021-06,6130,0,0,Demo Training,0,0,Operating expenses
+2021-06,6140,167560,0,Demo Vehicle Expense,132570,300130,Operating expenses
+2021-06,6150,0,0,Demo Software Subscription,0,0,Operating expenses
+2021-06,6160,119830,0,Demo Shipping,0,119830,Operating expenses
+2021-06,6170,0,0,Demo Miscellaneous Expense,0,0,Operating expenses
+2021-06,7000,535380,0,Demo Taxes and Dues,983020,1518400,Taxes
+2021-06,7010,0,0,Demo Corporate Tax,0,0,Taxes
+2021-06,7020,0,0,Demo Consumption Tax Expense,0,0,Taxes
+2021-06,8000,0,0,Demo Suspense,50000,50000,Clearing / temporary
+2021-06,8010,0,0,Demo Clearing,50000,50000,Clearing / temporary
+2021-07,1000,0,0,Demo Cash,600000,600000,Assets
+2021-07,1010,0,0,Demo Petty Cash,120000,120000,Assets
+2021-07,1100,1516380,1601830,Demo Central Ordinary Deposit,10201520,10116070,Assets
+2021-07,1110,214710,2606870,Demo North Current Deposit,15057260,12665100,Assets
+2021-07,1120,1522650,3886410,Demo Harbor Ordinary Deposit,14640450,12276690,Assets
+2021-07,1200,5428040,2712320,Demo Accounts Receivable,9368420,12084140,Assets
+2021-07,1210,0,0,Demo Notes Receivable,800000,800000,Assets
+2021-07,1300,0,0,Demo Inventory,1200000,1200000,Assets
+2021-07,1400,419570,0,Demo Prepaid Expenses,1654530,2074100,Assets
+2021-07,1410,0,0,Demo Advances Paid,250000,250000,Assets
+2021-07,1420,0,0,Demo Temporary Payments,150000,150000,Assets
+2021-07,1430,0,0,Demo Input Tax Receivable,400000,400000,Assets
+2021-07,1500,0,0,Demo Equipment,2000000,2000000,Assets
+2021-07,1510,0,0,Demo Vehicles,1200000,1200000,Assets
+2021-07,1520,0,0,Demo Software,700000,700000,Assets
+2021-07,1590,0,0,Demo Accumulated Depreciation,900000,900000,Assets
+2021-07,2000,2153830,1388410,Demo Accounts Payable,2712760,1947340,Liabilities
+2021-07,2010,0,0,Demo Notes Payable,600000,600000,Liabilities
+2021-07,2100,1540050,0,Demo Accrued Payables,8492540,6952490,Liabilities
+2021-07,2110,353790,0,Demo Payroll Withholding,4488550,4134760,Liabilities
+2021-07,2120,0,0,Demo Output Tax Payable,450000,450000,Liabilities
+2021-07,2130,0,0,Demo Temporary Receipts,120000,120000,Liabilities
+2021-07,2200,794960,0,Demo Short-term Loans,5631540,4836580,Liabilities
+2021-07,2300,0,0,Demo Long-term Loans,2500000,2500000,Liabilities
+2021-07,2400,0,0,Demo Unearned Revenue,350000,350000,Liabilities
+2021-07,3000,0,0,Demo Capital,5000000,5000000,Equity
+2021-07,3100,0,0,Demo Retained Earnings,26159010,26159010,Equity
+2021-07,4000,0,2656750,Demo Product Sales,6975550,9632300,Revenue
+2021-07,4010,0,2122840,Demo Service Revenue,6239480,8362320,Revenue
+2021-07,4020,0,1189870,Demo Other Operating Revenue,3952660,5142530,Revenue
+2021-07,4030,0,0,Demo Interest Income,0,0,Revenue
+2021-07,4040,0,0,Demo Miscellaneous Income,0,0,Revenue
+2021-07,5000,378590,0,Demo Purchases,1583100,1961690,Cost of sales
+2021-07,5010,409350,0,Demo Freight-in,1749980,2159330,Cost of sales
+2021-07,5020,600470,0,Demo Inventory Adjustment,1540630,2141100,Cost of sales
+2021-07,6000,378810,0,Demo Salaries,2230960,2609770,Operating expenses
+2021-07,6010,308560,0,Demo Statutory Welfare,856430,1164990,Operating expenses
+2021-07,6020,126430,0,Demo Office Rent,6210,132640,Operating expenses
+2021-07,6030,479550,0,Demo Utilities,1928390,2407940,Operating expenses
+2021-07,6040,234940,0,Demo Communication,1155970,1390910,Operating expenses
+2021-07,6050,0,0,Demo Business Travel,0,0,Operating expenses
+2021-07,6060,293470,0,Demo Office Supplies,2402260,2695730,Operating expenses
+2021-07,6070,165280,0,Demo Bank Fees,471460,636740,Operating expenses
+2021-07,6080,0,0,Demo Advertising,146860,146860,Operating expenses
+2021-07,6090,0,0,Demo Insurance,0,0,Operating expenses
+2021-07,6100,97330,0,Demo Repairs,219300,316630,Operating expenses
+2021-07,6110,0,0,Demo Depreciation Expense,0,0,Operating expenses
+2021-07,6120,124060,0,Demo Professional Fees,0,124060,Operating expenses
+2021-07,6130,0,0,Demo Training,0,0,Operating expenses
+2021-07,6140,71370,0,Demo Vehicle Expense,300130,371500,Operating expenses
+2021-07,6150,0,0,Demo Software Subscription,0,0,Operating expenses
+2021-07,6160,0,0,Demo Shipping,119830,119830,Operating expenses
+2021-07,6170,0,0,Demo Miscellaneous Expense,0,0,Operating expenses
+2021-07,7000,553110,0,Demo Taxes and Dues,1518400,2071510,Taxes
+2021-07,7010,0,0,Demo Corporate Tax,0,0,Taxes
+2021-07,7020,0,0,Demo Consumption Tax Expense,0,0,Taxes
+2021-07,8000,0,0,Demo Suspense,50000,50000,Clearing / temporary
+2021-07,8010,0,0,Demo Clearing,50000,50000,Clearing / temporary
+2021-08,1000,0,0,Demo Cash,600000,600000,Assets
+2021-08,1010,0,0,Demo Petty Cash,120000,120000,Assets
+2021-08,1100,1660030,3867780,Demo Central Ordinary Deposit,10116070,7908320,Assets
+2021-08,1110,834600,1500040,Demo North Current Deposit,12665100,11999660,Assets
+2021-08,1120,1822020,2633080,Demo Harbor Ordinary Deposit,12276690,11465630,Assets
+2021-08,1200,4361420,2970890,Demo Accounts Receivable,12084140,13474670,Assets
+2021-08,1210,0,0,Demo Notes Receivable,800000,800000,Assets
+2021-08,1300,0,0,Demo Inventory,1200000,1200000,Assets
+2021-08,1400,847390,0,Demo Prepaid Expenses,2074100,2921490,Assets
+2021-08,1410,0,0,Demo Advances Paid,250000,250000,Assets
+2021-08,1420,0,0,Demo Temporary Payments,150000,150000,Assets
+2021-08,1430,0,0,Demo Input Tax Receivable,400000,400000,Assets
+2021-08,1500,0,0,Demo Equipment,2000000,2000000,Assets
+2021-08,1510,0,0,Demo Vehicles,1200000,1200000,Assets
+2021-08,1520,0,0,Demo Software,700000,700000,Assets
+2021-08,1590,0,0,Demo Accumulated Depreciation,900000,900000,Assets
+2021-08,2000,1387130,1901190,Demo Accounts Payable,1947340,2461400,Liabilities
+2021-08,2010,0,0,Demo Notes Payable,600000,600000,Liabilities
+2021-08,2100,1083890,0,Demo Accrued Payables,6952490,5868600,Liabilities
+2021-08,2110,1128210,0,Demo Payroll Withholding,4134760,3006550,Liabilities
+2021-08,2120,0,0,Demo Output Tax Payable,450000,450000,Liabilities
+2021-08,2130,0,0,Demo Temporary Receipts,120000,120000,Liabilities
+2021-08,2200,335080,0,Demo Short-term Loans,4836580,4501500,Liabilities
+2021-08,2300,0,0,Demo Long-term Loans,2500000,2500000,Liabilities
+2021-08,2400,0,0,Demo Unearned Revenue,350000,350000,Liabilities
+2021-08,3000,0,0,Demo Capital,5000000,5000000,Equity
+2021-08,3100,0,0,Demo Retained Earnings,26159010,26159010,Equity
+2021-08,4000,0,1894430,Demo Product Sales,9632300,11526730,Revenue
+2021-08,4010,0,3020240,Demo Service Revenue,8362320,11382560,Revenue
+2021-08,4020,0,792510,Demo Other Operating Revenue,5142530,5935040,Revenue
+2021-08,4030,0,0,Demo Interest Income,0,0,Revenue
+2021-08,4040,0,0,Demo Miscellaneous Income,0,0,Revenue
+2021-08,5000,181430,0,Demo Purchases,1961690,2143120,Cost of sales
+2021-08,5010,828420,0,Demo Freight-in,2159330,2987750,Cost of sales
+2021-08,5020,891340,0,Demo Inventory Adjustment,2141100,3032440,Cost of sales
+2021-08,6000,686280,0,Demo Salaries,2609770,3296050,Operating expenses
+2021-08,6010,724510,0,Demo Statutory Welfare,1164990,1889500,Operating expenses
+2021-08,6020,75170,0,Demo Office Rent,132640,207810,Operating expenses
+2021-08,6030,321290,0,Demo Utilities,2407940,2729230,Operating expenses
+2021-08,6040,28270,0,Demo Communication,1390910,1419180,Operating expenses
+2021-08,6050,0,0,Demo Business Travel,0,0,Operating expenses
+2021-08,6060,170170,0,Demo Office Supplies,2695730,2865900,Operating expenses
+2021-08,6070,308180,0,Demo Bank Fees,636740,944920,Operating expenses
+2021-08,6080,87240,0,Demo Advertising,146860,234100,Operating expenses
+2021-08,6090,0,0,Demo Insurance,0,0,Operating expenses
+2021-08,6100,103020,0,Demo Repairs,316630,419650,Operating expenses
+2021-08,6110,0,0,Demo Depreciation Expense,0,0,Operating expenses
+2021-08,6120,0,0,Demo Professional Fees,124060,124060,Operating expenses
+2021-08,6130,0,0,Demo Training,0,0,Operating expenses
+2021-08,6140,0,0,Demo Vehicle Expense,371500,371500,Operating expenses
+2021-08,6150,0,0,Demo Software Subscription,0,0,Operating expenses
+2021-08,6160,0,0,Demo Shipping,119830,119830,Operating expenses
+2021-08,6170,0,0,Demo Miscellaneous Expense,0,0,Operating expenses
+2021-08,7000,715070,0,Demo Taxes and Dues,2071510,2786580,Taxes
+2021-08,7010,0,0,Demo Corporate Tax,0,0,Taxes
+2021-08,7020,0,0,Demo Consumption Tax Expense,0,0,Taxes
+2021-08,8000,0,0,Demo Suspense,50000,50000,Clearing / temporary
+2021-08,8010,0,0,Demo Clearing,50000,50000,Clearing / temporary
+2021-09,1000,0,0,Demo Cash,600000,600000,Assets
+2021-09,1010,0,0,Demo Petty Cash,120000,120000,Assets
+2021-09,1100,1407380,3263170,Demo Central Ordinary Deposit,7908320,6052530,Assets
+2021-09,1110,505980,2560120,Demo North Current Deposit,11999660,9945520,Assets
+2021-09,1120,586760,2534920,Demo Harbor Ordinary Deposit,11465630,9517470,Assets
+2021-09,1200,5210290,1731160,Demo Accounts Receivable,13474670,16953800,Assets
+2021-09,1210,0,0,Demo Notes Receivable,800000,800000,Assets
+2021-09,1300,0,0,Demo Inventory,1200000,1200000,Assets
+2021-09,1400,554210,0,Demo Prepaid Expenses,2921490,3475700,Assets
+2021-09,1410,0,0,Demo Advances Paid,250000,250000,Assets
+2021-09,1420,0,0,Demo Temporary Payments,150000,150000,Assets
+2021-09,1430,0,0,Demo Input Tax Receivable,400000,400000,Assets
+2021-09,1500,0,0,Demo Equipment,2000000,2000000,Assets
+2021-09,1510,0,0,Demo Vehicles,1200000,1200000,Assets
+2021-09,1520,0,0,Demo Software,700000,700000,Assets
+2021-09,1590,0,0,Demo Accumulated Depreciation,900000,900000,Assets
+2021-09,2000,1359140,1658700,Demo Accounts Payable,2461400,2760960,Liabilities
+2021-09,2010,0,0,Demo Notes Payable,600000,600000,Liabilities
+2021-09,2100,1356950,0,Demo Accrued Payables,5868600,4511650,Liabilities
+2021-09,2110,786840,0,Demo Payroll Withholding,3006550,2219710,Liabilities
+2021-09,2120,0,0,Demo Output Tax Payable,450000,450000,Liabilities
+2021-09,2130,0,0,Demo Temporary Receipts,120000,120000,Liabilities
+2021-09,2200,534560,0,Demo Short-term Loans,4501500,3966940,Liabilities
+2021-09,2300,0,0,Demo Long-term Loans,2500000,2500000,Liabilities
+2021-09,2400,0,0,Demo Unearned Revenue,350000,350000,Liabilities
+2021-09,3000,0,0,Demo Capital,5000000,5000000,Equity
+2021-09,3100,0,0,Demo Retained Earnings,26159010,26159010,Equity
+2021-09,4000,0,1889540,Demo Product Sales,11526730,13416270,Revenue
+2021-09,4010,0,2733970,Demo Service Revenue,11382560,14116530,Revenue
+2021-09,4020,0,1355740,Demo Other Operating Revenue,5935040,7290780,Revenue
+2021-09,4030,0,0,Demo Interest Income,0,0,Revenue
+2021-09,4040,0,0,Demo Miscellaneous Income,0,0,Revenue
+2021-09,5000,353960,0,Demo Purchases,2143120,2497080,Cost of sales
+2021-09,5010,765870,0,Demo Freight-in,2987750,3753620,Cost of sales
+2021-09,5020,538870,0,Demo Inventory Adjustment,3032440,3571310,Cost of sales
+2021-09,6000,684520,0,Demo Salaries,3296050,3980570,Operating expenses
+2021-09,6010,143240,0,Demo Statutory Welfare,1889500,2032740,Operating expenses
+2021-09,6020,0,0,Demo Office Rent,207810,207810,Operating expenses
+2021-09,6030,565790,0,Demo Utilities,2729230,3295020,Operating expenses
+2021-09,6040,695600,0,Demo Communication,1419180,2114780,Operating expenses
+2021-09,6050,0,0,Demo Business Travel,0,0,Operating expenses
+2021-09,6060,668590,0,Demo Office Supplies,2865900,3534490,Operating expenses
+2021-09,6070,287630,0,Demo Bank Fees,944920,1232550,Operating expenses
+2021-09,6080,0,0,Demo Advertising,234100,234100,Operating expenses
+2021-09,6090,0,0,Demo Insurance,0,0,Operating expenses
+2021-09,6100,0,0,Demo Repairs,419650,419650,Operating expenses
+2021-09,6110,0,0,Demo Depreciation Expense,0,0,Operating expenses
+2021-09,6120,0,0,Demo Professional Fees,124060,124060,Operating expenses
+2021-09,6130,0,0,Demo Training,0,0,Operating expenses
+2021-09,6140,143410,0,Demo Vehicle Expense,371500,514910,Operating expenses
+2021-09,6150,0,0,Demo Software Subscription,0,0,Operating expenses
+2021-09,6160,0,0,Demo Shipping,119830,119830,Operating expenses
+2021-09,6170,0,0,Demo Miscellaneous Expense,0,0,Operating expenses
+2021-09,7000,577730,0,Demo Taxes and Dues,2786580,3364310,Taxes
+2021-09,7010,0,0,Demo Corporate Tax,0,0,Taxes
+2021-09,7020,0,0,Demo Consumption Tax Expense,0,0,Taxes
+2021-09,8000,0,0,Demo Suspense,50000,50000,Clearing / temporary
+2021-09,8010,0,0,Demo Clearing,50000,50000,Clearing / temporary
+2021-10,1000,0,0,Demo Cash,600000,600000,Assets
+2021-10,1010,0,0,Demo Petty Cash,120000,120000,Assets
+2021-10,1100,1593490,1830850,Demo Central Ordinary Deposit,6052530,5815170,Assets
+2021-10,1110,371510,3242350,Demo North Current Deposit,9945520,7074680,Assets
+2021-10,1120,1255190,3919340,Demo Harbor Ordinary Deposit,9517470,6853320,Assets
+2021-10,1200,3152450,2777440,Demo Accounts Receivable,16953800,17328810,Assets
+2021-10,1210,0,0,Demo Notes Receivable,800000,800000,Assets
+2021-10,1300,0,0,Demo Inventory,1200000,1200000,Assets
+2021-10,1400,1045650,0,Demo Prepaid Expenses,3475700,4521350,Assets
+2021-10,1410,0,0,Demo Advances Paid,250000,250000,Assets
+2021-10,1420,0,0,Demo Temporary Payments,150000,150000,Assets
+2021-10,1430,0,0,Demo Input Tax Receivable,400000,400000,Assets
+2021-10,1500,0,0,Demo Equipment,2000000,2000000,Assets
+2021-10,1510,0,0,Demo Vehicles,1200000,1200000,Assets
+2021-10,1520,0,0,Demo Software,700000,700000,Assets
+2021-10,1590,0,0,Demo Accumulated Depreciation,900000,900000,Assets
+2021-10,2000,2258030,1603690,Demo Accounts Payable,2760960,2106620,Liabilities
+2021-10,2010,0,0,Demo Notes Payable,600000,600000,Liabilities
+2021-10,2100,1424750,0,Demo Accrued Payables,4511650,3086900,Liabilities
+2021-10,2110,199310,0,Demo Payroll Withholding,2219710,2020400,Liabilities
+2021-10,2120,0,0,Demo Output Tax Payable,450000,450000,Liabilities
+2021-10,2130,0,0,Demo Temporary Receipts,120000,120000,Liabilities
+2021-10,2200,659000,0,Demo Short-term Loans,3966940,3307940,Liabilities
+2021-10,2300,0,0,Demo Long-term Loans,2500000,2500000,Liabilities
+2021-10,2400,0,0,Demo Unearned Revenue,350000,350000,Liabilities
+2021-10,3000,0,0,Demo Capital,5000000,5000000,Equity
+2021-10,3100,0,0,Demo Retained Earnings,26159010,26159010,Equity
+2021-10,4000,0,1955250,Demo Product Sales,13416270,15371520,Revenue
+2021-10,4010,0,1233740,Demo Service Revenue,14116530,15350270,Revenue
+2021-10,4020,0,406210,Demo Other Operating Revenue,7290780,7696990,Revenue
+2021-10,4030,0,0,Demo Interest Income,0,0,Revenue
+2021-10,4040,0,0,Demo Miscellaneous Income,0,0,Revenue
+2021-10,5000,335970,0,Demo Purchases,2497080,2833050,Cost of sales
+2021-10,5010,555150,0,Demo Freight-in,3753620,4308770,Cost of sales
+2021-10,5020,712570,0,Demo Inventory Adjustment,3571310,4283880,Cost of sales
+2021-10,6000,178970,0,Demo Salaries,3980570,4159540,Operating expenses
+2021-10,6010,28470,0,Demo Statutory Welfare,2032740,2061210,Operating expenses
+2021-10,6020,167040,0,Demo Office Rent,207810,374850,Operating expenses
+2021-10,6030,556860,0,Demo Utilities,3295020,3851880,Operating expenses
+2021-10,6040,329720,0,Demo Communication,2114780,2444500,Operating expenses
+2021-10,6050,0,0,Demo Business Travel,0,0,Operating expenses
+2021-10,6060,250080,0,Demo Office Supplies,3534490,3784570,Operating expenses
+2021-10,6070,674130,0,Demo Bank Fees,1232550,1906680,Operating expenses
+2021-10,6080,0,0,Demo Advertising,234100,234100,Operating expenses
+2021-10,6090,0,0,Demo Insurance,0,0,Operating expenses
+2021-10,6100,154920,0,Demo Repairs,419650,574570,Operating expenses
+2021-10,6110,0,0,Demo Depreciation Expense,0,0,Operating expenses
+2021-10,6120,124270,0,Demo Professional Fees,124060,248330,Operating expenses
+2021-10,6130,0,0,Demo Training,0,0,Operating expenses
+2021-10,6140,64460,0,Demo Vehicle Expense,514910,579370,Operating expenses
+2021-10,6150,0,0,Demo Software Subscription,0,0,Operating expenses
+2021-10,6160,0,0,Demo Shipping,119830,119830,Operating expenses
+2021-10,6170,0,0,Demo Miscellaneous Expense,0,0,Operating expenses
+2021-10,7000,876880,0,Demo Taxes and Dues,3364310,4241190,Taxes
+2021-10,7010,0,0,Demo Corporate Tax,0,0,Taxes
+2021-10,7020,0,0,Demo Consumption Tax Expense,0,0,Taxes
+2021-10,8000,0,0,Demo Suspense,50000,50000,Clearing / temporary
+2021-10,8010,0,0,Demo Clearing,50000,50000,Clearing / temporary
+2021-11,1000,0,0,Demo Cash,600000,600000,Assets
+2021-11,1010,0,0,Demo Petty Cash,120000,120000,Assets
+2021-11,1100,1140060,2699740,Demo Central Ordinary Deposit,5815170,4255490,Assets
+2021-11,1110,1488810,2052340,Demo North Current Deposit,7074680,6511150,Assets
+2021-11,1120,786530,2370710,Demo Harbor Ordinary Deposit,6853320,5269140,Assets
+2021-11,1200,5041430,2285370,Demo Accounts Receivable,17328810,20084870,Assets
+2021-11,1210,0,0,Demo Notes Receivable,800000,800000,Assets
+2021-11,1300,0,0,Demo Inventory,1200000,1200000,Assets
+2021-11,1400,451610,0,Demo Prepaid Expenses,4521350,4972960,Assets
+2021-11,1410,0,0,Demo Advances Paid,250000,250000,Assets
+2021-11,1420,0,0,Demo Temporary Payments,150000,150000,Assets
+2021-11,1430,0,0,Demo Input Tax Receivable,400000,400000,Assets
+2021-11,1500,0,0,Demo Equipment,2000000,2000000,Assets
+2021-11,1510,0,0,Demo Vehicles,1200000,1200000,Assets
+2021-11,1520,0,0,Demo Software,700000,700000,Assets
+2021-11,1590,0,0,Demo Accumulated Depreciation,900000,900000,Assets
+2021-11,2000,2146310,1290600,Demo Accounts Payable,2106620,1250910,Liabilities
+2021-11,2010,0,0,Demo Notes Payable,600000,600000,Liabilities
+2021-11,2100,1016550,0,Demo Accrued Payables,3086900,2070350,Liabilities
+2021-11,2110,506650,0,Demo Payroll Withholding,2020400,1513750,Liabilities
+2021-11,2120,0,0,Demo Output Tax Payable,450000,450000,Liabilities
+2021-11,2130,0,0,Demo Temporary Receipts,120000,120000,Liabilities
+2021-11,2200,236060,0,Demo Short-term Loans,3307940,3071880,Liabilities
+2021-11,2300,0,0,Demo Long-term Loans,2500000,2500000,Liabilities
+2021-11,2400,0,0,Demo Unearned Revenue,350000,350000,Liabilities
+2021-11,3000,0,0,Demo Capital,5000000,5000000,Equity
+2021-11,3100,0,0,Demo Retained Earnings,26159010,26159010,Equity
+2021-11,4000,0,2567640,Demo Product Sales,15371520,17939160,Revenue
+2021-11,4010,0,2154470,Demo Service Revenue,15350270,17504740,Revenue
+2021-11,4020,0,1449350,Demo Other Operating Revenue,7696990,9146340,Revenue
+2021-11,4030,0,0,Demo Interest Income,0,0,Revenue
+2021-11,4040,0,0,Demo Miscellaneous Income,0,0,Revenue
+2021-11,5000,276250,0,Demo Purchases,2833050,3109300,Cost of sales
+2021-11,5010,491470,0,Demo Freight-in,4308770,4800240,Cost of sales
+2021-11,5020,522880,0,Demo Inventory Adjustment,4283880,4806760,Cost of sales
+2021-11,6000,303100,0,Demo Salaries,4159540,4462640,Operating expenses
+2021-11,6010,206890,0,Demo Statutory Welfare,2061210,2268100,Operating expenses
+2021-11,6020,0,0,Demo Office Rent,374850,374850,Operating expenses
+2021-11,6030,249830,0,Demo Utilities,3851880,4101710,Operating expenses
+2021-11,6040,387360,0,Demo Communication,2444500,2831860,Operating expenses
+2021-11,6050,0,0,Demo Business Travel,0,0,Operating expenses
+2021-11,6060,656740,0,Demo Office Supplies,3784570,4441310,Operating expenses
+2021-11,6070,249080,0,Demo Bank Fees,1906680,2155760,Operating expenses
+2021-11,6080,4140,0,Demo Advertising,234100,238240,Operating expenses
+2021-11,6090,0,0,Demo Insurance,0,0,Operating expenses
+2021-11,6100,0,0,Demo Repairs,574570,574570,Operating expenses
+2021-11,6110,0,0,Demo Depreciation Expense,0,0,Operating expenses
+2021-11,6120,0,0,Demo Professional Fees,248330,248330,Operating expenses
+2021-11,6130,0,0,Demo Training,0,0,Operating expenses
+2021-11,6140,0,0,Demo Vehicle Expense,579370,579370,Operating expenses
+2021-11,6150,0,0,Demo Software Subscription,0,0,Operating expenses
+2021-11,6160,57890,0,Demo Shipping,119830,177720,Operating expenses
+2021-11,6170,0,0,Demo Miscellaneous Expense,0,0,Operating expenses
+2021-11,7000,650580,0,Demo Taxes and Dues,4241190,4891770,Taxes
+2021-11,7010,0,0,Demo Corporate Tax,0,0,Taxes
+2021-11,7020,0,0,Demo Consumption Tax Expense,0,0,Taxes
+2021-11,8000,0,0,Demo Suspense,50000,50000,Clearing / temporary
+2021-11,8010,0,0,Demo Clearing,50000,50000,Clearing / temporary
+2021-12,1000,0,0,Demo Cash,600000,600000,Assets
+2021-12,1010,0,0,Demo Petty Cash,120000,120000,Assets
+2021-12,1100,1743400,1361720,Demo Central Ordinary Deposit,4255490,4637170,Assets
+2021-12,1110,385730,3259560,Demo North Current Deposit,6511150,3637320,Assets
+2021-12,1120,1796010,2239300,Demo Harbor Ordinary Deposit,5269140,4825850,Assets
+2021-12,1200,6577090,2462660,Demo Accounts Receivable,20084870,24199300,Assets
+2021-12,1210,0,0,Demo Notes Receivable,800000,800000,Assets
+2021-12,1300,0,0,Demo Inventory,1200000,1200000,Assets
+2021-12,1400,738620,0,Demo Prepaid Expenses,4972960,5711580,Assets
+2021-12,1410,0,0,Demo Advances Paid,250000,250000,Assets
+2021-12,1420,0,0,Demo Temporary Payments,150000,150000,Assets
+2021-12,1430,0,0,Demo Input Tax Receivable,400000,400000,Assets
+2021-12,1500,0,0,Demo Equipment,2000000,2000000,Assets
+2021-12,1510,0,0,Demo Vehicles,1200000,1200000,Assets
+2021-12,1520,0,0,Demo Software,700000,700000,Assets
+2021-12,1590,0,0,Demo Accumulated Depreciation,900000,900000,Assets
+2021-12,2000,1585790,2012160,Demo Accounts Payable,1250910,1677280,Liabilities
+2021-12,2010,0,0,Demo Notes Payable,600000,600000,Liabilities
+2021-12,2100,422450,0,Demo Accrued Payables,2070350,1647900,Liabilities
+2021-12,2110,153800,0,Demo Payroll Withholding,1513750,1359950,Liabilities
+2021-12,2120,0,0,Demo Output Tax Payable,450000,450000,Liabilities
+2021-12,2130,0,0,Demo Temporary Receipts,120000,120000,Liabilities
+2021-12,2200,305000,0,Demo Short-term Loans,3071880,2766880,Liabilities
+2021-12,2300,0,0,Demo Long-term Loans,2500000,2500000,Liabilities
+2021-12,2400,0,0,Demo Unearned Revenue,350000,350000,Liabilities
+2021-12,3000,0,0,Demo Capital,5000000,5000000,Equity
+2021-12,3100,0,0,Demo Retained Earnings,26159010,26159010,Equity
+2021-12,4000,0,3378570,Demo Product Sales,17939160,21317730,Revenue
+2021-12,4010,0,2992740,Demo Service Revenue,17504740,20497480,Revenue
+2021-12,4020,0,1668260,Demo Other Operating Revenue,9146340,10814600,Revenue
+2021-12,4030,0,0,Demo Interest Income,0,0,Revenue
+2021-12,4040,0,0,Demo Miscellaneous Income,0,0,Revenue
+2021-12,5000,384850,0,Demo Purchases,3109300,3494150,Cost of sales
+2021-12,5010,1073410,0,Demo Freight-in,4800240,5873650,Cost of sales
+2021-12,5020,553900,0,Demo Inventory Adjustment,4806760,5360660,Cost of sales
+2021-12,6000,158100,0,Demo Salaries,4462640,4620740,Operating expenses
+2021-12,6010,289210,0,Demo Statutory Welfare,2268100,2557310,Operating expenses
+2021-12,6020,0,0,Demo Office Rent,374850,374850,Operating expenses
+2021-12,6030,465390,0,Demo Utilities,4101710,4567100,Operating expenses
+2021-12,6040,790720,0,Demo Communication,2831860,3622580,Operating expenses
+2021-12,6050,0,0,Demo Business Travel,0,0,Operating expenses
+2021-12,6060,559080,0,Demo Office Supplies,4441310,5000390,Operating expenses
+2021-12,6070,181980,0,Demo Bank Fees,2155760,2337740,Operating expenses
+2021-12,6080,144240,0,Demo Advertising,238240,382480,Operating expenses
+2021-12,6090,0,0,Demo Insurance,0,0,Operating expenses
+2021-12,6100,0,0,Demo Repairs,574570,574570,Operating expenses
+2021-12,6110,0,0,Demo Depreciation Expense,0,0,Operating expenses
+2021-12,6120,90900,0,Demo Professional Fees,248330,339230,Operating expenses
+2021-12,6130,0,0,Demo Training,0,0,Operating expenses
+2021-12,6140,100380,0,Demo Vehicle Expense,579370,679750,Operating expenses
+2021-12,6150,0,0,Demo Software Subscription,0,0,Operating expenses
+2021-12,6160,0,0,Demo Shipping,177720,177720,Operating expenses
+2021-12,6170,0,0,Demo Miscellaneous Expense,0,0,Operating expenses
+2021-12,7000,874920,0,Demo Taxes and Dues,4891770,5766690,Taxes
+2021-12,7010,0,0,Demo Corporate Tax,0,0,Taxes
+2021-12,7020,0,0,Demo Consumption Tax Expense,0,0,Taxes
+2021-12,8000,0,0,Demo Suspense,50000,50000,Clearing / temporary
+2021-12,8010,0,0,Demo Clearing,50000,50000,Clearing / temporary
+2022-01,1000,0,0,Demo Cash,600000,600000,Assets
+2022-01,1010,0,0,Demo Petty Cash,120000,120000,Assets
+2022-01,1100,682240,3320850,Demo Central Ordinary Deposit,4637170,1998560,Assets
+2022-01,1110,1670920,2259290,Demo North Current Deposit,3637320,3048950,Assets
+2022-01,1120,329330,3226670,Demo Harbor Ordinary Deposit,4825850,1928510,Assets
+2022-01,1200,5170400,1428230,Demo Accounts Receivable,24199300,27941470,Assets
+2022-01,1210,0,0,Demo Notes Receivable,800000,800000,Assets
+2022-01,1300,0,0,Demo Inventory,1200000,1200000,Assets
+2022-01,1400,642130,0,Demo Prepaid Expenses,5711580,6353710,Assets
+2022-01,1410,0,0,Demo Advances Paid,250000,250000,Assets
+2022-01,1420,0,0,Demo Temporary Payments,150000,150000,Assets
+2022-01,1430,0,0,Demo Input Tax Receivable,400000,400000,Assets
+2022-01,1500,0,0,Demo Equipment,2000000,2000000,Assets
+2022-01,1510,0,0,Demo Vehicles,1200000,1200000,Assets
+2022-01,1520,0,0,Demo Software,700000,700000,Assets
+2022-01,1590,0,0,Demo Accumulated Depreciation,900000,900000,Assets
+2022-01,2000,2146950,1881240,Demo Accounts Payable,1677280,1411570,Liabilities
+2022-01,2010,0,0,Demo Notes Payable,600000,600000,Liabilities
+2022-01,2100,732320,0,Demo Accrued Payables,1647900,915580,Liabilities
+2022-01,2110,578870,0,Demo Payroll Withholding,1359950,781080,Liabilities
+2022-01,2120,0,0,Demo Output Tax Payable,450000,450000,Liabilities
+2022-01,2130,0,0,Demo Temporary Receipts,120000,120000,Liabilities
+2022-01,2200,1189900,0,Demo Short-term Loans,2766880,1576980,Liabilities
+2022-01,2300,0,0,Demo Long-term Loans,2500000,2500000,Liabilities
+2022-01,2400,0,0,Demo Unearned Revenue,350000,350000,Liabilities
+2022-01,3000,0,0,Demo Capital,5000000,5000000,Equity
+2022-01,3100,0,0,Demo Retained Earnings,26159010,26159010,Equity
+2022-01,4000,0,1653680,Demo Product Sales,21317730,22971410,Revenue
+2022-01,4010,0,3431160,Demo Service Revenue,20497480,23928640,Revenue
+2022-01,4020,0,1339820,Demo Other Operating Revenue,10814600,12154420,Revenue
+2022-01,4030,0,0,Demo Interest Income,0,0,Revenue
+2022-01,4040,0,0,Demo Miscellaneous Income,0,0,Revenue
+2022-01,5000,750210,0,Demo Purchases,3494150,4244360,Cost of sales
+2022-01,5010,651480,0,Demo Freight-in,5873650,6525130,Cost of sales
+2022-01,5020,479550,0,Demo Inventory Adjustment,5360660,5840210,Cost of sales
+2022-01,6000,392210,0,Demo Salaries,4620740,5012950,Operating expenses
+2022-01,6010,464550,0,Demo Statutory Welfare,2557310,3021860,Operating expenses
+2022-01,6020,178370,0,Demo Office Rent,374850,553220,Operating expenses
+2022-01,6030,297940,0,Demo Utilities,4567100,4865040,Operating expenses
+2022-01,6040,152750,0,Demo Communication,3622580,3775330,Operating expenses
+2022-01,6050,0,0,Demo Business Travel,0,0,Operating expenses
+2022-01,6060,524500,0,Demo Office Supplies,5000390,5524890,Operating expenses
+2022-01,6070,450200,0,Demo Bank Fees,2337740,2787940,Operating expenses
+2022-01,6080,0,0,Demo Advertising,382480,382480,Operating expenses
+2022-01,6090,0,0,Demo Insurance,0,0,Operating expenses
+2022-01,6100,26960,0,Demo Repairs,574570,601530,Operating expenses
+2022-01,6110,0,0,Demo Depreciation Expense,0,0,Operating expenses
+2022-01,6120,0,0,Demo Professional Fees,339230,339230,Operating expenses
+2022-01,6130,0,0,Demo Training,0,0,Operating expenses
+2022-01,6140,161750,0,Demo Vehicle Expense,679750,841500,Operating expenses
+2022-01,6150,0,0,Demo Software Subscription,0,0,Operating expenses
+2022-01,6160,0,0,Demo Shipping,177720,177720,Operating expenses
+2022-01,6170,0,0,Demo Miscellaneous Expense,0,0,Operating expenses
+2022-01,7000,867410,0,Demo Taxes and Dues,5766690,6634100,Taxes
+2022-01,7010,0,0,Demo Corporate Tax,0,0,Taxes
+2022-01,7020,0,0,Demo Consumption Tax Expense,0,0,Taxes
+2022-01,8000,0,0,Demo Suspense,50000,50000,Clearing / temporary
+2022-01,8010,0,0,Demo Clearing,50000,50000,Clearing / temporary
+2022-02,1000,0,0,Demo Cash,600000,600000,Assets
+2022-02,1010,0,0,Demo Petty Cash,120000,120000,Assets
+2022-02,1100,1108230,1824180,Demo Central Ordinary Deposit,1998560,1282610,Assets
+2022-02,1110,1524790,3249660,Demo North Current Deposit,3048950,1324080,Assets
+2022-02,1120,703240,1289820,Demo Harbor Ordinary Deposit,1928510,1341930,Assets
+2022-02,1200,5358170,2110690,Demo Accounts Receivable,27941470,31188950,Assets
+2022-02,1210,0,0,Demo Notes Receivable,800000,800000,Assets
+2022-02,1300,0,0,Demo Inventory,1200000,1200000,Assets
+2022-02,1400,370070,0,Demo Prepaid Expenses,6353710,6723780,Assets
+2022-02,1410,0,0,Demo Advances Paid,250000,250000,Assets
+2022-02,1420,0,0,Demo Temporary Payments,150000,150000,Assets
+2022-02,1430,0,0,Demo Input Tax Receivable,400000,400000,Assets
+2022-02,1500,0,0,Demo Equipment,2000000,2000000,Assets
+2022-02,1510,0,0,Demo Vehicles,1200000,1200000,Assets
+2022-02,1520,0,0,Demo Software,700000,700000,Assets
+2022-02,1590,0,0,Demo Accumulated Depreciation,900000,900000,Assets
+2022-02,2000,1657400,1441460,Demo Accounts Payable,1411570,1195630,Liabilities
+2022-02,2010,0,0,Demo Notes Payable,600000,600000,Liabilities
+2022-02,2100,459140,0,Demo Accrued Payables,915580,456440,Liabilities
+2022-02,2110,255480,0,Demo Payroll Withholding,781080,525600,Liabilities
+2022-02,2120,0,0,Demo Output Tax Payable,450000,450000,Liabilities
+2022-02,2130,0,0,Demo Temporary Receipts,120000,120000,Liabilities
+2022-02,2200,0,0,Demo Short-term Loans,1576980,1576980,Liabilities
+2022-02,2300,0,0,Demo Long-term Loans,2500000,2500000,Liabilities
+2022-02,2400,0,0,Demo Unearned Revenue,350000,350000,Liabilities
+2022-02,3000,0,0,Demo Capital,5000000,5000000,Equity
+2022-02,3100,0,0,Demo Retained Earnings,26159010,26159010,Equity
+2022-02,4000,0,2399200,Demo Product Sales,22971410,25370610,Revenue
+2022-02,4010,0,2580770,Demo Service Revenue,23928640,26509410,Revenue
+2022-02,4020,0,1603770,Demo Other Operating Revenue,12154420,13758190,Revenue
+2022-02,4030,0,0,Demo Interest Income,0,0,Revenue
+2022-02,4040,0,0,Demo Miscellaneous Income,0,0,Revenue
+2022-02,5000,788290,0,Demo Purchases,4244360,5032650,Cost of sales
+2022-02,5010,38230,0,Demo Freight-in,6525130,6563360,Cost of sales
+2022-02,5020,614940,0,Demo Inventory Adjustment,5840210,6455150,Cost of sales
+2022-02,6000,298030,0,Demo Salaries,5012950,5310980,Operating expenses
+2022-02,6010,448400,0,Demo Statutory Welfare,3021860,3470260,Operating expenses
+2022-02,6020,0,0,Demo Office Rent,553220,553220,Operating expenses
+2022-02,6030,975790,0,Demo Utilities,4865040,5840830,Operating expenses
+2022-02,6040,556200,0,Demo Communication,3775330,4331530,Operating expenses
+2022-02,6050,0,0,Demo Business Travel,0,0,Operating expenses
+2022-02,6060,1000940,0,Demo Office Supplies,5524890,6525830,Operating expenses
+2022-02,6070,0,0,Demo Bank Fees,2787940,2787940,Operating expenses
+2022-02,6080,3950,0,Demo Advertising,382480,386430,Operating expenses
+2022-02,6090,0,0,Demo Insurance,0,0,Operating expenses
+2022-02,6100,54560,0,Demo Repairs,601530,656090,Operating expenses
+2022-02,6110,0,0,Demo Depreciation Expense,0,0,Operating expenses
+2022-02,6120,0,0,Demo Professional Fees,339230,339230,Operating expenses
+2022-02,6130,0,0,Demo Training,0,0,Operating expenses
+2022-02,6140,0,0,Demo Vehicle Expense,841500,841500,Operating expenses
+2022-02,6150,0,0,Demo Software Subscription,0,0,Operating expenses
+2022-02,6160,111900,0,Demo Shipping,177720,289620,Operating expenses
+2022-02,6170,0,0,Demo Miscellaneous Expense,0,0,Operating expenses
+2022-02,7000,171800,0,Demo Taxes and Dues,6634100,6805900,Taxes
+2022-02,7010,0,0,Demo Corporate Tax,0,0,Taxes
+2022-02,7020,0,0,Demo Consumption Tax Expense,0,0,Taxes
+2022-02,8000,0,0,Demo Suspense,50000,50000,Clearing / temporary
+2022-02,8010,0,0,Demo Clearing,50000,50000,Clearing / temporary
+2022-03,1000,89150,0,Demo Cash,600000,689150,Assets
+2022-03,1010,153050,0,Demo Petty Cash,120000,273050,Assets
+2022-03,1100,510450,1629540,Demo Central Ordinary Deposit,1282610,163520,Assets
+2022-03,1110,1657780,2340120,Demo North Current Deposit,1324080,641740,Assets
+2022-03,1120,1144060,2385990,Demo Harbor Ordinary Deposit,1341930,100000,Assets
+2022-03,1200,4120040,1318250,Demo Accounts Receivable,31188950,33990740,Assets
+2022-03,1210,34600,0,Demo Notes Receivable,800000,834600,Assets
+2022-03,1300,57510,0,Demo Inventory,1200000,1257510,Assets
+2022-03,1400,0,0,Demo Prepaid Expenses,6723780,6723780,Assets
+2022-03,1410,70740,0,Demo Advances Paid,250000,320740,Assets
+2022-03,1420,166960,0,Demo Temporary Payments,150000,316960,Assets
+2022-03,1430,21070,0,Demo Input Tax Receivable,400000,421070,Assets
+2022-03,1500,114040,0,Demo Equipment,2000000,2114040,Assets
+2022-03,1510,133420,0,Demo Vehicles,1200000,1333420,Assets
+2022-03,1520,50040,0,Demo Software,700000,750040,Assets
+2022-03,1590,0,127930,Demo Accumulated Depreciation,900000,1027930,Assets
+2022-03,2000,1239440,93810,Demo Accounts Payable,1195630,50000,Liabilities
+2022-03,2010,0,105070,Demo Notes Payable,600000,705070,Liabilities
+2022-03,2100,406440,0,Demo Accrued Payables,456440,50000,Liabilities
+2022-03,2110,475600,0,Demo Payroll Withholding,525600,50000,Liabilities
+2022-03,2120,0,163390,Demo Output Tax Payable,450000,613390,Liabilities
+2022-03,2130,0,40470,Demo Temporary Receipts,120000,160470,Liabilities
+2022-03,2200,1526980,0,Demo Short-term Loans,1576980,50000,Liabilities
+2022-03,2300,0,154870,Demo Long-term Loans,2500000,2654870,Liabilities
+2022-03,2400,0,113970,Demo Unearned Revenue,350000,463970,Liabilities
+2022-03,3000,0,78940,Demo Capital,5000000,5078940,Equity
+2022-03,3100,0,68330,Demo Retained Earnings,26159010,26227340,Equity
+2022-03,4000,0,2507770,Demo Product Sales,25370610,27878380,Revenue
+2022-03,4010,0,2794740,Demo Service Revenue,26509410,29304150,Revenue
+2022-03,4020,0,811570,Demo Other Operating Revenue,13758190,14569760,Revenue
+2022-03,4030,0,29230,Demo Interest Income,0,29230,Revenue
+2022-03,4040,0,175380,Demo Miscellaneous Income,0,175380,Revenue
+2022-03,5000,0,0,Demo Purchases,5032650,5032650,Cost of sales
+2022-03,5010,0,0,Demo Freight-in,6563360,6563360,Cost of sales
+2022-03,5020,93810,0,Demo Inventory Adjustment,6455150,6548960,Cost of sales
+2022-03,6000,452360,0,Demo Salaries,5310980,5763340,Operating expenses
+2022-03,6010,82240,0,Demo Statutory Welfare,3470260,3552500,Operating expenses
+2022-03,6020,0,0,Demo Office Rent,553220,553220,Operating expenses
+2022-03,6030,387550,0,Demo Utilities,5840830,6228380,Operating expenses
+2022-03,6040,279340,0,Demo Communication,4331530,4610870,Operating expenses
+2022-03,6050,170080,0,Demo Business Travel,0,170080,Operating expenses
+2022-03,6060,646690,0,Demo Office Supplies,6525830,7172520,Operating expenses
+2022-03,6070,246850,0,Demo Bank Fees,2787940,3034790,Operating expenses
+2022-03,6080,0,0,Demo Advertising,386430,386430,Operating expenses
+2022-03,6090,63660,0,Demo Insurance,0,63660,Operating expenses
+2022-03,6100,0,0,Demo Repairs,656090,656090,Operating expenses
+2022-03,6110,40850,0,Demo Depreciation Expense,0,40850,Operating expenses
+2022-03,6120,0,0,Demo Professional Fees,339230,339230,Operating expenses
+2022-03,6130,22200,0,Demo Training,0,22200,Operating expenses
+2022-03,6140,0,0,Demo Vehicle Expense,841500,841500,Operating expenses
+2022-03,6150,27710,0,Demo Software Subscription,0,27710,Operating expenses
+2022-03,6160,0,0,Demo Shipping,289620,289620,Operating expenses
+2022-03,6170,84370,0,Demo Miscellaneous Expense,0,84370,Operating expenses
+2022-03,7000,612160,0,Demo Taxes and Dues,6805900,7418060,Taxes
+2022-03,7010,80460,0,Demo Corporate Tax,0,80460,Taxes
+2022-03,7020,164190,0,Demo Consumption Tax Expense,0,164190,Taxes
+2022-03,8000,1239330,0,Demo Suspense,50000,1289330,Clearing / temporary
+2022-03,8010,0,1725850,Demo Clearing,50000,1775850,Clearing / temporary

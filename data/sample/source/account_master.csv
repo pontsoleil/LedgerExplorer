@@ -1,0 +1,59 @@
+account_code,account_name,category,normal_balance,statement,opening_balance
+1000,Demo Cash,Assets,D,BS,600000
+1010,Demo Petty Cash,Assets,D,BS,120000
+1100,Demo Central Ordinary Deposit,Assets,D,BS,17049930
+1110,Demo North Current Deposit,Assets,D,BS,20425970
+1120,Demo Harbor Ordinary Deposit,Assets,D,BS,16688910
+1200,Demo Accounts Receivable,Assets,D,BS,1500000
+1210,Demo Notes Receivable,Assets,D,BS,800000
+1300,Demo Inventory,Assets,D,BS,1200000
+1400,Demo Prepaid Expenses,Assets,D,BS,300000
+1410,Demo Advances Paid,Assets,D,BS,250000
+1420,Demo Temporary Payments,Assets,D,BS,150000
+1430,Demo Input Tax Receivable,Assets,D,BS,400000
+1500,Demo Equipment,Assets,D,BS,2000000
+1510,Demo Vehicles,Assets,D,BS,1200000
+1520,Demo Software,Assets,D,BS,700000
+1590,Demo Accumulated Depreciation,Assets,C,BS,900000
+2000,Demo Accounts Payable,Liabilities,C,BS,3423720
+2010,Demo Notes Payable,Liabilities,C,BS,600000
+2100,Demo Accrued Payables,Liabilities,C,BS,11150830
+2110,Demo Payroll Withholding,Liabilities,C,BS,6159250
+2120,Demo Output Tax Payable,Liabilities,C,BS,450000
+2130,Demo Temporary Receipts,Liabilities,C,BS,120000
+2200,Demo Short-term Loans,Liabilities,C,BS,6572000
+2300,Demo Long-term Loans,Liabilities,C,BS,2500000
+2400,Demo Unearned Revenue,Liabilities,C,BS,350000
+3000,Demo Capital,Equity,C,BS,5000000
+3100,Demo Retained Earnings,Equity,C,BS,26159010
+4000,Demo Product Sales,Revenue,C,PL,0
+4010,Demo Service Revenue,Revenue,C,PL,0
+4020,Demo Other Operating Revenue,Revenue,C,PL,0
+4030,Demo Interest Income,Revenue,C,PL,0
+4040,Demo Miscellaneous Income,Revenue,C,PL,0
+5000,Demo Purchases,Cost of sales,D,PL,0
+5010,Demo Freight-in,Cost of sales,D,PL,0
+5020,Demo Inventory Adjustment,Cost of sales,D,PL,0
+6000,Demo Salaries,Operating expenses,D,PL,0
+6010,Demo Statutory Welfare,Operating expenses,D,PL,0
+6020,Demo Office Rent,Operating expenses,D,PL,0
+6030,Demo Utilities,Operating expenses,D,PL,0
+6040,Demo Communication,Operating expenses,D,PL,0
+6050,Demo Business Travel,Operating expenses,D,PL,0
+6060,Demo Office Supplies,Operating expenses,D,PL,0
+6070,Demo Bank Fees,Operating expenses,D,PL,0
+6080,Demo Advertising,Operating expenses,D,PL,0
+6090,Demo Insurance,Operating expenses,D,PL,0
+6100,Demo Repairs,Operating expenses,D,PL,0
+6110,Demo Depreciation Expense,Operating expenses,D,PL,0
+6120,Demo Professional Fees,Operating expenses,D,PL,0
+6130,Demo Training,Operating expenses,D,PL,0
+6140,Demo Vehicle Expense,Operating expenses,D,PL,0
+6150,Demo Software Subscription,Operating expenses,D,PL,0
+6160,Demo Shipping,Operating expenses,D,PL,0
+6170,Demo Miscellaneous Expense,Operating expenses,D,PL,0
+7000,Demo Taxes and Dues,Taxes,D,PL,0
+7010,Demo Corporate Tax,Taxes,D,PL,0
+7020,Demo Consumption Tax Expense,Taxes,D,PL,0
+8000,Demo Suspense,Clearing / temporary,D,BS,50000
+8010,Demo Clearing,Clearing / temporary,C,BS,50000

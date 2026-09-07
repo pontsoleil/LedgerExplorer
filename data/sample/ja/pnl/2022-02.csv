@@ -1,0 +1,30 @@
+Ledger_Account_Number,Level,Type,Ledger_Account_Number,Parent,Category,eTax_Category,eTax_Account_Name,Beginning_Balance,Total_Debit,Total_Credit,Ending_Balance,seq
+4000,1,A,4000,PL,Revenue,Revenue,Demo Product Sales,0,0,25370610,25370610,28
+4010,1,A,4010,PL,Revenue,Revenue,Demo Service Revenue,0,0,26509410,26509410,29
+4020,1,A,4020,PL,Revenue,Revenue,Demo Other Operating Revenue,0,0,13758190,13758190,30
+4030,1,A,4030,PL,Revenue,Revenue,Demo Interest Income,0,0,0,0,31
+4040,1,A,4040,PL,Revenue,Revenue,Demo Miscellaneous Income,0,0,0,0,32
+5000,1,A,5000,PL,Cost of sales,Cost of sales,Demo Purchases,0,5032650,0,5032650,33
+5010,1,A,5010,PL,Cost of sales,Cost of sales,Demo Freight-in,0,6563360,0,6563360,34
+5020,1,A,5020,PL,Cost of sales,Cost of sales,Demo Inventory Adjustment,0,6455150,0,6455150,35
+6000,1,A,6000,PL,Operating expenses,Operating expenses,Demo Salaries,0,5310980,0,5310980,36
+6010,1,A,6010,PL,Operating expenses,Operating expenses,Demo Statutory Welfare,0,3470260,0,3470260,37
+6020,1,A,6020,PL,Operating expenses,Operating expenses,Demo Office Rent,0,553220,0,553220,38
+6030,1,A,6030,PL,Operating expenses,Operating expenses,Demo Utilities,0,5840830,0,5840830,39
+6040,1,A,6040,PL,Operating expenses,Operating expenses,Demo Communication,0,4331530,0,4331530,40
+6050,1,A,6050,PL,Operating expenses,Operating expenses,Demo Business Travel,0,0,0,0,41
+6060,1,A,6060,PL,Operating expenses,Operating expenses,Demo Office Supplies,0,6525830,0,6525830,42
+6070,1,A,6070,PL,Operating expenses,Operating expenses,Demo Bank Fees,0,2787940,0,2787940,43
+6080,1,A,6080,PL,Operating expenses,Operating expenses,Demo Advertising,0,386430,0,386430,44
+6090,1,A,6090,PL,Operating expenses,Operating expenses,Demo Insurance,0,0,0,0,45
+6100,1,A,6100,PL,Operating expenses,Operating expenses,Demo Repairs,0,656090,0,656090,46
+6110,1,A,6110,PL,Operating expenses,Operating expenses,Demo Depreciation Expense,0,0,0,0,47
+6120,1,A,6120,PL,Operating expenses,Operating expenses,Demo Professional Fees,0,339230,0,339230,48
+6130,1,A,6130,PL,Operating expenses,Operating expenses,Demo Training,0,0,0,0,49
+6140,1,A,6140,PL,Operating expenses,Operating expenses,Demo Vehicle Expense,0,841500,0,841500,50
+6150,1,A,6150,PL,Operating expenses,Operating expenses,Demo Software Subscription,0,0,0,0,51
+6160,1,A,6160,PL,Operating expenses,Operating expenses,Demo Shipping,0,289620,0,289620,52
+6170,1,A,6170,PL,Operating expenses,Operating expenses,Demo Miscellaneous Expense,0,0,0,0,53
+7000,1,A,7000,PL,Taxes,Taxes,Demo Taxes and Dues,0,6805900,0,6805900,54
+7010,1,A,7010,PL,Taxes,Taxes,Demo Corporate Tax,0,0,0,0,55
+7020,1,A,7020,PL,Taxes,Taxes,Demo Consumption Tax Expense,0,0,0,0,56

@@ -1,0 +1,30 @@
+Ledger_Account_Number,Level,Type,Ledger_Account_Number,Parent,Category,eTax_Category,eTax_Account_Name,Beginning_Balance,Total_Debit,Total_Credit,Ending_Balance,seq
+1000,1,A,1000,BS,Assets,Assets,Demo Cash,600000,0,0,600000,1
+1010,1,A,1010,BS,Assets,Assets,Demo Petty Cash,120000,0,0,120000,2
+1100,1,A,1100,BS,Assets,Assets,Demo Central Ordinary Deposit,17049930,10557220,22969980,4637170,3
+1110,1,A,1110,BS,Assets,Assets,Demo North Current Deposit,20425970,7968900,24757550,3637320,4
+1120,1,A,1120,BS,Assets,Assets,Demo Harbor Ordinary Deposit,16688910,11404390,23267450,4825850,5
+1200,1,A,1200,BS,Assets,Assets,Demo Accounts Receivable,1500000,44402820,21703520,24199300,6
+1210,1,A,1210,BS,Assets,Assets,Demo Notes Receivable,800000,0,0,800000,7
+1300,1,A,1300,BS,Assets,Assets,Demo Inventory,1200000,0,0,1200000,8
+1400,1,A,1400,BS,Assets,Assets,Demo Prepaid Expenses,300000,5411580,0,5711580,9
+1410,1,A,1410,BS,Assets,Assets,Demo Advances Paid,250000,0,0,250000,10
+1420,1,A,1420,BS,Assets,Assets,Demo Temporary Payments,150000,0,0,150000,11
+1430,1,A,1430,BS,Assets,Assets,Demo Input Tax Receivable,400000,0,0,400000,12
+1500,1,A,1500,BS,Assets,Assets,Demo Equipment,2000000,0,0,2000000,13
+1510,1,A,1510,BS,Assets,Assets,Demo Vehicles,1200000,0,0,1200000,14
+1520,1,A,1520,BS,Assets,Assets,Demo Software,700000,0,0,700000,15
+1590,1,A,1590,BS,Assets,Assets,Demo Accumulated Depreciation,900000,0,0,900000,16
+2000,1,A,2000,BS,Liabilities,Liabilities,Demo Accounts Payable,3423720,16474900,14728460,1677280,17
+2010,1,A,2010,BS,Liabilities,Liabilities,Demo Notes Payable,600000,0,0,600000,18
+2100,1,A,2100,BS,Liabilities,Liabilities,Demo Accrued Payables,11150830,9502930,0,1647900,19
+2110,1,A,2110,BS,Liabilities,Liabilities,Demo Payroll Withholding,6159250,4799300,0,1359950,20
+2120,1,A,2120,BS,Liabilities,Liabilities,Demo Output Tax Payable,450000,0,0,450000,21
+2130,1,A,2130,BS,Liabilities,Liabilities,Demo Temporary Receipts,120000,0,0,120000,22
+2200,1,A,2200,BS,Liabilities,Liabilities,Demo Short-term Loans,6572000,3805120,0,2766880,23
+2300,1,A,2300,BS,Liabilities,Liabilities,Demo Long-term Loans,2500000,0,0,2500000,24
+2400,1,A,2400,BS,Liabilities,Liabilities,Demo Unearned Revenue,350000,0,0,350000,25
+3000,1,A,3000,BS,Equity,Equity,Demo Capital,5000000,0,0,5000000,26
+3100,1,A,3100,BS,Equity,Equity,Demo Retained Earnings,26159010,0,0,26159010,27
+8000,1,A,8000,BS,Clearing / temporary,Clearing / temporary,Demo Suspense,50000,0,0,50000,57
+8010,1,A,8010,BS,Clearing / temporary,Clearing / temporary,Demo Clearing,50000,0,0,50000,58

@@ -170,6 +170,22 @@ The web UI defaults to `data/sample`. You can switch datasets with:
 
 ## Authoritative Sample Inputs and Rebuild
 
+### Current default sample (2026-09-07)
+
+The current `data/sample` is `pca-synthetic-fy2021-v1`, a wholly fictional
+PCA-derived evaluation set generated from the accepted UADC-PoC Structured CSV.
+It covers April 2021 through March 2022, defaults to April 2021, and provides
+monthly xBRL-CSV plus monthly journal, ledger, trial-balance, balance-sheet, and
+profit-and-loss views in Japanese and English. Rebuild it with
+`tools/generate_uadc_pca_synthetic_dataset.py`; see `data/sample/README.md` for
+the exact scope and counts.
+
+The optional A/R, A/P, and business-document modes are not part of this dataset
+and remain hidden unless a dataset explicitly declares that feature. The
+remainder of this section records the design of the earlier document-linked
+sample and is retained as historical implementation context; its listed files
+and counts are not claims about the current `data/sample` contents.
+
 The downstream rebuild starts from the existing Structured CSV files. Recreating
 them from the original PCA Accounting export is outside this repository's rebuild
 scope.

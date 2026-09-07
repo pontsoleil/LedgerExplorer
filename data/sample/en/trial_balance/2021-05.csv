@@ -1,49 +1,59 @@
-﻿Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
-2021-05,10A100020,120505802,117816296,Cash and deposits,51524978,54214484,Current assets
-2021-05,10A100060,25118753,32345738,Notes receivable - trade,5665552,-1561433,Current assets
-2021-05,10A100090,61189848,72679123,Accounts receivable - trade,133016739,121527464,Current assets
-2021-05,10A100610,0,40000,Short-term loans receivable,240000,200000,Current assets
-2021-05,10A230570,125000,0,Insurance funds,152813,277813,Investments and other assets
-2021-05,10B100030,13344010,7140447,Notes payable - trade,32106319,25902756,Current liabilities
-2021-05,10B100040,36009969,37445581,Accounts payable - trade,71501651,72937263,Current liabilities
-2021-05,10B100630,7529245,7116470,Accounts payable - other,833440,420665,Current liabilities
-2021-05,10B100640,2864378,0,Income taxes payable,2864378,0,Current liabilities
-2021-05,10B100650,1862000,0,Accrued business office tax,1862000,0,Current liabilities
-2021-05,10B100660,4947100,0,Accrued consumption taxes,4947100,0,Current liabilities
-2021-05,10B100690,1494720,1957781,Deposits received,1487931,1950992,Current liabilities
-2021-05,10B100790,653500,0,Short-term borrowings,7188500,6535000,Current liabilities
-2021-05,10D100101,0,19398802,Sales from electronic transactions,15951282,35350084,Net sales
-2021-05,10D100102,0,41791046,Sales from traditional transactions,44386334,86177380,Net sales
-2021-05,10D100111,129310,0,Sales allowance and returns from electronic transactions from electronic transactions,20058,149368,Net sales
-2021-05,10D100112,712772,0,Sales allowance and returns from traditional transactions,110927,823699,Net sales
-2021-05,10E100121,0,98430,Purchase allowance and returns from electronic transactions,51555,149985,Cost of sales
-2021-05,10E100122,0,165823,Purchase allowance and returns from traditional transactions,159441,325264,Cost of sales
-2021-05,10E100131,12973908,0,Cost of purchased goods from electronic transactions,12286234,25260142,Cost of sales
-2021-05,10E100132,24471673,0,Cost of purchased goods from traditional transactions,23205448,47677121,Cost of sales
-2021-05,10E200020,2042500,0,Sales commission,2266000,4308500,"Selling, general and administrative expenses"
-2021-05,10E200050,177200,0,Advertising expenses,191500,368700,"Selling, general and administrative expenses"
-2021-05,10E200090,1720000,0,Remuneration for directors (and other officers),1720000,3440000,"Selling, general and administrative expenses"
-2021-05,10E200140,402832,0,Welfare expenses,302784,705616,"Selling, general and administrative expenses"
-2021-05,10E200150,433414,0,Entertainment expenses,387529,820943,"Selling, general and administrative expenses"
-2021-05,10E200180,1170854,0,Communication expenses,1314451,2485305,"Selling, general and administrative expenses"
-2021-05,10E200200,540384,270192,Supplies expenses,352077,622269,"Selling, general and administrative expenses"
-2021-05,10E200210,66000,0,Taxes and dues,56000,122000,"Selling, general and administrative expenses"
-2021-05,10E200240,318820,0,Insurance expenses,318820,637640,"Selling, general and administrative expenses"
-2021-05,10E200370,5515630,0,Salaries and allowances,5702352,11217982,"Selling, general and administrative expenses"
-2021-05,10E200520,231672,0,Other salaries,396465,628137,"Selling, general and administrative expenses"
-2021-05,10E200540,764485,0,Legal welfare expenses,743926,1508411,"Selling, general and administrative expenses"
-2021-05,10E200600,139710,0,Fee expenses,139710,279420,"Selling, general and administrative expenses"
-2021-05,10E200690,12555,0,Commission expenses,9308,21863,"Selling, general and administrative expenses"
-2021-05,10E200720,3449000,0,Rent expenses on land and buildings,3449000,6898000,"Selling, general and administrative expenses"
-2021-05,10E200730,293850,0,Rent expenses on land and buildings,293850,587700,"Selling, general and administrative expenses"
-2021-05,10E200870,3570154,0,Freight costs,3580147,7150301,"Selling, general and administrative expenses"
-2021-05,10E201000,122700,0,Repair and maintenance expenses,35850,158550,"Selling, general and administrative expenses"
-2021-05,10E201040,645774,0,Utilities expenses,615042,1260816,"Selling, general and administrative expenses"
-2021-05,10E201110,148755,0,Office supplies expenses,142108,290863,"Selling, general and administrative expenses"
-2021-05,10E201120,605723,0,Vehicle expenses,614477,1220200,"Selling, general and administrative expenses"
-2021-05,10E201130,55474,0,Meeting expenses,24995,80469,"Selling, general and administrative expenses"
-2021-05,10E201140,116000,0,Membership fee,116000,232000,"Selling, general and administrative expenses"
-2021-05,10E201160,24982,0,Book expenses,24982,49964,"Selling, general and administrative expenses"
-2021-05,10E201230,1160537,0,Travel and transportation expenses,1012406,2172943,"Selling, general and administrative expenses"
-2021-05,10E201270,486392,0,Miscellaneous expenses,477559,963951,"Selling, general and administrative expenses"
-2021-05,10E300020,118344,0,Interest expenses,91057,209401,Non-operating expenses
+Month,Ledger_Account_Number,Debit_Amount,Credit_Amount,Ledger_Account_Name,Beginning_Balance,Ending_Balance,eTax_Category
+2021-05,1000,0,0,Demo Cash,600000,600000,Assets
+2021-05,1010,0,0,Demo Petty Cash,120000,120000,Assets
+2021-05,1100,602370,2310790,Demo Central Ordinary Deposit,14685200,12976780,Assets
+2021-05,1110,1254260,2681180,Demo North Current Deposit,18592740,17165820,Assets
+2021-05,1120,1606110,2091620,Demo Harbor Ordinary Deposit,15869470,15383960,Assets
+2021-05,1200,5646470,2499300,Demo Accounts Receivable,3770350,6917520,Assets
+2021-05,1210,0,0,Demo Notes Receivable,800000,800000,Assets
+2021-05,1300,0,0,Demo Inventory,1200000,1200000,Assets
+2021-05,1400,351550,0,Demo Prepaid Expenses,900140,1251690,Assets
+2021-05,1410,0,0,Demo Advances Paid,250000,250000,Assets
+2021-05,1420,0,0,Demo Temporary Payments,150000,150000,Assets
+2021-05,1430,0,0,Demo Input Tax Receivable,400000,400000,Assets
+2021-05,1500,0,0,Demo Equipment,2000000,2000000,Assets
+2021-05,1510,0,0,Demo Vehicles,1200000,1200000,Assets
+2021-05,1520,0,0,Demo Software,700000,700000,Assets
+2021-05,1590,0,0,Demo Accumulated Depreciation,900000,900000,Assets
+2021-05,2000,1373290,1554320,Demo Accounts Payable,2269070,2450100,Liabilities
+2021-05,2010,0,0,Demo Notes Payable,600000,600000,Liabilities
+2021-05,2100,690450,0,Demo Accrued Payables,10155690,9465240,Liabilities
+2021-05,2110,428220,0,Demo Payroll Withholding,5556520,5128300,Liabilities
+2021-05,2120,0,0,Demo Output Tax Payable,450000,450000,Liabilities
+2021-05,2130,0,0,Demo Temporary Receipts,120000,120000,Liabilities
+2021-05,2200,409340,0,Demo Short-term Loans,6361570,5952230,Liabilities
+2021-05,2300,0,0,Demo Long-term Loans,2500000,2500000,Liabilities
+2021-05,2400,0,0,Demo Unearned Revenue,350000,350000,Liabilities
+2021-05,3000,0,0,Demo Capital,5000000,5000000,Equity
+2021-05,3100,0,0,Demo Retained Earnings,26159010,26159010,Equity
+2021-05,4000,0,2860770,Demo Product Sales,2055290,4916060,Revenue
+2021-05,4010,0,2672330,Demo Service Revenue,2383820,5056150,Revenue
+2021-05,4020,0,1076810,Demo Other Operating Revenue,1372130,2448940,Revenue
+2021-05,4030,0,0,Demo Interest Income,0,0,Revenue
+2021-05,4040,0,0,Demo Miscellaneous Income,0,0,Revenue
+2021-05,5000,613950,0,Demo Purchases,532190,1146140,Cost of sales
+2021-05,5010,589780,0,Demo Freight-in,429080,1018860,Cost of sales
+2021-05,5020,350590,0,Demo Inventory Adjustment,481960,832550,Cost of sales
+2021-05,6000,1071590,0,Demo Salaries,630350,1701940,Operating expenses
+2021-05,6010,228000,0,Demo Statutory Welfare,410810,638810,Operating expenses
+2021-05,6020,6210,0,Demo Office Rent,0,6210,Operating expenses
+2021-05,6030,838900,0,Demo Utilities,672050,1510950,Operating expenses
+2021-05,6040,356970,0,Demo Communication,351620,708590,Operating expenses
+2021-05,6050,0,0,Demo Business Travel,0,0,Operating expenses
+2021-05,6060,426980,0,Demo Office Supplies,734700,1161680,Operating expenses
+2021-05,6070,110680,0,Demo Bank Fees,208960,319640,Operating expenses
+2021-05,6080,0,0,Demo Advertising,0,0,Operating expenses
+2021-05,6090,0,0,Demo Insurance,0,0,Operating expenses
+2021-05,6100,147960,0,Demo Repairs,71340,219300,Operating expenses
+2021-05,6110,0,0,Demo Depreciation Expense,0,0,Operating expenses
+2021-05,6120,0,0,Demo Professional Fees,0,0,Operating expenses
+2021-05,6130,0,0,Demo Training,0,0,Operating expenses
+2021-05,6140,0,0,Demo Vehicle Expense,132570,132570,Operating expenses
+2021-05,6150,0,0,Demo Software Subscription,0,0,Operating expenses
+2021-05,6160,0,0,Demo Shipping,0,0,Operating expenses
+2021-05,6170,0,0,Demo Miscellaneous Expense,0,0,Operating expenses
+2021-05,7000,643450,0,Demo Taxes and Dues,339570,983020,Taxes
+2021-05,7010,0,0,Demo Corporate Tax,0,0,Taxes
+2021-05,7020,0,0,Demo Consumption Tax Expense,0,0,Taxes
+2021-05,8000,0,0,Demo Suspense,50000,50000,Clearing / temporary
+2021-05,8010,0,0,Demo Clearing,50000,50000,Clearing / temporary

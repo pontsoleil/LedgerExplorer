@@ -1,0 +1,51 @@
+{
+  "documentInfo": {
+    "documentType": "https://xbrl.org/2021/xbrl-csv",
+    "namespaces": {
+      "cor": "https://www.xbrl.or.jp/taxonomy/xbrl-gl-next/experimental/cor/2026-12-31",
+      "plt": "https://www.xbrl.or.jp/taxonomy/xbrl-gl-next/experimental/plt/2026-12-31",
+      "iso4217": "http://www.xbrl.org/2003/iso4217",
+      "scheme": "http://www.example.com",
+      "xbrl": "https://xbrl.org/2021"
+    },
+    "taxonomy": [
+      "../../../../XBRL-GL-Next/taxonomy/accounting-entries/oim/cor_accountingEntries/cor-all-oim-2026-12-31.xsd"
+    ]
+  },
+  "tables": {
+    "pca-synthetic-fy2021-v1-2021-12": {
+      "template": "structured",
+      "url": "2021-12.csv"
+    }
+  },
+  "tableTemplates": {
+    "structured": {
+      "dimensions": {
+        "period": "2021-12-31T00:00:00",
+        "entity": "scheme:Harbor-Lantern-Demo",
+        "plt:d_cor_accountingEntries": "$d_cor_accountingEntries",
+        "plt:d_cor_detailAccountIdentifier": "$d_cor_detailAccountIdentifier",
+        "plt:d_cor_detailTax": "$d_cor_detailTax",
+        "plt:d_cor_entryDetail": "$d_cor_entryDetail",
+        "plt:d_cor_entryHeader": "$d_cor_entryHeader",
+        "plt:d_cor_subaccount": "$d_cor_subaccount"
+      },
+      "columns": {
+        "concept": {},
+        "unit": {},
+        "value": {
+          "dimensions": {
+            "concept": "$concept",
+            "unit": "$unit"
+          }
+        },
+        "d_cor_accountingEntries": {},
+        "d_cor_detailAccountIdentifier": {},
+        "d_cor_detailTax": {},
+        "d_cor_entryDetail": {},
+        "d_cor_entryHeader": {},
+        "d_cor_subaccount": {}
+      }
+    }
+  }
+}

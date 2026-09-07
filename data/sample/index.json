@@ -1,13 +1,11 @@
 {
-  "generated_at": "2026-07-22T21:31:22.003090Z",
+  "generated_at": "2026-09-07T00:00:00Z",
+  "dataset_id": "pca-synthetic-fy2021-v1",
+  "default_month": "2021-04",
   "company": {
-    "business_id": "BUS-000",
-    "name": "株式会社くらし日用品",
-    "postal_code": "000-0000",
-    "prefecture": "東京都",
-    "address": "千代田区テスト町1丁目1番1号",
-    "building": "台帳検証ビル1階",
-    "source_master": "2025事業者マスタ.csv"
+    "business_id": "SYNTHETIC-DEMO",
+    "name": "Harbor Lantern Demo",
+    "synthetic": true
   },
   "lang": "en",
   "months": [
@@ -25,10 +23,29 @@
     "2022-03"
   ],
   "views": {
+    "structured": {
+      "by": "month",
+      "path": "structured/{month}.csv",
+      "metadata_path": "structured/{month}.json",
+      "available": [
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03"
+      ],
+      "language_neutral": true
+    },
     "tidy": {
       "by": "month",
-      "path": "tidy/{month}.csv",
-      "fallback": "tidy/ALL.csv",
+      "path": "{lang}/tidy/{month}.csv",
       "available": [
         "2021-04",
         "2021-05",
@@ -46,11 +63,8 @@
     },
     "journal": {
       "by": "month",
-      "path": "journal/{month}.csv",
-      "fallback": "journal/ALL.csv",
+      "path": "{lang}/journal/{month}.csv",
       "available": [
-        "2021-02",
-        "2021-03",
         "2021-04",
         "2021-05",
         "2021-06",
@@ -62,18 +76,13 @@
         "2021-12",
         "2022-01",
         "2022-02",
-        "2022-03",
-        "2022-04",
-        "2022-05"
+        "2022-03"
       ]
     },
     "ledger": {
       "by": "month",
-      "path": "ledger/{month}.csv",
-      "fallback": "ledger/ALL.csv",
+      "path": "{lang}/ledger/{month}.csv",
       "available": [
-        "2021-02",
-        "2021-03",
         "2021-04",
         "2021-05",
         "2021-06",
@@ -85,15 +94,12 @@
         "2021-12",
         "2022-01",
         "2022-02",
-        "2022-03",
-        "2022-04",
-        "2022-05"
+        "2022-03"
       ]
     },
     "trial_balance": {
       "by": "month",
-      "path": "trial_balance/{month}.csv",
-      "fallback": "trial_balance/ALL.csv",
+      "path": "{lang}/trial_balance/{month}.csv",
       "available": [
         "2021-04",
         "2021-05",
@@ -111,18 +117,38 @@
     },
     "balance_sheet": {
       "by": "month",
-      "path": "balance_sheet/{month}.csv",
-      "fallback": "balance_sheet/ALL.csv",
+      "path": "{lang}/balance_sheet/{month}.csv",
       "available": [
-        "ALL"
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03"
       ]
     },
     "pnl": {
       "by": "month",
-      "path": "pnl/{month}.csv",
-      "fallback": "pnl/ALL.csv",
+      "path": "{lang}/pnl/{month}.csv",
       "available": [
-        "ALL"
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03"
       ]
     }
   }

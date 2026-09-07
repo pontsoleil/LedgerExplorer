@@ -1,0 +1,2184 @@
+concept,unit,value,d_cor_accountingEntries,d_cor_detailAccountIdentifier,d_cor_detailTax,d_cor_entryDetail,d_cor_entryHeader,d_cor_subaccount
+cor:entryDatePosted,,2021-11-01,1,,,,"[""20211101"",""900414""]",
+cor:entryId,,900414,1,,,,"[""20211101"",""900414""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,740-D,"[""20211101"",""900414""]",
+cor:taxCategory,,00,1,,1,740-D,"[""20211101"",""900414""]",
+cor:accountNumber,,1100,1,1,,740-D,"[""20211101"",""900414""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,740-D,"[""20211101"",""900414""]",
+cor:subaccountDescription,,Demo Sales,1,1,,740-D,"[""20211101"",""900414""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,740-D,"[""20211101"",""900414""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,740-D,"[""20211101"",""900414""]",department
+cor:subaccountId,,B001,1,1,,740-D,"[""20211101"",""900414""]",auxiliary-account
+cor:type,,department,1,1,,740-D,"[""20211101"",""900414""]",department
+cor:type,,auxiliary-account,1,1,,740-D,"[""20211101"",""900414""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900414,1,,,740-D,"[""20211101"",""900414""]",
+cor:monetaryAmount,iso4217:JPY,70310,1,,,740-D,"[""20211101"",""900414""]",
+cor:debitCreditIndicator,,D,1,,,740-D,"[""20211101"",""900414""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,740-C,"[""20211101"",""900414""]",
+cor:taxCategory,,00,1,,1,740-C,"[""20211101"",""900414""]",
+cor:accountNumber,,1200,1,1,,740-C,"[""20211101"",""900414""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,740-C,"[""20211101"",""900414""]",
+cor:subaccountDescription,,Demo Sales,1,1,,740-C,"[""20211101"",""900414""]",department
+cor:subaccountDescription,,Demo Customer Cobalt,1,1,,740-C,"[""20211101"",""900414""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,740-C,"[""20211101"",""900414""]",department
+cor:subaccountId,,C003,1,1,,740-C,"[""20211101"",""900414""]",auxiliary-account
+cor:type,,department,1,1,,740-C,"[""20211101"",""900414""]",department
+cor:type,,auxiliary-account,1,1,,740-C,"[""20211101"",""900414""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900414,1,,,740-C,"[""20211101"",""900414""]",
+cor:monetaryAmount,iso4217:JPY,70310,1,,,740-C,"[""20211101"",""900414""]",
+cor:debitCreditIndicator,,C,1,,,740-C,"[""20211101"",""900414""]",
+cor:entryDatePosted,,2021-11-01,1,,,,"[""20211101"",""900425""]",
+cor:entryId,,900425,1,,,,"[""20211101"",""900425""]",
+cor:amountOfTaxes,iso4217:JPY,28105,1,,1,741-D,"[""20211101"",""900425""]",
+cor:taxCategory,,Q5,1,,1,741-D,"[""20211101"",""900425""]",
+cor:accountNumber,,5020,1,1,,741-D,"[""20211101"",""900425""]",
+cor:accountDescription,,Demo Inventory Adjustment,1,1,,741-D,"[""20211101"",""900425""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,741-D,"[""20211101"",""900425""]",department
+cor:subaccountDescription,,Demo Vendor Prairie,1,1,,741-D,"[""20211101"",""900425""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,741-D,"[""20211101"",""900425""]",department
+cor:subaccountId,,V006,1,1,,741-D,"[""20211101"",""900425""]",auxiliary-account
+cor:type,,department,1,1,,741-D,"[""20211101"",""900425""]",department
+cor:type,,auxiliary-account,1,1,,741-D,"[""20211101"",""900425""]",auxiliary-account
+cor:detailDescription,,Synthetic demo purchase on account 900425,1,,,741-D,"[""20211101"",""900425""]",
+cor:monetaryAmount,iso4217:JPY,309160,1,,,741-D,"[""20211101"",""900425""]",
+cor:debitCreditIndicator,,D,1,,,741-D,"[""20211101"",""900425""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,741-C,"[""20211101"",""900425""]",
+cor:taxCategory,,00,1,,1,741-C,"[""20211101"",""900425""]",
+cor:accountNumber,,2000,1,1,,741-C,"[""20211101"",""900425""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,741-C,"[""20211101"",""900425""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,741-C,"[""20211101"",""900425""]",department
+cor:subaccountDescription,,Demo Vendor Prairie,1,1,,741-C,"[""20211101"",""900425""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,741-C,"[""20211101"",""900425""]",department
+cor:subaccountId,,V006,1,1,,741-C,"[""20211101"",""900425""]",auxiliary-account
+cor:type,,department,1,1,,741-C,"[""20211101"",""900425""]",department
+cor:type,,auxiliary-account,1,1,,741-C,"[""20211101"",""900425""]",auxiliary-account
+cor:detailDescription,,Synthetic demo purchase on account 900425,1,,,741-C,"[""20211101"",""900425""]",
+cor:monetaryAmount,iso4217:JPY,309160,1,,,741-C,"[""20211101"",""900425""]",
+cor:debitCreditIndicator,,C,1,,,741-C,"[""20211101"",""900425""]",
+cor:entryDatePosted,,2021-11-02,1,,,,"[""20211102"",""900418""]",
+cor:entryId,,900418,1,,,,"[""20211102"",""900418""]",
+cor:amountOfTaxes,iso4217:JPY,15649,1,,1,742-D,"[""20211102"",""900418""]",
+cor:taxCategory,,Q5,1,,1,742-D,"[""20211102"",""900418""]",
+cor:accountNumber,,6060,1,1,,742-D,"[""20211102"",""900418""]",
+cor:accountDescription,,Demo Office Supplies,1,1,,742-D,"[""20211102"",""900418""]",
+cor:subaccountDescription,,Demo Operations,1,1,,742-D,"[""20211102"",""900418""]",department
+cor:subaccountDescription,,Demo Vendor Keystone,1,1,,742-D,"[""20211102"",""900418""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,742-D,"[""20211102"",""900418""]",department
+cor:subaccountId,,V001,1,1,,742-D,"[""20211102"",""900418""]",auxiliary-account
+cor:type,,department,1,1,,742-D,"[""20211102"",""900418""]",department
+cor:type,,auxiliary-account,1,1,,742-D,"[""20211102"",""900418""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating expense 900418,1,,,742-D,"[""20211102"",""900418""]",
+cor:monetaryAmount,iso4217:JPY,172140,1,,,742-D,"[""20211102"",""900418""]",
+cor:debitCreditIndicator,,D,1,,,742-D,"[""20211102"",""900418""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,742-C,"[""20211102"",""900418""]",
+cor:taxCategory,,00,1,,1,742-C,"[""20211102"",""900418""]",
+cor:accountNumber,,1110,1,1,,742-C,"[""20211102"",""900418""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,742-C,"[""20211102"",""900418""]",
+cor:subaccountDescription,,Demo Operations,1,1,,742-C,"[""20211102"",""900418""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,742-C,"[""20211102"",""900418""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,742-C,"[""20211102"",""900418""]",department
+cor:subaccountId,,B002,1,1,,742-C,"[""20211102"",""900418""]",auxiliary-account
+cor:type,,department,1,1,,742-C,"[""20211102"",""900418""]",department
+cor:type,,auxiliary-account,1,1,,742-C,"[""20211102"",""900418""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating expense 900418,1,,,742-C,"[""20211102"",""900418""]",
+cor:monetaryAmount,iso4217:JPY,172140,1,,,742-C,"[""20211102"",""900418""]",
+cor:debitCreditIndicator,,C,1,,,742-C,"[""20211102"",""900418""]",
+cor:entryDatePosted,,2021-11-02,1,,,,"[""20211102"",""900435""]",
+cor:entryId,,900435,1,,,,"[""20211102"",""900435""]",
+cor:amountOfTaxes,iso4217:JPY,6545,1,,1,743-D,"[""20211102"",""900435""]",
+cor:taxCategory,,Q5,1,,1,743-D,"[""20211102"",""900435""]",
+cor:accountNumber,,5000,1,1,,743-D,"[""20211102"",""900435""]",
+cor:accountDescription,,Demo Purchases,1,1,,743-D,"[""20211102"",""900435""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,743-D,"[""20211102"",""900435""]",department
+cor:subaccountDescription,,Demo Vendor Prairie,1,1,,743-D,"[""20211102"",""900435""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,743-D,"[""20211102"",""900435""]",department
+cor:subaccountId,,V006,1,1,,743-D,"[""20211102"",""900435""]",auxiliary-account
+cor:type,,department,1,1,,743-D,"[""20211102"",""900435""]",department
+cor:type,,auxiliary-account,1,1,,743-D,"[""20211102"",""900435""]",auxiliary-account
+cor:detailDescription,,Synthetic demo purchase on account 900435,1,,,743-D,"[""20211102"",""900435""]",
+cor:monetaryAmount,iso4217:JPY,72000,1,,,743-D,"[""20211102"",""900435""]",
+cor:debitCreditIndicator,,D,1,,,743-D,"[""20211102"",""900435""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,743-C,"[""20211102"",""900435""]",
+cor:taxCategory,,00,1,,1,743-C,"[""20211102"",""900435""]",
+cor:accountNumber,,2000,1,1,,743-C,"[""20211102"",""900435""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,743-C,"[""20211102"",""900435""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,743-C,"[""20211102"",""900435""]",department
+cor:subaccountDescription,,Demo Vendor Prairie,1,1,,743-C,"[""20211102"",""900435""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,743-C,"[""20211102"",""900435""]",department
+cor:subaccountId,,V006,1,1,,743-C,"[""20211102"",""900435""]",auxiliary-account
+cor:type,,department,1,1,,743-C,"[""20211102"",""900435""]",department
+cor:type,,auxiliary-account,1,1,,743-C,"[""20211102"",""900435""]",auxiliary-account
+cor:detailDescription,,Synthetic demo purchase on account 900435,1,,,743-C,"[""20211102"",""900435""]",
+cor:monetaryAmount,iso4217:JPY,72000,1,,,743-C,"[""20211102"",""900435""]",
+cor:debitCreditIndicator,,C,1,,,743-C,"[""20211102"",""900435""]",
+cor:entryDatePosted,,2021-11-02,1,,,,"[""20211102"",""900454""]",
+cor:entryId,,900454,1,,,,"[""20211102"",""900454""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,744-D,"[""20211102"",""900454""]",
+cor:taxCategory,,00,1,,1,744-D,"[""20211102"",""900454""]",
+cor:accountNumber,,1110,1,1,,744-D,"[""20211102"",""900454""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,744-D,"[""20211102"",""900454""]",
+cor:subaccountDescription,,Demo Sales,1,1,,744-D,"[""20211102"",""900454""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,744-D,"[""20211102"",""900454""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,744-D,"[""20211102"",""900454""]",department
+cor:subaccountId,,B002,1,1,,744-D,"[""20211102"",""900454""]",auxiliary-account
+cor:type,,department,1,1,,744-D,"[""20211102"",""900454""]",department
+cor:type,,auxiliary-account,1,1,,744-D,"[""20211102"",""900454""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900454,1,,,744-D,"[""20211102"",""900454""]",
+cor:monetaryAmount,iso4217:JPY,454500,1,,,744-D,"[""20211102"",""900454""]",
+cor:debitCreditIndicator,,D,1,,,744-D,"[""20211102"",""900454""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,744-C,"[""20211102"",""900454""]",
+cor:taxCategory,,00,1,,1,744-C,"[""20211102"",""900454""]",
+cor:accountNumber,,1200,1,1,,744-C,"[""20211102"",""900454""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,744-C,"[""20211102"",""900454""]",
+cor:subaccountDescription,,Demo Sales,1,1,,744-C,"[""20211102"",""900454""]",department
+cor:subaccountDescription,,Demo Customer Cobalt,1,1,,744-C,"[""20211102"",""900454""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,744-C,"[""20211102"",""900454""]",department
+cor:subaccountId,,C003,1,1,,744-C,"[""20211102"",""900454""]",auxiliary-account
+cor:type,,department,1,1,,744-C,"[""20211102"",""900454""]",department
+cor:type,,auxiliary-account,1,1,,744-C,"[""20211102"",""900454""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900454,1,,,744-C,"[""20211102"",""900454""]",
+cor:monetaryAmount,iso4217:JPY,454500,1,,,744-C,"[""20211102"",""900454""]",
+cor:debitCreditIndicator,,C,1,,,744-C,"[""20211102"",""900454""]",
+cor:entryDatePosted,,2021-11-04,1,,,,"[""20211104"",""900466""]",
+cor:entryId,,900466,1,,,,"[""20211104"",""900466""]",
+cor:amountOfTaxes,iso4217:JPY,33059,1,,1,745-D,"[""20211104"",""900466""]",
+cor:taxCategory,,Q5,1,,1,745-D,"[""20211104"",""900466""]",
+cor:accountNumber,,5010,1,1,,745-D,"[""20211104"",""900466""]",
+cor:accountDescription,,Demo Freight-in,1,1,,745-D,"[""20211104"",""900466""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,745-D,"[""20211104"",""900466""]",department
+cor:subaccountDescription,,Demo Vendor Keystone,1,1,,745-D,"[""20211104"",""900466""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,745-D,"[""20211104"",""900466""]",department
+cor:subaccountId,,V001,1,1,,745-D,"[""20211104"",""900466""]",auxiliary-account
+cor:type,,department,1,1,,745-D,"[""20211104"",""900466""]",department
+cor:type,,auxiliary-account,1,1,,745-D,"[""20211104"",""900466""]",auxiliary-account
+cor:detailDescription,,Synthetic demo purchase on account 900466,1,,,745-D,"[""20211104"",""900466""]",
+cor:monetaryAmount,iso4217:JPY,363650,1,,,745-D,"[""20211104"",""900466""]",
+cor:debitCreditIndicator,,D,1,,,745-D,"[""20211104"",""900466""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,745-C,"[""20211104"",""900466""]",
+cor:taxCategory,,00,1,,1,745-C,"[""20211104"",""900466""]",
+cor:accountNumber,,2000,1,1,,745-C,"[""20211104"",""900466""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,745-C,"[""20211104"",""900466""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,745-C,"[""20211104"",""900466""]",department
+cor:subaccountDescription,,Demo Vendor Keystone,1,1,,745-C,"[""20211104"",""900466""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,745-C,"[""20211104"",""900466""]",department
+cor:subaccountId,,V001,1,1,,745-C,"[""20211104"",""900466""]",auxiliary-account
+cor:type,,department,1,1,,745-C,"[""20211104"",""900466""]",department
+cor:type,,auxiliary-account,1,1,,745-C,"[""20211104"",""900466""]",auxiliary-account
+cor:detailDescription,,Synthetic demo purchase on account 900466,1,,,745-C,"[""20211104"",""900466""]",
+cor:monetaryAmount,iso4217:JPY,363650,1,,,745-C,"[""20211104"",""900466""]",
+cor:debitCreditIndicator,,C,1,,,745-C,"[""20211104"",""900466""]",
+cor:entryDatePosted,,2021-11-05,1,,,,"[""20211105"",""900453""]",
+cor:entryId,,900453,1,,,,"[""20211105"",""900453""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,746-D,"[""20211105"",""900453""]",
+cor:taxCategory,,00,1,,1,746-D,"[""20211105"",""900453""]",
+cor:accountNumber,,1100,1,1,,746-D,"[""20211105"",""900453""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,746-D,"[""20211105"",""900453""]",
+cor:subaccountDescription,,Demo Sales,1,1,,746-D,"[""20211105"",""900453""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,746-D,"[""20211105"",""900453""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,746-D,"[""20211105"",""900453""]",department
+cor:subaccountId,,B001,1,1,,746-D,"[""20211105"",""900453""]",auxiliary-account
+cor:type,,department,1,1,,746-D,"[""20211105"",""900453""]",department
+cor:type,,auxiliary-account,1,1,,746-D,"[""20211105"",""900453""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900453,1,,,746-D,"[""20211105"",""900453""]",
+cor:monetaryAmount,iso4217:JPY,343560,1,,,746-D,"[""20211105"",""900453""]",
+cor:debitCreditIndicator,,D,1,,,746-D,"[""20211105"",""900453""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,746-C,"[""20211105"",""900453""]",
+cor:taxCategory,,00,1,,1,746-C,"[""20211105"",""900453""]",
+cor:accountNumber,,1200,1,1,,746-C,"[""20211105"",""900453""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,746-C,"[""20211105"",""900453""]",
+cor:subaccountDescription,,Demo Sales,1,1,,746-C,"[""20211105"",""900453""]",department
+cor:subaccountDescription,,Demo Customer Juniper,1,1,,746-C,"[""20211105"",""900453""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,746-C,"[""20211105"",""900453""]",department
+cor:subaccountId,,C010,1,1,,746-C,"[""20211105"",""900453""]",auxiliary-account
+cor:type,,department,1,1,,746-C,"[""20211105"",""900453""]",department
+cor:type,,auxiliary-account,1,1,,746-C,"[""20211105"",""900453""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900453,1,,,746-C,"[""20211105"",""900453""]",
+cor:monetaryAmount,iso4217:JPY,343560,1,,,746-C,"[""20211105"",""900453""]",
+cor:debitCreditIndicator,,C,1,,,746-C,"[""20211105"",""900453""]",
+cor:entryDatePosted,,2021-11-05,1,,,,"[""20211105"",""900462""]",
+cor:entryId,,900462,1,,,,"[""20211105"",""900462""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,747-D,"[""20211105"",""900462""]",
+cor:taxCategory,,00,1,,1,747-D,"[""20211105"",""900462""]",
+cor:accountNumber,,1200,1,1,,747-D,"[""20211105"",""900462""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,747-D,"[""20211105"",""900462""]",
+cor:subaccountDescription,,Demo Sales,1,1,,747-D,"[""20211105"",""900462""]",department
+cor:subaccountDescription,,Demo Customer Grove,1,1,,747-D,"[""20211105"",""900462""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,747-D,"[""20211105"",""900462""]",department
+cor:subaccountId,,C007,1,1,,747-D,"[""20211105"",""900462""]",auxiliary-account
+cor:type,,department,1,1,,747-D,"[""20211105"",""900462""]",department
+cor:type,,auxiliary-account,1,1,,747-D,"[""20211105"",""900462""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900462,1,,,747-D,"[""20211105"",""900462""]",
+cor:monetaryAmount,iso4217:JPY,236330,1,,,747-D,"[""20211105"",""900462""]",
+cor:debitCreditIndicator,,D,1,,,747-D,"[""20211105"",""900462""]",
+cor:amountOfTaxes,iso4217:JPY,21485,1,,1,747-C,"[""20211105"",""900462""]",
+cor:taxCategory,,B5,1,,1,747-C,"[""20211105"",""900462""]",
+cor:accountNumber,,4000,1,1,,747-C,"[""20211105"",""900462""]",
+cor:accountDescription,,Demo Product Sales,1,1,,747-C,"[""20211105"",""900462""]",
+cor:subaccountDescription,,Demo Sales,1,1,,747-C,"[""20211105"",""900462""]",department
+cor:subaccountDescription,,Demo Customer Grove,1,1,,747-C,"[""20211105"",""900462""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,747-C,"[""20211105"",""900462""]",department
+cor:subaccountId,,C007,1,1,,747-C,"[""20211105"",""900462""]",auxiliary-account
+cor:type,,department,1,1,,747-C,"[""20211105"",""900462""]",department
+cor:type,,auxiliary-account,1,1,,747-C,"[""20211105"",""900462""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900462,1,,,747-C,"[""20211105"",""900462""]",
+cor:monetaryAmount,iso4217:JPY,236330,1,,,747-C,"[""20211105"",""900462""]",
+cor:debitCreditIndicator,,C,1,,,747-C,"[""20211105"",""900462""]",
+cor:entryDatePosted,,2021-11-05,1,,,,"[""20211105"",""900463""]",
+cor:entryId,,900463,1,,,,"[""20211105"",""900463""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,748-D,"[""20211105"",""900463""]",
+cor:taxCategory,,00,1,,1,748-D,"[""20211105"",""900463""]",
+cor:accountNumber,,1110,1,1,,748-D,"[""20211105"",""900463""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,748-D,"[""20211105"",""900463""]",
+cor:subaccountDescription,,Demo Sales,1,1,,748-D,"[""20211105"",""900463""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,748-D,"[""20211105"",""900463""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,748-D,"[""20211105"",""900463""]",department
+cor:subaccountId,,B002,1,1,,748-D,"[""20211105"",""900463""]",auxiliary-account
+cor:type,,department,1,1,,748-D,"[""20211105"",""900463""]",department
+cor:type,,auxiliary-account,1,1,,748-D,"[""20211105"",""900463""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900463,1,,,748-D,"[""20211105"",""900463""]",
+cor:monetaryAmount,iso4217:JPY,81510,1,,,748-D,"[""20211105"",""900463""]",
+cor:debitCreditIndicator,,D,1,,,748-D,"[""20211105"",""900463""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,748-C,"[""20211105"",""900463""]",
+cor:taxCategory,,00,1,,1,748-C,"[""20211105"",""900463""]",
+cor:accountNumber,,1200,1,1,,748-C,"[""20211105"",""900463""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,748-C,"[""20211105"",""900463""]",
+cor:subaccountDescription,,Demo Sales,1,1,,748-C,"[""20211105"",""900463""]",department
+cor:subaccountDescription,,Demo Customer Juniper,1,1,,748-C,"[""20211105"",""900463""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,748-C,"[""20211105"",""900463""]",department
+cor:subaccountId,,C010,1,1,,748-C,"[""20211105"",""900463""]",auxiliary-account
+cor:type,,department,1,1,,748-C,"[""20211105"",""900463""]",department
+cor:type,,auxiliary-account,1,1,,748-C,"[""20211105"",""900463""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900463,1,,,748-C,"[""20211105"",""900463""]",
+cor:monetaryAmount,iso4217:JPY,81510,1,,,748-C,"[""20211105"",""900463""]",
+cor:debitCreditIndicator,,C,1,,,748-C,"[""20211105"",""900463""]",
+cor:entryDatePosted,,2021-11-06,1,,,,"[""20211106"",""900412""]",
+cor:entryId,,900412,1,,,,"[""20211106"",""900412""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,749-D,"[""20211106"",""900412""]",
+cor:taxCategory,,00,1,,1,749-D,"[""20211106"",""900412""]",
+cor:accountNumber,,1200,1,1,,749-D,"[""20211106"",""900412""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,749-D,"[""20211106"",""900412""]",
+cor:subaccountDescription,,Demo Sales,1,1,,749-D,"[""20211106"",""900412""]",department
+cor:subaccountDescription,,Demo Customer Grove,1,1,,749-D,"[""20211106"",""900412""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,749-D,"[""20211106"",""900412""]",department
+cor:subaccountId,,C007,1,1,,749-D,"[""20211106"",""900412""]",auxiliary-account
+cor:type,,department,1,1,,749-D,"[""20211106"",""900412""]",department
+cor:type,,auxiliary-account,1,1,,749-D,"[""20211106"",""900412""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900412,1,,,749-D,"[""20211106"",""900412""]",
+cor:monetaryAmount,iso4217:JPY,438890,1,,,749-D,"[""20211106"",""900412""]",
+cor:debitCreditIndicator,,D,1,,,749-D,"[""20211106"",""900412""]",
+cor:amountOfTaxes,iso4217:JPY,39899,1,,1,749-C,"[""20211106"",""900412""]",
+cor:taxCategory,,B5,1,,1,749-C,"[""20211106"",""900412""]",
+cor:accountNumber,,4010,1,1,,749-C,"[""20211106"",""900412""]",
+cor:accountDescription,,Demo Service Revenue,1,1,,749-C,"[""20211106"",""900412""]",
+cor:subaccountDescription,,Demo Sales,1,1,,749-C,"[""20211106"",""900412""]",department
+cor:subaccountDescription,,Demo Customer Grove,1,1,,749-C,"[""20211106"",""900412""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,749-C,"[""20211106"",""900412""]",department
+cor:subaccountId,,C007,1,1,,749-C,"[""20211106"",""900412""]",auxiliary-account
+cor:type,,department,1,1,,749-C,"[""20211106"",""900412""]",department
+cor:type,,auxiliary-account,1,1,,749-C,"[""20211106"",""900412""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900412,1,,,749-C,"[""20211106"",""900412""]",
+cor:monetaryAmount,iso4217:JPY,438890,1,,,749-C,"[""20211106"",""900412""]",
+cor:debitCreditIndicator,,C,1,,,749-C,"[""20211106"",""900412""]",
+cor:entryDatePosted,,2021-11-06,1,,,,"[""20211106"",""900455""]",
+cor:entryId,,900455,1,,,,"[""20211106"",""900455""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,750-D,"[""20211106"",""900455""]",
+cor:taxCategory,,00,1,,1,750-D,"[""20211106"",""900455""]",
+cor:accountNumber,,2000,1,1,,750-D,"[""20211106"",""900455""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,750-D,"[""20211106"",""900455""]",
+cor:subaccountDescription,,Demo Sales,1,1,,750-D,"[""20211106"",""900455""]",department
+cor:subaccountDescription,,Demo Vendor Prairie,1,1,,750-D,"[""20211106"",""900455""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,750-D,"[""20211106"",""900455""]",department
+cor:subaccountId,,V006,1,1,,750-D,"[""20211106"",""900455""]",auxiliary-account
+cor:type,,department,1,1,,750-D,"[""20211106"",""900455""]",department
+cor:type,,auxiliary-account,1,1,,750-D,"[""20211106"",""900455""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900455,1,,,750-D,"[""20211106"",""900455""]",
+cor:monetaryAmount,iso4217:JPY,232730,1,,,750-D,"[""20211106"",""900455""]",
+cor:debitCreditIndicator,,D,1,,,750-D,"[""20211106"",""900455""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900455,1,,,750-C,"[""20211106"",""900455""]",
+cor:debitCreditIndicator,,C,1,,,750-C,"[""20211106"",""900455""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,751-D,"[""20211106"",""900455""]",
+cor:taxCategory,,00,1,,1,751-D,"[""20211106"",""900455""]",
+cor:accountNumber,,2100,1,1,,751-D,"[""20211106"",""900455""]",
+cor:accountDescription,,Demo Accrued Payables,1,1,,751-D,"[""20211106"",""900455""]",
+cor:subaccountDescription,,Demo Sales,1,1,,751-D,"[""20211106"",""900455""]",department
+cor:subaccountDescription,,Demo Vendor Summit,1,1,,751-D,"[""20211106"",""900455""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,751-D,"[""20211106"",""900455""]",department
+cor:subaccountId,,V009,1,1,,751-D,"[""20211106"",""900455""]",auxiliary-account
+cor:type,,department,1,1,,751-D,"[""20211106"",""900455""]",department
+cor:type,,auxiliary-account,1,1,,751-D,"[""20211106"",""900455""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900455,1,,,751-D,"[""20211106"",""900455""]",
+cor:monetaryAmount,iso4217:JPY,472520,1,,,751-D,"[""20211106"",""900455""]",
+cor:debitCreditIndicator,,D,1,,,751-D,"[""20211106"",""900455""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900455,1,,,751-C,"[""20211106"",""900455""]",
+cor:debitCreditIndicator,,C,1,,,751-C,"[""20211106"",""900455""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900455,1,,,752-D,"[""20211106"",""900455""]",
+cor:debitCreditIndicator,,D,1,,,752-D,"[""20211106"",""900455""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,752-C,"[""20211106"",""900455""]",
+cor:taxCategory,,00,1,,1,752-C,"[""20211106"",""900455""]",
+cor:accountNumber,,1120,1,1,,752-C,"[""20211106"",""900455""]",
+cor:accountDescription,,Demo Harbor Ordinary Deposit,1,1,,752-C,"[""20211106"",""900455""]",
+cor:subaccountDescription,,Demo Sales,1,1,,752-C,"[""20211106"",""900455""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,752-C,"[""20211106"",""900455""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,752-C,"[""20211106"",""900455""]",department
+cor:subaccountId,,B003,1,1,,752-C,"[""20211106"",""900455""]",auxiliary-account
+cor:type,,department,1,1,,752-C,"[""20211106"",""900455""]",department
+cor:type,,auxiliary-account,1,1,,752-C,"[""20211106"",""900455""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900455,1,,,752-C,"[""20211106"",""900455""]",
+cor:monetaryAmount,iso4217:JPY,472510,1,,,752-C,"[""20211106"",""900455""]",
+cor:debitCreditIndicator,,C,1,,,752-C,"[""20211106"",""900455""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900455,1,,,753-D,"[""20211106"",""900455""]",
+cor:debitCreditIndicator,,D,1,,,753-D,"[""20211106"",""900455""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,753-C,"[""20211106"",""900455""]",
+cor:taxCategory,,00,1,,1,753-C,"[""20211106"",""900455""]",
+cor:accountNumber,,1100,1,1,,753-C,"[""20211106"",""900455""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,753-C,"[""20211106"",""900455""]",
+cor:subaccountDescription,,Demo Sales,1,1,,753-C,"[""20211106"",""900455""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,753-C,"[""20211106"",""900455""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,753-C,"[""20211106"",""900455""]",department
+cor:subaccountId,,B001,1,1,,753-C,"[""20211106"",""900455""]",auxiliary-account
+cor:type,,department,1,1,,753-C,"[""20211106"",""900455""]",department
+cor:type,,auxiliary-account,1,1,,753-C,"[""20211106"",""900455""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900455,1,,,753-C,"[""20211106"",""900455""]",
+cor:monetaryAmount,iso4217:JPY,232740,1,,,753-C,"[""20211106"",""900455""]",
+cor:debitCreditIndicator,,C,1,,,753-C,"[""20211106"",""900455""]",
+cor:entryDatePosted,,2021-11-06,1,,,,"[""20211106"",""900465""]",
+cor:entryId,,900465,1,,,,"[""20211106"",""900465""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,754-D,"[""20211106"",""900465""]",
+cor:taxCategory,,00,1,,1,754-D,"[""20211106"",""900465""]",
+cor:accountNumber,,6000,1,1,,754-D,"[""20211106"",""900465""]",
+cor:accountDescription,,Demo Salaries,1,1,,754-D,"[""20211106"",""900465""]",
+cor:subaccountDescription,,Demo Administration,1,1,,754-D,"[""20211106"",""900465""]",department
+cor:subaccountId,,D02,1,1,,754-D,"[""20211106"",""900465""]",department
+cor:type,,department,1,1,,754-D,"[""20211106"",""900465""]",department
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900465,1,,,754-D,"[""20211106"",""900465""]",
+cor:monetaryAmount,iso4217:JPY,124270,1,,,754-D,"[""20211106"",""900465""]",
+cor:debitCreditIndicator,,D,1,,,754-D,"[""20211106"",""900465""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,754-C,"[""20211106"",""900465""]",
+cor:taxCategory,,00,1,,1,754-C,"[""20211106"",""900465""]",
+cor:accountNumber,,1100,1,1,,754-C,"[""20211106"",""900465""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,754-C,"[""20211106"",""900465""]",
+cor:subaccountDescription,,Demo Administration,1,1,,754-C,"[""20211106"",""900465""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,754-C,"[""20211106"",""900465""]",auxiliary-account
+cor:subaccountId,,D02,1,1,,754-C,"[""20211106"",""900465""]",department
+cor:subaccountId,,B001,1,1,,754-C,"[""20211106"",""900465""]",auxiliary-account
+cor:type,,department,1,1,,754-C,"[""20211106"",""900465""]",department
+cor:type,,auxiliary-account,1,1,,754-C,"[""20211106"",""900465""]",auxiliary-account
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900465,1,,,754-C,"[""20211106"",""900465""]",
+cor:monetaryAmount,iso4217:JPY,345220,1,,,754-C,"[""20211106"",""900465""]",
+cor:debitCreditIndicator,,C,1,,,754-C,"[""20211106"",""900465""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,755-D,"[""20211106"",""900465""]",
+cor:taxCategory,,00,1,,1,755-D,"[""20211106"",""900465""]",
+cor:accountNumber,,6010,1,1,,755-D,"[""20211106"",""900465""]",
+cor:accountDescription,,Demo Statutory Welfare,1,1,,755-D,"[""20211106"",""900465""]",
+cor:subaccountDescription,,Demo Administration,1,1,,755-D,"[""20211106"",""900465""]",department
+cor:subaccountId,,D02,1,1,,755-D,"[""20211106"",""900465""]",department
+cor:type,,department,1,1,,755-D,"[""20211106"",""900465""]",department
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900465,1,,,755-D,"[""20211106"",""900465""]",
+cor:monetaryAmount,iso4217:JPY,69040,1,,,755-D,"[""20211106"",""900465""]",
+cor:debitCreditIndicator,,D,1,,,755-D,"[""20211106"",""900465""]",
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900465,1,,,755-C,"[""20211106"",""900465""]",
+cor:debitCreditIndicator,,C,1,,,755-C,"[""20211106"",""900465""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,756-D,"[""20211106"",""900465""]",
+cor:taxCategory,,00,1,,1,756-D,"[""20211106"",""900465""]",
+cor:accountNumber,,2110,1,1,,756-D,"[""20211106"",""900465""]",
+cor:accountDescription,,Demo Payroll Withholding,1,1,,756-D,"[""20211106"",""900465""]",
+cor:subaccountDescription,,Demo Administration,1,1,,756-D,"[""20211106"",""900465""]",department
+cor:subaccountId,,D02,1,1,,756-D,"[""20211106"",""900465""]",department
+cor:type,,department,1,1,,756-D,"[""20211106"",""900465""]",department
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900465,1,,,756-D,"[""20211106"",""900465""]",
+cor:monetaryAmount,iso4217:JPY,151910,1,,,756-D,"[""20211106"",""900465""]",
+cor:debitCreditIndicator,,D,1,,,756-D,"[""20211106"",""900465""]",
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900465,1,,,756-C,"[""20211106"",""900465""]",
+cor:debitCreditIndicator,,C,1,,,756-C,"[""20211106"",""900465""]",
+cor:entryDatePosted,,2021-11-07,1,,,,"[""20211107"",""900439""]",
+cor:entryId,,900439,1,,,,"[""20211107"",""900439""]",
+cor:amountOfTaxes,iso4217:JPY,11584,1,,1,757-D,"[""20211107"",""900439""]",
+cor:taxCategory,,Q5,1,,1,757-D,"[""20211107"",""900439""]",
+cor:accountNumber,,6030,1,1,,757-D,"[""20211107"",""900439""]",
+cor:accountDescription,,Demo Utilities,1,1,,757-D,"[""20211107"",""900439""]",
+cor:subaccountDescription,,Demo Operations,1,1,,757-D,"[""20211107"",""900439""]",department
+cor:subaccountDescription,,Demo Energy Services,1,1,,757-D,"[""20211107"",""900439""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,757-D,"[""20211107"",""900439""]",department
+cor:subaccountId,,S002,1,1,,757-D,"[""20211107"",""900439""]",auxiliary-account
+cor:type,,department,1,1,,757-D,"[""20211107"",""900439""]",department
+cor:type,,auxiliary-account,1,1,,757-D,"[""20211107"",""900439""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating cost bundle 900439,1,,,757-D,"[""20211107"",""900439""]",
+cor:monetaryAmount,iso4217:JPY,127420,1,,,757-D,"[""20211107"",""900439""]",
+cor:debitCreditIndicator,,D,1,,,757-D,"[""20211107"",""900439""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,757-C,"[""20211107"",""900439""]",
+cor:taxCategory,,00,1,,1,757-C,"[""20211107"",""900439""]",
+cor:accountNumber,,1110,1,1,,757-C,"[""20211107"",""900439""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,757-C,"[""20211107"",""900439""]",
+cor:subaccountDescription,,Demo Operations,1,1,,757-C,"[""20211107"",""900439""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,757-C,"[""20211107"",""900439""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,757-C,"[""20211107"",""900439""]",department
+cor:subaccountId,,B002,1,1,,757-C,"[""20211107"",""900439""]",auxiliary-account
+cor:type,,department,1,1,,757-C,"[""20211107"",""900439""]",department
+cor:type,,auxiliary-account,1,1,,757-C,"[""20211107"",""900439""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating cost bundle 900439,1,,,757-C,"[""20211107"",""900439""]",
+cor:monetaryAmount,iso4217:JPY,509690,1,,,757-C,"[""20211107"",""900439""]",
+cor:debitCreditIndicator,,C,1,,,757-C,"[""20211107"",""900439""]",
+cor:amountOfTaxes,iso4217:JPY,15290,1,,1,758-D,"[""20211107"",""900439""]",
+cor:taxCategory,,Q5,1,,1,758-D,"[""20211107"",""900439""]",
+cor:accountNumber,,6040,1,1,,758-D,"[""20211107"",""900439""]",
+cor:accountDescription,,Demo Communication,1,1,,758-D,"[""20211107"",""900439""]",
+cor:subaccountDescription,,Demo Operations,1,1,,758-D,"[""20211107"",""900439""]",department
+cor:subaccountDescription,,Demo Network Services,1,1,,758-D,"[""20211107"",""900439""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,758-D,"[""20211107"",""900439""]",department
+cor:subaccountId,,S003,1,1,,758-D,"[""20211107"",""900439""]",auxiliary-account
+cor:type,,department,1,1,,758-D,"[""20211107"",""900439""]",department
+cor:type,,auxiliary-account,1,1,,758-D,"[""20211107"",""900439""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating cost bundle 900439,1,,,758-D,"[""20211107"",""900439""]",
+cor:monetaryAmount,iso4217:JPY,168190,1,,,758-D,"[""20211107"",""900439""]",
+cor:debitCreditIndicator,,D,1,,,758-D,"[""20211107"",""900439""]",
+cor:detailDescription,,Synthetic demo operating cost bundle 900439,1,,,758-C,"[""20211107"",""900439""]",
+cor:debitCreditIndicator,,C,1,,,758-C,"[""20211107"",""900439""]",
+cor:amountOfTaxes,iso4217:JPY,19462,1,,1,759-D,"[""20211107"",""900439""]",
+cor:taxCategory,,Q5,1,,1,759-D,"[""20211107"",""900439""]",
+cor:accountNumber,,6060,1,1,,759-D,"[""20211107"",""900439""]",
+cor:accountDescription,,Demo Office Supplies,1,1,,759-D,"[""20211107"",""900439""]",
+cor:subaccountDescription,,Demo Operations,1,1,,759-D,"[""20211107"",""900439""]",department
+cor:subaccountDescription,,Demo Vendor Tandem,1,1,,759-D,"[""20211107"",""900439""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,759-D,"[""20211107"",""900439""]",department
+cor:subaccountId,,V010,1,1,,759-D,"[""20211107"",""900439""]",auxiliary-account
+cor:type,,department,1,1,,759-D,"[""20211107"",""900439""]",department
+cor:type,,auxiliary-account,1,1,,759-D,"[""20211107"",""900439""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating cost bundle 900439,1,,,759-D,"[""20211107"",""900439""]",
+cor:monetaryAmount,iso4217:JPY,214080,1,,,759-D,"[""20211107"",""900439""]",
+cor:debitCreditIndicator,,D,1,,,759-D,"[""20211107"",""900439""]",
+cor:detailDescription,,Synthetic demo operating cost bundle 900439,1,,,759-C,"[""20211107"",""900439""]",
+cor:debitCreditIndicator,,C,1,,,759-C,"[""20211107"",""900439""]",
+cor:entryDatePosted,,2021-11-07,1,,,,"[""20211107"",""900440""]",
+cor:entryId,,900440,1,,,,"[""20211107"",""900440""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,760-D,"[""20211107"",""900440""]",
+cor:taxCategory,,00,1,,1,760-D,"[""20211107"",""900440""]",
+cor:accountNumber,,1200,1,1,,760-D,"[""20211107"",""900440""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,760-D,"[""20211107"",""900440""]",
+cor:subaccountDescription,,Demo Sales,1,1,,760-D,"[""20211107"",""900440""]",department
+cor:subaccountDescription,,Demo Customer Aurora,1,1,,760-D,"[""20211107"",""900440""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,760-D,"[""20211107"",""900440""]",department
+cor:subaccountId,,C001,1,1,,760-D,"[""20211107"",""900440""]",auxiliary-account
+cor:type,,department,1,1,,760-D,"[""20211107"",""900440""]",department
+cor:type,,auxiliary-account,1,1,,760-D,"[""20211107"",""900440""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900440,1,,,760-D,"[""20211107"",""900440""]",
+cor:monetaryAmount,iso4217:JPY,83210,1,,,760-D,"[""20211107"",""900440""]",
+cor:debitCreditIndicator,,D,1,,,760-D,"[""20211107"",""900440""]",
+cor:amountOfTaxes,iso4217:JPY,7565,1,,1,760-C,"[""20211107"",""900440""]",
+cor:taxCategory,,B5,1,,1,760-C,"[""20211107"",""900440""]",
+cor:accountNumber,,4020,1,1,,760-C,"[""20211107"",""900440""]",
+cor:accountDescription,,Demo Other Operating Revenue,1,1,,760-C,"[""20211107"",""900440""]",
+cor:subaccountDescription,,Demo Sales,1,1,,760-C,"[""20211107"",""900440""]",department
+cor:subaccountDescription,,Demo Customer Aurora,1,1,,760-C,"[""20211107"",""900440""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,760-C,"[""20211107"",""900440""]",department
+cor:subaccountId,,C001,1,1,,760-C,"[""20211107"",""900440""]",auxiliary-account
+cor:type,,department,1,1,,760-C,"[""20211107"",""900440""]",department
+cor:type,,auxiliary-account,1,1,,760-C,"[""20211107"",""900440""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900440,1,,,760-C,"[""20211107"",""900440""]",
+cor:monetaryAmount,iso4217:JPY,83210,1,,,760-C,"[""20211107"",""900440""]",
+cor:debitCreditIndicator,,C,1,,,760-C,"[""20211107"",""900440""]",
+cor:entryDatePosted,,2021-11-07,1,,,,"[""20211107"",""900443""]",
+cor:entryId,,900443,1,,,,"[""20211107"",""900443""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,761-D,"[""20211107"",""900443""]",
+cor:taxCategory,,00,1,,1,761-D,"[""20211107"",""900443""]",
+cor:accountNumber,,1120,1,1,,761-D,"[""20211107"",""900443""]",
+cor:accountDescription,,Demo Harbor Ordinary Deposit,1,1,,761-D,"[""20211107"",""900443""]",
+cor:subaccountDescription,,Demo Sales,1,1,,761-D,"[""20211107"",""900443""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,761-D,"[""20211107"",""900443""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,761-D,"[""20211107"",""900443""]",department
+cor:subaccountId,,B003,1,1,,761-D,"[""20211107"",""900443""]",auxiliary-account
+cor:type,,department,1,1,,761-D,"[""20211107"",""900443""]",department
+cor:type,,auxiliary-account,1,1,,761-D,"[""20211107"",""900443""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900443,1,,,761-D,"[""20211107"",""900443""]",
+cor:monetaryAmount,iso4217:JPY,404850,1,,,761-D,"[""20211107"",""900443""]",
+cor:debitCreditIndicator,,D,1,,,761-D,"[""20211107"",""900443""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,761-C,"[""20211107"",""900443""]",
+cor:taxCategory,,00,1,,1,761-C,"[""20211107"",""900443""]",
+cor:accountNumber,,1200,1,1,,761-C,"[""20211107"",""900443""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,761-C,"[""20211107"",""900443""]",
+cor:subaccountDescription,,Demo Sales,1,1,,761-C,"[""20211107"",""900443""]",department
+cor:subaccountDescription,,Demo Customer Juniper,1,1,,761-C,"[""20211107"",""900443""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,761-C,"[""20211107"",""900443""]",department
+cor:subaccountId,,C010,1,1,,761-C,"[""20211107"",""900443""]",auxiliary-account
+cor:type,,department,1,1,,761-C,"[""20211107"",""900443""]",department
+cor:type,,auxiliary-account,1,1,,761-C,"[""20211107"",""900443""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900443,1,,,761-C,"[""20211107"",""900443""]",
+cor:monetaryAmount,iso4217:JPY,404850,1,,,761-C,"[""20211107"",""900443""]",
+cor:debitCreditIndicator,,C,1,,,761-C,"[""20211107"",""900443""]",
+cor:entryDatePosted,,2021-11-07,1,,,,"[""20211107"",""900464""]",
+cor:entryId,,900464,1,,,,"[""20211107"",""900464""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,762-D,"[""20211107"",""900464""]",
+cor:taxCategory,,00,1,,1,762-D,"[""20211107"",""900464""]",
+cor:accountNumber,,1120,1,1,,762-D,"[""20211107"",""900464""]",
+cor:accountDescription,,Demo Harbor Ordinary Deposit,1,1,,762-D,"[""20211107"",""900464""]",
+cor:subaccountDescription,,Demo Sales,1,1,,762-D,"[""20211107"",""900464""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,762-D,"[""20211107"",""900464""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,762-D,"[""20211107"",""900464""]",department
+cor:subaccountId,,B003,1,1,,762-D,"[""20211107"",""900464""]",auxiliary-account
+cor:type,,department,1,1,,762-D,"[""20211107"",""900464""]",department
+cor:type,,auxiliary-account,1,1,,762-D,"[""20211107"",""900464""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900464,1,,,762-D,"[""20211107"",""900464""]",
+cor:monetaryAmount,iso4217:JPY,121240,1,,,762-D,"[""20211107"",""900464""]",
+cor:debitCreditIndicator,,D,1,,,762-D,"[""20211107"",""900464""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,762-C,"[""20211107"",""900464""]",
+cor:taxCategory,,00,1,,1,762-C,"[""20211107"",""900464""]",
+cor:accountNumber,,1200,1,1,,762-C,"[""20211107"",""900464""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,762-C,"[""20211107"",""900464""]",
+cor:subaccountDescription,,Demo Sales,1,1,,762-C,"[""20211107"",""900464""]",department
+cor:subaccountDescription,,Demo Customer Cobalt,1,1,,762-C,"[""20211107"",""900464""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,762-C,"[""20211107"",""900464""]",department
+cor:subaccountId,,C003,1,1,,762-C,"[""20211107"",""900464""]",auxiliary-account
+cor:type,,department,1,1,,762-C,"[""20211107"",""900464""]",department
+cor:type,,auxiliary-account,1,1,,762-C,"[""20211107"",""900464""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900464,1,,,762-C,"[""20211107"",""900464""]",
+cor:monetaryAmount,iso4217:JPY,121240,1,,,762-C,"[""20211107"",""900464""]",
+cor:debitCreditIndicator,,C,1,,,762-C,"[""20211107"",""900464""]",
+cor:entryDatePosted,,2021-11-08,1,,,,"[""20211108"",""900449""]",
+cor:entryId,,900449,1,,,,"[""20211108"",""900449""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,763-D,"[""20211108"",""900449""]",
+cor:taxCategory,,00,1,,1,763-D,"[""20211108"",""900449""]",
+cor:accountNumber,,2000,1,1,,763-D,"[""20211108"",""900449""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,763-D,"[""20211108"",""900449""]",
+cor:subaccountDescription,,Demo Sales,1,1,,763-D,"[""20211108"",""900449""]",department
+cor:subaccountDescription,,Demo Vendor Tandem,1,1,,763-D,"[""20211108"",""900449""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,763-D,"[""20211108"",""900449""]",department
+cor:subaccountId,,V010,1,1,,763-D,"[""20211108"",""900449""]",auxiliary-account
+cor:type,,department,1,1,,763-D,"[""20211108"",""900449""]",department
+cor:type,,auxiliary-account,1,1,,763-D,"[""20211108"",""900449""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900449,1,,,763-D,"[""20211108"",""900449""]",
+cor:monetaryAmount,iso4217:JPY,401520,1,,,763-D,"[""20211108"",""900449""]",
+cor:debitCreditIndicator,,D,1,,,763-D,"[""20211108"",""900449""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900449,1,,,763-C,"[""20211108"",""900449""]",
+cor:debitCreditIndicator,,C,1,,,763-C,"[""20211108"",""900449""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,764-D,"[""20211108"",""900449""]",
+cor:taxCategory,,00,1,,1,764-D,"[""20211108"",""900449""]",
+cor:accountNumber,,2100,1,1,,764-D,"[""20211108"",""900449""]",
+cor:accountDescription,,Demo Accrued Payables,1,1,,764-D,"[""20211108"",""900449""]",
+cor:subaccountDescription,,Demo Sales,1,1,,764-D,"[""20211108"",""900449""]",department
+cor:subaccountDescription,,Demo Vendor Mosaic,1,1,,764-D,"[""20211108"",""900449""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,764-D,"[""20211108"",""900449""]",department
+cor:subaccountId,,V003,1,1,,764-D,"[""20211108"",""900449""]",auxiliary-account
+cor:type,,department,1,1,,764-D,"[""20211108"",""900449""]",department
+cor:type,,auxiliary-account,1,1,,764-D,"[""20211108"",""900449""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900449,1,,,764-D,"[""20211108"",""900449""]",
+cor:monetaryAmount,iso4217:JPY,156160,1,,,764-D,"[""20211108"",""900449""]",
+cor:debitCreditIndicator,,D,1,,,764-D,"[""20211108"",""900449""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900449,1,,,764-C,"[""20211108"",""900449""]",
+cor:debitCreditIndicator,,C,1,,,764-C,"[""20211108"",""900449""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900449,1,,,765-D,"[""20211108"",""900449""]",
+cor:debitCreditIndicator,,D,1,,,765-D,"[""20211108"",""900449""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,765-C,"[""20211108"",""900449""]",
+cor:taxCategory,,00,1,,1,765-C,"[""20211108"",""900449""]",
+cor:accountNumber,,1120,1,1,,765-C,"[""20211108"",""900449""]",
+cor:accountDescription,,Demo Harbor Ordinary Deposit,1,1,,765-C,"[""20211108"",""900449""]",
+cor:subaccountDescription,,Demo Sales,1,1,,765-C,"[""20211108"",""900449""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,765-C,"[""20211108"",""900449""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,765-C,"[""20211108"",""900449""]",department
+cor:subaccountId,,B003,1,1,,765-C,"[""20211108"",""900449""]",auxiliary-account
+cor:type,,department,1,1,,765-C,"[""20211108"",""900449""]",department
+cor:type,,auxiliary-account,1,1,,765-C,"[""20211108"",""900449""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900449,1,,,765-C,"[""20211108"",""900449""]",
+cor:monetaryAmount,iso4217:JPY,133840,1,,,765-C,"[""20211108"",""900449""]",
+cor:debitCreditIndicator,,C,1,,,765-C,"[""20211108"",""900449""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900449,1,,,766-D,"[""20211108"",""900449""]",
+cor:debitCreditIndicator,,D,1,,,766-D,"[""20211108"",""900449""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,766-C,"[""20211108"",""900449""]",
+cor:taxCategory,,00,1,,1,766-C,"[""20211108"",""900449""]",
+cor:accountNumber,,1100,1,1,,766-C,"[""20211108"",""900449""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,766-C,"[""20211108"",""900449""]",
+cor:subaccountDescription,,Demo Sales,1,1,,766-C,"[""20211108"",""900449""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,766-C,"[""20211108"",""900449""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,766-C,"[""20211108"",""900449""]",department
+cor:subaccountId,,B001,1,1,,766-C,"[""20211108"",""900449""]",auxiliary-account
+cor:type,,department,1,1,,766-C,"[""20211108"",""900449""]",department
+cor:type,,auxiliary-account,1,1,,766-C,"[""20211108"",""900449""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900449,1,,,766-C,"[""20211108"",""900449""]",
+cor:monetaryAmount,iso4217:JPY,423840,1,,,766-C,"[""20211108"",""900449""]",
+cor:debitCreditIndicator,,C,1,,,766-C,"[""20211108"",""900449""]",
+cor:entryDatePosted,,2021-11-09,1,,,,"[""20211109"",""900422""]",
+cor:entryId,,900422,1,,,,"[""20211109"",""900422""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,767-D,"[""20211109"",""900422""]",
+cor:taxCategory,,00,1,,1,767-D,"[""20211109"",""900422""]",
+cor:accountNumber,,1200,1,1,,767-D,"[""20211109"",""900422""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,767-D,"[""20211109"",""900422""]",
+cor:subaccountDescription,,Demo Sales,1,1,,767-D,"[""20211109"",""900422""]",department
+cor:subaccountDescription,,Demo Customer Grove,1,1,,767-D,"[""20211109"",""900422""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,767-D,"[""20211109"",""900422""]",department
+cor:subaccountId,,C007,1,1,,767-D,"[""20211109"",""900422""]",auxiliary-account
+cor:type,,department,1,1,,767-D,"[""20211109"",""900422""]",department
+cor:type,,auxiliary-account,1,1,,767-D,"[""20211109"",""900422""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900422,1,,,767-D,"[""20211109"",""900422""]",
+cor:monetaryAmount,iso4217:JPY,580680,1,,,767-D,"[""20211109"",""900422""]",
+cor:debitCreditIndicator,,D,1,,,767-D,"[""20211109"",""900422""]",
+cor:amountOfTaxes,iso4217:JPY,52789,1,,1,767-C,"[""20211109"",""900422""]",
+cor:taxCategory,,B5,1,,1,767-C,"[""20211109"",""900422""]",
+cor:accountNumber,,4020,1,1,,767-C,"[""20211109"",""900422""]",
+cor:accountDescription,,Demo Other Operating Revenue,1,1,,767-C,"[""20211109"",""900422""]",
+cor:subaccountDescription,,Demo Sales,1,1,,767-C,"[""20211109"",""900422""]",department
+cor:subaccountDescription,,Demo Customer Grove,1,1,,767-C,"[""20211109"",""900422""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,767-C,"[""20211109"",""900422""]",department
+cor:subaccountId,,C007,1,1,,767-C,"[""20211109"",""900422""]",auxiliary-account
+cor:type,,department,1,1,,767-C,"[""20211109"",""900422""]",department
+cor:type,,auxiliary-account,1,1,,767-C,"[""20211109"",""900422""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900422,1,,,767-C,"[""20211109"",""900422""]",
+cor:monetaryAmount,iso4217:JPY,580680,1,,,767-C,"[""20211109"",""900422""]",
+cor:debitCreditIndicator,,C,1,,,767-C,"[""20211109"",""900422""]",
+cor:entryDatePosted,,2021-11-09,1,,,,"[""20211109"",""900423""]",
+cor:entryId,,900423,1,,,,"[""20211109"",""900423""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,768-D,"[""20211109"",""900423""]",
+cor:taxCategory,,00,1,,1,768-D,"[""20211109"",""900423""]",
+cor:accountNumber,,1100,1,1,,768-D,"[""20211109"",""900423""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,768-D,"[""20211109"",""900423""]",
+cor:subaccountDescription,,Demo Sales,1,1,,768-D,"[""20211109"",""900423""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,768-D,"[""20211109"",""900423""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,768-D,"[""20211109"",""900423""]",department
+cor:subaccountId,,B001,1,1,,768-D,"[""20211109"",""900423""]",auxiliary-account
+cor:type,,department,1,1,,768-D,"[""20211109"",""900423""]",department
+cor:type,,auxiliary-account,1,1,,768-D,"[""20211109"",""900423""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900423,1,,,768-D,"[""20211109"",""900423""]",
+cor:monetaryAmount,iso4217:JPY,220510,1,,,768-D,"[""20211109"",""900423""]",
+cor:debitCreditIndicator,,D,1,,,768-D,"[""20211109"",""900423""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,768-C,"[""20211109"",""900423""]",
+cor:taxCategory,,00,1,,1,768-C,"[""20211109"",""900423""]",
+cor:accountNumber,,1200,1,1,,768-C,"[""20211109"",""900423""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,768-C,"[""20211109"",""900423""]",
+cor:subaccountDescription,,Demo Sales,1,1,,768-C,"[""20211109"",""900423""]",department
+cor:subaccountDescription,,Demo Customer Juniper,1,1,,768-C,"[""20211109"",""900423""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,768-C,"[""20211109"",""900423""]",department
+cor:subaccountId,,C010,1,1,,768-C,"[""20211109"",""900423""]",auxiliary-account
+cor:type,,department,1,1,,768-C,"[""20211109"",""900423""]",department
+cor:type,,auxiliary-account,1,1,,768-C,"[""20211109"",""900423""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900423,1,,,768-C,"[""20211109"",""900423""]",
+cor:monetaryAmount,iso4217:JPY,220510,1,,,768-C,"[""20211109"",""900423""]",
+cor:debitCreditIndicator,,C,1,,,768-C,"[""20211109"",""900423""]",
+cor:entryDatePosted,,2021-11-09,1,,,,"[""20211109"",""900450""]",
+cor:entryId,,900450,1,,,,"[""20211109"",""900450""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,769-D,"[""20211109"",""900450""]",
+cor:taxCategory,,00,1,,1,769-D,"[""20211109"",""900450""]",
+cor:accountNumber,,1200,1,1,,769-D,"[""20211109"",""900450""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,769-D,"[""20211109"",""900450""]",
+cor:subaccountDescription,,Demo Sales,1,1,,769-D,"[""20211109"",""900450""]",department
+cor:subaccountDescription,,Demo Customer Aurora,1,1,,769-D,"[""20211109"",""900450""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,769-D,"[""20211109"",""900450""]",department
+cor:subaccountId,,C001,1,1,,769-D,"[""20211109"",""900450""]",auxiliary-account
+cor:type,,department,1,1,,769-D,"[""20211109"",""900450""]",department
+cor:type,,auxiliary-account,1,1,,769-D,"[""20211109"",""900450""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900450,1,,,769-D,"[""20211109"",""900450""]",
+cor:monetaryAmount,iso4217:JPY,438240,1,,,769-D,"[""20211109"",""900450""]",
+cor:debitCreditIndicator,,D,1,,,769-D,"[""20211109"",""900450""]",
+cor:amountOfTaxes,iso4217:JPY,39840,1,,1,769-C,"[""20211109"",""900450""]",
+cor:taxCategory,,B5,1,,1,769-C,"[""20211109"",""900450""]",
+cor:accountNumber,,4000,1,1,,769-C,"[""20211109"",""900450""]",
+cor:accountDescription,,Demo Product Sales,1,1,,769-C,"[""20211109"",""900450""]",
+cor:subaccountDescription,,Demo Sales,1,1,,769-C,"[""20211109"",""900450""]",department
+cor:subaccountDescription,,Demo Customer Aurora,1,1,,769-C,"[""20211109"",""900450""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,769-C,"[""20211109"",""900450""]",department
+cor:subaccountId,,C001,1,1,,769-C,"[""20211109"",""900450""]",auxiliary-account
+cor:type,,department,1,1,,769-C,"[""20211109"",""900450""]",department
+cor:type,,auxiliary-account,1,1,,769-C,"[""20211109"",""900450""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900450,1,,,769-C,"[""20211109"",""900450""]",
+cor:monetaryAmount,iso4217:JPY,438240,1,,,769-C,"[""20211109"",""900450""]",
+cor:debitCreditIndicator,,C,1,,,769-C,"[""20211109"",""900450""]",
+cor:entryDatePosted,,2021-11-09,1,,,,"[""20211109"",""900451""]",
+cor:entryId,,900451,1,,,,"[""20211109"",""900451""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,770-D,"[""20211109"",""900451""]",
+cor:taxCategory,,00,1,,1,770-D,"[""20211109"",""900451""]",
+cor:accountNumber,,1200,1,1,,770-D,"[""20211109"",""900451""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,770-D,"[""20211109"",""900451""]",
+cor:subaccountDescription,,Demo Sales,1,1,,770-D,"[""20211109"",""900451""]",department
+cor:subaccountDescription,,Demo Customer Dawn,1,1,,770-D,"[""20211109"",""900451""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,770-D,"[""20211109"",""900451""]",department
+cor:subaccountId,,C004,1,1,,770-D,"[""20211109"",""900451""]",auxiliary-account
+cor:type,,department,1,1,,770-D,"[""20211109"",""900451""]",department
+cor:type,,auxiliary-account,1,1,,770-D,"[""20211109"",""900451""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900451,1,,,770-D,"[""20211109"",""900451""]",
+cor:monetaryAmount,iso4217:JPY,300970,1,,,770-D,"[""20211109"",""900451""]",
+cor:debitCreditIndicator,,D,1,,,770-D,"[""20211109"",""900451""]",
+cor:amountOfTaxes,iso4217:JPY,27361,1,,1,770-C,"[""20211109"",""900451""]",
+cor:taxCategory,,B5,1,,1,770-C,"[""20211109"",""900451""]",
+cor:accountNumber,,4010,1,1,,770-C,"[""20211109"",""900451""]",
+cor:accountDescription,,Demo Service Revenue,1,1,,770-C,"[""20211109"",""900451""]",
+cor:subaccountDescription,,Demo Sales,1,1,,770-C,"[""20211109"",""900451""]",department
+cor:subaccountDescription,,Demo Customer Dawn,1,1,,770-C,"[""20211109"",""900451""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,770-C,"[""20211109"",""900451""]",department
+cor:subaccountId,,C004,1,1,,770-C,"[""20211109"",""900451""]",auxiliary-account
+cor:type,,department,1,1,,770-C,"[""20211109"",""900451""]",department
+cor:type,,auxiliary-account,1,1,,770-C,"[""20211109"",""900451""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900451,1,,,770-C,"[""20211109"",""900451""]",
+cor:monetaryAmount,iso4217:JPY,300970,1,,,770-C,"[""20211109"",""900451""]",
+cor:debitCreditIndicator,,C,1,,,770-C,"[""20211109"",""900451""]",
+cor:entryDatePosted,,2021-11-10,1,,,,"[""20211110"",""900420""]",
+cor:entryId,,900420,1,,,,"[""20211110"",""900420""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,771-D,"[""20211110"",""900420""]",
+cor:taxCategory,,00,1,,1,771-D,"[""20211110"",""900420""]",
+cor:accountNumber,,6000,1,1,,771-D,"[""20211110"",""900420""]",
+cor:accountDescription,,Demo Salaries,1,1,,771-D,"[""20211110"",""900420""]",
+cor:subaccountDescription,,Demo Administration,1,1,,771-D,"[""20211110"",""900420""]",department
+cor:subaccountId,,D02,1,1,,771-D,"[""20211110"",""900420""]",department
+cor:type,,department,1,1,,771-D,"[""20211110"",""900420""]",department
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900420,1,,,771-D,"[""20211110"",""900420""]",
+cor:monetaryAmount,iso4217:JPY,123200,1,,,771-D,"[""20211110"",""900420""]",
+cor:debitCreditIndicator,,D,1,,,771-D,"[""20211110"",""900420""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,771-C,"[""20211110"",""900420""]",
+cor:taxCategory,,00,1,,1,771-C,"[""20211110"",""900420""]",
+cor:accountNumber,,1100,1,1,,771-C,"[""20211110"",""900420""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,771-C,"[""20211110"",""900420""]",
+cor:subaccountDescription,,Demo Administration,1,1,,771-C,"[""20211110"",""900420""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,771-C,"[""20211110"",""900420""]",auxiliary-account
+cor:subaccountId,,D02,1,1,,771-C,"[""20211110"",""900420""]",department
+cor:subaccountId,,B001,1,1,,771-C,"[""20211110"",""900420""]",auxiliary-account
+cor:type,,department,1,1,,771-C,"[""20211110"",""900420""]",department
+cor:type,,auxiliary-account,1,1,,771-C,"[""20211110"",""900420""]",auxiliary-account
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900420,1,,,771-C,"[""20211110"",""900420""]",
+cor:monetaryAmount,iso4217:JPY,300510,1,,,771-C,"[""20211110"",""900420""]",
+cor:debitCreditIndicator,,C,1,,,771-C,"[""20211110"",""900420""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,772-D,"[""20211110"",""900420""]",
+cor:taxCategory,,00,1,,1,772-D,"[""20211110"",""900420""]",
+cor:accountNumber,,6010,1,1,,772-D,"[""20211110"",""900420""]",
+cor:accountDescription,,Demo Statutory Welfare,1,1,,772-D,"[""20211110"",""900420""]",
+cor:subaccountDescription,,Demo Administration,1,1,,772-D,"[""20211110"",""900420""]",department
+cor:subaccountId,,D02,1,1,,772-D,"[""20211110"",""900420""]",department
+cor:type,,department,1,1,,772-D,"[""20211110"",""900420""]",department
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900420,1,,,772-D,"[""20211110"",""900420""]",
+cor:monetaryAmount,iso4217:JPY,108180,1,,,772-D,"[""20211110"",""900420""]",
+cor:debitCreditIndicator,,D,1,,,772-D,"[""20211110"",""900420""]",
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900420,1,,,772-C,"[""20211110"",""900420""]",
+cor:debitCreditIndicator,,C,1,,,772-C,"[""20211110"",""900420""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,773-D,"[""20211110"",""900420""]",
+cor:taxCategory,,00,1,,1,773-D,"[""20211110"",""900420""]",
+cor:accountNumber,,2110,1,1,,773-D,"[""20211110"",""900420""]",
+cor:accountDescription,,Demo Payroll Withholding,1,1,,773-D,"[""20211110"",""900420""]",
+cor:subaccountDescription,,Demo Administration,1,1,,773-D,"[""20211110"",""900420""]",department
+cor:subaccountId,,D02,1,1,,773-D,"[""20211110"",""900420""]",department
+cor:type,,department,1,1,,773-D,"[""20211110"",""900420""]",department
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900420,1,,,773-D,"[""20211110"",""900420""]",
+cor:monetaryAmount,iso4217:JPY,69130,1,,,773-D,"[""20211110"",""900420""]",
+cor:debitCreditIndicator,,D,1,,,773-D,"[""20211110"",""900420""]",
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900420,1,,,773-C,"[""20211110"",""900420""]",
+cor:debitCreditIndicator,,C,1,,,773-C,"[""20211110"",""900420""]",
+cor:entryDatePosted,,2021-11-10,1,,,,"[""20211110"",""900429""]",
+cor:entryId,,900429,1,,,,"[""20211110"",""900429""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,774-D,"[""20211110"",""900429""]",
+cor:taxCategory,,00,1,,1,774-D,"[""20211110"",""900429""]",
+cor:accountNumber,,1400,1,1,,774-D,"[""20211110"",""900429""]",
+cor:accountDescription,,Demo Prepaid Expenses,1,1,,774-D,"[""20211110"",""900429""]",
+cor:subaccountDescription,,Demo Digital Services,1,1,,774-D,"[""20211110"",""900429""]",department
+cor:subaccountDescription,,Demo Logistics Services,1,1,,774-D,"[""20211110"",""900429""]",auxiliary-account
+cor:subaccountId,,D05,1,1,,774-D,"[""20211110"",""900429""]",department
+cor:subaccountId,,S004,1,1,,774-D,"[""20211110"",""900429""]",auxiliary-account
+cor:type,,department,1,1,,774-D,"[""20211110"",""900429""]",department
+cor:type,,auxiliary-account,1,1,,774-D,"[""20211110"",""900429""]",auxiliary-account
+cor:detailDescription,,Synthetic demo prepaid service 900429,1,,,774-D,"[""20211110"",""900429""]",
+cor:monetaryAmount,iso4217:JPY,79610,1,,,774-D,"[""20211110"",""900429""]",
+cor:debitCreditIndicator,,D,1,,,774-D,"[""20211110"",""900429""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,774-C,"[""20211110"",""900429""]",
+cor:taxCategory,,00,1,,1,774-C,"[""20211110"",""900429""]",
+cor:accountNumber,,1100,1,1,,774-C,"[""20211110"",""900429""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,774-C,"[""20211110"",""900429""]",
+cor:subaccountDescription,,Demo Digital Services,1,1,,774-C,"[""20211110"",""900429""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,774-C,"[""20211110"",""900429""]",auxiliary-account
+cor:subaccountId,,D05,1,1,,774-C,"[""20211110"",""900429""]",department
+cor:subaccountId,,B001,1,1,,774-C,"[""20211110"",""900429""]",auxiliary-account
+cor:type,,department,1,1,,774-C,"[""20211110"",""900429""]",department
+cor:type,,auxiliary-account,1,1,,774-C,"[""20211110"",""900429""]",auxiliary-account
+cor:detailDescription,,Synthetic demo prepaid service 900429,1,,,774-C,"[""20211110"",""900429""]",
+cor:monetaryAmount,iso4217:JPY,79610,1,,,774-C,"[""20211110"",""900429""]",
+cor:debitCreditIndicator,,C,1,,,774-C,"[""20211110"",""900429""]",
+cor:entryDatePosted,,2021-11-12,1,,,,"[""20211112"",""900456""]",
+cor:entryId,,900456,1,,,,"[""20211112"",""900456""]",
+cor:amountOfTaxes,iso4217:JPY,18568,1,,1,775-D,"[""20211112"",""900456""]",
+cor:taxCategory,,Q5,1,,1,775-D,"[""20211112"",""900456""]",
+cor:accountNumber,,5000,1,1,,775-D,"[""20211112"",""900456""]",
+cor:accountDescription,,Demo Purchases,1,1,,775-D,"[""20211112"",""900456""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,775-D,"[""20211112"",""900456""]",department
+cor:subaccountDescription,,Demo Vendor Keystone,1,1,,775-D,"[""20211112"",""900456""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,775-D,"[""20211112"",""900456""]",department
+cor:subaccountId,,V001,1,1,,775-D,"[""20211112"",""900456""]",auxiliary-account
+cor:type,,department,1,1,,775-D,"[""20211112"",""900456""]",department
+cor:type,,auxiliary-account,1,1,,775-D,"[""20211112"",""900456""]",auxiliary-account
+cor:detailDescription,,Synthetic demo purchase on account 900456,1,,,775-D,"[""20211112"",""900456""]",
+cor:monetaryAmount,iso4217:JPY,204250,1,,,775-D,"[""20211112"",""900456""]",
+cor:debitCreditIndicator,,D,1,,,775-D,"[""20211112"",""900456""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,775-C,"[""20211112"",""900456""]",
+cor:taxCategory,,00,1,,1,775-C,"[""20211112"",""900456""]",
+cor:accountNumber,,2000,1,1,,775-C,"[""20211112"",""900456""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,775-C,"[""20211112"",""900456""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,775-C,"[""20211112"",""900456""]",department
+cor:subaccountDescription,,Demo Vendor Keystone,1,1,,775-C,"[""20211112"",""900456""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,775-C,"[""20211112"",""900456""]",department
+cor:subaccountId,,V001,1,1,,775-C,"[""20211112"",""900456""]",auxiliary-account
+cor:type,,department,1,1,,775-C,"[""20211112"",""900456""]",department
+cor:type,,auxiliary-account,1,1,,775-C,"[""20211112"",""900456""]",auxiliary-account
+cor:detailDescription,,Synthetic demo purchase on account 900456,1,,,775-C,"[""20211112"",""900456""]",
+cor:monetaryAmount,iso4217:JPY,204250,1,,,775-C,"[""20211112"",""900456""]",
+cor:debitCreditIndicator,,C,1,,,775-C,"[""20211112"",""900456""]",
+cor:entryDatePosted,,2021-11-13,1,,,,"[""20211113"",""900441""]",
+cor:entryId,,900441,1,,,,"[""20211113"",""900441""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,776-D,"[""20211113"",""900441""]",
+cor:taxCategory,,00,1,,1,776-D,"[""20211113"",""900441""]",
+cor:accountNumber,,1200,1,1,,776-D,"[""20211113"",""900441""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,776-D,"[""20211113"",""900441""]",
+cor:subaccountDescription,,Demo Sales,1,1,,776-D,"[""20211113"",""900441""]",department
+cor:subaccountDescription,,Demo Customer Dawn,1,1,,776-D,"[""20211113"",""900441""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,776-D,"[""20211113"",""900441""]",department
+cor:subaccountId,,C004,1,1,,776-D,"[""20211113"",""900441""]",auxiliary-account
+cor:type,,department,1,1,,776-D,"[""20211113"",""900441""]",department
+cor:type,,auxiliary-account,1,1,,776-D,"[""20211113"",""900441""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900441,1,,,776-D,"[""20211113"",""900441""]",
+cor:monetaryAmount,iso4217:JPY,337560,1,,,776-D,"[""20211113"",""900441""]",
+cor:debitCreditIndicator,,D,1,,,776-D,"[""20211113"",""900441""]",
+cor:amountOfTaxes,iso4217:JPY,30687,1,,1,776-C,"[""20211113"",""900441""]",
+cor:taxCategory,,B5,1,,1,776-C,"[""20211113"",""900441""]",
+cor:accountNumber,,4000,1,1,,776-C,"[""20211113"",""900441""]",
+cor:accountDescription,,Demo Product Sales,1,1,,776-C,"[""20211113"",""900441""]",
+cor:subaccountDescription,,Demo Sales,1,1,,776-C,"[""20211113"",""900441""]",department
+cor:subaccountDescription,,Demo Customer Dawn,1,1,,776-C,"[""20211113"",""900441""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,776-C,"[""20211113"",""900441""]",department
+cor:subaccountId,,C004,1,1,,776-C,"[""20211113"",""900441""]",auxiliary-account
+cor:type,,department,1,1,,776-C,"[""20211113"",""900441""]",department
+cor:type,,auxiliary-account,1,1,,776-C,"[""20211113"",""900441""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900441,1,,,776-C,"[""20211113"",""900441""]",
+cor:monetaryAmount,iso4217:JPY,337560,1,,,776-C,"[""20211113"",""900441""]",
+cor:debitCreditIndicator,,C,1,,,776-C,"[""20211113"",""900441""]",
+cor:entryDatePosted,,2021-11-14,1,,,,"[""20211114"",""900421""]",
+cor:entryId,,900421,1,,,,"[""20211114"",""900421""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,777-D,"[""20211114"",""900421""]",
+cor:taxCategory,,00,1,,1,777-D,"[""20211114"",""900421""]",
+cor:accountNumber,,1200,1,1,,777-D,"[""20211114"",""900421""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,777-D,"[""20211114"",""900421""]",
+cor:subaccountDescription,,Demo Sales,1,1,,777-D,"[""20211114"",""900421""]",department
+cor:subaccountDescription,,Demo Customer Dawn,1,1,,777-D,"[""20211114"",""900421""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,777-D,"[""20211114"",""900421""]",department
+cor:subaccountId,,C004,1,1,,777-D,"[""20211114"",""900421""]",auxiliary-account
+cor:type,,department,1,1,,777-D,"[""20211114"",""900421""]",department
+cor:type,,auxiliary-account,1,1,,777-D,"[""20211114"",""900421""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900421,1,,,777-D,"[""20211114"",""900421""]",
+cor:monetaryAmount,iso4217:JPY,167500,1,,,777-D,"[""20211114"",""900421""]",
+cor:debitCreditIndicator,,D,1,,,777-D,"[""20211114"",""900421""]",
+cor:amountOfTaxes,iso4217:JPY,15227,1,,1,777-C,"[""20211114"",""900421""]",
+cor:taxCategory,,B5,1,,1,777-C,"[""20211114"",""900421""]",
+cor:accountNumber,,4010,1,1,,777-C,"[""20211114"",""900421""]",
+cor:accountDescription,,Demo Service Revenue,1,1,,777-C,"[""20211114"",""900421""]",
+cor:subaccountDescription,,Demo Sales,1,1,,777-C,"[""20211114"",""900421""]",department
+cor:subaccountDescription,,Demo Customer Dawn,1,1,,777-C,"[""20211114"",""900421""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,777-C,"[""20211114"",""900421""]",department
+cor:subaccountId,,C004,1,1,,777-C,"[""20211114"",""900421""]",auxiliary-account
+cor:type,,department,1,1,,777-C,"[""20211114"",""900421""]",department
+cor:type,,auxiliary-account,1,1,,777-C,"[""20211114"",""900421""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900421,1,,,777-C,"[""20211114"",""900421""]",
+cor:monetaryAmount,iso4217:JPY,167500,1,,,777-C,"[""20211114"",""900421""]",
+cor:debitCreditIndicator,,C,1,,,777-C,"[""20211114"",""900421""]",
+cor:entryDatePosted,,2021-11-14,1,,,,"[""20211114"",""900433""]",
+cor:entryId,,900433,1,,,,"[""20211114"",""900433""]",
+cor:amountOfTaxes,iso4217:JPY,3392,1,,1,778-D,"[""20211114"",""900433""]",
+cor:taxCategory,,Q5,1,,1,778-D,"[""20211114"",""900433""]",
+cor:accountNumber,,6030,1,1,,778-D,"[""20211114"",""900433""]",
+cor:accountDescription,,Demo Utilities,1,1,,778-D,"[""20211114"",""900433""]",
+cor:subaccountDescription,,Demo Operations,1,1,,778-D,"[""20211114"",""900433""]",department
+cor:subaccountDescription,,Demo Energy Services,1,1,,778-D,"[""20211114"",""900433""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,778-D,"[""20211114"",""900433""]",department
+cor:subaccountId,,S002,1,1,,778-D,"[""20211114"",""900433""]",auxiliary-account
+cor:type,,department,1,1,,778-D,"[""20211114"",""900433""]",department
+cor:type,,auxiliary-account,1,1,,778-D,"[""20211114"",""900433""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating cost bundle 900433,1,,,778-D,"[""20211114"",""900433""]",
+cor:monetaryAmount,iso4217:JPY,37310,1,,,778-D,"[""20211114"",""900433""]",
+cor:debitCreditIndicator,,D,1,,,778-D,"[""20211114"",""900433""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,778-C,"[""20211114"",""900433""]",
+cor:taxCategory,,00,1,,1,778-C,"[""20211114"",""900433""]",
+cor:accountNumber,,1110,1,1,,778-C,"[""20211114"",""900433""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,778-C,"[""20211114"",""900433""]",
+cor:subaccountDescription,,Demo Operations,1,1,,778-C,"[""20211114"",""900433""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,778-C,"[""20211114"",""900433""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,778-C,"[""20211114"",""900433""]",department
+cor:subaccountId,,B002,1,1,,778-C,"[""20211114"",""900433""]",auxiliary-account
+cor:type,,department,1,1,,778-C,"[""20211114"",""900433""]",department
+cor:type,,auxiliary-account,1,1,,778-C,"[""20211114"",""900433""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating cost bundle 900433,1,,,778-C,"[""20211114"",""900433""]",
+cor:monetaryAmount,iso4217:JPY,186570,1,,,778-C,"[""20211114"",""900433""]",
+cor:debitCreditIndicator,,C,1,,,778-C,"[""20211114"",""900433""]",
+cor:amountOfTaxes,iso4217:JPY,1356,1,,1,779-D,"[""20211114"",""900433""]",
+cor:taxCategory,,Q5,1,,1,779-D,"[""20211114"",""900433""]",
+cor:accountNumber,,6040,1,1,,779-D,"[""20211114"",""900433""]",
+cor:accountDescription,,Demo Communication,1,1,,779-D,"[""20211114"",""900433""]",
+cor:subaccountDescription,,Demo Operations,1,1,,779-D,"[""20211114"",""900433""]",department
+cor:subaccountDescription,,Demo Network Services,1,1,,779-D,"[""20211114"",""900433""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,779-D,"[""20211114"",""900433""]",department
+cor:subaccountId,,S003,1,1,,779-D,"[""20211114"",""900433""]",auxiliary-account
+cor:type,,department,1,1,,779-D,"[""20211114"",""900433""]",department
+cor:type,,auxiliary-account,1,1,,779-D,"[""20211114"",""900433""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating cost bundle 900433,1,,,779-D,"[""20211114"",""900433""]",
+cor:monetaryAmount,iso4217:JPY,14920,1,,,779-D,"[""20211114"",""900433""]",
+cor:debitCreditIndicator,,D,1,,,779-D,"[""20211114"",""900433""]",
+cor:detailDescription,,Synthetic demo operating cost bundle 900433,1,,,779-C,"[""20211114"",""900433""]",
+cor:debitCreditIndicator,,C,1,,,779-C,"[""20211114"",""900433""]",
+cor:amountOfTaxes,iso4217:JPY,12213,1,,1,780-D,"[""20211114"",""900433""]",
+cor:taxCategory,,Q5,1,,1,780-D,"[""20211114"",""900433""]",
+cor:accountNumber,,6060,1,1,,780-D,"[""20211114"",""900433""]",
+cor:accountDescription,,Demo Office Supplies,1,1,,780-D,"[""20211114"",""900433""]",
+cor:subaccountDescription,,Demo Operations,1,1,,780-D,"[""20211114"",""900433""]",department
+cor:subaccountDescription,,Demo Vendor Nimbus,1,1,,780-D,"[""20211114"",""900433""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,780-D,"[""20211114"",""900433""]",department
+cor:subaccountId,,V004,1,1,,780-D,"[""20211114"",""900433""]",auxiliary-account
+cor:type,,department,1,1,,780-D,"[""20211114"",""900433""]",department
+cor:type,,auxiliary-account,1,1,,780-D,"[""20211114"",""900433""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating cost bundle 900433,1,,,780-D,"[""20211114"",""900433""]",
+cor:monetaryAmount,iso4217:JPY,134340,1,,,780-D,"[""20211114"",""900433""]",
+cor:debitCreditIndicator,,D,1,,,780-D,"[""20211114"",""900433""]",
+cor:detailDescription,,Synthetic demo operating cost bundle 900433,1,,,780-C,"[""20211114"",""900433""]",
+cor:debitCreditIndicator,,C,1,,,780-C,"[""20211114"",""900433""]",
+cor:entryDatePosted,,2021-11-14,1,,,,"[""20211114"",""900448""]",
+cor:entryId,,900448,1,,,,"[""20211114"",""900448""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,781-D,"[""20211114"",""900448""]",
+cor:taxCategory,,P0,1,,1,781-D,"[""20211114"",""900448""]",
+cor:accountNumber,,7000,1,1,,781-D,"[""20211114"",""900448""]",
+cor:accountDescription,,Demo Taxes and Dues,1,1,,781-D,"[""20211114"",""900448""]",
+cor:subaccountDescription,,Demo Operations,1,1,,781-D,"[""20211114"",""900448""]",department
+cor:subaccountDescription,,Demo Vendor Keystone,1,1,,781-D,"[""20211114"",""900448""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,781-D,"[""20211114"",""900448""]",department
+cor:subaccountId,,V001,1,1,,781-D,"[""20211114"",""900448""]",auxiliary-account
+cor:type,,department,1,1,,781-D,"[""20211114"",""900448""]",department
+cor:type,,auxiliary-account,1,1,,781-D,"[""20211114"",""900448""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating expense 900448,1,,,781-D,"[""20211114"",""900448""]",
+cor:monetaryAmount,iso4217:JPY,118920,1,,,781-D,"[""20211114"",""900448""]",
+cor:debitCreditIndicator,,D,1,,,781-D,"[""20211114"",""900448""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,781-C,"[""20211114"",""900448""]",
+cor:taxCategory,,00,1,,1,781-C,"[""20211114"",""900448""]",
+cor:accountNumber,,1110,1,1,,781-C,"[""20211114"",""900448""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,781-C,"[""20211114"",""900448""]",
+cor:subaccountDescription,,Demo Operations,1,1,,781-C,"[""20211114"",""900448""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,781-C,"[""20211114"",""900448""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,781-C,"[""20211114"",""900448""]",department
+cor:subaccountId,,B002,1,1,,781-C,"[""20211114"",""900448""]",auxiliary-account
+cor:type,,department,1,1,,781-C,"[""20211114"",""900448""]",department
+cor:type,,auxiliary-account,1,1,,781-C,"[""20211114"",""900448""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating expense 900448,1,,,781-C,"[""20211114"",""900448""]",
+cor:monetaryAmount,iso4217:JPY,118920,1,,,781-C,"[""20211114"",""900448""]",
+cor:debitCreditIndicator,,C,1,,,781-C,"[""20211114"",""900448""]",
+cor:entryDatePosted,,2021-11-15,1,,,,"[""20211115"",""900419""]",
+cor:entryId,,900419,1,,,,"[""20211115"",""900419""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,782-D,"[""20211115"",""900419""]",
+cor:taxCategory,,00,1,,1,782-D,"[""20211115"",""900419""]",
+cor:accountNumber,,1400,1,1,,782-D,"[""20211115"",""900419""]",
+cor:accountDescription,,Demo Prepaid Expenses,1,1,,782-D,"[""20211115"",""900419""]",
+cor:subaccountDescription,,Demo Digital Services,1,1,,782-D,"[""20211115"",""900419""]",department
+cor:subaccountDescription,,Demo Insurance Services,1,1,,782-D,"[""20211115"",""900419""]",auxiliary-account
+cor:subaccountId,,D05,1,1,,782-D,"[""20211115"",""900419""]",department
+cor:subaccountId,,S006,1,1,,782-D,"[""20211115"",""900419""]",auxiliary-account
+cor:type,,department,1,1,,782-D,"[""20211115"",""900419""]",department
+cor:type,,auxiliary-account,1,1,,782-D,"[""20211115"",""900419""]",auxiliary-account
+cor:detailDescription,,Synthetic demo prepaid service 900419,1,,,782-D,"[""20211115"",""900419""]",
+cor:monetaryAmount,iso4217:JPY,125550,1,,,782-D,"[""20211115"",""900419""]",
+cor:debitCreditIndicator,,D,1,,,782-D,"[""20211115"",""900419""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,782-C,"[""20211115"",""900419""]",
+cor:taxCategory,,00,1,,1,782-C,"[""20211115"",""900419""]",
+cor:accountNumber,,1120,1,1,,782-C,"[""20211115"",""900419""]",
+cor:accountDescription,,Demo Harbor Ordinary Deposit,1,1,,782-C,"[""20211115"",""900419""]",
+cor:subaccountDescription,,Demo Digital Services,1,1,,782-C,"[""20211115"",""900419""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,782-C,"[""20211115"",""900419""]",auxiliary-account
+cor:subaccountId,,D05,1,1,,782-C,"[""20211115"",""900419""]",department
+cor:subaccountId,,B003,1,1,,782-C,"[""20211115"",""900419""]",auxiliary-account
+cor:type,,department,1,1,,782-C,"[""20211115"",""900419""]",department
+cor:type,,auxiliary-account,1,1,,782-C,"[""20211115"",""900419""]",auxiliary-account
+cor:detailDescription,,Synthetic demo prepaid service 900419,1,,,782-C,"[""20211115"",""900419""]",
+cor:monetaryAmount,iso4217:JPY,125550,1,,,782-C,"[""20211115"",""900419""]",
+cor:debitCreditIndicator,,C,1,,,782-C,"[""20211115"",""900419""]",
+cor:entryDatePosted,,2021-11-15,1,,,,"[""20211115"",""900427""]",
+cor:entryId,,900427,1,,,,"[""20211115"",""900427""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,783-D,"[""20211115"",""900427""]",
+cor:taxCategory,,00,1,,1,783-D,"[""20211115"",""900427""]",
+cor:accountNumber,,2000,1,1,,783-D,"[""20211115"",""900427""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,783-D,"[""20211115"",""900427""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,783-D,"[""20211115"",""900427""]",department
+cor:subaccountDescription,,Demo Vendor Prairie,1,1,,783-D,"[""20211115"",""900427""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,783-D,"[""20211115"",""900427""]",department
+cor:subaccountId,,V006,1,1,,783-D,"[""20211115"",""900427""]",auxiliary-account
+cor:type,,department,1,1,,783-D,"[""20211115"",""900427""]",department
+cor:type,,auxiliary-account,1,1,,783-D,"[""20211115"",""900427""]",auxiliary-account
+cor:detailDescription,,Synthetic demo vendor settlement 900427,1,,,783-D,"[""20211115"",""900427""]",
+cor:monetaryAmount,iso4217:JPY,159020,1,,,783-D,"[""20211115"",""900427""]",
+cor:debitCreditIndicator,,D,1,,,783-D,"[""20211115"",""900427""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,783-C,"[""20211115"",""900427""]",
+cor:taxCategory,,00,1,,1,783-C,"[""20211115"",""900427""]",
+cor:accountNumber,,1110,1,1,,783-C,"[""20211115"",""900427""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,783-C,"[""20211115"",""900427""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,783-C,"[""20211115"",""900427""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,783-C,"[""20211115"",""900427""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,783-C,"[""20211115"",""900427""]",department
+cor:subaccountId,,B002,1,1,,783-C,"[""20211115"",""900427""]",auxiliary-account
+cor:type,,department,1,1,,783-C,"[""20211115"",""900427""]",department
+cor:type,,auxiliary-account,1,1,,783-C,"[""20211115"",""900427""]",auxiliary-account
+cor:detailDescription,,Synthetic demo vendor settlement 900427,1,,,783-C,"[""20211115"",""900427""]",
+cor:monetaryAmount,iso4217:JPY,159020,1,,,783-C,"[""20211115"",""900427""]",
+cor:debitCreditIndicator,,C,1,,,783-C,"[""20211115"",""900427""]",
+cor:entryDatePosted,,2021-11-15,1,,,,"[""20211115"",""900428""]",
+cor:entryId,,900428,1,,,,"[""20211115"",""900428""]",
+cor:amountOfTaxes,iso4217:JPY,5263,1,,1,784-D,"[""20211115"",""900428""]",
+cor:taxCategory,,Q5,1,,1,784-D,"[""20211115"",""900428""]",
+cor:accountNumber,,6160,1,1,,784-D,"[""20211115"",""900428""]",
+cor:accountDescription,,Demo Shipping,1,1,,784-D,"[""20211115"",""900428""]",
+cor:subaccountDescription,,Demo Digital Services,1,1,,784-D,"[""20211115"",""900428""]",department
+cor:subaccountDescription,,Demo Vendor Keystone,1,1,,784-D,"[""20211115"",""900428""]",auxiliary-account
+cor:subaccountId,,D05,1,1,,784-D,"[""20211115"",""900428""]",department
+cor:subaccountId,,V001,1,1,,784-D,"[""20211115"",""900428""]",auxiliary-account
+cor:type,,department,1,1,,784-D,"[""20211115"",""900428""]",department
+cor:type,,auxiliary-account,1,1,,784-D,"[""20211115"",""900428""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating expense 900428,1,,,784-D,"[""20211115"",""900428""]",
+cor:monetaryAmount,iso4217:JPY,57890,1,,,784-D,"[""20211115"",""900428""]",
+cor:debitCreditIndicator,,D,1,,,784-D,"[""20211115"",""900428""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,784-C,"[""20211115"",""900428""]",
+cor:taxCategory,,00,1,,1,784-C,"[""20211115"",""900428""]",
+cor:accountNumber,,1120,1,1,,784-C,"[""20211115"",""900428""]",
+cor:accountDescription,,Demo Harbor Ordinary Deposit,1,1,,784-C,"[""20211115"",""900428""]",
+cor:subaccountDescription,,Demo Digital Services,1,1,,784-C,"[""20211115"",""900428""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,784-C,"[""20211115"",""900428""]",auxiliary-account
+cor:subaccountId,,D05,1,1,,784-C,"[""20211115"",""900428""]",department
+cor:subaccountId,,B003,1,1,,784-C,"[""20211115"",""900428""]",auxiliary-account
+cor:type,,department,1,1,,784-C,"[""20211115"",""900428""]",department
+cor:type,,auxiliary-account,1,1,,784-C,"[""20211115"",""900428""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating expense 900428,1,,,784-C,"[""20211115"",""900428""]",
+cor:monetaryAmount,iso4217:JPY,57890,1,,,784-C,"[""20211115"",""900428""]",
+cor:debitCreditIndicator,,C,1,,,784-C,"[""20211115"",""900428""]",
+cor:entryDatePosted,,2021-11-15,1,,,,"[""20211115"",""900436""]",
+cor:entryId,,900436,1,,,,"[""20211115"",""900436""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,785-D,"[""20211115"",""900436""]",
+cor:taxCategory,,00,1,,1,785-D,"[""20211115"",""900436""]",
+cor:accountNumber,,1110,1,1,,785-D,"[""20211115"",""900436""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,785-D,"[""20211115"",""900436""]",
+cor:subaccountDescription,,Demo Sales,1,1,,785-D,"[""20211115"",""900436""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,785-D,"[""20211115"",""900436""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,785-D,"[""20211115"",""900436""]",department
+cor:subaccountId,,B002,1,1,,785-D,"[""20211115"",""900436""]",auxiliary-account
+cor:type,,department,1,1,,785-D,"[""20211115"",""900436""]",department
+cor:type,,auxiliary-account,1,1,,785-D,"[""20211115"",""900436""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900436,1,,,785-D,"[""20211115"",""900436""]",
+cor:monetaryAmount,iso4217:JPY,139290,1,,,785-D,"[""20211115"",""900436""]",
+cor:debitCreditIndicator,,D,1,,,785-D,"[""20211115"",""900436""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900436,1,,,785-C,"[""20211115"",""900436""]",
+cor:debitCreditIndicator,,C,1,,,785-C,"[""20211115"",""900436""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,786-D,"[""20211115"",""900436""]",
+cor:taxCategory,,00,1,,1,786-D,"[""20211115"",""900436""]",
+cor:accountNumber,,1200,1,1,,786-D,"[""20211115"",""900436""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,786-D,"[""20211115"",""900436""]",
+cor:subaccountDescription,,Demo Sales,1,1,,786-D,"[""20211115"",""900436""]",department
+cor:subaccountDescription,,Demo Customer Grove,1,1,,786-D,"[""20211115"",""900436""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,786-D,"[""20211115"",""900436""]",department
+cor:subaccountId,,C007,1,1,,786-D,"[""20211115"",""900436""]",auxiliary-account
+cor:type,,department,1,1,,786-D,"[""20211115"",""900436""]",department
+cor:type,,auxiliary-account,1,1,,786-D,"[""20211115"",""900436""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900436,1,,,786-D,"[""20211115"",""900436""]",
+cor:monetaryAmount,iso4217:JPY,441120,1,,,786-D,"[""20211115"",""900436""]",
+cor:debitCreditIndicator,,D,1,,,786-D,"[""20211115"",""900436""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900436,1,,,786-C,"[""20211115"",""900436""]",
+cor:debitCreditIndicator,,C,1,,,786-C,"[""20211115"",""900436""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900436,1,,,787-D,"[""20211115"",""900436""]",
+cor:debitCreditIndicator,,D,1,,,787-D,"[""20211115"",""900436""]",
+cor:amountOfTaxes,iso4217:JPY,24271,1,,1,787-C,"[""20211115"",""900436""]",
+cor:taxCategory,,B5,1,,1,787-C,"[""20211115"",""900436""]",
+cor:accountNumber,,4000,1,1,,787-C,"[""20211115"",""900436""]",
+cor:accountDescription,,Demo Product Sales,1,1,,787-C,"[""20211115"",""900436""]",
+cor:subaccountDescription,,Demo Sales,1,1,,787-C,"[""20211115"",""900436""]",department
+cor:subaccountDescription,,Demo Customer Halo,1,1,,787-C,"[""20211115"",""900436""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,787-C,"[""20211115"",""900436""]",department
+cor:subaccountId,,C008,1,1,,787-C,"[""20211115"",""900436""]",auxiliary-account
+cor:type,,department,1,1,,787-C,"[""20211115"",""900436""]",department
+cor:type,,auxiliary-account,1,1,,787-C,"[""20211115"",""900436""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900436,1,,,787-C,"[""20211115"",""900436""]",
+cor:monetaryAmount,iso4217:JPY,266980,1,,,787-C,"[""20211115"",""900436""]",
+cor:debitCreditIndicator,,C,1,,,787-C,"[""20211115"",""900436""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900436,1,,,788-D,"[""20211115"",""900436""]",
+cor:debitCreditIndicator,,D,1,,,788-D,"[""20211115"",""900436""]",
+cor:amountOfTaxes,iso4217:JPY,28494,1,,1,788-C,"[""20211115"",""900436""]",
+cor:taxCategory,,B5,1,,1,788-C,"[""20211115"",""900436""]",
+cor:accountNumber,,4010,1,1,,788-C,"[""20211115"",""900436""]",
+cor:accountDescription,,Demo Service Revenue,1,1,,788-C,"[""20211115"",""900436""]",
+cor:subaccountDescription,,Demo Sales,1,1,,788-C,"[""20211115"",""900436""]",department
+cor:subaccountDescription,,Demo Customer Indigo,1,1,,788-C,"[""20211115"",""900436""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,788-C,"[""20211115"",""900436""]",department
+cor:subaccountId,,C009,1,1,,788-C,"[""20211115"",""900436""]",auxiliary-account
+cor:type,,department,1,1,,788-C,"[""20211115"",""900436""]",department
+cor:type,,auxiliary-account,1,1,,788-C,"[""20211115"",""900436""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900436,1,,,788-C,"[""20211115"",""900436""]",
+cor:monetaryAmount,iso4217:JPY,313430,1,,,788-C,"[""20211115"",""900436""]",
+cor:debitCreditIndicator,,C,1,,,788-C,"[""20211115"",""900436""]",
+cor:entryDatePosted,,2021-11-15,1,,,,"[""20211115"",""900458""]",
+cor:entryId,,900458,1,,,,"[""20211115"",""900458""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,789-D,"[""20211115"",""900458""]",
+cor:taxCategory,,00,1,,1,789-D,"[""20211115"",""900458""]",
+cor:accountNumber,,2200,1,1,,789-D,"[""20211115"",""900458""]",
+cor:accountDescription,,Demo Short-term Loans,1,1,,789-D,"[""20211115"",""900458""]",
+cor:subaccountDescription,,Demo Management,1,1,,789-D,"[""20211115"",""900458""]",department
+cor:subaccountId,,D06,1,1,,789-D,"[""20211115"",""900458""]",department
+cor:type,,department,1,1,,789-D,"[""20211115"",""900458""]",department
+cor:detailDescription,,Synthetic demo financing settlement 900458,1,,,789-D,"[""20211115"",""900458""]",
+cor:monetaryAmount,iso4217:JPY,157280,1,,,789-D,"[""20211115"",""900458""]",
+cor:debitCreditIndicator,,D,1,,,789-D,"[""20211115"",""900458""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,789-C,"[""20211115"",""900458""]",
+cor:taxCategory,,00,1,,1,789-C,"[""20211115"",""900458""]",
+cor:accountNumber,,1120,1,1,,789-C,"[""20211115"",""900458""]",
+cor:accountDescription,,Demo Harbor Ordinary Deposit,1,1,,789-C,"[""20211115"",""900458""]",
+cor:subaccountDescription,,Demo Management,1,1,,789-C,"[""20211115"",""900458""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,789-C,"[""20211115"",""900458""]",auxiliary-account
+cor:subaccountId,,D06,1,1,,789-C,"[""20211115"",""900458""]",department
+cor:subaccountId,,B003,1,1,,789-C,"[""20211115"",""900458""]",auxiliary-account
+cor:type,,department,1,1,,789-C,"[""20211115"",""900458""]",department
+cor:type,,auxiliary-account,1,1,,789-C,"[""20211115"",""900458""]",auxiliary-account
+cor:detailDescription,,Synthetic demo financing settlement 900458,1,,,789-C,"[""20211115"",""900458""]",
+cor:monetaryAmount,iso4217:JPY,491530,1,,,789-C,"[""20211115"",""900458""]",
+cor:debitCreditIndicator,,C,1,,,789-C,"[""20211115"",""900458""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,790-D,"[""20211115"",""900458""]",
+cor:taxCategory,,00,1,,1,790-D,"[""20211115"",""900458""]",
+cor:accountNumber,,6070,1,1,,790-D,"[""20211115"",""900458""]",
+cor:accountDescription,,Demo Bank Fees,1,1,,790-D,"[""20211115"",""900458""]",
+cor:subaccountDescription,,Demo Management,1,1,,790-D,"[""20211115"",""900458""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,790-D,"[""20211115"",""900458""]",auxiliary-account
+cor:subaccountId,,D06,1,1,,790-D,"[""20211115"",""900458""]",department
+cor:subaccountId,,B003,1,1,,790-D,"[""20211115"",""900458""]",auxiliary-account
+cor:type,,department,1,1,,790-D,"[""20211115"",""900458""]",department
+cor:type,,auxiliary-account,1,1,,790-D,"[""20211115"",""900458""]",auxiliary-account
+cor:detailDescription,,Synthetic demo financing settlement 900458,1,,,790-D,"[""20211115"",""900458""]",
+cor:monetaryAmount,iso4217:JPY,108130,1,,,790-D,"[""20211115"",""900458""]",
+cor:debitCreditIndicator,,D,1,,,790-D,"[""20211115"",""900458""]",
+cor:detailDescription,,Synthetic demo financing settlement 900458,1,,,790-C,"[""20211115"",""900458""]",
+cor:debitCreditIndicator,,C,1,,,790-C,"[""20211115"",""900458""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,791-D,"[""20211115"",""900458""]",
+cor:taxCategory,,P0,1,,1,791-D,"[""20211115"",""900458""]",
+cor:accountNumber,,7000,1,1,,791-D,"[""20211115"",""900458""]",
+cor:accountDescription,,Demo Taxes and Dues,1,1,,791-D,"[""20211115"",""900458""]",
+cor:subaccountDescription,,Demo Management,1,1,,791-D,"[""20211115"",""900458""]",department
+cor:subaccountId,,D06,1,1,,791-D,"[""20211115"",""900458""]",department
+cor:type,,department,1,1,,791-D,"[""20211115"",""900458""]",department
+cor:detailDescription,,Synthetic demo financing settlement 900458,1,,,791-D,"[""20211115"",""900458""]",
+cor:monetaryAmount,iso4217:JPY,226120,1,,,791-D,"[""20211115"",""900458""]",
+cor:debitCreditIndicator,,D,1,,,791-D,"[""20211115"",""900458""]",
+cor:detailDescription,,Synthetic demo financing settlement 900458,1,,,791-C,"[""20211115"",""900458""]",
+cor:debitCreditIndicator,,C,1,,,791-C,"[""20211115"",""900458""]",
+cor:entryDatePosted,,2021-11-16,1,,,,"[""20211116"",""900432""]",
+cor:entryId,,900432,1,,,,"[""20211116"",""900432""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,792-D,"[""20211116"",""900432""]",
+cor:taxCategory,,00,1,,1,792-D,"[""20211116"",""900432""]",
+cor:accountNumber,,1200,1,1,,792-D,"[""20211116"",""900432""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,792-D,"[""20211116"",""900432""]",
+cor:subaccountDescription,,Demo Sales,1,1,,792-D,"[""20211116"",""900432""]",department
+cor:subaccountDescription,,Demo Customer Grove,1,1,,792-D,"[""20211116"",""900432""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,792-D,"[""20211116"",""900432""]",department
+cor:subaccountId,,C007,1,1,,792-D,"[""20211116"",""900432""]",auxiliary-account
+cor:type,,department,1,1,,792-D,"[""20211116"",""900432""]",department
+cor:type,,auxiliary-account,1,1,,792-D,"[""20211116"",""900432""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900432,1,,,792-D,"[""20211116"",""900432""]",
+cor:monetaryAmount,iso4217:JPY,247300,1,,,792-D,"[""20211116"",""900432""]",
+cor:debitCreditIndicator,,D,1,,,792-D,"[""20211116"",""900432""]",
+cor:amountOfTaxes,iso4217:JPY,22482,1,,1,792-C,"[""20211116"",""900432""]",
+cor:taxCategory,,B5,1,,1,792-C,"[""20211116"",""900432""]",
+cor:accountNumber,,4000,1,1,,792-C,"[""20211116"",""900432""]",
+cor:accountDescription,,Demo Product Sales,1,1,,792-C,"[""20211116"",""900432""]",
+cor:subaccountDescription,,Demo Sales,1,1,,792-C,"[""20211116"",""900432""]",department
+cor:subaccountDescription,,Demo Customer Grove,1,1,,792-C,"[""20211116"",""900432""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,792-C,"[""20211116"",""900432""]",department
+cor:subaccountId,,C007,1,1,,792-C,"[""20211116"",""900432""]",auxiliary-account
+cor:type,,department,1,1,,792-C,"[""20211116"",""900432""]",department
+cor:type,,auxiliary-account,1,1,,792-C,"[""20211116"",""900432""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900432,1,,,792-C,"[""20211116"",""900432""]",
+cor:monetaryAmount,iso4217:JPY,247300,1,,,792-C,"[""20211116"",""900432""]",
+cor:debitCreditIndicator,,C,1,,,792-C,"[""20211116"",""900432""]",
+cor:entryDatePosted,,2021-11-16,1,,,,"[""20211116"",""900437""]",
+cor:entryId,,900437,1,,,,"[""20211116"",""900437""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,793-D,"[""20211116"",""900437""]",
+cor:taxCategory,,00,1,,1,793-D,"[""20211116"",""900437""]",
+cor:accountNumber,,2000,1,1,,793-D,"[""20211116"",""900437""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,793-D,"[""20211116"",""900437""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,793-D,"[""20211116"",""900437""]",department
+cor:subaccountDescription,,Demo Vendor Prairie,1,1,,793-D,"[""20211116"",""900437""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,793-D,"[""20211116"",""900437""]",department
+cor:subaccountId,,V006,1,1,,793-D,"[""20211116"",""900437""]",auxiliary-account
+cor:type,,department,1,1,,793-D,"[""20211116"",""900437""]",department
+cor:type,,auxiliary-account,1,1,,793-D,"[""20211116"",""900437""]",auxiliary-account
+cor:detailDescription,,Synthetic demo vendor settlement 900437,1,,,793-D,"[""20211116"",""900437""]",
+cor:monetaryAmount,iso4217:JPY,88090,1,,,793-D,"[""20211116"",""900437""]",
+cor:debitCreditIndicator,,D,1,,,793-D,"[""20211116"",""900437""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,793-C,"[""20211116"",""900437""]",
+cor:taxCategory,,00,1,,1,793-C,"[""20211116"",""900437""]",
+cor:accountNumber,,1120,1,1,,793-C,"[""20211116"",""900437""]",
+cor:accountDescription,,Demo Harbor Ordinary Deposit,1,1,,793-C,"[""20211116"",""900437""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,793-C,"[""20211116"",""900437""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,793-C,"[""20211116"",""900437""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,793-C,"[""20211116"",""900437""]",department
+cor:subaccountId,,B003,1,1,,793-C,"[""20211116"",""900437""]",auxiliary-account
+cor:type,,department,1,1,,793-C,"[""20211116"",""900437""]",department
+cor:type,,auxiliary-account,1,1,,793-C,"[""20211116"",""900437""]",auxiliary-account
+cor:detailDescription,,Synthetic demo vendor settlement 900437,1,,,793-C,"[""20211116"",""900437""]",
+cor:monetaryAmount,iso4217:JPY,88090,1,,,793-C,"[""20211116"",""900437""]",
+cor:debitCreditIndicator,,C,1,,,793-C,"[""20211116"",""900437""]",
+cor:entryDatePosted,,2021-11-17,1,,,,"[""20211117"",""900445""]",
+cor:entryId,,900445,1,,,,"[""20211117"",""900445""]",
+cor:amountOfTaxes,iso4217:JPY,7736,1,,1,794-D,"[""20211117"",""900445""]",
+cor:taxCategory,,Q5,1,,1,794-D,"[""20211117"",""900445""]",
+cor:accountNumber,,6030,1,1,,794-D,"[""20211117"",""900445""]",
+cor:accountDescription,,Demo Utilities,1,1,,794-D,"[""20211117"",""900445""]",
+cor:subaccountDescription,,Demo Operations,1,1,,794-D,"[""20211117"",""900445""]",department
+cor:subaccountDescription,,Demo Energy Services,1,1,,794-D,"[""20211117"",""900445""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,794-D,"[""20211117"",""900445""]",department
+cor:subaccountId,,S002,1,1,,794-D,"[""20211117"",""900445""]",auxiliary-account
+cor:type,,department,1,1,,794-D,"[""20211117"",""900445""]",department
+cor:type,,auxiliary-account,1,1,,794-D,"[""20211117"",""900445""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating cost bundle 900445,1,,,794-D,"[""20211117"",""900445""]",
+cor:monetaryAmount,iso4217:JPY,85100,1,,,794-D,"[""20211117"",""900445""]",
+cor:debitCreditIndicator,,D,1,,,794-D,"[""20211117"",""900445""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,794-C,"[""20211117"",""900445""]",
+cor:taxCategory,,00,1,,1,794-C,"[""20211117"",""900445""]",
+cor:accountNumber,,1110,1,1,,794-C,"[""20211117"",""900445""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,794-C,"[""20211117"",""900445""]",
+cor:subaccountDescription,,Demo Operations,1,1,,794-C,"[""20211117"",""900445""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,794-C,"[""20211117"",""900445""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,794-C,"[""20211117"",""900445""]",department
+cor:subaccountId,,B002,1,1,,794-C,"[""20211117"",""900445""]",auxiliary-account
+cor:type,,department,1,1,,794-C,"[""20211117"",""900445""]",department
+cor:type,,auxiliary-account,1,1,,794-C,"[""20211117"",""900445""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating cost bundle 900445,1,,,794-C,"[""20211117"",""900445""]",
+cor:monetaryAmount,iso4217:JPY,425530,1,,,794-C,"[""20211117"",""900445""]",
+cor:debitCreditIndicator,,C,1,,,794-C,"[""20211117"",""900445""]",
+cor:amountOfTaxes,iso4217:JPY,18568,1,,1,795-D,"[""20211117"",""900445""]",
+cor:taxCategory,,Q5,1,,1,795-D,"[""20211117"",""900445""]",
+cor:accountNumber,,6040,1,1,,795-D,"[""20211117"",""900445""]",
+cor:accountDescription,,Demo Communication,1,1,,795-D,"[""20211117"",""900445""]",
+cor:subaccountDescription,,Demo Operations,1,1,,795-D,"[""20211117"",""900445""]",department
+cor:subaccountDescription,,Demo Network Services,1,1,,795-D,"[""20211117"",""900445""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,795-D,"[""20211117"",""900445""]",department
+cor:subaccountId,,S003,1,1,,795-D,"[""20211117"",""900445""]",auxiliary-account
+cor:type,,department,1,1,,795-D,"[""20211117"",""900445""]",department
+cor:type,,auxiliary-account,1,1,,795-D,"[""20211117"",""900445""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating cost bundle 900445,1,,,795-D,"[""20211117"",""900445""]",
+cor:monetaryAmount,iso4217:JPY,204250,1,,,795-D,"[""20211117"",""900445""]",
+cor:debitCreditIndicator,,D,1,,,795-D,"[""20211117"",""900445""]",
+cor:detailDescription,,Synthetic demo operating cost bundle 900445,1,,,795-C,"[""20211117"",""900445""]",
+cor:debitCreditIndicator,,C,1,,,795-C,"[""20211117"",""900445""]",
+cor:amountOfTaxes,iso4217:JPY,12380,1,,1,796-D,"[""20211117"",""900445""]",
+cor:taxCategory,,Q5,1,,1,796-D,"[""20211117"",""900445""]",
+cor:accountNumber,,6060,1,1,,796-D,"[""20211117"",""900445""]",
+cor:accountDescription,,Demo Office Supplies,1,1,,796-D,"[""20211117"",""900445""]",
+cor:subaccountDescription,,Demo Operations,1,1,,796-D,"[""20211117"",""900445""]",department
+cor:subaccountDescription,,Demo Vendor Prairie,1,1,,796-D,"[""20211117"",""900445""]",auxiliary-account
+cor:subaccountId,,D03,1,1,,796-D,"[""20211117"",""900445""]",department
+cor:subaccountId,,V006,1,1,,796-D,"[""20211117"",""900445""]",auxiliary-account
+cor:type,,department,1,1,,796-D,"[""20211117"",""900445""]",department
+cor:type,,auxiliary-account,1,1,,796-D,"[""20211117"",""900445""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating cost bundle 900445,1,,,796-D,"[""20211117"",""900445""]",
+cor:monetaryAmount,iso4217:JPY,136180,1,,,796-D,"[""20211117"",""900445""]",
+cor:debitCreditIndicator,,D,1,,,796-D,"[""20211117"",""900445""]",
+cor:detailDescription,,Synthetic demo operating cost bundle 900445,1,,,796-C,"[""20211117"",""900445""]",
+cor:debitCreditIndicator,,C,1,,,796-C,"[""20211117"",""900445""]",
+cor:entryDatePosted,,2021-11-17,1,,,,"[""20211117"",""900452""]",
+cor:entryId,,900452,1,,,,"[""20211117"",""900452""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,797-D,"[""20211117"",""900452""]",
+cor:taxCategory,,00,1,,1,797-D,"[""20211117"",""900452""]",
+cor:accountNumber,,2200,1,1,,797-D,"[""20211117"",""900452""]",
+cor:accountDescription,,Demo Short-term Loans,1,1,,797-D,"[""20211117"",""900452""]",
+cor:subaccountDescription,,Demo Management,1,1,,797-D,"[""20211117"",""900452""]",department
+cor:subaccountId,,D06,1,1,,797-D,"[""20211117"",""900452""]",department
+cor:type,,department,1,1,,797-D,"[""20211117"",""900452""]",department
+cor:detailDescription,,Synthetic demo financing settlement 900452,1,,,797-D,"[""20211117"",""900452""]",
+cor:monetaryAmount,iso4217:JPY,39050,1,,,797-D,"[""20211117"",""900452""]",
+cor:debitCreditIndicator,,D,1,,,797-D,"[""20211117"",""900452""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,797-C,"[""20211117"",""900452""]",
+cor:taxCategory,,00,1,,1,797-C,"[""20211117"",""900452""]",
+cor:accountNumber,,1120,1,1,,797-C,"[""20211117"",""900452""]",
+cor:accountDescription,,Demo Harbor Ordinary Deposit,1,1,,797-C,"[""20211117"",""900452""]",
+cor:subaccountDescription,,Demo Management,1,1,,797-C,"[""20211117"",""900452""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,797-C,"[""20211117"",""900452""]",auxiliary-account
+cor:subaccountId,,D06,1,1,,797-C,"[""20211117"",""900452""]",department
+cor:subaccountId,,B003,1,1,,797-C,"[""20211117"",""900452""]",auxiliary-account
+cor:type,,department,1,1,,797-C,"[""20211117"",""900452""]",department
+cor:type,,auxiliary-account,1,1,,797-C,"[""20211117"",""900452""]",auxiliary-account
+cor:detailDescription,,Synthetic demo financing settlement 900452,1,,,797-C,"[""20211117"",""900452""]",
+cor:monetaryAmount,iso4217:JPY,260360,1,,,797-C,"[""20211117"",""900452""]",
+cor:debitCreditIndicator,,C,1,,,797-C,"[""20211117"",""900452""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,798-D,"[""20211117"",""900452""]",
+cor:taxCategory,,00,1,,1,798-D,"[""20211117"",""900452""]",
+cor:accountNumber,,6070,1,1,,798-D,"[""20211117"",""900452""]",
+cor:accountDescription,,Demo Bank Fees,1,1,,798-D,"[""20211117"",""900452""]",
+cor:subaccountDescription,,Demo Management,1,1,,798-D,"[""20211117"",""900452""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,798-D,"[""20211117"",""900452""]",auxiliary-account
+cor:subaccountId,,D06,1,1,,798-D,"[""20211117"",""900452""]",department
+cor:subaccountId,,B003,1,1,,798-D,"[""20211117"",""900452""]",auxiliary-account
+cor:type,,department,1,1,,798-D,"[""20211117"",""900452""]",department
+cor:type,,auxiliary-account,1,1,,798-D,"[""20211117"",""900452""]",auxiliary-account
+cor:detailDescription,,Synthetic demo financing settlement 900452,1,,,798-D,"[""20211117"",""900452""]",
+cor:monetaryAmount,iso4217:JPY,119760,1,,,798-D,"[""20211117"",""900452""]",
+cor:debitCreditIndicator,,D,1,,,798-D,"[""20211117"",""900452""]",
+cor:detailDescription,,Synthetic demo financing settlement 900452,1,,,798-C,"[""20211117"",""900452""]",
+cor:debitCreditIndicator,,C,1,,,798-C,"[""20211117"",""900452""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,799-D,"[""20211117"",""900452""]",
+cor:taxCategory,,P0,1,,1,799-D,"[""20211117"",""900452""]",
+cor:accountNumber,,7000,1,1,,799-D,"[""20211117"",""900452""]",
+cor:accountDescription,,Demo Taxes and Dues,1,1,,799-D,"[""20211117"",""900452""]",
+cor:subaccountDescription,,Demo Management,1,1,,799-D,"[""20211117"",""900452""]",department
+cor:subaccountId,,D06,1,1,,799-D,"[""20211117"",""900452""]",department
+cor:type,,department,1,1,,799-D,"[""20211117"",""900452""]",department
+cor:detailDescription,,Synthetic demo financing settlement 900452,1,,,799-D,"[""20211117"",""900452""]",
+cor:monetaryAmount,iso4217:JPY,101550,1,,,799-D,"[""20211117"",""900452""]",
+cor:debitCreditIndicator,,D,1,,,799-D,"[""20211117"",""900452""]",
+cor:detailDescription,,Synthetic demo financing settlement 900452,1,,,799-C,"[""20211117"",""900452""]",
+cor:debitCreditIndicator,,C,1,,,799-C,"[""20211117"",""900452""]",
+cor:entryDatePosted,,2021-11-17,1,,,,"[""20211117"",""900460""]",
+cor:entryId,,900460,1,,,,"[""20211117"",""900460""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,800-D,"[""20211117"",""900460""]",
+cor:taxCategory,,00,1,,1,800-D,"[""20211117"",""900460""]",
+cor:accountNumber,,1200,1,1,,800-D,"[""20211117"",""900460""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,800-D,"[""20211117"",""900460""]",
+cor:subaccountDescription,,Demo Sales,1,1,,800-D,"[""20211117"",""900460""]",department
+cor:subaccountDescription,,Demo Customer Aurora,1,1,,800-D,"[""20211117"",""900460""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,800-D,"[""20211117"",""900460""]",department
+cor:subaccountId,,C001,1,1,,800-D,"[""20211117"",""900460""]",auxiliary-account
+cor:type,,department,1,1,,800-D,"[""20211117"",""900460""]",department
+cor:type,,auxiliary-account,1,1,,800-D,"[""20211117"",""900460""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900460,1,,,800-D,"[""20211117"",""900460""]",
+cor:monetaryAmount,iso4217:JPY,286310,1,,,800-D,"[""20211117"",""900460""]",
+cor:debitCreditIndicator,,D,1,,,800-D,"[""20211117"",""900460""]",
+cor:amountOfTaxes,iso4217:JPY,26028,1,,1,800-C,"[""20211117"",""900460""]",
+cor:taxCategory,,B5,1,,1,800-C,"[""20211117"",""900460""]",
+cor:accountNumber,,4010,1,1,,800-C,"[""20211117"",""900460""]",
+cor:accountDescription,,Demo Service Revenue,1,1,,800-C,"[""20211117"",""900460""]",
+cor:subaccountDescription,,Demo Sales,1,1,,800-C,"[""20211117"",""900460""]",department
+cor:subaccountDescription,,Demo Customer Aurora,1,1,,800-C,"[""20211117"",""900460""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,800-C,"[""20211117"",""900460""]",department
+cor:subaccountId,,C001,1,1,,800-C,"[""20211117"",""900460""]",auxiliary-account
+cor:type,,department,1,1,,800-C,"[""20211117"",""900460""]",department
+cor:type,,auxiliary-account,1,1,,800-C,"[""20211117"",""900460""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900460,1,,,800-C,"[""20211117"",""900460""]",
+cor:monetaryAmount,iso4217:JPY,286310,1,,,800-C,"[""20211117"",""900460""]",
+cor:debitCreditIndicator,,C,1,,,800-C,"[""20211117"",""900460""]",
+cor:entryDatePosted,,2021-11-17,1,,,,"[""20211117"",""900470""]",
+cor:entryId,,900470,1,,,,"[""20211117"",""900470""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,801-D,"[""20211117"",""900470""]",
+cor:taxCategory,,00,1,,1,801-D,"[""20211117"",""900470""]",
+cor:accountNumber,,1200,1,1,,801-D,"[""20211117"",""900470""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,801-D,"[""20211117"",""900470""]",
+cor:subaccountDescription,,Demo Sales,1,1,,801-D,"[""20211117"",""900470""]",department
+cor:subaccountDescription,,Demo Customer Aurora,1,1,,801-D,"[""20211117"",""900470""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,801-D,"[""20211117"",""900470""]",department
+cor:subaccountId,,C001,1,1,,801-D,"[""20211117"",""900470""]",auxiliary-account
+cor:type,,department,1,1,,801-D,"[""20211117"",""900470""]",department
+cor:type,,auxiliary-account,1,1,,801-D,"[""20211117"",""900470""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900470,1,,,801-D,"[""20211117"",""900470""]",
+cor:monetaryAmount,iso4217:JPY,405040,1,,,801-D,"[""20211117"",""900470""]",
+cor:debitCreditIndicator,,D,1,,,801-D,"[""20211117"",""900470""]",
+cor:amountOfTaxes,iso4217:JPY,36822,1,,1,801-C,"[""20211117"",""900470""]",
+cor:taxCategory,,B5,1,,1,801-C,"[""20211117"",""900470""]",
+cor:accountNumber,,4020,1,1,,801-C,"[""20211117"",""900470""]",
+cor:accountDescription,,Demo Other Operating Revenue,1,1,,801-C,"[""20211117"",""900470""]",
+cor:subaccountDescription,,Demo Sales,1,1,,801-C,"[""20211117"",""900470""]",department
+cor:subaccountDescription,,Demo Customer Aurora,1,1,,801-C,"[""20211117"",""900470""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,801-C,"[""20211117"",""900470""]",department
+cor:subaccountId,,C001,1,1,,801-C,"[""20211117"",""900470""]",auxiliary-account
+cor:type,,department,1,1,,801-C,"[""20211117"",""900470""]",department
+cor:type,,auxiliary-account,1,1,,801-C,"[""20211117"",""900470""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900470,1,,,801-C,"[""20211117"",""900470""]",
+cor:monetaryAmount,iso4217:JPY,405040,1,,,801-C,"[""20211117"",""900470""]",
+cor:debitCreditIndicator,,C,1,,,801-C,"[""20211117"",""900470""]",
+cor:entryDatePosted,,2021-11-18,1,,,,"[""20211118"",""900442""]",
+cor:entryId,,900442,1,,,,"[""20211118"",""900442""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,802-D,"[""20211118"",""900442""]",
+cor:taxCategory,,00,1,,1,802-D,"[""20211118"",""900442""]",
+cor:accountNumber,,1110,1,1,,802-D,"[""20211118"",""900442""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,802-D,"[""20211118"",""900442""]",
+cor:subaccountDescription,,Demo Sales,1,1,,802-D,"[""20211118"",""900442""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,802-D,"[""20211118"",""900442""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,802-D,"[""20211118"",""900442""]",department
+cor:subaccountId,,B002,1,1,,802-D,"[""20211118"",""900442""]",auxiliary-account
+cor:type,,department,1,1,,802-D,"[""20211118"",""900442""]",department
+cor:type,,auxiliary-account,1,1,,802-D,"[""20211118"",""900442""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900442,1,,,802-D,"[""20211118"",""900442""]",
+cor:monetaryAmount,iso4217:JPY,356400,1,,,802-D,"[""20211118"",""900442""]",
+cor:debitCreditIndicator,,D,1,,,802-D,"[""20211118"",""900442""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900442,1,,,802-C,"[""20211118"",""900442""]",
+cor:debitCreditIndicator,,C,1,,,802-C,"[""20211118"",""900442""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,803-D,"[""20211118"",""900442""]",
+cor:taxCategory,,00,1,,1,803-D,"[""20211118"",""900442""]",
+cor:accountNumber,,1200,1,1,,803-D,"[""20211118"",""900442""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,803-D,"[""20211118"",""900442""]",
+cor:subaccountDescription,,Demo Sales,1,1,,803-D,"[""20211118"",""900442""]",department
+cor:subaccountDescription,,Demo Customer Cobalt,1,1,,803-D,"[""20211118"",""900442""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,803-D,"[""20211118"",""900442""]",department
+cor:subaccountId,,C003,1,1,,803-D,"[""20211118"",""900442""]",auxiliary-account
+cor:type,,department,1,1,,803-D,"[""20211118"",""900442""]",department
+cor:type,,auxiliary-account,1,1,,803-D,"[""20211118"",""900442""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900442,1,,,803-D,"[""20211118"",""900442""]",
+cor:monetaryAmount,iso4217:JPY,106470,1,,,803-D,"[""20211118"",""900442""]",
+cor:debitCreditIndicator,,D,1,,,803-D,"[""20211118"",""900442""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900442,1,,,803-C,"[""20211118"",""900442""]",
+cor:debitCreditIndicator,,C,1,,,803-C,"[""20211118"",""900442""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900442,1,,,804-D,"[""20211118"",""900442""]",
+cor:debitCreditIndicator,,D,1,,,804-D,"[""20211118"",""900442""]",
+cor:amountOfTaxes,iso4217:JPY,15086,1,,1,804-C,"[""20211118"",""900442""]",
+cor:taxCategory,,R5,1,,1,804-C,"[""20211118"",""900442""]",
+cor:accountNumber,,4000,1,1,,804-C,"[""20211118"",""900442""]",
+cor:accountDescription,,Demo Product Sales,1,1,,804-C,"[""20211118"",""900442""]",
+cor:subaccountDescription,,Demo Sales,1,1,,804-C,"[""20211118"",""900442""]",department
+cor:subaccountDescription,,Demo Customer Dawn,1,1,,804-C,"[""20211118"",""900442""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,804-C,"[""20211118"",""900442""]",department
+cor:subaccountId,,C004,1,1,,804-C,"[""20211118"",""900442""]",auxiliary-account
+cor:type,,department,1,1,,804-C,"[""20211118"",""900442""]",department
+cor:type,,auxiliary-account,1,1,,804-C,"[""20211118"",""900442""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900442,1,,,804-C,"[""20211118"",""900442""]",
+cor:monetaryAmount,iso4217:JPY,203660,1,,,804-C,"[""20211118"",""900442""]",
+cor:debitCreditIndicator,,C,1,,,804-C,"[""20211118"",""900442""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900442,1,,,805-D,"[""20211118"",""900442""]",
+cor:debitCreditIndicator,,D,1,,,805-D,"[""20211118"",""900442""]",
+cor:amountOfTaxes,iso4217:JPY,23565,1,,1,805-C,"[""20211118"",""900442""]",
+cor:taxCategory,,B5,1,,1,805-C,"[""20211118"",""900442""]",
+cor:accountNumber,,4010,1,1,,805-C,"[""20211118"",""900442""]",
+cor:accountDescription,,Demo Service Revenue,1,1,,805-C,"[""20211118"",""900442""]",
+cor:subaccountDescription,,Demo Sales,1,1,,805-C,"[""20211118"",""900442""]",department
+cor:subaccountDescription,,Demo Customer Elm,1,1,,805-C,"[""20211118"",""900442""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,805-C,"[""20211118"",""900442""]",department
+cor:subaccountId,,C005,1,1,,805-C,"[""20211118"",""900442""]",auxiliary-account
+cor:type,,department,1,1,,805-C,"[""20211118"",""900442""]",department
+cor:type,,auxiliary-account,1,1,,805-C,"[""20211118"",""900442""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900442,1,,,805-C,"[""20211118"",""900442""]",
+cor:monetaryAmount,iso4217:JPY,259210,1,,,805-C,"[""20211118"",""900442""]",
+cor:debitCreditIndicator,,C,1,,,805-C,"[""20211118"",""900442""]",
+cor:entryDatePosted,,2021-11-18,1,,,,"[""20211118"",""900446""]",
+cor:entryId,,900446,1,,,,"[""20211118"",""900446""]",
+cor:amountOfTaxes,iso4217:JPY,12999,1,,1,806-D,"[""20211118"",""900446""]",
+cor:taxCategory,,Q5,1,,1,806-D,"[""20211118"",""900446""]",
+cor:accountNumber,,5020,1,1,,806-D,"[""20211118"",""900446""]",
+cor:accountDescription,,Demo Inventory Adjustment,1,1,,806-D,"[""20211118"",""900446""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,806-D,"[""20211118"",""900446""]",department
+cor:subaccountDescription,,Demo Vendor Keystone,1,1,,806-D,"[""20211118"",""900446""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,806-D,"[""20211118"",""900446""]",department
+cor:subaccountId,,V001,1,1,,806-D,"[""20211118"",""900446""]",auxiliary-account
+cor:type,,department,1,1,,806-D,"[""20211118"",""900446""]",department
+cor:type,,auxiliary-account,1,1,,806-D,"[""20211118"",""900446""]",auxiliary-account
+cor:detailDescription,,Synthetic demo purchase on account 900446,1,,,806-D,"[""20211118"",""900446""]",
+cor:monetaryAmount,iso4217:JPY,142990,1,,,806-D,"[""20211118"",""900446""]",
+cor:debitCreditIndicator,,D,1,,,806-D,"[""20211118"",""900446""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,806-C,"[""20211118"",""900446""]",
+cor:taxCategory,,00,1,,1,806-C,"[""20211118"",""900446""]",
+cor:accountNumber,,2000,1,1,,806-C,"[""20211118"",""900446""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,806-C,"[""20211118"",""900446""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,806-C,"[""20211118"",""900446""]",department
+cor:subaccountDescription,,Demo Vendor Keystone,1,1,,806-C,"[""20211118"",""900446""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,806-C,"[""20211118"",""900446""]",department
+cor:subaccountId,,V001,1,1,,806-C,"[""20211118"",""900446""]",auxiliary-account
+cor:type,,department,1,1,,806-C,"[""20211118"",""900446""]",department
+cor:type,,auxiliary-account,1,1,,806-C,"[""20211118"",""900446""]",auxiliary-account
+cor:detailDescription,,Synthetic demo purchase on account 900446,1,,,806-C,"[""20211118"",""900446""]",
+cor:monetaryAmount,iso4217:JPY,142990,1,,,806-C,"[""20211118"",""900446""]",
+cor:debitCreditIndicator,,C,1,,,806-C,"[""20211118"",""900446""]",
+cor:entryDatePosted,,2021-11-18,1,,,,"[""20211118"",""900447""]",
+cor:entryId,,900447,1,,,,"[""20211118"",""900447""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,807-D,"[""20211118"",""900447""]",
+cor:taxCategory,,00,1,,1,807-D,"[""20211118"",""900447""]",
+cor:accountNumber,,2000,1,1,,807-D,"[""20211118"",""900447""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,807-D,"[""20211118"",""900447""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,807-D,"[""20211118"",""900447""]",department
+cor:subaccountDescription,,Demo Vendor Prairie,1,1,,807-D,"[""20211118"",""900447""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,807-D,"[""20211118"",""900447""]",department
+cor:subaccountId,,V006,1,1,,807-D,"[""20211118"",""900447""]",auxiliary-account
+cor:type,,department,1,1,,807-D,"[""20211118"",""900447""]",department
+cor:type,,auxiliary-account,1,1,,807-D,"[""20211118"",""900447""]",auxiliary-account
+cor:detailDescription,,Synthetic demo vendor settlement 900447,1,,,807-D,"[""20211118"",""900447""]",
+cor:monetaryAmount,iso4217:JPY,240590,1,,,807-D,"[""20211118"",""900447""]",
+cor:debitCreditIndicator,,D,1,,,807-D,"[""20211118"",""900447""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,807-C,"[""20211118"",""900447""]",
+cor:taxCategory,,00,1,,1,807-C,"[""20211118"",""900447""]",
+cor:accountNumber,,1100,1,1,,807-C,"[""20211118"",""900447""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,807-C,"[""20211118"",""900447""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,807-C,"[""20211118"",""900447""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,807-C,"[""20211118"",""900447""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,807-C,"[""20211118"",""900447""]",department
+cor:subaccountId,,B001,1,1,,807-C,"[""20211118"",""900447""]",auxiliary-account
+cor:type,,department,1,1,,807-C,"[""20211118"",""900447""]",department
+cor:type,,auxiliary-account,1,1,,807-C,"[""20211118"",""900447""]",auxiliary-account
+cor:detailDescription,,Synthetic demo vendor settlement 900447,1,,,807-C,"[""20211118"",""900447""]",
+cor:monetaryAmount,iso4217:JPY,240590,1,,,807-C,"[""20211118"",""900447""]",
+cor:debitCreditIndicator,,C,1,,,807-C,"[""20211118"",""900447""]",
+cor:entryDatePosted,,2021-11-20,1,,,,"[""20211120"",""900413""]",
+cor:entryId,,900413,1,,,,"[""20211120"",""900413""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,808-D,"[""20211120"",""900413""]",
+cor:taxCategory,,00,1,,1,808-D,"[""20211120"",""900413""]",
+cor:accountNumber,,2200,1,1,,808-D,"[""20211120"",""900413""]",
+cor:accountDescription,,Demo Short-term Loans,1,1,,808-D,"[""20211120"",""900413""]",
+cor:subaccountDescription,,Demo Management,1,1,,808-D,"[""20211120"",""900413""]",department
+cor:subaccountId,,D06,1,1,,808-D,"[""20211120"",""900413""]",department
+cor:type,,department,1,1,,808-D,"[""20211120"",""900413""]",department
+cor:detailDescription,,Synthetic demo financing settlement 900413,1,,,808-D,"[""20211120"",""900413""]",
+cor:monetaryAmount,iso4217:JPY,39730,1,,,808-D,"[""20211120"",""900413""]",
+cor:debitCreditIndicator,,D,1,,,808-D,"[""20211120"",""900413""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,808-C,"[""20211120"",""900413""]",
+cor:taxCategory,,00,1,,1,808-C,"[""20211120"",""900413""]",
+cor:accountNumber,,1120,1,1,,808-C,"[""20211120"",""900413""]",
+cor:accountDescription,,Demo Harbor Ordinary Deposit,1,1,,808-C,"[""20211120"",""900413""]",
+cor:subaccountDescription,,Demo Management,1,1,,808-C,"[""20211120"",""900413""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,808-C,"[""20211120"",""900413""]",auxiliary-account
+cor:subaccountId,,D06,1,1,,808-C,"[""20211120"",""900413""]",department
+cor:subaccountId,,B003,1,1,,808-C,"[""20211120"",""900413""]",auxiliary-account
+cor:type,,department,1,1,,808-C,"[""20211120"",""900413""]",department
+cor:type,,auxiliary-account,1,1,,808-C,"[""20211120"",""900413""]",auxiliary-account
+cor:detailDescription,,Synthetic demo financing settlement 900413,1,,,808-C,"[""20211120"",""900413""]",
+cor:monetaryAmount,iso4217:JPY,264910,1,,,808-C,"[""20211120"",""900413""]",
+cor:debitCreditIndicator,,C,1,,,808-C,"[""20211120"",""900413""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,809-D,"[""20211120"",""900413""]",
+cor:taxCategory,,00,1,,1,809-D,"[""20211120"",""900413""]",
+cor:accountNumber,,6070,1,1,,809-D,"[""20211120"",""900413""]",
+cor:accountDescription,,Demo Bank Fees,1,1,,809-D,"[""20211120"",""900413""]",
+cor:subaccountDescription,,Demo Management,1,1,,809-D,"[""20211120"",""900413""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,809-D,"[""20211120"",""900413""]",auxiliary-account
+cor:subaccountId,,D06,1,1,,809-D,"[""20211120"",""900413""]",department
+cor:subaccountId,,B003,1,1,,809-D,"[""20211120"",""900413""]",auxiliary-account
+cor:type,,department,1,1,,809-D,"[""20211120"",""900413""]",department
+cor:type,,auxiliary-account,1,1,,809-D,"[""20211120"",""900413""]",auxiliary-account
+cor:detailDescription,,Synthetic demo financing settlement 900413,1,,,809-D,"[""20211120"",""900413""]",
+cor:monetaryAmount,iso4217:JPY,21190,1,,,809-D,"[""20211120"",""900413""]",
+cor:debitCreditIndicator,,D,1,,,809-D,"[""20211120"",""900413""]",
+cor:detailDescription,,Synthetic demo financing settlement 900413,1,,,809-C,"[""20211120"",""900413""]",
+cor:debitCreditIndicator,,C,1,,,809-C,"[""20211120"",""900413""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,810-D,"[""20211120"",""900413""]",
+cor:taxCategory,,P0,1,,1,810-D,"[""20211120"",""900413""]",
+cor:accountNumber,,7000,1,1,,810-D,"[""20211120"",""900413""]",
+cor:accountDescription,,Demo Taxes and Dues,1,1,,810-D,"[""20211120"",""900413""]",
+cor:subaccountDescription,,Demo Management,1,1,,810-D,"[""20211120"",""900413""]",department
+cor:subaccountId,,D06,1,1,,810-D,"[""20211120"",""900413""]",department
+cor:type,,department,1,1,,810-D,"[""20211120"",""900413""]",department
+cor:detailDescription,,Synthetic demo financing settlement 900413,1,,,810-D,"[""20211120"",""900413""]",
+cor:monetaryAmount,iso4217:JPY,203990,1,,,810-D,"[""20211120"",""900413""]",
+cor:debitCreditIndicator,,D,1,,,810-D,"[""20211120"",""900413""]",
+cor:detailDescription,,Synthetic demo financing settlement 900413,1,,,810-C,"[""20211120"",""900413""]",
+cor:debitCreditIndicator,,C,1,,,810-C,"[""20211120"",""900413""]",
+cor:entryDatePosted,,2021-11-22,1,,,,"[""20211122"",""900438""]",
+cor:entryId,,900438,1,,,,"[""20211122"",""900438""]",
+cor:amountOfTaxes,iso4217:JPY,376,1,,1,811-D,"[""20211122"",""900438""]",
+cor:taxCategory,,Q5,1,,1,811-D,"[""20211122"",""900438""]",
+cor:accountNumber,,6080,1,1,,811-D,"[""20211122"",""900438""]",
+cor:accountDescription,,Demo Advertising,1,1,,811-D,"[""20211122"",""900438""]",
+cor:subaccountDescription,,Demo Administration,1,1,,811-D,"[""20211122"",""900438""]",department
+cor:subaccountDescription,,Demo Vendor Keystone,1,1,,811-D,"[""20211122"",""900438""]",auxiliary-account
+cor:subaccountId,,D02,1,1,,811-D,"[""20211122"",""900438""]",department
+cor:subaccountId,,V001,1,1,,811-D,"[""20211122"",""900438""]",auxiliary-account
+cor:type,,department,1,1,,811-D,"[""20211122"",""900438""]",department
+cor:type,,auxiliary-account,1,1,,811-D,"[""20211122"",""900438""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating expense 900438,1,,,811-D,"[""20211122"",""900438""]",
+cor:monetaryAmount,iso4217:JPY,4140,1,,,811-D,"[""20211122"",""900438""]",
+cor:debitCreditIndicator,,D,1,,,811-D,"[""20211122"",""900438""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,811-C,"[""20211122"",""900438""]",
+cor:taxCategory,,00,1,,1,811-C,"[""20211122"",""900438""]",
+cor:accountNumber,,1100,1,1,,811-C,"[""20211122"",""900438""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,811-C,"[""20211122"",""900438""]",
+cor:subaccountDescription,,Demo Administration,1,1,,811-C,"[""20211122"",""900438""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,811-C,"[""20211122"",""900438""]",auxiliary-account
+cor:subaccountId,,D02,1,1,,811-C,"[""20211122"",""900438""]",department
+cor:subaccountId,,B001,1,1,,811-C,"[""20211122"",""900438""]",auxiliary-account
+cor:type,,department,1,1,,811-C,"[""20211122"",""900438""]",department
+cor:type,,auxiliary-account,1,1,,811-C,"[""20211122"",""900438""]",auxiliary-account
+cor:detailDescription,,Synthetic demo operating expense 900438,1,,,811-C,"[""20211122"",""900438""]",
+cor:monetaryAmount,iso4217:JPY,4140,1,,,811-C,"[""20211122"",""900438""]",
+cor:debitCreditIndicator,,C,1,,,811-C,"[""20211122"",""900438""]",
+cor:entryDatePosted,,2021-11-23,1,,,,"[""20211123"",""900434""]",
+cor:entryId,,900434,1,,,,"[""20211123"",""900434""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,812-D,"[""20211123"",""900434""]",
+cor:taxCategory,,00,1,,1,812-D,"[""20211123"",""900434""]",
+cor:accountNumber,,1120,1,1,,812-D,"[""20211123"",""900434""]",
+cor:accountDescription,,Demo Harbor Ordinary Deposit,1,1,,812-D,"[""20211123"",""900434""]",
+cor:subaccountDescription,,Demo Sales,1,1,,812-D,"[""20211123"",""900434""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,812-D,"[""20211123"",""900434""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,812-D,"[""20211123"",""900434""]",department
+cor:subaccountId,,B003,1,1,,812-D,"[""20211123"",""900434""]",auxiliary-account
+cor:type,,department,1,1,,812-D,"[""20211123"",""900434""]",department
+cor:type,,auxiliary-account,1,1,,812-D,"[""20211123"",""900434""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900434,1,,,812-D,"[""20211123"",""900434""]",
+cor:monetaryAmount,iso4217:JPY,260440,1,,,812-D,"[""20211123"",""900434""]",
+cor:debitCreditIndicator,,D,1,,,812-D,"[""20211123"",""900434""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,812-C,"[""20211123"",""900434""]",
+cor:taxCategory,,00,1,,1,812-C,"[""20211123"",""900434""]",
+cor:accountNumber,,1200,1,1,,812-C,"[""20211123"",""900434""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,812-C,"[""20211123"",""900434""]",
+cor:subaccountDescription,,Demo Sales,1,1,,812-C,"[""20211123"",""900434""]",department
+cor:subaccountDescription,,Demo Customer Cobalt,1,1,,812-C,"[""20211123"",""900434""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,812-C,"[""20211123"",""900434""]",department
+cor:subaccountId,,C003,1,1,,812-C,"[""20211123"",""900434""]",auxiliary-account
+cor:type,,department,1,1,,812-C,"[""20211123"",""900434""]",department
+cor:type,,auxiliary-account,1,1,,812-C,"[""20211123"",""900434""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900434,1,,,812-C,"[""20211123"",""900434""]",
+cor:monetaryAmount,iso4217:JPY,260440,1,,,812-C,"[""20211123"",""900434""]",
+cor:debitCreditIndicator,,C,1,,,812-C,"[""20211123"",""900434""]",
+cor:entryDatePosted,,2021-11-23,1,,,,"[""20211123"",""900459""]",
+cor:entryId,,900459,1,,,,"[""20211123"",""900459""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,813-D,"[""20211123"",""900459""]",
+cor:taxCategory,,00,1,,1,813-D,"[""20211123"",""900459""]",
+cor:accountNumber,,1400,1,1,,813-D,"[""20211123"",""900459""]",
+cor:accountDescription,,Demo Prepaid Expenses,1,1,,813-D,"[""20211123"",""900459""]",
+cor:subaccountDescription,,Demo Digital Services,1,1,,813-D,"[""20211123"",""900459""]",department
+cor:subaccountDescription,,Demo Logistics Services,1,1,,813-D,"[""20211123"",""900459""]",auxiliary-account
+cor:subaccountId,,D05,1,1,,813-D,"[""20211123"",""900459""]",department
+cor:subaccountId,,S004,1,1,,813-D,"[""20211123"",""900459""]",auxiliary-account
+cor:type,,department,1,1,,813-D,"[""20211123"",""900459""]",department
+cor:type,,auxiliary-account,1,1,,813-D,"[""20211123"",""900459""]",auxiliary-account
+cor:detailDescription,,Synthetic demo prepaid service 900459,1,,,813-D,"[""20211123"",""900459""]",
+cor:monetaryAmount,iso4217:JPY,157240,1,,,813-D,"[""20211123"",""900459""]",
+cor:debitCreditIndicator,,D,1,,,813-D,"[""20211123"",""900459""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,813-C,"[""20211123"",""900459""]",
+cor:taxCategory,,00,1,,1,813-C,"[""20211123"",""900459""]",
+cor:accountNumber,,1100,1,1,,813-C,"[""20211123"",""900459""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,813-C,"[""20211123"",""900459""]",
+cor:subaccountDescription,,Demo Digital Services,1,1,,813-C,"[""20211123"",""900459""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,813-C,"[""20211123"",""900459""]",auxiliary-account
+cor:subaccountId,,D05,1,1,,813-C,"[""20211123"",""900459""]",department
+cor:subaccountId,,B001,1,1,,813-C,"[""20211123"",""900459""]",auxiliary-account
+cor:type,,department,1,1,,813-C,"[""20211123"",""900459""]",department
+cor:type,,auxiliary-account,1,1,,813-C,"[""20211123"",""900459""]",auxiliary-account
+cor:detailDescription,,Synthetic demo prepaid service 900459,1,,,813-C,"[""20211123"",""900459""]",
+cor:monetaryAmount,iso4217:JPY,157240,1,,,813-C,"[""20211123"",""900459""]",
+cor:debitCreditIndicator,,C,1,,,813-C,"[""20211123"",""900459""]",
+cor:entryDatePosted,,2021-11-25,1,,,,"[""20211125"",""900415""]",
+cor:entryId,,900415,1,,,,"[""20211125"",""900415""]",
+cor:amountOfTaxes,iso4217:JPY,11620,1,,1,814-D,"[""20211125"",""900415""]",
+cor:taxCategory,,Q5,1,,1,814-D,"[""20211125"",""900415""]",
+cor:accountNumber,,5010,1,1,,814-D,"[""20211125"",""900415""]",
+cor:accountDescription,,Demo Freight-in,1,1,,814-D,"[""20211125"",""900415""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,814-D,"[""20211125"",""900415""]",department
+cor:subaccountDescription,,Demo Vendor Prairie,1,1,,814-D,"[""20211125"",""900415""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,814-D,"[""20211125"",""900415""]",department
+cor:subaccountId,,V006,1,1,,814-D,"[""20211125"",""900415""]",auxiliary-account
+cor:type,,department,1,1,,814-D,"[""20211125"",""900415""]",department
+cor:type,,auxiliary-account,1,1,,814-D,"[""20211125"",""900415""]",auxiliary-account
+cor:detailDescription,,Synthetic demo purchase on account 900415,1,,,814-D,"[""20211125"",""900415""]",
+cor:monetaryAmount,iso4217:JPY,127820,1,,,814-D,"[""20211125"",""900415""]",
+cor:debitCreditIndicator,,D,1,,,814-D,"[""20211125"",""900415""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,814-C,"[""20211125"",""900415""]",
+cor:taxCategory,,00,1,,1,814-C,"[""20211125"",""900415""]",
+cor:accountNumber,,2000,1,1,,814-C,"[""20211125"",""900415""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,814-C,"[""20211125"",""900415""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,814-C,"[""20211125"",""900415""]",department
+cor:subaccountDescription,,Demo Vendor Prairie,1,1,,814-C,"[""20211125"",""900415""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,814-C,"[""20211125"",""900415""]",department
+cor:subaccountId,,V006,1,1,,814-C,"[""20211125"",""900415""]",auxiliary-account
+cor:type,,department,1,1,,814-C,"[""20211125"",""900415""]",department
+cor:type,,auxiliary-account,1,1,,814-C,"[""20211125"",""900415""]",auxiliary-account
+cor:detailDescription,,Synthetic demo purchase on account 900415,1,,,814-C,"[""20211125"",""900415""]",
+cor:monetaryAmount,iso4217:JPY,127820,1,,,814-C,"[""20211125"",""900415""]",
+cor:debitCreditIndicator,,C,1,,,814-C,"[""20211125"",""900415""]",
+cor:entryDatePosted,,2021-11-26,1,,,,"[""20211126"",""900424""]",
+cor:entryId,,900424,1,,,,"[""20211126"",""900424""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,815-D,"[""20211126"",""900424""]",
+cor:taxCategory,,00,1,,1,815-D,"[""20211126"",""900424""]",
+cor:accountNumber,,1110,1,1,,815-D,"[""20211126"",""900424""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,815-D,"[""20211126"",""900424""]",
+cor:subaccountDescription,,Demo Sales,1,1,,815-D,"[""20211126"",""900424""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,815-D,"[""20211126"",""900424""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,815-D,"[""20211126"",""900424""]",department
+cor:subaccountId,,B002,1,1,,815-D,"[""20211126"",""900424""]",auxiliary-account
+cor:type,,department,1,1,,815-D,"[""20211126"",""900424""]",department
+cor:type,,auxiliary-account,1,1,,815-D,"[""20211126"",""900424""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900424,1,,,815-D,"[""20211126"",""900424""]",
+cor:monetaryAmount,iso4217:JPY,103280,1,,,815-D,"[""20211126"",""900424""]",
+cor:debitCreditIndicator,,D,1,,,815-D,"[""20211126"",""900424""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900424,1,,,815-C,"[""20211126"",""900424""]",
+cor:debitCreditIndicator,,C,1,,,815-C,"[""20211126"",""900424""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,816-D,"[""20211126"",""900424""]",
+cor:taxCategory,,00,1,,1,816-D,"[""20211126"",""900424""]",
+cor:accountNumber,,1200,1,1,,816-D,"[""20211126"",""900424""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,816-D,"[""20211126"",""900424""]",
+cor:subaccountDescription,,Demo Sales,1,1,,816-D,"[""20211126"",""900424""]",department
+cor:subaccountDescription,,Demo Customer Elm,1,1,,816-D,"[""20211126"",""900424""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,816-D,"[""20211126"",""900424""]",department
+cor:subaccountId,,C005,1,1,,816-D,"[""20211126"",""900424""]",auxiliary-account
+cor:type,,department,1,1,,816-D,"[""20211126"",""900424""]",department
+cor:type,,auxiliary-account,1,1,,816-D,"[""20211126"",""900424""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900424,1,,,816-D,"[""20211126"",""900424""]",
+cor:monetaryAmount,iso4217:JPY,200490,1,,,816-D,"[""20211126"",""900424""]",
+cor:debitCreditIndicator,,D,1,,,816-D,"[""20211126"",""900424""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900424,1,,,816-C,"[""20211126"",""900424""]",
+cor:debitCreditIndicator,,C,1,,,816-C,"[""20211126"",""900424""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900424,1,,,817-D,"[""20211126"",""900424""]",
+cor:debitCreditIndicator,,D,1,,,817-D,"[""20211126"",""900424""]",
+cor:amountOfTaxes,iso4217:JPY,11598,1,,1,817-C,"[""20211126"",""900424""]",
+cor:taxCategory,,B5,1,,1,817-C,"[""20211126"",""900424""]",
+cor:accountNumber,,4000,1,1,,817-C,"[""20211126"",""900424""]",
+cor:accountDescription,,Demo Product Sales,1,1,,817-C,"[""20211126"",""900424""]",
+cor:subaccountDescription,,Demo Sales,1,1,,817-C,"[""20211126"",""900424""]",department
+cor:subaccountDescription,,Demo Customer Fjord,1,1,,817-C,"[""20211126"",""900424""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,817-C,"[""20211126"",""900424""]",department
+cor:subaccountId,,C006,1,1,,817-C,"[""20211126"",""900424""]",auxiliary-account
+cor:type,,department,1,1,,817-C,"[""20211126"",""900424""]",department
+cor:type,,auxiliary-account,1,1,,817-C,"[""20211126"",""900424""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900424,1,,,817-C,"[""20211126"",""900424""]",
+cor:monetaryAmount,iso4217:JPY,127580,1,,,817-C,"[""20211126"",""900424""]",
+cor:debitCreditIndicator,,C,1,,,817-C,"[""20211126"",""900424""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900424,1,,,818-D,"[""20211126"",""900424""]",
+cor:debitCreditIndicator,,D,1,,,818-D,"[""20211126"",""900424""]",
+cor:amountOfTaxes,iso4217:JPY,16017,1,,1,818-C,"[""20211126"",""900424""]",
+cor:taxCategory,,B5,1,,1,818-C,"[""20211126"",""900424""]",
+cor:accountNumber,,4010,1,1,,818-C,"[""20211126"",""900424""]",
+cor:accountDescription,,Demo Service Revenue,1,1,,818-C,"[""20211126"",""900424""]",
+cor:subaccountDescription,,Demo Sales,1,1,,818-C,"[""20211126"",""900424""]",department
+cor:subaccountDescription,,Demo Customer Grove,1,1,,818-C,"[""20211126"",""900424""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,818-C,"[""20211126"",""900424""]",department
+cor:subaccountId,,C007,1,1,,818-C,"[""20211126"",""900424""]",auxiliary-account
+cor:type,,department,1,1,,818-C,"[""20211126"",""900424""]",department
+cor:type,,auxiliary-account,1,1,,818-C,"[""20211126"",""900424""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900424,1,,,818-C,"[""20211126"",""900424""]",
+cor:monetaryAmount,iso4217:JPY,176190,1,,,818-C,"[""20211126"",""900424""]",
+cor:debitCreditIndicator,,C,1,,,818-C,"[""20211126"",""900424""]",
+cor:entryDatePosted,,2021-11-26,1,,,,"[""20211126"",""900431""]",
+cor:entryId,,900431,1,,,,"[""20211126"",""900431""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,819-D,"[""20211126"",""900431""]",
+cor:taxCategory,,00,1,,1,819-D,"[""20211126"",""900431""]",
+cor:accountNumber,,1200,1,1,,819-D,"[""20211126"",""900431""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,819-D,"[""20211126"",""900431""]",
+cor:subaccountDescription,,Demo Sales,1,1,,819-D,"[""20211126"",""900431""]",department
+cor:subaccountDescription,,Demo Customer Dawn,1,1,,819-D,"[""20211126"",""900431""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,819-D,"[""20211126"",""900431""]",department
+cor:subaccountId,,C004,1,1,,819-D,"[""20211126"",""900431""]",auxiliary-account
+cor:type,,department,1,1,,819-D,"[""20211126"",""900431""]",department
+cor:type,,auxiliary-account,1,1,,819-D,"[""20211126"",""900431""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900431,1,,,819-D,"[""20211126"",""900431""]",
+cor:monetaryAmount,iso4217:JPY,380420,1,,,819-D,"[""20211126"",""900431""]",
+cor:debitCreditIndicator,,D,1,,,819-D,"[""20211126"",""900431""]",
+cor:amountOfTaxes,iso4217:JPY,34584,1,,1,819-C,"[""20211126"",""900431""]",
+cor:taxCategory,,B5,1,,1,819-C,"[""20211126"",""900431""]",
+cor:accountNumber,,4020,1,1,,819-C,"[""20211126"",""900431""]",
+cor:accountDescription,,Demo Other Operating Revenue,1,1,,819-C,"[""20211126"",""900431""]",
+cor:subaccountDescription,,Demo Sales,1,1,,819-C,"[""20211126"",""900431""]",department
+cor:subaccountDescription,,Demo Customer Dawn,1,1,,819-C,"[""20211126"",""900431""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,819-C,"[""20211126"",""900431""]",department
+cor:subaccountId,,C004,1,1,,819-C,"[""20211126"",""900431""]",auxiliary-account
+cor:type,,department,1,1,,819-C,"[""20211126"",""900431""]",department
+cor:type,,auxiliary-account,1,1,,819-C,"[""20211126"",""900431""]",auxiliary-account
+cor:detailDescription,,Synthetic demo credit sale 900431,1,,,819-C,"[""20211126"",""900431""]",
+cor:monetaryAmount,iso4217:JPY,380420,1,,,819-C,"[""20211126"",""900431""]",
+cor:debitCreditIndicator,,C,1,,,819-C,"[""20211126"",""900431""]",
+cor:entryDatePosted,,2021-11-26,1,,,,"[""20211126"",""900468""]",
+cor:entryId,,900468,1,,,,"[""20211126"",""900468""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,820-D,"[""20211126"",""900468""]",
+cor:taxCategory,,00,1,,1,820-D,"[""20211126"",""900468""]",
+cor:accountNumber,,1100,1,1,,820-D,"[""20211126"",""900468""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,820-D,"[""20211126"",""900468""]",
+cor:subaccountDescription,,Demo Sales,1,1,,820-D,"[""20211126"",""900468""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,820-D,"[""20211126"",""900468""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,820-D,"[""20211126"",""900468""]",department
+cor:subaccountId,,B001,1,1,,820-D,"[""20211126"",""900468""]",auxiliary-account
+cor:type,,department,1,1,,820-D,"[""20211126"",""900468""]",department
+cor:type,,auxiliary-account,1,1,,820-D,"[""20211126"",""900468""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900468,1,,,820-D,"[""20211126"",""900468""]",
+cor:monetaryAmount,iso4217:JPY,177230,1,,,820-D,"[""20211126"",""900468""]",
+cor:debitCreditIndicator,,D,1,,,820-D,"[""20211126"",""900468""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900468,1,,,820-C,"[""20211126"",""900468""]",
+cor:debitCreditIndicator,,C,1,,,820-C,"[""20211126"",""900468""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,821-D,"[""20211126"",""900468""]",
+cor:taxCategory,,00,1,,1,821-D,"[""20211126"",""900468""]",
+cor:accountNumber,,1200,1,1,,821-D,"[""20211126"",""900468""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,821-D,"[""20211126"",""900468""]",
+cor:subaccountDescription,,Demo Sales,1,1,,821-D,"[""20211126"",""900468""]",department
+cor:subaccountDescription,,Demo Customer Indigo,1,1,,821-D,"[""20211126"",""900468""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,821-D,"[""20211126"",""900468""]",department
+cor:subaccountId,,C009,1,1,,821-D,"[""20211126"",""900468""]",auxiliary-account
+cor:type,,department,1,1,,821-D,"[""20211126"",""900468""]",department
+cor:type,,auxiliary-account,1,1,,821-D,"[""20211126"",""900468""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900468,1,,,821-D,"[""20211126"",""900468""]",
+cor:monetaryAmount,iso4217:JPY,145010,1,,,821-D,"[""20211126"",""900468""]",
+cor:debitCreditIndicator,,D,1,,,821-D,"[""20211126"",""900468""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900468,1,,,821-C,"[""20211126"",""900468""]",
+cor:debitCreditIndicator,,C,1,,,821-C,"[""20211126"",""900468""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900468,1,,,822-D,"[""20211126"",""900468""]",
+cor:debitCreditIndicator,,D,1,,,822-D,"[""20211126"",""900468""]",
+cor:amountOfTaxes,iso4217:JPY,18748,1,,1,822-C,"[""20211126"",""900468""]",
+cor:taxCategory,,B5,1,,1,822-C,"[""20211126"",""900468""]",
+cor:accountNumber,,4000,1,1,,822-C,"[""20211126"",""900468""]",
+cor:accountDescription,,Demo Product Sales,1,1,,822-C,"[""20211126"",""900468""]",
+cor:subaccountDescription,,Demo Sales,1,1,,822-C,"[""20211126"",""900468""]",department
+cor:subaccountDescription,,Demo Customer Juniper,1,1,,822-C,"[""20211126"",""900468""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,822-C,"[""20211126"",""900468""]",department
+cor:subaccountId,,C010,1,1,,822-C,"[""20211126"",""900468""]",auxiliary-account
+cor:type,,department,1,1,,822-C,"[""20211126"",""900468""]",department
+cor:type,,auxiliary-account,1,1,,822-C,"[""20211126"",""900468""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900468,1,,,822-C,"[""20211126"",""900468""]",
+cor:monetaryAmount,iso4217:JPY,206230,1,,,822-C,"[""20211126"",""900468""]",
+cor:debitCreditIndicator,,C,1,,,822-C,"[""20211126"",""900468""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900468,1,,,823-D,"[""20211126"",""900468""]",
+cor:debitCreditIndicator,,D,1,,,823-D,"[""20211126"",""900468""]",
+cor:amountOfTaxes,iso4217:JPY,10546,1,,1,823-C,"[""20211126"",""900468""]",
+cor:taxCategory,,B5,1,,1,823-C,"[""20211126"",""900468""]",
+cor:accountNumber,,4010,1,1,,823-C,"[""20211126"",""900468""]",
+cor:accountDescription,,Demo Service Revenue,1,1,,823-C,"[""20211126"",""900468""]",
+cor:subaccountDescription,,Demo Sales,1,1,,823-C,"[""20211126"",""900468""]",department
+cor:subaccountDescription,,Demo Customer Aurora,1,1,,823-C,"[""20211126"",""900468""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,823-C,"[""20211126"",""900468""]",department
+cor:subaccountId,,C001,1,1,,823-C,"[""20211126"",""900468""]",auxiliary-account
+cor:type,,department,1,1,,823-C,"[""20211126"",""900468""]",department
+cor:type,,auxiliary-account,1,1,,823-C,"[""20211126"",""900468""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900468,1,,,823-C,"[""20211126"",""900468""]",
+cor:monetaryAmount,iso4217:JPY,116010,1,,,823-C,"[""20211126"",""900468""]",
+cor:debitCreditIndicator,,C,1,,,823-C,"[""20211126"",""900468""]",
+cor:entryDatePosted,,2021-11-27,1,,,,"[""20211127"",""900444""]",
+cor:entryId,,900444,1,,,,"[""20211127"",""900444""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,824-D,"[""20211127"",""900444""]",
+cor:taxCategory,,00,1,,1,824-D,"[""20211127"",""900444""]",
+cor:accountNumber,,1100,1,1,,824-D,"[""20211127"",""900444""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,824-D,"[""20211127"",""900444""]",
+cor:subaccountDescription,,Demo Sales,1,1,,824-D,"[""20211127"",""900444""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,824-D,"[""20211127"",""900444""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,824-D,"[""20211127"",""900444""]",department
+cor:subaccountId,,B001,1,1,,824-D,"[""20211127"",""900444""]",auxiliary-account
+cor:type,,department,1,1,,824-D,"[""20211127"",""900444""]",department
+cor:type,,auxiliary-account,1,1,,824-D,"[""20211127"",""900444""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900444,1,,,824-D,"[""20211127"",""900444""]",
+cor:monetaryAmount,iso4217:JPY,328450,1,,,824-D,"[""20211127"",""900444""]",
+cor:debitCreditIndicator,,D,1,,,824-D,"[""20211127"",""900444""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,824-C,"[""20211127"",""900444""]",
+cor:taxCategory,,00,1,,1,824-C,"[""20211127"",""900444""]",
+cor:accountNumber,,1200,1,1,,824-C,"[""20211127"",""900444""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,824-C,"[""20211127"",""900444""]",
+cor:subaccountDescription,,Demo Sales,1,1,,824-C,"[""20211127"",""900444""]",department
+cor:subaccountDescription,,Demo Customer Cobalt,1,1,,824-C,"[""20211127"",""900444""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,824-C,"[""20211127"",""900444""]",department
+cor:subaccountId,,C003,1,1,,824-C,"[""20211127"",""900444""]",auxiliary-account
+cor:type,,department,1,1,,824-C,"[""20211127"",""900444""]",department
+cor:type,,auxiliary-account,1,1,,824-C,"[""20211127"",""900444""]",auxiliary-account
+cor:detailDescription,,Synthetic demo customer receipt 900444,1,,,824-C,"[""20211127"",""900444""]",
+cor:monetaryAmount,iso4217:JPY,328450,1,,,824-C,"[""20211127"",""900444""]",
+cor:debitCreditIndicator,,C,1,,,824-C,"[""20211127"",""900444""]",
+cor:entryDatePosted,,2021-11-28,1,,,,"[""20211128"",""900416""]",
+cor:entryId,,900416,1,,,,"[""20211128"",""900416""]",
+cor:amountOfTaxes,iso4217:JPY,6430,1,,1,825-D,"[""20211128"",""900416""]",
+cor:taxCategory,,Q5,1,,1,825-D,"[""20211128"",""900416""]",
+cor:accountNumber,,5020,1,1,,825-D,"[""20211128"",""900416""]",
+cor:accountDescription,,Demo Inventory Adjustment,1,1,,825-D,"[""20211128"",""900416""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,825-D,"[""20211128"",""900416""]",department
+cor:subaccountDescription,,Demo Vendor Keystone,1,1,,825-D,"[""20211128"",""900416""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,825-D,"[""20211128"",""900416""]",department
+cor:subaccountId,,V001,1,1,,825-D,"[""20211128"",""900416""]",auxiliary-account
+cor:type,,department,1,1,,825-D,"[""20211128"",""900416""]",department
+cor:type,,auxiliary-account,1,1,,825-D,"[""20211128"",""900416""]",auxiliary-account
+cor:detailDescription,,Synthetic demo purchase on account 900416,1,,,825-D,"[""20211128"",""900416""]",
+cor:monetaryAmount,iso4217:JPY,70730,1,,,825-D,"[""20211128"",""900416""]",
+cor:debitCreditIndicator,,D,1,,,825-D,"[""20211128"",""900416""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,825-C,"[""20211128"",""900416""]",
+cor:taxCategory,,00,1,,1,825-C,"[""20211128"",""900416""]",
+cor:accountNumber,,2000,1,1,,825-C,"[""20211128"",""900416""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,825-C,"[""20211128"",""900416""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,825-C,"[""20211128"",""900416""]",department
+cor:subaccountDescription,,Demo Vendor Keystone,1,1,,825-C,"[""20211128"",""900416""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,825-C,"[""20211128"",""900416""]",department
+cor:subaccountId,,V001,1,1,,825-C,"[""20211128"",""900416""]",auxiliary-account
+cor:type,,department,1,1,,825-C,"[""20211128"",""900416""]",department
+cor:type,,auxiliary-account,1,1,,825-C,"[""20211128"",""900416""]",auxiliary-account
+cor:detailDescription,,Synthetic demo purchase on account 900416,1,,,825-C,"[""20211128"",""900416""]",
+cor:monetaryAmount,iso4217:JPY,70730,1,,,825-C,"[""20211128"",""900416""]",
+cor:debitCreditIndicator,,C,1,,,825-C,"[""20211128"",""900416""]",
+cor:entryDatePosted,,2021-11-28,1,,,,"[""20211128"",""900457""]",
+cor:entryId,,900457,1,,,,"[""20211128"",""900457""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,826-D,"[""20211128"",""900457""]",
+cor:taxCategory,,00,1,,1,826-D,"[""20211128"",""900457""]",
+cor:accountNumber,,2000,1,1,,826-D,"[""20211128"",""900457""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,826-D,"[""20211128"",""900457""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,826-D,"[""20211128"",""900457""]",department
+cor:subaccountDescription,,Demo Vendor Prairie,1,1,,826-D,"[""20211128"",""900457""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,826-D,"[""20211128"",""900457""]",department
+cor:subaccountId,,V006,1,1,,826-D,"[""20211128"",""900457""]",auxiliary-account
+cor:type,,department,1,1,,826-D,"[""20211128"",""900457""]",department
+cor:type,,auxiliary-account,1,1,,826-D,"[""20211128"",""900457""]",auxiliary-account
+cor:detailDescription,,Synthetic demo vendor settlement 900457,1,,,826-D,"[""20211128"",""900457""]",
+cor:monetaryAmount,iso4217:JPY,287300,1,,,826-D,"[""20211128"",""900457""]",
+cor:debitCreditIndicator,,D,1,,,826-D,"[""20211128"",""900457""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,826-C,"[""20211128"",""900457""]",
+cor:taxCategory,,00,1,,1,826-C,"[""20211128"",""900457""]",
+cor:accountNumber,,1110,1,1,,826-C,"[""20211128"",""900457""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,826-C,"[""20211128"",""900457""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,826-C,"[""20211128"",""900457""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,826-C,"[""20211128"",""900457""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,826-C,"[""20211128"",""900457""]",department
+cor:subaccountId,,B002,1,1,,826-C,"[""20211128"",""900457""]",auxiliary-account
+cor:type,,department,1,1,,826-C,"[""20211128"",""900457""]",department
+cor:type,,auxiliary-account,1,1,,826-C,"[""20211128"",""900457""]",auxiliary-account
+cor:detailDescription,,Synthetic demo vendor settlement 900457,1,,,826-C,"[""20211128"",""900457""]",
+cor:monetaryAmount,iso4217:JPY,287300,1,,,826-C,"[""20211128"",""900457""]",
+cor:debitCreditIndicator,,C,1,,,826-C,"[""20211128"",""900457""]",
+cor:entryDatePosted,,2021-11-29,1,,,,"[""20211129"",""900426""]",
+cor:entryId,,900426,1,,,,"[""20211129"",""900426""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,827-D,"[""20211129"",""900426""]",
+cor:taxCategory,,00,1,,1,827-D,"[""20211129"",""900426""]",
+cor:accountNumber,,6000,1,1,,827-D,"[""20211129"",""900426""]",
+cor:accountDescription,,Demo Salaries,1,1,,827-D,"[""20211129"",""900426""]",
+cor:subaccountDescription,,Demo Administration,1,1,,827-D,"[""20211129"",""900426""]",department
+cor:subaccountId,,D02,1,1,,827-D,"[""20211129"",""900426""]",department
+cor:type,,department,1,1,,827-D,"[""20211129"",""900426""]",department
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900426,1,,,827-D,"[""20211129"",""900426""]",
+cor:monetaryAmount,iso4217:JPY,55630,1,,,827-D,"[""20211129"",""900426""]",
+cor:debitCreditIndicator,,D,1,,,827-D,"[""20211129"",""900426""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,827-C,"[""20211129"",""900426""]",
+cor:taxCategory,,00,1,,1,827-C,"[""20211129"",""900426""]",
+cor:accountNumber,,1100,1,1,,827-C,"[""20211129"",""900426""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,827-C,"[""20211129"",""900426""]",
+cor:subaccountDescription,,Demo Administration,1,1,,827-C,"[""20211129"",""900426""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,827-C,"[""20211129"",""900426""]",auxiliary-account
+cor:subaccountId,,D02,1,1,,827-C,"[""20211129"",""900426""]",department
+cor:subaccountId,,B001,1,1,,827-C,"[""20211129"",""900426""]",auxiliary-account
+cor:type,,department,1,1,,827-C,"[""20211129"",""900426""]",department
+cor:type,,auxiliary-account,1,1,,827-C,"[""20211129"",""900426""]",auxiliary-account
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900426,1,,,827-C,"[""20211129"",""900426""]",
+cor:monetaryAmount,iso4217:JPY,370910,1,,,827-C,"[""20211129"",""900426""]",
+cor:debitCreditIndicator,,C,1,,,827-C,"[""20211129"",""900426""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,828-D,"[""20211129"",""900426""]",
+cor:taxCategory,,00,1,,1,828-D,"[""20211129"",""900426""]",
+cor:accountNumber,,6010,1,1,,828-D,"[""20211129"",""900426""]",
+cor:accountDescription,,Demo Statutory Welfare,1,1,,828-D,"[""20211129"",""900426""]",
+cor:subaccountDescription,,Demo Administration,1,1,,828-D,"[""20211129"",""900426""]",department
+cor:subaccountId,,D02,1,1,,828-D,"[""20211129"",""900426""]",department
+cor:type,,department,1,1,,828-D,"[""20211129"",""900426""]",department
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900426,1,,,828-D,"[""20211129"",""900426""]",
+cor:monetaryAmount,iso4217:JPY,29670,1,,,828-D,"[""20211129"",""900426""]",
+cor:debitCreditIndicator,,D,1,,,828-D,"[""20211129"",""900426""]",
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900426,1,,,828-C,"[""20211129"",""900426""]",
+cor:debitCreditIndicator,,C,1,,,828-C,"[""20211129"",""900426""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,829-D,"[""20211129"",""900426""]",
+cor:taxCategory,,00,1,,1,829-D,"[""20211129"",""900426""]",
+cor:accountNumber,,2110,1,1,,829-D,"[""20211129"",""900426""]",
+cor:accountDescription,,Demo Payroll Withholding,1,1,,829-D,"[""20211129"",""900426""]",
+cor:subaccountDescription,,Demo Administration,1,1,,829-D,"[""20211129"",""900426""]",department
+cor:subaccountId,,D02,1,1,,829-D,"[""20211129"",""900426""]",department
+cor:type,,department,1,1,,829-D,"[""20211129"",""900426""]",department
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900426,1,,,829-D,"[""20211129"",""900426""]",
+cor:monetaryAmount,iso4217:JPY,285610,1,,,829-D,"[""20211129"",""900426""]",
+cor:debitCreditIndicator,,D,1,,,829-D,"[""20211129"",""900426""]",
+cor:detailDescription,,Synthetic demo monthly payroll bundle 900426,1,,,829-C,"[""20211129"",""900426""]",
+cor:debitCreditIndicator,,C,1,,,829-C,"[""20211129"",""900426""]",
+cor:entryDatePosted,,2021-11-29,1,,,,"[""20211129"",""900430""]",
+cor:entryId,,900430,1,,,,"[""20211129"",""900430""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,830-D,"[""20211129"",""900430""]",
+cor:taxCategory,,00,1,,1,830-D,"[""20211129"",""900430""]",
+cor:accountNumber,,1110,1,1,,830-D,"[""20211129"",""900430""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,830-D,"[""20211129"",""900430""]",
+cor:subaccountDescription,,Demo Sales,1,1,,830-D,"[""20211129"",""900430""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,830-D,"[""20211129"",""900430""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,830-D,"[""20211129"",""900430""]",department
+cor:subaccountId,,B002,1,1,,830-D,"[""20211129"",""900430""]",auxiliary-account
+cor:type,,department,1,1,,830-D,"[""20211129"",""900430""]",department
+cor:type,,auxiliary-account,1,1,,830-D,"[""20211129"",""900430""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900430,1,,,830-D,"[""20211129"",""900430""]",
+cor:monetaryAmount,iso4217:JPY,353830,1,,,830-D,"[""20211129"",""900430""]",
+cor:debitCreditIndicator,,D,1,,,830-D,"[""20211129"",""900430""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900430,1,,,830-C,"[""20211129"",""900430""]",
+cor:debitCreditIndicator,,C,1,,,830-C,"[""20211129"",""900430""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,831-D,"[""20211129"",""900430""]",
+cor:taxCategory,,00,1,,1,831-D,"[""20211129"",""900430""]",
+cor:accountNumber,,1200,1,1,,831-D,"[""20211129"",""900430""]",
+cor:accountDescription,,Demo Accounts Receivable,1,1,,831-D,"[""20211129"",""900430""]",
+cor:subaccountDescription,,Demo Sales,1,1,,831-D,"[""20211129"",""900430""]",department
+cor:subaccountDescription,,Demo Customer Aurora,1,1,,831-D,"[""20211129"",""900430""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,831-D,"[""20211129"",""900430""]",department
+cor:subaccountId,,C001,1,1,,831-D,"[""20211129"",""900430""]",auxiliary-account
+cor:type,,department,1,1,,831-D,"[""20211129"",""900430""]",department
+cor:type,,auxiliary-account,1,1,,831-D,"[""20211129"",""900430""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900430,1,,,831-D,"[""20211129"",""900430""]",
+cor:monetaryAmount,iso4217:JPY,245890,1,,,831-D,"[""20211129"",""900430""]",
+cor:debitCreditIndicator,,D,1,,,831-D,"[""20211129"",""900430""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900430,1,,,831-C,"[""20211129"",""900430""]",
+cor:debitCreditIndicator,,C,1,,,831-C,"[""20211129"",""900430""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900430,1,,,832-D,"[""20211129"",""900430""]",
+cor:debitCreditIndicator,,D,1,,,832-D,"[""20211129"",""900430""]",
+cor:amountOfTaxes,iso4217:JPY,45796,1,,1,832-C,"[""20211129"",""900430""]",
+cor:taxCategory,,B5,1,,1,832-C,"[""20211129"",""900430""]",
+cor:accountNumber,,4000,1,1,,832-C,"[""20211129"",""900430""]",
+cor:accountDescription,,Demo Product Sales,1,1,,832-C,"[""20211129"",""900430""]",
+cor:subaccountDescription,,Demo Sales,1,1,,832-C,"[""20211129"",""900430""]",department
+cor:subaccountDescription,,Demo Customer Birch,1,1,,832-C,"[""20211129"",""900430""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,832-C,"[""20211129"",""900430""]",department
+cor:subaccountId,,C002,1,1,,832-C,"[""20211129"",""900430""]",auxiliary-account
+cor:type,,department,1,1,,832-C,"[""20211129"",""900430""]",department
+cor:type,,auxiliary-account,1,1,,832-C,"[""20211129"",""900430""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900430,1,,,832-C,"[""20211129"",""900430""]",
+cor:monetaryAmount,iso4217:JPY,503760,1,,,832-C,"[""20211129"",""900430""]",
+cor:debitCreditIndicator,,C,1,,,832-C,"[""20211129"",""900430""]",
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900430,1,,,833-D,"[""20211129"",""900430""]",
+cor:debitCreditIndicator,,D,1,,,833-D,"[""20211129"",""900430""]",
+cor:amountOfTaxes,iso4217:JPY,8724,1,,1,833-C,"[""20211129"",""900430""]",
+cor:taxCategory,,B5,1,,1,833-C,"[""20211129"",""900430""]",
+cor:accountNumber,,4010,1,1,,833-C,"[""20211129"",""900430""]",
+cor:accountDescription,,Demo Service Revenue,1,1,,833-C,"[""20211129"",""900430""]",
+cor:subaccountDescription,,Demo Sales,1,1,,833-C,"[""20211129"",""900430""]",department
+cor:subaccountDescription,,Demo Customer Cobalt,1,1,,833-C,"[""20211129"",""900430""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,833-C,"[""20211129"",""900430""]",department
+cor:subaccountId,,C003,1,1,,833-C,"[""20211129"",""900430""]",auxiliary-account
+cor:type,,department,1,1,,833-C,"[""20211129"",""900430""]",department
+cor:type,,auxiliary-account,1,1,,833-C,"[""20211129"",""900430""]",auxiliary-account
+cor:detailDescription,,Synthetic demo mixed sales and receipt 900430,1,,,833-C,"[""20211129"",""900430""]",
+cor:monetaryAmount,iso4217:JPY,95960,1,,,833-C,"[""20211129"",""900430""]",
+cor:debitCreditIndicator,,C,1,,,833-C,"[""20211129"",""900430""]",
+cor:entryDatePosted,,2021-11-29,1,,,,"[""20211129"",""900467""]",
+cor:entryId,,900467,1,,,,"[""20211129"",""900467""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,834-D,"[""20211129"",""900467""]",
+cor:taxCategory,,00,1,,1,834-D,"[""20211129"",""900467""]",
+cor:accountNumber,,2000,1,1,,834-D,"[""20211129"",""900467""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,834-D,"[""20211129"",""900467""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,834-D,"[""20211129"",""900467""]",department
+cor:subaccountDescription,,Demo Vendor Prairie,1,1,,834-D,"[""20211129"",""900467""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,834-D,"[""20211129"",""900467""]",department
+cor:subaccountId,,V006,1,1,,834-D,"[""20211129"",""900467""]",auxiliary-account
+cor:type,,department,1,1,,834-D,"[""20211129"",""900467""]",department
+cor:type,,auxiliary-account,1,1,,834-D,"[""20211129"",""900467""]",auxiliary-account
+cor:detailDescription,,Synthetic demo vendor settlement 900467,1,,,834-D,"[""20211129"",""900467""]",
+cor:monetaryAmount,iso4217:JPY,242320,1,,,834-D,"[""20211129"",""900467""]",
+cor:debitCreditIndicator,,D,1,,,834-D,"[""20211129"",""900467""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,834-C,"[""20211129"",""900467""]",
+cor:taxCategory,,00,1,,1,834-C,"[""20211129"",""900467""]",
+cor:accountNumber,,1120,1,1,,834-C,"[""20211129"",""900467""]",
+cor:accountDescription,,Demo Harbor Ordinary Deposit,1,1,,834-C,"[""20211129"",""900467""]",
+cor:subaccountDescription,,Demo Logistics,1,1,,834-C,"[""20211129"",""900467""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,834-C,"[""20211129"",""900467""]",auxiliary-account
+cor:subaccountId,,D04,1,1,,834-C,"[""20211129"",""900467""]",department
+cor:subaccountId,,B003,1,1,,834-C,"[""20211129"",""900467""]",auxiliary-account
+cor:type,,department,1,1,,834-C,"[""20211129"",""900467""]",department
+cor:type,,auxiliary-account,1,1,,834-C,"[""20211129"",""900467""]",auxiliary-account
+cor:detailDescription,,Synthetic demo vendor settlement 900467,1,,,834-C,"[""20211129"",""900467""]",
+cor:monetaryAmount,iso4217:JPY,242320,1,,,834-C,"[""20211129"",""900467""]",
+cor:debitCreditIndicator,,C,1,,,834-C,"[""20211129"",""900467""]",
+cor:entryDatePosted,,2021-11-30,1,,,,"[""20211130"",""900417""]",
+cor:entryId,,900417,1,,,,"[""20211130"",""900417""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,835-D,"[""20211130"",""900417""]",
+cor:taxCategory,,00,1,,1,835-D,"[""20211130"",""900417""]",
+cor:accountNumber,,2000,1,1,,835-D,"[""20211130"",""900417""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,835-D,"[""20211130"",""900417""]",
+cor:subaccountDescription,,Demo Sales,1,1,,835-D,"[""20211130"",""900417""]",department
+cor:subaccountDescription,,Demo Vendor Rivulet,1,1,,835-D,"[""20211130"",""900417""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,835-D,"[""20211130"",""900417""]",department
+cor:subaccountId,,V008,1,1,,835-D,"[""20211130"",""900417""]",auxiliary-account
+cor:type,,department,1,1,,835-D,"[""20211130"",""900417""]",department
+cor:type,,auxiliary-account,1,1,,835-D,"[""20211130"",""900417""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900417,1,,,835-D,"[""20211130"",""900417""]",
+cor:monetaryAmount,iso4217:JPY,229570,1,,,835-D,"[""20211130"",""900417""]",
+cor:debitCreditIndicator,,D,1,,,835-D,"[""20211130"",""900417""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900417,1,,,835-C,"[""20211130"",""900417""]",
+cor:debitCreditIndicator,,C,1,,,835-C,"[""20211130"",""900417""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,836-D,"[""20211130"",""900417""]",
+cor:taxCategory,,00,1,,1,836-D,"[""20211130"",""900417""]",
+cor:accountNumber,,2100,1,1,,836-D,"[""20211130"",""900417""]",
+cor:accountDescription,,Demo Accrued Payables,1,1,,836-D,"[""20211130"",""900417""]",
+cor:subaccountDescription,,Demo Sales,1,1,,836-D,"[""20211130"",""900417""]",department
+cor:subaccountDescription,,Demo Vendor Keystone,1,1,,836-D,"[""20211130"",""900417""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,836-D,"[""20211130"",""900417""]",department
+cor:subaccountId,,V001,1,1,,836-D,"[""20211130"",""900417""]",auxiliary-account
+cor:type,,department,1,1,,836-D,"[""20211130"",""900417""]",department
+cor:type,,auxiliary-account,1,1,,836-D,"[""20211130"",""900417""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900417,1,,,836-D,"[""20211130"",""900417""]",
+cor:monetaryAmount,iso4217:JPY,203590,1,,,836-D,"[""20211130"",""900417""]",
+cor:debitCreditIndicator,,D,1,,,836-D,"[""20211130"",""900417""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900417,1,,,836-C,"[""20211130"",""900417""]",
+cor:debitCreditIndicator,,C,1,,,836-C,"[""20211130"",""900417""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900417,1,,,837-D,"[""20211130"",""900417""]",
+cor:debitCreditIndicator,,D,1,,,837-D,"[""20211130"",""900417""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,837-C,"[""20211130"",""900417""]",
+cor:taxCategory,,00,1,,1,837-C,"[""20211130"",""900417""]",
+cor:accountNumber,,1100,1,1,,837-C,"[""20211130"",""900417""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,837-C,"[""20211130"",""900417""]",
+cor:subaccountDescription,,Demo Sales,1,1,,837-C,"[""20211130"",""900417""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,837-C,"[""20211130"",""900417""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,837-C,"[""20211130"",""900417""]",department
+cor:subaccountId,,B001,1,1,,837-C,"[""20211130"",""900417""]",auxiliary-account
+cor:type,,department,1,1,,837-C,"[""20211130"",""900417""]",department
+cor:type,,auxiliary-account,1,1,,837-C,"[""20211130"",""900417""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900417,1,,,837-C,"[""20211130"",""900417""]",
+cor:monetaryAmount,iso4217:JPY,329200,1,,,837-C,"[""20211130"",""900417""]",
+cor:debitCreditIndicator,,C,1,,,837-C,"[""20211130"",""900417""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900417,1,,,838-D,"[""20211130"",""900417""]",
+cor:debitCreditIndicator,,D,1,,,838-D,"[""20211130"",""900417""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,838-C,"[""20211130"",""900417""]",
+cor:taxCategory,,00,1,,1,838-C,"[""20211130"",""900417""]",
+cor:accountNumber,,1110,1,1,,838-C,"[""20211130"",""900417""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,838-C,"[""20211130"",""900417""]",
+cor:subaccountDescription,,Demo Sales,1,1,,838-C,"[""20211130"",""900417""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,838-C,"[""20211130"",""900417""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,838-C,"[""20211130"",""900417""]",department
+cor:subaccountId,,B002,1,1,,838-C,"[""20211130"",""900417""]",auxiliary-account
+cor:type,,department,1,1,,838-C,"[""20211130"",""900417""]",department
+cor:type,,auxiliary-account,1,1,,838-C,"[""20211130"",""900417""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900417,1,,,838-C,"[""20211130"",""900417""]",
+cor:monetaryAmount,iso4217:JPY,103960,1,,,838-C,"[""20211130"",""900417""]",
+cor:debitCreditIndicator,,C,1,,,838-C,"[""20211130"",""900417""]",
+cor:entryDatePosted,,2021-11-30,1,,,,"[""20211130"",""900461""]",
+cor:entryId,,900461,1,,,,"[""20211130"",""900461""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,839-D,"[""20211130"",""900461""]",
+cor:taxCategory,,00,1,,1,839-D,"[""20211130"",""900461""]",
+cor:accountNumber,,2000,1,1,,839-D,"[""20211130"",""900461""]",
+cor:accountDescription,,Demo Accounts Payable,1,1,,839-D,"[""20211130"",""900461""]",
+cor:subaccountDescription,,Demo Sales,1,1,,839-D,"[""20211130"",""900461""]",department
+cor:subaccountDescription,,Demo Vendor Lattice,1,1,,839-D,"[""20211130"",""900461""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,839-D,"[""20211130"",""900461""]",department
+cor:subaccountId,,V002,1,1,,839-D,"[""20211130"",""900461""]",auxiliary-account
+cor:type,,department,1,1,,839-D,"[""20211130"",""900461""]",department
+cor:type,,auxiliary-account,1,1,,839-D,"[""20211130"",""900461""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900461,1,,,839-D,"[""20211130"",""900461""]",
+cor:monetaryAmount,iso4217:JPY,265170,1,,,839-D,"[""20211130"",""900461""]",
+cor:debitCreditIndicator,,D,1,,,839-D,"[""20211130"",""900461""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900461,1,,,839-C,"[""20211130"",""900461""]",
+cor:debitCreditIndicator,,C,1,,,839-C,"[""20211130"",""900461""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,840-D,"[""20211130"",""900461""]",
+cor:taxCategory,,00,1,,1,840-D,"[""20211130"",""900461""]",
+cor:accountNumber,,2100,1,1,,840-D,"[""20211130"",""900461""]",
+cor:accountDescription,,Demo Accrued Payables,1,1,,840-D,"[""20211130"",""900461""]",
+cor:subaccountDescription,,Demo Sales,1,1,,840-D,"[""20211130"",""900461""]",department
+cor:subaccountDescription,,Demo Vendor Orchid,1,1,,840-D,"[""20211130"",""900461""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,840-D,"[""20211130"",""900461""]",department
+cor:subaccountId,,V005,1,1,,840-D,"[""20211130"",""900461""]",auxiliary-account
+cor:type,,department,1,1,,840-D,"[""20211130"",""900461""]",department
+cor:type,,auxiliary-account,1,1,,840-D,"[""20211130"",""900461""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900461,1,,,840-D,"[""20211130"",""900461""]",
+cor:monetaryAmount,iso4217:JPY,184280,1,,,840-D,"[""20211130"",""900461""]",
+cor:debitCreditIndicator,,D,1,,,840-D,"[""20211130"",""900461""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900461,1,,,840-C,"[""20211130"",""900461""]",
+cor:debitCreditIndicator,,C,1,,,840-C,"[""20211130"",""900461""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900461,1,,,841-D,"[""20211130"",""900461""]",
+cor:debitCreditIndicator,,D,1,,,841-D,"[""20211130"",""900461""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,841-C,"[""20211130"",""900461""]",
+cor:taxCategory,,00,1,,1,841-C,"[""20211130"",""900461""]",
+cor:accountNumber,,1120,1,1,,841-C,"[""20211130"",""900461""]",
+cor:accountDescription,,Demo Harbor Ordinary Deposit,1,1,,841-C,"[""20211130"",""900461""]",
+cor:subaccountDescription,,Demo Sales,1,1,,841-C,"[""20211130"",""900461""]",department
+cor:subaccountDescription,,Harbor Demo Bank,1,1,,841-C,"[""20211130"",""900461""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,841-C,"[""20211130"",""900461""]",department
+cor:subaccountId,,B003,1,1,,841-C,"[""20211130"",""900461""]",auxiliary-account
+cor:type,,department,1,1,,841-C,"[""20211130"",""900461""]",department
+cor:type,,auxiliary-account,1,1,,841-C,"[""20211130"",""900461""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900461,1,,,841-C,"[""20211130"",""900461""]",
+cor:monetaryAmount,iso4217:JPY,233710,1,,,841-C,"[""20211130"",""900461""]",
+cor:debitCreditIndicator,,C,1,,,841-C,"[""20211130"",""900461""]",
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900461,1,,,842-D,"[""20211130"",""900461""]",
+cor:debitCreditIndicator,,D,1,,,842-D,"[""20211130"",""900461""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,842-C,"[""20211130"",""900461""]",
+cor:taxCategory,,00,1,,1,842-C,"[""20211130"",""900461""]",
+cor:accountNumber,,1100,1,1,,842-C,"[""20211130"",""900461""]",
+cor:accountDescription,,Demo Central Ordinary Deposit,1,1,,842-C,"[""20211130"",""900461""]",
+cor:subaccountDescription,,Demo Sales,1,1,,842-C,"[""20211130"",""900461""]",department
+cor:subaccountDescription,,Demo Central Bank,1,1,,842-C,"[""20211130"",""900461""]",auxiliary-account
+cor:subaccountId,,D01,1,1,,842-C,"[""20211130"",""900461""]",department
+cor:subaccountId,,B001,1,1,,842-C,"[""20211130"",""900461""]",auxiliary-account
+cor:type,,department,1,1,,842-C,"[""20211130"",""900461""]",department
+cor:type,,auxiliary-account,1,1,,842-C,"[""20211130"",""900461""]",auxiliary-account
+cor:detailDescription,,Synthetic demo multi-vendor settlement 900461,1,,,842-C,"[""20211130"",""900461""]",
+cor:monetaryAmount,iso4217:JPY,215740,1,,,842-C,"[""20211130"",""900461""]",
+cor:debitCreditIndicator,,C,1,,,842-C,"[""20211130"",""900461""]",
+cor:entryDatePosted,,2021-11-30,1,,,,"[""20211130"",""900469""]",
+cor:entryId,,900469,1,,,,"[""20211130"",""900469""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,843-D,"[""20211130"",""900469""]",
+cor:taxCategory,,00,1,,1,843-D,"[""20211130"",""900469""]",
+cor:accountNumber,,1400,1,1,,843-D,"[""20211130"",""900469""]",
+cor:accountDescription,,Demo Prepaid Expenses,1,1,,843-D,"[""20211130"",""900469""]",
+cor:subaccountDescription,,Demo Digital Services,1,1,,843-D,"[""20211130"",""900469""]",department
+cor:subaccountDescription,,Demo Energy Services,1,1,,843-D,"[""20211130"",""900469""]",auxiliary-account
+cor:subaccountId,,D05,1,1,,843-D,"[""20211130"",""900469""]",department
+cor:subaccountId,,S002,1,1,,843-D,"[""20211130"",""900469""]",auxiliary-account
+cor:type,,department,1,1,,843-D,"[""20211130"",""900469""]",department
+cor:type,,auxiliary-account,1,1,,843-D,"[""20211130"",""900469""]",auxiliary-account
+cor:detailDescription,,Synthetic demo prepaid service 900469,1,,,843-D,"[""20211130"",""900469""]",
+cor:monetaryAmount,iso4217:JPY,89210,1,,,843-D,"[""20211130"",""900469""]",
+cor:debitCreditIndicator,,D,1,,,843-D,"[""20211130"",""900469""]",
+cor:amountOfTaxes,iso4217:JPY,0,1,,1,843-C,"[""20211130"",""900469""]",
+cor:taxCategory,,00,1,,1,843-C,"[""20211130"",""900469""]",
+cor:accountNumber,,1110,1,1,,843-C,"[""20211130"",""900469""]",
+cor:accountDescription,,Demo North Current Deposit,1,1,,843-C,"[""20211130"",""900469""]",
+cor:subaccountDescription,,Demo Digital Services,1,1,,843-C,"[""20211130"",""900469""]",department
+cor:subaccountDescription,,North Demo Bank,1,1,,843-C,"[""20211130"",""900469""]",auxiliary-account
+cor:subaccountId,,D05,1,1,,843-C,"[""20211130"",""900469""]",department
+cor:subaccountId,,B002,1,1,,843-C,"[""20211130"",""900469""]",auxiliary-account
+cor:type,,department,1,1,,843-C,"[""20211130"",""900469""]",department
+cor:type,,auxiliary-account,1,1,,843-C,"[""20211130"",""900469""]",auxiliary-account
+cor:detailDescription,,Synthetic demo prepaid service 900469,1,,,843-C,"[""20211130"",""900469""]",
+cor:monetaryAmount,iso4217:JPY,89210,1,,,843-C,"[""20211130"",""900469""]",
+cor:debitCreditIndicator,,C,1,,,843-C,"[""20211130"",""900469""]",
