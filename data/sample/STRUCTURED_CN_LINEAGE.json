@@ -1,0 +1,16 @@
+{
+  "dataset_id": "pca-synthetic-fy2021-v2-settlement-16m",
+  "schema_id": "xbrl-gl-next-ae-cn-v1",
+  "schema_version": "1.0.0",
+  "source_dataset_id": "pca-synthetic-fy2021-v1",
+  "source_binding_id": "PCA_Cn_SEMANTIC_PATH_BINDING",
+  "target_binding": "bindings/XBRL_GL_Next_AccountingEntries_Cn_BINDING.csv",
+  "target_binding_sha256": "BB30878183E242149F6169EFE328CC07FBADE0196B16FB16757F69629B8EBFE3",
+  "hmd_sha256": "DEB79F98462AE073BE7CD1102C73427CF8630203F7B872B82DB23A8D1909E46C",
+  "mapping_rule": "semantic path plus explicit occurrence selector; never ordinal equality",
+  "control_partner_normalization": {
+    "1200": "C001",
+    "2000": "V001",
+    "amount_effect": 0
+  }
+}

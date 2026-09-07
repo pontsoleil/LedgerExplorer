@@ -1,0 +1,9 @@
+C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14
+2021-03-05,REF-BF-AR-SET-001,1-D,D,1120,Demo Harbor Ordinary Deposit,,,,,,,100000,Reference-before customer receipt
+2021-03-05,REF-BF-AR-SET-001,2-C,C,1200,Demo Accounts Receivable,,,C001,Demo Customer Aurora,,,100000,Reference-before customer receipt
+2021-03-08,REF-BF-AP-SET-001,1-D,D,2000,Demo Accounts Payable,,,V001,Demo Vendor Keystone,,,200000,Reference-before vendor payment
+2021-03-08,REF-BF-AP-SET-001,2-C,C,1120,Demo Harbor Ordinary Deposit,,,,,,,200000,Reference-before vendor payment
+2021-03-15,REF-BF-AR-002,1-D,D,1200,Demo Accounts Receivable,,,C001,Demo Customer Aurora,,,1000000,Reference-before customer invoice
+2021-03-15,REF-BF-AR-002,2-C,C,4000,Demo Product Sales,,,,,,,1000000,Reference-before customer invoice
+2021-03-20,REF-BF-AP-002,1-D,D,6000,Demo Salaries,,,,,,,2423720,Reference-before vendor invoice
+2021-03-20,REF-BF-AP-002,2-C,C,2000,Demo Accounts Payable,,,V001,Demo Vendor Keystone,,,2423720,Reference-before vendor invoice

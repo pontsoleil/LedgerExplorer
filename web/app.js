@@ -133,7 +133,7 @@ let localRowsAll = null; // uploaded CSV rows
 // View labels (button labels)
 const VIEW_LABELS_I18N = {
   ja: {
-    structured: "xBRL-CSV",
+    structured: "Structured CSV",
     journal: "仕訳帳",
     ledger: "総勘定元帳",
     trial_balance: "試算表",
@@ -142,10 +142,10 @@ const VIEW_LABELS_I18N = {
     receivables: "売掛金集計",
     payables: "買掛金集計",
     documents: "業務文書",
-    tidy: "表示用Tidy",
+    tidy: "Fact詳細",
   },
   en: {
-    structured: "xBRL-CSV",
+    structured: "Structured CSV",
     journal: "Journal",
     ledger: "General Ledger",
     trial_balance: "Trial Balance",
@@ -154,7 +154,7 @@ const VIEW_LABELS_I18N = {
     receivables: "A/R Summary",
     payables: "A/P Summary",
     documents: "Business Documents",
-    tidy: "Display Tidy",
+    tidy: "Fact Details",
   },
 };
 
@@ -997,6 +997,15 @@ JA: 表描画
 - viewごとの非表示列 + コード列の一括切替を反映して表示列を決定します。
 - 整数/数値/テキスト整形、B/S・P/Lの階層表示（Levelに基づくインデント）を適用します。
 */
+let structuredColumnMetadata = new Map();
+
+function structuredHeaderLabel(column) {
+  const metadata = structuredColumnMetadata.get(column);
+  if (!metadata) return tHeader(column);
+  const name = currentLang === "en" ? metadata.name_en : metadata.name_ja;
+  return `${column} ${name || metadata.name_en || ""}`.trim();
+}
+
 function renderTable(rows, maxRows = DEFAULT_MAX_ROWS) {
   wrapEl.classList.remove("partner-report-wrap");
   if (!rows || rows.length === 0) {
@@ -1027,7 +1036,10 @@ function renderTable(rows, maxRows = DEFAULT_MAX_ROWS) {
     const thExtra = noDataRows
       ? "white-space:normal;max-width:140px;overflow-wrap:anywhere;word-break:break-word;line-height:1.2;"
       : "";
-    html += `<th style="text-align:${st.align};${thExtra}">${escapeHtml(tHeader(header[i]))}</th>`;
+    const label = currentView === "structured" ? structuredHeaderLabel(header[i]) : tHeader(header[i]);
+    const metadata = structuredColumnMetadata.get(header[i]);
+    const title = currentView === "structured" && metadata ? ` title="${escapeHtml(metadata.semantic_path || "")}"` : "";
+    html += `<th${title} style="text-align:${st.align};${thExtra}">${escapeHtml(label)}</th>`;
   }
   html += "</tr></thead><tbody>";
 
@@ -2707,10 +2719,9 @@ function applyI18nTexts() {
       const address = [company.postal_code ? `〒${company.postal_code}` : "", locality, company.building]
         .filter(Boolean)
         .join(" ");
-      const datasetId = INDEX?.dataset_id || DATASET;
       const demoNotice = currentLang === "en"
-        ? `All data shown is fictional. Dataset: ${datasetId}; period: April 2021 through March 2022.`
-        : `※ 本画面のデータはすべて架空です。データセット: ${datasetId}、対象期間: 2021年4月～2022年3月。`;
+        ? "All data shown is fictional demonstration data. The accounting period is from April 2021 to March 2022; only transactions required to illustrate receipt and payment relationships include reference data from the two months before and after this period."
+        : "※ 本画面のデータはすべて架空のデモデータです。会計取引の対象期間は2021年4月から2022年3月までですが、入出金との対応確認に必要な取引に限り、対象期間外の前後2か月分も参考データとして設定しています。";
       companyHeaderEl.innerHTML = `<span class="company-header__name">${escapeHtml(company.name)}</span><span class="company-header__address">${escapeHtml(address)}</span><span class="company-header__notice">${escapeHtml(demoNotice)}</span>`;
       companyHeaderEl.hidden = false;
     } else {
@@ -2729,7 +2740,7 @@ let lastAccountingView = "ledger";
 let lastLoadedUrl = "";
 let lastLoadedRows = null;
 let initialAccountFromUrl = "";
-const DEFAULT_LEDGER_ACCOUNT = "";
+const DEFAULT_LEDGER_ACCOUNT = "10A100020";
 
 // Build CSV URL using index.json (dataset + language + month)
 function joinUrlPath(...parts) {
@@ -2806,14 +2817,6 @@ function initNav() {
 
 function renderModeSwitch() {
   if (!modeSwitchEl) return;
-  const businessDocumentsEnabled = INDEX?.features?.business_documents === true;
-  modeSwitchEl.hidden = !businessDocumentsEnabled;
-  if (!businessDocumentsEnabled) {
-    modeSwitchEl.innerHTML = "";
-    if (isDocumentView()) currentView = "ledger";
-    renderDocumentTypeNav();
-    return;
-  }
   const accountingLabel = isDocumentView()
     ? (currentLang === "en" ? "Back to accounting" : "会計帳簿へ戻る")
     : (currentLang === "en" ? "Accounting ledgers" : "会計帳簿");
@@ -2874,7 +2877,7 @@ function currentAsOfMonth() {
 }
 
 function statementsAvailable() {
-  return true;
+  return currentAsOfMonth() >= "2022-03";
 }
 
 function updateStatementNavAvailability() {
@@ -2890,7 +2893,7 @@ function updateViewControls() {
   const partnerView = isPartnerReportView();
   const documentView = isDocumentView();
   const allAccountsOnly = currentView === "trial_balance" || currentView === "balance_sheet" || currentView === "pnl";
-  const annualReportView = false;
+  const annualReportView = currentView === "balance_sheet" || currentView === "pnl";
   const searchableView = currentView === "structured" || currentView === "tidy" || currentView === "journal";
   if (allAccountsOnly) acctSel.value = "";
   if (!searchableView) searchInput.value = "";
@@ -2924,7 +2927,7 @@ function updateViewControls() {
   if (navEl) navEl.hidden = documentView;
   if (aboutLinkEl?.closest("button")) aboutLinkEl.closest("button").hidden = documentView;
   if (aboutSeparatorEl) aboutSeparatorEl.hidden = documentView;
-  if (modeNavSeparatorEl) modeNavSeparatorEl.hidden = INDEX?.features?.business_documents !== true;
+  if (modeNavSeparatorEl) modeNavSeparatorEl.hidden = false;
   renderDocumentTypeNav();
 }
 
@@ -3080,6 +3083,11 @@ async function refresh(opts = {}) {
   setActiveButton();
   updateViewControls();
 
+  const physicalView = INDEX?.views?.[currentView];
+  const availableMonths = Array.isArray(physicalView?.available) ? physicalView.available : [];
+  if (!isDocumentView() && !isPartnerReportView() && availableMonths.length && !availableMonths.includes(monthSel.value)) {
+    monthSel.value = availableMonths.includes(INDEX.default_month) ? INDEX.default_month : availableMonths[0];
+  }
   const month = monthSel.value || (INDEX?.months?.[0] ?? "");
   const asOfMonth = currentAsOfMonth() || month;
   const searchableView = currentView === "structured" || currentView === "tidy" || currentView === "journal";
@@ -3138,8 +3146,16 @@ async function refresh(opts = {}) {
       if (currentView === "structured") {
         const view = INDEX.views.structured;
         const metadataRel = String(view.metadata_path || "structured/{month}.json").replace(/\{month\}/g, month);
+        const metadataUrl = joinUrlPath(DATA_ROOT, metadataRel);
+        const metadata = await fetch(metadataUrl, { cache: "no-store" }).then(response => {
+          if (!response.ok) throw new Error(`HTTP ${response.status}: ${metadataUrl}`);
+          return response.json();
+        });
+        structuredColumnMetadata = new Map((metadata.columns || []).map(column => [column.structured_column, column]));
         if (structuredCsvDownloadEl) structuredCsvDownloadEl.href = url;
-        if (structuredJsonDownloadEl) structuredJsonDownloadEl.href = joinUrlPath(DATA_ROOT, metadataRel);
+        if (structuredJsonDownloadEl) structuredJsonDownloadEl.href = metadataUrl;
+      } else {
+        structuredColumnMetadata = new Map();
       }
       setStatus(`Loading ${tViewLabel(currentView)} (${month}) [${currentLang}]...`);
 
@@ -3237,11 +3253,9 @@ async function main() {
   setStatus(`Loading index.json... (${INDEX_URL})`);
   INDEX = INDEX_BOOTSTRAP;
   if (!INDEX.views) INDEX.views = {};
-  if (INDEX.features?.business_documents === true) {
-    INDEX.views.receivables = { virtual: true, source: "ledger" };
-    INDEX.views.payables = { virtual: true, source: "ledger" };
-    INDEX.views.documents = { virtual: true, source: "business_document" };
-  }
+  INDEX.views.receivables = { virtual: true, source: "ledger" };
+  INDEX.views.payables = { virtual: true, source: "ledger" };
+  INDEX.views.documents = { virtual: true, source: "business_document" };
 
   // restore state from URL if any
   const url = new URL(location.href);

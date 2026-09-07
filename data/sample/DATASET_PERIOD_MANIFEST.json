@@ -1,0 +1,773 @@
+{
+  "dataset_id": "pca-synthetic-fy2021-v2-settlement-16m",
+  "months": [
+    {
+      "month": "2021-02",
+      "role": "REFERENCE_BEFORE",
+      "accounting_report_inclusion": false,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2021-02.csv",
+          "rows": 4,
+          "sha256": "500D0BB6C8E9C4B2D9A95C524F0BDD745A38BF0DBC703E390C85AA0E05A18B8A"
+        },
+        {
+          "path": "structured/2021-02.json",
+          "rows": 1,
+          "sha256": "980C2CA400B710FD74825DEDCDAB088654D93D533AC4CF881736CAC1805D533B"
+        },
+        {
+          "path": "ja/journal/2021-02.csv",
+          "rows": 4,
+          "sha256": "B3B29E167DF21C3FBA8CCE9DC6ED474B5DEFE62C6BFECCC30E745B558B254B04"
+        },
+        {
+          "path": "en/journal/2021-02.csv",
+          "rows": 4,
+          "sha256": "B3B29E167DF21C3FBA8CCE9DC6ED474B5DEFE62C6BFECCC30E745B558B254B04"
+        },
+        {
+          "path": "ja/ledger/2021-02.csv",
+          "rows": 62,
+          "sha256": "4A574DE101411684273F06EE1E8DD519E63AF0BC4D63FC4F39464BEDCE7EA6AD"
+        },
+        {
+          "path": "en/ledger/2021-02.csv",
+          "rows": 62,
+          "sha256": "4A574DE101411684273F06EE1E8DD519E63AF0BC4D63FC4F39464BEDCE7EA6AD"
+        },
+        {
+          "path": "ja/tidy/2021-02.csv",
+          "rows": 36,
+          "sha256": "EBE5283AA9552CA7DD103E5A969129CFF295B99FD42A972671E67E69673A39ED"
+        },
+        {
+          "path": "en/tidy/2021-02.csv",
+          "rows": 36,
+          "sha256": "EBE5283AA9552CA7DD103E5A969129CFF295B99FD42A972671E67E69673A39ED"
+        }
+      ]
+    },
+    {
+      "month": "2021-03",
+      "role": "REFERENCE_BEFORE",
+      "accounting_report_inclusion": false,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2021-03.csv",
+          "rows": 8,
+          "sha256": "DDFE8B7CF26EB8D632B36CA4C94BFFE1B7840E37BB2AF59429230F0F95401720"
+        },
+        {
+          "path": "structured/2021-03.json",
+          "rows": 1,
+          "sha256": "D6DF38919866A5284A007DDB935EEE6B16158515E67A320CE6D459933B74ADB4"
+        },
+        {
+          "path": "ja/journal/2021-03.csv",
+          "rows": 8,
+          "sha256": "82162B7B81DDC49F4B819E3CA67B4C3E85FEEB8693C5773844193EE802ECD060"
+        },
+        {
+          "path": "en/journal/2021-03.csv",
+          "rows": 8,
+          "sha256": "82162B7B81DDC49F4B819E3CA67B4C3E85FEEB8693C5773844193EE802ECD060"
+        },
+        {
+          "path": "ja/ledger/2021-03.csv",
+          "rows": 66,
+          "sha256": "885AA54D2AB8D6ACC80750CFC1685405C0767531F979A8AB1658B73E70C18EA3"
+        },
+        {
+          "path": "en/ledger/2021-03.csv",
+          "rows": 66,
+          "sha256": "885AA54D2AB8D6ACC80750CFC1685405C0767531F979A8AB1658B73E70C18EA3"
+        },
+        {
+          "path": "ja/tidy/2021-03.csv",
+          "rows": 72,
+          "sha256": "192B7AE5263F09F06249C57073BF7DA69E36F2CFF1D90C30B1C2B4ABBCBA29CF"
+        },
+        {
+          "path": "en/tidy/2021-03.csv",
+          "rows": 72,
+          "sha256": "192B7AE5263F09F06249C57073BF7DA69E36F2CFF1D90C30B1C2B4ABBCBA29CF"
+        }
+      ]
+    },
+    {
+      "month": "2021-04",
+      "role": "REPORTING_PERIOD",
+      "accounting_report_inclusion": true,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2021-04.csv",
+          "rows": 164,
+          "sha256": "C9DC747D648C98928A31B6945CBD7BBBC41D9A79EEE6682B1915365F91A20B84"
+        },
+        {
+          "path": "structured/2021-04.json",
+          "rows": 1,
+          "sha256": "96746D7E12B880469FACAD511A9A7C7744AFC8CA29C25E2B66E5EABFF6BEDD50"
+        },
+        {
+          "path": "ja/journal/2021-04.csv",
+          "rows": 164,
+          "sha256": "647AA0EA944F247EE4FF8AD285B6848B6D9C0522206CFAA08B2676BD8881013E"
+        },
+        {
+          "path": "en/journal/2021-04.csv",
+          "rows": 164,
+          "sha256": "647AA0EA944F247EE4FF8AD285B6848B6D9C0522206CFAA08B2676BD8881013E"
+        },
+        {
+          "path": "ja/ledger/2021-04.csv",
+          "rows": 222,
+          "sha256": "EB86837B6A7984592A7C8982BB3A89A8C5F205D2A25FD20C49836B719CD9B172"
+        },
+        {
+          "path": "en/ledger/2021-04.csv",
+          "rows": 222,
+          "sha256": "EB86837B6A7984592A7C8982BB3A89A8C5F205D2A25FD20C49836B719CD9B172"
+        },
+        {
+          "path": "ja/tidy/2021-04.csv",
+          "rows": 2270,
+          "sha256": "C06107DC54C2CCBA4099B4AE0D055EA0C1894E4351BD97B8BA0EE57C93BE3BEC"
+        },
+        {
+          "path": "en/tidy/2021-04.csv",
+          "rows": 2270,
+          "sha256": "C06107DC54C2CCBA4099B4AE0D055EA0C1894E4351BD97B8BA0EE57C93BE3BEC"
+        }
+      ]
+    },
+    {
+      "month": "2021-05",
+      "role": "REPORTING_PERIOD",
+      "accounting_report_inclusion": true,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2021-05.csv",
+          "rows": 158,
+          "sha256": "38F273804F1CE33E6B840E54CA15F63E35B86B1C8B68F25D2BF7DA183E61F14F"
+        },
+        {
+          "path": "structured/2021-05.json",
+          "rows": 1,
+          "sha256": "A544D5BBE14545F574CF517991D9F438E4904A60E9A93C5AF15CA5BAC3155D4D"
+        },
+        {
+          "path": "ja/journal/2021-05.csv",
+          "rows": 158,
+          "sha256": "82390AF1F80AB9AD96161ADEBB5F12525B44E744826A9DACB423012E7619B063"
+        },
+        {
+          "path": "en/journal/2021-05.csv",
+          "rows": 158,
+          "sha256": "82390AF1F80AB9AD96161ADEBB5F12525B44E744826A9DACB423012E7619B063"
+        },
+        {
+          "path": "ja/ledger/2021-05.csv",
+          "rows": 216,
+          "sha256": "69D7D7415FBE33C3731D3D5DC300145BA829B5E878DFE22D04075957EE62856A"
+        },
+        {
+          "path": "en/ledger/2021-05.csv",
+          "rows": 216,
+          "sha256": "69D7D7415FBE33C3731D3D5DC300145BA829B5E878DFE22D04075957EE62856A"
+        },
+        {
+          "path": "ja/tidy/2021-05.csv",
+          "rows": 2180,
+          "sha256": "EC620283989A6FF1BF83DB3BFAB93BD445833155AB84BBB15F16E62A10794374"
+        },
+        {
+          "path": "en/tidy/2021-05.csv",
+          "rows": 2180,
+          "sha256": "EC620283989A6FF1BF83DB3BFAB93BD445833155AB84BBB15F16E62A10794374"
+        }
+      ]
+    },
+    {
+      "month": "2021-06",
+      "role": "REPORTING_PERIOD",
+      "accounting_report_inclusion": true,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2021-06.csv",
+          "rows": 148,
+          "sha256": "9FC07381D5D0DA1262DC9AFE14FE7715FECEA02EA7E222F823675409B0BEB903"
+        },
+        {
+          "path": "structured/2021-06.json",
+          "rows": 1,
+          "sha256": "4021E085796DE93948AEEC3AC1739547E4056CEACCBC6B2BE259FBEC943E31CD"
+        },
+        {
+          "path": "ja/journal/2021-06.csv",
+          "rows": 148,
+          "sha256": "9395C6C95972C71240D278BA304E3FF36E5FAC96333BE66C0D1427F2ADD0EA37"
+        },
+        {
+          "path": "en/journal/2021-06.csv",
+          "rows": 148,
+          "sha256": "9395C6C95972C71240D278BA304E3FF36E5FAC96333BE66C0D1427F2ADD0EA37"
+        },
+        {
+          "path": "ja/ledger/2021-06.csv",
+          "rows": 206,
+          "sha256": "130D6B7CB331385FBEBFC942F8D994F7391C9FA32BFC01CA6BF88F6C2B0F9E9E"
+        },
+        {
+          "path": "en/ledger/2021-06.csv",
+          "rows": 206,
+          "sha256": "130D6B7CB331385FBEBFC942F8D994F7391C9FA32BFC01CA6BF88F6C2B0F9E9E"
+        },
+        {
+          "path": "ja/tidy/2021-06.csv",
+          "rows": 2048,
+          "sha256": "5D5D170B817AA809FCB2A354C2B84D525DAE4C82CBE5E7782738FF58DDB1BFDF"
+        },
+        {
+          "path": "en/tidy/2021-06.csv",
+          "rows": 2048,
+          "sha256": "5D5D170B817AA809FCB2A354C2B84D525DAE4C82CBE5E7782738FF58DDB1BFDF"
+        }
+      ]
+    },
+    {
+      "month": "2021-07",
+      "role": "REPORTING_PERIOD",
+      "accounting_report_inclusion": true,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2021-07.csv",
+          "rows": 154,
+          "sha256": "0A777A56A112EC6794032194FEF41CD33D0F56E58CC256BC1C9162752689A842"
+        },
+        {
+          "path": "structured/2021-07.json",
+          "rows": 1,
+          "sha256": "8D8DDECEABF5AD2234D898AEC3313B8DD764FAD7A7A728204EF5EA31E20033D5"
+        },
+        {
+          "path": "ja/journal/2021-07.csv",
+          "rows": 154,
+          "sha256": "D5CFBC836EA88AE69DB44308A65FF892A0C5189D5803D3A263101166BE090F75"
+        },
+        {
+          "path": "en/journal/2021-07.csv",
+          "rows": 154,
+          "sha256": "D5CFBC836EA88AE69DB44308A65FF892A0C5189D5803D3A263101166BE090F75"
+        },
+        {
+          "path": "ja/ledger/2021-07.csv",
+          "rows": 212,
+          "sha256": "A6AF4CA2120FC126A5D4E4EC77288C912FD808CB6503B4379E7EEAEC9AC95021"
+        },
+        {
+          "path": "en/ledger/2021-07.csv",
+          "rows": 212,
+          "sha256": "A6AF4CA2120FC126A5D4E4EC77288C912FD808CB6503B4379E7EEAEC9AC95021"
+        },
+        {
+          "path": "ja/tidy/2021-07.csv",
+          "rows": 2128,
+          "sha256": "8C4CF3EEC9914D2E36CF61F7461F5E17B646A44A3BE2AA63CBE21C101B1617DD"
+        },
+        {
+          "path": "en/tidy/2021-07.csv",
+          "rows": 2128,
+          "sha256": "8C4CF3EEC9914D2E36CF61F7461F5E17B646A44A3BE2AA63CBE21C101B1617DD"
+        }
+      ]
+    },
+    {
+      "month": "2021-08",
+      "role": "REPORTING_PERIOD",
+      "accounting_report_inclusion": true,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2021-08.csv",
+          "rows": 154,
+          "sha256": "B3FBD545C6919F93FF83BCE5397B6A051CE80830AB84159B35A56B16A2D03D06"
+        },
+        {
+          "path": "structured/2021-08.json",
+          "rows": 1,
+          "sha256": "4392B3E97E05A05A05339A98EDDE4B248C98CEC164ADB2E215CCC4B2907C9FF1"
+        },
+        {
+          "path": "ja/journal/2021-08.csv",
+          "rows": 154,
+          "sha256": "728450AC6101E72097B54F525020EE1ECA116276B88092F978FA024DD1140B84"
+        },
+        {
+          "path": "en/journal/2021-08.csv",
+          "rows": 154,
+          "sha256": "728450AC6101E72097B54F525020EE1ECA116276B88092F978FA024DD1140B84"
+        },
+        {
+          "path": "ja/ledger/2021-08.csv",
+          "rows": 212,
+          "sha256": "DE659B1953367D346552CDAF87E82B39A3B2A304CA26967595A65A9476439504"
+        },
+        {
+          "path": "en/ledger/2021-08.csv",
+          "rows": 212,
+          "sha256": "DE659B1953367D346552CDAF87E82B39A3B2A304CA26967595A65A9476439504"
+        },
+        {
+          "path": "ja/tidy/2021-08.csv",
+          "rows": 2118,
+          "sha256": "EC00D4ACAC86499B20B96396165AB4D94F9F20D55C42DBBE83662901F114C31E"
+        },
+        {
+          "path": "en/tidy/2021-08.csv",
+          "rows": 2118,
+          "sha256": "EC00D4ACAC86499B20B96396165AB4D94F9F20D55C42DBBE83662901F114C31E"
+        }
+      ]
+    },
+    {
+      "month": "2021-09",
+      "role": "REPORTING_PERIOD",
+      "accounting_report_inclusion": true,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2021-09.csv",
+          "rows": 152,
+          "sha256": "094FA3DC1DD38F2BDEF9FB477BC264DC310B0821C38E5258BDCEC203A730D650"
+        },
+        {
+          "path": "structured/2021-09.json",
+          "rows": 1,
+          "sha256": "46EAC655AA38F70362ABE4F85CB97851CBFC453DE766296B9455CF47EAA781F2"
+        },
+        {
+          "path": "ja/journal/2021-09.csv",
+          "rows": 152,
+          "sha256": "FC568C3F7310BB792A47A972D91300B2A295F8891D79DEB41616D5BD3FC759AD"
+        },
+        {
+          "path": "en/journal/2021-09.csv",
+          "rows": 152,
+          "sha256": "FC568C3F7310BB792A47A972D91300B2A295F8891D79DEB41616D5BD3FC759AD"
+        },
+        {
+          "path": "ja/ledger/2021-09.csv",
+          "rows": 210,
+          "sha256": "CB24DB329F65686C0D87D6905102AA10C6DC6CBE2FEC563DB90C59440EA3E717"
+        },
+        {
+          "path": "en/ledger/2021-09.csv",
+          "rows": 210,
+          "sha256": "CB24DB329F65686C0D87D6905102AA10C6DC6CBE2FEC563DB90C59440EA3E717"
+        },
+        {
+          "path": "ja/tidy/2021-09.csv",
+          "rows": 2098,
+          "sha256": "96EFF1EFC0092FF60EA7675A02F391D36C44E74034062FA24F2E39CE93214344"
+        },
+        {
+          "path": "en/tidy/2021-09.csv",
+          "rows": 2098,
+          "sha256": "96EFF1EFC0092FF60EA7675A02F391D36C44E74034062FA24F2E39CE93214344"
+        }
+      ]
+    },
+    {
+      "month": "2021-10",
+      "role": "REPORTING_PERIOD",
+      "accounting_report_inclusion": true,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2021-10.csv",
+          "rows": 154,
+          "sha256": "EFBBA2BA725087BC8DFB744A3A9B5CFF23B517FADAE1E5B665311AAABEE07A82"
+        },
+        {
+          "path": "structured/2021-10.json",
+          "rows": 1,
+          "sha256": "A886F0B37E1141ABE38F68B0B7BE129E229AF577D2DA8AD0D6A0B79762FBF8D1"
+        },
+        {
+          "path": "ja/journal/2021-10.csv",
+          "rows": 154,
+          "sha256": "8BE1AC8B54217BA88FECF2D68C2366BCAF8EFB8ED25F9221F219FD0F5D947BA0"
+        },
+        {
+          "path": "en/journal/2021-10.csv",
+          "rows": 154,
+          "sha256": "8BE1AC8B54217BA88FECF2D68C2366BCAF8EFB8ED25F9221F219FD0F5D947BA0"
+        },
+        {
+          "path": "ja/ledger/2021-10.csv",
+          "rows": 212,
+          "sha256": "7CB3F7985B9B218E9D67219DCB311FC6190FE75C6FEDA0DF9789DC2D14BFFD34"
+        },
+        {
+          "path": "en/ledger/2021-10.csv",
+          "rows": 212,
+          "sha256": "7CB3F7985B9B218E9D67219DCB311FC6190FE75C6FEDA0DF9789DC2D14BFFD34"
+        },
+        {
+          "path": "ja/tidy/2021-10.csv",
+          "rows": 2130,
+          "sha256": "9EEE7266F721CD0A3D3A82891D71400E10B8DA23C04C7F4AFC2014E03DAA48C1"
+        },
+        {
+          "path": "en/tidy/2021-10.csv",
+          "rows": 2130,
+          "sha256": "9EEE7266F721CD0A3D3A82891D71400E10B8DA23C04C7F4AFC2014E03DAA48C1"
+        }
+      ]
+    },
+    {
+      "month": "2021-11",
+      "role": "REPORTING_PERIOD",
+      "accounting_report_inclusion": true,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2021-11.csv",
+          "rows": 154,
+          "sha256": "BC69B5F37C9219DAB7B1E42B51E926AEB6E03925AA0275E10DF59622CB26067C"
+        },
+        {
+          "path": "structured/2021-11.json",
+          "rows": 1,
+          "sha256": "3F3BB81C9363E6BC6B2C2BAFEBF9893B5098ABC0481497CA0CC4B4B03A0DEEE8"
+        },
+        {
+          "path": "ja/journal/2021-11.csv",
+          "rows": 154,
+          "sha256": "0E80E4D5417841A1EAA9F7A86EAFF209CD94BDB3BAC5FEA3863B0992682A5EF8"
+        },
+        {
+          "path": "en/journal/2021-11.csv",
+          "rows": 154,
+          "sha256": "0E80E4D5417841A1EAA9F7A86EAFF209CD94BDB3BAC5FEA3863B0992682A5EF8"
+        },
+        {
+          "path": "ja/ledger/2021-11.csv",
+          "rows": 212,
+          "sha256": "BB3DB09CDDE59AF3879D2A587C9C242510326B10A272AEFD5A3069B3C890F122"
+        },
+        {
+          "path": "en/ledger/2021-11.csv",
+          "rows": 212,
+          "sha256": "BB3DB09CDDE59AF3879D2A587C9C242510326B10A272AEFD5A3069B3C890F122"
+        },
+        {
+          "path": "ja/tidy/2021-11.csv",
+          "rows": 2126,
+          "sha256": "DF798131FAEC54EFD3B04BE0326B5EBB12BC218C34DB7326D4314857D91B4179"
+        },
+        {
+          "path": "en/tidy/2021-11.csv",
+          "rows": 2126,
+          "sha256": "DF798131FAEC54EFD3B04BE0326B5EBB12BC218C34DB7326D4314857D91B4179"
+        }
+      ]
+    },
+    {
+      "month": "2021-12",
+      "role": "REPORTING_PERIOD",
+      "accounting_report_inclusion": true,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2021-12.csv",
+          "rows": 162,
+          "sha256": "F730C57C8305C05649816F06420C9ABAF1D78A58652F75C7E5471614CBA848A8"
+        },
+        {
+          "path": "structured/2021-12.json",
+          "rows": 1,
+          "sha256": "2C971650D2DCACC2B31612D721BED88502611E0DAD3DC68A97CAFBB5E5165CB9"
+        },
+        {
+          "path": "ja/journal/2021-12.csv",
+          "rows": 162,
+          "sha256": "0EE507E4AFD3A11634F60D9F6AD4DCDD184BE5C8AE9259B8D42CD828D664A1E2"
+        },
+        {
+          "path": "en/journal/2021-12.csv",
+          "rows": 162,
+          "sha256": "0EE507E4AFD3A11634F60D9F6AD4DCDD184BE5C8AE9259B8D42CD828D664A1E2"
+        },
+        {
+          "path": "ja/ledger/2021-12.csv",
+          "rows": 220,
+          "sha256": "16FE55ED43618DEF0A66040F171E59538D9AAE738B9B7CD759EBAE5CC693BE61"
+        },
+        {
+          "path": "en/ledger/2021-12.csv",
+          "rows": 220,
+          "sha256": "16FE55ED43618DEF0A66040F171E59538D9AAE738B9B7CD759EBAE5CC693BE61"
+        },
+        {
+          "path": "ja/tidy/2021-12.csv",
+          "rows": 2244,
+          "sha256": "6599A20861260DAA7CF2A6D856D51CF9360FEE6D6D9F5035BCCA92800D179455"
+        },
+        {
+          "path": "en/tidy/2021-12.csv",
+          "rows": 2244,
+          "sha256": "6599A20861260DAA7CF2A6D856D51CF9360FEE6D6D9F5035BCCA92800D179455"
+        }
+      ]
+    },
+    {
+      "month": "2022-01",
+      "role": "REPORTING_PERIOD",
+      "accounting_report_inclusion": true,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2022-01.csv",
+          "rows": 154,
+          "sha256": "3FFE3DBAEA211E17F34706081F9C3F76E08786EAE5CA5987ABB548F7871D3662"
+        },
+        {
+          "path": "structured/2022-01.json",
+          "rows": 1,
+          "sha256": "40CE91C92F5EBF5245B4775D09BE5E36F076FFAE29E3AB8404960ABEDE7A0C14"
+        },
+        {
+          "path": "ja/journal/2022-01.csv",
+          "rows": 154,
+          "sha256": "49F2481177BB099500D6B287EC2C2F2B632DC4F2EC218D984DDCC27AACBE06C5"
+        },
+        {
+          "path": "en/journal/2022-01.csv",
+          "rows": 154,
+          "sha256": "49F2481177BB099500D6B287EC2C2F2B632DC4F2EC218D984DDCC27AACBE06C5"
+        },
+        {
+          "path": "ja/ledger/2022-01.csv",
+          "rows": 212,
+          "sha256": "53597AD5DB5BD1B9CD327016C3BC00EB8397B809BAD7E5AE26D15773E67972B7"
+        },
+        {
+          "path": "en/ledger/2022-01.csv",
+          "rows": 212,
+          "sha256": "53597AD5DB5BD1B9CD327016C3BC00EB8397B809BAD7E5AE26D15773E67972B7"
+        },
+        {
+          "path": "ja/tidy/2022-01.csv",
+          "rows": 2122,
+          "sha256": "99D98EE5E04E9FC14E897E87BDB9DED854AA2CF4E14F8D751FD551D5105133C1"
+        },
+        {
+          "path": "en/tidy/2022-01.csv",
+          "rows": 2122,
+          "sha256": "99D98EE5E04E9FC14E897E87BDB9DED854AA2CF4E14F8D751FD551D5105133C1"
+        }
+      ]
+    },
+    {
+      "month": "2022-02",
+      "role": "REPORTING_PERIOD",
+      "accounting_report_inclusion": true,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2022-02.csv",
+          "rows": 152,
+          "sha256": "9303E92E24A738CD3EB098E4B2B243A294D22EFEABA03AB156F994FD052D16BC"
+        },
+        {
+          "path": "structured/2022-02.json",
+          "rows": 1,
+          "sha256": "591A108E421D65EBBA463D024F02EEF5688F035D15D0FB9C60EFAA0510B0271F"
+        },
+        {
+          "path": "ja/journal/2022-02.csv",
+          "rows": 152,
+          "sha256": "2A89A6662EE7C97BA1CC9A66406D4020FED6B77E0B58D69CBB4800480E16782F"
+        },
+        {
+          "path": "en/journal/2022-02.csv",
+          "rows": 152,
+          "sha256": "2A89A6662EE7C97BA1CC9A66406D4020FED6B77E0B58D69CBB4800480E16782F"
+        },
+        {
+          "path": "ja/ledger/2022-02.csv",
+          "rows": 210,
+          "sha256": "DBFFDFF9C067B20C3324EF194075FF9AD2CD77D985E915A7665AF142E208B353"
+        },
+        {
+          "path": "en/ledger/2022-02.csv",
+          "rows": 210,
+          "sha256": "DBFFDFF9C067B20C3324EF194075FF9AD2CD77D985E915A7665AF142E208B353"
+        },
+        {
+          "path": "ja/tidy/2022-02.csv",
+          "rows": 2110,
+          "sha256": "1CC97F3E0AAB4A80097249060BCCC59BCF7C0B1543483128B68F4E4B8CC5CD84"
+        },
+        {
+          "path": "en/tidy/2022-02.csv",
+          "rows": 2110,
+          "sha256": "1CC97F3E0AAB4A80097249060BCCC59BCF7C0B1543483128B68F4E4B8CC5CD84"
+        }
+      ]
+    },
+    {
+      "month": "2022-03",
+      "role": "REPORTING_PERIOD",
+      "accounting_report_inclusion": true,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2022-03.csv",
+          "rows": 160,
+          "sha256": "C8657092A1C2DB809D78977E4B71866F3DA293FF6FA88A96F2BE320170B18C35"
+        },
+        {
+          "path": "structured/2022-03.json",
+          "rows": 1,
+          "sha256": "485D913D4018CF3E34603D0151AF336EC3CF239676ED7C49C1682F011B1E8B9E"
+        },
+        {
+          "path": "ja/journal/2022-03.csv",
+          "rows": 160,
+          "sha256": "2EB2D3BAD06CB5EA8572FC438E8E74935C40814E46F707B0D91829E67E2FAE15"
+        },
+        {
+          "path": "en/journal/2022-03.csv",
+          "rows": 160,
+          "sha256": "2EB2D3BAD06CB5EA8572FC438E8E74935C40814E46F707B0D91829E67E2FAE15"
+        },
+        {
+          "path": "ja/ledger/2022-03.csv",
+          "rows": 218,
+          "sha256": "CF1EFE2A8D7E0109FC72AD4E1D6297E220B0AF99AB4BE7AE0A84A2BCEF28B955"
+        },
+        {
+          "path": "en/ledger/2022-03.csv",
+          "rows": 218,
+          "sha256": "CF1EFE2A8D7E0109FC72AD4E1D6297E220B0AF99AB4BE7AE0A84A2BCEF28B955"
+        },
+        {
+          "path": "ja/tidy/2022-03.csv",
+          "rows": 2092,
+          "sha256": "C0642F1D88F7596A4121C353B86A7150FB68A6B52E18E9A56D4F6B86FD86EC17"
+        },
+        {
+          "path": "en/tidy/2022-03.csv",
+          "rows": 2092,
+          "sha256": "C0642F1D88F7596A4121C353B86A7150FB68A6B52E18E9A56D4F6B86FD86EC17"
+        }
+      ]
+    },
+    {
+      "month": "2022-04",
+      "role": "REFERENCE_AFTER",
+      "accounting_report_inclusion": false,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2022-04.csv",
+          "rows": 4,
+          "sha256": "6E70015B2DD6B21F57418A622A300178377C54DE83B34F0C4E92DC0C69FB45E9"
+        },
+        {
+          "path": "structured/2022-04.json",
+          "rows": 1,
+          "sha256": "0A8EDE3834590472E66C378AE06230D97508EEAFAF8DACA0544B45E35D900577"
+        },
+        {
+          "path": "ja/journal/2022-04.csv",
+          "rows": 4,
+          "sha256": "67DB733F7CE10C5ED0760DB3C0145EB43254A9DD97D2EB1585B8FADA53F83A1B"
+        },
+        {
+          "path": "en/journal/2022-04.csv",
+          "rows": 4,
+          "sha256": "67DB733F7CE10C5ED0760DB3C0145EB43254A9DD97D2EB1585B8FADA53F83A1B"
+        },
+        {
+          "path": "ja/ledger/2022-04.csv",
+          "rows": 62,
+          "sha256": "574B7FDD00DE253F9C307745E5983FCC48DD532E58A07EAD7C7C97F11CE836C4"
+        },
+        {
+          "path": "en/ledger/2022-04.csv",
+          "rows": 62,
+          "sha256": "574B7FDD00DE253F9C307745E5983FCC48DD532E58A07EAD7C7C97F11CE836C4"
+        },
+        {
+          "path": "ja/tidy/2022-04.csv",
+          "rows": 36,
+          "sha256": "987CD7888F32B9C606D5324B07AA5209C68E337FB2181BFF1E9BAA6A267359B1"
+        },
+        {
+          "path": "en/tidy/2022-04.csv",
+          "rows": 36,
+          "sha256": "987CD7888F32B9C606D5324B07AA5209C68E337FB2181BFF1E9BAA6A267359B1"
+        }
+      ]
+    },
+    {
+      "month": "2022-05",
+      "role": "REFERENCE_AFTER",
+      "accounting_report_inclusion": false,
+      "settlement_as_of_available": true,
+      "files": [
+        {
+          "path": "structured/2022-05.csv",
+          "rows": 4,
+          "sha256": "23BB4391CF044703FFB1C780CBD4EB4FA466030D2162F2C74DE889D1E9DA2613"
+        },
+        {
+          "path": "structured/2022-05.json",
+          "rows": 1,
+          "sha256": "9BD81FD708FF011D1FD6315A2161ACB039D2AC917A3B4EDB56B154BDA80B62D0"
+        },
+        {
+          "path": "ja/journal/2022-05.csv",
+          "rows": 4,
+          "sha256": "20A7102F298E06F70C555995755942B32913A00907BA176ED8135AD5249C59A7"
+        },
+        {
+          "path": "en/journal/2022-05.csv",
+          "rows": 4,
+          "sha256": "20A7102F298E06F70C555995755942B32913A00907BA176ED8135AD5249C59A7"
+        },
+        {
+          "path": "ja/ledger/2022-05.csv",
+          "rows": 62,
+          "sha256": "7E0D36A51BFDD54C71BFD8EAB5CB92DB8FAE3EB6E0E5DD20FF852D64C12456F5"
+        },
+        {
+          "path": "en/ledger/2022-05.csv",
+          "rows": 62,
+          "sha256": "7E0D36A51BFDD54C71BFD8EAB5CB92DB8FAE3EB6E0E5DD20FF852D64C12456F5"
+        },
+        {
+          "path": "ja/tidy/2022-05.csv",
+          "rows": 36,
+          "sha256": "5D8D5DE3D8E9D04B5CC9772F993418F444B10F2CAF045ACC2A6BAAB81B938A44"
+        },
+        {
+          "path": "en/tidy/2022-05.csv",
+          "rows": 36,
+          "sha256": "5D8D5DE3D8E9D04B5CC9772F993418F444B10F2CAF045ACC2A6BAAB81B938A44"
+        }
+      ]
+    }
+  ]
+}
