@@ -29,7 +29,7 @@ Data location
 - This repo keeps web assets in /web and public datasets below /data.
 - data/datasets.json is the only runtime allowlist. A dataset root is never guessed.
 */
-const DATASET_DEFAULT = "pca-synthetic-fy2021-v2-settlement-16m";
+const DATASET_DEFAULT = "pca-synthetic-fy2021-v3-structured-tidy-16m";
 let DATASET = DATASET_DEFAULT;
 let DATASET_REGISTRY = null;
 let DATASET_INFO = null;
@@ -142,29 +142,63 @@ let localRowsAll = null; // uploaded CSV rows
 // View labels (button labels)
 const VIEW_LABELS_I18N = {
   ja: {
-    structured: "Structured CSV",
     journal: "仕訳帳",
     ledger: "総勘定元帳",
     trial_balance: "試算表",
     balance_sheet: "貸借対照表",
     pnl: "損益計算書",
-    receivables: "売掛金集計",
-    payables: "買掛金集計",
     documents: "業務文書",
-    tidy: "Fact詳細",
+    tidy: "構造化Tidyデータ",
   },
   en: {
-    structured: "Structured CSV",
     journal: "Journal",
     ledger: "General Ledger",
     trial_balance: "Trial Balance",
     balance_sheet: "Balance Sheet",
     pnl: "Profit and Loss",
-    receivables: "A/R Summary",
-    payables: "A/P Summary",
     documents: "Business Documents",
-    tidy: "Fact Details",
+    tidy: "Structured Tidy Data",
   },
+};
+
+// Public, presentation-only labels. Lookups use immutable dataset and business keys;
+// accounting values and downloadable CSV/JSON remain unchanged.
+const PUBLIC_DISPLAY_LABELS = {
+  "pca-synthetic-fy2021-v3-structured-tidy-16m": {
+    company: { ja: "港あかり商事（架空）", en: "Harbor Lantern Demo" },
+    account: {
+      "1000": "現金", "1010": "小口現金", "1100": "中央支店普通預金", "1110": "北支店当座預金",
+      "1120": "港支店普通預金", "1200": "売掛金", "1210": "受取手形", "1300": "棚卸資産",
+      "1400": "前払費用", "1410": "前渡金", "1420": "仮払金", "1430": "仮払消費税",
+      "1500": "設備", "1510": "車両運搬具", "1520": "ソフトウェア", "1590": "減価償却累計額",
+      "2000": "買掛金", "2010": "支払手形", "2100": "未払金", "2110": "預り金",
+      "2120": "仮受消費税", "2130": "仮受金", "2200": "短期借入金", "2300": "長期借入金",
+      "2400": "前受収益", "3000": "資本金", "3100": "繰越利益剰余金", "4000": "商品売上高",
+      "4010": "サービス売上高", "4020": "その他営業収益", "4030": "受取利息", "4040": "雑収入",
+      "5000": "仕入高", "5010": "仕入運賃", "5020": "棚卸調整", "6000": "給料手当",
+      "6010": "法定福利費", "6020": "地代家賃", "6030": "水道光熱費", "6040": "通信費",
+      "6050": "旅費交通費", "6060": "事務用品費", "6070": "支払手数料", "6080": "広告宣伝費",
+      "6090": "保険料", "6100": "修繕費", "6110": "減価償却費", "6120": "専門家報酬",
+      "6130": "研修費", "6140": "車両費", "6150": "ソフトウェア利用料", "6160": "荷造運賃",
+      "6170": "雑費", "7000": "租税公課", "7010": "法人税等", "7020": "消費税費用",
+      "8000": "仮勘定", "8010": "決済勘定"
+    },
+    subaccount: {
+      B001: "中央架空銀行", B002: "北架空銀行", B003: "港架空銀行",
+      C001: "架空得意先オーロラ", C002: "架空得意先バーチ", C003: "架空得意先コバルト",
+      C004: "架空得意先ドーン", C005: "架空得意先エルム", C006: "架空得意先フィヨルド",
+      C007: "架空得意先グローブ", C008: "架空得意先ヘイロー", C009: "架空得意先インディゴ", C010: "架空得意先ジュニパー",
+      S001: "架空不動産サービス", S002: "架空エネルギーサービス", S003: "架空ネットワークサービス",
+      S004: "架空物流サービス", S005: "架空専門サービス", S006: "架空保険サービス",
+      V001: "架空仕入先キーストーン", V002: "架空仕入先ラティス", V003: "架空仕入先モザイク",
+      V004: "架空仕入先ニンバス", V005: "架空仕入先オーキッド", V006: "架空仕入先プレーリー",
+      V007: "架空仕入先クォーツ", V008: "架空仕入先リヴレット", V009: "架空仕入先サミット", V010: "架空仕入先タンデム"
+    },
+    department: { D01: "架空営業部", D02: "架空管理部", D03: "架空業務部", D04: "架空物流部", D05: "架空デジタルサービス部", D06: "架空経営部" }
+  },
+  "ledger-public-demo-v1": {
+    company: { ja: "株式会社くらし日用品（架空）", en: "Everyday Living Goods Demo Co." }
+  }
 };
 
 
@@ -580,6 +614,121 @@ function formatNumberLike(v) {
   return n.toLocaleString(locale);
 }
 
+function formatDisplayAmount(v) {
+  if (isNumericLike(v) && Number(String(v).replace(/,/g, "")) === 0) return "";
+  return formatNumberLike(v);
+}
+
+const NAME_CODE_COLUMNS = new Map([
+  ["JP06e_GE24_02", "JP06e_GE24_01"], ["JP06f_GE24_02", "JP06f_GE24_01"],
+  ["Ledger_Account_Name", "Ledger_Account_Number"], ["Counterpart_Account_Name", "Counterpart_Account_Number"],
+  ["Account_Name", "Account_Number"], ["eTax_Account_Name", "Ledger_Account_Number"],
+  ["JP05a_02", "JP05a_01"], ["JP05b_02", "JP05b_01"],
+  ["Subaccount_Name", "Subaccount_Code"], ["Counterpart_Subaccount_Name", "Counterpart_Subaccount_Code"],
+  ["BS04fb_02", "BS04fb_01"], ["BS04fc_02", "BS04fc_01"],
+  ["Department_Name", "Department_Code"], ["Counterpart_Department_Name", "Counterpart_Department_Code"],
+  ["Partner_Name", "Partner_Code"], ["Party_Name", "Party_ID"]
+]);
+
+const NAME_KIND_COLUMNS = new Map([
+  ["JP06e_GE24_02", "account"], ["JP06f_GE24_02", "account"], ["Ledger_Account_Name", "account"],
+  ["Counterpart_Account_Name", "account"], ["Account_Name", "account"], ["eTax_Account_Name", "account"],
+  ["JP05a_02", "subaccount"], ["JP05b_02", "subaccount"], ["Subaccount_Name", "subaccount"],
+  ["Counterpart_Subaccount_Name", "subaccount"], ["Partner_Name", "subaccount"], ["Party_Name", "subaccount"],
+  ["BS04fb_02", "department"], ["BS04fc_02", "department"], ["Department_Name", "department"],
+  ["Counterpart_Department_Name", "department"]
+]);
+
+const NUMERIC_ZERO_BLANK_COLUMNS = {
+  journal: new Set(["Debit_Amount", "Credit_Amount", "GE05kw_01", "GE05kB_01"]),
+  ledger: new Set(["Debit_Amount", "Credit_Amount", "Balance"]),
+  trial_balance: new Set(["Debit_Amount", "Credit_Amount", "Total_Debit", "Total_Credit", "Beginning_Balance", "Ending_Balance"]),
+  balance_sheet: new Set(["Debit_Amount", "Credit_Amount", "Total_Debit", "Total_Credit", "Beginning_Balance", "Ending_Balance", "Amount"]),
+  pnl: new Set(["Debit_Amount", "Credit_Amount", "Total_Debit", "Total_Credit", "Beginning_Balance", "Ending_Balance", "Amount"])
+};
+
+function codeValue(header, row, codeColumn) {
+  const index = header.indexOf(codeColumn);
+  return index >= 0 ? String(row[index] || "").trim() : "";
+}
+
+function localizedDescription(header, row, raw) {
+  if (DATASET !== DATASET_DEFAULT) return raw;
+  const voucherColumns = ["JP07a_GL03_01", "voucher", "Transaction_ID", "Entry_ID"];
+  const voucher = voucherColumns.map(name => codeValue(header, row, name)).find(Boolean);
+  if (/^\*?\s*Opening balance$/i.test(String(raw).trim())) return currentLang === "ja" ? "期首残高" : "Opening balance";
+  if (!voucher) return raw;
+  return currentLang === "ja" ? `架空取引（伝票 ${voucher}）` : `Fictional transaction (voucher ${voucher})`;
+}
+
+function localizedPartnerName(code, raw) {
+  if (DATASET !== DATASET_DEFAULT || currentLang === "en") return raw;
+  return PUBLIC_DISPLAY_LABELS[DATASET]?.subaccount?.[String(code || "").trim()] || raw;
+}
+
+function localizedDocumentType(code, raw) {
+  if (currentLang === "en") return raw;
+  return ({ SALES_INVOICE: "売上請求書", PURCHASE_INVOICE: "仕入請求書", BANK_RECEIPT_NOTICE: "入金通知", BANK_TRANSFER_RECEIPT: "支払通知", NOTE_RECEIPT: "手形受領", NOTE_ISSUE: "手形発行" })[String(code || "")] || raw;
+}
+
+function localizedCellValue(header, row, columnIndex) {
+  const column = header[columnIndex];
+  const raw = row[columnIndex] ?? "";
+  if (currentLang === "en") return raw;
+  const labels = PUBLIC_DISPLAY_LABELS[DATASET];
+  if (!labels) return raw;
+  const kind = NAME_KIND_COLUMNS.get(column);
+  const codeColumn = NAME_CODE_COLUMNS.get(column);
+  if (kind && codeColumn) {
+    const code = codeValue(header, row, codeColumn);
+    return labels[kind]?.[code] || raw;
+  }
+  if (["JP08a_GL04_03", "Description", "Detail_Description", "Item_Description"].includes(column)) {
+    return localizedDescription(header, row, raw);
+  }
+  return raw;
+}
+
+function shouldBlankNumericZero(viewKey, header, row, columnIndex) {
+  const column = header[columnIndex];
+  if (NUMERIC_ZERO_BLANK_COLUMNS[viewKey]?.has(column)) return true;
+  if (viewKey === "tidy" && structuredColumnMetadata.get(column)?.datatype === "Monetary") return true;
+  if (viewKey !== "tidy" || column !== "value") return false;
+  const semanticIndex = header.indexOf("semantic_path");
+  const semanticPath = semanticIndex >= 0 ? String(row[semanticIndex] || "") : "";
+  return /(MonetaryAmount|AmountofTaxes|Balance)$/i.test(semanticPath);
+}
+
+function localizeTidyRows(rows) {
+  if (DATASET !== DATASET_DEFAULT || currentLang !== "ja" || !Array.isArray(rows) || rows.length < 2) return rows;
+  const header = rows[0];
+  const columnFor = suffix => header.findIndex(column => String(structuredColumnMetadata.get(column)?.semantic_path || "").endsWith(suffix));
+  const voucherIndex = columnFor("EntryID");
+  const descriptionIndex = columnFor("EntryDescription");
+  const accountIndex = columnFor("AccountNumber");
+  const accountNameIndex = columnFor("AccountDescription");
+  const subaccountIndex = columnFor("SubaccountID");
+  const subaccountNameIndex = columnFor("SubaccountDescription");
+  const subaccountTypeIndex = columnFor(".cor_Type");
+  const labels = PUBLIC_DISPLAY_LABELS[DATASET];
+  if (!labels) return rows;
+  return [header, ...rows.slice(1).map(row => {
+    const copy = row.slice();
+    if (accountIndex >= 0 && accountNameIndex >= 0 && row[accountIndex]) {
+      copy[accountNameIndex] = labels.account?.[row[accountIndex]] || copy[accountNameIndex];
+    }
+    if (subaccountIndex >= 0 && subaccountNameIndex >= 0 && row[subaccountIndex]) {
+      const kind = subaccountTypeIndex >= 0 ? row[subaccountTypeIndex] : "";
+      const dictionary = kind === "department" ? labels.department : labels.subaccount;
+      copy[subaccountNameIndex] = dictionary?.[row[subaccountIndex]] || copy[subaccountNameIndex];
+    }
+    if (descriptionIndex >= 0 && voucherIndex >= 0 && row[voucherIndex]) {
+      copy[descriptionIndex] = `架空取引（伝票 ${row[voucherIndex]}）`;
+    }
+    return copy;
+  })];
+}
+
 // -------- DOM --------
 const navEl = document.getElementById("nav");
 const modeSwitchEl = document.getElementById("modeSwitch");
@@ -769,6 +918,13 @@ function detectColumnIndex(header, candidates) {
 function getAccountColumnIndexForView(header, viewKey) {
   if (!header || header.length === 0) return -1;
 
+  if (viewKey === "tidy") {
+    const structuredIndex = header.findIndex(column =>
+      String(structuredColumnMetadata.get(column)?.semantic_path || "").endsWith("AccountNumber")
+    );
+    if (structuredIndex >= 0) return structuredIndex;
+  }
+
   // BS/PL can have duplicate account-number headers. Prefer the *last* matching column
   // so filters and the account selector match the visible account-number column.
   if (viewKey === "balance_sheet" || viewKey === "pnl") {
@@ -821,6 +977,12 @@ const ACCOUNT_NAME_COL_CANDIDATES = [
 
 function detectAccountNameIndex(header, acctIdx) {
   if (acctIdx < 0) return -1;
+  if (currentView === "tidy") {
+    const structuredIndex = header.findIndex(column =>
+      String(structuredColumnMetadata.get(column)?.semantic_path || "").endsWith("AccountDescription")
+    );
+    if (structuredIndex >= 0) return structuredIndex;
+  }
   const h = normLabel(header?.[acctIdx] ?? "");
 
   const pairs = [
@@ -871,6 +1033,16 @@ function extractAccountOptions(rows, codeIdx, nameIdx, limit = 200000) {
   });
 
   return out;
+}
+
+function localizeAccountOptions(options) {
+  if (currentLang !== "ja") return options;
+  const dictionary = PUBLIC_DISPLAY_LABELS[DATASET]?.account;
+  if (!dictionary) return options;
+  return options.map(option => ({
+    ...option,
+    label: dictionary[String(option.value || "").trim()] || option.label,
+  }));
 }
 
 const MONTH_COL_CANDIDATES = ["Month", "対象月", "month"];
@@ -1042,15 +1214,22 @@ function renderTable(rows, maxRows = DEFAULT_MAX_ROWS) {
   const indentEtaxName = (currentView === "balance_sheet" || currentView === "pnl") && levelIdx >= 0 && etaxNameIdx >= 0;
 
   // let html = '<table id="dataTable"><thead><tr>';
-  let html = `<table id="dataTable" class="${noDataRows ? "no-data" : ""}" style="${noDataRows ? "table-layout:fixed;width:100%;" : ""}"><thead><tr>`;
+  const tidyTitle = currentLang === "en" ? "Structured Tidy Data" : "構造化Tidyデータ";
+  const tidyDescription = currentLang === "en"
+    ? "One HMD class occurrence per row. C1...C18 hold complete ancestor coordinates and owner-only properties; CSV and xBRL-CSV metadata downloads are available above."
+    : "HMDクラスoccurrenceを1行で表し、C1...C18に完全な親座標と所有クラスだけの値を保持します。上部からCSVとxBRL-CSV metadataをダウンロードできます。";
+  let html = currentView === "tidy"
+    ? `<section class="tidy-view" aria-labelledby="tidyViewTitle"><header class="tidy-view__heading"><h1 id="tidyViewTitle">${escapeHtml(tidyTitle)}</h1><p>${escapeHtml(tidyDescription)}</p></header>`
+    : "";
+  html += `<table id="dataTable" aria-label="${escapeHtml(tViewLabel(currentView))}" class="${noDataRows ? "no-data" : ""}" style="${noDataRows ? "table-layout:fixed;width:100%;" : ""}"><thead><tr>`;
   for (const i of visibleIdxs) {
     const st = colStyles[i] || { align: "left", fmt: "text" };
     const thExtra = noDataRows
       ? "white-space:normal;max-width:140px;overflow-wrap:anywhere;word-break:break-word;line-height:1.2;"
       : "";
-    const label = currentView === "structured" ? structuredHeaderLabel(header[i]) : tHeader(header[i]);
+    const label = currentView === "tidy" && structuredColumnMetadata.size ? structuredHeaderLabel(header[i]) : tHeader(header[i]);
     const metadata = structuredColumnMetadata.get(header[i]);
-    const title = currentView === "structured" && metadata ? ` title="${escapeHtml(metadata.semantic_path || "")}"` : "";
+    const title = currentView === "tidy" && metadata ? ` title="${escapeHtml(metadata.semantic_path || "")}"` : "";
     html += `<th${title} style="text-align:${st.align};${thExtra}">${escapeHtml(label)}</th>`;
   }
   html += "</tr></thead><tbody>";
@@ -1063,12 +1242,14 @@ function renderTable(rows, maxRows = DEFAULT_MAX_ROWS) {
     html += `<tr${traceAttrs}>`;
     for (const i of visibleIdxs) {
       const st = colStyles[i] || { align: "left", fmt: "text" };
-      const raw = r[i] ?? "";
+      const raw = localizedCellValue(header, r, i);
 
       let disp = String(raw);
 
       // Integer / number formatting
-      if (st.fmt === "int" && isNumericLike(raw)) {
+      if (shouldBlankNumericZero(currentView, header, r, i) && isNumericLike(raw) && Number(String(raw).replace(/,/g, "")) === 0) {
+        disp = "";
+      } else if (st.fmt === "int" && isNumericLike(raw)) {
         const t = String(raw).trim().replace(/,/g, "");
         const n = Number(t);
         if (Number.isFinite(n) && Math.floor(n) === n) disp = String(n);
@@ -1092,7 +1273,7 @@ function renderTable(rows, maxRows = DEFAULT_MAX_ROWS) {
     html += "</tr>";
   }
 
-  html += "</tbody></table>";
+  html += `</tbody></table>${currentView === "tidy" ? "</section>" : ""}`;
   wrapEl.innerHTML = html;
 
   const total = rows.length - 1;
@@ -1740,7 +1921,7 @@ async function renderRelatedDocumentDetail(target, item, partner, viewKey) {
         ? `${shownNumber} (${text.managementId}: ${id})`
         : `${shownNumber}\uff08${text.managementId}\uff1a${id}\uff09`;
     };
-    const detailAmount = (detail, name) => formatNumberLike(csvValue(data.detailRows, detail, name));
+    const detailAmount = (detail, name) => formatDisplayAmount(csvValue(data.detailRows, detail, name));
     const taxGroups = new Map();
     for (const detail of data.documentDetails) {
       const category = csvValue(data.detailRows, detail, "Tax_Category");
@@ -1762,7 +1943,7 @@ async function renderRelatedDocumentDetail(target, item, partner, viewKey) {
     const taxSummaryHtml = [...taxGroups.values()].map(group => {
       const tax = group.rate > 0 ? Math.floor(group.gross * group.rate / (100 + group.rate)) : 0;
       const net = group.gross - tax;
-      return `<tr><th>${escapeHtml(group.category)}</th><td>${formatNumberLike(net)}</td><td>${formatNumberLike(tax)}</td><td>${formatNumberLike(group.gross)}</td></tr>`;
+      return `<tr><th>${escapeHtml(group.category)}</th><td>${formatDisplayAmount(net)}</td><td>${formatDisplayAmount(tax)}</td><td>${formatDisplayAmount(group.gross)}</td></tr>`;
     }).join("");
     const detailTotal = data.documentDetails.reduce((sum, detail) => sum + numberValue(csvValue(data.detailRows, detail, "Gross_Amount")), 0);
     const formalValue = (rows, record, name) => record ? csvValue(rows, record, name) : "";
@@ -1790,13 +1971,13 @@ async function renderRelatedDocumentDetail(target, item, partner, viewKey) {
       <dl>
         <div><dt>${escapeHtml(text.invoice)}</dt><dd>${escapeHtml(documentReference(openItemValue("Invoice_Document_Number"), openItemValue("Invoice_Document_ID")))}</dd></div>
         <div><dt>${escapeHtml(text.recognitionBasis)}</dt><dd>${escapeHtml(openItemValue("Recognition_Basis") === "INVOICE_BASIS" ? text.invoiceBasis : openItemValue("Recognition_Basis"))}</dd></div>
-        <div><dt>${escapeHtml(text.original)}</dt><dd class="amount">${formatNumberLike(openItemValue("Original_Amount"))}</dd></div>
-        <div><dt>${escapeHtml(text.applied)}</dt><dd class="amount">${formatNumberLike(applicationValue("Applied_Amount"))}</dd></div>
-        <div><dt>${escapeHtml(text.open)}</dt><dd class="amount">${formatNumberLike(openItemValue("Open_Amount"))}</dd></div>
+        <div><dt>${escapeHtml(text.original)}</dt><dd class="amount">${formatDisplayAmount(openItemValue("Original_Amount"))}</dd></div>
+        <div><dt>${escapeHtml(text.applied)}</dt><dd class="amount">${formatDisplayAmount(applicationValue("Applied_Amount"))}</dd></div>
+        <div><dt>${escapeHtml(text.open)}</dt><dd class="amount">${formatDisplayAmount(openItemValue("Open_Amount"))}</dd></div>
         <div><dt>${escapeHtml(text.applicationDate)}</dt><dd>${escapeHtml(applicationValue("Application_Date"))}</dd></div>
         <div><dt>${escapeHtml(text.settlementDocument)}</dt><dd>${escapeHtml(documentReference(settlementValue("Settlement_Document_Number") || data.relatedDocumentNumber, settlementValue("Settlement_Document_ID") || data.relatedDocumentId))}</dd></div>
       </dl>
-      ${applicationComponents.length ? `<table><thead><tr><th>${escapeHtml(currentLang === "en" ? "Component" : "消込区分")}</th><th>${escapeHtml(text.amount)}</th></tr></thead><tbody>${applicationComponents.map(([labelText, name]) => `<tr><th>${escapeHtml(labelText)}</th><td>${formatNumberLike(applicationValue(name))}</td></tr>`).join("")}</tbody></table>` : ""}
+      ${applicationComponents.length ? `<table><thead><tr><th>${escapeHtml(currentLang === "en" ? "Component" : "消込区分")}</th><th>${escapeHtml(text.amount)}</th></tr></thead><tbody>${applicationComponents.map(([labelText, name]) => `<tr><th>${escapeHtml(labelText)}</th><td>${formatDisplayAmount(applicationValue(name))}</td></tr>`).join("")}</tbody></table>` : ""}
     </section>` : "";
     target.innerHTML = `<div class="partner-document__header"><h3>${escapeHtml(text.title)}</h3><button type="button" class="partner-document__close" aria-label="${escapeHtml(text.close)}">×</button></div>
       <article class="partner-document__sheet">
@@ -1808,20 +1989,20 @@ async function renderRelatedDocumentDetail(target, item, partner, viewKey) {
           <div><dt>${escapeHtml(text.number)}</dt><dd>${escapeHtml(documentReference(data.documentNumber, data.documentId))}</dd></div>
           ${!data.isInvoice ? `<div><dt>${escapeHtml(text.noticeDate)}</dt><dd>${escapeHtml(data.date || "-")}</dd></div>` : ""}
           ${!data.isInvoice && data.settlementAccount ? `<div><dt>${escapeHtml(text.account)}</dt><dd>${escapeHtml(data.settlementAccount)}</dd></div>` : ""}
-          ${!data.isInvoice ? `<div><dt>${escapeHtml(text.amount)}</dt><dd>${formatNumberLike(relationAmount || data.debitAmount || data.creditAmount)}</dd></div>` : ""}
+          ${!data.isInvoice ? `<div><dt>${escapeHtml(text.amount)}</dt><dd>${formatDisplayAmount(relationAmount || data.debitAmount || data.creditAmount)}</dd></div>` : ""}
           ${data.scheduledMonth ? `<div><dt>${escapeHtml(text.scheduled)}</dt><dd>${escapeHtml(data.scheduledMonth)}</dd></div>` : ""}
         </dl>
         ${documentPartiesHtml ? `<section class="partner-document__parties"><h4>${escapeHtml(text.parties)}</h4><dl>${documentPartiesHtml}</dl></section>` : ""}
         ${data.documentDetails.length ? `<section class="partner-document__items"><h4>${escapeHtml(text.itemDetails)}</h4>
           <div class="partner-document__items-wrap"><table><thead><tr><th>#</th><th>${escapeHtml(text.item)}</th><th>${escapeHtml(text.quantity)}</th><th>${escapeHtml(text.unitPrice)}</th><th>${escapeHtml(text.taxCategory)}</th><th>${escapeHtml(text.gross)}</th></tr></thead><tbody>${detailRowsHtml}</tbody></table></div>
-          <div class="partner-document__tax-summary"><h4>${escapeHtml(text.taxSummary)}</h4><table><thead><tr><th>${escapeHtml(text.taxCategory)}</th><th>${escapeHtml(text.net)}</th><th>${escapeHtml(text.tax)}</th><th>${escapeHtml(text.gross)}</th></tr></thead><tbody>${taxSummaryHtml}<tr class="total"><th>${escapeHtml(text.total)}</th><td colspan="2"></td><td>${formatNumberLike(detailTotal)}</td></tr></tbody></table><p class="partner-document__rounding-note">${escapeHtml(text.roundingNote)}</p></div>
+          <div class="partner-document__tax-summary"><h4>${escapeHtml(text.taxSummary)}</h4><table><thead><tr><th>${escapeHtml(text.taxCategory)}</th><th>${escapeHtml(text.net)}</th><th>${escapeHtml(text.tax)}</th><th>${escapeHtml(text.gross)}</th></tr></thead><tbody>${taxSummaryHtml}<tr class="total"><th>${escapeHtml(text.total)}</th><td colspan="2"></td><td>${formatDisplayAmount(detailTotal)}</td></tr></tbody></table><p class="partner-document__rounding-note">${escapeHtml(text.roundingNote)}</p></div>
         </section>` : ""}
         <section class="partner-document__entry"><h4>${escapeHtml(text.selectedEntry)}</h4>
           <p class="partner-document__description"><span>${escapeHtml(text.description)}</span>${escapeHtml(data.description || "-")}</p>
           <table><tbody>
             <tr><th>${escapeHtml(text.transaction)}</th><td>${escapeHtml(`${data.transactionId} / ${data.lineId}`)}</td></tr>
-            <tr><th>${escapeHtml(text.debit)}</th><td>${escapeHtml(data.debitAccount)}<strong>${formatNumberLike(data.debitAmount)}</strong></td></tr>
-            <tr><th>${escapeHtml(text.credit)}</th><td>${escapeHtml(data.creditAccount)}<strong>${formatNumberLike(data.creditAmount)}</strong></td></tr>
+            <tr><th>${escapeHtml(text.debit)}</th><td>${escapeHtml(data.debitAccount)}<strong>${formatDisplayAmount(data.debitAmount)}</strong></td></tr>
+            <tr><th>${escapeHtml(text.credit)}</th><td>${escapeHtml(data.creditAccount)}<strong>${formatDisplayAmount(data.creditAmount)}</strong></td></tr>
           </tbody></table>
         </section>
         ${applicationHtml}
@@ -1830,7 +2011,7 @@ async function renderRelatedDocumentDetail(target, item, partner, viewKey) {
             <div><dt>${escapeHtml(text.number)}</dt><dd>${escapeHtml(documentReference(data.relatedDocumentNumber, data.relatedDocumentId))}</dd></div>
             <div><dt>${escapeHtml(data.isInvoice ? text.documentMonth : (currentLang === "en" ? "Document date" : "\u6587\u66f8\u65e5\u4ed8"))}</dt><dd>${escapeHtml(data.isInvoice ? settlementMonth : (data.invoiceDate || "-"))}</dd></div>
             <div><dt>${escapeHtml(text.transaction)}</dt><dd>${escapeHtml(data.isInvoice ? settlementTransaction : invoiceTransaction)}</dd></div>
-            <div><dt>${escapeHtml(text.amount)}</dt><dd class="amount">${formatNumberLike(relationAmount)}</dd></div>
+            <div><dt>${escapeHtml(text.amount)}</dt><dd class="amount">${formatDisplayAmount(relationAmount)}</dd></div>
           </dl>
         </section>` : ""}
         <p class="partner-document__source-note">${escapeHtml(text.sourceNote)}</p>
@@ -1890,8 +2071,8 @@ async function renderPartnerJournalDetailLegacy(viewKey, month, partner) {
       for (const item of items) {
         const row = item.row;
         html += `<tr><td>${escapeHtml(row[idx.date])}</td><td>${escapeHtml(idx.voucher >= 0 ? row[idx.voucher] : "")}</td><td>${escapeHtml(row[idx.description])}</td>
-          <td>${escapeHtml(accountLabel(row, idx.debitAccount, idx.debitName))}</td><td>${formatNumberLike(row[idx.debitAmount])}</td>
-          <td>${escapeHtml(accountLabel(row, idx.creditAccount, idx.creditName))}</td><td>${formatNumberLike(row[idx.creditAmount])}</td></tr>`;
+          <td>${escapeHtml(accountLabel(row, idx.debitAccount, idx.debitName))}</td><td>${formatDisplayAmount(row[idx.debitAmount])}</td>
+          <td>${escapeHtml(accountLabel(row, idx.creditAccount, idx.creditName))}</td><td>${formatDisplayAmount(row[idx.creditAmount])}</td></tr>`;
       }
       return html + "</tbody></table></div></section>";
     };
@@ -2025,8 +2206,8 @@ async function renderPartnerJournalDetail(viewKey, month, partner, options = {})
         const idx = item.idx;
         html += `<tr class="partner-journal-row${item.month === month ? " is-current-month" : ""}" data-journal-index="${itemIndex}" data-month="${escapeHtml(item.month)}" data-transaction-id="${escapeHtml(row[idx.transactionId])}" data-line-id="${escapeHtml(row[idx.lineId])}" tabindex="0" role="button"><td>${escapeHtml(item.month)}</td><td>${escapeHtml(row[idx.transactionId])}</td><td>${escapeHtml(row[idx.lineId])}</td>
           <td>${escapeHtml(row[idx.date])}</td><td>${escapeHtml(idx.voucher >= 0 ? row[idx.voucher] : "")}</td><td>${escapeHtml(row[idx.description])}</td>
-          <td>${escapeHtml(accountLabel(row, idx.debitAccount, idx.debitName))}</td><td>${formatNumberLike(row[idx.debitAmount])}</td>
-          <td>${escapeHtml(accountLabel(row, idx.creditAccount, idx.creditName))}</td><td>${formatNumberLike(row[idx.creditAmount])}</td></tr>`;
+          <td>${escapeHtml(accountLabel(row, idx.debitAccount, idx.debitName))}</td><td>${formatDisplayAmount(row[idx.debitAmount])}</td>
+          <td>${escapeHtml(accountLabel(row, idx.creditAccount, idx.creditName))}</td><td>${formatDisplayAmount(row[idx.creditAmount])}</td></tr>`;
       }
       return html + "</tbody></table></div></section>";
     };
@@ -2099,7 +2280,7 @@ function renderPartnerReport(rows, viewKey, month) {
     : ["discount", "note", "cash", "other"];
   const amountKeys = ["opening", "occurrence", ...categoryKeys, "applied", "balance"];
   const totals = Object.fromEntries(amountKeys.map(key => [key, filtered.reduce((sum, row) => sum + row[key], 0)]));
-  const amount = value => formatNumberLike(Math.round(value));
+  const amount = value => formatDisplayAmount(Math.round(value));
   const dataIssues = Array.isArray(rows.dataIssues) ? rows.dataIssues : [];
   const issueHtml = dataIssues.length ? `<div class="partner-report__error">
     <strong>${currentLang === "en" ? "Data inconsistency" : "\u30c7\u30fc\u30bf\u4e0d\u6574\u5408"}</strong>: ${dataIssues.length}
@@ -2449,7 +2630,7 @@ async function loadBusinessDocumentModel({ cutoffDate = businessDocumentMonthEnd
     return {
       ...document,
       ...state,
-      partnerName: partnerNames.get(partnerKey) || partnerKey,
+      partnerName: localizedPartnerName(document.Partner_Code, partnerNames.get(partnerKey) || partnerKey),
       month: String(document.Document_Date || "").slice(0, 7),
       typeGroup: documentTypeGroup(document.Document_Type_Code),
     };
@@ -2503,7 +2684,7 @@ async function documentJournalRows(model, document) {
         String(candidate[indexes.lineId] || "").trim() === link.Line_ID
       ) || null;
     }
-    return { link, row, indexes, month };
+    return { link, row, indexes, month, header: rows[0] || [] };
   });
 }
 
@@ -2563,8 +2744,8 @@ async function renderBusinessDocumentView() {
     html += `<tr class="business-documents__row status-${escapeHtml(document.status)}${document.Document_ID === selectedDocumentId ? " is-selected" : ""}" data-document-id="${escapeHtml(document.Document_ID)}" tabindex="0" role="button">
       <td><span class="document-status document-status--${escapeHtml(document.status)}">${escapeHtml(statusLabel(document.status))}</span></td>
       <td>${escapeHtml(document.Document_Date)}</td><td>${escapeHtml(document.Document_Number || "－")}</td><td>${escapeHtml(document.Document_ID)}</td>
-      <td>${escapeHtml(document.Document_Type_Name)}</td><td>${escapeHtml(document.Partner_Type === "C" ? "AR" : "AP")}</td>
-      <td>${escapeHtml(document.partnerName)}</td><td>${formatNumberLike(document.amount)}</td><td>${formatNumberLike(document.applied)}</td><td>${formatNumberLike(document.open)}</td></tr>`;
+      <td>${escapeHtml(localizedDocumentType(document.Document_Type_Code, document.Document_Type_Name))}</td><td>${escapeHtml(document.Partner_Type === "C" ? "AR" : "AP")}</td>
+      <td>${escapeHtml(document.partnerName)}</td><td>${formatDisplayAmount(document.amount)}</td><td>${formatDisplayAmount(document.applied)}</td><td>${formatDisplayAmount(document.open)}</td></tr>`;
   }
   html += `</tbody></table></div><p class="business-documents__hint">${escapeHtml(text.selectHint)}</p>`;
   if (selected) {
@@ -2588,9 +2769,9 @@ async function renderBusinessDocumentView() {
       </div>
       <div class="business-document-detail__body">
       <dl class="business-document-detail__meta">
-        <div><dt>${escapeHtml(text.type)}</dt><dd>${escapeHtml(selected.Document_Type_Name)}</dd></div>
+        <div><dt>${escapeHtml(text.type)}</dt><dd>${escapeHtml(localizedDocumentType(selected.Document_Type_Code, selected.Document_Type_Name))}</dd></div>
         <div><dt>${escapeHtml(text.partner)}</dt><dd>${escapeHtml(selected.partnerName)}</dd></div>
-        <div><dt>${escapeHtml(text.amount)}</dt><dd class="amount">${formatNumberLike(selected.amount)}</dd></div>
+        <div><dt>${escapeHtml(text.amount)}</dt><dd class="amount">${formatDisplayAmount(selected.amount)}</dd></div>
         <div><dt>${escapeHtml(text.status)}</dt><dd>${escapeHtml(statusLabel(selected.status))}</dd></div>
       </dl>`;
     if (selected.issues.length) {
@@ -2598,16 +2779,16 @@ async function renderBusinessDocumentView() {
     }
     if (selectedParties.length) {
       html += `<h3>${escapeHtml(text.parties)}</h3><div class="business-document-detail__parties">${selectedParties.map(party =>
-        `<div><strong>${escapeHtml(party.Role_Code)}</strong><span>${escapeHtml(party.Party_Name)}</span><span>${escapeHtml([party.Department_Name, party.Person_Name].filter(Boolean).join(" / "))}</span></div>`
+        `<div><strong>${escapeHtml(party.Role_Code)}</strong><span>${escapeHtml(localizedPartnerName(party.Party_ID, party.Party_Name))}</span><span>${escapeHtml([party.Department_Name, party.Person_Name].filter(Boolean).join(" / "))}</span></div>`
       ).join("")}</div>`;
     }
     if (selectedDetails.length) {
       html += `<h3>${escapeHtml(text.items)}</h3><div class="business-document-detail__table-wrap"><table><thead><tr><th>#</th><th>${escapeHtml(documentDetailText().item)}</th><th>${escapeHtml(documentDetailText().quantity)}</th><th>${escapeHtml(documentDetailText().taxCategory)}</th><th>${escapeHtml(documentDetailText().gross)}</th></tr></thead><tbody>${selectedDetails.map(detail =>
-        `<tr><td>${escapeHtml(detail.Line_Number)}</td><td>${escapeHtml(detail.Item_Description)}</td><td>${escapeHtml(detail.Quantity)} ${escapeHtml(detail.Unit)}</td><td>${escapeHtml(detail.Tax_Category)}</td><td>${formatNumberLike(detail.Gross_Amount)}</td></tr>`
+        `<tr><td>${escapeHtml(detail.Line_Number)}</td><td>${escapeHtml(DATASET === DATASET_DEFAULT && currentLang === "ja" ? `架空商品明細（文書 ${detail.Document_ID}）` : detail.Item_Description)}</td><td>${escapeHtml(detail.Quantity)} ${escapeHtml(detail.Unit)}</td><td>${escapeHtml(detail.Tax_Category)}</td><td>${formatDisplayAmount(detail.Gross_Amount)}</td></tr>`
       ).join("")}</tbody></table></div>`;
     }
     html += `<h3>${escapeHtml(text.relatedDocuments)}</h3><div class="business-document-detail__table-wrap"><table class="business-document-related"><thead><tr><th>${escapeHtml(text.documentDate)}</th><th>${escapeHtml(text.type)}</th><th>${escapeHtml(text.documentNumber)}</th><th>${escapeHtml(text.managementId)}</th><th>${escapeHtml(text.amount)}</th><th>${escapeHtml(text.status)}</th></tr></thead><tbody>`;
-    html += related.length ? related.map(document => `<tr data-document-id="${escapeHtml(document.Document_ID)}" tabindex="0" role="button"><td>${escapeHtml(document.Document_Date)}</td><td>${escapeHtml(document.Document_Type_Name)}</td><td>${escapeHtml(document.Document_Number || "－")}</td><td>${escapeHtml(document.Document_ID)}</td><td>${formatNumberLike(document.amount)}</td><td>${escapeHtml(statusLabel(document.status))}</td></tr>`).join("")
+    html += related.length ? related.map(document => `<tr data-document-id="${escapeHtml(document.Document_ID)}" tabindex="0" role="button"><td>${escapeHtml(document.Document_Date)}</td><td>${escapeHtml(localizedDocumentType(document.Document_Type_Code, document.Document_Type_Name))}</td><td>${escapeHtml(document.Document_Number || "－")}</td><td>${escapeHtml(document.Document_ID)}</td><td>${formatDisplayAmount(document.amount)}</td><td>${escapeHtml(statusLabel(document.status))}</td></tr>`).join("")
       : `<tr><td colspan="6">${escapeHtml(text.noRelatedAsOf)}</td></tr>`;
     html += `</tbody></table></div><h3>${escapeHtml(text.relatedJournals)}</h3><div class="business-document-detail__table-wrap"><table><thead><tr><th>${escapeHtml(text.transaction)}</th><th>${escapeHtml(text.documentDate)}</th><th>${escapeHtml(text.description)}</th><th>${escapeHtml(text.debit)}</th><th>${escapeHtml(text.credit)}</th></tr></thead><tbody>`;
     html += journalRows.length ? journalRows.map(item => {
@@ -2615,14 +2796,14 @@ async function renderBusinessDocumentView() {
       const row = item.row;
       const account = (code, name) => [code, name].filter(Boolean).join(" ");
       return `<tr><td>${escapeHtml(`${item.link.Transaction_ID} / ${item.link.Line_ID}`)}</td><td>${escapeHtml(row && idx ? row[idx.date] : item.month)}</td>
-        <td>${escapeHtml(row && idx ? row[idx.description] : item.link.Relationship_Type)}</td>
-        <td>${escapeHtml(row && idx ? account(row[idx.debitAccount], idx.debitName >= 0 ? row[idx.debitName] : "") : "")}${row && idx ? `<strong>${formatNumberLike(row[idx.debitAmount])}</strong>` : ""}</td>
-        <td>${escapeHtml(row && idx ? account(row[idx.creditAccount], idx.creditName >= 0 ? row[idx.creditName] : "") : "")}${row && idx ? `<strong>${formatNumberLike(row[idx.creditAmount])}</strong>` : ""}</td></tr>`;
+        <td>${escapeHtml(row && idx ? localizedDescription(item.header, row, row[idx.description]) : item.link.Relationship_Type)}</td>
+        <td>${escapeHtml(row && idx ? account(row[idx.debitAccount], localizedCellValue(item.header, row, idx.debitName)) : "")}${row && idx ? `<strong>${formatDisplayAmount(row[idx.debitAmount])}</strong>` : ""}</td>
+        <td>${escapeHtml(row && idx ? account(row[idx.creditAccount], localizedCellValue(item.header, row, idx.creditName)) : "")}${row && idx ? `<strong>${formatDisplayAmount(row[idx.creditAmount])}</strong>` : ""}</td></tr>`;
     }).join("") : `<tr><td colspan="5">${escapeHtml(text.noJournal)}</td></tr>`;
     html += `</tbody></table></div><h3>${escapeHtml(text.applications)}</h3><div class="business-document-detail__table-wrap"><table><thead><tr><th>${escapeHtml(text.applicationDate)}</th><th>${escapeHtml(text.amount)}</th><th>${escapeHtml(text.settlement)}</th><th>${escapeHtml(text.status)}</th></tr></thead><tbody>`;
     html += selectedApplications.length ? selectedApplications.map(application => {
       const matchedSettlement = model.settlements.find(item => item.Settlement_ID === application.Settlement_ID);
-      return `<tr><td>${escapeHtml(application.Application_Date)}</td><td>${formatNumberLike(application.Applied_Amount)}</td><td>${escapeHtml(matchedSettlement?.Settlement_Document_ID || application.Settlement_ID)}</td><td>${escapeHtml(application.Status)}</td></tr>`;
+      return `<tr><td>${escapeHtml(application.Application_Date)}</td><td>${formatDisplayAmount(application.Applied_Amount)}</td><td>${escapeHtml(matchedSettlement?.Settlement_Document_ID || application.Settlement_ID)}</td><td>${escapeHtml(application.Status)}</td></tr>`;
     }).join("") : `<tr><td colspan="4">${escapeHtml(text.noApplicationAsOf)}</td></tr>`;
     html += `</tbody></table></div></div></aside>`;
   }
@@ -2723,6 +2904,16 @@ function applyI18nTexts() {
     aboutLinkEl.textContent = currentLang === "en" ? "ABOUT" : "概要";
     aboutLinkEl.href = currentLang === "en" ? "./about_en.html" : "./about.html";
   }
+  if (structuredCsvDownloadEl) {
+    const label = currentLang === "en" ? "Structured CSV download" : "構造化CSVダウンロード";
+    structuredCsvDownloadEl.textContent = label;
+    structuredCsvDownloadEl.setAttribute("aria-label", label);
+  }
+  if (structuredJsonDownloadEl) {
+    const label = currentLang === "en" ? "Structured JSON metadata download" : "構造化JSONメタデータダウンロード";
+    structuredJsonDownloadEl.textContent = label;
+    structuredJsonDownloadEl.setAttribute("aria-label", label);
+  }
   const searchInput = document.getElementById("searchInput");
   if (searchInput) {
     searchInput.placeholder =
@@ -2745,7 +2936,8 @@ function applyI18nTexts() {
       const demoNotice = currentLang === "en"
         ? "All data shown is fictional demonstration data. The accounting period is from April 2021 to March 2022; only transactions required to illustrate receipt and payment relationships include reference data from the two months before and after this period."
         : "※ 本画面のデータはすべて架空のデモデータです。会計取引の対象期間は2021年4月から2022年3月までですが、入出金との対応確認に必要な取引に限り、対象期間外の前後2か月分も参考データとして設定しています。";
-      companyDetailsEl.innerHTML = `<span class="company-header__name">${escapeHtml(company.name)}</span><span class="company-header__address">${escapeHtml(address)}</span><span class="company-header__notice">${escapeHtml(demoNotice)}</span>`;
+      const publicCompanyName = PUBLIC_DISPLAY_LABELS[DATASET]?.company?.[currentLang] || company.name;
+      companyDetailsEl.innerHTML = `<span class="company-header__name">${escapeHtml(publicCompanyName)}</span><span class="company-header__address">${escapeHtml(address)}</span><span class="company-header__notice">${escapeHtml(demoNotice)}</span>`;
       companyHeaderEl.hidden = false;
     } else {
       companyDetailsEl.innerHTML = "";
@@ -2819,11 +3011,13 @@ function updateUrlQuery(params) {
 // -------- UI init --------
 function initNav() {
   navEl.innerHTML = "";
-  const viewKeys = Object.keys(INDEX.views || {}).filter(key => key !== "documents");
-  const groupEnds = new Set(["structured", "tidy", "trial_balance", "pnl"]);
+  const allowedViews = new Set(["tidy", "journal", "ledger", "trial_balance", "balance_sheet", "pnl"]);
+  const viewKeys = Object.keys(INDEX.views || {}).filter(key => allowedViews.has(key));
+  const groupEnds = new Set(["tidy", "trial_balance", "pnl"]);
   for (const [index, key] of viewKeys.entries()) {
     const btn = document.createElement("button");
     btn.textContent = tViewLabel(key);
+    btn.setAttribute("aria-label", tViewLabel(key));
     btn.dataset.key = key;
     btn.addEventListener("click", async () => {
       if (key === "ledger" && currentView !== "ledger") acctSel.value = "";
@@ -2930,7 +3124,7 @@ function updateViewControls() {
   const documentView = isDocumentView();
   const allAccountsOnly = currentView === "trial_balance" || currentView === "balance_sheet" || currentView === "pnl";
   const annualReportView = false;
-  const searchableView = currentView === "structured" || currentView === "tidy" || currentView === "journal";
+  const searchableView = currentView === "tidy" || currentView === "journal";
   if (allAccountsOnly) acctSel.value = "";
   if (!searchableView) searchInput.value = "";
   if (searchLabelEl) searchLabelEl.hidden = !searchableView;
@@ -2959,7 +3153,7 @@ function updateViewControls() {
   }
   if (toggleCodeColsBtn) toggleCodeColsBtn.hidden = partnerView || documentView;
   if (columnToggleGroupEl) columnToggleGroupEl.hidden = partnerView || documentView;
-  if (structuredDownloadsEl) structuredDownloadsEl.hidden = currentView !== "structured" || documentView;
+  if (structuredDownloadsEl) structuredDownloadsEl.hidden = currentView !== "tidy" || documentView || !INDEX?.views?.structured;
   if (navEl) navEl.hidden = documentView;
   if (aboutLinkEl?.closest("button")) aboutLinkEl.closest("button").hidden = documentView;
   if (aboutSeparatorEl) aboutSeparatorEl.hidden = documentView;
@@ -3066,7 +3260,7 @@ function initUpload() {
     if (acctIdx >= 0) {
       let options;
       if (acctNameIdx >= 0) {
-        options = extractAccountOptions(rows, acctIdx, acctNameIdx);
+        options = localizeAccountOptions(extractAccountOptions(rows, acctIdx, acctNameIdx));
 
         // Disambiguate duplicated names by appending the code
         const cnt = new Map();
@@ -3127,7 +3321,7 @@ async function refresh(opts = {}) {
   }
   const month = monthSel.value || (INDEX?.months?.[0] ?? "");
   const asOfMonth = currentAsOfMonth() || month;
-  const searchableView = currentView === "structured" || currentView === "tidy" || currentView === "journal";
+  const searchableView = currentView === "tidy" || currentView === "journal";
   const q = searchableView ? String(searchInput.value || "").trim() : "";
   const acct = isDocumentView() ? "" : (acctSel.value || "");
 
@@ -3180,16 +3374,23 @@ async function refresh(opts = {}) {
     // ---- Load rows ----
     if (dataMode === "server") {
       const url = resolveCsvUrl(currentView, month);
-      if (currentView === "structured") {
+      if (currentView === "tidy" && INDEX?.views?.structured) {
         const view = INDEX.views.structured;
-        const metadataRel = String(view.metadata_path || "structured/{month}.json").replace(/\{month\}/g, month);
+        const structuredUrl = resolveCsvUrl("structured", month);
+        const metadataRel = String(view.metadata_path || "structured/{month}.json")
+          .replace(/\{lang\}/g, currentLang)
+          .replace(/\{month\}/g, month);
         const metadataUrl = joinUrlPath(DATA_ROOT, metadataRel);
-        const metadata = await fetch(metadataUrl, { cache: "no-store" }).then(response => {
-          if (!response.ok) throw new Error(`HTTP ${response.status}: ${metadataUrl}`);
+        const displayMetadataRel = String(view.display_metadata_path || view.metadata_path || "structured/{month}.json")
+          .replace(/\{lang\}/g, currentLang)
+          .replace(/\{month\}/g, month);
+        const displayMetadataUrl = joinUrlPath(DATA_ROOT, displayMetadataRel);
+        const metadata = await fetch(displayMetadataUrl, { cache: "no-store" }).then(response => {
+          if (!response.ok) throw new Error(`HTTP ${response.status}: ${displayMetadataUrl}`);
           return response.json();
         });
         structuredColumnMetadata = new Map((metadata.columns || []).map(column => [column.structured_column, column]));
-        if (structuredCsvDownloadEl) structuredCsvDownloadEl.href = url;
+        if (structuredCsvDownloadEl) structuredCsvDownloadEl.href = structuredUrl;
         if (structuredJsonDownloadEl) structuredJsonDownloadEl.href = metadataUrl;
       } else {
         structuredColumnMetadata = new Map();
@@ -3210,7 +3411,7 @@ async function refresh(opts = {}) {
           let options;
 
           if (acctNameIdx >= 0) {
-            options = extractAccountOptions(lastLoadedRows, acctIdx, acctNameIdx);
+            options = localizeAccountOptions(extractAccountOptions(lastLoadedRows, acctIdx, acctNameIdx));
 
             // If account names are duplicated, disambiguate by appending the code.
             const cnt = new Map();
@@ -3253,9 +3454,10 @@ async function refresh(opts = {}) {
     }
 
     // ---- Filter + render ----
+    const localeRows = currentView === "tidy" ? localizeTidyRows(lastLoadedRows) : lastLoadedRows;
     const displayRows = currentView === "journal" && globalThis.LedgerJournalDisplay
-      ? globalThis.LedgerJournalDisplay.buildDisplayRows(lastLoadedRows, DATASET)
-      : lastLoadedRows;
+      ? globalThis.LedgerJournalDisplay.buildDisplayRows(localeRows, DATASET)
+      : localeRows;
     const filtered = filterRows(displayRows, {
       accountValue: acctSel.value || "",
       searchText: q,
@@ -3294,8 +3496,6 @@ async function main() {
   INDEX = INDEX_BOOTSTRAP;
   if (!INDEX.views) INDEX.views = {};
   if (INDEX.features?.business_documents === true) {
-    INDEX.views.receivables = { virtual: true, source: "ledger" };
-    INDEX.views.payables = { virtual: true, source: "ledger" };
     INDEX.views.documents = { virtual: true, source: "business_document" };
   }
 
@@ -3321,7 +3521,12 @@ async function main() {
     currentLang = qLang;
     localStorage.setItem("ledger_lang", currentLang);
   }
-  if (qView && INDEX.views && INDEX.views[qView]) currentView = qView;
+  const allowedRouteViews = new Set(["tidy", "journal", "ledger", "trial_balance", "balance_sheet", "pnl", "documents"]);
+  if (qView && allowedRouteViews.has(qView) && INDEX.views && INDEX.views[qView]) currentView = qView;
+  else if (qView && ["structured", "receivables", "payables"].includes(qView)) {
+    currentView = "tidy";
+    updateUrlQuery({ view: currentView });
+  }
   if (currentView !== "documents") lastAccountingView = currentView;
   // init UI
   initNav();

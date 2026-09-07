@@ -1,11 +1,11 @@
 {
   "registry_version": "1.0.0",
-  "default_dataset_id": "pca-synthetic-fy2021-v2-settlement-16m",
+  "default_dataset_id": "pca-synthetic-fy2021-v3-structured-tidy-16m",
   "datasets": [
     {
-      "id": "pca-synthetic-fy2021-v2-settlement-16m",
+      "id": "pca-synthetic-fy2021-v3-structured-tidy-16m",
       "root": "sample",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "public": true,
       "label_ja": "公開PCA合成データ（16か月）",
       "label_en": "Public PCA synthetic data (16 months)"

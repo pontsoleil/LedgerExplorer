@@ -1,9 +1,25 @@
-C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14
-2021-03-05,REF-BF-AR-SET-001,1-D,D,1120,Demo Harbor Ordinary Deposit,,,,,,,100000,Reference-before customer receipt
-2021-03-05,REF-BF-AR-SET-001,2-C,C,1200,Demo Accounts Receivable,,,C001,Demo Customer Aurora,,,100000,Reference-before customer receipt
-2021-03-08,REF-BF-AP-SET-001,1-D,D,2000,Demo Accounts Payable,,,V001,Demo Vendor Keystone,,,200000,Reference-before vendor payment
-2021-03-08,REF-BF-AP-SET-001,2-C,C,1120,Demo Harbor Ordinary Deposit,,,,,,,200000,Reference-before vendor payment
-2021-03-15,REF-BF-AR-002,1-D,D,1200,Demo Accounts Receivable,,,C001,Demo Customer Aurora,,,1000000,Reference-before customer invoice
-2021-03-15,REF-BF-AR-002,2-C,C,4000,Demo Product Sales,,,,,,,1000000,Reference-before customer invoice
-2021-03-20,REF-BF-AP-002,1-D,D,6000,Demo Salaries,,,,,,,2423720,Reference-before vendor invoice
-2021-03-20,REF-BF-AP-002,2-C,C,2000,Demo Accounts Payable,,,V001,Demo Vendor Keystone,,,2423720,Reference-before vendor invoice
+C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18
+1,"[""20210305"",""REF-BF-AR-SET-001""]",,,,,2021-03-05,REF-BF-AR-SET-001,Reference-before customer receipt,,,,,,,,,
+1,"[""20210305"",""REF-BF-AR-SET-001""]",1-D,,,,,,,D,100000,,,,,,,
+1,"[""20210305"",""REF-BF-AR-SET-001""]",1-D,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210305"",""REF-BF-AR-SET-001""]",2-C,,,,,,,C,100000,,,,,,,
+1,"[""20210305"",""REF-BF-AR-SET-001""]",2-C,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210305"",""REF-BF-AR-SET-001""]",2-C,1,1-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210308"",""REF-BF-AP-SET-001""]",,,,,2021-03-08,REF-BF-AP-SET-001,Reference-before vendor payment,,,,,,,,,
+1,"[""20210308"",""REF-BF-AP-SET-001""]",1-D,,,,,,,D,200000,,,,,,,
+1,"[""20210308"",""REF-BF-AP-SET-001""]",1-D,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210308"",""REF-BF-AP-SET-001""]",1-D,1,1-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210308"",""REF-BF-AP-SET-001""]",2-C,,,,,,,C,200000,,,,,,,
+1,"[""20210308"",""REF-BF-AP-SET-001""]",2-C,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210315"",""REF-BF-AR-002""]",,,,,2021-03-15,REF-BF-AR-002,Reference-before customer invoice,,,,,,,,,
+1,"[""20210315"",""REF-BF-AR-002""]",1-D,,,,,,,D,1000000,,,,,,,
+1,"[""20210315"",""REF-BF-AR-002""]",1-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210315"",""REF-BF-AR-002""]",1-D,1,1-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210315"",""REF-BF-AR-002""]",2-C,,,,,,,C,1000000,,,,,,,
+1,"[""20210315"",""REF-BF-AR-002""]",2-C,1,,,,,,,,4000,Demo Product Sales,,,,,
+1,"[""20210320"",""REF-BF-AP-002""]",,,,,2021-03-20,REF-BF-AP-002,Reference-before vendor invoice,,,,,,,,,
+1,"[""20210320"",""REF-BF-AP-002""]",1-D,,,,,,,D,2423720,,,,,,,
+1,"[""20210320"",""REF-BF-AP-002""]",1-D,1,,,,,,,,6000,Demo Salaries,,,,,
+1,"[""20210320"",""REF-BF-AP-002""]",2-C,,,,,,,C,2423720,,,,,,,
+1,"[""20210320"",""REF-BF-AP-002""]",2-C,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210320"",""REF-BF-AP-002""]",2-C,1,1-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,

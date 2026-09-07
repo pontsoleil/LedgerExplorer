@@ -1,5 +1,5 @@
 {
-  "dataset_id": "pca-synthetic-fy2021-v2-settlement-16m",
+  "dataset_id": "pca-synthetic-fy2021-v3-structured-tidy-16m",
   "relation_basis": "explicit immutable IDs only",
   "cutoff_formula": "open_as_of(T)=original-sum(applied where application_date<=T)",
   "reference_values_source": "project-authored deterministic rules; no historical CSV values copied",

@@ -10,6 +10,7 @@ Structured Cn output Binding without copying values from historical fixtures.
 from __future__ import annotations
 
 import argparse
+import calendar
 import csv
 import hashlib
 import json
@@ -26,9 +27,9 @@ REPORTING_MONTHS = [
 REFERENCE_BEFORE = ["2021-02", "2021-03"]
 REFERENCE_AFTER = ["2022-04", "2022-05"]
 MONTHS = REFERENCE_BEFORE + REPORTING_MONTHS + REFERENCE_AFTER
-DATASET_ID = "pca-synthetic-fy2021-v2-settlement-16m"
-SCHEMA_ID = "xbrl-gl-next-ae-cn-v1"
-SCHEMA_VERSION = "1.0.0"
+DATASET_ID = "pca-synthetic-fy2021-v3-structured-tidy-16m"
+SCHEMA_ID = "xbrl-gl-next-ae-structured-tidy-v2"
+SCHEMA_VERSION = "2.0.0"
 
 JOURNAL_FIELDS = [
     "JP07a", "JP08a", "Month", "JP07a_GL03_03", "JP07a_GL03_01",
@@ -49,11 +50,7 @@ LEDGER_FIELDS = [
     "Counterpart_Department_Code", "Counterpart_Department_Name", "Balance",
     "Source_Row", "Entry_Key", "Occurrence", "Semantic_Path", "Month",
 ]
-FACT_FIELDS = [
-    "entry_key", "source_row", "occurrence", "sequence", "level", "type", "name",
-    "semantic_path", "concept_namespace", "binding_path", "unit", "value", "month", "voucher",
-]
-STRUCTURED_FIELDS = [f"C{i}" for i in range(1, 15)]
+STRUCTURED_FIELDS = [f"C{i}" for i in range(1, 19)]
 
 BUSINESS_DOCUMENT_FIELDS = [
     "Document_ID", "Document_Number", "Document_Type_Code", "Document_Type_Name",
@@ -211,45 +208,145 @@ def control_event(row: dict[str, object]) -> tuple[str, str, int] | None:
     return None
 
 
-def structured_row(row: dict[str, object]) -> dict[str, object]:
-    debit = bool(str(row.get("JP06e_GE24_01", ""))) and int(row.get("Debit_Amount") or 0) != 0
-    prefix = "JP06e" if debit else "JP06f"
-    sub_prefix = "JP05a" if debit else "JP05b"
-    tax_prefix = "JP02j" if debit else "JP02k"
+def empty_structured_row() -> dict[str, object]:
+    return {column: "" for column in STRUCTURED_FIELDS}
+
+
+def append_subaccount_rows(result: list[dict[str, object]], coordinates: dict[str, object],
+                           occurrences: list[tuple[str, object, object]]) -> None:
+    ordinal = 0
+    for kind, code, description in occurrences:
+        if code in ("", None) and description in ("", None):
+            continue
+        ordinal += 1
+        row = empty_structured_row()
+        row.update(coordinates)
+        row.update({"C5": f"{ordinal}-{kind}", "C14": code, "C15": description, "C16": kind})
+        result.append(row)
+
+
+def append_tax_rows(result: list[dict[str, object]], coordinates: dict[str, object],
+                    occurrences: list[tuple[object, object]]) -> None:
+    ordinal = 0
+    for category, amount in occurrences:
+        if category in ("", None) and amount in ("", None):
+            continue
+        ordinal += 1
+        row = empty_structured_row()
+        row.update(coordinates)
+        row.update({"C6": str(ordinal), "C17": category, "C18": amount})
+        result.append(row)
+
+
+def structured_rows(rows: list[dict[str, object]]) -> list[dict[str, object]]:
+    """Return one row per HMD class occurrence, with ancestor coordinates only."""
+    by_header: dict[str, list[dict[str, object]]] = {}
+    for posting in rows:
+        by_header.setdefault(str(posting["Entry_Key"]), []).append(posting)
+
+    result: list[dict[str, object]] = []
+    for header_key, postings in by_header.items():
+        first = postings[0]
+        for field in ("JP07a_GL03_03", "JP07a_GL03_01", "JP08a_GL04_03"):
+            if any(str(item[field]) != str(first[field]) for item in postings):
+                raise ValueError(f"Header-grain source value differs inside {header_key}: {field}")
+        header = empty_structured_row()
+        header.update({"C1": "1", "C2": header_key, "C7": first["JP07a_GL03_03"],
+                       "C8": first["JP07a_GL03_01"], "C9": first["JP08a_GL04_03"]})
+        result.append(header)
+
+        seen_details: set[str] = set()
+        for posting in postings:
+            debit = bool(str(posting.get("Debit_Occurrence", "")))
+            detail_key = str(posting["Debit_Occurrence"] if debit else posting["Credit_Occurrence"])
+            if not detail_key or detail_key in seen_details:
+                raise ValueError(f"Duplicate or missing detail occurrence in {header_key}: {detail_key}")
+            seen_details.add(detail_key)
+            prefix = "JP06e" if debit else "JP06f"
+            sub_prefix = "JP05a" if debit else "JP05b"
+            tax_prefix = "JP02j" if debit else "JP02k"
+            base = {"C1": "1", "C2": header_key, "C3": detail_key}
+
+            detail = empty_structured_row()
+            detail.update(base)
+            detail.update({"C10": "D" if debit else "C",
+                           "C11": posting["Debit_Amount"] if debit else posting["Credit_Amount"]})
+            result.append(detail)
+
+            account = empty_structured_row()
+            account.update(base)
+            account.update({"C4": "1", "C12": posting[f"{prefix}_GE24_01"],
+                            "C13": posting[f"{prefix}_GE24_02"]})
+            result.append(account)
+
+            child_base = {**base, "C4": "1"}
+            append_subaccount_rows(result, child_base, [
+                ("department", posting["BS04fb_01"] if debit else posting["BS04fc_01"],
+                 posting["BS04fb_02"] if debit else posting["BS04fc_02"]),
+                ("auxiliary-account", posting[f"{sub_prefix}_01"], posting[f"{sub_prefix}_02"]),
+            ])
+            append_tax_rows(result, base, [
+                (posting[f"{tax_prefix}_BS09_01"], posting["GE05kw_01"] if debit else posting["GE05kB_01"]),
+            ])
+    return result
+
+
+def display_metadata(binding: list[dict[str, str]]) -> dict[str, object]:
     return {
-        "C1": row["JP07a_GL03_03"], "C2": row["JP07a_GL03_01"],
-        "C3": row["Debit_Occurrence"] if debit else row["Credit_Occurrence"],
-        "C4": "D" if debit else "C", "C5": row[f"{prefix}_GE24_01"],
-        "C6": row[f"{prefix}_GE24_02"], "C7": row["BS04fb_01"] if debit else row["BS04fc_01"],
-        "C8": row["BS04fb_02"] if debit else row["BS04fc_02"],
-        "C9": row[f"{sub_prefix}_01"], "C10": row[f"{sub_prefix}_02"],
-        "C11": row[f"{tax_prefix}_BS09_01"], "C12": row["GE05kw_01"] if debit else row["GE05kB_01"],
-        "C13": row["Debit_Amount"] if debit else row["Credit_Amount"],
-        "C14": row["JP08a_GL04_03"],
+        "schema_id": SCHEMA_ID,
+        "schema_version": SCHEMA_VERSION,
+        "format": "class-occurrence structured tidy data",
+        "owner_class_rule": "deepest populated occurrence-coordinate column C1..C6",
+        "columns": [{key: row[key] for key in (
+            "structured_column", "ordinal", "role", "sequence", "level", "type", "name_ja", "name_en",
+            "datatype", "multiplicity", "owner_class", "semantic_path", "binding_path", "occurrence_rule", "required",
+        )} for row in binding],
     }
 
 
-def fact_rows(rows: list[dict[str, object]], binding: list[dict[str, str]]) -> list[dict[str, object]]:
-    by_column = {row["structured_column"]: row for row in binding}
-    result: list[dict[str, object]] = []
-    sequence = 0
-    for posting in rows:
-        wide = structured_row(posting)
-        for column in STRUCTURED_FIELDS:
-            value = wide[column]
-            if value in ("", None):
-                continue
-            sequence += 1
-            meta = by_column[column]
-            result.append({
-                "entry_key": posting["Entry_Key"], "source_row": posting["Source_Row"],
-                "occurrence": wide["C3"], "sequence": sequence, "level": meta["level"],
-                "type": meta["type"], "name": meta["name_en"],
-                "semantic_path": meta["semantic_path"], "concept_namespace": "http://www.xbrl.org/int/gl/2026-12-31/cor",
-                "binding_path": meta["binding_path"], "unit": "JPY" if meta["datatype"] == "Monetary" else "",
-                "value": value, "month": str(posting["Month"]), "voucher": posting["JP07a_GL03_01"],
-            })
-    return result
+def xbrl_csv_metadata(month: str) -> dict[str, object]:
+    year, number = (int(value) for value in month.split("-"))
+    end = calendar.monthrange(year, number)[1]
+    concepts = {
+        "C7": "cor:entryDatePosted", "C8": "cor:entryId", "C9": "cor:entryDescription",
+        "C10": "cor:debitCreditIndicator", "C11": "cor:monetaryAmount",
+        "C12": "cor:accountNumber", "C13": "cor:accountDescription",
+        "C14": "cor:subaccountId", "C15": "cor:subaccountDescription", "C16": "cor:type",
+        "C17": "cor:taxCategory", "C18": "cor:amountOfTaxes",
+    }
+    columns: dict[str, object] = {column: {} for column in STRUCTURED_FIELDS[:6]}
+    for column, concept in concepts.items():
+        dimensions = {"concept": concept}
+        if column in {"C11", "C18"}:
+            dimensions["unit"] = "iso4217:JPY"
+        columns[column] = {"dimensions": dimensions}
+    return {
+        "documentInfo": {
+            "documentType": "https://xbrl.org/2021/xbrl-csv",
+            "namespaces": {
+                "cor": "https://www.xbrl.or.jp/taxonomy/xbrl-gl-next/experimental/cor/2026-12-31",
+                "plt": "https://www.xbrl.or.jp/taxonomy/xbrl-gl-next/experimental/plt/2026-12-31",
+                "iso4217": "http://www.xbrl.org/2003/iso4217",
+                "scheme": "http://www.example.com",
+                "xbrl": "https://xbrl.org/2021",
+            },
+            "taxonomy": ["../../../../XBRL-GL-Next/taxonomy/accounting-entries/oim/cor_accountingEntries/cor-all-oim-2026-12-31.xsd"],
+        },
+        "tables": {f"{DATASET_ID}-{month}": {"template": "structured-tidy", "url": f"{month}.csv"}},
+        "tableTemplates": {"structured-tidy": {
+            "dimensions": {
+                "period": f"{year:04d}-{number:02d}-{end:02d}T00:00:00",
+                "entity": "scheme:Harbor-Lantern-Demo",
+                "plt:d_cor_accountingEntries": "$C1",
+                "plt:d_cor_entryHeader": "$C2",
+                "plt:d_cor_entryDetail": "$C3",
+                "plt:d_cor_detailAccountIdentifier": "$C4",
+                "plt:d_cor_subaccount": "$C5",
+                "plt:d_cor_detailTax": "$C6",
+            },
+            "columns": columns,
+        }},
+    }
 
 
 def build_reference_ledger(months: list[str], journal: list[dict[str, object]], accounts: dict[str, dict[str, str]],
@@ -474,16 +571,22 @@ def derive_post_reference_journal(reporting_journal: list[dict[str, object]], be
 
 
 def build_index() -> dict[str, object]:
-    structured = {"by": "month", "path": "structured/{month}.csv", "metadata_path": "structured/{month}.json", "available": MONTHS, "language_neutral": True, "schema_id": SCHEMA_ID, "schema_version": SCHEMA_VERSION}
+    structured = {
+        "by": "month", "path": "structured/{month}.csv",
+        "metadata_path": "structured/{month}.json",
+        "display_metadata_path": "structured/columns.json",
+        "available": MONTHS, "language_neutral": True,
+        "schema_id": SCHEMA_ID, "schema_version": SCHEMA_VERSION,
+    }
     return {
-        "generated_at": "2026-09-07T14:05:02+09:00", "dataset_id": DATASET_ID,
-        "predecessor_dataset_id": "pca-synthetic-fy2021-v1", "default_month": "2021-04",
+        "generated_at": "2026-09-07T19:28:44+09:00", "dataset_id": DATASET_ID,
+        "predecessor_dataset_id": "pca-synthetic-fy2021-v2-settlement-16m", "default_month": "2021-04",
         "company": {"business_id": "SYNTHETIC-DEMO", "name": "Harbor Lantern Demo", "synthetic": True},
         "lang": "en", "months": MONTHS, "reporting_months": REPORTING_MONTHS,
         "reference_before_months": REFERENCE_BEFORE, "reference_after_months": REFERENCE_AFTER,
-        "features": {"business_documents": True, "as_of_settlement": True, "structured_cn": True},
+        "features": {"business_documents": True, "as_of_settlement": True, "structured_tidy": True},
         "views": {
-            "tidy": {"by": "month", "path": "{lang}/tidy/{month}.csv", "available": MONTHS, "display_name": "Fact Details"},
+            "tidy": {**structured, "display_name": "Structured Tidy Data"},
             "journal": {"by": "month", "path": "{lang}/journal/{month}.csv", "available": MONTHS},
             "ledger": {"by": "month", "path": "{lang}/ledger/{month}.csv", "available": MONTHS},
             "trial_balance": {"by": "month", "path": "{lang}/trial_balance/{month}.csv", "available": REPORTING_MONTHS},
@@ -507,7 +610,9 @@ def main() -> int:
     shutil.copytree(args.source, args.output, dirs_exist_ok=True)
     binding = read_csv(args.binding)
     if [r["structured_column"] for r in binding] != STRUCTURED_FIELDS:
-        raise ValueError("Structured Binding columns are not exact C1...C14")
+        raise ValueError("Structured Binding columns are not exact C1...C18")
+    if {r["schema_id"] for r in binding} != {SCHEMA_ID} or {r["schema_version"] for r in binding} != {SCHEMA_VERSION}:
+        raise ValueError("Structured Binding schema identity does not match the generator")
     accounts_rows = read_csv(args.source / "source" / "account_master.csv")
     accounts = {r["account_code"]: r for r in accounts_rows}
     account_names = {code: row["account_name"] for code, row in accounts.items()}
@@ -550,22 +655,11 @@ def main() -> int:
             all_ledger.extend(read_csv(args.output / lang / "ledger" / f"{month}.csv"))
         write_csv(args.output / lang / "ledger" / "ALL.csv", LEDGER_FIELDS, all_ledger)
 
-    metadata_columns = [{k: row[k] for k in ("structured_column", "ordinal", "role", "sequence", "level", "type", "name_ja", "name_en", "datatype", "multiplicity", "semantic_path", "binding_path", "occurrence_rule", "required")} for row in binding]
+    write_json(args.output / "structured" / "columns.json", display_metadata(binding))
     for month in MONTHS:
         month_rows = [r for r in all_journal if r["Month"] == month]
-        write_csv(args.output / "structured" / f"{month}.csv", STRUCTURED_FIELDS, [structured_row(r) for r in month_rows])
-        write_json(args.output / "structured" / f"{month}.json", {
-            "schema_id": SCHEMA_ID, "schema_version": SCHEMA_VERSION, "dataset_id": DATASET_ID,
-            "month": month, "month_role": month_role(month), "reporting_period_inclusion": month in REPORTING_MONTHS,
-            "binding": "bindings/XBRL_GL_Next_AccountingEntries_Cn_BINDING.csv",
-            "binding_sha256": sha256(args.binding), "hmd_sha256": sha256(args.hmd), "columns": metadata_columns,
-        })
-        month_facts = fact_rows(month_rows, binding)
-        for lang in ("ja", "en"):
-            write_csv(args.output / lang / "tidy" / f"{month}.csv", FACT_FIELDS, month_facts)
-    all_facts = [row for month in MONTHS for row in read_csv(args.output / "ja" / "tidy" / f"{month}.csv")]
-    for lang in ("ja", "en"):
-        write_csv(args.output / lang / "tidy" / "ALL.csv", FACT_FIELDS, all_facts)
+        write_csv(args.output / "structured" / f"{month}.csv", STRUCTURED_FIELDS, structured_rows(month_rows))
+        write_json(args.output / "structured" / f"{month}.json", xbrl_csv_metadata(month))
 
     model = build_document_model(all_journal)
     for lang in ("ja", "en"):
@@ -600,9 +694,13 @@ def main() -> int:
     write_json(args.output / "index.json", build_index())
     write_json(args.output / "STRUCTURED_CN_LINEAGE.json", {
         "dataset_id": DATASET_ID, "schema_id": SCHEMA_ID, "schema_version": SCHEMA_VERSION,
-        "source_dataset_id": "pca-synthetic-fy2021-v1", "source_binding_id": "PCA_Cn_SEMANTIC_PATH_BINDING",
+        "source_dataset_id": "pca-synthetic-fy2021-v2-settlement-16m", "source_binding_id": "PCA_Cn_SEMANTIC_PATH_BINDING",
         "target_binding": f"bindings/{args.binding.name}", "target_binding_sha256": sha256(args.binding),
-        "hmd_sha256": sha256(args.hmd), "mapping_rule": "semantic path plus explicit occurrence selector; never ordinal equality",
+        "hmd_sha256": sha256(args.hmd),
+        "mapping_rule": "one owner-class occurrence per row; ancestor coordinates inherited; property values owner-only",
+        "xbrl_csv_metadata": "structured/{month}.json",
+        "display_metadata": "structured/columns.json",
+        "legacy_wide_materialization": "ja|en/journal and reports are generated display projections and are not Canonical Structured Tidy",
         "control_partner_normalization": {"1200": "C001", "2000": "V001", "amount_effect": 0},
     })
     write_json(args.output / "SETTLEMENT_LINEAGE.json", {
@@ -616,7 +714,7 @@ def main() -> int:
     period_rows = []
     for month in MONTHS:
         files = []
-        for rel in [f"structured/{month}.csv", f"structured/{month}.json", f"ja/journal/{month}.csv", f"en/journal/{month}.csv", f"ja/ledger/{month}.csv", f"en/ledger/{month}.csv", f"ja/tidy/{month}.csv", f"en/tidy/{month}.csv"]:
+        for rel in [f"structured/{month}.csv", f"structured/{month}.json", f"ja/journal/{month}.csv", f"en/journal/{month}.csv", f"ja/ledger/{month}.csv", f"en/ledger/{month}.csv"]:
             p = args.output / rel
             files.append({"path": rel, "rows": len(read_csv(p)) if p.suffix == ".csv" else 1, "sha256": sha256(p)})
         period_rows.append({
@@ -629,8 +727,10 @@ def main() -> int:
         f"`{DATASET_ID}` is a wholly fictional public evaluation dataset.\n\n"
         "- Reporting period: 2021-04 through 2022-03.\n"
         "- Reference-before: 2021-02 and 2021-03. Reference-after: 2022-04 and 2022-05.\n"
-        "- Structured output: C1...C14 under `structured/`, governed by the published Binding and paired JSON metadata.\n"
-        "- Fact Details: one-fact-per-row inspection data under `{ja|en}/tidy/`; it is not the Structured CSV contract.\n"
+        "- Structured Tidy output: C1...C18 under `structured/`, one HMD class occurrence per row.\n"
+        "- EntryHeader properties occur once; descendants inherit only complete occurrence coordinates.\n"
+        "- Monthly JSON files are xBRL-CSV primary metadata; `structured/columns.json` is separate display metadata.\n"
+        "- Existing `{ja|en}/tidy/` files are unreferenced predecessor diagnostics and are not runtime authority.\n"
         "- Explicit document, open-item, settlement, application, and journal relations are under `{ja|en}/source/`.\n"
         "- Reference-period postings are excluded from the twelve-month trial balance, BS, and PL.\n",
         encoding="utf-8", newline="\n",

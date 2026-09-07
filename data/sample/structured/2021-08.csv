@@ -1,155 +1,810 @@
-C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14
-2021-08-01,900274,426-C,C,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,417370,Synthetic demo customer receipt 900274
-2021-08-01,900274,426-D,D,1110,Demo North Current Deposit,D01,Demo Sales,B002,North Demo Bank,00,0,417370,Synthetic demo customer receipt 900274
-2021-08-02,900241,427-D,D,2000,Demo Accounts Payable,D01,Demo Sales,V001,Demo Vendor Keystone,00,0,90560,Synthetic demo multi-vendor settlement 900241
-2021-08-02,900241,428-D,D,2100,Demo Accrued Payables,D01,Demo Sales,V005,Demo Vendor Orchid,00,0,102140,Synthetic demo multi-vendor settlement 900241
-2021-08-02,900241,429-C,C,1110,Demo North Current Deposit,D01,Demo Sales,B002,North Demo Bank,00,0,131030,Synthetic demo multi-vendor settlement 900241
-2021-08-02,900241,430-C,C,1120,Demo Harbor Ordinary Deposit,D01,Demo Sales,B003,Harbor Demo Bank,00,0,61670,Synthetic demo multi-vendor settlement 900241
-2021-08-02,900250,431-C,C,4010,Demo Service Revenue,D01,Demo Sales,C001,Demo Customer Aurora,B5,33359,366950,Synthetic demo credit sale 900250
-2021-08-02,900250,431-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,366950,Synthetic demo credit sale 900250
-2021-08-02,900252,432-C,C,4000,Demo Product Sales,D01,Demo Sales,C007,Demo Customer Grove,B5,53029,583320,Synthetic demo credit sale 900252
-2021-08-02,900252,432-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,583320,Synthetic demo credit sale 900252
-2021-08-02,900269,433-C,C,1120,Demo Harbor Ordinary Deposit,D05,Demo Digital Services,B003,Harbor Demo Bank,00,0,192880,Synthetic demo prepaid service 900269
-2021-08-02,900269,433-D,D,1400,Demo Prepaid Expenses,D05,Demo Digital Services,S006,Demo Insurance Services,00,0,192880,Synthetic demo prepaid service 900269
-2021-08-04,900240,434-C,C,4000,Demo Product Sales,D01,Demo Sales,C001,Demo Customer Aurora,B5,34386,378250,Synthetic demo credit sale 900240
-2021-08-04,900240,434-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,378250,Synthetic demo credit sale 900240
-2021-08-04,900257,435-C,C,1120,Demo Harbor Ordinary Deposit,D06,Demo Management,B003,Harbor Demo Bank,00,0,626720,Synthetic demo financing settlement 900257
-2021-08-04,900257,435-D,D,2200,Demo Short-term Loans,D06,Demo Management,,,00,0,188010,Synthetic demo financing settlement 900257
-2021-08-04,900257,436-D,D,6070,Demo Bank Fees,D06,Demo Management,B003,Harbor Demo Bank,00,0,238150,Synthetic demo financing settlement 900257
-2021-08-04,900257,437-D,D,7000,Demo Taxes and Dues,D06,Demo Management,,,P0,0,200560,Synthetic demo financing settlement 900257
-2021-08-04,900259,438-C,C,1110,Demo North Current Deposit,D05,Demo Digital Services,B002,North Demo Bank,00,0,139150,Synthetic demo prepaid service 900259
-2021-08-04,900259,438-D,D,1400,Demo Prepaid Expenses,D05,Demo Digital Services,S002,Demo Energy Services,00,0,139150,Synthetic demo prepaid service 900259
-2021-08-04,900277,439-C,C,1110,Demo North Current Deposit,D04,Demo Logistics,B002,North Demo Bank,00,0,34910,Synthetic demo vendor settlement 900277
-2021-08-04,900277,439-D,D,2000,Demo Accounts Payable,D04,Demo Logistics,V001,Demo Vendor Keystone,00,0,34910,Synthetic demo vendor settlement 900277
-2021-08-05,900273,440-D,D,2000,Demo Accounts Payable,D01,Demo Sales,V001,Demo Vendor Keystone,00,0,184040,Synthetic demo multi-vendor settlement 900273
-2021-08-05,900273,441-D,D,2100,Demo Accrued Payables,D01,Demo Sales,V007,Demo Vendor Quartz,00,0,40400,Synthetic demo multi-vendor settlement 900273
-2021-08-05,900273,442-C,C,1100,Demo Central Ordinary Deposit,D01,Demo Sales,B001,Demo Central Bank,00,0,141390,Synthetic demo multi-vendor settlement 900273
-2021-08-05,900273,443-C,C,1110,Demo North Current Deposit,D01,Demo Sales,B002,North Demo Bank,00,0,83050,Synthetic demo multi-vendor settlement 900273
-2021-08-06,900255,444-C,C,2000,Demo Accounts Payable,D04,Demo Logistics,V001,Demo Vendor Keystone,00,0,149650,Synthetic demo purchase on account 900255
-2021-08-06,900255,444-D,D,5000,Demo Purchases,D04,Demo Logistics,V006,Demo Vendor Prairie,Q5,13605,149650,Synthetic demo purchase on account 900255
-2021-08-06,900270,445-C,C,1100,Demo Central Ordinary Deposit,D02,Demo Administration,B001,Demo Central Bank,00,0,569590,Synthetic demo monthly payroll bundle 900270
-2021-08-06,900270,445-D,D,6000,Demo Salaries,D02,Demo Administration,,,00,0,244920,Synthetic demo monthly payroll bundle 900270
-2021-08-06,900270,446-D,D,6010,Demo Statutory Welfare,D02,Demo Administration,,,00,0,11390,Synthetic demo monthly payroll bundle 900270
-2021-08-06,900270,447-D,D,2110,Demo Payroll Withholding,D02,Demo Administration,,,00,0,313280,Synthetic demo monthly payroll bundle 900270
-2021-08-07,900279,448-C,C,1100,Demo Central Ordinary Deposit,D02,Demo Administration,B001,Demo Central Bank,00,0,700610,Synthetic demo monthly payroll bundle 900279
-2021-08-07,900279,448-D,D,6000,Demo Salaries,D02,Demo Administration,,,00,0,112090,Synthetic demo monthly payroll bundle 900279
-2021-08-07,900279,449-D,D,6010,Demo Statutory Welfare,D02,Demo Administration,,,00,0,245210,Synthetic demo monthly payroll bundle 900279
-2021-08-07,900279,450-D,D,2110,Demo Payroll Withholding,D02,Demo Administration,,,00,0,343310,Synthetic demo monthly payroll bundle 900279
-2021-08-08,900245,451-C,C,2000,Demo Accounts Payable,D04,Demo Logistics,V001,Demo Vendor Keystone,00,0,189000,Synthetic demo purchase on account 900245
-2021-08-08,900245,451-D,D,5020,Demo Inventory Adjustment,D04,Demo Logistics,V006,Demo Vendor Prairie,Q5,17182,189000,Synthetic demo purchase on account 900245
-2021-08-09,900264,452-C,C,1100,Demo Central Ordinary Deposit,D02,Demo Administration,B001,Demo Central Bank,00,0,418120,Synthetic demo monthly payroll bundle 900264
-2021-08-09,900264,452-D,D,6000,Demo Salaries,D02,Demo Administration,,,00,0,62710,Synthetic demo monthly payroll bundle 900264
-2021-08-09,900264,453-D,D,6010,Demo Statutory Welfare,D02,Demo Administration,,,00,0,121250,Synthetic demo monthly payroll bundle 900264
-2021-08-09,900264,454-D,D,2110,Demo Payroll Withholding,D02,Demo Administration,,,00,0,234160,Synthetic demo monthly payroll bundle 900264
-2021-08-09,900280,455-C,C,4010,Demo Service Revenue,D01,Demo Sales,C001,Demo Customer Aurora,B5,48394,532330,Synthetic demo credit sale 900280
-2021-08-09,900280,455-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,532330,Synthetic demo credit sale 900280
-2021-08-11,900291,456-C,C,1100,Demo Central Ordinary Deposit,D02,Demo Administration,B001,Demo Central Bank,00,0,197380,Synthetic demo monthly payroll bundle 900291
-2021-08-11,900291,456-D,D,6000,Demo Salaries,D02,Demo Administration,,,00,0,96710,Synthetic demo monthly payroll bundle 900291
-2021-08-11,900291,457-D,D,6010,Demo Statutory Welfare,D02,Demo Administration,,,00,0,59210,Synthetic demo monthly payroll bundle 900291
-2021-08-11,900291,458-D,D,2110,Demo Payroll Withholding,D02,Demo Administration,,,00,0,41460,Synthetic demo monthly payroll bundle 900291
-2021-08-11,900292,459-C,C,4010,Demo Service Revenue,D01,Demo Sales,C007,Demo Customer Grove,B5,25711,282820,Synthetic demo credit sale 900292
-2021-08-11,900292,459-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,282820,Synthetic demo credit sale 900292
-2021-08-12,900249,460-C,C,1100,Demo Central Ordinary Deposit,D05,Demo Digital Services,B001,Demo Central Bank,00,0,172120,Synthetic demo prepaid service 900249
-2021-08-12,900249,460-D,D,1400,Demo Prepaid Expenses,D05,Demo Digital Services,S004,Demo Logistics Services,00,0,172120,Synthetic demo prepaid service 900249
-2021-08-12,900287,461-D,D,2000,Demo Accounts Payable,D01,Demo Sales,V001,Demo Vendor Keystone,00,0,262520,Synthetic demo multi-vendor settlement 900287
-2021-08-12,900287,462-D,D,2100,Demo Accrued Payables,D01,Demo Sales,V001,Demo Vendor Keystone,00,0,447020,Synthetic demo multi-vendor settlement 900287
-2021-08-12,900287,463-C,C,1120,Demo Harbor Ordinary Deposit,D01,Demo Sales,B003,Harbor Demo Bank,00,0,546340,Synthetic demo multi-vendor settlement 900287
-2021-08-12,900287,464-C,C,1100,Demo Central Ordinary Deposit,D01,Demo Sales,B001,Demo Central Bank,00,0,163200,Synthetic demo multi-vendor settlement 900287
-2021-08-13,900253,465-C,C,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,179710,Synthetic demo customer receipt 900253
-2021-08-13,900253,465-D,D,1110,Demo North Current Deposit,D01,Demo Sales,B002,North Demo Bank,00,0,179710,Synthetic demo customer receipt 900253
-2021-08-13,900278,466-C,C,1120,Demo Harbor Ordinary Deposit,D05,Demo Digital Services,B003,Harbor Demo Bank,00,0,103020,Synthetic demo operating expense 900278
-2021-08-13,900278,466-D,D,6100,Demo Repairs,D05,Demo Digital Services,V001,Demo Vendor Keystone,Q5,9365,103020,Synthetic demo operating expense 900278
-2021-08-13,900283,467-C,C,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,237520,Synthetic demo customer receipt 900283
-2021-08-13,900283,467-D,D,1110,Demo North Current Deposit,D01,Demo Sales,B002,North Demo Bank,00,0,237520,Synthetic demo customer receipt 900283
-2021-08-13,900294,468-D,D,1100,Demo Central Ordinary Deposit,D01,Demo Sales,B001,Demo Central Bank,00,0,555460,Synthetic demo mixed sales and receipt 900294
-2021-08-13,900294,469-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,130300,Synthetic demo mixed sales and receipt 900294
-2021-08-13,900294,470-C,C,4000,Demo Product Sales,D01,Demo Sales,C006,Demo Customer Fjord,R5,15239,205720,Synthetic demo mixed sales and receipt 900294
-2021-08-13,900294,471-C,C,4010,Demo Service Revenue,D01,Demo Sales,C007,Demo Customer Grove,B5,43640,480040,Synthetic demo mixed sales and receipt 900294
-2021-08-14,900272,472-C,C,4020,Demo Other Operating Revenue,D01,Demo Sales,C007,Demo Customer Grove,B5,25905,284960,Synthetic demo credit sale 900272
-2021-08-14,900272,472-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,284960,Synthetic demo credit sale 900272
-2021-08-15,900238,473-C,C,1110,Demo North Current Deposit,D03,Demo Operations,B002,North Demo Bank,00,0,229780,Synthetic demo operating cost bundle 900238
-2021-08-15,900238,473-D,D,6030,Demo Utilities,D03,Demo Operations,S002,Demo Energy Services,Q5,16293,179220,Synthetic demo operating cost bundle 900238
-2021-08-15,900238,474-D,D,6040,Demo Communication,D03,Demo Operations,S003,Demo Network Services,Q5,1253,13780,Synthetic demo operating cost bundle 900238
-2021-08-15,900238,475-D,D,6060,Demo Office Supplies,D03,Demo Operations,V009,Demo Vendor Summit,Q5,3344,36780,Synthetic demo operating cost bundle 900238
-2021-08-15,900248,476-D,D,1120,Demo Harbor Ordinary Deposit,D01,Demo Sales,B003,Harbor Demo Bank,00,0,393100,Synthetic demo mixed sales and receipt 900248
-2021-08-15,900248,477-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,104500,Synthetic demo mixed sales and receipt 900248
-2021-08-15,900248,478-C,C,4000,Demo Product Sales,D01,Demo Sales,C010,Demo Customer Juniper,B5,13118,144300,Synthetic demo mixed sales and receipt 900248
-2021-08-15,900248,479-C,C,4010,Demo Service Revenue,D01,Demo Sales,C001,Demo Customer Aurora,B5,32118,353300,Synthetic demo mixed sales and receipt 900248
-2021-08-15,900254,480-D,D,1120,Demo Harbor Ordinary Deposit,D01,Demo Sales,B003,Harbor Demo Bank,00,0,343440,Synthetic demo mixed sales and receipt 900254
-2021-08-15,900254,481-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,85870,Synthetic demo mixed sales and receipt 900254
-2021-08-15,900254,482-C,C,4000,Demo Product Sales,D01,Demo Sales,C006,Demo Customer Fjord,B5,12879,141670,Synthetic demo mixed sales and receipt 900254
-2021-08-15,900254,483-C,C,4010,Demo Service Revenue,D01,Demo Sales,C007,Demo Customer Grove,B5,26149,287640,Synthetic demo mixed sales and receipt 900254
-2021-08-15,900261,484-C,C,4000,Demo Product Sales,D01,Demo Sales,C004,Demo Customer Dawn,B5,24445,268900,Synthetic demo credit sale 900261
-2021-08-15,900261,484-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,268900,Synthetic demo credit sale 900261
-2021-08-16,900260,485-D,D,1120,Demo Harbor Ordinary Deposit,D01,Demo Sales,B003,Harbor Demo Bank,00,0,53760,Synthetic demo mixed sales and receipt 900260
-2021-08-16,900260,486-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,109160,Synthetic demo mixed sales and receipt 900260
-2021-08-16,900260,487-C,C,4000,Demo Product Sales,D01,Demo Sales,C002,Demo Customer Birch,B5,2369,26060,Synthetic demo mixed sales and receipt 900260
-2021-08-16,900260,488-C,C,4010,Demo Service Revenue,D01,Demo Sales,C003,Demo Customer Cobalt,B5,12442,136860,Synthetic demo mixed sales and receipt 900260
-2021-08-16,900282,489-C,C,4000,Demo Product Sales,D01,Demo Sales,C007,Demo Customer Grove,B5,13292,146210,Synthetic demo credit sale 900282
-2021-08-16,900282,489-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,146210,Synthetic demo credit sale 900282
-2021-08-17,900239,490-C,C,1120,Demo Harbor Ordinary Deposit,D05,Demo Digital Services,B003,Harbor Demo Bank,00,0,208130,Synthetic demo prepaid service 900239
-2021-08-17,900239,490-D,D,1400,Demo Prepaid Expenses,D05,Demo Digital Services,S006,Demo Insurance Services,00,0,208130,Synthetic demo prepaid service 900239
-2021-08-17,900271,491-C,C,4010,Demo Service Revenue,D01,Demo Sales,C004,Demo Customer Dawn,B5,28761,316370,Synthetic demo credit sale 900271
-2021-08-17,900271,491-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,316370,Synthetic demo credit sale 900271
-2021-08-17,900284,492-C,C,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,182170,Synthetic demo customer receipt 900284
-2021-08-17,900284,492-D,D,1120,Demo Harbor Ordinary Deposit,D01,Demo Sales,B003,Harbor Demo Bank,00,0,182170,Synthetic demo customer receipt 900284
-2021-08-17,900288,493-C,C,1100,Demo Central Ordinary Deposit,D02,Demo Administration,B001,Demo Central Bank,00,0,75170,Synthetic demo operating expense 900288
-2021-08-17,900288,493-D,D,6020,Demo Office Rent,D02,Demo Administration,V001,Demo Vendor Keystone,Q5,6834,75170,Synthetic demo operating expense 900288
-2021-08-18,900247,494-C,C,1110,Demo North Current Deposit,D04,Demo Logistics,B002,North Demo Bank,00,0,120360,Synthetic demo vendor settlement 900247
-2021-08-18,900247,494-D,D,2000,Demo Accounts Payable,D04,Demo Logistics,V001,Demo Vendor Keystone,00,0,120360,Synthetic demo vendor settlement 900247
-2021-08-18,900276,495-C,C,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,148340,Synthetic demo combined customer receipt 900276
-2021-08-18,900276,495-D,D,1100,Demo Central Ordinary Deposit,D01,Demo Sales,B001,Demo Central Bank,00,0,593370,Synthetic demo combined customer receipt 900276
-2021-08-18,900276,496-C,C,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,35600,Synthetic demo combined customer receipt 900276
-2021-08-18,900276,497-C,C,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,409430,Synthetic demo combined customer receipt 900276
-2021-08-18,900281,498-D,D,2000,Demo Accounts Payable,D01,Demo Sales,V001,Demo Vendor Keystone,00,0,360210,Synthetic demo multi-vendor settlement 900281
-2021-08-18,900281,499-D,D,2100,Demo Accrued Payables,D01,Demo Sales,V005,Demo Vendor Orchid,00,0,101610,Synthetic demo multi-vendor settlement 900281
-2021-08-18,900281,500-C,C,1120,Demo Harbor Ordinary Deposit,D01,Demo Sales,B003,Harbor Demo Bank,00,0,193960,Synthetic demo multi-vendor settlement 900281
-2021-08-18,900281,501-C,C,1100,Demo Central Ordinary Deposit,D01,Demo Sales,B001,Demo Central Bank,00,0,267860,Synthetic demo multi-vendor settlement 900281
-2021-08-18,900285,502-C,C,1100,Demo Central Ordinary Deposit,D02,Demo Administration,B001,Demo Central Bank,00,0,653300,Synthetic demo monthly payroll bundle 900285
-2021-08-18,900285,502-D,D,6000,Demo Salaries,D02,Demo Administration,,,00,0,169850,Synthetic demo monthly payroll bundle 900285
-2021-08-18,900285,503-D,D,6010,Demo Statutory Welfare,D02,Demo Administration,,,00,0,287450,Synthetic demo monthly payroll bundle 900285
-2021-08-18,900285,504-D,D,2110,Demo Payroll Withholding,D02,Demo Administration,,,00,0,196000,Synthetic demo monthly payroll bundle 900285
-2021-08-19,900265,505-C,C,2000,Demo Accounts Payable,D04,Demo Logistics,V001,Demo Vendor Keystone,00,0,96540,Synthetic demo purchase on account 900265
-2021-08-19,900265,505-D,D,5010,Demo Freight-in,D04,Demo Logistics,V006,Demo Vendor Prairie,Q5,8776,96540,Synthetic demo purchase on account 900265
-2021-08-19,900275,506-C,C,2000,Demo Accounts Payable,D04,Demo Logistics,V001,Demo Vendor Keystone,00,0,330660,Synthetic demo purchase on account 900275
-2021-08-19,900275,506-D,D,5020,Demo Inventory Adjustment,D04,Demo Logistics,V006,Demo Vendor Prairie,Q5,30060,330660,Synthetic demo purchase on account 900275
-2021-08-19,900286,507-C,C,2000,Demo Accounts Payable,D04,Demo Logistics,V001,Demo Vendor Keystone,00,0,63790,Synthetic demo purchase on account 900286
-2021-08-19,900286,507-D,D,5010,Demo Freight-in,D04,Demo Logistics,V001,Demo Vendor Keystone,Q5,5799,63790,Synthetic demo purchase on account 900286
-2021-08-19,900289,508-C,C,1110,Demo North Current Deposit,D05,Demo Digital Services,B002,North Demo Bank,00,0,135110,Synthetic demo prepaid service 900289
-2021-08-19,900289,508-D,D,1400,Demo Prepaid Expenses,D05,Demo Digital Services,S002,Demo Energy Services,00,0,135110,Synthetic demo prepaid service 900289
-2021-08-22,900243,509-C,C,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,511200,Synthetic demo customer receipt 900243
-2021-08-22,900243,509-D,D,1100,Demo Central Ordinary Deposit,D01,Demo Sales,B001,Demo Central Bank,00,0,511200,Synthetic demo customer receipt 900243
-2021-08-22,900244,510-C,C,1110,Demo North Current Deposit,D03,Demo Operations,B002,North Demo Bank,00,0,289950,Synthetic demo operating cost bundle 900244
-2021-08-22,900244,510-D,D,6030,Demo Utilities,D03,Demo Operations,S002,Demo Energy Services,Q5,12915,142070,Synthetic demo operating cost bundle 900244
-2021-08-22,900244,511-D,D,6040,Demo Communication,D03,Demo Operations,S003,Demo Network Services,Q5,1317,14490,Synthetic demo operating cost bundle 900244
-2021-08-22,900244,512-D,D,6060,Demo Office Supplies,D03,Demo Operations,V005,Demo Vendor Orchid,C5,12126,133390,Synthetic demo operating cost bundle 900244
-2021-08-22,900263,513-C,C,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,415340,Synthetic demo customer receipt 900263
-2021-08-22,900263,513-D,D,1120,Demo Harbor Ordinary Deposit,D01,Demo Sales,B003,Harbor Demo Bank,00,0,415340,Synthetic demo customer receipt 900263
-2021-08-22,900293,514-C,C,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,434210,Synthetic demo customer receipt 900293
-2021-08-22,900293,514-D,D,1120,Demo Harbor Ordinary Deposit,D01,Demo Sales,B003,Harbor Demo Bank,00,0,434210,Synthetic demo customer receipt 900293
-2021-08-24,900246,515-C,C,2000,Demo Accounts Payable,D04,Demo Logistics,V001,Demo Vendor Keystone,00,0,31780,Synthetic demo purchase on account 900246
-2021-08-24,900246,515-D,D,5000,Demo Purchases,D04,Demo Logistics,V001,Demo Vendor Keystone,C5,2889,31780,Synthetic demo purchase on account 900246
-2021-08-24,900267,516-D,D,2000,Demo Accounts Payable,D01,Demo Sales,V001,Demo Vendor Keystone,00,0,334530,Synthetic demo multi-vendor settlement 900267
-2021-08-24,900267,517-D,D,2100,Demo Accrued Payables,D01,Demo Sales,V001,Demo Vendor Keystone,00,0,392720,Synthetic demo multi-vendor settlement 900267
-2021-08-24,900267,518-C,C,1100,Demo Central Ordinary Deposit,D01,Demo Sales,B001,Demo Central Bank,00,0,421800,Synthetic demo multi-vendor settlement 900267
-2021-08-24,900267,519-C,C,1110,Demo North Current Deposit,D01,Demo Sales,B002,North Demo Bank,00,0,305450,Synthetic demo multi-vendor settlement 900267
-2021-08-26,900290,520-C,C,4020,Demo Other Operating Revenue,D01,Demo Sales,C001,Demo Customer Aurora,B5,40427,444700,Synthetic demo credit sale 900290
-2021-08-26,900290,520-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,444700,Synthetic demo credit sale 900290
-2021-08-27,900251,521-C,C,1120,Demo Harbor Ordinary Deposit,D06,Demo Management,B003,Harbor Demo Bank,00,0,700360,Synthetic demo financing settlement 900251
-2021-08-27,900251,521-D,D,2200,Demo Short-term Loans,D06,Demo Management,,,00,0,147070,Synthetic demo financing settlement 900251
-2021-08-27,900251,522-D,D,6070,Demo Bank Fees,D06,Demo Management,B003,Harbor Demo Bank,00,0,70030,Synthetic demo financing settlement 900251
-2021-08-27,900251,523-D,D,7000,Demo Taxes and Dues,D06,Demo Management,,,P0,0,483260,Synthetic demo financing settlement 900251
-2021-08-27,900295,524-C,C,2000,Demo Accounts Payable,D04,Demo Logistics,V001,Demo Vendor Keystone,00,0,334370,Synthetic demo purchase on account 900295
-2021-08-27,900295,524-D,D,5010,Demo Freight-in,D04,Demo Logistics,V006,Demo Vendor Prairie,Q5,30397,334370,Synthetic demo purchase on account 900295
-2021-08-28,900268,525-C,C,1110,Demo North Current Deposit,D03,Demo Operations,B002,North Demo Bank,00,0,31250,Synthetic demo operating expense 900268
-2021-08-28,900268,525-D,D,7000,Demo Taxes and Dues,D03,Demo Operations,V001,Demo Vendor Keystone,P0,0,31250,Synthetic demo operating expense 900268
-2021-08-30,900256,526-C,C,2000,Demo Accounts Payable,D04,Demo Logistics,V001,Demo Vendor Keystone,00,0,333720,Synthetic demo purchase on account 900256
-2021-08-30,900256,526-D,D,5010,Demo Freight-in,D04,Demo Logistics,V001,Demo Vendor Keystone,Q5,30338,333720,Synthetic demo purchase on account 900256
-2021-08-30,900258,527-C,C,1100,Demo Central Ordinary Deposit,D02,Demo Administration,B001,Demo Central Bank,00,0,87240,Synthetic demo operating expense 900258
-2021-08-30,900258,527-D,D,6080,Demo Advertising,D02,Demo Administration,V001,Demo Vendor Keystone,Q5,7931,87240,Synthetic demo operating expense 900258
-2021-08-31,900242,528-C,C,4020,Demo Other Operating Revenue,D01,Demo Sales,C007,Demo Customer Grove,B5,5714,62850,Synthetic demo credit sale 900242
-2021-08-31,900242,528-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,62850,Synthetic demo credit sale 900242
-2021-08-31,900262,529-C,C,4010,Demo Service Revenue,D01,Demo Sales,C007,Demo Customer Grove,B5,23994,263930,Synthetic demo credit sale 900262
-2021-08-31,900262,529-D,D,1200,Demo Accounts Receivable,D01,Demo Sales,C001,Demo Customer Aurora,00,0,263930,Synthetic demo credit sale 900262
-2021-08-31,900266,530-C,C,2000,Demo Accounts Payable,D04,Demo Logistics,V001,Demo Vendor Keystone,00,0,371680,Synthetic demo purchase on account 900266
-2021-08-31,900266,530-D,D,5020,Demo Inventory Adjustment,D04,Demo Logistics,V001,Demo Vendor Keystone,Q5,33789,371680,Synthetic demo purchase on account 900266
+C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18
+1,"[""20210801"",""900274""]",,,,,2021-08-01,900274,Synthetic demo customer receipt 900274,,,,,,,,,
+1,"[""20210801"",""900274""]",426-C,,,,,,,C,417370,,,,,,,
+1,"[""20210801"",""900274""]",426-C,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210801"",""900274""]",426-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210801"",""900274""]",426-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210801"",""900274""]",426-C,,,1,,,,,,,,,,,00,0
+1,"[""20210801"",""900274""]",426-D,,,,,,,D,417370,,,,,,,
+1,"[""20210801"",""900274""]",426-D,1,,,,,,,,1110,Demo North Current Deposit,,,,,
+1,"[""20210801"",""900274""]",426-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210801"",""900274""]",426-D,1,2-auxiliary-account,,,,,,,,,B002,North Demo Bank,auxiliary-account,,
+1,"[""20210801"",""900274""]",426-D,,,1,,,,,,,,,,,00,0
+1,"[""20210802"",""900241""]",,,,,2021-08-02,900241,Synthetic demo multi-vendor settlement 900241,,,,,,,,,
+1,"[""20210802"",""900241""]",427-D,,,,,,,D,90560,,,,,,,
+1,"[""20210802"",""900241""]",427-D,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210802"",""900241""]",427-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210802"",""900241""]",427-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210802"",""900241""]",427-D,,,1,,,,,,,,,,,00,0
+1,"[""20210802"",""900241""]",428-D,,,,,,,D,102140,,,,,,,
+1,"[""20210802"",""900241""]",428-D,1,,,,,,,,2100,Demo Accrued Payables,,,,,
+1,"[""20210802"",""900241""]",428-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210802"",""900241""]",428-D,1,2-auxiliary-account,,,,,,,,,V005,Demo Vendor Orchid,auxiliary-account,,
+1,"[""20210802"",""900241""]",428-D,,,1,,,,,,,,,,,00,0
+1,"[""20210802"",""900241""]",429-C,,,,,,,C,131030,,,,,,,
+1,"[""20210802"",""900241""]",429-C,1,,,,,,,,1110,Demo North Current Deposit,,,,,
+1,"[""20210802"",""900241""]",429-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210802"",""900241""]",429-C,1,2-auxiliary-account,,,,,,,,,B002,North Demo Bank,auxiliary-account,,
+1,"[""20210802"",""900241""]",429-C,,,1,,,,,,,,,,,00,0
+1,"[""20210802"",""900241""]",430-C,,,,,,,C,61670,,,,,,,
+1,"[""20210802"",""900241""]",430-C,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210802"",""900241""]",430-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210802"",""900241""]",430-C,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210802"",""900241""]",430-C,,,1,,,,,,,,,,,00,0
+1,"[""20210802"",""900250""]",,,,,2021-08-02,900250,Synthetic demo credit sale 900250,,,,,,,,,
+1,"[""20210802"",""900250""]",431-C,,,,,,,C,366950,,,,,,,
+1,"[""20210802"",""900250""]",431-C,1,,,,,,,,4010,Demo Service Revenue,,,,,
+1,"[""20210802"",""900250""]",431-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210802"",""900250""]",431-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210802"",""900250""]",431-C,,,1,,,,,,,,,,,B5,33359
+1,"[""20210802"",""900250""]",431-D,,,,,,,D,366950,,,,,,,
+1,"[""20210802"",""900250""]",431-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210802"",""900250""]",431-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210802"",""900250""]",431-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210802"",""900250""]",431-D,,,1,,,,,,,,,,,00,0
+1,"[""20210802"",""900252""]",,,,,2021-08-02,900252,Synthetic demo credit sale 900252,,,,,,,,,
+1,"[""20210802"",""900252""]",432-C,,,,,,,C,583320,,,,,,,
+1,"[""20210802"",""900252""]",432-C,1,,,,,,,,4000,Demo Product Sales,,,,,
+1,"[""20210802"",""900252""]",432-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210802"",""900252""]",432-C,1,2-auxiliary-account,,,,,,,,,C007,Demo Customer Grove,auxiliary-account,,
+1,"[""20210802"",""900252""]",432-C,,,1,,,,,,,,,,,B5,53029
+1,"[""20210802"",""900252""]",432-D,,,,,,,D,583320,,,,,,,
+1,"[""20210802"",""900252""]",432-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210802"",""900252""]",432-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210802"",""900252""]",432-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210802"",""900252""]",432-D,,,1,,,,,,,,,,,00,0
+1,"[""20210802"",""900269""]",,,,,2021-08-02,900269,Synthetic demo prepaid service 900269,,,,,,,,,
+1,"[""20210802"",""900269""]",433-C,,,,,,,C,192880,,,,,,,
+1,"[""20210802"",""900269""]",433-C,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210802"",""900269""]",433-C,1,1-department,,,,,,,,,D05,Demo Digital Services,department,,
+1,"[""20210802"",""900269""]",433-C,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210802"",""900269""]",433-C,,,1,,,,,,,,,,,00,0
+1,"[""20210802"",""900269""]",433-D,,,,,,,D,192880,,,,,,,
+1,"[""20210802"",""900269""]",433-D,1,,,,,,,,1400,Demo Prepaid Expenses,,,,,
+1,"[""20210802"",""900269""]",433-D,1,1-department,,,,,,,,,D05,Demo Digital Services,department,,
+1,"[""20210802"",""900269""]",433-D,1,2-auxiliary-account,,,,,,,,,S006,Demo Insurance Services,auxiliary-account,,
+1,"[""20210802"",""900269""]",433-D,,,1,,,,,,,,,,,00,0
+1,"[""20210804"",""900240""]",,,,,2021-08-04,900240,Synthetic demo credit sale 900240,,,,,,,,,
+1,"[""20210804"",""900240""]",434-C,,,,,,,C,378250,,,,,,,
+1,"[""20210804"",""900240""]",434-C,1,,,,,,,,4000,Demo Product Sales,,,,,
+1,"[""20210804"",""900240""]",434-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210804"",""900240""]",434-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210804"",""900240""]",434-C,,,1,,,,,,,,,,,B5,34386
+1,"[""20210804"",""900240""]",434-D,,,,,,,D,378250,,,,,,,
+1,"[""20210804"",""900240""]",434-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210804"",""900240""]",434-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210804"",""900240""]",434-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210804"",""900240""]",434-D,,,1,,,,,,,,,,,00,0
+1,"[""20210804"",""900257""]",,,,,2021-08-04,900257,Synthetic demo financing settlement 900257,,,,,,,,,
+1,"[""20210804"",""900257""]",435-C,,,,,,,C,626720,,,,,,,
+1,"[""20210804"",""900257""]",435-C,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210804"",""900257""]",435-C,1,1-department,,,,,,,,,D06,Demo Management,department,,
+1,"[""20210804"",""900257""]",435-C,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210804"",""900257""]",435-C,,,1,,,,,,,,,,,00,0
+1,"[""20210804"",""900257""]",435-D,,,,,,,D,188010,,,,,,,
+1,"[""20210804"",""900257""]",435-D,1,,,,,,,,2200,Demo Short-term Loans,,,,,
+1,"[""20210804"",""900257""]",435-D,1,1-department,,,,,,,,,D06,Demo Management,department,,
+1,"[""20210804"",""900257""]",435-D,,,1,,,,,,,,,,,00,0
+1,"[""20210804"",""900257""]",436-D,,,,,,,D,238150,,,,,,,
+1,"[""20210804"",""900257""]",436-D,1,,,,,,,,6070,Demo Bank Fees,,,,,
+1,"[""20210804"",""900257""]",436-D,1,1-department,,,,,,,,,D06,Demo Management,department,,
+1,"[""20210804"",""900257""]",436-D,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210804"",""900257""]",436-D,,,1,,,,,,,,,,,00,0
+1,"[""20210804"",""900257""]",437-D,,,,,,,D,200560,,,,,,,
+1,"[""20210804"",""900257""]",437-D,1,,,,,,,,7000,Demo Taxes and Dues,,,,,
+1,"[""20210804"",""900257""]",437-D,1,1-department,,,,,,,,,D06,Demo Management,department,,
+1,"[""20210804"",""900257""]",437-D,,,1,,,,,,,,,,,P0,0
+1,"[""20210804"",""900259""]",,,,,2021-08-04,900259,Synthetic demo prepaid service 900259,,,,,,,,,
+1,"[""20210804"",""900259""]",438-C,,,,,,,C,139150,,,,,,,
+1,"[""20210804"",""900259""]",438-C,1,,,,,,,,1110,Demo North Current Deposit,,,,,
+1,"[""20210804"",""900259""]",438-C,1,1-department,,,,,,,,,D05,Demo Digital Services,department,,
+1,"[""20210804"",""900259""]",438-C,1,2-auxiliary-account,,,,,,,,,B002,North Demo Bank,auxiliary-account,,
+1,"[""20210804"",""900259""]",438-C,,,1,,,,,,,,,,,00,0
+1,"[""20210804"",""900259""]",438-D,,,,,,,D,139150,,,,,,,
+1,"[""20210804"",""900259""]",438-D,1,,,,,,,,1400,Demo Prepaid Expenses,,,,,
+1,"[""20210804"",""900259""]",438-D,1,1-department,,,,,,,,,D05,Demo Digital Services,department,,
+1,"[""20210804"",""900259""]",438-D,1,2-auxiliary-account,,,,,,,,,S002,Demo Energy Services,auxiliary-account,,
+1,"[""20210804"",""900259""]",438-D,,,1,,,,,,,,,,,00,0
+1,"[""20210804"",""900277""]",,,,,2021-08-04,900277,Synthetic demo vendor settlement 900277,,,,,,,,,
+1,"[""20210804"",""900277""]",439-C,,,,,,,C,34910,,,,,,,
+1,"[""20210804"",""900277""]",439-C,1,,,,,,,,1110,Demo North Current Deposit,,,,,
+1,"[""20210804"",""900277""]",439-C,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210804"",""900277""]",439-C,1,2-auxiliary-account,,,,,,,,,B002,North Demo Bank,auxiliary-account,,
+1,"[""20210804"",""900277""]",439-C,,,1,,,,,,,,,,,00,0
+1,"[""20210804"",""900277""]",439-D,,,,,,,D,34910,,,,,,,
+1,"[""20210804"",""900277""]",439-D,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210804"",""900277""]",439-D,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210804"",""900277""]",439-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210804"",""900277""]",439-D,,,1,,,,,,,,,,,00,0
+1,"[""20210805"",""900273""]",,,,,2021-08-05,900273,Synthetic demo multi-vendor settlement 900273,,,,,,,,,
+1,"[""20210805"",""900273""]",440-D,,,,,,,D,184040,,,,,,,
+1,"[""20210805"",""900273""]",440-D,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210805"",""900273""]",440-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210805"",""900273""]",440-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210805"",""900273""]",440-D,,,1,,,,,,,,,,,00,0
+1,"[""20210805"",""900273""]",441-D,,,,,,,D,40400,,,,,,,
+1,"[""20210805"",""900273""]",441-D,1,,,,,,,,2100,Demo Accrued Payables,,,,,
+1,"[""20210805"",""900273""]",441-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210805"",""900273""]",441-D,1,2-auxiliary-account,,,,,,,,,V007,Demo Vendor Quartz,auxiliary-account,,
+1,"[""20210805"",""900273""]",441-D,,,1,,,,,,,,,,,00,0
+1,"[""20210805"",""900273""]",442-C,,,,,,,C,141390,,,,,,,
+1,"[""20210805"",""900273""]",442-C,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210805"",""900273""]",442-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210805"",""900273""]",442-C,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210805"",""900273""]",442-C,,,1,,,,,,,,,,,00,0
+1,"[""20210805"",""900273""]",443-C,,,,,,,C,83050,,,,,,,
+1,"[""20210805"",""900273""]",443-C,1,,,,,,,,1110,Demo North Current Deposit,,,,,
+1,"[""20210805"",""900273""]",443-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210805"",""900273""]",443-C,1,2-auxiliary-account,,,,,,,,,B002,North Demo Bank,auxiliary-account,,
+1,"[""20210805"",""900273""]",443-C,,,1,,,,,,,,,,,00,0
+1,"[""20210806"",""900255""]",,,,,2021-08-06,900255,Synthetic demo purchase on account 900255,,,,,,,,,
+1,"[""20210806"",""900255""]",444-C,,,,,,,C,149650,,,,,,,
+1,"[""20210806"",""900255""]",444-C,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210806"",""900255""]",444-C,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210806"",""900255""]",444-C,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210806"",""900255""]",444-C,,,1,,,,,,,,,,,00,0
+1,"[""20210806"",""900255""]",444-D,,,,,,,D,149650,,,,,,,
+1,"[""20210806"",""900255""]",444-D,1,,,,,,,,5000,Demo Purchases,,,,,
+1,"[""20210806"",""900255""]",444-D,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210806"",""900255""]",444-D,1,2-auxiliary-account,,,,,,,,,V006,Demo Vendor Prairie,auxiliary-account,,
+1,"[""20210806"",""900255""]",444-D,,,1,,,,,,,,,,,Q5,13605
+1,"[""20210806"",""900270""]",,,,,2021-08-06,900270,Synthetic demo monthly payroll bundle 900270,,,,,,,,,
+1,"[""20210806"",""900270""]",445-C,,,,,,,C,569590,,,,,,,
+1,"[""20210806"",""900270""]",445-C,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210806"",""900270""]",445-C,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210806"",""900270""]",445-C,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210806"",""900270""]",445-C,,,1,,,,,,,,,,,00,0
+1,"[""20210806"",""900270""]",445-D,,,,,,,D,244920,,,,,,,
+1,"[""20210806"",""900270""]",445-D,1,,,,,,,,6000,Demo Salaries,,,,,
+1,"[""20210806"",""900270""]",445-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210806"",""900270""]",445-D,,,1,,,,,,,,,,,00,0
+1,"[""20210806"",""900270""]",446-D,,,,,,,D,11390,,,,,,,
+1,"[""20210806"",""900270""]",446-D,1,,,,,,,,6010,Demo Statutory Welfare,,,,,
+1,"[""20210806"",""900270""]",446-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210806"",""900270""]",446-D,,,1,,,,,,,,,,,00,0
+1,"[""20210806"",""900270""]",447-D,,,,,,,D,313280,,,,,,,
+1,"[""20210806"",""900270""]",447-D,1,,,,,,,,2110,Demo Payroll Withholding,,,,,
+1,"[""20210806"",""900270""]",447-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210806"",""900270""]",447-D,,,1,,,,,,,,,,,00,0
+1,"[""20210807"",""900279""]",,,,,2021-08-07,900279,Synthetic demo monthly payroll bundle 900279,,,,,,,,,
+1,"[""20210807"",""900279""]",448-C,,,,,,,C,700610,,,,,,,
+1,"[""20210807"",""900279""]",448-C,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210807"",""900279""]",448-C,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210807"",""900279""]",448-C,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210807"",""900279""]",448-C,,,1,,,,,,,,,,,00,0
+1,"[""20210807"",""900279""]",448-D,,,,,,,D,112090,,,,,,,
+1,"[""20210807"",""900279""]",448-D,1,,,,,,,,6000,Demo Salaries,,,,,
+1,"[""20210807"",""900279""]",448-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210807"",""900279""]",448-D,,,1,,,,,,,,,,,00,0
+1,"[""20210807"",""900279""]",449-D,,,,,,,D,245210,,,,,,,
+1,"[""20210807"",""900279""]",449-D,1,,,,,,,,6010,Demo Statutory Welfare,,,,,
+1,"[""20210807"",""900279""]",449-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210807"",""900279""]",449-D,,,1,,,,,,,,,,,00,0
+1,"[""20210807"",""900279""]",450-D,,,,,,,D,343310,,,,,,,
+1,"[""20210807"",""900279""]",450-D,1,,,,,,,,2110,Demo Payroll Withholding,,,,,
+1,"[""20210807"",""900279""]",450-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210807"",""900279""]",450-D,,,1,,,,,,,,,,,00,0
+1,"[""20210808"",""900245""]",,,,,2021-08-08,900245,Synthetic demo purchase on account 900245,,,,,,,,,
+1,"[""20210808"",""900245""]",451-C,,,,,,,C,189000,,,,,,,
+1,"[""20210808"",""900245""]",451-C,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210808"",""900245""]",451-C,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210808"",""900245""]",451-C,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210808"",""900245""]",451-C,,,1,,,,,,,,,,,00,0
+1,"[""20210808"",""900245""]",451-D,,,,,,,D,189000,,,,,,,
+1,"[""20210808"",""900245""]",451-D,1,,,,,,,,5020,Demo Inventory Adjustment,,,,,
+1,"[""20210808"",""900245""]",451-D,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210808"",""900245""]",451-D,1,2-auxiliary-account,,,,,,,,,V006,Demo Vendor Prairie,auxiliary-account,,
+1,"[""20210808"",""900245""]",451-D,,,1,,,,,,,,,,,Q5,17182
+1,"[""20210809"",""900264""]",,,,,2021-08-09,900264,Synthetic demo monthly payroll bundle 900264,,,,,,,,,
+1,"[""20210809"",""900264""]",452-C,,,,,,,C,418120,,,,,,,
+1,"[""20210809"",""900264""]",452-C,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210809"",""900264""]",452-C,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210809"",""900264""]",452-C,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210809"",""900264""]",452-C,,,1,,,,,,,,,,,00,0
+1,"[""20210809"",""900264""]",452-D,,,,,,,D,62710,,,,,,,
+1,"[""20210809"",""900264""]",452-D,1,,,,,,,,6000,Demo Salaries,,,,,
+1,"[""20210809"",""900264""]",452-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210809"",""900264""]",452-D,,,1,,,,,,,,,,,00,0
+1,"[""20210809"",""900264""]",453-D,,,,,,,D,121250,,,,,,,
+1,"[""20210809"",""900264""]",453-D,1,,,,,,,,6010,Demo Statutory Welfare,,,,,
+1,"[""20210809"",""900264""]",453-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210809"",""900264""]",453-D,,,1,,,,,,,,,,,00,0
+1,"[""20210809"",""900264""]",454-D,,,,,,,D,234160,,,,,,,
+1,"[""20210809"",""900264""]",454-D,1,,,,,,,,2110,Demo Payroll Withholding,,,,,
+1,"[""20210809"",""900264""]",454-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210809"",""900264""]",454-D,,,1,,,,,,,,,,,00,0
+1,"[""20210809"",""900280""]",,,,,2021-08-09,900280,Synthetic demo credit sale 900280,,,,,,,,,
+1,"[""20210809"",""900280""]",455-C,,,,,,,C,532330,,,,,,,
+1,"[""20210809"",""900280""]",455-C,1,,,,,,,,4010,Demo Service Revenue,,,,,
+1,"[""20210809"",""900280""]",455-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210809"",""900280""]",455-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210809"",""900280""]",455-C,,,1,,,,,,,,,,,B5,48394
+1,"[""20210809"",""900280""]",455-D,,,,,,,D,532330,,,,,,,
+1,"[""20210809"",""900280""]",455-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210809"",""900280""]",455-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210809"",""900280""]",455-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210809"",""900280""]",455-D,,,1,,,,,,,,,,,00,0
+1,"[""20210811"",""900291""]",,,,,2021-08-11,900291,Synthetic demo monthly payroll bundle 900291,,,,,,,,,
+1,"[""20210811"",""900291""]",456-C,,,,,,,C,197380,,,,,,,
+1,"[""20210811"",""900291""]",456-C,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210811"",""900291""]",456-C,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210811"",""900291""]",456-C,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210811"",""900291""]",456-C,,,1,,,,,,,,,,,00,0
+1,"[""20210811"",""900291""]",456-D,,,,,,,D,96710,,,,,,,
+1,"[""20210811"",""900291""]",456-D,1,,,,,,,,6000,Demo Salaries,,,,,
+1,"[""20210811"",""900291""]",456-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210811"",""900291""]",456-D,,,1,,,,,,,,,,,00,0
+1,"[""20210811"",""900291""]",457-D,,,,,,,D,59210,,,,,,,
+1,"[""20210811"",""900291""]",457-D,1,,,,,,,,6010,Demo Statutory Welfare,,,,,
+1,"[""20210811"",""900291""]",457-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210811"",""900291""]",457-D,,,1,,,,,,,,,,,00,0
+1,"[""20210811"",""900291""]",458-D,,,,,,,D,41460,,,,,,,
+1,"[""20210811"",""900291""]",458-D,1,,,,,,,,2110,Demo Payroll Withholding,,,,,
+1,"[""20210811"",""900291""]",458-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210811"",""900291""]",458-D,,,1,,,,,,,,,,,00,0
+1,"[""20210811"",""900292""]",,,,,2021-08-11,900292,Synthetic demo credit sale 900292,,,,,,,,,
+1,"[""20210811"",""900292""]",459-C,,,,,,,C,282820,,,,,,,
+1,"[""20210811"",""900292""]",459-C,1,,,,,,,,4010,Demo Service Revenue,,,,,
+1,"[""20210811"",""900292""]",459-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210811"",""900292""]",459-C,1,2-auxiliary-account,,,,,,,,,C007,Demo Customer Grove,auxiliary-account,,
+1,"[""20210811"",""900292""]",459-C,,,1,,,,,,,,,,,B5,25711
+1,"[""20210811"",""900292""]",459-D,,,,,,,D,282820,,,,,,,
+1,"[""20210811"",""900292""]",459-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210811"",""900292""]",459-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210811"",""900292""]",459-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210811"",""900292""]",459-D,,,1,,,,,,,,,,,00,0
+1,"[""20210812"",""900249""]",,,,,2021-08-12,900249,Synthetic demo prepaid service 900249,,,,,,,,,
+1,"[""20210812"",""900249""]",460-C,,,,,,,C,172120,,,,,,,
+1,"[""20210812"",""900249""]",460-C,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210812"",""900249""]",460-C,1,1-department,,,,,,,,,D05,Demo Digital Services,department,,
+1,"[""20210812"",""900249""]",460-C,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210812"",""900249""]",460-C,,,1,,,,,,,,,,,00,0
+1,"[""20210812"",""900249""]",460-D,,,,,,,D,172120,,,,,,,
+1,"[""20210812"",""900249""]",460-D,1,,,,,,,,1400,Demo Prepaid Expenses,,,,,
+1,"[""20210812"",""900249""]",460-D,1,1-department,,,,,,,,,D05,Demo Digital Services,department,,
+1,"[""20210812"",""900249""]",460-D,1,2-auxiliary-account,,,,,,,,,S004,Demo Logistics Services,auxiliary-account,,
+1,"[""20210812"",""900249""]",460-D,,,1,,,,,,,,,,,00,0
+1,"[""20210812"",""900287""]",,,,,2021-08-12,900287,Synthetic demo multi-vendor settlement 900287,,,,,,,,,
+1,"[""20210812"",""900287""]",461-D,,,,,,,D,262520,,,,,,,
+1,"[""20210812"",""900287""]",461-D,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210812"",""900287""]",461-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210812"",""900287""]",461-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210812"",""900287""]",461-D,,,1,,,,,,,,,,,00,0
+1,"[""20210812"",""900287""]",462-D,,,,,,,D,447020,,,,,,,
+1,"[""20210812"",""900287""]",462-D,1,,,,,,,,2100,Demo Accrued Payables,,,,,
+1,"[""20210812"",""900287""]",462-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210812"",""900287""]",462-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210812"",""900287""]",462-D,,,1,,,,,,,,,,,00,0
+1,"[""20210812"",""900287""]",463-C,,,,,,,C,546340,,,,,,,
+1,"[""20210812"",""900287""]",463-C,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210812"",""900287""]",463-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210812"",""900287""]",463-C,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210812"",""900287""]",463-C,,,1,,,,,,,,,,,00,0
+1,"[""20210812"",""900287""]",464-C,,,,,,,C,163200,,,,,,,
+1,"[""20210812"",""900287""]",464-C,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210812"",""900287""]",464-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210812"",""900287""]",464-C,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210812"",""900287""]",464-C,,,1,,,,,,,,,,,00,0
+1,"[""20210813"",""900253""]",,,,,2021-08-13,900253,Synthetic demo customer receipt 900253,,,,,,,,,
+1,"[""20210813"",""900253""]",465-C,,,,,,,C,179710,,,,,,,
+1,"[""20210813"",""900253""]",465-C,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210813"",""900253""]",465-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210813"",""900253""]",465-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210813"",""900253""]",465-C,,,1,,,,,,,,,,,00,0
+1,"[""20210813"",""900253""]",465-D,,,,,,,D,179710,,,,,,,
+1,"[""20210813"",""900253""]",465-D,1,,,,,,,,1110,Demo North Current Deposit,,,,,
+1,"[""20210813"",""900253""]",465-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210813"",""900253""]",465-D,1,2-auxiliary-account,,,,,,,,,B002,North Demo Bank,auxiliary-account,,
+1,"[""20210813"",""900253""]",465-D,,,1,,,,,,,,,,,00,0
+1,"[""20210813"",""900278""]",,,,,2021-08-13,900278,Synthetic demo operating expense 900278,,,,,,,,,
+1,"[""20210813"",""900278""]",466-C,,,,,,,C,103020,,,,,,,
+1,"[""20210813"",""900278""]",466-C,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210813"",""900278""]",466-C,1,1-department,,,,,,,,,D05,Demo Digital Services,department,,
+1,"[""20210813"",""900278""]",466-C,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210813"",""900278""]",466-C,,,1,,,,,,,,,,,00,0
+1,"[""20210813"",""900278""]",466-D,,,,,,,D,103020,,,,,,,
+1,"[""20210813"",""900278""]",466-D,1,,,,,,,,6100,Demo Repairs,,,,,
+1,"[""20210813"",""900278""]",466-D,1,1-department,,,,,,,,,D05,Demo Digital Services,department,,
+1,"[""20210813"",""900278""]",466-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210813"",""900278""]",466-D,,,1,,,,,,,,,,,Q5,9365
+1,"[""20210813"",""900283""]",,,,,2021-08-13,900283,Synthetic demo customer receipt 900283,,,,,,,,,
+1,"[""20210813"",""900283""]",467-C,,,,,,,C,237520,,,,,,,
+1,"[""20210813"",""900283""]",467-C,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210813"",""900283""]",467-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210813"",""900283""]",467-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210813"",""900283""]",467-C,,,1,,,,,,,,,,,00,0
+1,"[""20210813"",""900283""]",467-D,,,,,,,D,237520,,,,,,,
+1,"[""20210813"",""900283""]",467-D,1,,,,,,,,1110,Demo North Current Deposit,,,,,
+1,"[""20210813"",""900283""]",467-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210813"",""900283""]",467-D,1,2-auxiliary-account,,,,,,,,,B002,North Demo Bank,auxiliary-account,,
+1,"[""20210813"",""900283""]",467-D,,,1,,,,,,,,,,,00,0
+1,"[""20210813"",""900294""]",,,,,2021-08-13,900294,Synthetic demo mixed sales and receipt 900294,,,,,,,,,
+1,"[""20210813"",""900294""]",468-D,,,,,,,D,555460,,,,,,,
+1,"[""20210813"",""900294""]",468-D,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210813"",""900294""]",468-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210813"",""900294""]",468-D,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210813"",""900294""]",468-D,,,1,,,,,,,,,,,00,0
+1,"[""20210813"",""900294""]",469-D,,,,,,,D,130300,,,,,,,
+1,"[""20210813"",""900294""]",469-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210813"",""900294""]",469-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210813"",""900294""]",469-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210813"",""900294""]",469-D,,,1,,,,,,,,,,,00,0
+1,"[""20210813"",""900294""]",470-C,,,,,,,C,205720,,,,,,,
+1,"[""20210813"",""900294""]",470-C,1,,,,,,,,4000,Demo Product Sales,,,,,
+1,"[""20210813"",""900294""]",470-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210813"",""900294""]",470-C,1,2-auxiliary-account,,,,,,,,,C006,Demo Customer Fjord,auxiliary-account,,
+1,"[""20210813"",""900294""]",470-C,,,1,,,,,,,,,,,R5,15239
+1,"[""20210813"",""900294""]",471-C,,,,,,,C,480040,,,,,,,
+1,"[""20210813"",""900294""]",471-C,1,,,,,,,,4010,Demo Service Revenue,,,,,
+1,"[""20210813"",""900294""]",471-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210813"",""900294""]",471-C,1,2-auxiliary-account,,,,,,,,,C007,Demo Customer Grove,auxiliary-account,,
+1,"[""20210813"",""900294""]",471-C,,,1,,,,,,,,,,,B5,43640
+1,"[""20210814"",""900272""]",,,,,2021-08-14,900272,Synthetic demo credit sale 900272,,,,,,,,,
+1,"[""20210814"",""900272""]",472-C,,,,,,,C,284960,,,,,,,
+1,"[""20210814"",""900272""]",472-C,1,,,,,,,,4020,Demo Other Operating Revenue,,,,,
+1,"[""20210814"",""900272""]",472-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210814"",""900272""]",472-C,1,2-auxiliary-account,,,,,,,,,C007,Demo Customer Grove,auxiliary-account,,
+1,"[""20210814"",""900272""]",472-C,,,1,,,,,,,,,,,B5,25905
+1,"[""20210814"",""900272""]",472-D,,,,,,,D,284960,,,,,,,
+1,"[""20210814"",""900272""]",472-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210814"",""900272""]",472-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210814"",""900272""]",472-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210814"",""900272""]",472-D,,,1,,,,,,,,,,,00,0
+1,"[""20210815"",""900238""]",,,,,2021-08-15,900238,Synthetic demo operating cost bundle 900238,,,,,,,,,
+1,"[""20210815"",""900238""]",473-C,,,,,,,C,229780,,,,,,,
+1,"[""20210815"",""900238""]",473-C,1,,,,,,,,1110,Demo North Current Deposit,,,,,
+1,"[""20210815"",""900238""]",473-C,1,1-department,,,,,,,,,D03,Demo Operations,department,,
+1,"[""20210815"",""900238""]",473-C,1,2-auxiliary-account,,,,,,,,,B002,North Demo Bank,auxiliary-account,,
+1,"[""20210815"",""900238""]",473-C,,,1,,,,,,,,,,,00,0
+1,"[""20210815"",""900238""]",473-D,,,,,,,D,179220,,,,,,,
+1,"[""20210815"",""900238""]",473-D,1,,,,,,,,6030,Demo Utilities,,,,,
+1,"[""20210815"",""900238""]",473-D,1,1-department,,,,,,,,,D03,Demo Operations,department,,
+1,"[""20210815"",""900238""]",473-D,1,2-auxiliary-account,,,,,,,,,S002,Demo Energy Services,auxiliary-account,,
+1,"[""20210815"",""900238""]",473-D,,,1,,,,,,,,,,,Q5,16293
+1,"[""20210815"",""900238""]",474-D,,,,,,,D,13780,,,,,,,
+1,"[""20210815"",""900238""]",474-D,1,,,,,,,,6040,Demo Communication,,,,,
+1,"[""20210815"",""900238""]",474-D,1,1-department,,,,,,,,,D03,Demo Operations,department,,
+1,"[""20210815"",""900238""]",474-D,1,2-auxiliary-account,,,,,,,,,S003,Demo Network Services,auxiliary-account,,
+1,"[""20210815"",""900238""]",474-D,,,1,,,,,,,,,,,Q5,1253
+1,"[""20210815"",""900238""]",475-D,,,,,,,D,36780,,,,,,,
+1,"[""20210815"",""900238""]",475-D,1,,,,,,,,6060,Demo Office Supplies,,,,,
+1,"[""20210815"",""900238""]",475-D,1,1-department,,,,,,,,,D03,Demo Operations,department,,
+1,"[""20210815"",""900238""]",475-D,1,2-auxiliary-account,,,,,,,,,V009,Demo Vendor Summit,auxiliary-account,,
+1,"[""20210815"",""900238""]",475-D,,,1,,,,,,,,,,,Q5,3344
+1,"[""20210815"",""900248""]",,,,,2021-08-15,900248,Synthetic demo mixed sales and receipt 900248,,,,,,,,,
+1,"[""20210815"",""900248""]",476-D,,,,,,,D,393100,,,,,,,
+1,"[""20210815"",""900248""]",476-D,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210815"",""900248""]",476-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210815"",""900248""]",476-D,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210815"",""900248""]",476-D,,,1,,,,,,,,,,,00,0
+1,"[""20210815"",""900248""]",477-D,,,,,,,D,104500,,,,,,,
+1,"[""20210815"",""900248""]",477-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210815"",""900248""]",477-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210815"",""900248""]",477-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210815"",""900248""]",477-D,,,1,,,,,,,,,,,00,0
+1,"[""20210815"",""900248""]",478-C,,,,,,,C,144300,,,,,,,
+1,"[""20210815"",""900248""]",478-C,1,,,,,,,,4000,Demo Product Sales,,,,,
+1,"[""20210815"",""900248""]",478-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210815"",""900248""]",478-C,1,2-auxiliary-account,,,,,,,,,C010,Demo Customer Juniper,auxiliary-account,,
+1,"[""20210815"",""900248""]",478-C,,,1,,,,,,,,,,,B5,13118
+1,"[""20210815"",""900248""]",479-C,,,,,,,C,353300,,,,,,,
+1,"[""20210815"",""900248""]",479-C,1,,,,,,,,4010,Demo Service Revenue,,,,,
+1,"[""20210815"",""900248""]",479-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210815"",""900248""]",479-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210815"",""900248""]",479-C,,,1,,,,,,,,,,,B5,32118
+1,"[""20210815"",""900254""]",,,,,2021-08-15,900254,Synthetic demo mixed sales and receipt 900254,,,,,,,,,
+1,"[""20210815"",""900254""]",480-D,,,,,,,D,343440,,,,,,,
+1,"[""20210815"",""900254""]",480-D,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210815"",""900254""]",480-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210815"",""900254""]",480-D,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210815"",""900254""]",480-D,,,1,,,,,,,,,,,00,0
+1,"[""20210815"",""900254""]",481-D,,,,,,,D,85870,,,,,,,
+1,"[""20210815"",""900254""]",481-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210815"",""900254""]",481-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210815"",""900254""]",481-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210815"",""900254""]",481-D,,,1,,,,,,,,,,,00,0
+1,"[""20210815"",""900254""]",482-C,,,,,,,C,141670,,,,,,,
+1,"[""20210815"",""900254""]",482-C,1,,,,,,,,4000,Demo Product Sales,,,,,
+1,"[""20210815"",""900254""]",482-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210815"",""900254""]",482-C,1,2-auxiliary-account,,,,,,,,,C006,Demo Customer Fjord,auxiliary-account,,
+1,"[""20210815"",""900254""]",482-C,,,1,,,,,,,,,,,B5,12879
+1,"[""20210815"",""900254""]",483-C,,,,,,,C,287640,,,,,,,
+1,"[""20210815"",""900254""]",483-C,1,,,,,,,,4010,Demo Service Revenue,,,,,
+1,"[""20210815"",""900254""]",483-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210815"",""900254""]",483-C,1,2-auxiliary-account,,,,,,,,,C007,Demo Customer Grove,auxiliary-account,,
+1,"[""20210815"",""900254""]",483-C,,,1,,,,,,,,,,,B5,26149
+1,"[""20210815"",""900261""]",,,,,2021-08-15,900261,Synthetic demo credit sale 900261,,,,,,,,,
+1,"[""20210815"",""900261""]",484-C,,,,,,,C,268900,,,,,,,
+1,"[""20210815"",""900261""]",484-C,1,,,,,,,,4000,Demo Product Sales,,,,,
+1,"[""20210815"",""900261""]",484-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210815"",""900261""]",484-C,1,2-auxiliary-account,,,,,,,,,C004,Demo Customer Dawn,auxiliary-account,,
+1,"[""20210815"",""900261""]",484-C,,,1,,,,,,,,,,,B5,24445
+1,"[""20210815"",""900261""]",484-D,,,,,,,D,268900,,,,,,,
+1,"[""20210815"",""900261""]",484-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210815"",""900261""]",484-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210815"",""900261""]",484-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210815"",""900261""]",484-D,,,1,,,,,,,,,,,00,0
+1,"[""20210816"",""900260""]",,,,,2021-08-16,900260,Synthetic demo mixed sales and receipt 900260,,,,,,,,,
+1,"[""20210816"",""900260""]",485-D,,,,,,,D,53760,,,,,,,
+1,"[""20210816"",""900260""]",485-D,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210816"",""900260""]",485-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210816"",""900260""]",485-D,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210816"",""900260""]",485-D,,,1,,,,,,,,,,,00,0
+1,"[""20210816"",""900260""]",486-D,,,,,,,D,109160,,,,,,,
+1,"[""20210816"",""900260""]",486-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210816"",""900260""]",486-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210816"",""900260""]",486-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210816"",""900260""]",486-D,,,1,,,,,,,,,,,00,0
+1,"[""20210816"",""900260""]",487-C,,,,,,,C,26060,,,,,,,
+1,"[""20210816"",""900260""]",487-C,1,,,,,,,,4000,Demo Product Sales,,,,,
+1,"[""20210816"",""900260""]",487-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210816"",""900260""]",487-C,1,2-auxiliary-account,,,,,,,,,C002,Demo Customer Birch,auxiliary-account,,
+1,"[""20210816"",""900260""]",487-C,,,1,,,,,,,,,,,B5,2369
+1,"[""20210816"",""900260""]",488-C,,,,,,,C,136860,,,,,,,
+1,"[""20210816"",""900260""]",488-C,1,,,,,,,,4010,Demo Service Revenue,,,,,
+1,"[""20210816"",""900260""]",488-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210816"",""900260""]",488-C,1,2-auxiliary-account,,,,,,,,,C003,Demo Customer Cobalt,auxiliary-account,,
+1,"[""20210816"",""900260""]",488-C,,,1,,,,,,,,,,,B5,12442
+1,"[""20210816"",""900282""]",,,,,2021-08-16,900282,Synthetic demo credit sale 900282,,,,,,,,,
+1,"[""20210816"",""900282""]",489-C,,,,,,,C,146210,,,,,,,
+1,"[""20210816"",""900282""]",489-C,1,,,,,,,,4000,Demo Product Sales,,,,,
+1,"[""20210816"",""900282""]",489-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210816"",""900282""]",489-C,1,2-auxiliary-account,,,,,,,,,C007,Demo Customer Grove,auxiliary-account,,
+1,"[""20210816"",""900282""]",489-C,,,1,,,,,,,,,,,B5,13292
+1,"[""20210816"",""900282""]",489-D,,,,,,,D,146210,,,,,,,
+1,"[""20210816"",""900282""]",489-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210816"",""900282""]",489-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210816"",""900282""]",489-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210816"",""900282""]",489-D,,,1,,,,,,,,,,,00,0
+1,"[""20210817"",""900239""]",,,,,2021-08-17,900239,Synthetic demo prepaid service 900239,,,,,,,,,
+1,"[""20210817"",""900239""]",490-C,,,,,,,C,208130,,,,,,,
+1,"[""20210817"",""900239""]",490-C,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210817"",""900239""]",490-C,1,1-department,,,,,,,,,D05,Demo Digital Services,department,,
+1,"[""20210817"",""900239""]",490-C,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210817"",""900239""]",490-C,,,1,,,,,,,,,,,00,0
+1,"[""20210817"",""900239""]",490-D,,,,,,,D,208130,,,,,,,
+1,"[""20210817"",""900239""]",490-D,1,,,,,,,,1400,Demo Prepaid Expenses,,,,,
+1,"[""20210817"",""900239""]",490-D,1,1-department,,,,,,,,,D05,Demo Digital Services,department,,
+1,"[""20210817"",""900239""]",490-D,1,2-auxiliary-account,,,,,,,,,S006,Demo Insurance Services,auxiliary-account,,
+1,"[""20210817"",""900239""]",490-D,,,1,,,,,,,,,,,00,0
+1,"[""20210817"",""900271""]",,,,,2021-08-17,900271,Synthetic demo credit sale 900271,,,,,,,,,
+1,"[""20210817"",""900271""]",491-C,,,,,,,C,316370,,,,,,,
+1,"[""20210817"",""900271""]",491-C,1,,,,,,,,4010,Demo Service Revenue,,,,,
+1,"[""20210817"",""900271""]",491-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210817"",""900271""]",491-C,1,2-auxiliary-account,,,,,,,,,C004,Demo Customer Dawn,auxiliary-account,,
+1,"[""20210817"",""900271""]",491-C,,,1,,,,,,,,,,,B5,28761
+1,"[""20210817"",""900271""]",491-D,,,,,,,D,316370,,,,,,,
+1,"[""20210817"",""900271""]",491-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210817"",""900271""]",491-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210817"",""900271""]",491-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210817"",""900271""]",491-D,,,1,,,,,,,,,,,00,0
+1,"[""20210817"",""900284""]",,,,,2021-08-17,900284,Synthetic demo customer receipt 900284,,,,,,,,,
+1,"[""20210817"",""900284""]",492-C,,,,,,,C,182170,,,,,,,
+1,"[""20210817"",""900284""]",492-C,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210817"",""900284""]",492-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210817"",""900284""]",492-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210817"",""900284""]",492-C,,,1,,,,,,,,,,,00,0
+1,"[""20210817"",""900284""]",492-D,,,,,,,D,182170,,,,,,,
+1,"[""20210817"",""900284""]",492-D,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210817"",""900284""]",492-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210817"",""900284""]",492-D,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210817"",""900284""]",492-D,,,1,,,,,,,,,,,00,0
+1,"[""20210817"",""900288""]",,,,,2021-08-17,900288,Synthetic demo operating expense 900288,,,,,,,,,
+1,"[""20210817"",""900288""]",493-C,,,,,,,C,75170,,,,,,,
+1,"[""20210817"",""900288""]",493-C,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210817"",""900288""]",493-C,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210817"",""900288""]",493-C,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210817"",""900288""]",493-C,,,1,,,,,,,,,,,00,0
+1,"[""20210817"",""900288""]",493-D,,,,,,,D,75170,,,,,,,
+1,"[""20210817"",""900288""]",493-D,1,,,,,,,,6020,Demo Office Rent,,,,,
+1,"[""20210817"",""900288""]",493-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210817"",""900288""]",493-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210817"",""900288""]",493-D,,,1,,,,,,,,,,,Q5,6834
+1,"[""20210818"",""900247""]",,,,,2021-08-18,900247,Synthetic demo vendor settlement 900247,,,,,,,,,
+1,"[""20210818"",""900247""]",494-C,,,,,,,C,120360,,,,,,,
+1,"[""20210818"",""900247""]",494-C,1,,,,,,,,1110,Demo North Current Deposit,,,,,
+1,"[""20210818"",""900247""]",494-C,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210818"",""900247""]",494-C,1,2-auxiliary-account,,,,,,,,,B002,North Demo Bank,auxiliary-account,,
+1,"[""20210818"",""900247""]",494-C,,,1,,,,,,,,,,,00,0
+1,"[""20210818"",""900247""]",494-D,,,,,,,D,120360,,,,,,,
+1,"[""20210818"",""900247""]",494-D,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210818"",""900247""]",494-D,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210818"",""900247""]",494-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210818"",""900247""]",494-D,,,1,,,,,,,,,,,00,0
+1,"[""20210818"",""900276""]",,,,,2021-08-18,900276,Synthetic demo combined customer receipt 900276,,,,,,,,,
+1,"[""20210818"",""900276""]",495-C,,,,,,,C,148340,,,,,,,
+1,"[""20210818"",""900276""]",495-C,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210818"",""900276""]",495-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210818"",""900276""]",495-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210818"",""900276""]",495-C,,,1,,,,,,,,,,,00,0
+1,"[""20210818"",""900276""]",495-D,,,,,,,D,593370,,,,,,,
+1,"[""20210818"",""900276""]",495-D,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210818"",""900276""]",495-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210818"",""900276""]",495-D,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210818"",""900276""]",495-D,,,1,,,,,,,,,,,00,0
+1,"[""20210818"",""900276""]",496-C,,,,,,,C,35600,,,,,,,
+1,"[""20210818"",""900276""]",496-C,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210818"",""900276""]",496-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210818"",""900276""]",496-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210818"",""900276""]",496-C,,,1,,,,,,,,,,,00,0
+1,"[""20210818"",""900276""]",497-C,,,,,,,C,409430,,,,,,,
+1,"[""20210818"",""900276""]",497-C,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210818"",""900276""]",497-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210818"",""900276""]",497-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210818"",""900276""]",497-C,,,1,,,,,,,,,,,00,0
+1,"[""20210818"",""900281""]",,,,,2021-08-18,900281,Synthetic demo multi-vendor settlement 900281,,,,,,,,,
+1,"[""20210818"",""900281""]",498-D,,,,,,,D,360210,,,,,,,
+1,"[""20210818"",""900281""]",498-D,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210818"",""900281""]",498-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210818"",""900281""]",498-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210818"",""900281""]",498-D,,,1,,,,,,,,,,,00,0
+1,"[""20210818"",""900281""]",499-D,,,,,,,D,101610,,,,,,,
+1,"[""20210818"",""900281""]",499-D,1,,,,,,,,2100,Demo Accrued Payables,,,,,
+1,"[""20210818"",""900281""]",499-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210818"",""900281""]",499-D,1,2-auxiliary-account,,,,,,,,,V005,Demo Vendor Orchid,auxiliary-account,,
+1,"[""20210818"",""900281""]",499-D,,,1,,,,,,,,,,,00,0
+1,"[""20210818"",""900281""]",500-C,,,,,,,C,193960,,,,,,,
+1,"[""20210818"",""900281""]",500-C,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210818"",""900281""]",500-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210818"",""900281""]",500-C,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210818"",""900281""]",500-C,,,1,,,,,,,,,,,00,0
+1,"[""20210818"",""900281""]",501-C,,,,,,,C,267860,,,,,,,
+1,"[""20210818"",""900281""]",501-C,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210818"",""900281""]",501-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210818"",""900281""]",501-C,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210818"",""900281""]",501-C,,,1,,,,,,,,,,,00,0
+1,"[""20210818"",""900285""]",,,,,2021-08-18,900285,Synthetic demo monthly payroll bundle 900285,,,,,,,,,
+1,"[""20210818"",""900285""]",502-C,,,,,,,C,653300,,,,,,,
+1,"[""20210818"",""900285""]",502-C,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210818"",""900285""]",502-C,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210818"",""900285""]",502-C,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210818"",""900285""]",502-C,,,1,,,,,,,,,,,00,0
+1,"[""20210818"",""900285""]",502-D,,,,,,,D,169850,,,,,,,
+1,"[""20210818"",""900285""]",502-D,1,,,,,,,,6000,Demo Salaries,,,,,
+1,"[""20210818"",""900285""]",502-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210818"",""900285""]",502-D,,,1,,,,,,,,,,,00,0
+1,"[""20210818"",""900285""]",503-D,,,,,,,D,287450,,,,,,,
+1,"[""20210818"",""900285""]",503-D,1,,,,,,,,6010,Demo Statutory Welfare,,,,,
+1,"[""20210818"",""900285""]",503-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210818"",""900285""]",503-D,,,1,,,,,,,,,,,00,0
+1,"[""20210818"",""900285""]",504-D,,,,,,,D,196000,,,,,,,
+1,"[""20210818"",""900285""]",504-D,1,,,,,,,,2110,Demo Payroll Withholding,,,,,
+1,"[""20210818"",""900285""]",504-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210818"",""900285""]",504-D,,,1,,,,,,,,,,,00,0
+1,"[""20210819"",""900265""]",,,,,2021-08-19,900265,Synthetic demo purchase on account 900265,,,,,,,,,
+1,"[""20210819"",""900265""]",505-C,,,,,,,C,96540,,,,,,,
+1,"[""20210819"",""900265""]",505-C,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210819"",""900265""]",505-C,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210819"",""900265""]",505-C,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210819"",""900265""]",505-C,,,1,,,,,,,,,,,00,0
+1,"[""20210819"",""900265""]",505-D,,,,,,,D,96540,,,,,,,
+1,"[""20210819"",""900265""]",505-D,1,,,,,,,,5010,Demo Freight-in,,,,,
+1,"[""20210819"",""900265""]",505-D,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210819"",""900265""]",505-D,1,2-auxiliary-account,,,,,,,,,V006,Demo Vendor Prairie,auxiliary-account,,
+1,"[""20210819"",""900265""]",505-D,,,1,,,,,,,,,,,Q5,8776
+1,"[""20210819"",""900275""]",,,,,2021-08-19,900275,Synthetic demo purchase on account 900275,,,,,,,,,
+1,"[""20210819"",""900275""]",506-C,,,,,,,C,330660,,,,,,,
+1,"[""20210819"",""900275""]",506-C,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210819"",""900275""]",506-C,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210819"",""900275""]",506-C,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210819"",""900275""]",506-C,,,1,,,,,,,,,,,00,0
+1,"[""20210819"",""900275""]",506-D,,,,,,,D,330660,,,,,,,
+1,"[""20210819"",""900275""]",506-D,1,,,,,,,,5020,Demo Inventory Adjustment,,,,,
+1,"[""20210819"",""900275""]",506-D,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210819"",""900275""]",506-D,1,2-auxiliary-account,,,,,,,,,V006,Demo Vendor Prairie,auxiliary-account,,
+1,"[""20210819"",""900275""]",506-D,,,1,,,,,,,,,,,Q5,30060
+1,"[""20210819"",""900286""]",,,,,2021-08-19,900286,Synthetic demo purchase on account 900286,,,,,,,,,
+1,"[""20210819"",""900286""]",507-C,,,,,,,C,63790,,,,,,,
+1,"[""20210819"",""900286""]",507-C,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210819"",""900286""]",507-C,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210819"",""900286""]",507-C,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210819"",""900286""]",507-C,,,1,,,,,,,,,,,00,0
+1,"[""20210819"",""900286""]",507-D,,,,,,,D,63790,,,,,,,
+1,"[""20210819"",""900286""]",507-D,1,,,,,,,,5010,Demo Freight-in,,,,,
+1,"[""20210819"",""900286""]",507-D,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210819"",""900286""]",507-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210819"",""900286""]",507-D,,,1,,,,,,,,,,,Q5,5799
+1,"[""20210819"",""900289""]",,,,,2021-08-19,900289,Synthetic demo prepaid service 900289,,,,,,,,,
+1,"[""20210819"",""900289""]",508-C,,,,,,,C,135110,,,,,,,
+1,"[""20210819"",""900289""]",508-C,1,,,,,,,,1110,Demo North Current Deposit,,,,,
+1,"[""20210819"",""900289""]",508-C,1,1-department,,,,,,,,,D05,Demo Digital Services,department,,
+1,"[""20210819"",""900289""]",508-C,1,2-auxiliary-account,,,,,,,,,B002,North Demo Bank,auxiliary-account,,
+1,"[""20210819"",""900289""]",508-C,,,1,,,,,,,,,,,00,0
+1,"[""20210819"",""900289""]",508-D,,,,,,,D,135110,,,,,,,
+1,"[""20210819"",""900289""]",508-D,1,,,,,,,,1400,Demo Prepaid Expenses,,,,,
+1,"[""20210819"",""900289""]",508-D,1,1-department,,,,,,,,,D05,Demo Digital Services,department,,
+1,"[""20210819"",""900289""]",508-D,1,2-auxiliary-account,,,,,,,,,S002,Demo Energy Services,auxiliary-account,,
+1,"[""20210819"",""900289""]",508-D,,,1,,,,,,,,,,,00,0
+1,"[""20210822"",""900243""]",,,,,2021-08-22,900243,Synthetic demo customer receipt 900243,,,,,,,,,
+1,"[""20210822"",""900243""]",509-C,,,,,,,C,511200,,,,,,,
+1,"[""20210822"",""900243""]",509-C,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210822"",""900243""]",509-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210822"",""900243""]",509-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210822"",""900243""]",509-C,,,1,,,,,,,,,,,00,0
+1,"[""20210822"",""900243""]",509-D,,,,,,,D,511200,,,,,,,
+1,"[""20210822"",""900243""]",509-D,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210822"",""900243""]",509-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210822"",""900243""]",509-D,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210822"",""900243""]",509-D,,,1,,,,,,,,,,,00,0
+1,"[""20210822"",""900244""]",,,,,2021-08-22,900244,Synthetic demo operating cost bundle 900244,,,,,,,,,
+1,"[""20210822"",""900244""]",510-C,,,,,,,C,289950,,,,,,,
+1,"[""20210822"",""900244""]",510-C,1,,,,,,,,1110,Demo North Current Deposit,,,,,
+1,"[""20210822"",""900244""]",510-C,1,1-department,,,,,,,,,D03,Demo Operations,department,,
+1,"[""20210822"",""900244""]",510-C,1,2-auxiliary-account,,,,,,,,,B002,North Demo Bank,auxiliary-account,,
+1,"[""20210822"",""900244""]",510-C,,,1,,,,,,,,,,,00,0
+1,"[""20210822"",""900244""]",510-D,,,,,,,D,142070,,,,,,,
+1,"[""20210822"",""900244""]",510-D,1,,,,,,,,6030,Demo Utilities,,,,,
+1,"[""20210822"",""900244""]",510-D,1,1-department,,,,,,,,,D03,Demo Operations,department,,
+1,"[""20210822"",""900244""]",510-D,1,2-auxiliary-account,,,,,,,,,S002,Demo Energy Services,auxiliary-account,,
+1,"[""20210822"",""900244""]",510-D,,,1,,,,,,,,,,,Q5,12915
+1,"[""20210822"",""900244""]",511-D,,,,,,,D,14490,,,,,,,
+1,"[""20210822"",""900244""]",511-D,1,,,,,,,,6040,Demo Communication,,,,,
+1,"[""20210822"",""900244""]",511-D,1,1-department,,,,,,,,,D03,Demo Operations,department,,
+1,"[""20210822"",""900244""]",511-D,1,2-auxiliary-account,,,,,,,,,S003,Demo Network Services,auxiliary-account,,
+1,"[""20210822"",""900244""]",511-D,,,1,,,,,,,,,,,Q5,1317
+1,"[""20210822"",""900244""]",512-D,,,,,,,D,133390,,,,,,,
+1,"[""20210822"",""900244""]",512-D,1,,,,,,,,6060,Demo Office Supplies,,,,,
+1,"[""20210822"",""900244""]",512-D,1,1-department,,,,,,,,,D03,Demo Operations,department,,
+1,"[""20210822"",""900244""]",512-D,1,2-auxiliary-account,,,,,,,,,V005,Demo Vendor Orchid,auxiliary-account,,
+1,"[""20210822"",""900244""]",512-D,,,1,,,,,,,,,,,C5,12126
+1,"[""20210822"",""900263""]",,,,,2021-08-22,900263,Synthetic demo customer receipt 900263,,,,,,,,,
+1,"[""20210822"",""900263""]",513-C,,,,,,,C,415340,,,,,,,
+1,"[""20210822"",""900263""]",513-C,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210822"",""900263""]",513-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210822"",""900263""]",513-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210822"",""900263""]",513-C,,,1,,,,,,,,,,,00,0
+1,"[""20210822"",""900263""]",513-D,,,,,,,D,415340,,,,,,,
+1,"[""20210822"",""900263""]",513-D,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210822"",""900263""]",513-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210822"",""900263""]",513-D,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210822"",""900263""]",513-D,,,1,,,,,,,,,,,00,0
+1,"[""20210822"",""900293""]",,,,,2021-08-22,900293,Synthetic demo customer receipt 900293,,,,,,,,,
+1,"[""20210822"",""900293""]",514-C,,,,,,,C,434210,,,,,,,
+1,"[""20210822"",""900293""]",514-C,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210822"",""900293""]",514-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210822"",""900293""]",514-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210822"",""900293""]",514-C,,,1,,,,,,,,,,,00,0
+1,"[""20210822"",""900293""]",514-D,,,,,,,D,434210,,,,,,,
+1,"[""20210822"",""900293""]",514-D,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210822"",""900293""]",514-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210822"",""900293""]",514-D,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210822"",""900293""]",514-D,,,1,,,,,,,,,,,00,0
+1,"[""20210824"",""900246""]",,,,,2021-08-24,900246,Synthetic demo purchase on account 900246,,,,,,,,,
+1,"[""20210824"",""900246""]",515-C,,,,,,,C,31780,,,,,,,
+1,"[""20210824"",""900246""]",515-C,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210824"",""900246""]",515-C,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210824"",""900246""]",515-C,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210824"",""900246""]",515-C,,,1,,,,,,,,,,,00,0
+1,"[""20210824"",""900246""]",515-D,,,,,,,D,31780,,,,,,,
+1,"[""20210824"",""900246""]",515-D,1,,,,,,,,5000,Demo Purchases,,,,,
+1,"[""20210824"",""900246""]",515-D,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210824"",""900246""]",515-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210824"",""900246""]",515-D,,,1,,,,,,,,,,,C5,2889
+1,"[""20210824"",""900267""]",,,,,2021-08-24,900267,Synthetic demo multi-vendor settlement 900267,,,,,,,,,
+1,"[""20210824"",""900267""]",516-D,,,,,,,D,334530,,,,,,,
+1,"[""20210824"",""900267""]",516-D,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210824"",""900267""]",516-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210824"",""900267""]",516-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210824"",""900267""]",516-D,,,1,,,,,,,,,,,00,0
+1,"[""20210824"",""900267""]",517-D,,,,,,,D,392720,,,,,,,
+1,"[""20210824"",""900267""]",517-D,1,,,,,,,,2100,Demo Accrued Payables,,,,,
+1,"[""20210824"",""900267""]",517-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210824"",""900267""]",517-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210824"",""900267""]",517-D,,,1,,,,,,,,,,,00,0
+1,"[""20210824"",""900267""]",518-C,,,,,,,C,421800,,,,,,,
+1,"[""20210824"",""900267""]",518-C,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210824"",""900267""]",518-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210824"",""900267""]",518-C,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210824"",""900267""]",518-C,,,1,,,,,,,,,,,00,0
+1,"[""20210824"",""900267""]",519-C,,,,,,,C,305450,,,,,,,
+1,"[""20210824"",""900267""]",519-C,1,,,,,,,,1110,Demo North Current Deposit,,,,,
+1,"[""20210824"",""900267""]",519-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210824"",""900267""]",519-C,1,2-auxiliary-account,,,,,,,,,B002,North Demo Bank,auxiliary-account,,
+1,"[""20210824"",""900267""]",519-C,,,1,,,,,,,,,,,00,0
+1,"[""20210826"",""900290""]",,,,,2021-08-26,900290,Synthetic demo credit sale 900290,,,,,,,,,
+1,"[""20210826"",""900290""]",520-C,,,,,,,C,444700,,,,,,,
+1,"[""20210826"",""900290""]",520-C,1,,,,,,,,4020,Demo Other Operating Revenue,,,,,
+1,"[""20210826"",""900290""]",520-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210826"",""900290""]",520-C,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210826"",""900290""]",520-C,,,1,,,,,,,,,,,B5,40427
+1,"[""20210826"",""900290""]",520-D,,,,,,,D,444700,,,,,,,
+1,"[""20210826"",""900290""]",520-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210826"",""900290""]",520-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210826"",""900290""]",520-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210826"",""900290""]",520-D,,,1,,,,,,,,,,,00,0
+1,"[""20210827"",""900251""]",,,,,2021-08-27,900251,Synthetic demo financing settlement 900251,,,,,,,,,
+1,"[""20210827"",""900251""]",521-C,,,,,,,C,700360,,,,,,,
+1,"[""20210827"",""900251""]",521-C,1,,,,,,,,1120,Demo Harbor Ordinary Deposit,,,,,
+1,"[""20210827"",""900251""]",521-C,1,1-department,,,,,,,,,D06,Demo Management,department,,
+1,"[""20210827"",""900251""]",521-C,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210827"",""900251""]",521-C,,,1,,,,,,,,,,,00,0
+1,"[""20210827"",""900251""]",521-D,,,,,,,D,147070,,,,,,,
+1,"[""20210827"",""900251""]",521-D,1,,,,,,,,2200,Demo Short-term Loans,,,,,
+1,"[""20210827"",""900251""]",521-D,1,1-department,,,,,,,,,D06,Demo Management,department,,
+1,"[""20210827"",""900251""]",521-D,,,1,,,,,,,,,,,00,0
+1,"[""20210827"",""900251""]",522-D,,,,,,,D,70030,,,,,,,
+1,"[""20210827"",""900251""]",522-D,1,,,,,,,,6070,Demo Bank Fees,,,,,
+1,"[""20210827"",""900251""]",522-D,1,1-department,,,,,,,,,D06,Demo Management,department,,
+1,"[""20210827"",""900251""]",522-D,1,2-auxiliary-account,,,,,,,,,B003,Harbor Demo Bank,auxiliary-account,,
+1,"[""20210827"",""900251""]",522-D,,,1,,,,,,,,,,,00,0
+1,"[""20210827"",""900251""]",523-D,,,,,,,D,483260,,,,,,,
+1,"[""20210827"",""900251""]",523-D,1,,,,,,,,7000,Demo Taxes and Dues,,,,,
+1,"[""20210827"",""900251""]",523-D,1,1-department,,,,,,,,,D06,Demo Management,department,,
+1,"[""20210827"",""900251""]",523-D,,,1,,,,,,,,,,,P0,0
+1,"[""20210827"",""900295""]",,,,,2021-08-27,900295,Synthetic demo purchase on account 900295,,,,,,,,,
+1,"[""20210827"",""900295""]",524-C,,,,,,,C,334370,,,,,,,
+1,"[""20210827"",""900295""]",524-C,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210827"",""900295""]",524-C,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210827"",""900295""]",524-C,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210827"",""900295""]",524-C,,,1,,,,,,,,,,,00,0
+1,"[""20210827"",""900295""]",524-D,,,,,,,D,334370,,,,,,,
+1,"[""20210827"",""900295""]",524-D,1,,,,,,,,5010,Demo Freight-in,,,,,
+1,"[""20210827"",""900295""]",524-D,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210827"",""900295""]",524-D,1,2-auxiliary-account,,,,,,,,,V006,Demo Vendor Prairie,auxiliary-account,,
+1,"[""20210827"",""900295""]",524-D,,,1,,,,,,,,,,,Q5,30397
+1,"[""20210828"",""900268""]",,,,,2021-08-28,900268,Synthetic demo operating expense 900268,,,,,,,,,
+1,"[""20210828"",""900268""]",525-C,,,,,,,C,31250,,,,,,,
+1,"[""20210828"",""900268""]",525-C,1,,,,,,,,1110,Demo North Current Deposit,,,,,
+1,"[""20210828"",""900268""]",525-C,1,1-department,,,,,,,,,D03,Demo Operations,department,,
+1,"[""20210828"",""900268""]",525-C,1,2-auxiliary-account,,,,,,,,,B002,North Demo Bank,auxiliary-account,,
+1,"[""20210828"",""900268""]",525-C,,,1,,,,,,,,,,,00,0
+1,"[""20210828"",""900268""]",525-D,,,,,,,D,31250,,,,,,,
+1,"[""20210828"",""900268""]",525-D,1,,,,,,,,7000,Demo Taxes and Dues,,,,,
+1,"[""20210828"",""900268""]",525-D,1,1-department,,,,,,,,,D03,Demo Operations,department,,
+1,"[""20210828"",""900268""]",525-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210828"",""900268""]",525-D,,,1,,,,,,,,,,,P0,0
+1,"[""20210830"",""900256""]",,,,,2021-08-30,900256,Synthetic demo purchase on account 900256,,,,,,,,,
+1,"[""20210830"",""900256""]",526-C,,,,,,,C,333720,,,,,,,
+1,"[""20210830"",""900256""]",526-C,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210830"",""900256""]",526-C,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210830"",""900256""]",526-C,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210830"",""900256""]",526-C,,,1,,,,,,,,,,,00,0
+1,"[""20210830"",""900256""]",526-D,,,,,,,D,333720,,,,,,,
+1,"[""20210830"",""900256""]",526-D,1,,,,,,,,5010,Demo Freight-in,,,,,
+1,"[""20210830"",""900256""]",526-D,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210830"",""900256""]",526-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210830"",""900256""]",526-D,,,1,,,,,,,,,,,Q5,30338
+1,"[""20210830"",""900258""]",,,,,2021-08-30,900258,Synthetic demo operating expense 900258,,,,,,,,,
+1,"[""20210830"",""900258""]",527-C,,,,,,,C,87240,,,,,,,
+1,"[""20210830"",""900258""]",527-C,1,,,,,,,,1100,Demo Central Ordinary Deposit,,,,,
+1,"[""20210830"",""900258""]",527-C,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210830"",""900258""]",527-C,1,2-auxiliary-account,,,,,,,,,B001,Demo Central Bank,auxiliary-account,,
+1,"[""20210830"",""900258""]",527-C,,,1,,,,,,,,,,,00,0
+1,"[""20210830"",""900258""]",527-D,,,,,,,D,87240,,,,,,,
+1,"[""20210830"",""900258""]",527-D,1,,,,,,,,6080,Demo Advertising,,,,,
+1,"[""20210830"",""900258""]",527-D,1,1-department,,,,,,,,,D02,Demo Administration,department,,
+1,"[""20210830"",""900258""]",527-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210830"",""900258""]",527-D,,,1,,,,,,,,,,,Q5,7931
+1,"[""20210831"",""900242""]",,,,,2021-08-31,900242,Synthetic demo credit sale 900242,,,,,,,,,
+1,"[""20210831"",""900242""]",528-C,,,,,,,C,62850,,,,,,,
+1,"[""20210831"",""900242""]",528-C,1,,,,,,,,4020,Demo Other Operating Revenue,,,,,
+1,"[""20210831"",""900242""]",528-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210831"",""900242""]",528-C,1,2-auxiliary-account,,,,,,,,,C007,Demo Customer Grove,auxiliary-account,,
+1,"[""20210831"",""900242""]",528-C,,,1,,,,,,,,,,,B5,5714
+1,"[""20210831"",""900242""]",528-D,,,,,,,D,62850,,,,,,,
+1,"[""20210831"",""900242""]",528-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210831"",""900242""]",528-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210831"",""900242""]",528-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210831"",""900242""]",528-D,,,1,,,,,,,,,,,00,0
+1,"[""20210831"",""900262""]",,,,,2021-08-31,900262,Synthetic demo credit sale 900262,,,,,,,,,
+1,"[""20210831"",""900262""]",529-C,,,,,,,C,263930,,,,,,,
+1,"[""20210831"",""900262""]",529-C,1,,,,,,,,4010,Demo Service Revenue,,,,,
+1,"[""20210831"",""900262""]",529-C,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210831"",""900262""]",529-C,1,2-auxiliary-account,,,,,,,,,C007,Demo Customer Grove,auxiliary-account,,
+1,"[""20210831"",""900262""]",529-C,,,1,,,,,,,,,,,B5,23994
+1,"[""20210831"",""900262""]",529-D,,,,,,,D,263930,,,,,,,
+1,"[""20210831"",""900262""]",529-D,1,,,,,,,,1200,Demo Accounts Receivable,,,,,
+1,"[""20210831"",""900262""]",529-D,1,1-department,,,,,,,,,D01,Demo Sales,department,,
+1,"[""20210831"",""900262""]",529-D,1,2-auxiliary-account,,,,,,,,,C001,Demo Customer Aurora,auxiliary-account,,
+1,"[""20210831"",""900262""]",529-D,,,1,,,,,,,,,,,00,0
+1,"[""20210831"",""900266""]",,,,,2021-08-31,900266,Synthetic demo purchase on account 900266,,,,,,,,,
+1,"[""20210831"",""900266""]",530-C,,,,,,,C,371680,,,,,,,
+1,"[""20210831"",""900266""]",530-C,1,,,,,,,,2000,Demo Accounts Payable,,,,,
+1,"[""20210831"",""900266""]",530-C,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210831"",""900266""]",530-C,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210831"",""900266""]",530-C,,,1,,,,,,,,,,,00,0
+1,"[""20210831"",""900266""]",530-D,,,,,,,D,371680,,,,,,,
+1,"[""20210831"",""900266""]",530-D,1,,,,,,,,5020,Demo Inventory Adjustment,,,,,
+1,"[""20210831"",""900266""]",530-D,1,1-department,,,,,,,,,D04,Demo Logistics,department,,
+1,"[""20210831"",""900266""]",530-D,1,2-auxiliary-account,,,,,,,,,V001,Demo Vendor Keystone,auxiliary-account,,
+1,"[""20210831"",""900266""]",530-D,,,1,,,,,,,,,,,Q5,33789

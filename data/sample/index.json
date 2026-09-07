@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07T14:05:02+09:00",
-  "dataset_id": "pca-synthetic-fy2021-v2-settlement-16m",
-  "predecessor_dataset_id": "pca-synthetic-fy2021-v1",
+  "generated_at": "2026-09-07T19:28:44+09:00",
+  "dataset_id": "pca-synthetic-fy2021-v3-structured-tidy-16m",
+  "predecessor_dataset_id": "pca-synthetic-fy2021-v2-settlement-16m",
   "default_month": "2021-04",
   "company": {
     "business_id": "SYNTHETIC-DEMO",
@@ -52,12 +52,14 @@
   "features": {
     "business_documents": true,
     "as_of_settlement": true,
-    "structured_cn": true
+    "structured_tidy": true
   },
   "views": {
     "tidy": {
       "by": "month",
-      "path": "{lang}/tidy/{month}.csv",
+      "path": "structured/{month}.csv",
+      "metadata_path": "structured/{month}.json",
+      "display_metadata_path": "structured/columns.json",
       "available": [
         "2021-02",
         "2021-03",
@@ -76,7 +78,10 @@
         "2022-04",
         "2022-05"
       ],
-      "display_name": "Fact Details"
+      "language_neutral": true,
+      "schema_id": "xbrl-gl-next-ae-structured-tidy-v2",
+      "schema_version": "2.0.0",
+      "display_name": "Structured Tidy Data"
     },
     "journal": {
       "by": "month",
@@ -180,6 +185,7 @@
       "by": "month",
       "path": "structured/{month}.csv",
       "metadata_path": "structured/{month}.json",
+      "display_metadata_path": "structured/columns.json",
       "available": [
         "2021-02",
         "2021-03",
@@ -199,8 +205,8 @@
         "2022-05"
       ],
       "language_neutral": true,
-      "schema_id": "xbrl-gl-next-ae-cn-v1",
-      "schema_version": "1.0.0"
+      "schema_id": "xbrl-gl-next-ae-structured-tidy-v2",
+      "schema_version": "2.0.0"
     }
   }
 }
