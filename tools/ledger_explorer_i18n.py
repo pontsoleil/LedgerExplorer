@@ -4545,6 +4545,361 @@ class GUI:
         ExecutionMessage.end()
 
 
+def _phase1_join(values):
+    return "|".join(value for value in values if value)
+
+
+def _phase1_int(value):
+    text = str(value or "").strip().replace(",", "")
+    return int(float(text)) if text else 0
+
+
+def _phase1_write_csv(rows, columns, path):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    pd.DataFrame(rows, columns=columns).to_csv(
+        path, index=False, encoding="utf-8", lineterminator="\n"
+    )
+
+
+def export_phase1_april_contract(contract_dir, export_dir, expected_dir=None, comparison_output=None):
+    """Build the April Phase 1 views from the two canonical tidy inputs.
+
+    EXPECTED files are opened only after all generated files have been written.
+    Department selection is the user-adopted profile rule for this dataset:
+    Type O and Purpose department on the same C1/C2/C3/C36 occurrence.
+    """
+    entries_path = os.path.join(contract_dir, "ACCOUNTING_ENTRIES_2021-04.csv")
+    balances_path = os.path.join(contract_dir, "ACCOUNT_BALANCES_2021-03-31.csv")
+    mapping_path = os.path.join(contract_dir, "ACCOUNT_CODE_MAPPING.csv")
+    entries = pd.read_csv(entries_path, dtype=str, keep_default_na=False)
+    balances = pd.read_csv(balances_path, dtype=str, keep_default_na=False)
+    mapping = pd.read_csv(mapping_path, dtype=str, keep_default_na=False)
+    entry_binding = pd.read_csv(
+        os.path.join(contract_dir, "ACCOUNTING_ENTRIES_BINDING.csv"),
+        dtype=str, keep_default_na=False,
+    )
+    balance_binding = pd.read_csv(
+        os.path.join(contract_dir, "ACCOUNT_BALANCES_BINDING.csv"),
+        dtype=str, keep_default_na=False,
+    )
+    with open(os.path.join(contract_dir, "INPUT_CONTRACT_METADATA.json"), encoding="utf-8") as handle:
+        contract_metadata = json.load(handle)
+    expected_entry_columns = [f"C{number}" for number in range(1, 44)]
+    expected_balance_columns = [f"C{number}" for number in range(1, 17)]
+    if list(entries.columns) != expected_entry_columns or list(entry_binding["structured_column"]) != expected_entry_columns:
+        raise ValueError("Accounting Entries columns and Binding are not the confirmed C1-C43 contract")
+    if list(balances.columns) != expected_balance_columns or list(balance_binding["structured_column"]) != expected_balance_columns:
+        raise ValueError("Account Balances columns and Binding are not the confirmed C1-C16 contract")
+    department_rule = contract_metadata["analysis_axes"]["department"]
+    if department_rule.get("matching_rule") != "identifier_type == O AND identifier_purpose == department":
+        raise ValueError("Department profile rule is not the confirmed exact-pair rule")
+    mapping_by_key = mapping.set_index("standard_account_key", drop=False).to_dict("index")
+
+    headers = entries[entries["C8"] == "EntryHeader"][[
+        "C1", "C2", "C9", "C11", "C12"
+    ]].rename(columns={"C9": "date", "C11": "entry_id", "C12": "header_description"})
+    details = entries[entries["C8"] == "EntryDetail"][[
+        "C1", "C2", "C3", "C15", "C16", "C17", "C18", "C19"
+    ]].rename(columns={
+        "C15": "line_number", "C16": "detail_description", "C17": "amount",
+        "C18": "currency", "C19": "side"
+    }).merge(headers, on=["C1", "C2"], how="left", validate="many_to_one")
+
+    account_rows = entries[entries["C8"] == "DetailAccountIdentifier"][[
+        "C1", "C2", "C3", "C4", "C20", "C21", "C22"
+    ]].rename(columns={"C20": "etax_account_code", "C21": "account_name", "C22": "classification"})
+    sub_rows = entries[entries["C8"] == "Subaccount"][[
+        "C1", "C2", "C3", "C4", "C5", "C23", "C24", "C25"
+    ]].rename(columns={"C23": "subaccount_id", "C24": "subaccount_name", "C25": "subaccount_type"})
+    invalid_sub = sub_rows[(sub_rows["subaccount_type"] != "account-subaccount")]
+    if not invalid_sub.empty:
+        raise ValueError("Subaccount contains a non account-subaccount row")
+    if sub_rows.duplicated(["C1", "C2", "C3", "C4"]).any():
+        raise ValueError("Multiple account-subaccounts for one account identifier are not supported")
+    account_rows = account_rows.merge(
+        sub_rows[["C1", "C2", "C3", "C4", "subaccount_id", "subaccount_name"]],
+        on=["C1", "C2", "C3", "C4"], how="left", validate="one_to_one"
+    ).fillna("")
+    details = details.merge(
+        account_rows[["C1", "C2", "C3", "etax_account_code", "account_name", "classification", "subaccount_id", "subaccount_name"]],
+        on=["C1", "C2", "C3"], how="left", validate="one_to_one"
+    ).fillna("")
+    details["account_code"] = details.apply(
+        lambda row: row["etax_account_code"] + ("-" + row["subaccount_id"] if row["subaccount_id"] else ""), axis=1
+    )
+    unknown = sorted(set(details["account_code"]) - set(mapping_by_key))
+    if unknown:
+        raise ValueError(f"Unmapped account keys: {unknown}")
+
+    identifier_rows = entries[entries["C8"] == "DetailIdentifierReference"][[
+        "C1", "C2", "C3", "C36", "C37", "C38", "C39", "C40"
+    ]].rename(columns={
+        "C36": "axis_occurrence", "C37": "axis_code", "C38": "axis_purpose",
+        "C39": "axis_name", "C40": "axis_type"
+    })
+    if identifier_rows.duplicated(["C1", "C2", "C3", "axis_occurrence"]).any():
+        raise ValueError("Duplicate Detail Identifier Reference full coordinate")
+    departments = identifier_rows[
+        (identifier_rows["axis_type"] == "O")
+        & (identifier_rows["axis_purpose"] == "department")
+    ].copy()
+    counterparties = identifier_rows[
+        identifier_rows["axis_type"].isin(["C", "V"])
+        & (identifier_rows["axis_purpose"] == "counterparty")
+    ].copy()
+    jobs = entries[entries["C8"] == "DetailJob"][[
+        "C1", "C2", "C3", "C41", "C42", "C43"
+    ]].rename(columns={"C41": "axis_occurrence", "C42": "axis_code", "C43": "axis_name"})
+
+    def axis_map(frame):
+        result = {}
+        for key, group in frame.groupby(["C1", "C2", "C3"], sort=False):
+            ordered = group.assign(_n=pd.to_numeric(group["axis_occurrence"])).sort_values("_n")
+            result[key] = [f"{row.axis_code}:{row.axis_name}" for row in ordered.itertuples()]
+        return result
+
+    department_map = axis_map(departments)
+    counterparty_map = axis_map(counterparties)
+    project_map = axis_map(jobs)
+    details["_key"] = list(zip(details["C1"], details["C2"], details["C3"]))
+    details["department"] = details["_key"].map(lambda key: _phase1_join(department_map.get(key, [])))
+    details["counterparty"] = details["_key"].map(lambda key: _phase1_join(counterparty_map.get(key, [])))
+    details["project"] = details["_key"].map(lambda key: _phase1_join(project_map.get(key, [])))
+
+    axis_columns = [
+        "entry_occurrence", "detail_occurrence", "axis_occurrence", "axis_class",
+        "axis_purpose", "axis_type", "axis_code", "axis_name", "source_coordinate"
+    ]
+    axis_output = []
+    for row in identifier_rows.itertuples():
+        role = "department" if row.axis_type == "O" and row.axis_purpose == "department" else (
+            "counterparty" if row.axis_type in ("C", "V") and row.axis_purpose == "counterparty" else ""
+        )
+        if role:
+            axis_output.append({
+                "entry_occurrence": row.C2, "detail_occurrence": row.C3,
+                "axis_occurrence": row.axis_occurrence, "axis_class": "DetailIdentifierReference",
+                "axis_purpose": role, "axis_type": row.axis_type, "axis_code": row.axis_code,
+                "axis_name": row.axis_name,
+                "source_coordinate": f"C1={row.C1};C2={row.C2};C3={row.C3};C36={row.axis_occurrence}",
+            })
+    for row in jobs.itertuples():
+        axis_output.append({
+            "entry_occurrence": row.C2, "detail_occurrence": row.C3,
+            "axis_occurrence": row.axis_occurrence, "axis_class": "DetailJob",
+            "axis_purpose": "project", "axis_type": "job", "axis_code": row.axis_code,
+            "axis_name": row.axis_name,
+            "source_coordinate": f"C1={row.C1};C2={row.C2};C3={row.C3};C41={row.axis_occurrence}",
+        })
+    axis_output.sort(key=lambda row: (
+        int(row["entry_occurrence"]), int(row["detail_occurrence"]),
+        0 if row["axis_class"] == "DetailIdentifierReference" else 1,
+        int(row["axis_occurrence"]),
+    ))
+
+    journal_columns = [
+        "entry_occurrence", "entry_id", "date", "display_row", "header_description",
+        "debit_detail_occurrence", "debit_account_code", "debit_account_name", "debit_amount", "debit_detail_description",
+        "credit_detail_occurrence", "credit_account_code", "credit_account_name", "credit_amount", "credit_detail_description",
+        "pairing_semantics", "debit_account_code_namespace", "debit_etax_account_code", "debit_etax_subaccount_id",
+        "credit_account_code_namespace", "credit_etax_account_code", "credit_etax_subaccount_id",
+        "debit_department", "debit_counterparty", "debit_project", "credit_department", "credit_counterparty", "credit_project"
+    ]
+    journal = []
+    for entry_occurrence, group in details.groupby("C2", sort=False):
+        ordered = group.assign(_n=pd.to_numeric(group["C3"])).sort_values("_n")
+        debit = list(ordered[ordered["side"] == "D"].to_dict("records"))
+        credit = list(ordered[ordered["side"] == "C"].to_dict("records"))
+        for index in range(max(len(debit), len(credit))):
+            d = debit[index] if index < len(debit) else None
+            c = credit[index] if index < len(credit) else None
+            base = d or c
+            row = {column: "" for column in journal_columns}
+            row.update({
+                "entry_occurrence": entry_occurrence, "entry_id": base["entry_id"], "date": base["date"],
+                "display_row": str(index + 1), "header_description": base["header_description"],
+                "pairing_semantics": "POSITIONAL_ONLY_NOT_SEMANTIC_PAIRING",
+            })
+            for prefix, item in (("debit", d), ("credit", c)):
+                if not item:
+                    continue
+                row.update({
+                    f"{prefix}_detail_occurrence": item["C3"], f"{prefix}_account_code": item["account_code"],
+                    f"{prefix}_account_name": item["account_name"], f"{prefix}_amount": item["amount"],
+                    f"{prefix}_detail_description": item["detail_description"],
+                    f"{prefix}_account_code_namespace": "NTA_ETAX_STANDARD_KEY",
+                    f"{prefix}_etax_account_code": item["etax_account_code"],
+                    f"{prefix}_etax_subaccount_id": item["subaccount_id"],
+                    f"{prefix}_department": item["department"], f"{prefix}_counterparty": item["counterparty"],
+                    f"{prefix}_project": item["project"],
+                })
+            journal.append(row)
+
+    account_balance_rows = balances[balances["C4"] == "AccountBalance"][["C1", "C2", "C5", "C6", "C7"]]
+    period_balance_rows = balances[balances["C4"] == "PeriodBalance"][["C1", "C2", "C3", "C8", "C9", "C13", "C15", "C16"]]
+    openings = period_balance_rows.merge(account_balance_rows, on=["C1", "C2"], how="left", validate="many_to_one")
+    duplicate_opening = openings.duplicated(["C5", "C8", "C9", "C16"])
+    if duplicate_opening.any():
+        raise ValueError("Duplicate opening balance key/period/currency")
+
+    ledger_columns = [
+        "date", "entry_occurrence", "entry_id", "detail_occurrence", "account_code", "account_name",
+        "debit_amount", "credit_amount", "running_net_debit_positive", "running_balance_side",
+        "running_balance_amount", "detail_description", "source_model", "source_coordinate",
+        "account_code_namespace", "etax_account_code", "etax_subaccount_id", "report_statement", "report_section"
+    ]
+    ledger = []
+    running = {}
+    for index, row in enumerate(openings.itertuples(), 1):
+        meta = mapping_by_key[row.C5]
+        amount = _phase1_int(row.C15)
+        net = amount if row.C13 == "D" else -amount
+        running[row.C5] = net
+        ledger.append({
+            "date": "2021-04-01", "entry_occurrence": "", "entry_id": "OPEN-202104", "detail_occurrence": str(index),
+            "account_code": row.C5, "account_name": row.C6,
+            "debit_amount": str(amount) if row.C13 == "D" else "", "credit_amount": str(amount) if row.C13 == "C" else "",
+            "running_net_debit_positive": str(net), "running_balance_side": "D" if net >= 0 else "C",
+            "running_balance_amount": str(abs(net)), "detail_description": f"開始残高 {row.C6}",
+            "source_model": "accounts-period-balances",
+            "source_coordinate": f"C1={row.C1};account={meta['local_account_code']};C3={row.C3};value=C15;side=C13",
+            "account_code_namespace": "NTA_ETAX_STANDARD_KEY", "etax_account_code": meta["standard_account_number"],
+            "etax_subaccount_id": meta["account_subaccount_id"], "report_statement": meta["report_statement"],
+            "report_section": meta["report_section"],
+        })
+    ordered_details = details.assign(_e=pd.to_numeric(details["C2"]), _d=pd.to_numeric(details["C3"])).sort_values(["date", "_e", "_d"])
+    for row in ordered_details.itertuples():
+        amount = _phase1_int(row.amount)
+        debit = amount if row.side == "D" else 0
+        credit = amount if row.side == "C" else 0
+        net = running.get(row.account_code, 0) + debit - credit
+        running[row.account_code] = net
+        meta = mapping_by_key[row.account_code]
+        ledger.append({
+            "date": row.date, "entry_occurrence": row.C2, "entry_id": row.entry_id, "detail_occurrence": row.C3,
+            "account_code": row.account_code, "account_name": row.account_name,
+            "debit_amount": str(debit) if debit else "", "credit_amount": str(credit) if credit else "",
+            "running_net_debit_positive": str(net), "running_balance_side": "D" if net >= 0 else "C",
+            "running_balance_amount": str(abs(net)), "detail_description": row.detail_description,
+            "source_model": "accountingEntries", "source_coordinate": f"C1={row.C1};C2={row.C2};C3={row.C3}",
+            "account_code_namespace": "NTA_ETAX_STANDARD_KEY", "etax_account_code": row.etax_account_code,
+            "etax_subaccount_id": row.subaccount_id, "report_statement": meta["report_statement"],
+            "report_section": meta["report_section"],
+        })
+
+    activity = details.assign(
+        debit=lambda frame: frame.apply(lambda row: _phase1_int(row["amount"]) if row["side"] == "D" else 0, axis=1),
+        credit=lambda frame: frame.apply(lambda row: _phase1_int(row["amount"]) if row["side"] == "C" else 0, axis=1),
+    ).groupby("account_code", sort=False)[["debit", "credit"]].sum()
+    opening_by_key = {row.C5: (_phase1_int(row.C15) if row.C13 == "D" else -_phase1_int(row.C15)) for row in openings.itertuples()}
+    trial_columns = [
+        "cutoff_date", "account_code", "account_name", "account_type", "opening_debit", "opening_credit",
+        "period_debit", "period_credit", "ending_debit", "ending_credit", "account_code_namespace",
+        "etax_account_code", "etax_subaccount_id", "report_statement", "report_section"
+    ]
+    type_names = {"asset": "Asset", "liability": "Liability", "equity": "Equity", "income": "Revenue", "expense": "Expense"}
+    trial = []
+    for row in mapping.itertuples():
+        opening = opening_by_key.get(row.standard_account_key, 0)
+        debit = int(activity.loc[row.standard_account_key, "debit"]) if row.standard_account_key in activity.index else 0
+        credit = int(activity.loc[row.standard_account_key, "credit"]) if row.standard_account_key in activity.index else 0
+        if not (opening or debit or credit):
+            continue
+        ending = opening + debit - credit
+        trial.append({
+            "cutoff_date": "2021-04-30", "account_code": row.standard_account_key,
+            "account_name": row.display_account_name, "account_type": type_names[row.account_classification],
+            "opening_debit": str(opening) if opening > 0 else "", "opening_credit": str(-opening) if opening < 0 else "",
+            "period_debit": str(debit) if debit else "", "period_credit": str(credit) if credit else "",
+            "ending_debit": str(ending) if ending > 0 else "", "ending_credit": str(-ending) if ending < 0 else "",
+            "account_code_namespace": "NTA_ETAX_STANDARD_KEY", "etax_account_code": row.standard_account_number,
+            "etax_subaccount_id": row.account_subaccount_id, "report_statement": row.report_statement,
+            "report_section": row.report_section,
+        })
+    total = lambda column: sum(_phase1_int(row[column]) for row in trial)
+    trial.append({
+        "cutoff_date": "2021-04-30", "account_code": "TOTAL", "account_name": "合計", "account_type": "",
+        "opening_debit": str(total("opening_debit")), "opening_credit": str(total("opening_credit")),
+        "period_debit": str(total("period_debit")), "period_credit": str(total("period_credit")),
+        "ending_debit": str(total("ending_debit")), "ending_credit": str(total("ending_credit")),
+        "account_code_namespace": "", "etax_account_code": "", "etax_subaccount_id": "", "report_statement": "", "report_section": "",
+    })
+
+    trial_by_key = {row["account_code"]: row for row in trial if row["account_code"] != "TOTAL"}
+    bs_columns = ["cutoff_date", "section", "account_code", "account_name", "amount", "presentation_side", "calculation_note", "account_code_namespace", "etax_account_code", "etax_subaccount_id", "report_statement", "report_section"]
+    bs = []
+    assets = liabilities = equity = 0
+    for row in mapping.itertuples():
+        if row.report_statement != "BS" or row.standard_account_key not in trial_by_key:
+            continue
+        tb = trial_by_key[row.standard_account_key]
+        value = _phase1_int(tb["ending_debit"]) or _phase1_int(tb["ending_credit"])
+        section = {"asset": "資産", "liability": "負債", "equity": "純資産"}[row.account_classification]
+        side = "D" if row.account_classification == "asset" else "C"
+        assets += value if row.account_classification == "asset" else 0
+        liabilities += value if row.account_classification == "liability" else 0
+        equity += value if row.account_classification == "equity" else 0
+        bs.append({"cutoff_date": "2021-04-30", "section": section, "account_code": row.standard_account_key, "account_name": row.display_account_name, "amount": str(value), "presentation_side": side, "calculation_note": "", "account_code_namespace": "NTA_ETAX_STANDARD_KEY", "etax_account_code": row.standard_account_number, "etax_subaccount_id": row.account_subaccount_id, "report_statement": row.report_statement, "report_section": row.report_section})
+        if row.account_classification == "asset" and sum(1 for item in bs if item["section"] == "資産") == sum(1 for item in mapping.itertuples() if item.account_classification == "asset" and item.standard_account_key in trial_by_key):
+            bs.append({"cutoff_date": "2021-04-30", "section": "資産", "account_code": "ASSET_TOTAL", "account_name": "資産合計", "amount": str(assets), "presentation_side": "D", "calculation_note": "", "account_code_namespace": "", "etax_account_code": "", "etax_subaccount_id": "", "report_statement": "", "report_section": ""})
+
+    pl_columns = ["cutoff_date", "section", "account_code", "account_name", "amount", "calculation_note", "account_code_namespace", "etax_account_code", "etax_subaccount_id", "report_statement", "report_section"]
+    pl = []
+    revenue = expenses = 0
+    for row in mapping.itertuples():
+        if row.report_statement != "PL" or row.standard_account_key not in trial_by_key:
+            continue
+        tb = trial_by_key[row.standard_account_key]
+        value = _phase1_int(tb["ending_credit"]) if row.account_classification == "income" else _phase1_int(tb["ending_debit"])
+        section = "収益" if row.account_classification == "income" else "費用"
+        revenue += value if section == "収益" else 0
+        expenses += value if section == "費用" else 0
+        pl.append({"cutoff_date": "2021-04-30", "section": section, "account_code": row.standard_account_key, "account_name": row.display_account_name, "amount": str(value), "calculation_note": "", "account_code_namespace": "NTA_ETAX_STANDARD_KEY", "etax_account_code": row.standard_account_number, "etax_subaccount_id": row.account_subaccount_id, "report_statement": row.report_statement, "report_section": row.report_section})
+    result = revenue - expenses
+    result_name = "当期純利益" if result >= 0 else "当期純損失"
+    pl.append({"cutoff_date": "2021-04-30", "section": "損益", "account_code": "NET_RESULT", "account_name": result_name, "amount": str(abs(result)), "calculation_note": "収益-費用", "account_code_namespace": "", "etax_account_code": "", "etax_subaccount_id": "", "report_statement": "", "report_section": ""})
+    bs.append({"cutoff_date": "2021-04-30", "section": "純資産", "account_code": "CURRENT_RESULT", "account_name": result_name, "amount": str(abs(result)), "presentation_side": "C" if result >= 0 else "D", "calculation_note": "純資産へ加算" if result >= 0 else "純資産から控除", "account_code_namespace": "", "etax_account_code": "", "etax_subaccount_id": "", "report_statement": "", "report_section": ""})
+    liability_equity_total = liabilities + equity + result
+    bs.append({"cutoff_date": "2021-04-30", "section": "負債純資産", "account_code": "LIABILITY_EQUITY_TOTAL", "account_name": "負債純資産合計", "amount": str(liability_equity_total), "presentation_side": "C", "calculation_note": "当期損益を加減", "account_code_namespace": "", "etax_account_code": "", "etax_subaccount_id": "", "report_statement": "", "report_section": ""})
+
+    outputs = {
+        "EXPECTED_DETAIL_ANALYSIS_AXES_2021-04.csv": (axis_output, axis_columns, os.path.join(export_dir, "analysis_axes", "2021-04.csv")),
+        "EXPECTED_HORIZONTAL_JOURNAL_2021-04.csv": (journal, journal_columns, os.path.join(export_dir, "journal", "2021-04.csv")),
+        "EXPECTED_GENERAL_LEDGER_2021-04.csv": (ledger, ledger_columns, os.path.join(export_dir, "ledger", "2021-04.csv")),
+        "EXPECTED_TRIAL_BALANCE_2021-04.csv": (trial, trial_columns, os.path.join(export_dir, "trial_balance", "2021-04.csv")),
+        "EXPECTED_BALANCE_SHEET_2021-04.csv": (bs, bs_columns, os.path.join(export_dir, "balance_sheet", "2021-04.csv")),
+        "EXPECTED_PROFIT_AND_LOSS_2021-04.csv": (pl, pl_columns, os.path.join(export_dir, "pnl", "2021-04.csv")),
+    }
+    tidy_output = os.path.join(export_dir, "tidy", "2021-04.csv")
+    os.makedirs(os.path.dirname(tidy_output), exist_ok=True)
+    with open(entries_path, "rb") as source, open(tidy_output, "wb") as target:
+        target.write(source.read())
+    for _, (rows, columns, path) in outputs.items():
+        _phase1_write_csv(rows, columns, path)
+
+    comparisons = []
+    if expected_dir:
+        for expected_name, (_, _, actual_path) in outputs.items():
+            expected = pd.read_csv(os.path.join(expected_dir, expected_name), dtype=str, keep_default_na=False)
+            actual = pd.read_csv(actual_path, dtype=str, keep_default_na=False)
+            differences = []
+            if list(expected.columns) != list(actual.columns):
+                differences.append({"kind": "columns", "expected": list(expected.columns), "actual": list(actual.columns)})
+            if len(expected) != len(actual):
+                differences.append({"kind": "row_count", "expected": len(expected), "actual": len(actual)})
+            for row_number in range(min(len(expected), len(actual))):
+                for column in expected.columns.intersection(actual.columns):
+                    if expected.iloc[row_number][column] != actual.iloc[row_number][column]:
+                        differences.append({"kind": "cell", "row": row_number + 2, "column": column, "expected": expected.iloc[row_number][column], "actual": actual.iloc[row_number][column]})
+            comparisons.append({"expected": expected_name, "actual": os.path.relpath(actual_path, export_dir), "status": "PASS" if not differences else "DIFFERENCE", "differences": differences})
+        comparison_path = comparison_output or os.path.join(export_dir, "expected_comparison.json")
+        os.makedirs(os.path.dirname(comparison_path), exist_ok=True)
+        with open(comparison_path, "w", encoding="utf-8", newline="\n") as handle:
+            json.dump({"expected_used_as_processing_input": False, "comparisons": comparisons}, handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
+    return outputs, comparisons
+
+
 if __name__ == "__main__":
     PARSER = True
     NO_GUI = None
@@ -4553,11 +4908,25 @@ if __name__ == "__main__":
         ap.add_argument("param_file", help="Path to parameters.json")
         ap.add_argument("--export-dir", default=None, help="Export CSVs for web into this directory")
         ap.add_argument("--no-gui", action="store_true", help="Do not start Tkinter GUI")
+        ap.add_argument("--phase1-contract", default=None, help="Generate Phase 1 April views from the confirmed structured tidy contract")
+        ap.add_argument("--expected-dir", default=None, help="Compare generated Phase 1 outputs after generation; never used as processing input")
+        ap.add_argument("--comparison-output", default=None, help="Write post-generation EXPECTED comparison evidence to this path")
         args = ap.parse_args()
 
         param_file_path = args.param_file
         export_dir = args.export_dir
         NO_GUI = args.no_gui
+        if args.phase1_contract:
+            if not args.export_dir:
+                ap.error("--phase1-contract requires --export-dir")
+            _, phase1_comparisons = export_phase1_april_contract(
+                os.path.abspath(args.phase1_contract), os.path.abspath(args.export_dir),
+                os.path.abspath(args.expected_dir) if args.expected_dir else None,
+                os.path.abspath(args.comparison_output) if args.comparison_output else None,
+            )
+            for result in phase1_comparisons:
+                print(f"{result['status']}: {result['expected']} ({len(result['differences'])} differences)")
+            sys.exit(0)
     else:
         BASE_DIR = "LedgerExplorer"
         param_file_path = f"{BASE_DIR}/parameters.json"

@@ -31,6 +31,11 @@ Data location
 - You can switch dataset with ?dataset=sample or ?dataset=full.
 */
 const DATASET_DEFAULT = "sample";
+const DATASET_ALLOWED = new Set([
+  "sample",
+  "full",
+  "abc-shoten-april-2021-v3",
+]);
 let DATASET = DATASET_DEFAULT;
 let DATA_ROOT = null; // resolved at runtime
 let INDEX_URL = null; // resolved at runtime
@@ -68,7 +73,7 @@ async function initDatasetAndPaths() {
 
   // dataset selection
   const qDataset = url.searchParams.get("dataset");
-  if (qDataset && (qDataset === "sample" || qDataset === "full")) {
+  if (qDataset && DATASET_ALLOWED.has(qDataset)) {
     DATASET = qDataset;
   }
 
@@ -76,10 +81,15 @@ async function initDatasetAndPaths() {
   const candidates = [
     { root: `./data/${DATASET}`,  index: `./data/${DATASET}/index.json`  },
     { root: `../data/${DATASET}`, index: `../data/${DATASET}/index.json` },
-    // legacy / alternate layouts
-    { root: `./data`,  index: `./data/index.json`  },
-    { root: `../data`, index: `../data/index.json` },
   ];
+  if (DATASET === "sample" || DATASET === "full") {
+    // Legacy layouts are retained only for the historical datasets. A named
+    // Phase 1 dataset must fail closed instead of falling back to another set.
+    candidates.push(
+      { root: `./data`,  index: `./data/index.json`  },
+      { root: `../data`, index: `../data/index.json` },
+    );
+  }
 
   DATA_ROOT = null;
   INDEX_URL = null;
@@ -144,7 +154,7 @@ const VIEW_LABELS_I18N = {
     receivables: "売掛金集計",
     payables: "買掛金集計",
     documents: "業務文書",
-    tidy: "構造化CSV",
+    tidy: "構造化Tidyデータ",
   },
   en: {
     journal: "Journal",
@@ -155,7 +165,7 @@ const VIEW_LABELS_I18N = {
     receivables: "A/R Summary",
     payables: "A/P Summary",
     documents: "Business Documents",
-    tidy: "Structured CSV",
+    tidy: "Structured Tidy Data",
   },
 };
 
@@ -524,6 +534,13 @@ function prettifyLabel(s) {
 }
 function tHeader(headerCell) {
   const raw = String(headerCell ?? "").trim();
+
+  // A dataset may provide exact display-only labels for its report columns.
+  // This does not rename, infer, or rewrite the underlying CSV schema.
+  const datasetAliases = INDEX?.display?.header_aliases?.[currentLang] || {};
+  if (Object.prototype.hasOwnProperty.call(datasetAliases, raw)) {
+    return prettifyLabel(datasetAliases[raw]);
+  }
 
   // 1) Translate if the header matches a known column code or label variant.
   // 1) 列コード（または派生表記）として解決できる場合は翻訳する。
@@ -1008,6 +1025,7 @@ function renderTable(rows, maxRows = DEFAULT_MAX_ROWS) {
 
   // Determine visible columns (hide some only for specific views like BS/PL)
   const visibleIdxs = getVisibleIdxs(header, currentView);
+  const zeroBlankColumns = new Set(INDEX?.display?.zero_blank_columns || []);
 
   // Column styles for all columns (we will pick by index)
   const colStyles = header.map(getColStyle);
@@ -1037,12 +1055,20 @@ function renderTable(rows, maxRows = DEFAULT_MAX_ROWS) {
 
       let disp = String(raw);
 
+      // Zero suppression is presentation-only and is limited to the exact
+      // monetary columns declared by the selected dataset. Codes, IDs,
+      // occurrences, dates, and downloaded source values are untouched.
+      const numericText = String(raw).trim().replace(/,/g, "");
+      if (zeroBlankColumns.has(String(header[i])) && numericText !== "" && Number(numericText) === 0) {
+        disp = "";
+      }
+
       // Integer / number formatting
-      if (st.fmt === "int" && isNumericLike(raw)) {
+      if (disp !== "" && st.fmt === "int" && isNumericLike(raw)) {
         const t = String(raw).trim().replace(/,/g, "");
         const n = Number(t);
         if (Number.isFinite(n) && Math.floor(n) === n) disp = String(n);
-      } else if (st.fmt === "number" && isNumericLike(raw)) {
+      } else if (disp !== "" && st.fmt === "number" && isNumericLike(raw)) {
         disp = formatNumberLike(raw);
       }
 
@@ -2705,9 +2731,10 @@ function applyI18nTexts() {
       const address = [company.postal_code ? `〒${company.postal_code}` : "", locality, company.building]
         .filter(Boolean)
         .join(" ");
-      const demoNotice = currentLang === "en"
-        ? "All data shown is fictional demonstration data. The accounting period is from April 2021 to March 2022; only transactions required to illustrate receipt and payment relationships include reference data from the two months before and after this period."
-        : "※ 本画面のデータはすべて架空のデモデータです。会計取引の対象期間は2021年4月から2022年3月までですが、入出金との対応確認に必要な取引に限り、対象期間外の前後2か月分も参考データとして設定しています。";
+      const demoNotice = (currentLang === "en" ? company.notice_en : company.notice_ja)
+        || (currentLang === "en"
+          ? "All data shown is fictional demonstration data. The accounting period is from April 2021 to March 2022; only transactions required to illustrate receipt and payment relationships include reference data from the two months before and after this period."
+          : "※ 本画面のデータはすべて架空のデモデータです。会計取引の対象期間は2021年4月から2022年3月までですが、入出金との対応確認に必要な取引に限り、対象期間外の前後2か月分も参考データとして設定しています。");
       companyHeaderEl.innerHTML = `<span class="company-header__name">${escapeHtml(company.name)}</span><span class="company-header__address">${escapeHtml(address)}</span><span class="company-header__notice">${escapeHtml(demoNotice)}</span>`;
       companyHeaderEl.hidden = false;
     } else {
@@ -2803,6 +2830,12 @@ function initNav() {
 
 function renderModeSwitch() {
   if (!modeSwitchEl) return;
+  const supportsDocuments = INDEX?.features?.document_relationships !== false;
+  modeSwitchEl.hidden = !supportsDocuments;
+  if (!supportsDocuments) {
+    modeSwitchEl.innerHTML = "";
+    return;
+  }
   const accountingLabel = isDocumentView()
     ? (currentLang === "en" ? "Back to accounting" : "会計帳簿へ戻る")
     : (currentLang === "en" ? "Accounting ledgers" : "会計帳簿");
@@ -2863,6 +2896,7 @@ function currentAsOfMonth() {
 }
 
 function statementsAvailable() {
+  if (INDEX?.features?.statements_at_current_month === true) return true;
   return currentAsOfMonth() >= "2022-03";
 }
 
@@ -2879,7 +2913,8 @@ function updateViewControls() {
   const partnerView = isPartnerReportView();
   const documentView = isDocumentView();
   const allAccountsOnly = currentView === "trial_balance" || currentView === "balance_sheet" || currentView === "pnl";
-  const annualReportView = currentView === "balance_sheet" || currentView === "pnl";
+  const annualReportView = (currentView === "balance_sheet" || currentView === "pnl")
+    && INDEX?.views?.[currentView]?.by !== "month";
   const searchableView = currentView === "tidy" || currentView === "journal";
   if (allAccountsOnly) acctSel.value = "";
   if (!searchableView) searchInput.value = "";
@@ -2889,7 +2924,9 @@ function updateViewControls() {
     const monthLabel = monthSel.closest("label");
     if (monthLabel) monthLabel.hidden = annualReportView;
   }
-  if (asOfLabelEl) asOfLabelEl.hidden = annualReportView;
+  const supportsAsOf = INDEX?.features?.settlement !== false
+    || INDEX?.features?.document_relationships !== false;
+  if (asOfLabelEl) asOfLabelEl.hidden = annualReportView || !supportsAsOf;
   if (monthLabelTextEl) {
     if (annualReportView) {
       const firstMonth = (INDEX?.months || []).find(value => /^\d{4}-\d{2}$/.test(String(value)));
@@ -2912,7 +2949,7 @@ function updateViewControls() {
   if (navEl) navEl.hidden = documentView;
   if (aboutLinkEl?.closest("button")) aboutLinkEl.closest("button").hidden = documentView;
   if (aboutSeparatorEl) aboutSeparatorEl.hidden = documentView;
-  if (modeNavSeparatorEl) modeNavSeparatorEl.hidden = false;
+  if (modeNavSeparatorEl) modeNavSeparatorEl.hidden = INDEX?.features?.document_relationships === false;
   renderDocumentTypeNav();
 }
 
@@ -2955,6 +2992,11 @@ function initAccountSelect() {
 
 function initLangSelect() {
   if (!langSel) return;
+  const supported = Array.isArray(INDEX?.langs) && INDEX.langs.length
+    ? new Set(INDEX.langs)
+    : new Set(["ja", "en"]);
+  for (const option of langSel.options) option.disabled = !supported.has(option.value);
+  if (!supported.has(currentLang)) currentLang = INDEX.langs[0];
   langSel.value = currentLang;
 
   langSel.addEventListener("change", async () => {
@@ -3229,9 +3271,13 @@ async function main() {
       available: Array.isArray(INDEX.months) ? INDEX.months : []
     };
   }
-  INDEX.views.receivables = { virtual: true, source: "ledger" };
-  INDEX.views.payables = { virtual: true, source: "ledger" };
-  INDEX.views.documents = { virtual: true, source: "business_document" };
+  if (INDEX.features?.settlement !== false) {
+    INDEX.views.receivables = { virtual: true, source: "ledger" };
+    INDEX.views.payables = { virtual: true, source: "ledger" };
+  }
+  if (INDEX.features?.document_relationships !== false) {
+    INDEX.views.documents = { virtual: true, source: "business_document" };
+  }
 
   // restore state from URL if any
   const url = new URL(location.href);
@@ -3241,7 +3287,16 @@ async function main() {
   const qAsOf = url.searchParams.get("asOf");
   initialAccountFromUrl = url.searchParams.get("account") || "";
 
-  if (qLang && (qLang === "ja" || qLang === "en")) {
+  const supportedLangs = Array.isArray(INDEX.langs) && INDEX.langs.length
+    ? INDEX.langs
+    : ["ja", "en"];
+  if (!supportedLangs.includes(currentLang)) currentLang = supportedLangs[0];
+
+  if (INDEX.default?.view && INDEX.views?.[INDEX.default.view]) {
+    currentView = INDEX.default.view;
+  }
+
+  if (qLang && supportedLangs.includes(qLang)) {
     currentLang = qLang;
     localStorage.setItem("ledger_lang", currentLang);
   }
