@@ -1,0 +1,3 @@
+entry_occurrence,detail_occurrence,tax_occurrence,source_tax_description,source_tax_category,source_tax_rate_lexical,output_tax_type,output_tax_category,output_tax_rate_ratio,output_transaction_classification,rule_id,trace_sha256
+5,1,1,標準税率対象,標準税率10%,10,VAT,S,0.10,Purchase,PHASE1-PURCHASE-S-10,331A3B7021C0AAE00992947B50AB0885D790F918F1A804D74146FAB8463480A6
+5,1,2,軽減税率対象,軽減税率8%,8,VAT,AA,0.08,Purchase,PHASE1-PURCHASE-AA-08,D2918A001B994BD5951AEF3451A8A11A6D86F9A09C86C3323026F873E629DC10

@@ -1,0 +1,9 @@
+cutoff_date,section,account_code,account_name,amount,presentation_side,calculation_note,account_code_namespace,etax_account_code,etax_subaccount_id,report_statement,report_section
+2021-04-30,資産,10A100020-1,現金,100000,D,,NTA_ETAX_STANDARD_KEY,10A100020,1,BS,流動資産
+2021-04-30,資産,10A100020-3,普通預金,160000,D,,NTA_ETAX_STANDARD_KEY,10A100020,3,BS,流動資産
+2021-04-30,資産,10A100090,売掛金,320000,D,,NTA_ETAX_STANDARD_KEY,10A100090,,BS,流動資産
+2021-04-30,資産,ASSET_TOTAL,資産合計,580000,D,,,,,,
+2021-04-30,負債,10B100040,買掛金,274000,C,,NTA_ETAX_STANDARD_KEY,10B100040,,BS,流動負債
+2021-04-30,純資産,10C110010,資本金,600000,C,,NTA_ETAX_STANDARD_KEY,10C110010,,BS,純資産
+2021-04-30,純資産,CURRENT_RESULT,当期純損失,294000,D,純資産から控除,,,,,
+2021-04-30,負債純資産,LIABILITY_EQUITY_TOTAL,負債純資産合計,580000,C,当期損益を加減,,,,,

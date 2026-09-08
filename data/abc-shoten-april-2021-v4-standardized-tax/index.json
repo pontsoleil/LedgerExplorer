@@ -1,0 +1,82 @@
+{
+  "dataset_id": "abc-shoten-april-2021-v4-standardized-tax",
+  "dataset_version": "4.0.0-phase1-standardized-tax",
+  "generated_from": [
+    "source/ACCOUNTING_ENTRIES_2021-04.csv",
+    "source/ACCOUNT_BALANCES_2021-03-31.csv"
+  ],
+  "company": {
+    "business_id": "ABC-SHOTEN",
+    "name": "ABC商店",
+    "notice_ja": "公開可能な架空データ。正規UADC処理で税種別、税カテゴリー、ratio税率及び売上／仕入区分を標準化したPhase 1データです。"
+  },
+  "langs": ["ja"],
+  "default": { "lang": "ja", "view": "journal", "month": "2021-04" },
+  "months": ["2021-04"],
+  "features": {
+    "statements_at_current_month": true,
+    "settlement": false,
+    "annual_expansion": false,
+    "document_relationships": false
+  },
+  "display": {
+    "header_aliases": {
+      "ja": {
+        "entry_occurrence": "伝票出現番号",
+        "entry_id": "伝票ID",
+        "date": "日付",
+        "display_row": "表示行",
+        "header_description": "伝票摘要",
+        "debit_detail_occurrence": "借方明細出現番号",
+        "debit_account_name": "借方科目名",
+        "debit_amount": "借方金額",
+        "debit_detail_description": "借方明細摘要",
+        "credit_detail_occurrence": "貸方明細出現番号",
+        "credit_account_name": "貸方科目名",
+        "credit_amount": "貸方金額",
+        "credit_detail_description": "貸方明細摘要",
+        "pairing_semantics": "左右配置規則",
+        "debit_department": "借方部門",
+        "debit_counterparty": "借方取引先",
+        "debit_project": "借方プロジェクト",
+        "credit_department": "貸方部門",
+        "credit_counterparty": "貸方取引先",
+        "credit_project": "貸方プロジェクト",
+        "detail_occurrence": "明細出現番号",
+        "account_name": "勘定科目名",
+        "running_net_debit_positive": "借方正味残高",
+        "running_balance_side": "残高借貸区分",
+        "running_balance_amount": "残高金額",
+        "detail_description": "明細摘要",
+        "cutoff_date": "基準日",
+        "account_type": "科目区分",
+        "opening_debit": "開始借方残高",
+        "opening_credit": "開始貸方残高",
+        "period_debit": "期間借方額",
+        "period_credit": "期間貸方額",
+        "ending_debit": "終了借方残高",
+        "ending_credit": "終了貸方残高",
+        "section": "区分",
+        "amount": "金額",
+        "presentation_side": "表示借貸区分",
+        "calculation_note": "計算注記"
+      }
+    },
+    "zero_blank_columns": [
+      "debit_amount", "credit_amount", "running_net_debit_positive", "running_balance_amount",
+      "opening_debit", "opening_credit", "period_debit", "period_credit", "ending_debit", "ending_credit",
+      "amount"
+    ],
+    "percentage_columns": {
+      "C29": { "category_column": "C30", "reduced_category": "AA", "reduced_suffix": "・軽減" }
+    }
+  },
+  "views": {
+    "tidy": { "by": "month", "path": "tidy/{month}.csv", "available": ["2021-04"] },
+    "journal": { "by": "month", "path": "journal/{month}.csv", "available": ["2021-04"] },
+    "ledger": { "by": "month", "path": "ledger/{month}.csv", "available": ["2021-04"] },
+    "trial_balance": { "by": "month", "path": "trial_balance/{month}.csv", "available": ["2021-04"] },
+    "balance_sheet": { "by": "month", "path": "balance_sheet/{month}.csv", "available": ["2021-04"] },
+    "pnl": { "by": "month", "path": "pnl/{month}.csv", "available": ["2021-04"] }
+  }
+}

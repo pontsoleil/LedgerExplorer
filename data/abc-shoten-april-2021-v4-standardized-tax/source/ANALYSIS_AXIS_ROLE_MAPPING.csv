@@ -1,0 +1,10 @@
+legacy_type,legacy_code,name,target_class,identifier_type,identifier_purpose,job_rule,authority,note
+department,D01,企画部,DetailIdentifierReference,O,department,,User-adopted profile rule 2026-09-08; HMD seq 221 permits String and seq 226 permits O(other),ADOPTED_PROFILE_RULE_NOT_EXISTING_STANDARD: same occurrence must have Identifier Type=O AND Identifier Purpose=department。O単独、別occurrenceのPurpose、コード先頭文字では判定しない
+department,D02,営業部,DetailIdentifierReference,O,department,,User-adopted profile rule 2026-09-08; HMD seq 221 permits String and seq 226 permits O(other),ADOPTED_PROFILE_RULE_NOT_EXISTING_STANDARD: same occurrence must have Identifier Type=O AND Identifier Purpose=department。O単独、別occurrenceのPurpose、コード先頭文字では判定しない
+partner,C001,あおぞら商店,DetailIdentifierReference,C,counterparty,,Accounting Entries HMD seq 219-226,C=customer
+partner,C002,つばさ商会,DetailIdentifierReference,C,counterparty,,Accounting Entries HMD seq 219-226,C=customer
+partner,S001,さくら仕入株式会社,DetailIdentifierReference,V,counterparty,,Accounting Entries HMD seq 219-226,V=vendor
+partner,S002,ひかり文具株式会社,DetailIdentifierReference,V,counterparty,,Accounting Entries HMD seq 219-226,V=vendor
+partner,S003,みどり商事株式会社,DetailIdentifierReference,V,counterparty,,Accounting Entries HMD seq 219-226,V=vendor
+partner,S004,こもれび食品株式会社,DetailIdentifierReference,V,counterparty,,Accounting Entries HMD seq 219-226,V=vendor
+auxiliary-account,P01,春季販売企画,DetailJob,,,Job ID + Job Description,Accounting Entries HMD seq 298-300,科目SubaccountやIdentifier Referenceへ入れない

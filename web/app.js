@@ -35,6 +35,7 @@ const DATASET_ALLOWED = new Set([
   "sample",
   "full",
   "abc-shoten-april-2021-v3",
+  "abc-shoten-april-2021-v4-standardized-tax",
 ]);
 let DATASET = DATASET_DEFAULT;
 let DATA_ROOT = null; // resolved at runtime
@@ -1026,6 +1027,7 @@ function renderTable(rows, maxRows = DEFAULT_MAX_ROWS) {
   // Determine visible columns (hide some only for specific views like BS/PL)
   const visibleIdxs = getVisibleIdxs(header, currentView);
   const zeroBlankColumns = new Set(INDEX?.display?.zero_blank_columns || []);
+  const percentageColumns = INDEX?.display?.percentage_columns || {};
 
   // Column styles for all columns (we will pick by index)
   const colStyles = header.map(getColStyle);
@@ -1061,6 +1063,16 @@ function renderTable(rows, maxRows = DEFAULT_MAX_ROWS) {
       const numericText = String(raw).trim().replace(/,/g, "");
       if (zeroBlankColumns.has(String(header[i])) && numericText !== "" && Number(numericText) === 0) {
         disp = "";
+      }
+
+      // Percentage rendering is metadata-driven and presentation-only.
+      // The Structured Tidy source and downloads retain ratio values.
+      const percentageRule = percentageColumns[String(header[i])];
+      if (percentageRule && numericText !== "" && Number.isFinite(Number(numericText))) {
+        const categoryIdx = header.indexOf(percentageRule.category_column);
+        const category = categoryIdx >= 0 ? String(r[categoryIdx] ?? "") : "";
+        const suffix = category === percentageRule.reduced_category ? percentageRule.reduced_suffix : "";
+        disp = `${Number(numericText) * 100}%${suffix || ""}`;
       }
 
       // Integer / number formatting

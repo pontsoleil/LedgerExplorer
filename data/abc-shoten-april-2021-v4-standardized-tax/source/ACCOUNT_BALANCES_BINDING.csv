@@ -1,0 +1,17 @@
+structured_column,role,hmd_sequence,name,semantic_path,note
+C1,occurrence-coordinate,1,GL Accounts Period Balances,$.adc_GLAccountsPeriodBalances,Accounting Entriesとは別HMD
+C2,occurrence-coordinate,2,Account Balance,$.adc_GLAccountsPeriodBalances.adc_AccountBalance,親内整数occurrence
+C3,occurrence-coordinate,9,Period Balance,$.adc_GLAccountsPeriodBalances.adc_AccountBalance.adc_PeriodBalance,親内整数occurrence
+C4,row-class,,行クラス,,構造識別子
+C5,value-property,3,GL Account Number,$.adc_GLAccountsPeriodBalances.adc_AccountBalance.adc_GLAccountNumber,国税庁/e-Tax標準科目キー。ACCOUNT_CODE_MAPPING.standard_account_keyと完全一致
+C6,value-property,4,Account Name,$.adc_GLAccountsPeriodBalances.adc_AccountBalance.uadc_AccountName,AccountBalance行のみ
+C7,value-property,5,Normal Balance Indicator,$.adc_GLAccountsPeriodBalances.adc_AccountBalance.uadc_NormalBalanceIndicator,AccountBalance行のみ
+C8,value-property,10,Fiscal Year,$.adc_GLAccountsPeriodBalances.adc_AccountBalance.adc_PeriodBalance.adc_FiscalYear,PeriodBalance行のみ
+C9,value-property,11,Accounting Period,$.adc_GLAccountsPeriodBalances.adc_AccountBalance.adc_PeriodBalance.adc_AccountingPeriod,今回の正本は2020年度M12期末のみ
+C10,value-property,17,Debit Amount,$.adc_GLAccountsPeriodBalances.adc_AccountBalance.adc_PeriodBalance.adc_DebitAmount,今回空欄
+C11,value-property,18,Credit Amount,$.adc_GLAccountsPeriodBalances.adc_AccountBalance.adc_PeriodBalance.adc_CreditAmount,今回空欄
+C12,value-property,19,Beg Balance Indicator,$.adc_GLAccountsPeriodBalances.adc_AccountBalance.adc_PeriodBalance.adc_BEGBalanceIndicator,今回未使用。開始残高選択に使用禁止
+C13,value-property,20,Ending Balance Indicator,$.adc_GLAccountsPeriodBalances.adc_AccountBalance.adc_PeriodBalance.adc_EndingBalanceIndicator,M12期末
+C14,value-property,21,Beginning Balance,$.adc_GLAccountsPeriodBalances.adc_AccountBalance.adc_PeriodBalance.adc_BeginningBalance,今回未使用。開始残高選択に使用禁止
+C15,value-property,22,Ending Balance,$.adc_GLAccountsPeriodBalances.adc_AccountBalance.adc_PeriodBalance.adc_EndingBalance,2020年度M12
+C16,value-property,23,Currency Code,$.adc_GLAccountsPeriodBalances.adc_AccountBalance.adc_PeriodBalance.adc_CurrencyCode,JPY

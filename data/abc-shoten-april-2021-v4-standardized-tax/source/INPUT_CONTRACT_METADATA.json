@@ -1,0 +1,68 @@
+{
+  "dataset_id": "abc-shoten-april-2021-v4-standardized-tax",
+  "company_name": "ABC商店",
+  "language": "ja",
+  "phase": 1,
+  "transaction_authority": "gl-cor:accountingEntries",
+  "balance_authority": "ISO21378_GL_ACCOUNTS_PERIOD_BALANCE_HMD",
+  "transaction_period": "2021-04-01/2021-04-30",
+  "balance_as_of": "2021-03-31",
+  "hierarchy_coordinate_contract": {
+    "identifier_reference": "C1/C2/C3/C36",
+    "detail_job": "C1/C2/C3/C41",
+    "child_occurrence_scope": "within its complete parent coordinate"
+  },
+  "account_identity": {
+    "key": "standard_account_number + optional account-subaccount",
+    "namespace": "NTA_ETAX_STANDARD_KEY",
+    "business_segment_excluded": true,
+    "identifier_reference_excluded": true,
+    "job_excluded": true
+  },
+  "analysis_axes": {
+    "department": {
+      "class": "DetailIdentifierReference",
+      "identifier_type": "O",
+      "identifier_purpose": "department",
+      "matching_scope": "same DetailIdentifierReference occurrence identified by C1/C2/C3/C36",
+      "matching_rule": "identifier_type == O AND identifier_purpose == department",
+      "prohibited_inference": [
+        "identifier_type O alone",
+        "identifier purpose from a different occurrence",
+        "identifier code prefix",
+        "O with any purpose other than department"
+      ],
+      "hmd_support": {
+        "identifier_purpose": "seq 221 String 0..1",
+        "identifier_type": "seq 226 Token 0..1 includes O(other)"
+      },
+      "status": "ADOPTED_PROFILE_RULE_BY_USER_2026-09-08_NOT_EXISTING_STANDARD_RULE"
+    },
+    "counterparty": {
+      "class": "DetailIdentifierReference",
+      "identifier_type_values": [
+        "C",
+        "V"
+      ],
+      "identifier_purpose": "counterparty"
+    },
+    "project": {
+      "class": "DetailJob",
+      "properties": [
+        "Job ID",
+        "Job Description"
+      ]
+    },
+    "business_segment": "NOT_DEFINED_AND_NOT_USED"
+  },
+  "formal_xbrl_csv_metadata_status": "NOT_PROVIDED",
+  "tax_standardization": {
+    "authority": "UADC-PoC canonical tools/uadc/standardize_phase1_tax.py",
+    "tax_type": "UNCL 5153 VAT",
+    "tax_category": "UNCL 5305 S/AA",
+    "tax_rate_storage": "ratio 0.10/0.08",
+    "transaction_classification": "Purchase for the explicit J-005 purchase occurrence; independent of debit/credit"
+  },
+  "expected_usage": "comparison-only; never runtime input",
+  "git_and_publication": "NO_MAIN_OR_PRODUCTION_CHANGE"
+}

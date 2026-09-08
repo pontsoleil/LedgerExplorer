@@ -4584,10 +4584,13 @@ def export_phase1_april_contract(contract_dir, export_dir, expected_dir=None, co
     )
     with open(os.path.join(contract_dir, "INPUT_CONTRACT_METADATA.json"), encoding="utf-8") as handle:
         contract_metadata = json.load(handle)
-    expected_entry_columns = [f"C{number}" for number in range(1, 44)]
+    accepted_entry_columns = [
+        [f"C{number}" for number in range(1, 44)],
+        [f"C{number}" for number in range(1, 46)],
+    ]
     expected_balance_columns = [f"C{number}" for number in range(1, 17)]
-    if list(entries.columns) != expected_entry_columns or list(entry_binding["structured_column"]) != expected_entry_columns:
-        raise ValueError("Accounting Entries columns and Binding are not the confirmed C1-C43 contract")
+    if list(entries.columns) not in accepted_entry_columns or list(entry_binding["structured_column"]) != list(entries.columns):
+        raise ValueError("Accounting Entries columns and Binding are not a confirmed C1-C43/C1-C45 schema")
     if list(balances.columns) != expected_balance_columns or list(balance_binding["structured_column"]) != expected_balance_columns:
         raise ValueError("Account Balances columns and Binding are not the confirmed C1-C16 contract")
     department_rule = contract_metadata["analysis_axes"]["department"]
