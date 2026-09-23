@@ -38,8 +38,12 @@ import numpy as np
 import csv
 import json
 import re
-from collections import OrderedDict
+import importlib.util
+import shutil
+from collections import Counter, OrderedDict, defaultdict
+from decimal import Decimal, InvalidOperation
 from datetime import datetime
+from pathlib import Path
 import sys
 import os
 import webbrowser
@@ -452,6 +456,9 @@ def export_web_csv(tidy_data, out_dir: str) -> dict:
       - *_fr.csv -> fr/ ... (future)
       - otherwise -> ja/
     """
+    if hasattr(tidy_data, "export_long_form_web_csv"):
+        return tidy_data.export_long_form_web_csv(out_dir)
+
     os.makedirs(out_dir, exist_ok=True)
 
     # Determine input file path
@@ -4545,6 +4552,514 @@ class GUI:
         ExecutionMessage.end()
 
 
+LONG_FORM_COLUMNS = [
+    "entry_key", "source_row", "occurrence", "sequence", "level", "type",
+    "id", "name", "semantic_path", "binding_path", "value",
+]
+LONG_TIDY_DISPLAY_COLUMNS = [
+    "JP07a", "JP08a", "BS04fb", "JP05a", "BS04fc", "JP05b",
+    "JP07a_GL03_01", "JP07a_GL03_03", "GL05c_01", "GE23c_01", "GE09eR_01",
+    "JP08a_GL04_03", "JP06e_GE24_01", "JP06e_GE24_02", "JP05a_01", "JP05a_02",
+    "JP05a_03", "GE05ku_01", "GE05kw_01", "JP02j_BS09_01", "JP02j_BS09_02",
+    "JP06f_GE24_01", "JP06f_GE24_02", "JP05b_01", "JP05b_02", "JP05b_03",
+    "GE05kz_01", "GE05kB_01", "JP02k_BS09_01", "JP02k_BS09_02",
+    "BS04fb_01", "BS04fb_02", "BS04fb_03", "BS04fc_01", "BS04fc_02", "BS04fc_03",
+    "Data_Scope", "Document_ID", "Document_Type", "Document_Number",
+    "Related_Document_ID", "Related_Document_Type", "Related_Document_Number",
+    "Settlement_Scheduled_Month",
+]
+LONG_JOURNAL_COLUMNS = [
+    "JP07a", "JP08a", "Month", "JP07a_GL03_03", "JP07a_GL03_01", "JP08a_GL04_03",
+    "JP06e_GE24_01", "JP06e_GE24_02", "Debit_Amount", "JP02j_BS09_01", "JP02j_BS09_02",
+    "GE05kw_01", "JP05a_01", "JP05a_02", "BS04fb_01", "BS04fb_02",
+    "JP06f_GE24_01", "JP06f_GE24_02", "Credit_Amount", "JP02k_BS09_01", "JP02k_BS09_02",
+    "GE05kB_01", "JP05b_01", "JP05b_02", "BS04fc_01", "BS04fc_02",
+]
+LONG_LEDGER_COLUMNS = [
+    "Transaction_ID", "Line_ID", "Entry_ID", "Ledger_Side", "Transaction_Date", "Description",
+    "Ledger_Account_Number", "Ledger_Account_Name", "Subaccount_Code", "Subaccount_Name",
+    "Department_Code", "Department_Name", "Debit_Amount", "Credit_Amount",
+    "Counterpart_Account_Number", "Counterpart_Account_Name", "Counterpart_Subaccount_Code",
+    "Counterpart_Subaccount_Name", "Counterpart_Department_Code", "Counterpart_Department_Name",
+    "Balance", "Month",
+]
+LONG_TRIAL_COLUMNS = [
+    "Month", "Ledger_Account_Number", "Ledger_Account_Name", "Beginning_Balance",
+    "Debit_Amount", "Credit_Amount", "Ending_Balance", "eTax_Category",
+]
+LONG_STATEMENT_COLUMNS = [
+    "Ledger_Account_Number", "Level", "Type", "Ledger_Account_Number", "Parent", "Category",
+    "eTax_Category", "eTax_Account_Name", "Beginning_Balance", "Total_Debit", "Total_Credit",
+    "Ending_Balance", "seq",
+]
+LONG_MONTHS = [
+    "2021-04", "2021-05", "2021-06", "2021-07", "2021-08", "2021-09",
+    "2021-10", "2021-11", "2021-12", "2022-01", "2022-02", "2022-03",
+]
+LONG_D_AMOUNT = "$.cor_AccountingEntries.cor_EntryHeader.cor_EntryDetail[cor_DebitCreditIndicator='D'].cor_MonetaryAmount"
+LONG_C_AMOUNT = "$.cor_AccountingEntries.cor_EntryHeader.cor_EntryDetail[cor_DebitCreditIndicator='C'].cor_MonetaryAmount"
+
+
+class LongFormPairingError(ValueError):
+    def __init__(self, kind, message):
+        super().__init__(f"{kind}: {message}")
+        self.kind = kind
+
+
+def _long_resolve(parameter_path, value):
+    path = os.path.expanduser(str(value))
+    if not os.path.isabs(path):
+        path = os.path.join(os.path.dirname(os.path.abspath(parameter_path)), path)
+    return os.path.normpath(os.path.abspath(path))
+
+
+def _long_normalize_account(value):
+    return re.sub(r"-\d+$", "", str(value or "").strip())
+
+
+def _long_write_frame(path, frame, columns=None):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    output = frame if columns is None else frame.reindex(columns=columns)
+    output.to_csv(path, index=False, encoding="utf-8", lineterminator="\n")
+
+
+def _long_write_records(path, records, columns):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8", newline="") as handle:
+        writer = csv.writer(handle, lineterminator="\n")
+        writer.writerow(columns)
+        for row in records:
+            writer.writerow([row.get(column, "") for column in columns])
+
+
+def _long_load_module(path):
+    spec = importlib.util.spec_from_file_location("ledgerexplorer_accepted_pairing", path)
+    if spec is None or spec.loader is None:
+        raise ImportError(f"cannot load pairing runtime: {path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+class LongFormTidyData:
+    """Adapter from accepted UADC long-form facts to canonical LedgerExplorer DataFrames."""
+
+    def __init__(self, parameter_path):
+        with open(parameter_path, encoding="utf-8") as handle:
+            self.params = json.load(handle)
+        self.parameter_path = os.path.abspath(parameter_path)
+        self.file_path = _long_resolve(parameter_path, self.params["structured_long_path"])
+        self.opening_path = _long_resolve(parameter_path, self.params["opening_long_path"])
+        self.account_mapping_path = _long_resolve(parameter_path, self.params["account_mapping_path"])
+        self.pairing_runtime_path = _long_resolve(parameter_path, self.params["pairing_runtime_path"])
+        self.lang = self.params.get("lang", "ja")
+        self.columns = dict(self.params.get("columns", {}))
+        self.generated_at = self.params.get("generated_at", "2026-09-23T00:00:00Z")
+        self.dataset_id = self.params.get("dataset_id", "anonymous_v17")
+        self.facts_df = None
+        self.accounts_df = None
+        self.amount_rows = None
+        self.general_ledger_df = None
+        self.summary_df = None
+        self.bs_df = None
+        self.pl_df = None
+        self.tidy_display_df = None
+        self.pairing_counts = Counter()
+
+    def get_file_path(self):
+        return self.file_path
+
+    def get_columns(self):
+        return self.columns
+
+    def get_amount_rows(self):
+        return self.amount_rows
+
+    def get_general_ledger_df(self):
+        return self.general_ledger_df
+
+    def get_summary_df(self):
+        return self.summary_df
+
+    @staticmethod
+    def _unique_value(rows, side, name, predicate=""):
+        values = [
+            str(row.get("value", "")) for row in rows
+            if row.get("occurrence") == side and row.get("name") == name
+            and predicate in row.get("binding_path", "") and str(row.get("value", "")) != ""
+        ]
+        unique = list(dict.fromkeys(values))
+        if len(unique) > 1:
+            raise ValueError(f"multiple {side}/{name}/{predicate}: {unique}")
+        return unique[0] if unique else ""
+
+    @staticmethod
+    def _decimal_amount(rows, binding_path):
+        values = [str(row["value"]).strip() for row in rows if row["binding_path"] == binding_path]
+        if len(values) != 1 or not values[0]:
+            raise LongFormPairingError("COMPOUND_AMOUNT_INVALID", "one non-empty amount is required")
+        try:
+            return Decimal(values[0]), values[0]
+        except InvalidOperation as exc:
+            raise LongFormPairingError("COMPOUND_AMOUNT_INVALID", "amount is not decimal") from exc
+
+    @staticmethod
+    def _copy_with_amount(rows, binding_path, amount):
+        copied = [dict(row) for row in rows]
+        matched = [row for row in copied if row["binding_path"] == binding_path]
+        if len(matched) != 1:
+            raise LongFormPairingError("COMPOUND_AMOUNT_INVALID", "one target amount is required")
+        matched[0]["value"] = amount
+        return copied
+
+    def _load_accounts(self):
+        mapping = pd.read_csv(self.account_mapping_path, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+        mapping["normalized_code"] = mapping["eTax_Account_Code"].map(_long_normalize_account)
+        facts = self.facts_df
+        account_facts = facts[
+            facts["occurrence"].isin(["D", "C"])
+            & facts["source_row"].ne("")
+            & facts["name"].isin(["accountNumber", "accountDescription"])
+            & facts["value"].ne("")
+        ]
+        pivot = account_facts.pivot_table(
+            index=["entry_key", "source_row", "occurrence"], columns="name", values="value",
+            aggfunc="first", fill_value="",
+        ).reset_index()
+        fact_names = {}
+        for row in pivot.itertuples(index=False):
+            code = _long_normalize_account(getattr(row, "accountNumber", ""))
+            if code:
+                fact_names[code] = getattr(row, "accountDescription", "")
+
+        opening = pd.read_csv(self.opening_path, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+        opening_rows = []
+        current = None
+        for row in opening.to_dict("records"):
+            if row["C4"] == "AccountBalance":
+                current = {
+                    "code": _long_normalize_account(row["C5"]), "name": row["C6"],
+                    "normal": row["C7"],
+                }
+            elif row["C4"] == "PeriodBalance" and current:
+                opening_rows.append({**current, "amount": int(Decimal(row["C11"] or "0"))})
+        opening_df = pd.DataFrame(opening_rows)
+        opening_sum = opening_df.groupby("code", as_index=False)["amount"].sum() if not opening_df.empty else pd.DataFrame(columns=["code", "amount"])
+        opening_meta = opening_df.drop_duplicates("code").set_index("code") if not opening_df.empty else pd.DataFrame()
+
+        codes = sorted(set(fact_names) | set(opening_sum.get("code", [])))
+        rows = []
+        for code in codes:
+            candidates = mapping[mapping["normalized_code"] == code]
+            categories = sorted(set(candidates["Category"]) - {""})
+            etax_categories = sorted(set(candidates["eTax_Category"]) - {""})
+            if len(categories) != 1 or len(etax_categories) != 1:
+                raise ValueError(f"account classification unresolved for {code}: {categories}/{etax_categories}")
+            category = categories[0]
+            opening_amount = int(opening_sum.loc[opening_sum["code"] == code, "amount"].sum())
+            opening_name = opening_meta.loc[code, "name"] if not opening_meta.empty and code in opening_meta.index else ""
+            opening_normal = opening_meta.loc[code, "normal"] if not opening_meta.empty and code in opening_meta.index else ""
+            rows.append({
+                "code": code,
+                "name": fact_names.get(code) or opening_name or etax_categories[0],
+                "category": category,
+                "etax_category": etax_categories[0],
+                "normal": opening_normal or ("D" if category in ("資産", "費用") else "C"),
+                "statement": "BS" if category in ("資産", "負債", "純資産") else "PL",
+                "opening": opening_amount,
+            })
+        self.accounts_df = pd.DataFrame(rows).set_index("code", drop=False)
+
+    def _build_journal(self):
+        facts = self.facts_df
+        header_facts = facts[facts["name"].isin(["entryDatePosted", "entryId"]) & facts["value"].ne("")]
+        headers = header_facts.pivot_table(index="entry_key", columns="name", values="value", aggfunc="first", fill_value="").to_dict("index")
+        active = facts[facts["source_row"].ne("") & facts["occurrence"].isin(["D", "C"])]
+        details = {
+            (key, int(source_row)): group.to_dict("records")
+            for (key, source_row), group in active.groupby(["entry_key", "source_row"], sort=False)
+        }
+        pairing = _long_load_module(self.pairing_runtime_path)
+        paired, counts = pairing.materialize(
+            details, None, lambda _: ("D", "C", LONG_D_AMOUNT, LONG_C_AMOUNT),
+            self._decimal_amount, self._copy_with_amount, LongFormPairingError,
+        )
+        self.pairing_counts = counts
+        voucher_order = {}
+        line_count = Counter()
+        rows = []
+        for (entry_key, source_slot), records in paired:
+            header = headers[entry_key]
+            date = header["entryDatePosted"]
+            month = date[:7]
+            if month not in LONG_MONTHS:
+                raise ValueError(f"out-of-period row: {date}")
+            voucher_order.setdefault(entry_key, len(voucher_order) + 1)
+            line_count[entry_key] += 1
+            debit = int(Decimal(self._unique_value(records, "D", "monetaryAmount")))
+            credit = int(Decimal(self._unique_value(records, "C", "monetaryAmount")))
+            if debit != credit:
+                raise ValueError(f"materialized line is not balanced: {entry_key}/{source_slot}")
+            ddesc = self._unique_value(records, "D", "detailDescription")
+            cdesc = self._unique_value(records, "C", "detailDescription")
+            description = ddesc or cdesc
+            if ddesc and cdesc and ddesc != cdesc:
+                description = f"{ddesc} / {cdesc}"
+            rows.append({
+                "JP07a": voucher_order[entry_key], "JP08a": line_count[entry_key], "Month": month,
+                "JP07a_GL03_03": date, "JP07a_GL03_01": header.get("entryId", ""),
+                "JP08a_GL04_03": description,
+                "JP06e_GE24_01": _long_normalize_account(self._unique_value(records, "D", "accountNumber")),
+                "JP06e_GE24_02": self._unique_value(records, "D", "accountDescription"),
+                "Debit_Amount": debit,
+                "JP02j_BS09_01": self._unique_value(records, "D", "taxCategory"),
+                "JP02j_BS09_02": self._unique_value(records, "D", "taxCategory"),
+                "GE05kw_01": self._unique_value(records, "D", "amountOfTaxes") or "0",
+                "JP05a_01": self._unique_value(records, "D", "subaccountId", "auxiliary-account"),
+                "JP05a_02": self._unique_value(records, "D", "subaccountDescription", "auxiliary-account"),
+                "BS04fb_01": self._unique_value(records, "D", "subaccountId", "department"),
+                "BS04fb_02": self._unique_value(records, "D", "subaccountDescription", "department"),
+                "JP06f_GE24_01": _long_normalize_account(self._unique_value(records, "C", "accountNumber")),
+                "JP06f_GE24_02": self._unique_value(records, "C", "accountDescription"),
+                "Credit_Amount": credit,
+                "JP02k_BS09_01": self._unique_value(records, "C", "taxCategory"),
+                "JP02k_BS09_02": self._unique_value(records, "C", "taxCategory"),
+                "GE05kB_01": self._unique_value(records, "C", "amountOfTaxes") or "0",
+                "JP05b_01": self._unique_value(records, "C", "subaccountId", "auxiliary-account"),
+                "JP05b_02": self._unique_value(records, "C", "subaccountDescription", "auxiliary-account"),
+                "BS04fc_01": self._unique_value(records, "C", "subaccountId", "department"),
+                "BS04fc_02": self._unique_value(records, "C", "subaccountDescription", "department"),
+                "_entry_key": entry_key, "_source_slot": source_slot,
+            })
+        self.amount_rows = pd.DataFrame(rows).sort_values(
+            ["JP07a_GL03_03", "JP07a_GL03_01", "JP08a"], kind="stable"
+        ).reset_index(drop=True)
+
+    def _build_ledger_and_trial(self):
+        accounts = self.accounts_df
+        balances = accounts["opening"].astype(int).to_dict()
+        ledger_frames = []
+        trial_frames = []
+        for month in LONG_MONTHS:
+            beginning = dict(balances)
+            movement = pd.DataFrame(0, index=accounts.index, columns=["D", "C"], dtype="int64")
+            ledger_rows = []
+            for code, account in accounts.sort_index().iterrows():
+                ledger_rows.append({
+                    "Ledger_Side": "Opening", "Transaction_Date": f"{month}-01", "Description": "* 月初残高",
+                    "Ledger_Account_Number": code, "Ledger_Account_Name": account["name"],
+                    "Debit_Amount": 0, "Credit_Amount": 0, "Balance": balances[code], "Month": month,
+                })
+            for line in self.amount_rows[self.amount_rows["Month"] == month].to_dict("records"):
+                for side in ("D", "C"):
+                    debit_side = side == "D"
+                    code = str(line["JP06e_GE24_01"] if debit_side else line["JP06f_GE24_01"])
+                    other = str(line["JP06f_GE24_01"] if debit_side else line["JP06e_GE24_01"])
+                    amount = int(line["Debit_Amount"] if debit_side else line["Credit_Amount"])
+                    movement.loc[code, side] += amount
+                    account = accounts.loc[code]
+                    balances[code] += amount if account["normal"] == side else -amount
+                    ledger_rows.append({
+                        "Transaction_ID": line["JP07a"], "Line_ID": line["JP08a"],
+                        "Entry_ID": line["JP07a_GL03_01"], "Ledger_Side": "Debit" if debit_side else "Credit",
+                        "Transaction_Date": line["JP07a_GL03_03"], "Description": line["JP08a_GL04_03"],
+                        "Ledger_Account_Number": code,
+                        "Ledger_Account_Name": line["JP06e_GE24_02"] if debit_side else line["JP06f_GE24_02"],
+                        "Subaccount_Code": line["JP05a_01"] if debit_side else line["JP05b_01"],
+                        "Subaccount_Name": line["JP05a_02"] if debit_side else line["JP05b_02"],
+                        "Department_Code": line["BS04fb_01"] if debit_side else line["BS04fc_01"],
+                        "Department_Name": line["BS04fb_02"] if debit_side else line["BS04fc_02"],
+                        "Debit_Amount": amount if debit_side else 0,
+                        "Credit_Amount": 0 if debit_side else amount,
+                        "Counterpart_Account_Number": other,
+                        "Counterpart_Account_Name": line["JP06f_GE24_02"] if debit_side else line["JP06e_GE24_02"],
+                        "Counterpart_Subaccount_Code": line["JP05b_01"] if debit_side else line["JP05a_01"],
+                        "Counterpart_Subaccount_Name": line["JP05b_02"] if debit_side else line["JP05a_02"],
+                        "Counterpart_Department_Code": line["BS04fc_01"] if debit_side else line["BS04fb_01"],
+                        "Counterpart_Department_Name": line["BS04fc_02"] if debit_side else line["BS04fb_02"],
+                        "Balance": balances[code], "Month": month,
+                    })
+            ledger_frames.append(pd.DataFrame(ledger_rows).reindex(columns=LONG_LEDGER_COLUMNS))
+            trial_rows = []
+            for code, account in accounts.sort_index().iterrows():
+                trial_rows.append({
+                    "Month": month, "Ledger_Account_Number": code, "Ledger_Account_Name": account["name"],
+                    "Beginning_Balance": beginning[code], "Debit_Amount": int(movement.loc[code, "D"]),
+                    "Credit_Amount": int(movement.loc[code, "C"]), "Ending_Balance": balances[code],
+                    "eTax_Category": account["etax_category"],
+                })
+            trial_frames.append(pd.DataFrame(trial_rows).reindex(columns=LONG_TRIAL_COLUMNS))
+        self.general_ledger_df = pd.concat(ledger_frames, ignore_index=True)
+        self.summary_df = pd.concat(trial_frames, ignore_index=True)
+
+    def _build_statements(self):
+        final_trial = self.summary_df[self.summary_df["Month"] == LONG_MONTHS[-1]].set_index("Ledger_Account_Number")
+        totals = self.amount_rows.groupby("JP06e_GE24_01")["Debit_Amount"].sum().to_dict()
+        credit_totals = self.amount_rows.groupby("JP06f_GE24_01")["Credit_Amount"].sum().to_dict()
+        bs_rows, pl_rows = [], []
+        for seq, (code, account) in enumerate(self.accounts_df.sort_index().iterrows(), 1):
+            target = bs_rows if account["statement"] == "BS" else pl_rows
+            target.append({
+                "Ledger_Account_Number": code, "Level": 1, "Type": "A", "Parent": account["statement"],
+                "Category": account["category"], "eTax_Category": account["etax_category"],
+                "eTax_Account_Name": account["name"], "Beginning_Balance": int(account["opening"]),
+                "Total_Debit": int(totals.get(code, 0)), "Total_Credit": int(credit_totals.get(code, 0)),
+                "Ending_Balance": int(final_trial.loc[code, "Ending_Balance"]), "seq": seq,
+            })
+        self.bs_df = pd.DataFrame(bs_rows)
+        self.pl_df = pd.DataFrame(pl_rows)
+
+    def _build_tidy_display(self):
+        facts = self.facts_df.copy()
+        facts["_order"] = range(len(facts))
+        header_facts = facts[facts["name"].isin(["entryDatePosted", "entryId"]) & facts["value"].ne("")]
+        headers = header_facts.pivot_table(index="entry_key", columns="name", values="value", aggfunc="first", fill_value="").to_dict("index")
+        entry_order = list(dict.fromkeys(facts.loc[facts["entry_key"].ne(""), "entry_key"].tolist()))
+        rows = []
+        for voucher_number, entry_key in enumerate(entry_order, 1):
+            header = headers.get(entry_key, {})
+            if not header.get("entryDatePosted"):
+                continue
+            month = header["entryDatePosted"][:7]
+            header_row = {column: "" for column in LONG_TIDY_DISPLAY_COLUMNS}
+            header_row.update({
+                "JP07a": voucher_number, "JP07a_GL03_01": header.get("entryId", ""),
+                "JP07a_GL03_03": header["entryDatePosted"],
+            })
+            rows.append({"_month": month, **header_row})
+            entry_details = facts[(facts["entry_key"] == entry_key) & facts["source_row"].ne("")]
+            source_order = list(dict.fromkeys(entry_details["source_row"].tolist()))
+            for source_row in source_order:
+                records = entry_details[entry_details["source_row"] == source_row].to_dict("records")
+                row = {column: "" for column in LONG_TIDY_DISPLAY_COLUMNS}
+                row.update({"JP07a": voucher_number, "JP08a": source_row})
+                for side in ("D", "C"):
+                    debit_side = side == "D"
+                    prefix = "e" if debit_side else "f"
+                    amount_column = "GE05ku_01" if debit_side else "GE05kz_01"
+                    tax_amount_column = "GE05kw_01" if debit_side else "GE05kB_01"
+                    tax_code_column = "JP02j_BS09_01" if debit_side else "JP02k_BS09_01"
+                    tax_name_column = "JP02j_BS09_02" if debit_side else "JP02k_BS09_02"
+                    sub_prefix = "JP05a" if debit_side else "JP05b"
+                    department_prefix = "BS04fb" if debit_side else "BS04fc"
+                    account = self._unique_value(records, side, "accountNumber")
+                    if not account:
+                        continue
+                    auxiliary_id = self._unique_value(records, side, "subaccountId", "auxiliary-account") or self._unique_value(records, side, "subaccountId", "account-subaccount")
+                    auxiliary_name = self._unique_value(records, side, "subaccountDescription", "auxiliary-account") or self._unique_value(records, side, "subaccountDescription", "account-subaccount")
+                    department_id = self._unique_value(records, side, "subaccountId", "department")
+                    department_name = self._unique_value(records, side, "subaccountDescription", "department")
+                    tax = self._unique_value(records, side, "taxCategory")
+                    row.update({
+                        f"JP06{prefix}_GE24_01": _long_normalize_account(account),
+                        f"JP06{prefix}_GE24_02": self._unique_value(records, side, "accountDescription"),
+                        amount_column: self._unique_value(records, side, "monetaryAmount"),
+                        tax_amount_column: self._unique_value(records, side, "amountOfTaxes"),
+                        tax_code_column: tax, tax_name_column: tax,
+                        f"{sub_prefix}_01": auxiliary_id, f"{sub_prefix}_02": auxiliary_name,
+                        f"{sub_prefix}_03": "補助科目" if auxiliary_id else "",
+                        sub_prefix: "1" if auxiliary_id else "",
+                        f"{department_prefix}_01": department_id, f"{department_prefix}_02": department_name,
+                        f"{department_prefix}_03": "部門" if department_id else "",
+                        department_prefix: "1" if department_id else "",
+                    })
+                row["JP08a_GL04_03"] = self._unique_value(records, "D", "detailDescription") or self._unique_value(records, "C", "detailDescription")
+                rows.append({"_month": month, **row})
+        self.tidy_display_df = pd.DataFrame(rows).reindex(columns=["_month", *LONG_TIDY_DISPLAY_COLUMNS])
+
+    def csv2dataframe(self, _parameter_path=None, root=None, gui=None):
+        self.facts_df = pd.read_csv(self.file_path, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+        if list(self.facts_df.columns) != LONG_FORM_COLUMNS:
+            raise ValueError(f"long-form columns mismatch: {list(self.facts_df.columns)}")
+        self._load_accounts()
+        self._build_journal()
+        self._build_ledger_and_trial()
+        self._build_statements()
+        self._build_tidy_display()
+
+    def export_long_form_web_csv(self, out_dir):
+        root = os.path.abspath(out_dir)
+        ja = os.path.join(root, self.lang)
+        source = os.path.join(ja, "source")
+        os.makedirs(source, exist_ok=True)
+        with open(os.path.join(root, ".gitattributes"), "w", encoding="utf-8", newline="\n") as handle:
+            handle.write(f"{self.lang}/source/structured.csv -text\n")
+        shutil.copyfile(self.file_path, os.path.join(source, "structured.csv"))
+        shutil.copyfile(self.opening_path, os.path.join(source, "opening.csv"))
+        account_rows = self.accounts_df.reset_index(drop=True).rename(columns={
+            "code": "Account_Code", "name": "Account_Name", "category": "Category",
+            "etax_category": "eTax_Category",
+        })
+        account_rows["eTax_Account_Code"] = account_rows["Account_Code"]
+        account_rows["eTax_Account_Name"] = account_rows["Account_Name"]
+        _long_write_frame(
+            os.path.join(source, "account_list.csv"), account_rows,
+            ["Account_Code", "Account_Name", "Category", "eTax_Account_Code", "eTax_Account_Name", "eTax_Category"],
+        )
+        beginning = account_rows[["Account_Code", "Account_Name"]].copy()
+        beginning["Beginning_Balance"] = self.accounts_df.reset_index(drop=True)["opening"].astype(int)
+        _long_write_frame(os.path.join(source, "beginning_balance.csv"), beginning)
+
+        paths = defaultdict(dict)
+        for month in LONG_MONTHS:
+            tidy = self.tidy_display_df[self.tidy_display_df["_month"] == month].drop(columns="_month")
+            journal = self.amount_rows[self.amount_rows["Month"] == month].drop(columns=["_entry_key", "_source_slot"])
+            ledger = self.general_ledger_df[self.general_ledger_df["Month"] == month]
+            trial = self.summary_df[self.summary_df["Month"] == month]
+            for view, frame, columns in (
+                ("tidy", tidy, LONG_TIDY_DISPLAY_COLUMNS),
+                ("journal", journal, LONG_JOURNAL_COLUMNS),
+                ("ledger", ledger, LONG_LEDGER_COLUMNS),
+                ("trial_balance", trial, LONG_TRIAL_COLUMNS),
+            ):
+                path = os.path.join(ja, view, f"{month}.csv")
+                _long_write_frame(path, frame, columns)
+                paths[view][month] = path
+        all_frames = {
+            "tidy": self.tidy_display_df.drop(columns="_month"),
+            "journal": self.amount_rows.drop(columns=["_entry_key", "_source_slot"]),
+            "ledger": self.general_ledger_df,
+            "trial_balance": self.summary_df,
+        }
+        for view, frame in all_frames.items():
+            path = os.path.join(ja, view, "ALL.csv")
+            columns = {
+                "tidy": LONG_TIDY_DISPLAY_COLUMNS, "journal": LONG_JOURNAL_COLUMNS,
+                "ledger": LONG_LEDGER_COLUMNS, "trial_balance": LONG_TRIAL_COLUMNS,
+            }[view]
+            _long_write_frame(path, frame, columns)
+            paths[view]["ALL"] = path
+        bs_path = os.path.join(ja, "balance_sheet", "ALL.csv")
+        pl_path = os.path.join(ja, "pnl", "ALL.csv")
+        _long_write_records(bs_path, self.bs_df.to_dict("records"), LONG_STATEMENT_COLUMNS)
+        _long_write_records(pl_path, self.pl_df.to_dict("records"), LONG_STATEMENT_COLUMNS)
+        paths["balance_sheet"]["ALL"] = bs_path
+        paths["pnl"]["ALL"] = pl_path
+
+        def view(name):
+            return {
+                "by": "month", "path": f"{name}/{{month}}.csv", "fallback": f"{name}/ALL.csv",
+                "available": LONG_MONTHS,
+            }
+        index = {
+            "dataset_id": self.dataset_id, "generated_at": self.generated_at, "lang": self.lang,
+            "months": LONG_MONTHS,
+            "views": {
+                "tidy": view("tidy"), "journal": view("journal"), "ledger": view("ledger"),
+                "trial_balance": view("trial_balance"),
+                "balance_sheet": {"by": "month", "path": "balance_sheet/{month}.csv", "fallback": "balance_sheet/ALL.csv", "available": ["ALL"]},
+                "pnl": {"by": "month", "path": "pnl/{month}.csv", "fallback": "pnl/ALL.csv", "available": ["ALL"]},
+            },
+        }
+        index_path = os.path.join(root, "index.json")
+        with open(index_path, "w", encoding="utf-8", newline="\n") as handle:
+            json.dump(index, handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
+        paths["index"] = index_path
+        paths["output_root"] = root
+        return dict(paths)
+
+
 if __name__ == "__main__":
     PARSER = True
     NO_GUI = None
@@ -4569,7 +5084,12 @@ if __name__ == "__main__":
 log_tracker = LogTracker()
 
 # ---- 1) Load + process data ONCE (usable for export and/or GUI) ----
-tidy_data = TidyData()
+with open(param_file_path, encoding="utf-8") as _parameter_handle:
+    _parameter_preview = json.load(_parameter_handle)
+if _parameter_preview.get("input_profile") == "uadc-long-form-v1":
+    tidy_data = LongFormTidyData(param_file_path)
+else:
+    tidy_data = TidyData()
 tidy_data.csv2dataframe(param_file_path)
 
 # ---- 2) Export mode (optional) ----

@@ -72,14 +72,21 @@ async function initDatasetAndPaths() {
     DATASET = qDataset;
   }
 
-  // Candidate data roots (in priority order)
-  const candidates = [
-    { root: `./data/${DATASET}`,  index: `./data/${DATASET}/index.json`  },
+  // Candidate data roots (in priority order). In a source checkout the app is
+  // served from /web/ and data is its sibling, while deployed builds may place
+  // the web assets at the site root.
+  const nestedWebPath = location.pathname.includes("/web/");
+  const siblingCandidates = [
     { root: `../data/${DATASET}`, index: `../data/${DATASET}/index.json` },
-    // legacy / alternate layouts
-    { root: `./data`,  index: `./data/index.json`  },
     { root: `../data`, index: `../data/index.json` },
   ];
+  const rootCandidates = [
+    { root: `./data/${DATASET}`, index: `./data/${DATASET}/index.json` },
+    { root: `./data`, index: `./data/index.json` },
+  ];
+  const candidates = nestedWebPath
+    ? [...siblingCandidates, ...rootCandidates]
+    : [...rootCandidates, ...siblingCandidates];
 
   DATA_ROOT = null;
   INDEX_URL = null;
@@ -584,6 +591,7 @@ const wrapEl = document.getElementById("tableWrap");
 const monthSel = document.getElementById("monthSelect");
 const asOfSel = document.getElementById("asOfSelect");
 const acctSel = document.getElementById("accountSelect");
+const acctFilterInput = document.getElementById("accountFilterInput");
 const searchInput = document.getElementById("searchInput");
 const langSel = document.getElementById("langSelect");
 const fileInput = document.getElementById("fileInput");
@@ -743,6 +751,42 @@ function buildOptions(selectEl, values, { includeAll = true, allLabel = "（全�
   }
 }
 
+let accountOptionSource = [];
+let accountOptionAllLabel = "（全科目）";
+
+function normaliseAccountFilter(value) {
+  return String(value ?? "").normalize("NFKC").toLocaleLowerCase();
+}
+
+function applyAccountOptionFilter(preferredValue = acctSel.value) {
+  const query = normaliseAccountFilter(acctFilterInput?.value).trim();
+  const filtered = accountOptionSource.filter(option => {
+    if (option.value === preferredValue) return true;
+    if (!query) return true;
+    return normaliseAccountFilter(option.value).includes(query)
+      || normaliseAccountFilter(option.label).includes(query);
+  });
+
+  buildOptions(acctSel, filtered, { includeAll: true, allLabel: accountOptionAllLabel });
+  if (preferredValue && filtered.some(option => option.value === preferredValue)) {
+    acctSel.value = preferredValue;
+  }
+}
+
+function setAccountOptions(values, allLabel) {
+  accountOptionSource = values.map(value => {
+    if (value && typeof value === "object") {
+      return {
+        value: String(value.value ?? ""),
+        label: String(value.label ?? value.value ?? ""),
+      };
+    }
+    return { value: String(value ?? ""), label: String(value ?? "") };
+  });
+  accountOptionAllLabel = allLabel;
+  applyAccountOptionFilter();
+}
+
 function detectColumnIndex(header, candidates) {
   const lower = header.map(h => String(h).trim().toLowerCase());
   for (const c of candidates) {
@@ -847,13 +891,13 @@ function extractAccountOptions(rows, codeIdx, nameIdx, limit = 200000) {
     out.push({ value: code, label: name || code });
   }
 
-  // Sort by label then code
+  // Sort by National Tax Agency account code, then label.
   out.sort((a, b) => {
-    const la = String(a.label || "");
-    const lb = String(b.label || "");
-    const c1 = la.localeCompare(lb);
+    const ca = String(a.value || "");
+    const cb = String(b.value || "");
+    const c1 = ca.localeCompare(cb);
     if (c1 !== 0) return c1;
-    return String(a.value).localeCompare(String(b.value));
+    return String(a.label || "").localeCompare(String(b.label || ""));
   });
 
   return out;
@@ -2143,10 +2187,7 @@ async function refreshPartnerReport(month) {
   const previous = acctSel.value;
   const rows = await buildPartnerReport(currentView, month);
   const options = rows.map(row => ({ value: row.code, label: row.name }));
-  buildOptions(acctSel, options, {
-    includeAll: true,
-    allLabel: currentLang === "en" ? "(All partners)" : "（全取引先）",
-  });
+  setAccountOptions(options, currentLang === "en" ? "(All partners)" : "（全取引先）");
   if (previous && options.some(option => option.value === previous)) acctSel.value = previous;
   renderPartnerReport(rows, currentView, month);
   setStatus("");
@@ -2803,6 +2844,14 @@ function initNav() {
 
 function renderModeSwitch() {
   if (!modeSwitchEl) return;
+  const documentsAvailable = Boolean(INDEX?.views?.documents);
+  modeSwitchEl.hidden = !documentsAvailable;
+  if (modeNavSeparatorEl) modeNavSeparatorEl.hidden = !documentsAvailable;
+  if (!documentsAvailable) {
+    modeSwitchEl.innerHTML = "";
+    renderDocumentTypeNav();
+    return;
+  }
   const accountingLabel = isDocumentView()
     ? (currentLang === "en" ? "Back to accounting" : "会計帳簿へ戻る")
     : (currentLang === "en" ? "Accounting ledgers" : "会計帳簿");
@@ -2878,10 +2927,12 @@ function updateStatementNavAvailability() {
 function updateViewControls() {
   const partnerView = isPartnerReportView();
   const documentView = isDocumentView();
+  const journalView = currentView === "journal";
   const allAccountsOnly = currentView === "trial_balance" || currentView === "balance_sheet" || currentView === "pnl";
   const annualReportView = currentView === "balance_sheet" || currentView === "pnl";
   const searchableView = currentView === "tidy" || currentView === "journal";
-  if (allAccountsOnly) acctSel.value = "";
+  if (allAccountsOnly || journalView) acctSel.value = "";
+  if (journalView && acctFilterInput) acctFilterInput.value = "";
   if (!searchableView) searchInput.value = "";
   if (searchLabelEl) searchLabelEl.hidden = !searchableView;
   if (monthSel) {
@@ -2889,7 +2940,7 @@ function updateViewControls() {
     const monthLabel = monthSel.closest("label");
     if (monthLabel) monthLabel.hidden = annualReportView;
   }
-  if (asOfLabelEl) asOfLabelEl.hidden = annualReportView;
+  if (asOfLabelEl) asOfLabelEl.hidden = !INDEX?.views?.documents || annualReportView;
   if (monthLabelTextEl) {
     if (annualReportView) {
       const firstMonth = (INDEX?.months || []).find(value => /^\d{4}-\d{2}$/.test(String(value)));
@@ -2902,17 +2953,23 @@ function updateViewControls() {
     }
   }
   if (accountLabelEl) {
-    accountLabelEl.hidden = allAccountsOnly || documentView;
+    accountLabelEl.hidden = allAccountsOnly || documentView || journalView;
     accountLabelEl.firstChild.textContent = partnerView
       ? (currentLang === "en" ? "Partner " : "取引先 ")
       : (currentLang === "en" ? "Account " : "科目 ");
+  }
+  if (acctFilterInput) {
+    acctFilterInput.placeholder = partnerView
+      ? (currentLang === "en" ? "Filter by partner name or code" : "取引先名・コードで絞り込み")
+      : (currentLang === "en" ? "Filter by account name or code" : "科目名・コードで絞り込み");
+    acctFilterInput.setAttribute("aria-label", acctFilterInput.placeholder);
   }
   if (toggleCodeColsBtn) toggleCodeColsBtn.hidden = partnerView || documentView;
   if (columnToggleGroupEl) columnToggleGroupEl.hidden = partnerView || documentView;
   if (navEl) navEl.hidden = documentView;
   if (aboutLinkEl?.closest("button")) aboutLinkEl.closest("button").hidden = documentView;
   if (aboutSeparatorEl) aboutSeparatorEl.hidden = documentView;
-  if (modeNavSeparatorEl) modeNavSeparatorEl.hidden = false;
+  if (modeNavSeparatorEl) modeNavSeparatorEl.hidden = !INDEX?.views?.documents;
   renderDocumentTypeNav();
 }
 
@@ -2928,7 +2985,7 @@ function initMonthSelect(months) {
 function setAsOfMonthOptions(preferredValue = "") {
   if (!asOfSel) return;
   const targetMonth = monthSel.value || (INDEX?.months?.[0] ?? "2021-04");
-  const options = businessDocumentMonthRange(targetMonth);
+  const options = (INDEX?.months || []).filter(value => /^\d{4}-\d{2}$/.test(String(value)));
   buildOptions(asOfSel, options, { includeAll: false });
   asOfSel.value = options.includes(preferredValue) ? preferredValue : targetMonth;
   updateStatementNavAvailability();
@@ -2946,10 +3003,14 @@ function initAsOfSelect(initialValue = "") {
 }
 
 function initAccountSelect() {
-  buildOptions(acctSel, [], { includeAll: true, allLabel: currentLang === "en" ? "(All accounts)" : "（全科目）" });
+  setAccountOptions([], currentLang === "en" ? "(All accounts)" : "（全科目）");
 
   acctSel.addEventListener("change", async () => {
     await refresh({ skipReloadCsv: true });
+  });
+
+  acctFilterInput?.addEventListener("input", () => {
+    applyAccountOptionFilter();
   });
 }
 
@@ -3030,9 +3091,9 @@ function initUpload() {
       } else {
         options = extractUniqueColumnValues(rows, acctIdx).map(v => ({ value: v, label: v }));
       }
-      buildOptions(acctSel, options, { includeAll: true, allLabel: currentLang === "en" ? "(All accounts)" : "（全科目）" });
+      setAccountOptions(options, currentLang === "en" ? "(All accounts)" : "（全科目）");
     } else {
-      buildOptions(acctSel, [], { includeAll: true, allLabel: currentLang === "en" ? "(No account)" : "（科目なし）" });
+      setAccountOptions([], currentLang === "en" ? "(No account)" : "（科目なし）");
       acctSel.value = "";
     }
 
@@ -3072,7 +3133,7 @@ async function refresh(opts = {}) {
   const asOfMonth = currentAsOfMonth() || month;
   const searchableView = currentView === "tidy" || currentView === "journal";
   const q = searchableView ? String(searchInput.value || "").trim() : "";
-  const acct = isDocumentView() ? "" : (acctSel.value || "");
+  const acct = isDocumentView() || currentView === "journal" ? "" : (acctSel.value || "");
 
   updateUrlQuery({
     view: currentView,
@@ -3155,7 +3216,7 @@ async function refresh(opts = {}) {
             options = extractUniqueColumnValues(lastLoadedRows, acctIdx).map(v => ({ value: v, label: v }));
           }
 
-          buildOptions(acctSel, options, { includeAll: true, allLabel: currentLang === "en" ? "(All accounts)" : "（全科目）" });
+          setAccountOptions(options, currentLang === "en" ? "(All accounts)" : "（全科目）");
 
           const preferredValue = currentView === "trial_balance"
             ? ""
@@ -3165,7 +3226,7 @@ async function refresh(opts = {}) {
           initialAccountFromUrl = "";
           updateUrlQuery({ account: acctSel.value || null });
         } else {
-          buildOptions(acctSel, [], { includeAll: true, allLabel: currentLang === "en" ? "(No account)" : "（科目なし）" });
+          setAccountOptions([], currentLang === "en" ? "(No account)" : "（科目なし）");
           acctSel.value = "";
         }
       }
@@ -3229,10 +3290,6 @@ async function main() {
       available: Array.isArray(INDEX.months) ? INDEX.months : []
     };
   }
-  INDEX.views.receivables = { virtual: true, source: "ledger" };
-  INDEX.views.payables = { virtual: true, source: "ledger" };
-  INDEX.views.documents = { virtual: true, source: "business_document" };
-
   // restore state from URL if any
   const url = new URL(location.href);
   const qView = url.searchParams.get("view");
