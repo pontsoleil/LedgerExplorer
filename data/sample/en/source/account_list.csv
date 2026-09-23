@@ -1,0 +1,70 @@
+Account_Code,Account_Name,Category,eTax_Account_Code,eTax_Account_Name,eTax_Category
+10A100020,Ordinary Deposits,Assets,10A100020,Ordinary Deposits,Current Assets
+10A100040,Allowance for Doubtful Accounts,Assets,10A100040,Allowance for Doubtful Accounts,Current Assets
+10A100060,Notes Receivable,Assets,10A100060,Notes Receivable,Current Assets
+10A100090,Accounts Receivable,Assets,10A100090,Accounts Receivable,Current Assets
+10A100200,Electronically Recorded Monetary Claims,Assets,10A100200,Electronically Recorded Monetary Claims,Current Assets
+10A100230,Securities,Assets,10A100230,Securities,Current Assets
+10A100280,Merchandise,Assets,10A100280,Merchandise,Current Assets
+10A100610,Short-term Loans Receivable,Assets,10A100610,Short-term Loans Receivable,Current Assets
+10A100800,Guarantee Deposits,Assets,10A100800,Guarantee Deposits,Current Assets
+10A100850,Temporary Consumption Tax Paid,Assets,10A100850,Temporary Consumption Tax Paid,Current Assets
+10A210130,Structures,Assets,10A210130,Structures,Tangible Fixed Assets
+10A210410,"Tools, Furniture and Fixtures",Assets,10A210410,"Tools, Furniture and Fixtures",Tangible Fixed Assets
+10A220190,Telephone Subscription Rights,Assets,10A220190,Telephone Subscription Rights,Intangible Fixed Assets
+10A230570,Insurance Reserve Deposits,Assets,10A230570,Insurance Reserve Deposits,Investments and Other Assets
+10A230650,Security Deposits,Assets,10A230650,Security Deposits,Investments and Other Assets
+10B100030,Notes Payable,Liabilities,10B100030,Notes Payable,Current Liabilities
+10B100040,Accounts Payable,Liabilities,10B100040,Accounts Payable,Current Liabilities
+10B100320,Provision for Bonuses,Liabilities,10B100320,Provision for Bonuses,Current Liabilities
+10B100630,Accounts Payable Other,Liabilities,10B100630,Accounts Payable Other,Current Liabilities
+10B100640,Accrued Corporate Taxes,Liabilities,10B100640,Accrued Corporate Taxes,Current Liabilities
+10B100660,Accrued Consumption Taxes,Liabilities,10B100660,Accrued Consumption Taxes,Current Liabilities
+10B100670,Accrued Enterprise Taxes,Liabilities,10B100670,Accrued Enterprise Taxes,Current Liabilities
+10B100690,Deposits Received,Liabilities,10B100690,Deposits Received,Current Liabilities
+10B100790,Short-term Borrowings,Liabilities,10B100790,Short-term Borrowings,Current Liabilities
+10B100890,Temporary Consumption Tax Received,Liabilities,10B100890,Temporary Consumption Tax Received,Current Liabilities
+10B200080,Long-term Borrowings,Liabilities,10B200080,Long-term Borrowings,Non-current Liabilities
+10B200120,Provision for Retirement Benefits,Liabilities,10B200120,Provision for Retirement Benefits,Non-current Liabilities
+10B200130,Provision for Directors' Retirement Benefits,Liabilities,10B200130,Provision for Directors' Retirement Benefits,Non-current Liabilities
+10C110010,Capital Stock,Net Assets,10C110010,Capital Stock,Capital Stock
+10C120020,Capital Reserve,Net Assets,10C120020,Capital Reserve,Capital Surplus
+10C130020,Legal Retained Earnings,Net Assets,10C130020,Legal Retained Earnings,Retained Earnings
+10C130360,General Reserve,Net Assets,10C130360,General Reserve,Retained Earnings
+10C130370,Retained Earnings Brought Forward,Net Assets,10C130370,Retained Earnings Brought Forward,Retained Earnings
+10D100100,Gross Sales,Revenue,10D100100,Gross Sales,Net Sales
+10D100110,Sales Discounts and Returns,Expenses,10D100110,Sales Discounts and Returns,Net Sales
+10E100100,Beginning Merchandise Inventory,Expenses,10E100100,Beginning Merchandise Inventory,Cost of Sales
+10E100120,Purchase Discounts and Returns,Revenue,10E100120,Purchase Discounts and Returns,Cost of Sales
+10E100130,Merchandise Purchases,Expenses,10E100130,Merchandise Purchases,Cost of Sales
+10E100140,Ending Merchandise Inventory,Expenses,10E100140,Ending Merchandise Inventory,Cost of Sales
+10E200020,Sales Commissions,Expenses,10E200020,Sales Commissions,"Selling, General and Administrative Expenses"
+10E200050,Advertising Expenses,Expenses,10E200050,Advertising Expenses,"Selling, General and Administrative Expenses"
+10E200090,Directors' Compensation,Expenses,10E200090,Directors' Compensation,"Selling, General and Administrative Expenses"
+10E200130,Bonuses,Expenses,10E200130,Bonuses,"Selling, General and Administrative Expenses"
+10E200140,Employee Welfare Expenses,Expenses,10E200140,Employee Welfare Expenses,"Selling, General and Administrative Expenses"
+10E200150,Entertainment Expenses,Expenses,10E200150,Entertainment Expenses,"Selling, General and Administrative Expenses"
+10E200180,Communication Expenses,Expenses,10E200180,Communication Expenses,"Selling, General and Administrative Expenses"
+10E200200,Supplies Expenses,Expenses,10E200200,Supplies Expenses,"Selling, General and Administrative Expenses"
+10E200210,Taxes and Dues,Expenses,10E200210,Taxes and Dues,"Selling, General and Administrative Expenses"
+10E200220,Depreciation Expenses,Expenses,10E200220,Depreciation Expenses,"Selling, General and Administrative Expenses"
+10E200240,Insurance Expenses,Expenses,10E200240,Insurance Expenses,"Selling, General and Administrative Expenses"
+10E200370,Salaries and Allowances,Expenses,10E200370,Salaries and Allowances,"Selling, General and Administrative Expenses"
+10E200520,Temporary Wages,Expenses,10E200520,Temporary Wages,"Selling, General and Administrative Expenses"
+10E200540,Statutory Welfare Expenses,Expenses,10E200540,Statutory Welfare Expenses,"Selling, General and Administrative Expenses"
+10E200600,Professional Fees,Expenses,10E200600,Professional Fees,"Selling, General and Administrative Expenses"
+10E200690,Service Fees,Expenses,10E200690,Service Fees,"Selling, General and Administrative Expenses"
+10E200720,Rent Expenses,Expenses,10E200720,Rent Expenses,"Selling, General and Administrative Expenses"
+10E200730,Land and Building Rent,Expenses,10E200730,Land and Building Rent,"Selling, General and Administrative Expenses"
+10E200870,Freight Expenses,Expenses,10E200870,Freight Expenses,"Selling, General and Administrative Expenses"
+10E201000,Repairs and Maintenance,Expenses,10E201000,Repairs and Maintenance,"Selling, General and Administrative Expenses"
+10E201040,Utilities Expenses,Expenses,10E201040,Utilities Expenses,"Selling, General and Administrative Expenses"
+10E201110,Office Supplies Expenses,Expenses,10E201110,Office Supplies Expenses,"Selling, General and Administrative Expenses"
+10E201120,Vehicle Expenses,Expenses,10E201120,Vehicle Expenses,"Selling, General and Administrative Expenses"
+10E201130,Meeting Expenses,Expenses,10E201130,Meeting Expenses,"Selling, General and Administrative Expenses"
+10E201140,Membership Fees,Expenses,10E201140,Membership Fees,"Selling, General and Administrative Expenses"
+10E201160,Books and Publications,Expenses,10E201160,Books and Publications,"Selling, General and Administrative Expenses"
+10E201230,Travel and Transportation Expenses,Expenses,10E201230,Travel and Transportation Expenses,"Selling, General and Administrative Expenses"
+10E201270,Miscellaneous Expenses,Expenses,10E201270,Miscellaneous Expenses,"Selling, General and Administrative Expenses"
+10E300020,Interest Expense,Expenses,10E300020,Interest Expense,Non-operating Expenses
+10F100070,"Corporate, Inhabitant and Enterprise Taxes",Expenses,10F100070,"Corporate, Inhabitant and Enterprise Taxes",Other

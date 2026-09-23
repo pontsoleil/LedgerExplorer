@@ -1,0 +1,37 @@
+Ledger_Account_Number,Level,Type,Ledger_Account_Number,Parent,Category,eTax_Category,eTax_Account_Name,Beginning_Balance,Total_Debit,Total_Credit,Ending_Balance,seq
+10D100100,1,A,10D100100,PL,Revenue,Net Sales,Gross Sales,0,0,852595939,852595939,34
+10D100110,1,A,10D100110,PL,Expenses,Net Sales,Sales Discounts and Returns,0,1267444,0,1267444,35
+10E100100,1,A,10E100100,PL,Expenses,Cost of Sales,Beginning Merchandise Inventory,0,63013226,0,63013226,36
+10E100120,1,A,10E100120,PL,Revenue,Cost of Sales,Purchase Discounts and Returns,0,0,776423,776423,37
+10E100130,1,A,10E100130,PL,Expenses,Cost of Sales,Merchandise Purchases,0,513384447,0,513384447,38
+10E100140,1,A,10E100140,PL,Expenses,Cost of Sales,Ending Merchandise Inventory,0,0,63025546,-63025546,39
+10E200020,1,A,10E200020,PL,Expenses,"Selling, General and Administrative Expenses",Sales Commissions,0,27081267,0,27081267,40
+10E200050,1,A,10E200050,PL,Expenses,"Selling, General and Administrative Expenses",Advertising Expenses,0,2178700,0,2178700,41
+10E200090,1,A,10E200090,PL,Expenses,"Selling, General and Administrative Expenses",Directors' Compensation,0,20640000,0,20640000,42
+10E200130,1,A,10E200130,PL,Expenses,"Selling, General and Administrative Expenses",Bonuses,0,11082000,0,11082000,43
+10E200140,1,A,10E200140,PL,Expenses,"Selling, General and Administrative Expenses",Employee Welfare Expenses,0,5585786,0,5585786,44
+10E200150,1,A,10E200150,PL,Expenses,"Selling, General and Administrative Expenses",Entertainment Expenses,0,4258344,0,4258344,45
+10E200180,1,A,10E200180,PL,Expenses,"Selling, General and Administrative Expenses",Communication Expenses,0,13260677,0,13260677,46
+10E200200,1,A,10E200200,PL,Expenses,"Selling, General and Administrative Expenses",Supplies Expenses,0,6735986,3367993,3367993,47
+10E200210,1,A,10E200210,PL,Expenses,"Selling, General and Administrative Expenses",Taxes and Dues,0,13823343,0,13823343,48
+10E200220,1,A,10E200220,PL,Expenses,"Selling, General and Administrative Expenses",Depreciation Expenses,0,1119962,0,1119962,49
+10E200240,1,A,10E200240,PL,Expenses,"Selling, General and Administrative Expenses",Insurance Expenses,0,3825840,0,3825840,50
+10E200370,1,A,10E200370,PL,Expenses,"Selling, General and Administrative Expenses",Salaries and Allowances,0,62235612,0,62235612,51
+10E200520,1,A,10E200520,PL,Expenses,"Selling, General and Administrative Expenses",Temporary Wages,0,4582962,0,4582962,52
+10E200540,1,A,10E200540,PL,Expenses,"Selling, General and Administrative Expenses",Statutory Welfare Expenses,0,11174629,0,11174629,53
+10E200600,1,A,10E200600,PL,Expenses,"Selling, General and Administrative Expenses",Professional Fees,0,1676520,0,1676520,54
+10E200690,1,A,10E200690,PL,Expenses,"Selling, General and Administrative Expenses",Service Fees,0,143993,0,143993,55
+10E200720,1,A,10E200720,PL,Expenses,"Selling, General and Administrative Expenses",Rent Expenses,0,41358000,0,41358000,56
+10E200730,1,A,10E200730,PL,Expenses,"Selling, General and Administrative Expenses",Land and Building Rent,0,3526200,0,3526200,57
+10E200870,1,A,10E200870,PL,Expenses,"Selling, General and Administrative Expenses",Freight Expenses,0,51396860,0,51396860,58
+10E201000,1,A,10E201000,PL,Expenses,"Selling, General and Administrative Expenses",Repairs and Maintenance,0,337350,0,337350,59
+10E201040,1,A,10E201040,PL,Expenses,"Selling, General and Administrative Expenses",Utilities Expenses,0,7070997,0,7070997,60
+10E201110,1,A,10E201110,PL,Expenses,"Selling, General and Administrative Expenses",Office Supplies Expenses,0,1528632,0,1528632,61
+10E201120,1,A,10E201120,PL,Expenses,"Selling, General and Administrative Expenses",Vehicle Expenses,0,7546928,0,7546928,62
+10E201130,1,A,10E201130,PL,Expenses,"Selling, General and Administrative Expenses",Meeting Expenses,0,330419,0,330419,63
+10E201140,1,A,10E201140,PL,Expenses,"Selling, General and Administrative Expenses",Membership Fees,0,1392000,0,1392000,64
+10E201160,1,A,10E201160,PL,Expenses,"Selling, General and Administrative Expenses",Books and Publications,0,299784,0,299784,65
+10E201230,1,A,10E201230,PL,Expenses,"Selling, General and Administrative Expenses",Travel and Transportation Expenses,0,12971976,0,12971976,66
+10E201270,1,A,10E201270,PL,Expenses,"Selling, General and Administrative Expenses",Miscellaneous Expenses,0,5746663,0,5746663,67
+10E300020,1,A,10E300020,PL,Expenses,Non-operating Expenses,Interest Expense,0,2508778,0,2508778,68
+10F100070,1,A,10F100070,PL,Expenses,Other,"Corporate, Inhabitant and Enterprise Taxes",0,5004173,0,5004173,69

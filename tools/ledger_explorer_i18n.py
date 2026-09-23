@@ -4641,6 +4641,91 @@ def _long_load_module(path):
     return module
 
 
+class AcceptedJapaneseDisplayTranslator:
+    """Translate accepted Japanese display CSVs without recalculating accounting data."""
+
+    PROFILE = "accepted-ja-display-translation-v1"
+    MONTHS = [
+        "2021-04", "2021-05", "2021-06", "2021-07", "2021-08", "2021-09",
+        "2021-10", "2021-11", "2021-12", "2022-01", "2022-02", "2022-03",
+    ]
+    MONTHLY_VIEWS = ("tidy", "journal", "ledger", "trial_balance", "pnl")
+    ALL_ONLY_VIEWS = ("balance_sheet",)
+    SOURCE_FILES = ("account_list.csv", "beginning_balance.csv")
+
+    def __init__(self, parameter_path):
+        self.parameter_path = os.path.abspath(parameter_path)
+        with open(self.parameter_path, encoding="utf-8") as handle:
+            self.params = json.load(handle)
+        base = os.path.dirname(self.parameter_path)
+        self.ja_root = os.path.abspath(os.path.join(base, self.params["accepted_ja_root"]))
+        self.translation_path = os.path.abspath(os.path.join(base, self.params["translation_map"]))
+        self.lang = "en"
+        self.mapping = None
+
+    @staticmethod
+    def _read(path):
+        with open(path, encoding="utf-8-sig", newline="") as handle:
+            reader = csv.DictReader(handle)
+            return list(reader.fieldnames or []), list(reader)
+
+    @staticmethod
+    def _write(path, fieldnames, rows):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
+            writer.writeheader()
+            writer.writerows(rows)
+
+    def _files(self):
+        files = []
+        for view in self.MONTHLY_VIEWS:
+            files.extend((view, f"{month}.csv") for month in self.MONTHS)
+            files.append((view, "ALL.csv"))
+        for view in self.ALL_ONLY_VIEWS:
+            files.append((view, "ALL.csv"))
+        files.extend(("source", name) for name in self.SOURCE_FILES)
+        return files
+
+    def csv2dataframe(self, _parameter_path=None, root=None, gui=None):
+        with open(self.translation_path, encoding="utf-8") as handle:
+            self.mapping = json.load(handle)
+        missing = []
+        for view, name in self._files():
+            source = os.path.join(self.ja_root, view, name)
+            if not os.path.isfile(source):
+                missing.append(source)
+                continue
+            fields, rows = self._read(source)
+            for column, translations in self.mapping.get(view, {}).items():
+                if column not in fields:
+                    continue
+                for row_number, row in enumerate(rows, 2):
+                    value = row[column]
+                    if value and value not in translations:
+                        missing.append(f"{source}:{row_number}:{column}:{value}")
+        if missing:
+            raise ValueError("Missing accepted Japanese input or translation: " + " | ".join(missing[:20]))
+
+    def export_long_form_web_csv(self, out_dir):
+        if self.mapping is None:
+            raise RuntimeError("csv2dataframe must be called before export")
+        en_root = os.path.join(os.path.abspath(out_dir), "en")
+        paths = defaultdict(dict)
+        for view, name in self._files():
+            source = os.path.join(self.ja_root, view, name)
+            target = os.path.join(en_root, view, name)
+            fields, rows = self._read(source)
+            for row in rows:
+                for column, translations in self.mapping.get(view, {}).items():
+                    if column in row and row[column]:
+                        row[column] = translations[row[column]]
+            self._write(target, fields, rows)
+            paths[view][name[:-4]] = target
+        paths["output_root"] = os.path.abspath(out_dir)
+        return dict(paths)
+
+
 class LongFormTidyData:
     """Adapter from accepted UADC long-form facts to canonical LedgerExplorer DataFrames."""
 
@@ -5086,7 +5171,9 @@ log_tracker = LogTracker()
 # ---- 1) Load + process data ONCE (usable for export and/or GUI) ----
 with open(param_file_path, encoding="utf-8") as _parameter_handle:
     _parameter_preview = json.load(_parameter_handle)
-if _parameter_preview.get("input_profile") == "uadc-long-form-v1":
+if _parameter_preview.get("input_profile") == AcceptedJapaneseDisplayTranslator.PROFILE:
+    tidy_data = AcceptedJapaneseDisplayTranslator(param_file_path)
+elif _parameter_preview.get("input_profile") == "uadc-long-form-v1":
     tidy_data = LongFormTidyData(param_file_path)
 else:
     tidy_data = TidyData()

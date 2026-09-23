@@ -1,0 +1,34 @@
+Ledger_Account_Number,Level,Type,Ledger_Account_Number,Parent,Category,eTax_Category,eTax_Account_Name,Beginning_Balance,Total_Debit,Total_Credit,Ending_Balance,seq
+10A100020,1,A,10A100020,BS,Assets,Current Assets,Ordinary Deposits,97003047,1272106342,1266473248,102636141,1
+10A100040,1,A,10A100040,BS,Assets,Current Assets,Allowance for Doubtful Accounts,1758018,0,0,1758018,2
+10A100060,1,A,10A100060,BS,Assets,Current Assets,Notes Receivable,59534189,410622583,377728504,92428268,3
+10A100090,1,A,10A100090,BS,Assets,Current Assets,Accounts Receivable,98170353,852595939,876320012,74446280,4
+10A100200,1,A,10A100200,BS,Assets,Current Assets,Electronically Recorded Monetary Claims,0,40000,0,40000,5
+10A100230,1,A,10A100230,BS,Assets,Current Assets,Securities,1271350,0,0,1271350,6
+10A100280,1,A,10A100280,BS,Assets,Current Assets,Merchandise,63013226,63025546,63013226,63025546,7
+10A100610,1,A,10A100610,BS,Assets,Current Assets,Short-term Loans Receivable,480000,600000,680000,400000,8
+10A100800,1,A,10A100800,BS,Assets,Current Assets,Guarantee Deposits,1200000,0,0,1200000,9
+10A100850,1,A,10A100850,BS,Assets,Current Assets,Temporary Consumption Tax Paid,2762581,0,0,2762581,10
+10A210130,1,A,10A210130,BS,Assets,Tangible Fixed Assets,Structures,3280000,0,164000,3116000,11
+10A210410,1,A,10A210410,BS,Assets,Tangible Fixed Assets,"Tools, Furniture and Fixtures",4779810,0,955962,3823848,12
+10A220190,1,A,10A220190,BS,Assets,Intangible Fixed Assets,Telephone Subscription Rights,512000,0,0,512000,13
+10A230570,1,A,10A230570,BS,Assets,Investments and Other Assets,Insurance Reserve Deposits,1528000,1500000,0,3028000,14
+10A230650,1,A,10A230650,BS,Assets,Investments and Other Assets,Security Deposits,3140000,0,0,3140000,15
+10B100030,1,A,10B100030,BS,Liabilities,Current Liabilities,Notes Payable,52251735,167107676,178292810,63436869,16
+10B100040,1,A,10B100040,BS,Liabilities,Current Liabilities,Accounts Payable,64051101,520507266,513384447,56928282,17
+10B100320,1,A,10B100320,BS,Liabilities,Current Liabilities,Provision for Bonuses,2021000,11082000,11082000,2021000,18
+10B100630,1,A,10B100630,BS,Liabilities,Current Liabilities,Accounts Payable Other,7584692,95513260,96837971,8909403,19
+10B100640,1,A,10B100640,BS,Liabilities,Current Liabilities,Accrued Corporate Taxes,2864378,2864378,5004173,5004173,20
+10B100660,1,A,10B100660,BS,Liabilities,Current Liabilities,Accrued Consumption Taxes,4947100,4947100,13556343,13556343,21
+10B100670,1,A,10B100670,BS,Liabilities,Current Liabilities,Accrued Enterprise Taxes,1862000,1862000,0,0,22
+10B100690,1,A,10B100690,BS,Liabilities,Current Liabilities,Deposits Received,2309575,20863291,24910282,6356566,23
+10B100790,1,A,10B100790,BS,Liabilities,Current Liabilities,Short-term Borrowings,7842000,7842000,0,0,24
+10B100890,1,A,10B100890,BS,Liabilities,Current Liabilities,Temporary Consumption Tax Received,6540636,0,0,6540636,25
+10B200080,1,A,10B200080,BS,Liabilities,Non-current Liabilities,Long-term Borrowings,37343150,7000000,0,30343150,26
+10B200120,1,A,10B200120,BS,Liabilities,Non-current Liabilities,Provision for Retirement Benefits,18560000,0,0,18560000,27
+10B200130,1,A,10B200130,BS,Liabilities,Non-current Liabilities,Provision for Directors' Retirement Benefits,22000000,0,0,22000000,28
+10C110010,1,A,10C110010,BS,Net Assets,Capital Stock,Capital Stock,10000000,0,0,10000000,29
+10C120020,1,A,10C120020,BS,Net Assets,Capital Surplus,Capital Reserve,0,0,0,0,30
+10C130020,1,A,10C130020,BS,Net Assets,Retained Earnings,Legal Retained Earnings,7200000,0,0,7200000,31
+10C130360,1,A,10C130360,BS,Net Assets,Retained Earnings,General Reserve,4830000,0,0,4830000,32
+10C130370,1,A,10C130370,BS,Net Assets,Retained Earnings,Retained Earnings Brought Forward,82709171,0,0,82709171,33

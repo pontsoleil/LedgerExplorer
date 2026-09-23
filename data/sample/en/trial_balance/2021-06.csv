@@ -1,0 +1,70 @@
+Month,Ledger_Account_Number,Ledger_Account_Name,Beginning_Balance,Debit_Amount,Credit_Amount,Ending_Balance,eTax_Category
+2021-06,10A100020,Ordinary Deposits,92267923,100401143,99285139,93383927,Current Assets
+2021-06,10A100040,Allowance for Doubtful Accounts,1758018,0,0,1758018,Current Assets
+2021-06,10A100060,Notes Receivable,71009377,29725798,37295191,63439984,Current Assets
+2021-06,10A100090,Accounts Receivable,60685384,58103775,60957468,57831691,Current Assets
+2021-06,10A100200,Electronically Recorded Monetary Claims,0,0,0,0,Current Assets
+2021-06,10A100230,Securities,1271350,0,0,1271350,Current Assets
+2021-06,10A100280,Merchandise,63013226,0,0,63013226,Current Assets
+2021-06,10A100610,Short-term Loans Receivable,400000,0,40000,360000,Current Assets
+2021-06,10A100800,Guarantee Deposits,1200000,0,0,1200000,Current Assets
+2021-06,10A100850,Temporary Consumption Tax Paid,2762581,0,0,2762581,Current Assets
+2021-06,10A210130,Structures,3280000,0,0,3280000,Tangible Fixed Assets
+2021-06,10A210410,"Tools, Furniture and Fixtures",4779810,0,0,4779810,Tangible Fixed Assets
+2021-06,10A220190,Telephone Subscription Rights,512000,0,0,512000,Intangible Fixed Assets
+2021-06,10A230570,Insurance Reserve Deposits,1778000,125000,0,1903000,Investments and Other Assets
+2021-06,10A230650,Security Deposits,3140000,0,0,3140000,Investments and Other Assets
+2021-06,10B100030,Notes Payable,48133393,14803167,10749276,44079502,Current Liabilities
+2021-06,10B100040,Accounts Payable,48084185,36928098,36657682,47813769,Current Liabilities
+2021-06,10B100320,Provision for Bonuses,3368333,4042000,673667,0,Current Liabilities
+2021-06,10B100630,Accounts Payable Other,7116470,7116470,7249493,7249493,Current Liabilities
+2021-06,10B100640,Accrued Corporate Taxes,0,0,0,0,Current Liabilities
+2021-06,10B100660,Accrued Consumption Taxes,0,0,0,0,Current Liabilities
+2021-06,10B100670,Accrued Enterprise Taxes,0,0,0,0,Current Liabilities
+2021-06,10B100690,Deposits Received,3359533,1455142,2613471,4517862,Current Liabilities
+2021-06,10B100790,Short-term Borrowings,6535000,653500,0,5881500,Current Liabilities
+2021-06,10B100890,Temporary Consumption Tax Received,6540636,0,0,6540636,Current Liabilities
+2021-06,10B200080,Long-term Borrowings,37343150,0,0,37343150,Non-current Liabilities
+2021-06,10B200120,Provision for Retirement Benefits,18560000,0,0,18560000,Non-current Liabilities
+2021-06,10B200130,Provision for Directors' Retirement Benefits,22000000,0,0,22000000,Non-current Liabilities
+2021-06,10C110010,Capital Stock,10000000,0,0,10000000,Capital Stock
+2021-06,10C120020,Capital Reserve,0,0,0,0,Capital Surplus
+2021-06,10C130020,Legal Retained Earnings,7200000,0,0,7200000,Retained Earnings
+2021-06,10C130360,General Reserve,4830000,0,0,4830000,Retained Earnings
+2021-06,10C130370,Retained Earnings Brought Forward,82709171,0,0,82709171,Retained Earnings
+2021-06,10D100100,Gross Sales,121527464,0,58103775,179631239,Net Sales
+2021-06,10D100110,Sales Discounts and Returns,672400,272084,0,944484,Net Sales
+2021-06,10E100100,Beginning Merchandise Inventory,0,0,0,0,Cost of Sales
+2021-06,10E100120,Purchase Discounts and Returns,434369,0,211874,646243,Cost of Sales
+2021-06,10E100130,Merchandise Purchases,72937263,36657682,0,109594945,Cost of Sales
+2021-06,10E100140,Ending Merchandise Inventory,0,0,0,0,Cost of Sales
+2021-06,10E200020,Sales Commissions,4308500,2273500,0,6582000,"Selling, General and Administrative Expenses"
+2021-06,10E200050,Advertising Expenses,368700,139000,0,507700,"Selling, General and Administrative Expenses"
+2021-06,10E200090,Directors' Compensation,3440000,1720000,0,5160000,"Selling, General and Administrative Expenses"
+2021-06,10E200130,Bonuses,1347333,673667,0,2021000,"Selling, General and Administrative Expenses"
+2021-06,10E200140,Employee Welfare Expenses,705616,596649,0,1302265,"Selling, General and Administrative Expenses"
+2021-06,10E200150,Entertainment Expenses,820943,255279,0,1076222,"Selling, General and Administrative Expenses"
+2021-06,10E200180,Communication Expenses,2485305,1069686,0,3554991,"Selling, General and Administrative Expenses"
+2021-06,10E200200,Supplies Expenses,622269,517144,258572,880841,"Selling, General and Administrative Expenses"
+2021-06,10E200210,Taxes and Dues,122000,13000,0,135000,"Selling, General and Administrative Expenses"
+2021-06,10E200220,Depreciation Expenses,0,0,0,0,"Selling, General and Administrative Expenses"
+2021-06,10E200240,Insurance Expenses,637640,318820,0,956460,"Selling, General and Administrative Expenses"
+2021-06,10E200370,Salaries and Allowances,11217982,5290385,0,16508367,"Selling, General and Administrative Expenses"
+2021-06,10E200520,Temporary Wages,628137,279865,0,908002,"Selling, General and Administrative Expenses"
+2021-06,10E200540,Statutory Welfare Expenses,1508411,743927,0,2252338,"Selling, General and Administrative Expenses"
+2021-06,10E200600,Professional Fees,279420,139710,0,419130,"Selling, General and Administrative Expenses"
+2021-06,10E200690,Service Fees,22994,11969,0,34963,"Selling, General and Administrative Expenses"
+2021-06,10E200720,Rent Expenses,6898000,3449000,0,10347000,"Selling, General and Administrative Expenses"
+2021-06,10E200730,Land and Building Rent,587700,0,0,587700,"Selling, General and Administrative Expenses"
+2021-06,10E200870,Freight Expenses,7150301,3408238,0,10558539,"Selling, General and Administrative Expenses"
+2021-06,10E201000,Repairs and Maintenance,158550,17850,0,176400,"Selling, General and Administrative Expenses"
+2021-06,10E201040,Utilities Expenses,1260816,546903,0,1807719,"Selling, General and Administrative Expenses"
+2021-06,10E201110,Office Supplies Expenses,290863,124079,0,414942,"Selling, General and Administrative Expenses"
+2021-06,10E201120,Vehicle Expenses,1220200,434529,0,1654729,"Selling, General and Administrative Expenses"
+2021-06,10E201130,Meeting Expenses,80469,24995,0,105464,"Selling, General and Administrative Expenses"
+2021-06,10E201140,Membership Fees,232000,116000,0,348000,"Selling, General and Administrative Expenses"
+2021-06,10E201160,Books and Publications,49964,24982,0,74946,"Selling, General and Administrative Expenses"
+2021-06,10E201230,Travel and Transportation Expenses,2172943,963397,0,3136340,"Selling, General and Administrative Expenses"
+2021-06,10E201270,Miscellaneous Expenses,963951,478200,0,1442151,"Selling, General and Administrative Expenses"
+2021-06,10E300020,Interest Expense,209401,180975,0,390376,Non-operating Expenses
+2021-06,10F100070,"Corporate, Inhabitant and Enterprise Taxes",0,0,0,0,Other

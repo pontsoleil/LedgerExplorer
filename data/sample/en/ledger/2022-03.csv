@@ -1,0 +1,982 @@
+Transaction_ID,Line_ID,Entry_ID,Ledger_Side,Transaction_Date,Description,Ledger_Account_Number,Ledger_Account_Name,Subaccount_Code,Subaccount_Name,Department_Code,Department_Name,Debit_Amount,Credit_Amount,Counterpart_Account_Number,Counterpart_Account_Name,Counterpart_Subaccount_Code,Counterpart_Subaccount_Name,Counterpart_Department_Code,Counterpart_Department_Name,Balance,Month
+,,,Opening,2022-03-01,* Beginning balance,10A100020,Ordinary Deposits,,,,,0,0,,,,,,,105724142,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10A100040,Allowance for Doubtful Accounts,,,,,0,0,,,,,,,1758018,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10A100060,Notes Receivable,,,,,0,0,,,,,,,112254840,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10A100090,Accounts Receivable,,,,,0,0,,,,,,,57755820,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10A100200,Electronically Recorded Monetary Claims,,,,,0,0,,,,,,,40000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10A100230,Securities,,,,,0,0,,,,,,,1271350,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10A100280,Merchandise,,,,,0,0,,,,,,,63013226,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10A100610,Short-term Loans Receivable,,,,,0,0,,,,,,,490000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10A100800,Guarantee Deposits,,,,,0,0,,,,,,,1200000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10A100850,Temporary Consumption Tax Paid,,,,,0,0,,,,,,,2762581,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10A210130,Structures,,,,,0,0,,,,,,,3280000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10A210410,"Tools, Furniture and Fixtures",,,,,0,0,,,,,,,4779810,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10A220190,Telephone Subscription Rights,,,,,0,0,,,,,,,512000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10A230570,Insurance Reserve Deposits,,,,,0,0,,,,,,,2903000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10A230650,Security Deposits,,,,,0,0,,,,,,,3140000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10B100030,Notes Payable,,,,,0,0,,,,,,,67998587,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10B100040,Accounts Payable,,,,,0,0,,,,,,,52484968,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10B100320,Provision for Bonuses,,,,,0,0,,,,,,,1347333,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10B100630,Accounts Payable Other,,,,,0,0,,,,,,,6887180,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10B100640,Accrued Corporate Taxes,,,,,0,0,,,,,,,0,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10B100660,Accrued Consumption Taxes,,,,,0,0,,,,,,,0,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10B100670,Accrued Enterprise Taxes,,,,,0,0,,,,,,,0,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10B100690,Deposits Received,,,,,0,0,,,,,,,6304161,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10B100790,Short-term Borrowings,,,,,0,0,,,,,,,653500,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10B100890,Temporary Consumption Tax Received,,,,,0,0,,,,,,,6540636,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10B200080,Long-term Borrowings,,,,,0,0,,,,,,,37343150,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10B200120,Provision for Retirement Benefits,,,,,0,0,,,,,,,18560000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10B200130,Provision for Directors' Retirement Benefits,,,,,0,0,,,,,,,22000000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10C110010,Capital Stock,,,,,0,0,,,,,,,10000000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10C120020,Capital Reserve,,,,,0,0,,,,,,,0,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10C130020,Legal Retained Earnings,,,,,0,0,,,,,,,7200000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10C130360,General Reserve,,,,,0,0,,,,,,,4830000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10C130370,Retained Earnings Brought Forward,,,,,0,0,,,,,,,82709171,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10D100100,Gross Sales,,,,,0,0,,,,,,,778149659,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10D100110,Sales Discounts and Returns,,,,,0,0,,,,,,,1267444,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E100100,Beginning Merchandise Inventory,,,,,0,0,,,,,,,0,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E100120,Purchase Discounts and Returns,,,,,0,0,,,,,,,733583,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E100130,Merchandise Purchases,,,,,0,0,,,,,,,466148326,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E100140,Ending Merchandise Inventory,,,,,0,0,,,,,,,0,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200020,Sales Commissions,,,,,0,0,,,,,,,24058267,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200050,Advertising Expenses,,,,,0,0,,,,,,,1987200,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200090,Directors' Compensation,,,,,0,0,,,,,,,18920000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200130,Bonuses,,,,,0,0,,,,,,,10408333,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200140,Employee Welfare Expenses,,,,,0,0,,,,,,,5147016,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200150,Entertainment Expenses,,,,,0,0,,,,,,,3993226,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200180,Communication Expenses,,,,,0,0,,,,,,,12087447,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200200,Supplies Expenses,,,,,0,0,,,,,,,3020150,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200210,Taxes and Dues,,,,,0,0,,,,,,,243000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200220,Depreciation Expenses,,,,,0,0,,,,,,,0,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200240,Insurance Expenses,,,,,0,0,,,,,,,3507020,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200370,Salaries and Allowances,,,,,0,0,,,,,,,57059509,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200520,Temporary Wages,,,,,0,0,,,,,,,4314002,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200540,Statutory Welfare Expenses,,,,,0,0,,,,,,,9354499,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200600,Professional Fees,,,,,0,0,,,,,,,1536810,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200690,Service Fees,,,,,0,0,,,,,,,131972,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200720,Rent Expenses,,,,,0,0,,,,,,,37909000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200730,Land and Building Rent,,,,,0,0,,,,,,,3232350,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E200870,Freight Expenses,,,,,0,0,,,,,,,47167239,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E201000,Repairs and Maintenance,,,,,0,0,,,,,,,319500,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E201040,Utilities Expenses,,,,,0,0,,,,,,,6377401,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E201110,Office Supplies Expenses,,,,,0,0,,,,,,,1376514,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E201120,Vehicle Expenses,,,,,0,0,,,,,,,6848007,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E201130,Meeting Expenses,,,,,0,0,,,,,,,305424,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E201140,Membership Fees,,,,,0,0,,,,,,,1276000,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E201160,Books and Publications,,,,,0,0,,,,,,,274802,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E201230,Travel and Transportation Expenses,,,,,0,0,,,,,,,11660435,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E201270,Miscellaneous Expenses,,,,,0,0,,,,,,,5273191,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10E300020,Interest Expense,,,,,0,0,,,,,,,1169093,2022-03
+,,,Opening,2022-03-01,* Beginning balance,10F100070,"Corporate, Inhabitant and Enterprise Taxes",,,,,0,0,,,,,,,0,2022-03
+2599.0,1.0,66,Debit,2022-03-01,tissues and others,10E201270,Miscellaneous Expenses,,,010,Sapporo Sales Office,4298,0,10A100020,Cash,,,000,Common Department,5277489,2022-03
+2599.0,1.0,66,Credit,2022-03-01,tissues and others,10A100020,Cash,,,000,Common Department,0,4298,10E201270,Miscellaneous Expenses,,,010,Sapporo Sales Office,105719844,2022-03
+2600.0,1.0,164,Debit,2022-03-02,office supplies,10E201110,Office Supplies Expenses,,,050,Kyushu Sales Office,7350,0,10A100020,Cash,,,000,Common Department,1383864,2022-03
+2600.0,1.0,164,Credit,2022-03-02,office supplies,10A100020,Cash,,,000,Common Department,0,7350,10E201110,Office Supplies Expenses,,,050,Kyushu Sales Office,105712494,2022-03
+2604.0,1.0,134,Debit,2022-03-03,Paper,10E201110,Office Supplies Expenses,,,020,Tokyo Branch,31500,0,10B100630,Accounts Payable Other,,,000,Common Department,1415364,2022-03
+2604.0,1.0,134,Credit,2022-03-03,Paper,10B100630,Accounts Payable Other,,,000,Common Department,0,31500,10E201110,Office Supplies Expenses,,,020,Tokyo Branch,6918680,2022-03
+2605.0,1.0,142,Debit,2022-03-03,Expressway toll,10E201120,Vehicle Expenses,,,040,Osaka Branch,220,0,10A100020,Cash,,,000,Common Department,6848227,2022-03
+2605.0,1.0,142,Credit,2022-03-03,Expressway toll,10A100020,Cash,,,000,Common Department,0,220,10E201120,Vehicle Expenses,,,040,Osaka Branch,105712274,2022-03
+2605.0,2.0,142,Debit,2022-03-03,Gasoline,10E201120,Vehicle Expenses,,,040,Osaka Branch,3338,0,10A100020,Cash,,,000,Common Department,6851565,2022-03
+2605.0,2.0,142,Credit,2022-03-03,Gasoline,10A100020,Cash,,,000,Common Department,0,3338,10E201120,Vehicle Expenses,,,040,Osaka Branch,105708936,2022-03
+2605.0,3.0,142,Debit,2022-03-03,Expressway toll,10E201120,Vehicle Expenses,,,040,Osaka Branch,5228,0,10A100020,Cash,,,000,Common Department,6856793,2022-03
+2605.0,3.0,142,Credit,2022-03-03,Expressway toll,10A100020,Cash,,,000,Common Department,0,5228,10E201120,Vehicle Expenses,,,040,Osaka Branch,105703708,2022-03
+2605.0,4.0,142,Debit,2022-03-03,Expressway toll,10E201120,Vehicle Expenses,,,040,Osaka Branch,2461,0,10A100020,Cash,,,000,Common Department,6859254,2022-03
+2605.0,4.0,142,Credit,2022-03-03,Expressway toll,10A100020,Cash,,,000,Common Department,0,2461,10E201120,Vehicle Expenses,,,040,Osaka Branch,105701247,2022-03
+2605.0,5.0,142,Debit,2022-03-03,Expressway toll,10E201120,Vehicle Expenses,,,040,Osaka Branch,3373,0,10A100020,Cash,,,000,Common Department,6862627,2022-03
+2605.0,5.0,142,Credit,2022-03-03,Expressway toll,10A100020,Cash,,,000,Common Department,0,3373,10E201120,Vehicle Expenses,,,040,Osaka Branch,105697874,2022-03
+2605.0,6.0,142,Debit,2022-03-03,Expressway toll,10E201120,Vehicle Expenses,,,040,Osaka Branch,8105,0,10A100020,Cash,,,000,Common Department,6870732,2022-03
+2605.0,6.0,142,Credit,2022-03-03,Expressway toll,10A100020,Cash,,,000,Common Department,0,8105,10E201120,Vehicle Expenses,,,040,Osaka Branch,105689769,2022-03
+2601.0,1.0,19,Debit,2022-03-03,Travel expense,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,38400,0,10A100020,Cash,,,000,Common Department,11698835,2022-03
+2601.0,1.0,19,Credit,2022-03-03,Travel expense,10A100020,Cash,,,000,Common Department,0,38400,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,105651369,2022-03
+2602.0,1.0,41,Debit,2022-03-03,Wedding reception fee,10E200150,Entertainment Expenses,,,020,Tokyo Branch,14286,0,10A100020,Cash,,,000,Common Department,4007512,2022-03
+2602.0,1.0,41,Credit,2022-03-03,Wedding reception fee,10A100020,Cash,,,000,Common Department,0,14286,10E200150,Entertainment Expenses,,,020,Tokyo Branch,105637083,2022-03
+2602.0,2.0,41,Debit,2022-03-03,Gift money,10E200150,Entertainment Expenses,,,020,Tokyo Branch,9524,0,10A100020,Cash,,,000,Common Department,4017036,2022-03
+2602.0,2.0,41,Credit,2022-03-03,Gift money,10A100020,Cash,,,000,Common Department,0,9524,10E200150,Entertainment Expenses,,,020,Tokyo Branch,105627559,2022-03
+2603.0,1.0,56,Debit,2022-03-03,Travel expense,10E201230,Travel and Transportation Expenses,,,020,Tokyo Branch,42640,0,10A100020,Cash,,,000,Common Department,11741475,2022-03
+2603.0,1.0,56,Credit,2022-03-03,Travel expense,10A100020,Cash,,,000,Common Department,0,42640,10E201230,Travel and Transportation Expenses,,,020,Tokyo Branch,105584919,2022-03
+2612.0,1.0,133,Debit,2022-03-05,Tax accountant fee,10E200600,Professional Fees,,,020,Tokyo Branch,139710,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,1676520,2022-03
+2612.0,1.0,133,Credit,2022-03-05,Tax accountant fee,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,139710,10E200600,Professional Fees,,,020,Tokyo Branch,105445209,2022-03
+2606.0,1.0,42,Debit,2022-03-05,Meal expense Anonymized Store 030 2 people,10E200150,Entertainment Expenses,,,020,Tokyo Branch,4510,0,10A100020,Cash,,,000,Common Department,4021546,2022-03
+2606.0,1.0,42,Credit,2022-03-05,Meal expense Anonymized Store 030 2 people,10A100020,Cash,,,000,Common Department,0,4510,10E200150,Entertainment Expenses,,,020,Tokyo Branch,105440699,2022-03
+2607.0,1.0,43,Debit,2022-03-05,Gift expense Anonymized Store 058,10E200150,Entertainment Expenses,,,020,Tokyo Branch,7630,0,10A100020,Cash,,,000,Common Department,4029176,2022-03
+2607.0,1.0,43,Credit,2022-03-05,Gift expense Anonymized Store 058,10A100020,Cash,,,000,Common Department,0,7630,10E200150,Entertainment Expenses,,,020,Tokyo Branch,105433069,2022-03
+2608.0,1.0,58,Debit,2022-03-05,Travel expense,10E201230,Travel and Transportation Expenses,,,020,Tokyo Branch,69800,0,10A100020,Cash,,,000,Common Department,11811275,2022-03
+2608.0,1.0,58,Credit,2022-03-05,Travel expense,10A100020,Cash,,,000,Common Department,0,69800,10E201230,Travel and Transportation Expenses,,,020,Tokyo Branch,105363269,2022-03
+2609.0,1.0,84,Debit,2022-03-05,Voucher No. 458 dated 3/5 Anonymized Partner 070,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,1055696,0,10A100090,Accounts Receivable,22,Anonymized Partner 070,000,Common Department,106418965,2022-03
+2609.0,1.0,84,Credit,2022-03-05,Voucher No. 458 dated 3/5 Anonymized Partner 070,10A100090,Accounts Receivable,22,Anonymized Partner 070,000,Common Department,0,1055696,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,56700124,2022-03
+2609.0,2.0,84,Debit,2022-03-05,Voucher No. 458 dated 3/5 Anonymized Partner 070,10E200690,Service Fees,,,050,Kyushu Sales Office,472,0,10A100090,Accounts Receivable,22,Anonymized Partner 070,000,Common Department,132444,2022-03
+2609.0,2.0,84,Credit,2022-03-05,Voucher No. 458 dated 3/5 Anonymized Partner 070,10A100090,Accounts Receivable,22,Anonymized Partner 070,000,Common Department,0,472,10E200690,Service Fees,,,050,Kyushu Sales Office,56699652,2022-03
+2610.0,1.0,85,Debit,2022-03-05,Voucher No. 459 dated 3/5 Anonymized Partner 082,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,1096160,0,10A100090,Accounts Receivable,26,Anonymized Partner 082,000,Common Department,107515125,2022-03
+2610.0,1.0,85,Credit,2022-03-05,Voucher No. 459 dated 3/5 Anonymized Partner 082,10A100090,Accounts Receivable,26,Anonymized Partner 082,000,Common Department,0,1096160,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,55603492,2022-03
+2610.0,2.0,85,Debit,2022-03-05,Voucher No. 459 dated 3/5 Anonymized Partner 082,10E200690,Service Fees,,,020,Tokyo Branch,472,0,10A100090,Accounts Receivable,26,Anonymized Partner 082,000,Common Department,132916,2022-03
+2610.0,2.0,85,Credit,2022-03-05,Voucher No. 459 dated 3/5 Anonymized Partner 082,10A100090,Accounts Receivable,26,Anonymized Partner 082,000,Common Department,0,472,10E200690,Service Fees,,,020,Tokyo Branch,55603020,2022-03
+2611.0,1.0,86,Debit,2022-03-05,Voucher No. 460 dated 3/5 Anonymized Partner 025,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,919584,0,10A100090,Accounts Receivable,27,Anonymized Partner 025,000,Common Department,108434709,2022-03
+2611.0,1.0,86,Credit,2022-03-05,Voucher No. 460 dated 3/5 Anonymized Partner 025,10A100090,Accounts Receivable,27,Anonymized Partner 025,000,Common Department,0,919584,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,54683436,2022-03
+2615.0,1.0,110,Debit,2022-03-06,taxi expense,10E201230,Travel and Transportation Expenses,,,040,Osaka Branch,2290,0,10A100020,Cash,,,000,Common Department,11813565,2022-03
+2615.0,1.0,110,Credit,2022-03-06,taxi expense,10A100020,Cash,,,000,Common Department,0,2290,10E201230,Travel and Transportation Expenses,,,040,Osaka Branch,108432419,2022-03
+2616.0,1.0,147,Debit,2022-03-06,Gasoline,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,6334,0,10B100630,Accounts Payable Other,,,000,Common Department,6877066,2022-03
+2616.0,1.0,147,Credit,2022-03-06,Gasoline,10B100630,Accounts Payable Other,,,000,Common Department,0,6334,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,6925014,2022-03
+2614.0,1.0,22,Debit,2022-03-06,Travel expense,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,32900,0,10A100020,Cash,,,000,Common Department,11846465,2022-03
+2614.0,1.0,22,Credit,2022-03-06,Travel expense,10A100020,Cash,,,000,Common Department,0,32900,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,108399519,2022-03
+2613.0,1.0,7,Debit,2022-03-06,Meal expense Anonymized Store 068 7 people,10E200150,Entertainment Expenses,,,010,Sapporo Sales Office,21840,0,10A100020,Cash,,,000,Common Department,4051016,2022-03
+2613.0,1.0,7,Credit,2022-03-06,Meal expense Anonymized Store 068 7 people,10A100020,Cash,,,000,Common Department,0,21840,10E200150,Entertainment Expenses,,,010,Sapporo Sales Office,108377679,2022-03
+2617.0,1.0,10,Debit,2022-03-07,Parking fee,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,300,0,10A100020,Cash,,,000,Common Department,6877366,2022-03
+2617.0,1.0,10,Credit,2022-03-07,Parking fee,10A100020,Cash,,,000,Common Department,0,300,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,108377379,2022-03
+2622.0,1.0,102,Debit,2022-03-07,Gift expense Anonymized Store 089,10E200150,Entertainment Expenses,,,040,Osaka Branch,2100,0,10A100020,Cash,,,000,Common Department,4053116,2022-03
+2622.0,1.0,102,Credit,2022-03-07,Gift expense Anonymized Store 089,10A100020,Cash,,,000,Common Department,0,2100,10E200150,Entertainment Expenses,,,040,Osaka Branch,108375279,2022-03
+2623.0,1.0,161,Debit,2022-03-07,Travel expense,10E201230,Travel and Transportation Expenses,,,050,Kyushu Sales Office,5530,0,10A100020,Cash,,,000,Common Department,11851995,2022-03
+2623.0,1.0,161,Credit,2022-03-07,Travel expense,10A100020,Cash,,,000,Common Department,0,5530,10E201230,Travel and Transportation Expenses,,,050,Kyushu Sales Office,108369749,2022-03
+2618.0,1.0,69,Debit,2022-03-07,toilet paper expense,10E201270,Miscellaneous Expenses,,,020,Tokyo Branch,1398,0,10A100020,Cash,,,000,Common Department,5278887,2022-03
+2618.0,1.0,69,Credit,2022-03-07,toilet paper expense,10A100020,Cash,,,000,Common Department,0,1398,10E201270,Miscellaneous Expenses,,,020,Tokyo Branch,108368351,2022-03
+2619.0,1.0,77,Debit,2022-03-07,Travel expense,10E201230,Travel and Transportation Expenses,,,030,Nagoya Branch,35000,0,10A100020,Cash,,,000,Common Department,11886995,2022-03
+2619.0,1.0,77,Credit,2022-03-07,Travel expense,10A100020,Cash,,,000,Common Department,0,35000,10E201230,Travel and Transportation Expenses,,,030,Nagoya Branch,108333351,2022-03
+2620.0,1.0,78,Debit,2022-03-07,Anonymized Railway Company A expense,10E201230,Travel and Transportation Expenses,,,030,Nagoya Branch,7500,0,10A100020,Cash,,,000,Common Department,11894495,2022-03
+2620.0,1.0,78,Credit,2022-03-07,Anonymized Railway Company A expense,10A100020,Cash,,,000,Common Department,0,7500,10E201230,Travel and Transportation Expenses,,,030,Nagoya Branch,108325851,2022-03
+2621.0,1.0,79,Debit,2022-03-07,taxi expense,10E201230,Travel and Transportation Expenses,,,030,Nagoya Branch,2300,0,10A100020,Cash,,,000,Common Department,11896795,2022-03
+2621.0,1.0,79,Credit,2022-03-07,taxi expense,10A100020,Cash,,,000,Common Department,0,2300,10E201230,Travel and Transportation Expenses,,,030,Nagoya Branch,108323551,2022-03
+2625.0,1.0,151,Debit,2022-03-08,golf play expense,10E200150,Entertainment Expenses,,,040,Osaka Branch,8400,0,10A100020,Cash,,,000,Common Department,4061516,2022-03
+2625.0,1.0,151,Credit,2022-03-08,golf play expense,10A100020,Cash,,,000,Common Department,0,8400,10E200150,Entertainment Expenses,,,040,Osaka Branch,108315151,2022-03
+2624.0,1.0,50,Debit,2022-03-08,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,1200,0,10A100020,Cash,,,000,Common Department,6878566,2022-03
+2624.0,1.0,50,Credit,2022-03-08,Expressway toll,10A100020,Cash,,,000,Common Department,0,1200,10E201120,Vehicle Expenses,,,020,Tokyo Branch,108313951,2022-03
+2626.0,1.0,20,Debit,2022-03-09,Travel expense,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,51200,0,10A100020,Cash,,,000,Common Department,11947995,2022-03
+2626.0,1.0,20,Credit,2022-03-09,Travel expense,10A100020,Cash,,,000,Common Department,0,51200,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,108262751,2022-03
+2627.0,1.0,11,Debit,2022-03-10,Gasoline,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,4632,0,10A100020,Cash,,,000,Common Department,6883198,2022-03
+2627.0,1.0,11,Credit,2022-03-10,Gasoline,10A100020,Cash,,,000,Common Department,0,4632,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,108258119,2022-03
+2642.0,1.0,129,Debit,2022-03-10,Rent payment,10E200720,Rent Expenses,,,030,Nagoya Branch,399000,0,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,38308000,2022-03
+2642.0,1.0,129,Credit,2022-03-10,Rent payment,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,0,399000,10E200720,Rent Expenses,,,030,Nagoya Branch,107859119,2022-03
+2643.0,1.0,136,Debit,2022-03-10,Note due date settlement Anonymized Partner 085,10B100030,Notes Payable,,,000,Common Department,2823907,0,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,65174680,2022-03
+2643.0,1.0,136,Credit,2022-03-10,Note due date settlement Anonymized Partner 085,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,0,2823907,10B100030,Notes Payable,,,000,Common Department,105035212,2022-03
+2644.0,1.0,143,Debit,2022-03-10,Inspection service fee,10E201120,Vehicle Expenses,,,040,Osaka Branch,12500,0,10A100020,Cash,,,000,Common Department,6895698,2022-03
+2644.0,1.0,143,Credit,2022-03-10,Inspection service fee,10A100020,Cash,,,000,Common Department,0,12500,10E201120,Vehicle Expenses,,,040,Osaka Branch,105022712,2022-03
+2645.0,1.0,150,Debit,2022-03-10,golf play expense,10E200150,Entertainment Expenses,,,050,Kyushu Sales Office,8400,0,10A100020,Cash,,,000,Common Department,4069916,2022-03
+2645.0,1.0,150,Credit,2022-03-10,golf play expense,10A100020,Cash,,,000,Common Department,0,8400,10E200150,Entertainment Expenses,,,050,Kyushu Sales Office,105014312,2022-03
+2646.0,1.0,162,Debit,2022-03-10,Meeting Meal expense,10E201130,Meeting Expenses,,,020,Tokyo Branch,24995,0,10A100020,Cash,,,000,Common Department,330419,2022-03
+2646.0,1.0,162,Credit,2022-03-10,Meeting Meal expense,10A100020,Cash,,,000,Common Department,0,24995,10E201130,Meeting Expenses,,,020,Tokyo Branch,104989317,2022-03
+2647.0,1.0,167,Debit,2022-03-10,Rent payment,10E200720,Rent Expenses,,,050,Kyushu Sales Office,630000,0,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,38938000,2022-03
+2647.0,1.0,167,Credit,2022-03-10,Rent payment,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,0,630000,10E200720,Rent Expenses,,,050,Kyushu Sales Office,104359317,2022-03
+2647.0,2.0,167,Debit,2022-03-10,Telephone expense,10E200180,Communication Expenses,,,050,Kyushu Sales Office,175229,0,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,12262676,2022-03
+2647.0,2.0,167,Credit,2022-03-10,Telephone expense,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,0,175229,10E200180,Communication Expenses,,,050,Kyushu Sales Office,104184088,2022-03
+2648.0,1.0,168,Debit,2022-03-10,Wired service fee,10E201270,Miscellaneous Expenses,,,050,Kyushu Sales Office,6000,0,10B100630,Accounts Payable Other,,,000,Common Department,5284887,2022-03
+2648.0,1.0,168,Credit,2022-03-10,Wired service fee,10B100630,Accounts Payable Other,,,000,Common Department,0,6000,10E201270,Miscellaneous Expenses,,,050,Kyushu Sales Office,6931014,2022-03
+2648.0,2.0,168,Debit,2022-03-10,Security fee,10E201270,Miscellaneous Expenses,,,050,Kyushu Sales Office,42858,0,10B100630,Accounts Payable Other,,,000,Common Department,5327745,2022-03
+2648.0,2.0,168,Credit,2022-03-10,Security fee,10B100630,Accounts Payable Other,,,000,Common Department,0,42858,10E201270,Miscellaneous Expenses,,,050,Kyushu Sales Office,6973872,2022-03
+2628.0,1.0,33,Debit,2022-03-10,Rent payment,10E200720,Rent Expenses,,,010,Sapporo Sales Office,320000,0,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,39258000,2022-03
+2628.0,1.0,33,Credit,2022-03-10,Rent payment,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,0,320000,10E200720,Rent Expenses,,,010,Sapporo Sales Office,103864088,2022-03
+2628.0,2.0,33,Debit,2022-03-10,Telephone expense,10E200180,Communication Expenses,,,010,Sapporo Sales Office,142365,0,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,12405041,2022-03
+2628.0,2.0,33,Credit,2022-03-10,Telephone expense,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,0,142365,10E200180,Communication Expenses,,,010,Sapporo Sales Office,103721723,2022-03
+2629.0,1.0,57,Debit,2022-03-10,Anonymized Railway Company A expense,10E201230,Travel and Transportation Expenses,,,020,Tokyo Branch,101000,0,10A100020,Cash,,,000,Common Department,12048995,2022-03
+2629.0,1.0,57,Credit,2022-03-10,Anonymized Railway Company A expense,10A100020,Cash,,,000,Common Department,0,101000,10E201230,Travel and Transportation Expenses,,,020,Tokyo Branch,103620723,2022-03
+2630.0,1.0,61,Debit,2022-03-10,Withholding Tax payment,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,246932,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,6057229,2022-03
+2630.0,1.0,61,Credit,2022-03-10,Withholding Tax payment,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,246932,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,103373791,2022-03
+2630.0,2.0,61,Debit,2022-03-10,Resident Tax payment,10B100690,Deposits Received,2,Resident Tax,000,Common Department,449500,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,5607729,2022-03
+2630.0,2.0,61,Credit,2022-03-10,Resident Tax payment,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,449500,10B100690,Deposits Received,2,Resident Tax,000,Common Department,102924291,2022-03
+2631.0,1.0,63,Debit,2022-03-10,Rent payment,10E200720,Rent Expenses,,,020,Tokyo Branch,1260000,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,40518000,2022-03
+2631.0,1.0,63,Credit,2022-03-10,Rent payment,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,1260000,10E200720,Rent Expenses,,,020,Tokyo Branch,101664291,2022-03
+2632.0,1.0,64,Debit,2022-03-10,Rent payment,10E200720,Rent Expenses,,,040,Osaka Branch,840000,0,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,41358000,2022-03
+2632.0,1.0,64,Credit,2022-03-10,Rent payment,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,0,840000,10E200720,Rent Expenses,,,040,Osaka Branch,100824291,2022-03
+2633.0,1.0,65,Debit,2022-03-10,Wired service fee,10E201270,Miscellaneous Expenses,,,010,Sapporo Sales Office,5000,0,10B100630,Accounts Payable Other,,,000,Common Department,5332745,2022-03
+2633.0,1.0,65,Credit,2022-03-10,Wired service fee,10B100630,Accounts Payable Other,,,000,Common Department,0,5000,10E201270,Miscellaneous Expenses,,,010,Sapporo Sales Office,6978872,2022-03
+2633.0,2.0,65,Debit,2022-03-10,Security fee,10E201270,Miscellaneous Expenses,,,010,Sapporo Sales Office,34286,0,10B100630,Accounts Payable Other,,,000,Common Department,5367031,2022-03
+2633.0,2.0,65,Credit,2022-03-10,Security fee,10B100630,Accounts Payable Other,,,000,Common Department,0,34286,10E201270,Miscellaneous Expenses,,,010,Sapporo Sales Office,7013158,2022-03
+2634.0,1.0,76,Debit,2022-03-10,Employee late-night meal,10E200140,Employee Welfare Expenses,,,020,Tokyo Branch,75460,0,10B100630,Accounts Payable Other,,,000,Common Department,5222476,2022-03
+2634.0,1.0,76,Credit,2022-03-10,Employee late-night meal,10B100630,Accounts Payable Other,,,000,Common Department,0,75460,10E200140,Employee Welfare Expenses,,,020,Tokyo Branch,7088618,2022-03
+2635.0,1.0,78,Debit,2022-03-10,Gasoline,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,5623,0,10A100020,Cash,,,000,Common Department,6901321,2022-03
+2635.0,1.0,78,Credit,2022-03-10,Gasoline,10A100020,Cash,,,000,Common Department,0,5623,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,100818668,2022-03
+2635.0,2.0,78,Debit,2022-03-10,Expressway toll,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,1715,0,10A100020,Cash,,,000,Common Department,6903036,2022-03
+2635.0,2.0,78,Credit,2022-03-10,Expressway toll,10A100020,Cash,,,000,Common Department,0,1715,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,100816953,2022-03
+2636.0,1.0,87,Debit,2022-03-10,Voucher No. 461 dated 3/10 Anonymized Partner 085,10B100040,Accounts Payable,3,Anonymized Partner 085,000,Common Department,828232,0,10A100090,Accounts Receivable,3,Anonymized Partner 085,000,Common Department,51656736,2022-03
+2636.0,1.0,87,Credit,2022-03-10,Voucher No. 461 dated 3/10 Anonymized Partner 085,10A100090,Accounts Receivable,3,Anonymized Partner 085,000,Common Department,0,828232,10B100040,Accounts Payable,3,Anonymized Partner 085,000,Common Department,53855204,2022-03
+2637.0,1.0,88,Debit,2022-03-10,Voucher No. 462 dated 3/10 Anonymized Partner 066 Tokyo Head Office,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,7958128,0,10A100090,Accounts Receivable,14,Anonymized Partner 066,000,Common Department,108775081,2022-03
+2637.0,1.0,88,Credit,2022-03-10,Voucher No. 462 dated 3/10 Anonymized Partner 066 Tokyo Head Office,10A100090,Accounts Receivable,14,Anonymized Partner 066,000,Common Department,0,7958128,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,45897076,2022-03
+2637.0,2.0,88,Debit,2022-03-10,Voucher No. 462 dated 3/10 Anonymized Partner 066 Tokyo Head Office,10E200690,Service Fees,,,020,Tokyo Branch,735,0,10A100090,Accounts Receivable,14,Anonymized Partner 066,000,Common Department,133651,2022-03
+2637.0,2.0,88,Credit,2022-03-10,Voucher No. 462 dated 3/10 Anonymized Partner 066 Tokyo Head Office,10A100090,Accounts Receivable,14,Anonymized Partner 066,000,Common Department,0,735,10E200690,Service Fees,,,020,Tokyo Branch,45896341,2022-03
+2638.0,1.0,89,Debit,2022-03-10,Voucher No. 463 dated 3/10 Anonymized Partner 045,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,351715,0,10A100090,Accounts Receivable,19,Anonymized Partner 045,000,Common Department,109126796,2022-03
+2638.0,1.0,89,Credit,2022-03-10,Voucher No. 463 dated 3/10 Anonymized Partner 045,10A100090,Accounts Receivable,19,Anonymized Partner 045,000,Common Department,0,351715,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,45544626,2022-03
+2638.0,2.0,89,Debit,2022-03-10,Voucher No. 463 dated 3/10 Anonymized Partner 045,10E200690,Service Fees,,,030,Nagoya Branch,735,0,10A100090,Accounts Receivable,19,Anonymized Partner 045,000,Common Department,134386,2022-03
+2638.0,2.0,89,Credit,2022-03-10,Voucher No. 463 dated 3/10 Anonymized Partner 045,10A100090,Accounts Receivable,19,Anonymized Partner 045,000,Common Department,0,735,10E200690,Service Fees,,,030,Nagoya Branch,45543891,2022-03
+2639.0,1.0,90,Debit,2022-03-10,Voucher No. 464 dated 3/10 Anonymized Partner 072 | Sales voucher=20220228-114;Note number=R20220310-90-28,10A100060,Notes Receivable,,,000,Common Department,6175852,0,10A100090,Accounts Receivable,28,Anonymized Partner 072,000,Common Department,118430692,2022-03
+2639.0,1.0,90,Credit,2022-03-10,Voucher No. 464 dated 3/10 Anonymized Partner 072 | Sales voucher=20220228-114;Note number=R20220310-90-28,10A100090,Accounts Receivable,28,Anonymized Partner 072,000,Common Department,0,6175852,10A100060,Notes Receivable,,,000,Common Department,39368039,2022-03
+2640.0,1.0,91,Debit,2022-03-10,Voucher No. 348 dated 3/10 Anonymized Partner 085,10B100040,Accounts Payable,3,Anonymized Partner 085,000,Common Department,2898021,0,10B100030,Notes Payable,,,000,Common Department,48758715,2022-03
+2640.0,1.0,91,Credit,2022-03-10,Voucher No. 348 dated 3/10 Anonymized Partner 085,10B100030,Notes Payable,,,000,Common Department,0,2898021,10B100040,Accounts Payable,3,Anonymized Partner 085,000,Common Department,68072701,2022-03
+2641.0,1.0,92,Debit,2022-03-10,Voucher No. 349 dated 3/10 Anonymized Partner 063,10B100040,Accounts Payable,8,Anonymized Partner 063,000,Common Department,431827,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,48326888,2022-03
+2641.0,1.0,92,Credit,2022-03-10,Voucher No. 349 dated 3/10 Anonymized Partner 063,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,431827,10B100040,Accounts Payable,8,Anonymized Partner 063,000,Common Department,108694969,2022-03
+2650.0,1.0,112,Debit,2022-03-11,Telephone expense,10E200180,Communication Expenses,,,040,Osaka Branch,268243,0,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,12673284,2022-03
+2650.0,1.0,112,Credit,2022-03-11,Telephone expense,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,0,268243,10E200180,Communication Expenses,,,040,Osaka Branch,108426726,2022-03
+2649.0,1.0,85,Debit,2022-03-11,Telephone expense,10E200180,Communication Expenses,,,030,Nagoya Branch,56347,0,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,12729631,2022-03
+2649.0,1.0,85,Credit,2022-03-11,Telephone expense,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,0,56347,10E200180,Communication Expenses,,,030,Nagoya Branch,108370379,2022-03
+2651.0,1.0,68,Debit,2022-03-12,Battery expense,10E201270,Miscellaneous Expenses,,,040,Osaka Branch,630,0,10A100020,Cash,,,000,Common Department,5367661,2022-03
+2651.0,1.0,68,Credit,2022-03-12,Battery expense,10A100020,Cash,,,000,Common Department,0,630,10E201270,Miscellaneous Expenses,,,040,Osaka Branch,108369749,2022-03
+2652.0,1.0,73,Debit,2022-03-12,Meal expense Anonymized Store 080 2 people,10E200150,Entertainment Expenses,,,020,Tokyo Branch,9750,0,10A100020,Cash,,,000,Common Department,4079666,2022-03
+2652.0,1.0,73,Credit,2022-03-12,Meal expense Anonymized Store 080 2 people,10A100020,Cash,,,000,Common Department,0,9750,10E200150,Entertainment Expenses,,,020,Tokyo Branch,108359999,2022-03
+2653.0,1.0,86,Debit,2022-03-12,Postage stamps,10E200180,Communication Expenses,,,030,Nagoya Branch,8000,0,10A100020,Cash,,,000,Common Department,12737631,2022-03
+2653.0,1.0,86,Credit,2022-03-12,Postage stamps,10A100020,Cash,,,000,Common Department,0,8000,10E200180,Communication Expenses,,,030,Nagoya Branch,108351999,2022-03
+2655.0,1.0,144,Debit,2022-03-13,Gasoline,10E201120,Vehicle Expenses,,,040,Osaka Branch,2382,0,10A100020,Cash,,,000,Common Department,6905418,2022-03
+2655.0,1.0,144,Credit,2022-03-13,Gasoline,10A100020,Cash,,,000,Common Department,0,2382,10E201120,Vehicle Expenses,,,040,Osaka Branch,108349617,2022-03
+2655.0,2.0,144,Debit,2022-03-13,Gasoline,10E201120,Vehicle Expenses,,,040,Osaka Branch,7487,0,10A100020,Cash,,,000,Common Department,6912905,2022-03
+2655.0,2.0,144,Credit,2022-03-13,Gasoline,10A100020,Cash,,,000,Common Department,0,7487,10E201120,Vehicle Expenses,,,040,Osaka Branch,108342130,2022-03
+2655.0,3.0,144,Debit,2022-03-13,Expressway toll,10E201120,Vehicle Expenses,,,040,Osaka Branch,7662,0,10A100020,Cash,,,000,Common Department,6920567,2022-03
+2655.0,3.0,144,Credit,2022-03-13,Expressway toll,10A100020,Cash,,,000,Common Department,0,7662,10E201120,Vehicle Expenses,,,040,Osaka Branch,108334468,2022-03
+2656.0,1.0,158,Debit,2022-03-13,Air ticket,10E201230,Travel and Transportation Expenses,,,040,Osaka Branch,57000,0,10A100020,Cash,,,000,Common Department,12105995,2022-03
+2656.0,1.0,158,Credit,2022-03-13,Air ticket,10A100020,Cash,,,000,Common Department,0,57000,10E201230,Travel and Transportation Expenses,,,040,Osaka Branch,108277468,2022-03
+2654.0,1.0,21,Debit,2022-03-13,Anonymized Railway Company A expense,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,89505,0,10A100020,Cash,,,000,Common Department,12195500,2022-03
+2654.0,1.0,21,Credit,2022-03-13,Anonymized Railway Company A expense,10A100020,Cash,,,000,Common Department,0,89505,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,108187963,2022-03
+2657.0,1.0,17,Debit,2022-03-14,Windshield washer fluid,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,368,0,10A100020,Cash,,,000,Common Department,6920935,2022-03
+2657.0,1.0,17,Credit,2022-03-14,Windshield washer fluid,10A100020,Cash,,,000,Common Department,0,368,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,108187595,2022-03
+2658.0,1.0,46,Debit,2022-03-14,Gasoline,10E201120,Vehicle Expenses,,,020,Tokyo Branch,2341,0,10A100020,Cash,,,000,Common Department,6923276,2022-03
+2658.0,1.0,46,Credit,2022-03-14,Gasoline,10A100020,Cash,,,000,Common Department,0,2341,10E201120,Vehicle Expenses,,,020,Tokyo Branch,108185254,2022-03
+2658.0,2.0,46,Debit,2022-03-14,Gasoline,10E201120,Vehicle Expenses,,,020,Tokyo Branch,4767,0,10A100020,Cash,,,000,Common Department,6928043,2022-03
+2658.0,2.0,46,Credit,2022-03-14,Gasoline,10A100020,Cash,,,000,Common Department,0,4767,10E201120,Vehicle Expenses,,,020,Tokyo Branch,108180487,2022-03
+2658.0,3.0,46,Debit,2022-03-14,Gasoline,10E201120,Vehicle Expenses,,,020,Tokyo Branch,4880,0,10A100020,Cash,,,000,Common Department,6932923,2022-03
+2658.0,3.0,46,Credit,2022-03-14,Gasoline,10A100020,Cash,,,000,Common Department,0,4880,10E201120,Vehicle Expenses,,,020,Tokyo Branch,108175607,2022-03
+2659.0,1.0,51,Debit,2022-03-14,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,1505,0,10A100020,Cash,,,000,Common Department,6934428,2022-03
+2659.0,1.0,51,Credit,2022-03-14,Expressway toll,10A100020,Cash,,,000,Common Department,0,1505,10E201120,Vehicle Expenses,,,020,Tokyo Branch,108174102,2022-03
+2659.0,2.0,51,Debit,2022-03-14,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,620,0,10A100020,Cash,,,000,Common Department,6935048,2022-03
+2659.0,2.0,51,Credit,2022-03-14,Expressway toll,10A100020,Cash,,,000,Common Department,0,620,10E201120,Vehicle Expenses,,,020,Tokyo Branch,108173482,2022-03
+2659.0,3.0,51,Debit,2022-03-14,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,810,0,10A100020,Cash,,,000,Common Department,6935858,2022-03
+2659.0,3.0,51,Credit,2022-03-14,Expressway toll,10A100020,Cash,,,000,Common Department,0,810,10E201120,Vehicle Expenses,,,020,Tokyo Branch,108172672,2022-03
+2659.0,4.0,51,Debit,2022-03-14,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,1096,0,10A100020,Cash,,,000,Common Department,6936954,2022-03
+2659.0,4.0,51,Credit,2022-03-14,Expressway toll,10A100020,Cash,,,000,Common Department,0,1096,10E201120,Vehicle Expenses,,,020,Tokyo Branch,108171576,2022-03
+2659.0,5.0,51,Debit,2022-03-14,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,1096,0,10A100020,Cash,,,000,Common Department,6938050,2022-03
+2659.0,5.0,51,Credit,2022-03-14,Expressway toll,10A100020,Cash,,,000,Common Department,0,1096,10E201120,Vehicle Expenses,,,020,Tokyo Branch,108170480,2022-03
+2659.0,6.0,51,Debit,2022-03-14,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,1096,0,10A100020,Cash,,,000,Common Department,6939146,2022-03
+2659.0,6.0,51,Credit,2022-03-14,Expressway toll,10A100020,Cash,,,000,Common Department,0,1096,10E201120,Vehicle Expenses,,,020,Tokyo Branch,108169384,2022-03
+2659.0,7.0,51,Debit,2022-03-14,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,953,0,10A100020,Cash,,,000,Common Department,6940099,2022-03
+2659.0,7.0,51,Credit,2022-03-14,Expressway toll,10A100020,Cash,,,000,Common Department,0,953,10E201120,Vehicle Expenses,,,020,Tokyo Branch,108168431,2022-03
+2660.0,1.0,61,Debit,2022-03-14,Telephone expense,10E200180,Communication Expenses,,,020,Tokyo Branch,134697,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,12872328,2022-03
+2660.0,1.0,61,Credit,2022-03-14,Telephone expense,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,134697,10E200180,Communication Expenses,,,020,Tokyo Branch,108033734,2022-03
+2661.0,1.0,82,Debit,2022-03-14,Gasoline,10E201120,Vehicle Expenses,,,030,Nagoya Branch,31405,0,10B100630,Accounts Payable Other,,,000,Common Department,6971504,2022-03
+2661.0,1.0,82,Credit,2022-03-14,Gasoline,10B100630,Accounts Payable Other,,,000,Common Department,0,31405,10E201120,Vehicle Expenses,,,030,Nagoya Branch,7120023,2022-03
+2673.0,1.0,130,Debit,2022-03-15,Membership fee,10E201140,Membership Fees,,,040,Osaka Branch,24000,0,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,1300000,2022-03
+2673.0,1.0,130,Credit,2022-03-15,Membership fee,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,0,24000,10E201140,Membership Fees,,,040,Osaka Branch,108009734,2022-03
+2662.0,1.0,4,Debit,2022-03-15,Advertising expense,10E200050,Advertising Expenses,,,010,Sapporo Sales Office,31500,0,10B100630,Accounts Payable Other,,,000,Common Department,2018700,2022-03
+2662.0,1.0,4,Credit,2022-03-15,Advertising expense,10B100630,Accounts Payable Other,,,000,Common Department,0,31500,10E200050,Advertising Expenses,,,010,Sapporo Sales Office,7151523,2022-03
+2663.0,1.0,59,Debit,2022-03-15,Travel expense,10E201230,Travel and Transportation Expenses,,,020,Tokyo Branch,42858,0,10A100020,Cash,,,000,Common Department,12238358,2022-03
+2663.0,1.0,59,Credit,2022-03-15,Travel expense,10A100020,Cash,,,000,Common Department,0,42858,10E201230,Travel and Transportation Expenses,,,020,Tokyo Branch,107966876,2022-03
+2663.0,2.0,59,Debit,2022-03-15,Anonymized Railway Company A expense,10E201230,Travel and Transportation Expenses,,,020,Tokyo Branch,30477,0,10A100020,Cash,,,000,Common Department,12268835,2022-03
+2663.0,2.0,59,Credit,2022-03-15,Anonymized Railway Company A expense,10A100020,Cash,,,000,Common Department,0,30477,10E201230,Travel and Transportation Expenses,,,020,Tokyo Branch,107936399,2022-03
+2664.0,1.0,74,Debit,2022-03-15,Meal expense Anonymized Store 013,10E200150,Entertainment Expenses,,,020,Tokyo Branch,21650,0,10A100020,Cash,,,000,Common Department,4101316,2022-03
+2664.0,1.0,74,Credit,2022-03-15,Meal expense Anonymized Store 013,10A100020,Cash,,,000,Common Department,0,21650,10E200150,Entertainment Expenses,,,020,Tokyo Branch,107914749,2022-03
+2665.0,1.0,82,Debit,2022-03-15,Month 3 Payroll Other 0060 Part-time Staff,10E200520,Temporary Wages,,,020,Tokyo Branch,258617,0,10A100020,Cash,,,000,Common Department,4572619,2022-03
+2665.0,1.0,82,Credit,2022-03-15,Month 3 Payroll Other 0060 Part-time Staff,10A100020,Cash,,,000,Common Department,0,258617,10E200520,Temporary Wages,,,020,Tokyo Branch,107656132,2022-03
+2665.0,2.0,82,Debit,2022-03-15,Month 3 Payroll Other 0060 Part-time Staff,10E200520,Temporary Wages,,,020,Tokyo Branch,630,0,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,4573249,2022-03
+2665.0,2.0,82,Credit,2022-03-15,Month 3 Payroll Other 0060 Part-time Staff,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,0,630,10E200520,Temporary Wages,,,020,Tokyo Branch,5608359,2022-03
+2665.0,3.0,82,Debit,2022-03-15,Month 3 Payroll Other 0060 Part-time Staff,10E200520,Temporary Wages,,,020,Tokyo Branch,9713,0,10B100690,Deposits Received,9,Other,000,Common Department,4582962,2022-03
+2665.0,3.0,82,Credit,2022-03-15,Month 3 Payroll Other 0060 Part-time Staff,10B100690,Deposits Received,9,Other,000,Common Department,0,9713,10E200520,Temporary Wages,,,020,Tokyo Branch,5618072,2022-03
+2666.0,1.0,93,Debit,2022-03-15,Voucher No. 465 dated 3/15 Anonymized Partner 068,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,1608004,0,10A100090,Accounts Receivable,1,Anonymized Partner 068,000,Common Department,109264136,2022-03
+2666.0,1.0,93,Credit,2022-03-15,Voucher No. 465 dated 3/15 Anonymized Partner 068,10A100090,Accounts Receivable,1,Anonymized Partner 068,000,Common Department,0,1608004,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,37760035,2022-03
+2666.0,2.0,93,Debit,2022-03-15,Voucher No. 465 dated 3/15 Anonymized Partner 068,10E200690,Service Fees,,,050,Kyushu Sales Office,840,0,10A100090,Accounts Receivable,1,Anonymized Partner 068,000,Common Department,135226,2022-03
+2666.0,2.0,93,Credit,2022-03-15,Voucher No. 465 dated 3/15 Anonymized Partner 068,10A100090,Accounts Receivable,1,Anonymized Partner 068,000,Common Department,0,840,10E200690,Service Fees,,,050,Kyushu Sales Office,37759195,2022-03
+2667.0,1.0,94,Debit,2022-03-15,Voucher No. 466 dated 3/15 Anonymized Partner 061,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,1032910,0,10A100090,Accounts Receivable,6,Anonymized Partner 061,000,Common Department,110297046,2022-03
+2667.0,1.0,94,Credit,2022-03-15,Voucher No. 466 dated 3/15 Anonymized Partner 061,10A100090,Accounts Receivable,6,Anonymized Partner 061,000,Common Department,0,1032910,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,36726285,2022-03
+2667.0,2.0,94,Debit,2022-03-15,Voucher No. 466 dated 3/15 Anonymized Partner 061,10E200690,Service Fees,,,030,Nagoya Branch,840,0,10A100090,Accounts Receivable,6,Anonymized Partner 061,000,Common Department,136066,2022-03
+2667.0,2.0,94,Credit,2022-03-15,Voucher No. 466 dated 3/15 Anonymized Partner 061,10A100090,Accounts Receivable,6,Anonymized Partner 061,000,Common Department,0,840,10E200690,Service Fees,,,030,Nagoya Branch,36725445,2022-03
+2668.0,1.0,95,Debit,2022-03-15,Voucher No. 467 dated 3/15 Anonymized Partner 073,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,648960,0,10A100090,Accounts Receivable,8,Anonymized Partner 073,000,Common Department,110946006,2022-03
+2668.0,1.0,95,Credit,2022-03-15,Voucher No. 467 dated 3/15 Anonymized Partner 073,10A100090,Accounts Receivable,8,Anonymized Partner 073,000,Common Department,0,648960,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,36076485,2022-03
+2668.0,2.0,95,Debit,2022-03-15,Voucher No. 467 dated 3/15 Anonymized Partner 073,10E200690,Service Fees,,,040,Osaka Branch,840,0,10A100090,Accounts Receivable,8,Anonymized Partner 073,000,Common Department,136906,2022-03
+2668.0,2.0,95,Credit,2022-03-15,Voucher No. 467 dated 3/15 Anonymized Partner 073,10A100090,Accounts Receivable,8,Anonymized Partner 073,000,Common Department,0,840,10E200690,Service Fees,,,040,Osaka Branch,36075645,2022-03
+2669.0,1.0,96,Debit,2022-03-15,Voucher No. 468 dated 3/15 Anonymized Partner 026,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,1712320,0,10A100090,Accounts Receivable,9,Anonymized Partner 026,000,Common Department,112658326,2022-03
+2669.0,1.0,96,Credit,2022-03-15,Voucher No. 468 dated 3/15 Anonymized Partner 026,10A100090,Accounts Receivable,9,Anonymized Partner 026,000,Common Department,0,1712320,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,34363325,2022-03
+2669.0,2.0,96,Debit,2022-03-15,Voucher No. 468 dated 3/15 Anonymized Partner 026,10E200690,Service Fees,,,040,Osaka Branch,840,0,10A100090,Accounts Receivable,9,Anonymized Partner 026,000,Common Department,137746,2022-03
+2669.0,2.0,96,Credit,2022-03-15,Voucher No. 468 dated 3/15 Anonymized Partner 026,10A100090,Accounts Receivable,9,Anonymized Partner 026,000,Common Department,0,840,10E200690,Service Fees,,,040,Osaka Branch,34362485,2022-03
+2670.0,1.0,97,Debit,2022-03-15,Voucher No. 469 dated 3/15 Anonymized Partner 023,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,1024020,0,10A100090,Accounts Receivable,13,Anonymized Partner 023,000,Common Department,113682346,2022-03
+2670.0,1.0,97,Credit,2022-03-15,Voucher No. 469 dated 3/15 Anonymized Partner 023,10A100090,Accounts Receivable,13,Anonymized Partner 023,000,Common Department,0,1024020,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,33338465,2022-03
+2671.0,1.0,98,Debit,2022-03-15,Voucher No. 470 dated 3/15 Anonymized Partner 079,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,793799,0,10A100090,Accounts Receivable,20,Anonymized Partner 079,000,Common Department,114476145,2022-03
+2671.0,1.0,98,Credit,2022-03-15,Voucher No. 470 dated 3/15 Anonymized Partner 079,10A100090,Accounts Receivable,20,Anonymized Partner 079,000,Common Department,0,793799,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,32544666,2022-03
+2671.0,2.0,98,Debit,2022-03-15,Voucher No. 470 dated 3/15 Anonymized Partner 079,10E200690,Service Fees,,,040,Osaka Branch,315,0,10A100090,Accounts Receivable,20,Anonymized Partner 079,000,Common Department,138061,2022-03
+2671.0,2.0,98,Credit,2022-03-15,Voucher No. 470 dated 3/15 Anonymized Partner 079,10A100090,Accounts Receivable,20,Anonymized Partner 079,000,Common Department,0,315,10E200690,Service Fees,,,040,Osaka Branch,32544351,2022-03
+2672.0,1.0,99,Debit,2022-03-15,Voucher No. 350 dated 3/15 Anonymized Partner 043,10B100040,Accounts Payable,1,Anonymized Partner 043,000,Common Department,8427411,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,39899477,2022-03
+2672.0,1.0,99,Credit,2022-03-15,Voucher No. 350 dated 3/15 Anonymized Partner 043,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,8427411,10B100040,Accounts Payable,1,Anonymized Partner 043,000,Common Department,106048734,2022-03
+2674.0,1.0,103,Debit,2022-03-16,Meal expense Anonymized Store 056 2 people,10E200150,Entertainment Expenses,,,040,Osaka Branch,5680,0,10A100020,Cash,,,000,Common Department,4106996,2022-03
+2674.0,1.0,103,Credit,2022-03-16,Meal expense Anonymized Store 056 2 people,10A100020,Cash,,,000,Common Department,0,5680,10E200150,Entertainment Expenses,,,040,Osaka Branch,106043054,2022-03
+2675.0,1.0,117,Debit,2022-03-16,Membership fee,10E201140,Membership Fees,,,040,Osaka Branch,20000,0,10A100020,Cash,,,000,Common Department,1320000,2022-03
+2675.0,1.0,117,Credit,2022-03-16,Membership fee,10A100020,Cash,,,000,Common Department,0,20000,10E201140,Membership Fees,,,040,Osaka Branch,106023054,2022-03
+2676.0,1.0,136,Debit,2022-03-16,Anonymized Cleaning Company A expense,10E201270,Miscellaneous Expenses,,,040,Osaka Branch,16500,0,10A100020,Cash,,,000,Common Department,5384161,2022-03
+2676.0,1.0,136,Credit,2022-03-16,Anonymized Cleaning Company A expense,10A100020,Cash,,,000,Common Department,0,16500,10E201270,Miscellaneous Expenses,,,040,Osaka Branch,106006554,2022-03
+2677.0,1.0,148,Debit,2022-03-16,Gasoline,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,5584,0,10A100020,Cash,,,000,Common Department,6977088,2022-03
+2677.0,1.0,148,Credit,2022-03-16,Gasoline,10A100020,Cash,,,000,Common Department,0,5584,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,106000970,2022-03
+2678.0,1.0,149,Debit,2022-03-16,Gift expense Anonymized Store 058,10E200150,Entertainment Expenses,,,030,Nagoya Branch,3496,0,10A100020,Cash,,,000,Common Department,4110492,2022-03
+2678.0,1.0,149,Credit,2022-03-16,Gift expense Anonymized Store 058,10A100020,Cash,,,000,Common Department,0,3496,10E200150,Entertainment Expenses,,,030,Nagoya Branch,105997474,2022-03
+2678.0,2.0,149,Debit,2022-03-16,Cof fee expense and others 2 people,10E200150,Entertainment Expenses,,,030,Nagoya Branch,2324,0,10A100020,Cash,,,000,Common Department,4112816,2022-03
+2678.0,2.0,149,Credit,2022-03-16,Cof fee expense and others 2 people,10A100020,Cash,,,000,Common Department,0,2324,10E200150,Entertainment Expenses,,,030,Nagoya Branch,105995150,2022-03
+2679.0,1.0,23,Debit,2022-03-17,Travel expense,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,54096,0,10A100020,Cash,,,000,Common Department,12322931,2022-03
+2679.0,1.0,23,Credit,2022-03-17,Travel expense,10A100020,Cash,,,000,Common Department,0,54096,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,105941054,2022-03
+2679.0,2.0,23,Debit,2022-03-17,Travel expense,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,40000,0,10A100020,Cash,,,000,Common Department,12362931,2022-03
+2679.0,2.0,23,Credit,2022-03-17,Travel expense,10A100020,Cash,,,000,Common Department,0,40000,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,105901054,2022-03
+2679.0,3.0,23,Debit,2022-03-17,Travel expense,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,56953,0,10A100020,Cash,,,000,Common Department,12419884,2022-03
+2679.0,3.0,23,Credit,2022-03-17,Travel expense,10A100020,Cash,,,000,Common Department,0,56953,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,105844101,2022-03
+2680.0,1.0,47,Debit,2022-03-17,Gasoline,10E201120,Vehicle Expenses,,,020,Tokyo Branch,2540,0,10A100020,Cash,,,000,Common Department,6979628,2022-03
+2680.0,1.0,47,Credit,2022-03-17,Gasoline,10A100020,Cash,,,000,Common Department,0,2540,10E201120,Vehicle Expenses,,,020,Tokyo Branch,105841561,2022-03
+2681.0,1.0,52,Debit,2022-03-17,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,1096,0,10A100020,Cash,,,000,Common Department,6980724,2022-03
+2681.0,1.0,52,Credit,2022-03-17,Expressway toll,10A100020,Cash,,,000,Common Department,0,1096,10E201120,Vehicle Expenses,,,020,Tokyo Branch,105840465,2022-03
+2681.0,2.0,52,Debit,2022-03-17,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,1096,0,10A100020,Cash,,,000,Common Department,6981820,2022-03
+2681.0,2.0,52,Credit,2022-03-17,Expressway toll,10A100020,Cash,,,000,Common Department,0,1096,10E201120,Vehicle Expenses,,,020,Tokyo Branch,105839369,2022-03
+2681.0,3.0,52,Debit,2022-03-17,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,1429,0,10A100020,Cash,,,000,Common Department,6983249,2022-03
+2681.0,3.0,52,Credit,2022-03-17,Expressway toll,10A100020,Cash,,,000,Common Department,0,1429,10E201120,Vehicle Expenses,,,020,Tokyo Branch,105837940,2022-03
+2682.0,1.0,94,Debit,2022-03-17,toilet paper and others,10E201270,Miscellaneous Expenses,,,030,Nagoya Branch,3128,0,10A100020,Cash,,,000,Common Department,5387289,2022-03
+2682.0,1.0,94,Credit,2022-03-17,toilet paper and others,10A100020,Cash,,,000,Common Department,0,3128,10E201270,Miscellaneous Expenses,,,030,Nagoya Branch,105834812,2022-03
+2683.0,1.0,152,Debit,2022-03-18,Meal expense Anonymized Store 033 2 people,10E200150,Entertainment Expenses,,,050,Kyushu Sales Office,9450,0,10A100020,Cash,,,000,Common Department,4122266,2022-03
+2683.0,1.0,152,Credit,2022-03-18,Meal expense Anonymized Store 033 2 people,10A100020,Cash,,,000,Common Department,0,9450,10E200150,Entertainment Expenses,,,050,Kyushu Sales Office,105825362,2022-03
+2684.0,1.0,153,Debit,2022-03-18,Condolence gift,10E200150,Entertainment Expenses,,,030,Nagoya Branch,10000,0,10A100020,Cash,,,000,Common Department,4132266,2022-03
+2684.0,1.0,153,Credit,2022-03-18,Condolence gift,10A100020,Cash,,,000,Common Department,0,10000,10E200150,Entertainment Expenses,,,030,Nagoya Branch,105815362,2022-03
+2688.0,1.0,160,Debit,2022-03-19,Business travel expense,10E201230,Travel and Transportation Expenses,,,020,Tokyo Branch,59700,0,10A100020,Cash,,,000,Common Department,12479584,2022-03
+2688.0,1.0,160,Credit,2022-03-19,Business travel expense,10A100020,Cash,,,000,Common Department,0,59700,10E201230,Travel and Transportation Expenses,,,020,Tokyo Branch,105755662,2022-03
+2686.0,1.0,71,Debit,2022-03-19,golf play expense 2 people,10E200150,Entertainment Expenses,,,020,Tokyo Branch,28000,0,10A100020,Cash,,,000,Common Department,4160266,2022-03
+2686.0,1.0,71,Credit,2022-03-19,golf play expense 2 people,10A100020,Cash,,,000,Common Department,0,28000,10E200150,Entertainment Expenses,,,020,Tokyo Branch,105727662,2022-03
+2685.0,1.0,8,Debit,2022-03-19,Regular meeting fee,10E200150,Entertainment Expenses,,,010,Sapporo Sales Office,20000,0,10A100020,Cash,,,000,Common Department,4180266,2022-03
+2685.0,1.0,8,Credit,2022-03-19,Regular meeting fee,10A100020,Cash,,,000,Common Department,0,20000,10E200150,Entertainment Expenses,,,010,Sapporo Sales Office,105707662,2022-03
+2687.0,1.0,80,Debit,2022-03-19,Travel expense,10E201230,Travel and Transportation Expenses,,,030,Nagoya Branch,12000,0,10A100020,Cash,,,000,Common Department,12491584,2022-03
+2687.0,1.0,80,Credit,2022-03-19,Travel expense,10A100020,Cash,,,000,Common Department,0,12000,10E201230,Travel and Transportation Expenses,,,030,Nagoya Branch,105695662,2022-03
+2689.0,1.0,1,Debit,2022-03-20,"Overtime meal, reduced tax rate",10E200140,Employee Welfare Expenses,,,000,Common Department,21600,0,10A100020,Cash,,,000,Common Department,5244076,2022-03
+2689.0,1.0,1,Credit,2022-03-20,"Overtime meal, reduced tax rate",10A100020,Cash,,,000,Common Department,0,21600,10E200140,Employee Welfare Expenses,,,000,Common Department,105674062,2022-03
+2701.0,1.0,100,Debit,2022-03-20,Voucher No. 471 dated 3/20 Anonymized Partner 058,10A100020,Cash,,,000,Common Department,806985,0,10A100090,Accounts Receivable,11,Anonymized Partner 058,000,Common Department,106481047,2022-03
+2701.0,1.0,100,Credit,2022-03-20,Voucher No. 471 dated 3/20 Anonymized Partner 058,10A100090,Accounts Receivable,11,Anonymized Partner 058,000,Common Department,0,806985,10A100020,Cash,,,000,Common Department,31737366,2022-03
+2702.0,1.0,101,Debit,2022-03-20,Advertising fee,10E200050,Advertising Expenses,,,040,Osaka Branch,52500,0,10B100630,Accounts Payable Other,,,000,Common Department,2071200,2022-03
+2702.0,1.0,101,Credit,2022-03-20,Advertising fee,10B100630,Accounts Payable Other,,,000,Common Department,0,52500,10E200050,Advertising Expenses,,,040,Osaka Branch,7204023,2022-03
+2702.0,2.0,101,Debit,2022-03-20,Voucher No. 472 dated 3/20 Anonymized Partner 014,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,482394,0,10A100090,Accounts Receivable,21,Anonymized Partner 014,000,Common Department,106963441,2022-03
+2702.0,2.0,101,Credit,2022-03-20,Voucher No. 472 dated 3/20 Anonymized Partner 014,10A100090,Accounts Receivable,21,Anonymized Partner 014,000,Common Department,0,482394,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,31254972,2022-03
+2702.0,3.0,101,Debit,2022-03-20,Voucher No. 472 dated 3/20 Anonymized Partner 014,10E200690,Service Fees,,,030,Nagoya Branch,472,0,10A100090,Accounts Receivable,21,Anonymized Partner 014,000,Common Department,138533,2022-03
+2702.0,3.0,101,Credit,2022-03-20,Voucher No. 472 dated 3/20 Anonymized Partner 014,10A100090,Accounts Receivable,21,Anonymized Partner 014,000,Common Department,0,472,10E200690,Service Fees,,,030,Nagoya Branch,31254500,2022-03
+2703.0,1.0,102,Debit,2022-03-20,Voucher No. 473 dated 3/20 Anonymized Partner 052,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,1424485,0,10A100090,Accounts Receivable,30,Anonymized Partner 052,000,Common Department,108387926,2022-03
+2703.0,1.0,102,Credit,2022-03-20,Voucher No. 473 dated 3/20 Anonymized Partner 052,10A100090,Accounts Receivable,30,Anonymized Partner 052,000,Common Department,0,1424485,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,29830015,2022-03
+2703.0,2.0,102,Debit,2022-03-20,Voucher No. 473 dated 3/20 Anonymized Partner 052,10E200690,Service Fees,,,020,Tokyo Branch,735,0,10A100090,Accounts Receivable,30,Anonymized Partner 052,000,Common Department,139268,2022-03
+2703.0,2.0,102,Credit,2022-03-20,Voucher No. 473 dated 3/20 Anonymized Partner 052,10A100090,Accounts Receivable,30,Anonymized Partner 052,000,Common Department,0,735,10E200690,Service Fees,,,020,Tokyo Branch,29829280,2022-03
+2704.0,1.0,103,Debit,2022-03-20,Voucher No. 351 dated 3/20 Anonymized Partner 047,10B100040,Accounts Payable,4,Anonymized Partner 047,000,Common Department,1046118,0,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,38853359,2022-03
+2704.0,1.0,103,Credit,2022-03-20,Voucher No. 351 dated 3/20 Anonymized Partner 047,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,0,1046118,10B100040,Accounts Payable,4,Anonymized Partner 047,000,Common Department,107341808,2022-03
+2705.0,1.0,104,Debit,2022-03-20,Voucher No. 352 dated 3/20 Anonymized Partner 054,10B100040,Accounts Payable,6,Anonymized Partner 054,000,Common Department,5017707,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,33835652,2022-03
+2705.0,1.0,104,Credit,2022-03-20,Voucher No. 352 dated 3/20 Anonymized Partner 054,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,5017707,10B100040,Accounts Payable,6,Anonymized Partner 054,000,Common Department,102324101,2022-03
+2706.0,1.0,105,Debit,2022-03-20,Voucher No. 353 dated 3/20 Anonymized Partner 067,10B100040,Accounts Payable,11,Anonymized Partner 067,000,Common Department,3661476,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,30174176,2022-03
+2706.0,1.0,105,Credit,2022-03-20,Voucher No. 353 dated 3/20 Anonymized Partner 067,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,3661476,10B100040,Accounts Payable,11,Anonymized Partner 067,000,Common Department,98662625,2022-03
+2707.0,1.0,109,Debit,2022-03-20,Gasoline,10E201120,Vehicle Expenses,,,040,Osaka Branch,78987,0,10B100630,Accounts Payable Other,,,000,Common Department,7062236,2022-03
+2707.0,1.0,109,Credit,2022-03-20,Gasoline,10B100630,Accounts Payable Other,,,000,Common Department,0,78987,10E201120,Vehicle Expenses,,,040,Osaka Branch,7283010,2022-03
+2708.0,1.0,118,Debit,2022-03-20,Copying expense expense,10E201110,Office Supplies Expenses,,,040,Osaka Branch,8499,0,10B100630,Accounts Payable Other,,,000,Common Department,1423863,2022-03
+2708.0,1.0,118,Credit,2022-03-20,Copying expense expense,10B100630,Accounts Payable Other,,,000,Common Department,0,8499,10E201110,Office Supplies Expenses,,,040,Osaka Branch,7291509,2022-03
+2709.0,1.0,135,Debit,2022-03-20,office supplies,10E201110,Office Supplies Expenses,,,040,Osaka Branch,2713,0,10B100630,Accounts Payable Other,,,000,Common Department,1426576,2022-03
+2709.0,1.0,135,Credit,2022-03-20,office supplies,10B100630,Accounts Payable Other,,,000,Common Department,0,2713,10E201110,Office Supplies Expenses,,,040,Osaka Branch,7294222,2022-03
+2710.0,1.0,139,Debit,2022-03-20,Note maturity Anonymized Partner 057 | Note number=R20211225-117-2;Receipt amount corrected to settlement amount,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,17254140,0,10A100060,Notes Receivable,,,000,Common Department,115916765,2022-03
+2710.0,1.0,139,Credit,2022-03-20,Note maturity Anonymized Partner 057 | Note number=R20211225-117-2;Receipt amount corrected to settlement amount,10A100060,Notes Receivable,,,000,Common Department,0,17254140,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,101176552,2022-03
+2711.0,1.0,140,Debit,2022-03-20,Note maturity Anonymized Partner 072 | Note number=R20220110-92-28;Receipt amount corrected to settlement amount,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,11930631,0,10A100060,Notes Receivable,,,000,Common Department,127847396,2022-03
+2711.0,1.0,140,Credit,2022-03-20,Note maturity Anonymized Partner 072 | Note number=R20220110-92-28;Receipt amount corrected to settlement amount,10A100060,Notes Receivable,,,000,Common Department,0,11930631,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,89245921,2022-03
+2712.0,1.0,141,Debit,2022-03-20,Anonymized Railway Company A expense,10E201230,Travel and Transportation Expenses,,,040,Osaka Branch,53000,0,10A100020,Cash,,,000,Common Department,12544584,2022-03
+2712.0,1.0,141,Credit,2022-03-20,Anonymized Railway Company A expense,10A100020,Cash,,,000,Common Department,0,53000,10E201230,Travel and Transportation Expenses,,,040,Osaka Branch,127794396,2022-03
+2713.0,1.0,147,Debit,2022-03-20,Funds transfer,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,10000000,0,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,137794396,2022-03
+2713.0,1.0,147,Credit,2022-03-20,Funds transfer,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,0,10000000,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,127794396,2022-03
+2714.0,1.0,156,Debit,2022-03-20,Business travel expense,10E201230,Travel and Transportation Expenses,,,050,Kyushu Sales Office,16000,0,10A100020,Cash,,,000,Common Department,12560584,2022-03
+2714.0,1.0,156,Credit,2022-03-20,Business travel expense,10A100020,Cash,,,000,Common Department,0,16000,10E201230,Travel and Transportation Expenses,,,050,Kyushu Sales Office,127778396,2022-03
+2715.0,1.0,159,Debit,2022-03-20,taxi expense,10E201230,Travel and Transportation Expenses,,,050,Kyushu Sales Office,8800,0,10A100020,Cash,,,000,Common Department,12569384,2022-03
+2715.0,1.0,159,Credit,2022-03-20,taxi expense,10A100020,Cash,,,000,Common Department,0,8800,10E201230,Travel and Transportation Expenses,,,050,Kyushu Sales Office,127769596,2022-03
+2716.0,1.0,165,Debit,2022-03-20,Social gathering fee,10E201270,Miscellaneous Expenses,,,050,Kyushu Sales Office,10000,0,10A100020,Cash,,,000,Common Department,5397289,2022-03
+2716.0,1.0,165,Credit,2022-03-20,Social gathering fee,10A100020,Cash,,,000,Common Department,0,10000,10E201270,Miscellaneous Expenses,,,050,Kyushu Sales Office,127759596,2022-03
+2690.0,1.0,31,Debit,2022-03-20,Copying expense expense,10E201110,Office Supplies Expenses,,,010,Sapporo Sales Office,3504,0,10B100630,Accounts Payable Other,,,000,Common Department,1430080,2022-03
+2690.0,1.0,31,Credit,2022-03-20,Copying expense expense,10B100630,Accounts Payable Other,,,000,Common Department,0,3504,10E201110,Office Supplies Expenses,,,010,Sapporo Sales Office,7297726,2022-03
+2691.0,1.0,45,Debit,2022-03-20,Cof fee expense 2 people,10E200150,Entertainment Expenses,,,020,Tokyo Branch,1260,0,10A100020,Cash,,,000,Common Department,4181526,2022-03
+2691.0,1.0,45,Credit,2022-03-20,Cof fee expense 2 people,10A100020,Cash,,,000,Common Department,0,1260,10E200150,Entertainment Expenses,,,020,Tokyo Branch,127758336,2022-03
+2692.0,1.0,48,Debit,2022-03-20,Gasoline,10E201120,Vehicle Expenses,,,020,Tokyo Branch,4303,0,10A100020,Cash,,,000,Common Department,7066539,2022-03
+2692.0,1.0,48,Credit,2022-03-20,Gasoline,10A100020,Cash,,,000,Common Department,0,4303,10E201120,Vehicle Expenses,,,020,Tokyo Branch,127754033,2022-03
+2693.0,1.0,53,Debit,2022-03-20,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,381,0,10A100020,Cash,,,000,Common Department,7066920,2022-03
+2693.0,1.0,53,Credit,2022-03-20,Expressway toll,10A100020,Cash,,,000,Common Department,0,381,10E201120,Vehicle Expenses,,,020,Tokyo Branch,127753652,2022-03
+2693.0,2.0,53,Debit,2022-03-20,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,1000,0,10A100020,Cash,,,000,Common Department,7067920,2022-03
+2693.0,2.0,53,Credit,2022-03-20,Expressway toll,10A100020,Cash,,,000,Common Department,0,1000,10E201120,Vehicle Expenses,,,020,Tokyo Branch,127752652,2022-03
+2693.0,3.0,53,Debit,2022-03-20,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,1000,0,10A100020,Cash,,,000,Common Department,7068920,2022-03
+2693.0,3.0,53,Credit,2022-03-20,Expressway toll,10A100020,Cash,,,000,Common Department,0,1000,10E201120,Vehicle Expenses,,,020,Tokyo Branch,127751652,2022-03
+2694.0,1.0,67,Debit,2022-03-20,Wired service fee,10E201270,Miscellaneous Expenses,,,030,Nagoya Branch,5000,0,10B100630,Accounts Payable Other,,,000,Common Department,5402289,2022-03
+2694.0,1.0,67,Credit,2022-03-20,Wired service fee,10B100630,Accounts Payable Other,,,000,Common Department,0,5000,10E201270,Miscellaneous Expenses,,,030,Nagoya Branch,7302726,2022-03
+2695.0,1.0,69,Debit,2022-03-20,Copy counter charge,10E201110,Office Supplies Expenses,,,050,Kyushu Sales Office,6300,0,10B100630,Accounts Payable Other,,,000,Common Department,1436380,2022-03
+2695.0,1.0,69,Credit,2022-03-20,Copy counter charge,10B100630,Accounts Payable Other,,,000,Common Department,0,6300,10E201110,Office Supplies Expenses,,,050,Kyushu Sales Office,7309026,2022-03
+2696.0,1.0,71,Debit,2022-03-20,office supplies,10E201110,Office Supplies Expenses,,,020,Tokyo Branch,3453,0,10B100630,Accounts Payable Other,,,000,Common Department,1439833,2022-03
+2696.0,1.0,71,Credit,2022-03-20,office supplies,10B100630,Accounts Payable Other,,,000,Common Department,0,3453,10E201110,Office Supplies Expenses,,,020,Tokyo Branch,7312479,2022-03
+2696.0,2.0,71,Debit,2022-03-20,Copy counter charge,10E201110,Office Supplies Expenses,,,020,Tokyo Branch,38103,0,10B100630,Accounts Payable Other,,,000,Common Department,1477936,2022-03
+2696.0,2.0,71,Credit,2022-03-20,Copy counter charge,10B100630,Accounts Payable Other,,,000,Common Department,0,38103,10E201110,Office Supplies Expenses,,,020,Tokyo Branch,7350582,2022-03
+2697.0,1.0,73,Debit,2022-03-20,files and related supplies,10E200200,Supplies Expenses,,,000,Common Department,39271,0,10B100630,Accounts Payable Other,,,000,Common Department,3059421,2022-03
+2697.0,1.0,73,Credit,2022-03-20,files and related supplies,10B100630,Accounts Payable Other,,,000,Common Department,0,39271,10E200200,Supplies Expenses,,,000,Common Department,7389853,2022-03
+2697.0,2.0,73,Debit,2022-03-20,Drinking water,10E200200,Supplies Expenses,,,000,Common Department,243810,0,10B100630,Accounts Payable Other,,,000,Common Department,3303231,2022-03
+2697.0,2.0,73,Credit,2022-03-20,Drinking water,10B100630,Accounts Payable Other,,,000,Common Department,0,243810,10E200200,Supplies Expenses,,,000,Common Department,7633663,2022-03
+2697.0,3.0,73,Debit,2022-03-20,Business card expense,10E200200,Supplies Expenses,,,000,Common Department,64762,0,10B100630,Accounts Payable Other,,,000,Common Department,3367993,2022-03
+2697.0,3.0,73,Credit,2022-03-20,Business card expense,10B100630,Accounts Payable Other,,,000,Common Department,0,64762,10E200200,Supplies Expenses,,,000,Common Department,7698425,2022-03
+2698.0,1.0,79,Debit,2022-03-20,Prize expense,10E200140,Employee Welfare Expenses,,,030,Nagoya Branch,98513,0,10A100020,Cash,,,000,Common Department,5342589,2022-03
+2698.0,1.0,79,Credit,2022-03-20,Prize expense,10A100020,Cash,,,000,Common Department,0,98513,10E200140,Employee Welfare Expenses,,,030,Nagoya Branch,127653139,2022-03
+2699.0,1.0,97,Debit,2022-03-20,Copying expense expense,10E201110,Office Supplies Expenses,,,030,Nagoya Branch,41123,0,10B100630,Accounts Payable Other,,,000,Common Department,1519059,2022-03
+2699.0,1.0,97,Credit,2022-03-20,Copying expense expense,10B100630,Accounts Payable Other,,,000,Common Department,0,41123,10E201110,Office Supplies Expenses,,,030,Nagoya Branch,7739548,2022-03
+2700.0,1.0,98,Debit,2022-03-20,office supplies,10E201110,Office Supplies Expenses,,,030,Nagoya Branch,6475,0,10B100630,Accounts Payable Other,,,000,Common Department,1525534,2022-03
+2700.0,1.0,98,Credit,2022-03-20,office supplies,10B100630,Accounts Payable Other,,,000,Common Department,0,6475,10E201110,Office Supplies Expenses,,,030,Nagoya Branch,7746023,2022-03
+2722.0,1.0,132,Debit,2022-03-21,Electricity expense,10E201040,Utilities Expenses,,,040,Osaka Branch,114985,0,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,6492386,2022-03
+2722.0,1.0,132,Credit,2022-03-21,Electricity expense,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,0,114985,10E201040,Utilities Expenses,,,040,Osaka Branch,127538154,2022-03
+2722.0,2.0,132,Debit,2022-03-21,Water expense,10E201040,Utilities Expenses,,,040,Osaka Branch,6279,0,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,6498665,2022-03
+2722.0,2.0,132,Credit,2022-03-21,Water expense,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,0,6279,10E201040,Utilities Expenses,,,040,Osaka Branch,127531875,2022-03
+2723.0,1.0,163,Debit,2022-03-21,Membership fee,10E201140,Membership Fees,,,050,Kyushu Sales Office,18000,0,10A100020,Cash,,,000,Common Department,1338000,2022-03
+2723.0,1.0,163,Credit,2022-03-21,Membership fee,10A100020,Cash,,,000,Common Department,0,18000,10E201140,Membership Fees,,,050,Kyushu Sales Office,127513875,2022-03
+2724.0,1.0,169,Debit,2022-03-21,Electricity expense,10E201040,Utilities Expenses,,,050,Kyushu Sales Office,122137,0,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,6620802,2022-03
+2724.0,1.0,169,Credit,2022-03-21,Electricity expense,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,0,122137,10E201040,Utilities Expenses,,,050,Kyushu Sales Office,127391738,2022-03
+2724.0,2.0,169,Debit,2022-03-21,Water expense,10E201040,Utilities Expenses,,,050,Kyushu Sales Office,6336,0,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,6627138,2022-03
+2724.0,2.0,169,Credit,2022-03-21,Water expense,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,0,6336,10E201040,Utilities Expenses,,,050,Kyushu Sales Office,127385402,2022-03
+2718.0,1.0,25,Debit,2022-03-21,Travel expense,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,56000,0,10A100020,Cash,,,000,Common Department,12625384,2022-03
+2718.0,1.0,25,Credit,2022-03-21,Travel expense,10A100020,Cash,,,000,Common Department,0,56000,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,127329402,2022-03
+2719.0,1.0,34,Debit,2022-03-21,Electricity expense,10E201040,Utilities Expenses,,,010,Sapporo Sales Office,107190,0,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,6734328,2022-03
+2719.0,1.0,34,Credit,2022-03-21,Electricity expense,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,0,107190,10E201040,Utilities Expenses,,,010,Sapporo Sales Office,127222212,2022-03
+2719.0,2.0,34,Debit,2022-03-21,Water expense,10E201040,Utilities Expenses,,,010,Sapporo Sales Office,5728,0,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,6740056,2022-03
+2719.0,2.0,34,Credit,2022-03-21,Water expense,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,0,5728,10E201040,Utilities Expenses,,,010,Sapporo Sales Office,127216484,2022-03
+2717.0,1.0,6,Debit,2022-03-21,Advertising fee,10E200050,Advertising Expenses,,,010,Sapporo Sales Office,5000,0,10A100020,Cash,,,000,Common Department,2076200,2022-03
+2717.0,1.0,6,Credit,2022-03-21,Advertising fee,10A100020,Cash,,,000,Common Department,0,5000,10E200050,Advertising Expenses,,,010,Sapporo Sales Office,127211484,2022-03
+2720.0,1.0,64,Debit,2022-03-21,Electricity expense,10E201040,Utilities Expenses,,,020,Tokyo Branch,216041,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,6956097,2022-03
+2720.0,1.0,64,Credit,2022-03-21,Electricity expense,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,216041,10E201040,Utilities Expenses,,,020,Tokyo Branch,126995443,2022-03
+2720.0,2.0,64,Debit,2022-03-21,Water expense,10E201040,Utilities Expenses,,,020,Tokyo Branch,8279,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,6964376,2022-03
+2720.0,2.0,64,Credit,2022-03-21,Water expense,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,8279,10E201040,Utilities Expenses,,,020,Tokyo Branch,126987164,2022-03
+2721.0,1.0,89,Debit,2022-03-21,Electricity expense,10E201040,Utilities Expenses,,,030,Nagoya Branch,96107,0,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,7060483,2022-03
+2721.0,1.0,89,Credit,2022-03-21,Electricity expense,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,0,96107,10E201040,Utilities Expenses,,,030,Nagoya Branch,126891057,2022-03
+2721.0,2.0,89,Debit,2022-03-21,Water expense,10E201040,Utilities Expenses,,,030,Nagoya Branch,4959,0,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,7065442,2022-03
+2721.0,2.0,89,Credit,2022-03-21,Water expense,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,0,4959,10E201040,Utilities Expenses,,,030,Nagoya Branch,126886098,2022-03
+2721.0,3.0,89,Debit,2022-03-21,Gas expense,10E201040,Utilities Expenses,,,030,Nagoya Branch,5555,0,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,7070997,2022-03
+2721.0,3.0,89,Credit,2022-03-21,Gas expense,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,0,5555,10E201040,Utilities Expenses,,,030,Nagoya Branch,126880543,2022-03
+2730.0,1.0,107,Debit,2022-03-22,Get-well gift,10E200150,Entertainment Expenses,,,040,Osaka Branch,10000,0,10A100020,Cash,,,000,Common Department,4191526,2022-03
+2730.0,1.0,107,Credit,2022-03-22,Get-well gift,10A100020,Cash,,,000,Common Department,0,10000,10E200150,Entertainment Expenses,,,040,Osaka Branch,126870543,2022-03
+2731.0,1.0,157,Debit,2022-03-22,Airfare,10E201230,Travel and Transportation Expenses,,,050,Kyushu Sales Office,39800,0,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,12665184,2022-03
+2731.0,1.0,157,Credit,2022-03-22,Airfare,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,0,39800,10E201230,Travel and Transportation Expenses,,,050,Kyushu Sales Office,126830743,2022-03
+2732.0,1.0,166,Debit,2022-03-22,Anonymized Cleaning Company A expense,10E201270,Miscellaneous Expenses,,,050,Kyushu Sales Office,1890,0,10A100020,Cash,,,000,Common Department,5404179,2022-03
+2732.0,1.0,166,Credit,2022-03-22,Anonymized Cleaning Company A expense,10A100020,Cash,,,000,Common Department,0,1890,10E201270,Miscellaneous Expenses,,,050,Kyushu Sales Office,126828853,2022-03
+2726.0,1.0,24,Debit,2022-03-22,Anonymized Railway Company A multi-ride ticket,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,92000,0,10A100020,Cash,,,000,Common Department,12757184,2022-03
+2726.0,1.0,24,Credit,2022-03-22,Anonymized Railway Company A multi-ride ticket,10A100020,Cash,,,000,Common Department,0,92000,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,126736853,2022-03
+2725.0,1.0,3,Debit,2022-03-22,Lodging expense,10E200140,Employee Welfare Expenses,,,010,Sapporo Sales Office,32185,0,10B100630,Accounts Payable Other,,,000,Common Department,5374774,2022-03
+2725.0,1.0,3,Credit,2022-03-22,Lodging expense,10B100630,Accounts Payable Other,,,000,Common Department,0,32185,10E200140,Employee Welfare Expenses,,,010,Sapporo Sales Office,7778208,2022-03
+2727.0,1.0,74,Debit,2022-03-22,Gasoline,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,6771,0,10A100020,Cash,,,000,Common Department,7075691,2022-03
+2727.0,1.0,74,Credit,2022-03-22,Gasoline,10A100020,Cash,,,000,Common Department,0,6771,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,126730082,2022-03
+2727.0,2.0,74,Debit,2022-03-22,Expressway toll,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,5143,0,10A100020,Cash,,,000,Common Department,7080834,2022-03
+2727.0,2.0,74,Credit,2022-03-22,Expressway toll,10A100020,Cash,,,000,Common Department,0,5143,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,126724939,2022-03
+2728.0,1.0,90,Debit,2022-03-22,Anonymized Cleaning Company A expense,10E201270,Miscellaneous Expenses,,,030,Nagoya Branch,9500,0,10A100020,Cash,,,000,Common Department,5413679,2022-03
+2728.0,1.0,90,Credit,2022-03-22,Anonymized Cleaning Company A expense,10A100020,Cash,,,000,Common Department,0,9500,10E201270,Miscellaneous Expenses,,,030,Nagoya Branch,126715439,2022-03
+2729.0,1.0,95,Debit,2022-03-22,Cleaning fee,10E201270,Miscellaneous Expenses,,,030,Nagoya Branch,71675,0,10B100630,Accounts Payable Other,,,000,Common Department,5485354,2022-03
+2729.0,1.0,95,Credit,2022-03-22,Cleaning fee,10B100630,Accounts Payable Other,,,000,Common Department,0,71675,10E201270,Miscellaneous Expenses,,,030,Nagoya Branch,7849883,2022-03
+2733.0,1.0,12,Debit,2022-03-23,Gasoline,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,3298,0,10A100020,Cash,,,000,Common Department,7084132,2022-03
+2733.0,1.0,12,Credit,2022-03-23,Gasoline,10A100020,Cash,,,000,Common Department,0,3298,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,126712141,2022-03
+2733.0,2.0,12,Debit,2022-03-23,Parking fee,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,762,0,10A100020,Cash,,,000,Common Department,7084894,2022-03
+2733.0,2.0,12,Credit,2022-03-23,Parking fee,10A100020,Cash,,,000,Common Department,0,762,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,126711379,2022-03
+2738.0,1.0,140,Debit,2022-03-23,Travel expense,10E201230,Travel and Transportation Expenses,,,040,Osaka Branch,12300,0,10A100020,Cash,,,000,Common Department,12769484,2022-03
+2738.0,1.0,140,Credit,2022-03-23,Travel expense,10A100020,Cash,,,000,Common Department,0,12300,10E201230,Travel and Transportation Expenses,,,040,Osaka Branch,126699079,2022-03
+2734.0,1.0,28,Debit,2022-03-23,taxi expense,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,2420,0,10B100630,Accounts Payable Other,,,000,Common Department,12771904,2022-03
+2734.0,1.0,28,Credit,2022-03-23,taxi expense,10B100630,Accounts Payable Other,,,000,Common Department,0,2420,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,7852303,2022-03
+2735.0,1.0,54,Debit,2022-03-23,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,1810,0,10A100020,Cash,,,000,Common Department,7086704,2022-03
+2735.0,1.0,54,Credit,2022-03-23,Expressway toll,10A100020,Cash,,,000,Common Department,0,1810,10E201120,Vehicle Expenses,,,020,Tokyo Branch,126697269,2022-03
+2735.0,2.0,54,Debit,2022-03-23,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,2572,0,10A100020,Cash,,,000,Common Department,7089276,2022-03
+2735.0,2.0,54,Credit,2022-03-23,Expressway toll,10A100020,Cash,,,000,Common Department,0,2572,10E201120,Vehicle Expenses,,,020,Tokyo Branch,126694697,2022-03
+2736.0,1.0,75,Debit,2022-03-23,Gasoline,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,5970,0,10A100020,Cash,,,000,Common Department,7095246,2022-03
+2736.0,1.0,75,Credit,2022-03-23,Gasoline,10A100020,Cash,,,000,Common Department,0,5970,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,126688727,2022-03
+2737.0,1.0,83,Debit,2022-03-23,Month 3 Payroll Other 0001 Executive,10E200090,Directors' Compensation,,,020,Tokyo Branch,1124255,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,20044255,2022-03
+2737.0,1.0,83,Credit,2022-03-23,Month 3 Payroll Other 0001 Executive,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,1124255,10E200090,Directors' Compensation,,,020,Tokyo Branch,125564472,2022-03
+2737.0,2.0,83,Debit,2022-03-23,Month 3 Payroll Other 0001 Executive,10E200090,Directors' Compensation,,,020,Tokyo Branch,120411,0,10B100690,Deposits Received,1,Insurance Expenses,000,Common Department,20164666,2022-03
+2737.0,2.0,83,Credit,2022-03-23,Month 3 Payroll Other 0001 Executive,10B100690,Deposits Received,1,Insurance Expenses,000,Common Department,0,120411,10E200090,Directors' Compensation,,,020,Tokyo Branch,5738483,2022-03
+2737.0,3.0,83,Debit,2022-03-23,Month 3 Payroll Other 0001 Executive,10E200090,Directors' Compensation,,,020,Tokyo Branch,171200,0,10B100690,Deposits Received,2,Resident Tax,000,Common Department,20335866,2022-03
+2737.0,3.0,83,Credit,2022-03-23,Month 3 Payroll Other 0001 Executive,10B100690,Deposits Received,2,Resident Tax,000,Common Department,0,171200,10E200090,Directors' Compensation,,,020,Tokyo Branch,5909683,2022-03
+2737.0,4.0,83,Debit,2022-03-23,Month 3 Payroll Other 0001 Executive,10E200090,Directors' Compensation,,,020,Tokyo Branch,164442,0,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,20500308,2022-03
+2737.0,4.0,83,Credit,2022-03-23,Month 3 Payroll Other 0001 Executive,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,0,164442,10E200090,Directors' Compensation,,,020,Tokyo Branch,6074125,2022-03
+2737.0,5.0,83,Debit,2022-03-23,Month 3 Payroll Other 0001 Executive,10E200090,Directors' Compensation,,,020,Tokyo Branch,133972,0,10B100690,Deposits Received,4,Savings and Insurance,000,Common Department,20634280,2022-03
+2737.0,5.0,83,Credit,2022-03-23,Month 3 Payroll Other 0001 Executive,10B100690,Deposits Received,4,Savings and Insurance,000,Common Department,0,133972,10E200090,Directors' Compensation,,,020,Tokyo Branch,6208097,2022-03
+2737.0,6.0,83,Debit,2022-03-23,Month 3 Payroll Other 0001 Executive,10E200090,Directors' Compensation,,,020,Tokyo Branch,5720,0,10B100690,Deposits Received,9,Other,000,Common Department,20640000,2022-03
+2737.0,6.0,83,Credit,2022-03-23,Month 3 Payroll Other 0001 Executive,10B100690,Deposits Received,9,Other,000,Common Department,0,5720,10E200090,Directors' Compensation,,,020,Tokyo Branch,6213817,2022-03
+2737.0,7.0,83,Debit,2022-03-23,Month 3 Payroll Other 0020 Sales Department,10E200370,Salaries and Allowances,,,020,Tokyo Branch,1461754,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,58521263,2022-03
+2737.0,7.0,83,Credit,2022-03-23,Month 3 Payroll Other 0020 Sales Department,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,1461754,10E200370,Salaries and Allowances,,,020,Tokyo Branch,124102718,2022-03
+2737.0,8.0,83,Debit,2022-03-23,Month 3 Payroll Other 0020 Sales Department,10E200370,Salaries and Allowances,,,020,Tokyo Branch,236045,0,10B100690,Deposits Received,1,Insurance Expenses,000,Common Department,58757308,2022-03
+2737.0,8.0,83,Credit,2022-03-23,Month 3 Payroll Other 0020 Sales Department,10B100690,Deposits Received,1,Insurance Expenses,000,Common Department,0,236045,10E200370,Salaries and Allowances,,,020,Tokyo Branch,6449862,2022-03
+2737.0,9.0,83,Debit,2022-03-23,Month 3 Payroll Other 0020 Sales Department,10E200370,Salaries and Allowances,,,020,Tokyo Branch,104300,0,10B100690,Deposits Received,2,Resident Tax,000,Common Department,58861608,2022-03
+2737.0,9.0,83,Credit,2022-03-23,Month 3 Payroll Other 0020 Sales Department,10B100690,Deposits Received,2,Resident Tax,000,Common Department,0,104300,10E200370,Salaries and Allowances,,,020,Tokyo Branch,6554162,2022-03
+2737.0,10.0,83,Debit,2022-03-23,Month 3 Payroll Other 0020 Sales Department,10E200370,Salaries and Allowances,,,020,Tokyo Branch,35440,0,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,58897048,2022-03
+2737.0,10.0,83,Credit,2022-03-23,Month 3 Payroll Other 0020 Sales Department,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,0,35440,10E200370,Salaries and Allowances,,,020,Tokyo Branch,6589602,2022-03
+2737.0,11.0,83,Debit,2022-03-23,Month 3 Payroll Other 0020 Sales Department,10E200370,Salaries and Allowances,,,020,Tokyo Branch,43305,0,10B100690,Deposits Received,4,Savings and Insurance,000,Common Department,58940353,2022-03
+2737.0,11.0,83,Credit,2022-03-23,Month 3 Payroll Other 0020 Sales Department,10B100690,Deposits Received,4,Savings and Insurance,000,Common Department,0,43305,10E200370,Salaries and Allowances,,,020,Tokyo Branch,6632907,2022-03
+2737.0,12.0,83,Debit,2022-03-23,Month 3 Payroll Other 0020 Sales Department,10E200370,Salaries and Allowances,,,020,Tokyo Branch,68294,0,10B100690,Deposits Received,9,Other,000,Common Department,59008647,2022-03
+2737.0,12.0,83,Credit,2022-03-23,Month 3 Payroll Other 0020 Sales Department,10B100690,Deposits Received,9,Other,000,Common Department,0,68294,10E200370,Salaries and Allowances,,,020,Tokyo Branch,6701201,2022-03
+2737.0,13.0,83,Debit,2022-03-23,Month 3 Payroll Other 1000 Sapporo Sales Office,10E200370,Salaries and Allowances,,,010,Sapporo Sales Office,607264,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,59615911,2022-03
+2737.0,13.0,83,Credit,2022-03-23,Month 3 Payroll Other 1000 Sapporo Sales Office,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,607264,10E200370,Salaries and Allowances,,,010,Sapporo Sales Office,123495454,2022-03
+2737.0,14.0,83,Debit,2022-03-23,Month 3 Payroll Other 1000 Sapporo Sales Office,10E200370,Salaries and Allowances,,,010,Sapporo Sales Office,103424,0,10B100690,Deposits Received,1,Insurance Expenses,000,Common Department,59719335,2022-03
+2737.0,14.0,83,Credit,2022-03-23,Month 3 Payroll Other 1000 Sapporo Sales Office,10B100690,Deposits Received,1,Insurance Expenses,000,Common Department,0,103424,10E200370,Salaries and Allowances,,,010,Sapporo Sales Office,6804625,2022-03
+2737.0,15.0,83,Debit,2022-03-23,Month 3 Payroll Other 1000 Sapporo Sales Office,10E200370,Salaries and Allowances,,,010,Sapporo Sales Office,46300,0,10B100690,Deposits Received,2,Resident Tax,000,Common Department,59765635,2022-03
+2737.0,15.0,83,Credit,2022-03-23,Month 3 Payroll Other 1000 Sapporo Sales Office,10B100690,Deposits Received,2,Resident Tax,000,Common Department,0,46300,10E200370,Salaries and Allowances,,,010,Sapporo Sales Office,6850925,2022-03
+2737.0,16.0,83,Debit,2022-03-23,Month 3 Payroll Other 1000 Sapporo Sales Office,10E200370,Salaries and Allowances,,,010,Sapporo Sales Office,13610,0,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,59779245,2022-03
+2737.0,16.0,83,Credit,2022-03-23,Month 3 Payroll Other 1000 Sapporo Sales Office,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,0,13610,10E200370,Salaries and Allowances,,,010,Sapporo Sales Office,6864535,2022-03
+2737.0,17.0,83,Debit,2022-03-23,Month 3 Payroll Other 1000 Sapporo Sales Office,10E200370,Salaries and Allowances,,,010,Sapporo Sales Office,50648,0,10B100690,Deposits Received,4,Savings and Insurance,000,Common Department,59829893,2022-03
+2737.0,17.0,83,Credit,2022-03-23,Month 3 Payroll Other 1000 Sapporo Sales Office,10B100690,Deposits Received,4,Savings and Insurance,000,Common Department,0,50648,10E200370,Salaries and Allowances,,,010,Sapporo Sales Office,6915183,2022-03
+2737.0,18.0,83,Debit,2022-03-23,Month 3 Payroll Other 1000 Sapporo Sales Office,10E200370,Salaries and Allowances,,,010,Sapporo Sales Office,37754,0,10B100690,Deposits Received,9,Other,000,Common Department,59867647,2022-03
+2737.0,18.0,83,Credit,2022-03-23,Month 3 Payroll Other 1000 Sapporo Sales Office,10B100690,Deposits Received,9,Other,000,Common Department,0,37754,10E200370,Salaries and Allowances,,,010,Sapporo Sales Office,6952937,2022-03
+2737.0,19.0,83,Debit,2022-03-23,Month 3 Payroll Other 3000 Nagoya Sales Office,10E200370,Salaries and Allowances,,,030,Nagoya Branch,551332,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,60418979,2022-03
+2737.0,19.0,83,Credit,2022-03-23,Month 3 Payroll Other 3000 Nagoya Sales Office,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,551332,10E200370,Salaries and Allowances,,,030,Nagoya Branch,122944122,2022-03
+2737.0,20.0,83,Debit,2022-03-23,Month 3 Payroll Other 3000 Nagoya Sales Office,10E200370,Salaries and Allowances,,,030,Nagoya Branch,96352,0,10B100690,Deposits Received,1,Insurance Expenses,000,Common Department,60515331,2022-03
+2737.0,20.0,83,Credit,2022-03-23,Month 3 Payroll Other 3000 Nagoya Sales Office,10B100690,Deposits Received,1,Insurance Expenses,000,Common Department,0,96352,10E200370,Salaries and Allowances,,,030,Nagoya Branch,7049289,2022-03
+2737.0,21.0,83,Debit,2022-03-23,Month 3 Payroll Other 3000 Nagoya Sales Office,10E200370,Salaries and Allowances,,,030,Nagoya Branch,42600,0,10B100690,Deposits Received,2,Resident Tax,000,Common Department,60557931,2022-03
+2737.0,21.0,83,Credit,2022-03-23,Month 3 Payroll Other 3000 Nagoya Sales Office,10B100690,Deposits Received,2,Resident Tax,000,Common Department,0,42600,10E200370,Salaries and Allowances,,,030,Nagoya Branch,7091889,2022-03
+2737.0,22.0,83,Debit,2022-03-23,Month 3 Payroll Other 3000 Nagoya Sales Office,10E200370,Salaries and Allowances,,,030,Nagoya Branch,7710,0,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,60565641,2022-03
+2737.0,22.0,83,Credit,2022-03-23,Month 3 Payroll Other 3000 Nagoya Sales Office,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,0,7710,10E200370,Salaries and Allowances,,,030,Nagoya Branch,7099599,2022-03
+2737.0,23.0,83,Debit,2022-03-23,Month 3 Payroll Other 3000 Nagoya Sales Office,10E200370,Salaries and Allowances,,,030,Nagoya Branch,40759,0,10B100690,Deposits Received,4,Savings and Insurance,000,Common Department,60606400,2022-03
+2737.0,23.0,83,Credit,2022-03-23,Month 3 Payroll Other 3000 Nagoya Sales Office,10B100690,Deposits Received,4,Savings and Insurance,000,Common Department,0,40759,10E200370,Salaries and Allowances,,,030,Nagoya Branch,7140358,2022-03
+2737.0,24.0,83,Debit,2022-03-23,Month 3 Payroll Other 3000 Nagoya Sales Office,10E200370,Salaries and Allowances,,,030,Nagoya Branch,36148,0,10B100690,Deposits Received,9,Other,000,Common Department,60642548,2022-03
+2737.0,24.0,83,Credit,2022-03-23,Month 3 Payroll Other 3000 Nagoya Sales Office,10B100690,Deposits Received,9,Other,000,Common Department,0,36148,10E200370,Salaries and Allowances,,,030,Nagoya Branch,7176506,2022-03
+2737.0,25.0,83,Debit,2022-03-23,Month 3 Payroll Other 4000 Osaka Branch,10E200370,Salaries and Allowances,,,040,Osaka Branch,769991,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,61412539,2022-03
+2737.0,25.0,83,Credit,2022-03-23,Month 3 Payroll Other 4000 Osaka Branch,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,769991,10E200370,Salaries and Allowances,,,040,Osaka Branch,122174131,2022-03
+2737.0,26.0,83,Debit,2022-03-23,Month 3 Payroll Other 4000 Osaka Branch,10E200370,Salaries and Allowances,,,040,Osaka Branch,119477,0,10B100690,Deposits Received,1,Insurance Expenses,000,Common Department,61532016,2022-03
+2737.0,26.0,83,Credit,2022-03-23,Month 3 Payroll Other 4000 Osaka Branch,10B100690,Deposits Received,1,Insurance Expenses,000,Common Department,0,119477,10E200370,Salaries and Allowances,,,040,Osaka Branch,7295983,2022-03
+2737.0,27.0,83,Debit,2022-03-23,Month 3 Payroll Other 4000 Osaka Branch,10E200370,Salaries and Allowances,,,040,Osaka Branch,53400,0,10B100690,Deposits Received,2,Resident Tax,000,Common Department,61585416,2022-03
+2737.0,27.0,83,Credit,2022-03-23,Month 3 Payroll Other 4000 Osaka Branch,10B100690,Deposits Received,2,Resident Tax,000,Common Department,0,53400,10E200370,Salaries and Allowances,,,040,Osaka Branch,7349383,2022-03
+2737.0,28.0,83,Debit,2022-03-23,Month 3 Payroll Other 4000 Osaka Branch,10E200370,Salaries and Allowances,,,040,Osaka Branch,16710,0,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,61602126,2022-03
+2737.0,28.0,83,Credit,2022-03-23,Month 3 Payroll Other 4000 Osaka Branch,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,0,16710,10E200370,Salaries and Allowances,,,040,Osaka Branch,7366093,2022-03
+2737.0,29.0,83,Debit,2022-03-23,Month 3 Payroll Other 4000 Osaka Branch,10E200370,Salaries and Allowances,,,040,Osaka Branch,13570,0,10B100690,Deposits Received,4,Savings and Insurance,000,Common Department,61615696,2022-03
+2737.0,29.0,83,Credit,2022-03-23,Month 3 Payroll Other 4000 Osaka Branch,10B100690,Deposits Received,4,Savings and Insurance,000,Common Department,0,13570,10E200370,Salaries and Allowances,,,040,Osaka Branch,7379663,2022-03
+2737.0,30.0,83,Debit,2022-03-23,Month 3 Payroll Other 4000 Osaka Branch,10E200370,Salaries and Allowances,,,040,Osaka Branch,18952,0,10B100690,Deposits Received,9,Other,000,Common Department,61634648,2022-03
+2737.0,30.0,83,Credit,2022-03-23,Month 3 Payroll Other 4000 Osaka Branch,10B100690,Deposits Received,9,Other,000,Common Department,0,18952,10E200370,Salaries and Allowances,,,040,Osaka Branch,7398615,2022-03
+2737.0,31.0,83,Debit,2022-03-23,Month 3 Payroll Other 5000 Kyushu Sales Office,10E200370,Salaries and Allowances,,,050,Kyushu Sales Office,458531,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,62093179,2022-03
+2737.0,31.0,83,Credit,2022-03-23,Month 3 Payroll Other 5000 Kyushu Sales Office,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,458531,10E200370,Salaries and Allowances,,,050,Kyushu Sales Office,121715600,2022-03
+2737.0,32.0,83,Debit,2022-03-23,Month 3 Payroll Other 5000 Kyushu Sales Office,10E200370,Salaries and Allowances,,,050,Kyushu Sales Office,67268,0,10B100690,Deposits Received,1,Insurance Expenses,000,Common Department,62160447,2022-03
+2737.0,32.0,83,Credit,2022-03-23,Month 3 Payroll Other 5000 Kyushu Sales Office,10B100690,Deposits Received,1,Insurance Expenses,000,Common Department,0,67268,10E200370,Salaries and Allowances,,,050,Kyushu Sales Office,7465883,2022-03
+2737.0,33.0,83,Debit,2022-03-23,Month 3 Payroll Other 5000 Kyushu Sales Office,10E200370,Salaries and Allowances,,,050,Kyushu Sales Office,31700,0,10B100690,Deposits Received,2,Resident Tax,000,Common Department,62192147,2022-03
+2737.0,33.0,83,Credit,2022-03-23,Month 3 Payroll Other 5000 Kyushu Sales Office,10B100690,Deposits Received,2,Resident Tax,000,Common Department,0,31700,10E200370,Salaries and Allowances,,,050,Kyushu Sales Office,7497583,2022-03
+2737.0,34.0,83,Debit,2022-03-23,Month 3 Payroll Other 5000 Kyushu Sales Office,10E200370,Salaries and Allowances,,,050,Kyushu Sales Office,8520,0,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,62200667,2022-03
+2737.0,34.0,83,Credit,2022-03-23,Month 3 Payroll Other 5000 Kyushu Sales Office,10B100690,Deposits Received,3,Withholding Tax,000,Common Department,0,8520,10E200370,Salaries and Allowances,,,050,Kyushu Sales Office,7506103,2022-03
+2737.0,35.0,83,Debit,2022-03-23,Month 3 Payroll Other 5000 Kyushu Sales Office,10E200370,Salaries and Allowances,,,050,Kyushu Sales Office,18540,0,10B100690,Deposits Received,4,Savings and Insurance,000,Common Department,62219207,2022-03
+2737.0,35.0,83,Credit,2022-03-23,Month 3 Payroll Other 5000 Kyushu Sales Office,10B100690,Deposits Received,4,Savings and Insurance,000,Common Department,0,18540,10E200370,Salaries and Allowances,,,050,Kyushu Sales Office,7524643,2022-03
+2737.0,36.0,83,Debit,2022-03-23,Month 3 Payroll Other 5000 Kyushu Sales Office,10E200370,Salaries and Allowances,,,050,Kyushu Sales Office,16405,0,10B100690,Deposits Received,9,Other,000,Common Department,62235612,2022-03
+2737.0,36.0,83,Credit,2022-03-23,Month 3 Payroll Other 5000 Kyushu Sales Office,10B100690,Deposits Received,9,Other,000,Common Department,0,16405,10E200370,Salaries and Allowances,,,050,Kyushu Sales Office,7541048,2022-03
+2743.0,1.0,108,Debit,2022-03-24,Meal expense,10E200150,Entertainment Expenses,,,040,Osaka Branch,1360,0,10A100020,Cash,,,000,Common Department,4192886,2022-03
+2743.0,1.0,108,Credit,2022-03-24,Meal expense,10A100020,Cash,,,000,Common Department,0,1360,10E200150,Entertainment Expenses,,,040,Osaka Branch,121714240,2022-03
+2744.0,1.0,146,Debit,2022-03-24,Outsourcing fee,10E200020,Sales Commissions,,,050,Kyushu Sales Office,168000,0,10B100630,Accounts Payable Other,,,000,Common Department,24226267,2022-03
+2744.0,1.0,146,Credit,2022-03-24,Outsourcing fee,10B100630,Accounts Payable Other,,,000,Common Department,0,168000,10E200020,Sales Commissions,,,050,Kyushu Sales Office,8020303,2022-03
+2745.0,1.0,154,Debit,2022-03-24,Flowers wedding,10E200150,Entertainment Expenses,,,050,Kyushu Sales Office,12000,0,10B100630,Accounts Payable Other,,,000,Common Department,4204886,2022-03
+2745.0,1.0,154,Credit,2022-03-24,Flowers wedding,10B100630,Accounts Payable Other,,,000,Common Department,0,12000,10E200150,Entertainment Expenses,,,050,Kyushu Sales Office,8032303,2022-03
+2745.0,2.0,154,Debit,2022-03-24,Wedding reception fee,10E200150,Entertainment Expenses,,,050,Kyushu Sales Office,10000,0,10B100630,Accounts Payable Other,,,000,Common Department,4214886,2022-03
+2745.0,2.0,154,Credit,2022-03-24,Wedding reception fee,10B100630,Accounts Payable Other,,,000,Common Department,0,10000,10E200150,Entertainment Expenses,,,050,Kyushu Sales Office,8042303,2022-03
+2746.0,1.0,172,Debit,2022-03-24,Outsourcing fee payment,10E200020,Sales Commissions,,,010,Sapporo Sales Office,189000,0,10B100630,Accounts Payable Other,,,000,Common Department,24415267,2022-03
+2746.0,1.0,172,Credit,2022-03-24,Outsourcing fee payment,10B100630,Accounts Payable Other,,,000,Common Department,0,189000,10E200020,Sales Commissions,,,010,Sapporo Sales Office,8231303,2022-03
+2739.0,1.0,26,Debit,2022-03-24,Travel expense,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,31000,0,10A100020,Cash,,,000,Common Department,12802904,2022-03
+2739.0,1.0,26,Credit,2022-03-24,Travel expense,10A100020,Cash,,,000,Common Department,0,31000,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,121683240,2022-03
+2740.0,1.0,29,Debit,2022-03-24,Mobile phone expense,10E200180,Communication Expenses,,,010,Sapporo Sales Office,79684,0,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,12952012,2022-03
+2740.0,1.0,29,Credit,2022-03-24,Mobile phone expense,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,0,79684,10E200180,Communication Expenses,,,010,Sapporo Sales Office,121603556,2022-03
+2741.0,1.0,60,Debit,2022-03-24,Tea expense,10E200140,Employee Welfare Expenses,,,050,Kyushu Sales Office,20500,0,10B100630,Accounts Payable Other,,,000,Common Department,5395274,2022-03
+2741.0,1.0,60,Credit,2022-03-24,Tea expense,10B100630,Accounts Payable Other,,,000,Common Department,0,20500,10E200140,Employee Welfare Expenses,,,050,Kyushu Sales Office,8251803,2022-03
+2742.0,1.0,81,Debit,2022-03-24,Tea expense,10E200140,Employee Welfare Expenses,,,030,Nagoya Branch,45800,0,10B100630,Accounts Payable Other,,,000,Common Department,5441074,2022-03
+2742.0,1.0,81,Credit,2022-03-24,Tea expense,10B100630,Accounts Payable Other,,,000,Common Department,0,45800,10E200140,Employee Welfare Expenses,,,030,Nagoya Branch,8297603,2022-03
+2748.0,1.0,106,Debit,2022-03-25,Voucher No. 474 dated 3/25 Anonymized Partner 057 | Sales voucher=20220228-112;Note number=R20220325-106-2,10A100060,Notes Receivable,,,000,Common Department,13269523,0,10A100090,Accounts Receivable,2,Anonymized Partner 057,000,Common Department,102515444,2022-03
+2748.0,1.0,106,Credit,2022-03-25,Voucher No. 474 dated 3/25 Anonymized Partner 057 | Sales voucher=20220228-112;Note number=R20220325-106-2,10A100090,Accounts Receivable,2,Anonymized Partner 057,000,Common Department,0,13269523,10A100060,Notes Receivable,,,000,Common Department,16559757,2022-03
+2749.0,1.0,107,Debit,2022-03-25,Voucher No. 475 dated 3/25 Anonymized Partner 042,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,1323237,0,10A100090,Accounts Receivable,7,Anonymized Partner 042,000,Common Department,122926793,2022-03
+2749.0,1.0,107,Credit,2022-03-25,Voucher No. 475 dated 3/25 Anonymized Partner 042,10A100090,Accounts Receivable,7,Anonymized Partner 042,000,Common Department,0,1323237,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,15236520,2022-03
+2749.0,2.0,107,Debit,2022-03-25,Voucher No. 475 dated 3/25 Anonymized Partner 042,10E200690,Service Fees,,,030,Nagoya Branch,735,0,10A100090,Accounts Receivable,7,Anonymized Partner 042,000,Common Department,140003,2022-03
+2749.0,2.0,107,Credit,2022-03-25,Voucher No. 475 dated 3/25 Anonymized Partner 042,10A100090,Accounts Receivable,7,Anonymized Partner 042,000,Common Department,0,735,10E200690,Service Fees,,,030,Nagoya Branch,15235785,2022-03
+2750.0,1.0,108,Debit,2022-03-25,Voucher No. 476 dated 3/25 Anonymized Partner 056,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,533514,0,10A100090,Accounts Receivable,23,Anonymized Partner 056,000,Common Department,123460307,2022-03
+2750.0,1.0,108,Credit,2022-03-25,Voucher No. 476 dated 3/25 Anonymized Partner 056,10A100090,Accounts Receivable,23,Anonymized Partner 056,000,Common Department,0,533514,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,14702271,2022-03
+2750.0,2.0,108,Debit,2022-03-25,Voucher No. 476 dated 3/25 Anonymized Partner 056,10E200690,Service Fees,,,040,Osaka Branch,630,0,10A100090,Accounts Receivable,23,Anonymized Partner 056,000,Common Department,140633,2022-03
+2750.0,2.0,108,Credit,2022-03-25,Voucher No. 476 dated 3/25 Anonymized Partner 056,10A100090,Accounts Receivable,23,Anonymized Partner 056,000,Common Department,0,630,10E200690,Service Fees,,,040,Osaka Branch,14701641,2022-03
+2751.0,1.0,109,Debit,2022-03-25,Voucher No. 477 dated 3/25 Anonymized Partner 033,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,3740456,0,10A100090,Accounts Receivable,25,Anonymized Partner 033,000,Common Department,127200763,2022-03
+2751.0,1.0,109,Credit,2022-03-25,Voucher No. 477 dated 3/25 Anonymized Partner 033,10A100090,Accounts Receivable,25,Anonymized Partner 033,000,Common Department,0,3740456,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,10961185,2022-03
+2751.0,2.0,109,Debit,2022-03-25,Voucher No. 477 dated 3/25 Anonymized Partner 033,10E200690,Service Fees,,,010,Sapporo Sales Office,840,0,10A100090,Accounts Receivable,25,Anonymized Partner 033,000,Common Department,141473,2022-03
+2751.0,2.0,109,Credit,2022-03-25,Voucher No. 477 dated 3/25 Anonymized Partner 033,10A100090,Accounts Receivable,25,Anonymized Partner 033,000,Common Department,0,840,10E200690,Service Fees,,,010,Sapporo Sales Office,10960345,2022-03
+2752.0,1.0,111,Debit,2022-03-25,taxi expense,10E201230,Travel and Transportation Expenses,,,040,Osaka Branch,16890,0,10B100630,Accounts Payable Other,,,000,Common Department,12819794,2022-03
+2752.0,1.0,111,Credit,2022-03-25,taxi expense,10B100630,Accounts Payable Other,,,000,Common Department,0,16890,10E201230,Travel and Transportation Expenses,,,040,Osaka Branch,8314493,2022-03
+2753.0,1.0,120,Debit,2022-03-25,Outsourcing fee,10E200020,Sales Commissions,,,040,Osaka Branch,945000,0,10B100630,Accounts Payable Other,,,000,Common Department,25360267,2022-03
+2753.0,1.0,120,Credit,2022-03-25,Outsourcing fee,10B100630,Accounts Payable Other,,,000,Common Department,0,945000,10E200020,Sales Commissions,,,040,Osaka Branch,9259493,2022-03
+2754.0,1.0,121,Debit,2022-03-25,Tea expense,10E200140,Employee Welfare Expenses,,,040,Osaka Branch,16500,0,10A100020,Cash,,,000,Common Department,5457574,2022-03
+2754.0,1.0,121,Credit,2022-03-25,Tea expense,10A100020,Cash,,,000,Common Department,0,16500,10E200140,Employee Welfare Expenses,,,040,Osaka Branch,127184263,2022-03
+2755.0,1.0,131,Debit,2022-03-25,Membership fee,10E201140,Membership Fees,,,040,Osaka Branch,24000,0,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,1362000,2022-03
+2755.0,1.0,131,Credit,2022-03-25,Membership fee,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,0,24000,10E201140,Membership Fees,,,040,Osaka Branch,127160263,2022-03
+2756.0,1.0,138,Debit,2022-03-25,Expressway toll,10E201120,Vehicle Expenses,,,040,Osaka Branch,4351,0,10A100020,Cash,,,000,Common Department,7099597,2022-03
+2756.0,1.0,138,Credit,2022-03-25,Expressway toll,10A100020,Cash,,,000,Common Department,0,4351,10E201120,Vehicle Expenses,,,040,Osaka Branch,127155912,2022-03
+2756.0,2.0,138,Debit,2022-03-25,Gasoline,10E201120,Vehicle Expenses,,,040,Osaka Branch,3408,0,10A100020,Cash,,,000,Common Department,7103005,2022-03
+2756.0,2.0,138,Credit,2022-03-25,Gasoline,10A100020,Cash,,,000,Common Department,0,3408,10E201120,Vehicle Expenses,,,040,Osaka Branch,127152504,2022-03
+2756.0,3.0,138,Debit,2022-03-25,Expressway toll,10E201120,Vehicle Expenses,,,040,Osaka Branch,5686,0,10A100020,Cash,,,000,Common Department,7108691,2022-03
+2756.0,3.0,138,Credit,2022-03-25,Expressway toll,10A100020,Cash,,,000,Common Department,0,5686,10E201120,Vehicle Expenses,,,040,Osaka Branch,127146818,2022-03
+2756.0,4.0,138,Debit,2022-03-25,Expressway toll,10E201120,Vehicle Expenses,,,040,Osaka Branch,4287,0,10A100020,Cash,,,000,Common Department,7112978,2022-03
+2756.0,4.0,138,Credit,2022-03-25,Expressway toll,10A100020,Cash,,,000,Common Department,0,4287,10E201120,Vehicle Expenses,,,040,Osaka Branch,127142531,2022-03
+2756.0,5.0,138,Debit,2022-03-25,Expressway toll,10E201120,Vehicle Expenses,,,040,Osaka Branch,2569,0,10A100020,Cash,,,000,Common Department,7115547,2022-03
+2756.0,5.0,138,Credit,2022-03-25,Expressway toll,10A100020,Cash,,,000,Common Department,0,2569,10E201120,Vehicle Expenses,,,040,Osaka Branch,127139962,2022-03
+2756.0,6.0,138,Debit,2022-03-25,Expressway toll,10E201120,Vehicle Expenses,,,040,Osaka Branch,1096,0,10A100020,Cash,,,000,Common Department,7116643,2022-03
+2756.0,6.0,138,Credit,2022-03-25,Expressway toll,10A100020,Cash,,,000,Common Department,0,1096,10E201120,Vehicle Expenses,,,040,Osaka Branch,127138866,2022-03
+2756.0,7.0,138,Debit,2022-03-25,Parking fee,10E201120,Vehicle Expenses,,,040,Osaka Branch,3372,0,10A100020,Cash,,,000,Common Department,7120015,2022-03
+2756.0,7.0,138,Credit,2022-03-25,Parking fee,10A100020,Cash,,,000,Common Department,0,3372,10E201120,Vehicle Expenses,,,040,Osaka Branch,127135494,2022-03
+2757.0,1.0,173,Debit,2022-03-25,Revenue stamp expense,10E200210,Taxes and Dues,,,050,Kyushu Sales Office,24000,0,10A100020,Cash,,,000,Common Department,267000,2022-03
+2757.0,1.0,173,Credit,2022-03-25,Revenue stamp expense,10A100020,Cash,,,000,Common Department,0,24000,10E200210,Taxes and Dues,,,050,Kyushu Sales Office,127111494,2022-03
+2747.0,1.0,78,Debit,2022-03-25,Outsourcing fee payment,10E200020,Sales Commissions,,,030,Nagoya Branch,189000,0,10B100630,Accounts Payable Other,,,000,Common Department,25549267,2022-03
+2747.0,1.0,78,Credit,2022-03-25,Outsourcing fee payment,10B100630,Accounts Payable Other,,,000,Common Department,0,189000,10E200020,Sales Commissions,,,030,Nagoya Branch,9448493,2022-03
+2765.0,1.0,105,Debit,2022-03-26,Meal expense Anonymized Store 075 4 people,10E200150,Entertainment Expenses,,,040,Osaka Branch,11862,0,10A100020,Cash,,,000,Common Department,4226748,2022-03
+2765.0,1.0,105,Credit,2022-03-26,Meal expense Anonymized Store 075 4 people,10A100020,Cash,,,000,Common Department,0,11862,10E200150,Entertainment Expenses,,,040,Osaka Branch,127099632,2022-03
+2765.0,2.0,105,Debit,2022-03-26,Meal expense Anonymized Store 022,10E200150,Entertainment Expenses,,,040,Osaka Branch,25086,0,10A100020,Cash,,,000,Common Department,4251834,2022-03
+2765.0,2.0,105,Credit,2022-03-26,Meal expense Anonymized Store 022,10A100020,Cash,,,000,Common Department,0,25086,10E200150,Entertainment Expenses,,,040,Osaka Branch,127074546,2022-03
+2766.0,1.0,113,Debit,2022-03-26,Mobile phone expense,10E200180,Communication Expenses,,,040,Osaka Branch,110473,0,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,13062485,2022-03
+2766.0,1.0,113,Credit,2022-03-26,Mobile phone expense,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,0,110473,10E200180,Communication Expenses,,,040,Osaka Branch,126964073,2022-03
+2767.0,1.0,139,Debit,2022-03-26,Employee late-night meal,10E200140,Employee Welfare Expenses,,,040,Osaka Branch,65048,0,10B100630,Accounts Payable Other,,,000,Common Department,5522622,2022-03
+2767.0,1.0,139,Credit,2022-03-26,Employee late-night meal,10B100630,Accounts Payable Other,,,000,Common Department,0,65048,10E200140,Employee Welfare Expenses,,,040,Osaka Branch,9513541,2022-03
+2768.0,1.0,171,Debit,2022-03-26,Mobile phone expense,10E200180,Communication Expenses,,,050,Kyushu Sales Office,57089,0,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,13119574,2022-03
+2768.0,1.0,171,Credit,2022-03-26,Mobile phone expense,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,0,57089,10E200180,Communication Expenses,,,050,Kyushu Sales Office,126906984,2022-03
+2758.0,1.0,35,Debit,2022-03-26,Newspaper expense,10E201160,Books and Publications,,,010,Sapporo Sales Office,3925,0,10A100020,Cash,,,000,Common Department,278727,2022-03
+2758.0,1.0,35,Credit,2022-03-26,Newspaper expense,10A100020,Cash,,,000,Common Department,0,3925,10E201160,Books and Publications,,,010,Sapporo Sales Office,126903059,2022-03
+2759.0,1.0,37,Debit,2022-03-26,Outsourcing fee,10E200020,Sales Commissions,,,020,Tokyo Branch,1532000,0,10B100630,Accounts Payable Other,,,000,Common Department,27081267,2022-03
+2759.0,1.0,37,Credit,2022-03-26,Outsourcing fee,10B100630,Accounts Payable Other,,,000,Common Department,0,1532000,10E200020,Sales Commissions,,,020,Tokyo Branch,11045541,2022-03
+2760.0,1.0,38,Debit,2022-03-26,Lodging expense,10E200140,Employee Welfare Expenses,,,020,Tokyo Branch,48164,0,10B100630,Accounts Payable Other,,,000,Common Department,5570786,2022-03
+2760.0,1.0,38,Credit,2022-03-26,Lodging expense,10B100630,Accounts Payable Other,,,000,Common Department,0,48164,10E200140,Employee Welfare Expenses,,,020,Tokyo Branch,11093705,2022-03
+2761.0,1.0,62,Debit,2022-03-26,Mobile phone expense,10E200180,Communication Expenses,,,020,Tokyo Branch,99545,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,13219119,2022-03
+2761.0,1.0,62,Credit,2022-03-26,Mobile phone expense,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,99545,10E200180,Communication Expenses,,,020,Tokyo Branch,126803514,2022-03
+2762.0,1.0,75,Debit,2022-03-26,Cof fee expense 2 people,10E200150,Entertainment Expenses,,,020,Tokyo Branch,1260,0,10A100020,Cash,,,000,Common Department,4253094,2022-03
+2762.0,1.0,75,Credit,2022-03-26,Cof fee expense 2 people,10A100020,Cash,,,000,Common Department,0,1260,10E200150,Entertainment Expenses,,,020,Tokyo Branch,126802254,2022-03
+2763.0,1.0,76,Debit,2022-03-26,Gasoline,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,4961,0,10A100020,Cash,,,000,Common Department,7124976,2022-03
+2763.0,1.0,76,Credit,2022-03-26,Gasoline,10A100020,Cash,,,000,Common Department,0,4961,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,126797293,2022-03
+2763.0,2.0,76,Debit,2022-03-26,Parking fee,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,572,0,10A100020,Cash,,,000,Common Department,7125548,2022-03
+2763.0,2.0,76,Credit,2022-03-26,Parking fee,10A100020,Cash,,,000,Common Department,0,572,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,126796721,2022-03
+2764.0,1.0,88,Debit,2022-03-26,Newspaper expense,10E201160,Books and Publications,,,030,Nagoya Branch,3568,0,10A100020,Cash,,,000,Common Department,282295,2022-03
+2764.0,1.0,88,Credit,2022-03-26,Newspaper expense,10A100020,Cash,,,000,Common Department,0,3568,10E201160,Books and Publications,,,030,Nagoya Branch,126793153,2022-03
+2775.0,1.0,114,Debit,2022-03-27,Newspaper expense,10E201160,Books and Publications,,,040,Osaka Branch,2540,0,10A100020,Cash,,,000,Common Department,284835,2022-03
+2775.0,1.0,114,Credit,2022-03-27,Newspaper expense,10A100020,Cash,,,000,Common Department,0,2540,10E201160,Books and Publications,,,040,Osaka Branch,126790613,2022-03
+2775.0,2.0,114,Debit,2022-03-27,Newspaper expense,10E201160,Books and Publications,,,040,Osaka Branch,2864,0,10A100020,Cash,,,000,Common Department,287699,2022-03
+2775.0,2.0,114,Credit,2022-03-27,Newspaper expense,10A100020,Cash,,,000,Common Department,0,2864,10E201160,Books and Publications,,,040,Osaka Branch,126787749,2022-03
+2769.0,1.0,14,Debit,2022-03-27,Gasoline,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,3000,0,10A100020,Cash,,,000,Common Department,7128548,2022-03
+2769.0,1.0,14,Credit,2022-03-27,Gasoline,10A100020,Cash,,,000,Common Department,0,3000,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,126784749,2022-03
+2770.0,1.0,30,Debit,2022-03-27,Insurance Premium payment,10E200240,Insurance Expenses,,,010,Sapporo Sales Office,54320,0,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,3561340,2022-03
+2770.0,1.0,30,Credit,2022-03-27,Insurance Premium payment,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,0,54320,10E200240,Insurance Expenses,,,010,Sapporo Sales Office,126730429,2022-03
+2771.0,1.0,32,Debit,2022-03-27,office supplies expense,10E201110,Office Supplies Expenses,,,010,Sapporo Sales Office,3098,0,10B100630,Accounts Payable Other,,,000,Common Department,1528632,2022-03
+2771.0,1.0,32,Credit,2022-03-27,office supplies expense,10B100630,Accounts Payable Other,,,000,Common Department,0,3098,10E201110,Office Supplies Expenses,,,010,Sapporo Sales Office,11096803,2022-03
+2772.0,1.0,60,Debit,2022-03-27,Travel expense,10E201230,Travel and Transportation Expenses,,,020,Tokyo Branch,11200,0,10A100020,Cash,,,000,Common Department,12830994,2022-03
+2772.0,1.0,60,Credit,2022-03-27,Travel expense,10A100020,Cash,,,000,Common Department,0,11200,10E201230,Travel and Transportation Expenses,,,020,Tokyo Branch,126719229,2022-03
+2773.0,1.0,72,Debit,2022-03-27,Newspaper expense,10E201160,Books and Publications,,,020,Tokyo Branch,2864,0,10A100020,Cash,,,000,Common Department,290563,2022-03
+2773.0,1.0,72,Credit,2022-03-27,Newspaper expense,10A100020,Cash,,,000,Common Department,0,2864,10E201160,Books and Publications,,,020,Tokyo Branch,126716365,2022-03
+2773.0,2.0,72,Debit,2022-03-27,Newspaper expense,10E201160,Books and Publications,,,020,Tokyo Branch,2815,0,10A100020,Cash,,,000,Common Department,293378,2022-03
+2773.0,2.0,72,Credit,2022-03-27,Newspaper expense,10A100020,Cash,,,000,Common Department,0,2815,10E201160,Books and Publications,,,020,Tokyo Branch,126713550,2022-03
+2773.0,3.0,72,Debit,2022-03-27,Newspaper expense,10E201160,Books and Publications,,,020,Tokyo Branch,3399,0,10A100020,Cash,,,000,Common Department,296777,2022-03
+2773.0,3.0,72,Credit,2022-03-27,Newspaper expense,10A100020,Cash,,,000,Common Department,0,3399,10E201160,Books and Publications,,,020,Tokyo Branch,126710151,2022-03
+2774.0,1.0,87,Debit,2022-03-27,Mobile phone expense,10E200180,Communication Expenses,,,030,Nagoya Branch,41558,0,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,13260677,2022-03
+2774.0,1.0,87,Credit,2022-03-27,Mobile phone expense,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,0,41558,10E200180,Communication Expenses,,,030,Nagoya Branch,126668593,2022-03
+2779.0,1.0,137,Debit,2022-03-28,Wired service fee,10E201270,Miscellaneous Expenses,,,040,Osaka Branch,6000,0,10B100630,Accounts Payable Other,,,000,Common Department,5491354,2022-03
+2779.0,1.0,137,Credit,2022-03-28,Wired service fee,10B100630,Accounts Payable Other,,,000,Common Department,0,6000,10E201270,Miscellaneous Expenses,,,040,Osaka Branch,11102803,2022-03
+2779.0,2.0,137,Debit,2022-03-28,Security fee,10E201270,Miscellaneous Expenses,,,040,Osaka Branch,42858,0,10B100630,Accounts Payable Other,,,000,Common Department,5534212,2022-03
+2779.0,2.0,137,Credit,2022-03-28,Security fee,10B100630,Accounts Payable Other,,,000,Common Department,0,42858,10E201270,Miscellaneous Expenses,,,040,Osaka Branch,11145661,2022-03
+2779.0,3.0,137,Debit,2022-03-28,Expressway toll,10E201120,Vehicle Expenses,,,040,Osaka Branch,42652,0,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,7171200,2022-03
+2779.0,3.0,137,Credit,2022-03-28,Expressway toll,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,0,42652,10E201120,Vehicle Expenses,,,040,Osaka Branch,126625941,2022-03
+2779.0,4.0,137,Debit,2022-03-28,Cleaning fee,10E201270,Miscellaneous Expenses,,,040,Osaka Branch,58100,0,10B100630,Accounts Payable Other,,,000,Common Department,5592312,2022-03
+2779.0,4.0,137,Credit,2022-03-28,Cleaning fee,10B100630,Accounts Payable Other,,,000,Common Department,0,58100,10E201270,Miscellaneous Expenses,,,040,Osaka Branch,11203761,2022-03
+2780.0,1.0,170,Debit,2022-03-28,Newspaper expense,10E201160,Books and Publications,,,050,Kyushu Sales Office,3007,0,10A100020,Cash,,,000,Common Department,299784,2022-03
+2780.0,1.0,170,Credit,2022-03-28,Newspaper expense,10A100020,Cash,,,000,Common Department,0,3007,10E201160,Books and Publications,,,050,Kyushu Sales Office,126622934,2022-03
+2777.0,1.0,39,Debit,2022-03-28,Membership fee,10E200140,Employee Welfare Expenses,,,020,Tokyo Branch,9000,0,10A100020,Cash,,,000,Common Department,5579786,2022-03
+2777.0,1.0,39,Credit,2022-03-28,Membership fee,10A100020,Cash,,,000,Common Department,0,9000,10E200140,Employee Welfare Expenses,,,020,Tokyo Branch,126613934,2022-03
+2778.0,1.0,81,Debit,2022-03-28,Anonymized Railway Company A expense,10E201230,Travel and Transportation Expenses,,,030,Nagoya Branch,9800,0,10A100020,Cash,,,000,Common Department,12840794,2022-03
+2778.0,1.0,81,Credit,2022-03-28,Anonymized Railway Company A expense,10A100020,Cash,,,000,Common Department,0,9800,10E201230,Travel and Transportation Expenses,,,030,Nagoya Branch,126604134,2022-03
+2776.0,1.0,9,Debit,2022-03-28,Gift expense Anonymized Partner 042,10E200150,Entertainment Expenses,,,010,Sapporo Sales Office,5250,0,10A100020,Cash,,,000,Common Department,4258344,2022-03
+2776.0,1.0,9,Credit,2022-03-28,Gift expense Anonymized Partner 042,10A100020,Cash,,,000,Common Department,0,5250,10E200150,Entertainment Expenses,,,010,Sapporo Sales Office,126598884,2022-03
+2781.0,1.0,27,Debit,2022-03-29,Travel expense,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,44324,0,10A100020,Cash,,,000,Common Department,12885118,2022-03
+2781.0,1.0,27,Credit,2022-03-29,Travel expense,10A100020,Cash,,,000,Common Department,0,44324,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,126554560,2022-03
+2781.0,2.0,27,Debit,2022-03-29,Travel expense,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,56000,0,10A100020,Cash,,,000,Common Department,12941118,2022-03
+2781.0,2.0,27,Credit,2022-03-29,Travel expense,10A100020,Cash,,,000,Common Department,0,56000,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,126498560,2022-03
+2781.0,3.0,27,Debit,2022-03-29,Travel expense,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,30858,0,10A100020,Cash,,,000,Common Department,12971976,2022-03
+2781.0,3.0,27,Credit,2022-03-29,Travel expense,10A100020,Cash,,,000,Common Department,0,30858,10E201230,Travel and Transportation Expenses,,,010,Sapporo Sales Office,126467702,2022-03
+2782.0,1.0,83,Debit,2022-03-29,Vehicle management expense,10E201120,Vehicle Expenses,,,030,Nagoya Branch,51500,0,10A100020,Cash,,,000,Common Department,7222700,2022-03
+2782.0,1.0,83,Credit,2022-03-29,Vehicle management expense,10A100020,Cash,,,000,Common Department,0,51500,10E201120,Vehicle Expenses,,,030,Nagoya Branch,126416202,2022-03
+2783.0,1.0,144,Debit,2022-03-30,Funds transfer,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,4000000,0,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,130416202,2022-03
+2783.0,1.0,144,Credit,2022-03-30,Funds transfer,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,0,4000000,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,126416202,2022-03
+2784.0,1.0,148,Debit,2022-03-30,Funds transfer,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,16000000,0,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,142416202,2022-03
+2784.0,1.0,148,Credit,2022-03-30,Funds transfer,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,0,16000000,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,126416202,2022-03
+2785.0,1.0,155,Debit,2022-03-30,Gasoline,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,6801,0,10A100020,Cash,,,000,Common Department,7229501,2022-03
+2785.0,1.0,155,Credit,2022-03-30,Gasoline,10A100020,Cash,,,000,Common Department,0,6801,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,126409401,2022-03
+2785.0,2.0,155,Debit,2022-03-30,Expressway toll,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,1143,0,10A100020,Cash,,,000,Common Department,7230644,2022-03
+2785.0,2.0,155,Credit,2022-03-30,Expressway toll,10A100020,Cash,,,000,Common Department,0,1143,10E201120,Vehicle Expenses,,,050,Kyushu Sales Office,126408258,2022-03
+2786.0,1.0,1,Debit,2022-03-31,Freight Anonymized Carrier B,10E200870,Freight Expenses,,,010,Sapporo Sales Office,244210,0,10B100630,Accounts Payable Other,,,000,Common Department,47411449,2022-03
+2786.0,1.0,1,Credit,2022-03-31,Freight Anonymized Carrier B,10B100630,Accounts Payable Other,,,000,Common Department,0,244210,10E200870,Freight Expenses,,,010,Sapporo Sales Office,11447971,2022-03
+2805.0,1.0,100,Debit,2022-03-31,Membership fee,10E200140,Employee Welfare Expenses,,,040,Osaka Branch,6000,0,10A100020,Cash,,,000,Common Department,5585786,2022-03
+2805.0,1.0,100,Credit,2022-03-31,Membership fee,10A100020,Cash,,,000,Common Department,0,6000,10E200140,Employee Welfare Expenses,,,040,Osaka Branch,126402258,2022-03
+2806.0,1.0,110,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,14,Anonymized Partner 066,000,Common Department,2360032,0,10D100100,Gross Sales,,,010,Sapporo Sales Office,13320377,2022-03
+2806.0,1.0,110,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,010,Sapporo Sales Office,0,2360032,10A100090,Accounts Receivable,14,Anonymized Partner 066,000,Common Department,780509691,2022-03
+2806.0,2.0,110,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,25,Anonymized Partner 033,000,Common Department,2708884,0,10D100100,Gross Sales,,,010,Sapporo Sales Office,16029261,2022-03
+2806.0,2.0,110,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,010,Sapporo Sales Office,0,2708884,10A100090,Accounts Receivable,25,Anonymized Partner 033,000,Common Department,783218575,2022-03
+2806.0,3.0,110,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,5,Anonymized Partner 030,000,Common Department,1825556,0,10D100100,Gross Sales,,,010,Sapporo Sales Office,17854817,2022-03
+2806.0,3.0,110,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,010,Sapporo Sales Office,0,1825556,10A100090,Accounts Receivable,5,Anonymized Partner 030,000,Common Department,785044131,2022-03
+2807.0,1.0,111,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,30,Anonymized Partner 052,000,Common Department,2358524,0,10D100100,Gross Sales,,,020,Tokyo Branch,20213341,2022-03
+2807.0,1.0,111,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,020,Tokyo Branch,0,2358524,10A100090,Accounts Receivable,30,Anonymized Partner 052,000,Common Department,787402655,2022-03
+2807.0,2.0,111,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,2,Anonymized Partner 057,000,Common Department,8251179,0,10D100100,Gross Sales,,,020,Tokyo Branch,28464520,2022-03
+2807.0,2.0,111,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,020,Tokyo Branch,0,8251179,10A100090,Accounts Receivable,2,Anonymized Partner 057,000,Common Department,795653834,2022-03
+2807.0,3.0,111,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,24,Anonymized Partner 081,000,Common Department,3907856,0,10D100100,Gross Sales,,,020,Tokyo Branch,32372376,2022-03
+2807.0,3.0,111,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,020,Tokyo Branch,0,3907856,10A100090,Accounts Receivable,24,Anonymized Partner 081,000,Common Department,799561690,2022-03
+2807.0,4.0,111,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,10,Anonymized Partner 012,000,Common Department,1407648,0,10D100100,Gross Sales,,,020,Tokyo Branch,33780024,2022-03
+2807.0,4.0,111,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,020,Tokyo Branch,0,1407648,10A100090,Accounts Receivable,10,Anonymized Partner 012,000,Common Department,800969338,2022-03
+2807.0,5.0,111,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,26,Anonymized Partner 082,000,Common Department,2699820,0,10D100100,Gross Sales,,,020,Tokyo Branch,36479844,2022-03
+2807.0,5.0,111,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,020,Tokyo Branch,0,2699820,10A100090,Accounts Receivable,26,Anonymized Partner 082,000,Common Department,803669158,2022-03
+2807.0,6.0,111,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,12,Anonymized Partner 065,000,Common Department,2901201,0,10D100100,Gross Sales,,,020,Tokyo Branch,39381045,2022-03
+2807.0,6.0,111,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,020,Tokyo Branch,0,2901201,10A100090,Accounts Receivable,12,Anonymized Partner 065,000,Common Department,806570359,2022-03
+2807.0,7.0,111,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,11,Anonymized Partner 058,000,Common Department,1581860,0,10D100100,Gross Sales,,,020,Tokyo Branch,40962905,2022-03
+2807.0,7.0,111,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,020,Tokyo Branch,0,1581860,10A100090,Accounts Receivable,11,Anonymized Partner 058,000,Common Department,808152219,2022-03
+2807.0,8.0,111,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,13,Anonymized Partner 023,000,Common Department,2940652,0,10D100100,Gross Sales,,,020,Tokyo Branch,43903557,2022-03
+2807.0,8.0,111,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,020,Tokyo Branch,0,2940652,10A100090,Accounts Receivable,13,Anonymized Partner 023,000,Common Department,811092871,2022-03
+2807.0,9.0,111,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,14,Anonymized Partner 066,000,Common Department,1690176,0,10D100100,Gross Sales,,,020,Tokyo Branch,45593733,2022-03
+2807.0,9.0,111,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,020,Tokyo Branch,0,1690176,10A100090,Accounts Receivable,14,Anonymized Partner 066,000,Common Department,812783047,2022-03
+2808.0,1.0,112,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,19,Anonymized Partner 045,000,Common Department,2097864,0,10D100100,Gross Sales,,,030,Nagoya Branch,47691597,2022-03
+2808.0,1.0,112,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,030,Nagoya Branch,0,2097864,10A100090,Accounts Receivable,19,Anonymized Partner 045,000,Common Department,814880911,2022-03
+2808.0,2.0,112,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,21,Anonymized Partner 014,000,Common Department,1433744,0,10D100100,Gross Sales,,,030,Nagoya Branch,49125341,2022-03
+2808.0,2.0,112,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,030,Nagoya Branch,0,1433744,10A100090,Accounts Receivable,21,Anonymized Partner 014,000,Common Department,816314655,2022-03
+2808.0,3.0,112,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,27,Anonymized Partner 025,000,Common Department,1331520,0,10D100100,Gross Sales,,,030,Nagoya Branch,50456861,2022-03
+2808.0,3.0,112,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,030,Nagoya Branch,0,1331520,10A100090,Accounts Receivable,27,Anonymized Partner 025,000,Common Department,817646175,2022-03
+2808.0,4.0,112,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,6,Anonymized Partner 061,000,Common Department,871860,0,10D100100,Gross Sales,,,030,Nagoya Branch,51328721,2022-03
+2808.0,4.0,112,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,030,Nagoya Branch,0,871860,10A100090,Accounts Receivable,6,Anonymized Partner 061,000,Common Department,818518035,2022-03
+2808.0,5.0,112,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,7,Anonymized Partner 042,000,Common Department,758914,0,10D100100,Gross Sales,,,030,Nagoya Branch,52087635,2022-03
+2808.0,5.0,112,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,030,Nagoya Branch,0,758914,10A100090,Accounts Receivable,7,Anonymized Partner 042,000,Common Department,819276949,2022-03
+2808.0,6.0,112,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,14,Anonymized Partner 066,000,Common Department,2055400,0,10D100100,Gross Sales,,,030,Nagoya Branch,54143035,2022-03
+2808.0,6.0,112,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,030,Nagoya Branch,0,2055400,10A100090,Accounts Receivable,14,Anonymized Partner 066,000,Common Department,821332349,2022-03
+2809.0,1.0,113,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,4,Anonymized Partner 032,000,Common Department,3647192,0,10D100100,Gross Sales,,,040,Osaka Branch,57790227,2022-03
+2809.0,1.0,113,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,040,Osaka Branch,0,3647192,10A100090,Accounts Receivable,4,Anonymized Partner 032,000,Common Department,824979541,2022-03
+2809.0,2.0,113,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,9,Anonymized Partner 026,000,Common Department,3304738,0,10D100100,Gross Sales,,,040,Osaka Branch,61094965,2022-03
+2809.0,2.0,113,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,040,Osaka Branch,0,3304738,10A100090,Accounts Receivable,9,Anonymized Partner 026,000,Common Department,828284279,2022-03
+2809.0,3.0,113,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,20,Anonymized Partner 079,000,Common Department,1403080,0,10D100100,Gross Sales,,,040,Osaka Branch,62498045,2022-03
+2809.0,3.0,113,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,040,Osaka Branch,0,1403080,10A100090,Accounts Receivable,20,Anonymized Partner 079,000,Common Department,829687359,2022-03
+2809.0,4.0,113,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,28,Anonymized Partner 072,000,Common Department,4383630,0,10D100100,Gross Sales,,,040,Osaka Branch,66881675,2022-03
+2809.0,4.0,113,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,040,Osaka Branch,0,4383630,10A100090,Accounts Receivable,28,Anonymized Partner 072,000,Common Department,834070989,2022-03
+2809.0,5.0,113,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,14,Anonymized Partner 066,000,Common Department,3056284,0,10D100100,Gross Sales,,,040,Osaka Branch,69937959,2022-03
+2809.0,5.0,113,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,040,Osaka Branch,0,3056284,10A100090,Accounts Receivable,14,Anonymized Partner 066,000,Common Department,837127273,2022-03
+2809.0,6.0,113,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,3,Anonymized Partner 085,000,Common Department,919254,0,10D100100,Gross Sales,,,040,Osaka Branch,70857213,2022-03
+2809.0,6.0,113,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,040,Osaka Branch,0,919254,10A100090,Accounts Receivable,3,Anonymized Partner 085,000,Common Department,838046527,2022-03
+2809.0,7.0,113,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,8,Anonymized Partner 073,000,Common Department,754741,0,10D100100,Gross Sales,,,040,Osaka Branch,71611954,2022-03
+2809.0,7.0,113,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,040,Osaka Branch,0,754741,10A100090,Accounts Receivable,8,Anonymized Partner 073,000,Common Department,838801268,2022-03
+2809.0,8.0,113,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,23,Anonymized Partner 056,000,Common Department,1008640,0,10D100100,Gross Sales,,,040,Osaka Branch,72620594,2022-03
+2809.0,8.0,113,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,040,Osaka Branch,0,1008640,10A100090,Accounts Receivable,23,Anonymized Partner 056,000,Common Department,839809908,2022-03
+2810.0,1.0,114,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,1,Anonymized Partner 068,000,Common Department,5724549,0,10D100100,Gross Sales,,,050,Kyushu Sales Office,78345143,2022-03
+2810.0,1.0,114,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,050,Kyushu Sales Office,0,5724549,10A100090,Accounts Receivable,1,Anonymized Partner 068,000,Common Department,845534457,2022-03
+2810.0,2.0,114,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,14,Anonymized Partner 066,000,Common Department,2722880,0,10D100100,Gross Sales,,,050,Kyushu Sales Office,81068023,2022-03
+2810.0,2.0,114,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,050,Kyushu Sales Office,0,2722880,10A100090,Accounts Receivable,14,Anonymized Partner 066,000,Common Department,848257337,2022-03
+2810.0,3.0,114,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,22,Anonymized Partner 070,000,Common Department,2617248,0,10D100100,Gross Sales,,,050,Kyushu Sales Office,83685271,2022-03
+2810.0,3.0,114,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,050,Kyushu Sales Office,0,2617248,10A100090,Accounts Receivable,22,Anonymized Partner 070,000,Common Department,850874585,2022-03
+2810.0,4.0,114,Debit,2022-03-31,3/1-3/31 periodSales,10A100090,Accounts Receivable,29,Anonymized Partner 049,000,Common Department,1721354,0,10D100100,Gross Sales,,,050,Kyushu Sales Office,85406625,2022-03
+2810.0,4.0,114,Credit,2022-03-31,3/1-3/31 periodSales,10D100100,Gross Sales,,,050,Kyushu Sales Office,0,1721354,10A100090,Accounts Receivable,29,Anonymized Partner 049,000,Common Department,852595939,2022-03
+2811.0,1.0,115,Debit,2022-03-31,Voucher No. 478 dated 3/31 Anonymized Partner 032,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,1289400,0,10A100090,Accounts Receivable,4,Anonymized Partner 032,000,Common Department,127691658,2022-03
+2811.0,1.0,115,Credit,2022-03-31,Voucher No. 478 dated 3/31 Anonymized Partner 032,10A100090,Accounts Receivable,4,Anonymized Partner 032,000,Common Department,0,1289400,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,84117225,2022-03
+2811.0,2.0,115,Debit,2022-03-31,Voucher No. 478 dated 3/31 Anonymized Partner 032,10E200690,Service Fees,,,040,Osaka Branch,840,0,10A100090,Accounts Receivable,4,Anonymized Partner 032,000,Common Department,142313,2022-03
+2811.0,2.0,115,Credit,2022-03-31,Voucher No. 478 dated 3/31 Anonymized Partner 032,10A100090,Accounts Receivable,4,Anonymized Partner 032,000,Common Department,0,840,10E200690,Service Fees,,,040,Osaka Branch,84116385,2022-03
+2811.0,3.0,115,Debit,2022-03-31,Insurance Expenses,10E200240,Insurance Expenses,,,040,Osaka Branch,64500,0,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,3625840,2022-03
+2811.0,3.0,115,Credit,2022-03-31,Insurance Expenses,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,0,64500,10E200240,Insurance Expenses,,,040,Osaka Branch,127627158,2022-03
+2812.0,1.0,116,Debit,2022-03-31,Voucher No. 479 dated 3/31 Anonymized Partner 030,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,1393258,0,10A100090,Accounts Receivable,5,Anonymized Partner 030,000,Common Department,129020416,2022-03
+2812.0,1.0,116,Credit,2022-03-31,Voucher No. 479 dated 3/31 Anonymized Partner 030,10A100090,Accounts Receivable,5,Anonymized Partner 030,000,Common Department,0,1393258,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,82723127,2022-03
+2812.0,2.0,116,Debit,2022-03-31,Voucher No. 479 dated 3/31 Anonymized Partner 030,10E200690,Service Fees,,,010,Sapporo Sales Office,840,0,10A100090,Accounts Receivable,5,Anonymized Partner 030,000,Common Department,143153,2022-03
+2812.0,2.0,116,Credit,2022-03-31,Voucher No. 479 dated 3/31 Anonymized Partner 030,10A100090,Accounts Receivable,5,Anonymized Partner 030,000,Common Department,0,840,10E200690,Service Fees,,,010,Sapporo Sales Office,82722287,2022-03
+2812.0,3.0,116,Debit,2022-03-31,lease fee,10E200730,Land and Building Rent,,,040,Osaka Branch,84000,0,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,3316350,2022-03
+2812.0,3.0,116,Credit,2022-03-31,lease fee,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,0,84000,10E200730,Land and Building Rent,,,040,Osaka Branch,128936416,2022-03
+2813.0,1.0,117,Debit,2022-03-31,Voucher No. 480 dated 3/31 Anonymized Partner 012,10A100020,Cash,,,000,Common Department,140000,0,10A100090,Accounts Receivable,10,Anonymized Partner 012,000,Common Department,129076416,2022-03
+2813.0,1.0,117,Credit,2022-03-31,Voucher No. 480 dated 3/31 Anonymized Partner 012,10A100090,Accounts Receivable,10,Anonymized Partner 012,000,Common Department,0,140000,10A100020,Cash,,,000,Common Department,82582287,2022-03
+2814.0,1.0,118,Debit,2022-03-31,Voucher No. 481 dated 3/31 Anonymized Partner 065 | Sales voucher=20220228-112;Note number=R20220331-118-12,10A100060,Notes Receivable,,,000,Common Department,7423367,0,10A100090,Accounts Receivable,12,Anonymized Partner 065,000,Common Department,109938811,2022-03
+2814.0,1.0,118,Credit,2022-03-31,Voucher No. 481 dated 3/31 Anonymized Partner 065 | Sales voucher=20220228-112;Note number=R20220331-118-12,10A100090,Accounts Receivable,12,Anonymized Partner 065,000,Common Department,0,7423367,10A100060,Notes Receivable,,,000,Common Department,75158920,2022-03
+2815.0,1.0,119,Debit,2022-03-31,Voucher No. 482 dated 3/31 Anonymized Partner 081,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,225990,0,10A100090,Accounts Receivable,24,Anonymized Partner 081,000,Common Department,129302406,2022-03
+2815.0,1.0,119,Credit,2022-03-31,Voucher No. 482 dated 3/31 Anonymized Partner 081,10A100090,Accounts Receivable,24,Anonymized Partner 081,000,Common Department,0,225990,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,74932930,2022-03
+2815.0,2.0,119,Debit,2022-03-31,Voucher No. 482 dated 3/31 Anonymized Partner 081,10E200690,Service Fees,,,020,Tokyo Branch,630,0,10A100090,Accounts Receivable,24,Anonymized Partner 081,000,Common Department,143783,2022-03
+2815.0,2.0,119,Credit,2022-03-31,Voucher No. 482 dated 3/31 Anonymized Partner 081,10A100090,Accounts Receivable,24,Anonymized Partner 081,000,Common Department,0,630,10E200690,Service Fees,,,020,Tokyo Branch,74932300,2022-03
+2816.0,1.0,120,Debit,2022-03-31,Voucher No. 483 dated 3/31 Anonymized Partner 049,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,485810,0,10A100090,Accounts Receivable,29,Anonymized Partner 049,000,Common Department,129788216,2022-03
+2816.0,1.0,120,Credit,2022-03-31,Voucher No. 483 dated 3/31 Anonymized Partner 049,10A100090,Accounts Receivable,29,Anonymized Partner 049,000,Common Department,0,485810,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,74446490,2022-03
+2816.0,2.0,120,Debit,2022-03-31,Voucher No. 483 dated 3/31 Anonymized Partner 049,10E200690,Service Fees,,,050,Kyushu Sales Office,210,0,10A100090,Accounts Receivable,29,Anonymized Partner 049,000,Common Department,143993,2022-03
+2816.0,2.0,120,Credit,2022-03-31,Voucher No. 483 dated 3/31 Anonymized Partner 049,10A100090,Accounts Receivable,29,Anonymized Partner 049,000,Common Department,0,210,10E200690,Service Fees,,,050,Kyushu Sales Office,74446280,2022-03
+2817.0,1.0,121,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,010,Sapporo Sales Office,102816,0,10B100040,Accounts Payable,8,Anonymized Partner 063,000,Common Department,466251142,2022-03
+2817.0,1.0,121,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,8,Anonymized Partner 063,000,Common Department,0,102816,10E100130,Merchandise Purchases,,,010,Sapporo Sales Office,30276992,2022-03
+2817.0,2.0,121,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,010,Sapporo Sales Office,161481,0,10B100040,Accounts Payable,2,Anonymized Partner 046,000,Common Department,466412623,2022-03
+2817.0,2.0,121,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,2,Anonymized Partner 046,000,Common Department,0,161481,10E100130,Merchandise Purchases,,,010,Sapporo Sales Office,30438473,2022-03
+2818.0,1.0,122,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,020,Tokyo Branch,1604983,0,10B100040,Accounts Payable,13,Anonymized Partner 027,000,Common Department,468017606,2022-03
+2818.0,1.0,122,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,13,Anonymized Partner 027,000,Common Department,0,1604983,10E100130,Merchandise Purchases,,,020,Tokyo Branch,32043456,2022-03
+2818.0,2.0,122,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,020,Tokyo Branch,708722,0,10B100040,Accounts Payable,2,Anonymized Partner 046,000,Common Department,468726328,2022-03
+2818.0,2.0,122,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,2,Anonymized Partner 046,000,Common Department,0,708722,10E100130,Merchandise Purchases,,,020,Tokyo Branch,32752178,2022-03
+2818.0,3.0,122,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,020,Tokyo Branch,3306604,0,10B100040,Accounts Payable,14,Anonymized Partner 011,000,Common Department,472032932,2022-03
+2818.0,3.0,122,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,14,Anonymized Partner 011,000,Common Department,0,3306604,10E100130,Merchandise Purchases,,,020,Tokyo Branch,36058782,2022-03
+2818.0,4.0,122,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,020,Tokyo Branch,3861324,0,10B100040,Accounts Payable,3,Anonymized Partner 085,000,Common Department,475894256,2022-03
+2818.0,4.0,122,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,3,Anonymized Partner 085,000,Common Department,0,3861324,10E100130,Merchandise Purchases,,,020,Tokyo Branch,39920106,2022-03
+2818.0,5.0,122,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,020,Tokyo Branch,7758109,0,10B100040,Accounts Payable,1,Anonymized Partner 043,000,Common Department,483652365,2022-03
+2818.0,5.0,122,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,1,Anonymized Partner 043,000,Common Department,0,7758109,10E100130,Merchandise Purchases,,,020,Tokyo Branch,47678215,2022-03
+2818.0,6.0,122,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,020,Tokyo Branch,5736237,0,10B100040,Accounts Payable,11,Anonymized Partner 067,000,Common Department,489388602,2022-03
+2818.0,6.0,122,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,11,Anonymized Partner 067,000,Common Department,0,5736237,10E100130,Merchandise Purchases,,,020,Tokyo Branch,53414452,2022-03
+2818.0,7.0,122,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,020,Tokyo Branch,371183,0,10B100040,Accounts Payable,12,Anonymized Partner 059,000,Common Department,489759785,2022-03
+2818.0,7.0,122,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,12,Anonymized Partner 059,000,Common Department,0,371183,10E100130,Merchandise Purchases,,,020,Tokyo Branch,53785635,2022-03
+2818.0,8.0,122,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,020,Tokyo Branch,46267,0,10B100040,Accounts Payable,8,Anonymized Partner 063,000,Common Department,489806052,2022-03
+2818.0,8.0,122,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,8,Anonymized Partner 063,000,Common Department,0,46267,10E100130,Merchandise Purchases,,,020,Tokyo Branch,53831902,2022-03
+2819.0,1.0,123,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,030,Nagoya Branch,2437314,0,10B100040,Accounts Payable,9,Anonymized Partner 029,000,Common Department,492243366,2022-03
+2819.0,1.0,123,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,9,Anonymized Partner 029,000,Common Department,0,2437314,10E100130,Merchandise Purchases,,,030,Nagoya Branch,56269216,2022-03
+2819.0,2.0,123,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,030,Nagoya Branch,1591695,0,10B100040,Accounts Payable,15,Anonymized Partner 074,000,Common Department,493835061,2022-03
+2819.0,2.0,123,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,15,Anonymized Partner 074,000,Common Department,0,1591695,10E100130,Merchandise Purchases,,,030,Nagoya Branch,57860911,2022-03
+2819.0,3.0,123,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,030,Nagoya Branch,4231805,0,10B100040,Accounts Payable,7,Anonymized Partner 048,000,Common Department,498066866,2022-03
+2819.0,3.0,123,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,7,Anonymized Partner 048,000,Common Department,0,4231805,10E100130,Merchandise Purchases,,,030,Nagoya Branch,62092716,2022-03
+2819.0,4.0,123,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,030,Nagoya Branch,102816,0,10B100040,Accounts Payable,8,Anonymized Partner 063,000,Common Department,498169682,2022-03
+2819.0,4.0,123,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,8,Anonymized Partner 063,000,Common Department,0,102816,10E100130,Merchandise Purchases,,,030,Nagoya Branch,62195532,2022-03
+2819.0,5.0,123,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,030,Nagoya Branch,320719,0,10B100040,Accounts Payable,2,Anonymized Partner 046,000,Common Department,498490401,2022-03
+2819.0,5.0,123,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,2,Anonymized Partner 046,000,Common Department,0,320719,10E100130,Merchandise Purchases,,,030,Nagoya Branch,62516251,2022-03
+2820.0,1.0,124,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,040,Osaka Branch,4615320,0,10B100040,Accounts Payable,6,Anonymized Partner 054,000,Common Department,503105721,2022-03
+2820.0,1.0,124,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,6,Anonymized Partner 054,000,Common Department,0,4615320,10E100130,Merchandise Purchases,,,040,Osaka Branch,67131571,2022-03
+2820.0,2.0,124,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,040,Osaka Branch,4402685,0,10B100040,Accounts Payable,5,Anonymized Partner 010,000,Common Department,507508406,2022-03
+2820.0,2.0,124,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,5,Anonymized Partner 010,000,Common Department,0,4402685,10E100130,Merchandise Purchases,,,040,Osaka Branch,71534256,2022-03
+2820.0,3.0,124,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,040,Osaka Branch,1057191,0,10B100040,Accounts Payable,4,Anonymized Partner 047,000,Common Department,508565597,2022-03
+2820.0,3.0,124,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,4,Anonymized Partner 047,000,Common Department,0,1057191,10E100130,Merchandise Purchases,,,040,Osaka Branch,72591447,2022-03
+2820.0,4.0,124,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,040,Osaka Branch,154224,0,10B100040,Accounts Payable,8,Anonymized Partner 063,000,Common Department,508719821,2022-03
+2820.0,4.0,124,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,8,Anonymized Partner 063,000,Common Department,0,154224,10E100130,Merchandise Purchases,,,040,Osaka Branch,72745671,2022-03
+2820.0,5.0,124,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,040,Osaka Branch,3725251,0,10B100040,Accounts Payable,10,Anonymized Partner 009,000,Common Department,512445072,2022-03
+2820.0,5.0,124,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,10,Anonymized Partner 009,000,Common Department,0,3725251,10E100130,Merchandise Purchases,,,040,Osaka Branch,76470922,2022-03
+2820.0,6.0,124,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,040,Osaka Branch,619008,0,10B100040,Accounts Payable,2,Anonymized Partner 046,000,Common Department,513064080,2022-03
+2820.0,6.0,124,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,2,Anonymized Partner 046,000,Common Department,0,619008,10E100130,Merchandise Purchases,,,040,Osaka Branch,77089930,2022-03
+2820.0,7.0,124,Debit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,10,Anonymized Partner 009,000,Common Department,42840,0,10E100120,Purchase Discounts and Returns,,,040,Osaka Branch,77047090,2022-03
+2820.0,7.0,124,Credit,2022-03-31,3/1-3/31 period Purchases,10E100120,Purchase Discounts and Returns,,,040,Osaka Branch,0,42840,10B100040,Accounts Payable,10,Anonymized Partner 009,000,Common Department,776423,2022-03
+2821.0,1.0,125,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,050,Kyushu Sales Office,217551,0,10B100040,Accounts Payable,2,Anonymized Partner 046,000,Common Department,513281631,2022-03
+2821.0,1.0,125,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,2,Anonymized Partner 046,000,Common Department,0,217551,10E100130,Merchandise Purchases,,,050,Kyushu Sales Office,77264641,2022-03
+2821.0,2.0,125,Debit,2022-03-31,3/1-3/31 period Purchases,10E100130,Merchandise Purchases,,,050,Kyushu Sales Office,102816,0,10B100040,Accounts Payable,8,Anonymized Partner 063,000,Common Department,513384447,2022-03
+2821.0,2.0,125,Credit,2022-03-31,3/1-3/31 period Purchases,10B100040,Accounts Payable,8,Anonymized Partner 063,000,Common Department,0,102816,10E100130,Merchandise Purchases,,,050,Kyushu Sales Office,77367457,2022-03
+2822.0,1.0,126,Debit,2022-03-31,Voucher No. 354 dated 3/31 Anonymized Partner 046,10B100040,Accounts Payable,2,Anonymized Partner 046,000,Common Department,1586888,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,75780569,2022-03
+2822.0,1.0,126,Credit,2022-03-31,Voucher No. 354 dated 3/31 Anonymized Partner 046,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,1586888,10B100040,Accounts Payable,2,Anonymized Partner 046,000,Common Department,128201328,2022-03
+2823.0,1.0,127,Debit,2022-03-31,Voucher No. 355 dated 3/31 Anonymized Partner 010,10B100040,Accounts Payable,5,Anonymized Partner 010,000,Common Department,4236496,0,10B100030,Notes Payable,,,000,Common Department,71544073,2022-03
+2823.0,1.0,127,Credit,2022-03-31,Voucher No. 355 dated 3/31 Anonymized Partner 010,10B100030,Notes Payable,,,000,Common Department,0,4236496,10B100040,Accounts Payable,5,Anonymized Partner 010,000,Common Department,72309197,2022-03
+2824.0,1.0,128,Debit,2022-03-31,Voucher No. 356 dated 3/31 Anonymized Partner 048,10B100040,Accounts Payable,7,Anonymized Partner 048,000,Common Department,3221820,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,68322253,2022-03
+2824.0,1.0,128,Credit,2022-03-31,Voucher No. 356 dated 3/31 Anonymized Partner 048,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,3221820,10B100040,Accounts Payable,7,Anonymized Partner 048,000,Common Department,124979508,2022-03
+2825.0,1.0,129,Debit,2022-03-31,Voucher No. 357 dated 3/31 Anonymized Partner 029,10B100040,Accounts Payable,9,Anonymized Partner 029,000,Common Department,2042022,0,10B100030,Notes Payable,,,000,Common Department,66280231,2022-03
+2825.0,1.0,129,Credit,2022-03-31,Voucher No. 357 dated 3/31 Anonymized Partner 029,10B100030,Notes Payable,,,000,Common Department,0,2042022,10B100040,Accounts Payable,9,Anonymized Partner 029,000,Common Department,74351219,2022-03
+2788.0,1.0,13,Debit,2022-03-31,Gasoline,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,10000,0,10A100020,Cash,,,000,Common Department,7240644,2022-03
+2788.0,1.0,13,Credit,2022-03-31,Gasoline,10A100020,Cash,,,000,Common Department,0,10000,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,124969508,2022-03
+2826.0,1.0,130,Debit,2022-03-31,Voucher No. 358 dated 3/31 Anonymized Partner 009,10B100040,Accounts Payable,10,Anonymized Partner 009,000,Common Department,2656388,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,63623843,2022-03
+2826.0,1.0,130,Credit,2022-03-31,Voucher No. 358 dated 3/31 Anonymized Partner 009,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,2656388,10B100040,Accounts Payable,10,Anonymized Partner 009,000,Common Department,122313120,2022-03
+2827.0,1.0,131,Debit,2022-03-31,Voucher No. 359 dated 3/31 Anonymized Partner 059,10B100040,Accounts Payable,12,Anonymized Partner 059,000,Common Department,255528,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,63368315,2022-03
+2827.0,1.0,131,Credit,2022-03-31,Voucher No. 359 dated 3/31 Anonymized Partner 059,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,255528,10B100040,Accounts Payable,12,Anonymized Partner 059,000,Common Department,122057592,2022-03
+2828.0,1.0,132,Debit,2022-03-31,Voucher No. 360 dated 3/31 Anonymized Partner 027,10B100040,Accounts Payable,13,Anonymized Partner 027,000,Common Department,1909347,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,61458968,2022-03
+2828.0,1.0,132,Credit,2022-03-31,Voucher No. 360 dated 3/31 Anonymized Partner 027,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,1909347,10B100040,Accounts Payable,13,Anonymized Partner 027,000,Common Department,120148245,2022-03
+2829.0,1.0,133,Debit,2022-03-31,Voucher No. 361 dated 3/31 Anonymized Partner 011,10B100040,Accounts Payable,14,Anonymized Partner 011,000,Common Department,3385746,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,58073222,2022-03
+2829.0,1.0,133,Credit,2022-03-31,Voucher No. 361 dated 3/31 Anonymized Partner 011,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,3385746,10B100040,Accounts Payable,14,Anonymized Partner 011,000,Common Department,116762499,2022-03
+2830.0,1.0,134,Debit,2022-03-31,Voucher No. 362 dated 3/31 Anonymized Partner 074,10B100040,Accounts Payable,15,Anonymized Partner 074,000,Common Department,1144940,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,56928282,2022-03
+2830.0,1.0,134,Credit,2022-03-31,Voucher No. 362 dated 3/31 Anonymized Partner 074,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,1144940,10B100040,Accounts Payable,15,Anonymized Partner 074,000,Common Department,115617559,2022-03
+2831.0,1.0,135,Debit,2022-03-31,month 2 payment,10B100630,Accounts Payable Other,,,000,Common Department,6887180,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,4560791,2022-03
+2831.0,1.0,135,Credit,2022-03-31,month 2 payment,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,6887180,10B100630,Accounts Payable Other,,,000,Common Department,108730379,2022-03
+2832.0,1.0,137,Debit,2022-03-31,Note due date settlement Anonymized Partner 010,10B100030,Notes Payable,,,000,Common Department,4897778,0,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,69453441,2022-03
+2832.0,1.0,137,Credit,2022-03-31,Note due date settlement Anonymized Partner 010,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,0,4897778,10B100030,Notes Payable,,,000,Common Department,103832601,2022-03
+2832.0,2.0,137,Debit,2022-03-31,Note due date settlement Anonymized Partner 029,10B100030,Notes Payable,,,000,Common Department,2224739,0,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,67228702,2022-03
+2832.0,2.0,137,Credit,2022-03-31,Note due date settlement Anonymized Partner 029,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,0,2224739,10B100030,Notes Payable,,,000,Common Department,101607862,2022-03
+2832.0,3.0,137,Debit,2022-03-31,Note due date settlement Anonymized Partner 009,10B100030,Notes Payable,,,000,Common Department,3791833,0,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,63436869,2022-03
+2832.0,3.0,137,Credit,2022-03-31,Note due date settlement Anonymized Partner 009,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,0,3791833,10B100030,Notes Payable,,,000,Common Department,97816029,2022-03
+2833.0,1.0,138,Debit,2022-03-31,Ending inventory(Sapporo),10A100280,Merchandise,,,000,Common Department,7889283,0,10E100140,Ending Merchandise Inventory,,,010,Sapporo Sales Office,70902509,2022-03
+2833.0,1.0,138,Credit,2022-03-31,Ending inventory(Sapporo),10E100140,Ending Merchandise Inventory,,,010,Sapporo Sales Office,0,7889283,10A100280,Merchandise,,,000,Common Department,-7889283,2022-03
+2833.0,2.0,138,Debit,2022-03-31,Ending inventory(Tokyo),10A100280,Merchandise,,,000,Common Department,32429735,0,10E100140,Ending Merchandise Inventory,,,020,Tokyo Branch,103332244,2022-03
+2833.0,2.0,138,Credit,2022-03-31,Ending inventory(Tokyo),10E100140,Ending Merchandise Inventory,,,020,Tokyo Branch,0,32429735,10A100280,Merchandise,,,000,Common Department,-40319018,2022-03
+2833.0,3.0,138,Debit,2022-03-31,Ending inventory(Nagoya),10A100280,Merchandise,,,000,Common Department,6035795,0,10E100140,Ending Merchandise Inventory,,,030,Nagoya Branch,109368039,2022-03
+2833.0,3.0,138,Credit,2022-03-31,Ending inventory(Nagoya),10E100140,Ending Merchandise Inventory,,,030,Nagoya Branch,0,6035795,10A100280,Merchandise,,,000,Common Department,-46354813,2022-03
+2833.0,4.0,138,Debit,2022-03-31,Ending inventory(Osaka),10A100280,Merchandise,,,000,Common Department,12830339,0,10E100140,Ending Merchandise Inventory,,,040,Osaka Branch,122198378,2022-03
+2833.0,4.0,138,Credit,2022-03-31,Ending inventory(Osaka),10E100140,Ending Merchandise Inventory,,,040,Osaka Branch,0,12830339,10A100280,Merchandise,,,000,Common Department,-59185152,2022-03
+2833.0,5.0,138,Debit,2022-03-31,Ending inventory(Kyushu),10A100280,Merchandise,,,000,Common Department,3840394,0,10E100140,Ending Merchandise Inventory,,,050,Kyushu Sales Office,126038772,2022-03
+2833.0,5.0,138,Credit,2022-03-31,Ending inventory(Kyushu),10E100140,Ending Merchandise Inventory,,,050,Kyushu Sales Office,0,3840394,10A100280,Merchandise,,,000,Common Department,-63025546,2022-03
+2834.0,1.0,141,Debit,2022-03-31,Note maturity Anonymized Partner 065 | Note number=R20220131-120-12;Receipt amount corrected to settlement amount,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,17510543,0,10A100060,Notes Receivable,,,000,Common Department,115326572,2022-03
+2834.0,1.0,141,Credit,2022-03-31,Note maturity Anonymized Partner 065 | Note number=R20220131-120-12;Receipt amount corrected to settlement amount,10A100060,Notes Receivable,,,000,Common Department,0,17510543,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,92428268,2022-03
+2835.0,1.0,143,Debit,2022-03-31,Funds transfer,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,5000000,0,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,120326572,2022-03
+2835.0,1.0,143,Credit,2022-03-31,Funds transfer,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,0,5000000,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,115326572,2022-03
+2835.0,2.0,143,Debit,2022-03-31,Funds transfer,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,6000000,0,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,121326572,2022-03
+2835.0,2.0,143,Credit,2022-03-31,Funds transfer,10A100020,Ordinary Deposits,40,JKL Bank Umeda Branch,000,Common Department,0,6000000,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,115326572,2022-03
+2835.0,3.0,143,Debit,2022-03-31,Funds transfer,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,3000000,0,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,118326572,2022-03
+2835.0,3.0,143,Credit,2022-03-31,Funds transfer,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,0,3000000,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,115326572,2022-03
+2836.0,1.0,145,Debit,2022-03-31,Freight Expenses,10E200870,Freight Expenses,,,050,Kyushu Sales Office,635600,0,10B100630,Accounts Payable Other,,,000,Common Department,48047049,2022-03
+2836.0,1.0,145,Credit,2022-03-31,Freight Expenses,10B100630,Accounts Payable Other,,,000,Common Department,0,635600,10E200870,Freight Expenses,,,050,Kyushu Sales Office,5196391,2022-03
+2837.0,1.0,146,Debit,2022-03-31,Loan repayment received,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,40000,0,10A100610,Short-term Loans Receivable,,,000,Common Department,115366572,2022-03
+2837.0,1.0,146,Credit,2022-03-31,Loan repayment received,10A100610,Short-term Loans Receivable,,,000,Common Department,0,40000,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,450000,2022-03
+2837.0,2.0,146,Debit,2022-03-31,Loan repayment received,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,50000,0,10A100610,Short-term Loans Receivable,,,000,Common Department,115416572,2022-03
+2837.0,2.0,146,Credit,2022-03-31,Loan repayment received,10A100610,Short-term Loans Receivable,,,000,Common Department,0,50000,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,400000,2022-03
+2838.0,1.0,149,Debit,2022-03-31,Depreciation Expenses,10E200220,Depreciation Expenses,,,020,Tokyo Branch,164000,0,10A210130,Structures,,,000,Common Department,164000,2022-03
+2838.0,1.0,149,Credit,2022-03-31,Depreciation Expenses,10A210130,Structures,,,000,Common Department,0,164000,10E200220,Depreciation Expenses,,,020,Tokyo Branch,3116000,2022-03
+2838.0,2.0,149,Debit,2022-03-31,Depreciation Expenses,10E200220,Depreciation Expenses,,,020,Tokyo Branch,955962,0,10A210410,"Tools, Furniture and Fixtures",,,000,Common Department,1119962,2022-03
+2838.0,2.0,149,Credit,2022-03-31,Depreciation Expenses,10A210410,"Tools, Furniture and Fixtures",,,000,Common Department,0,955962,10E200220,Depreciation Expenses,,,020,Tokyo Branch,3823848,2022-03
+2789.0,1.0,15,Debit,2022-03-31,Car wash expense,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,3000,0,10A100020,Cash,,,000,Common Department,7243644,2022-03
+2789.0,1.0,15,Credit,2022-03-31,Car wash expense,10A100020,Cash,,,000,Common Department,0,3000,10E201120,Vehicle Expenses,,,010,Sapporo Sales Office,115413572,2022-03
+2839.0,1.0,150,Debit,2022-03-31,Installment savings,10A100020,Installment Savings,,,000,Common Department,500000,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,115913572,2022-03
+2839.0,1.0,150,Credit,2022-03-31,Installment savings,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,500000,10A100020,Installment Savings,,,000,Common Department,115413572,2022-03
+2839.0,2.0,150,Debit,2022-03-31,New installment savings,10A100020,Installment Savings,,,000,Common Department,240000,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,115653572,2022-03
+2839.0,2.0,150,Credit,2022-03-31,New installment savings,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,240000,10A100020,Installment Savings,,,000,Common Department,115413572,2022-03
+2839.0,3.0,150,Debit,2022-03-31,Insurance Reserve Deposits,10A230570,Insurance Reserve Deposits,,,000,Common Department,125000,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,3028000,2022-03
+2839.0,3.0,150,Credit,2022-03-31,Insurance Reserve Deposits,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,125000,10A230570,Insurance Reserve Deposits,,,000,Common Department,115288572,2022-03
+2840.0,1.0,151,Debit,2022-03-31,Loan repayment,10B100790,Short-term Borrowings,,,000,Common Department,653500,0,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,0,2022-03
+2840.0,1.0,151,Credit,2022-03-31,Loan repayment,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,0,653500,10B100790,Short-term Borrowings,,,000,Common Department,114635072,2022-03
+2840.0,2.0,151,Debit,2022-03-31,Interest,10E300020,Interest Expense,,,020,Tokyo Branch,32675,0,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,1201768,2022-03
+2840.0,2.0,151,Credit,2022-03-31,Interest,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,0,32675,10E300020,Interest Expense,,,020,Tokyo Branch,114602397,2022-03
+2841.0,1.0,152,Debit,2022-03-31,Long-term loan repayment,10B200080,Long-term Borrowings,,,000,Common Department,7000000,0,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,30343150,2022-03
+2841.0,1.0,152,Credit,2022-03-31,Long-term loan repayment,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,0,7000000,10B200080,Long-term Borrowings,,,000,Common Department,107602397,2022-03
+2841.0,2.0,152,Debit,2022-03-31,Long-term loan interest,10E300020,Interest Expense,,,000,Common Department,490000,0,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,1691768,2022-03
+2841.0,2.0,152,Credit,2022-03-31,Long-term loan interest,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,0,490000,10E300020,Interest Expense,,,000,Common Department,107112397,2022-03
+2842.0,1.0,153,Debit,2022-03-31,New Time Deposit,10A100020,Time Deposits,,,000,Common Department,18000000,0,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,125112397,2022-03
+2842.0,1.0,153,Credit,2022-03-31,New Time Deposit,10A100020,Checking Deposits,1,ABC Bank,000,Common Department,0,18000000,10A100020,Time Deposits,,,000,Common Department,107112397,2022-03
+2843.0,1.0,301,Debit,2022-03-31,Inventory transfer(Sapporo),10E100100,Beginning Merchandise Inventory,,,010,Sapporo Sales Office,7858401,0,10A100280,Merchandise,,,000,Common Department,7858401,2022-03
+2843.0,1.0,301,Credit,2022-03-31,Inventory transfer(Sapporo),10A100280,Merchandise,,,000,Common Department,0,7858401,10E100100,Beginning Merchandise Inventory,,,010,Sapporo Sales Office,118180371,2022-03
+2843.0,2.0,301,Debit,2022-03-31,Inventory transfer(Tokyo),10E100100,Beginning Merchandise Inventory,,,020,Tokyo Branch,31348594,0,10A100280,Merchandise,,,000,Common Department,39206995,2022-03
+2843.0,2.0,301,Credit,2022-03-31,Inventory transfer(Tokyo),10A100280,Merchandise,,,000,Common Department,0,31348594,10E100100,Beginning Merchandise Inventory,,,020,Tokyo Branch,86831777,2022-03
+2843.0,3.0,301,Debit,2022-03-31,Inventory transfer(Nagoya),10E100100,Beginning Merchandise Inventory,,,030,Nagoya Branch,5606387,0,10A100280,Merchandise,,,000,Common Department,44813382,2022-03
+2843.0,3.0,301,Credit,2022-03-31,Inventory transfer(Nagoya),10A100280,Merchandise,,,000,Common Department,0,5606387,10E100100,Beginning Merchandise Inventory,,,030,Nagoya Branch,81225390,2022-03
+2843.0,4.0,301,Debit,2022-03-31,Inventory transfer(Osaka),10E100100,Beginning Merchandise Inventory,,,040,Osaka Branch,13493680,0,10A100280,Merchandise,,,000,Common Department,58307062,2022-03
+2843.0,4.0,301,Credit,2022-03-31,Inventory transfer(Osaka),10A100280,Merchandise,,,000,Common Department,0,13493680,10E100100,Beginning Merchandise Inventory,,,040,Osaka Branch,67731710,2022-03
+2843.0,5.0,301,Debit,2022-03-31,Inventory transfer(Kyushu),10E100100,Beginning Merchandise Inventory,,,050,Kyushu Sales Office,4706164,0,10A100280,Merchandise,,,000,Common Department,63013226,2022-03
+2843.0,5.0,301,Credit,2022-03-31,Inventory transfer(Kyushu),10A100280,Merchandise,,,000,Common Department,0,4706164,10E100100,Beginning Merchandise Inventory,,,050,Kyushu Sales Office,63025546,2022-03
+2790.0,1.0,36,Debit,2022-03-31,Freight Anonymized Carrier A,10E200870,Freight Expenses,,,020,Tokyo Branch,1376962,0,10B100630,Accounts Payable Other,,,000,Common Department,49424011,2022-03
+2790.0,1.0,36,Credit,2022-03-31,Freight Anonymized Carrier A,10B100630,Accounts Payable Other,,,000,Common Department,0,1376962,10E200870,Freight Expenses,,,020,Tokyo Branch,6573353,2022-03
+2790.0,2.0,36,Debit,2022-03-31,Freight Anonymized Carrier B,10E200870,Freight Expenses,,,020,Tokyo Branch,792839,0,10B100630,Accounts Payable Other,,,000,Common Department,50216850,2022-03
+2790.0,2.0,36,Credit,2022-03-31,Freight Anonymized Carrier B,10B100630,Accounts Payable Other,,,000,Common Department,0,792839,10E200870,Freight Expenses,,,020,Tokyo Branch,7366192,2022-03
+2791.0,1.0,40,Debit,2022-03-31,Advertising placement,10E200050,Advertising Expenses,,,020,Tokyo Branch,50000,0,10B100630,Accounts Payable Other,,,000,Common Department,2126200,2022-03
+2791.0,1.0,40,Credit,2022-03-31,Advertising placement,10B100630,Accounts Payable Other,,,000,Common Department,0,50000,10E200050,Advertising Expenses,,,020,Tokyo Branch,7416192,2022-03
+2792.0,1.0,49,Debit,2022-03-31,Gasoline,10E201120,Vehicle Expenses,,,020,Tokyo Branch,163470,0,10B100630,Accounts Payable Other,,,000,Common Department,7407114,2022-03
+2792.0,1.0,49,Credit,2022-03-31,Gasoline,10B100630,Accounts Payable Other,,,000,Common Department,0,163470,10E201120,Vehicle Expenses,,,020,Tokyo Branch,7579662,2022-03
+2792.0,2.0,49,Debit,2022-03-31,Gasoline,10E201120,Vehicle Expenses,,,020,Tokyo Branch,2626,0,10A100020,Cash,,,000,Common Department,7409740,2022-03
+2792.0,2.0,49,Credit,2022-03-31,Gasoline,10A100020,Cash,,,000,Common Department,0,2626,10E201120,Vehicle Expenses,,,020,Tokyo Branch,107109771,2022-03
+2792.0,3.0,49,Debit,2022-03-31,Gasoline,10E201120,Vehicle Expenses,,,020,Tokyo Branch,5729,0,10A100020,Cash,,,000,Common Department,7415469,2022-03
+2792.0,3.0,49,Credit,2022-03-31,Gasoline,10A100020,Cash,,,000,Common Department,0,5729,10E201120,Vehicle Expenses,,,020,Tokyo Branch,107104042,2022-03
+2787.0,1.0,5,Debit,2022-03-31,Advertising expense,10E200050,Advertising Expenses,,,010,Sapporo Sales Office,52500,0,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,2178700,2022-03
+2787.0,1.0,5,Credit,2022-03-31,Advertising expense,10A100020,Ordinary Deposits,10,DEF Bank Station Branch,000,Common Department,0,52500,10E200050,Advertising Expenses,,,010,Sapporo Sales Office,107051542,2022-03
+2793.0,1.0,55,Debit,2022-03-31,Vehicle management expense,10E201120,Vehicle Expenses,,,020,Tokyo Branch,23810,0,10A100020,Cash,,,000,Common Department,7439279,2022-03
+2793.0,1.0,55,Credit,2022-03-31,Vehicle management expense,10A100020,Cash,,,000,Common Department,0,23810,10E201120,Vehicle Expenses,,,020,Tokyo Branch,107027732,2022-03
+2793.0,2.0,55,Debit,2022-03-31,Vehicle management expense,10E201120,Vehicle Expenses,,,020,Tokyo Branch,26667,0,10A100020,Cash,,,000,Common Department,7465946,2022-03
+2793.0,2.0,55,Credit,2022-03-31,Vehicle management expense,10A100020,Cash,,,000,Common Department,0,26667,10E201120,Vehicle Expenses,,,020,Tokyo Branch,107001065,2022-03
+2793.0,3.0,55,Debit,2022-03-31,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,7667,0,10A100020,Cash,,,000,Common Department,7473613,2022-03
+2793.0,3.0,55,Credit,2022-03-31,Expressway toll,10A100020,Cash,,,000,Common Department,0,7667,10E201120,Vehicle Expenses,,,020,Tokyo Branch,106993398,2022-03
+2794.0,1.0,62,Debit,2022-03-31,Workers' compensation insurance payment,10E200540,Statutory Welfare Expenses,,,020,Tokyo Branch,403840,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,9758339,2022-03
+2794.0,1.0,62,Credit,2022-03-31,Workers' compensation insurance payment,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,403840,10E200540,Statutory Welfare Expenses,,,020,Tokyo Branch,106589558,2022-03
+2794.0,2.0,62,Debit,2022-03-31,"Employment Insurance Premium, Employer Contribution",10E200540,Statutory Welfare Expenses,,,020,Tokyo Branch,662257,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,10420596,2022-03
+2794.0,2.0,62,Credit,2022-03-31,"Employment Insurance Premium, Employer Contribution",10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,662257,10E200540,Statutory Welfare Expenses,,,020,Tokyo Branch,105927301,2022-03
+2794.0,3.0,62,Debit,2022-03-31,Employment Insurance Premium,10B100690,Deposits Received,9,Other,000,Common Department,441505,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,7099543,2022-03
+2794.0,3.0,62,Credit,2022-03-31,Employment Insurance Premium,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,441505,10B100690,Deposits Received,9,Other,000,Common Department,105485796,2022-03
+2795.0,1.0,63,Debit,2022-03-31,Insurance Expenses,10E200240,Insurance Expenses,,,020,Tokyo Branch,81000,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,3706840,2022-03
+2795.0,1.0,63,Credit,2022-03-31,Insurance Expenses,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,81000,10E200240,Insurance Expenses,,,020,Tokyo Branch,105404796,2022-03
+2796.0,1.0,66,Debit,2022-03-31,lease fee,10E200730,Land and Building Rent,,,020,Tokyo Branch,209850,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,3526200,2022-03
+2796.0,1.0,66,Credit,2022-03-31,lease fee,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,209850,10E200730,Land and Building Rent,,,020,Tokyo Branch,105194946,2022-03
+2797.0,1.0,67,Debit,2022-03-31,Membership fee Payment,10E201140,Membership Fees,,,020,Tokyo Branch,30000,0,10A100020,Cash,,,000,Common Department,1392000,2022-03
+2797.0,1.0,67,Credit,2022-03-31,Membership fee Payment,10A100020,Cash,,,000,Common Department,0,30000,10E201140,Membership Fees,,,020,Tokyo Branch,105164946,2022-03
+2798.0,1.0,70,Debit,2022-03-31,Wired service fee,10E201270,Miscellaneous Expenses,,,020,Tokyo Branch,6000,0,10B100630,Accounts Payable Other,,,000,Common Department,5598312,2022-03
+2798.0,1.0,70,Credit,2022-03-31,Wired service fee,10B100630,Accounts Payable Other,,,000,Common Department,0,6000,10E201270,Miscellaneous Expenses,,,020,Tokyo Branch,7585662,2022-03
+2798.0,2.0,70,Debit,2022-03-31,Security fee,10E201270,Miscellaneous Expenses,,,020,Tokyo Branch,52381,0,10B100630,Accounts Payable Other,,,000,Common Department,5650693,2022-03
+2798.0,2.0,70,Credit,2022-03-31,Security fee,10B100630,Accounts Payable Other,,,000,Common Department,0,52381,10E201270,Miscellaneous Expenses,,,020,Tokyo Branch,7638043,2022-03
+2798.0,3.0,70,Debit,2022-03-31,Expressway toll,10E201120,Vehicle Expenses,,,020,Tokyo Branch,73315,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,7546928,2022-03
+2798.0,3.0,70,Credit,2022-03-31,Expressway toll,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,73315,10E201120,Vehicle Expenses,,,020,Tokyo Branch,105091631,2022-03
+2798.0,4.0,70,Debit,2022-03-31,Cleaning fee,10E201270,Miscellaneous Expenses,,,020,Tokyo Branch,73500,0,10B100630,Accounts Payable Other,,,000,Common Department,5724193,2022-03
+2798.0,4.0,70,Credit,2022-03-31,Cleaning fee,10B100630,Accounts Payable Other,,,000,Common Department,0,73500,10E201270,Miscellaneous Expenses,,,020,Tokyo Branch,7711543,2022-03
+2798.0,5.0,70,Debit,2022-03-31,Insurance Expenses,10E200240,Insurance Expenses,,,030,Nagoya Branch,62000,0,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,3768840,2022-03
+2798.0,5.0,70,Credit,2022-03-31,Insurance Expenses,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,0,62000,10E200240,Insurance Expenses,,,030,Nagoya Branch,105029631,2022-03
+2799.0,1.0,72,Debit,2022-03-31,Insurance Premium Payment,10E200240,Insurance Expenses,,,050,Kyushu Sales Office,57000,0,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,3825840,2022-03
+2799.0,1.0,72,Credit,2022-03-31,Insurance Premium Payment,10A100020,Ordinary Deposits,50,MNO Bank Kitakyushu Branch,000,Common Department,0,57000,10E200240,Insurance Expenses,,,050,Kyushu Sales Office,104972631,2022-03
+2800.0,1.0,77,Debit,2022-03-31,Freight Expenses,10E200870,Freight Expenses,,,030,Nagoya Branch,202600,0,10B100630,Accounts Payable Other,,,000,Common Department,50419450,2022-03
+2800.0,1.0,77,Credit,2022-03-31,Freight Expenses,10B100630,Accounts Payable Other,,,000,Common Department,0,202600,10E200870,Freight Expenses,,,030,Nagoya Branch,7914143,2022-03
+2801.0,1.0,79,Debit,2022-03-31,Supplies expense department allocation,10E200200,Supplies Expenses,,,010,Sapporo Sales Office,38262,0,10E200200,Supplies Expenses,,,000,Common Department,3406255,2022-03
+2801.0,1.0,79,Credit,2022-03-31,Supplies expense department allocation,10E200200,Supplies Expenses,,,000,Common Department,0,38262,10E200200,Supplies Expenses,,,010,Sapporo Sales Office,3367993,2022-03
+2801.0,2.0,79,Debit,2022-03-31,Supplies expense department allocation,10E200200,Supplies Expenses,,,020,Tokyo Branch,166966,0,10E200200,Supplies Expenses,,,000,Common Department,3534959,2022-03
+2801.0,2.0,79,Credit,2022-03-31,Supplies expense department allocation,10E200200,Supplies Expenses,,,000,Common Department,0,166966,10E200200,Supplies Expenses,,,020,Tokyo Branch,3367993,2022-03
+2801.0,3.0,79,Debit,2022-03-31,Supplies expense department allocation,10E200200,Supplies Expenses,,,030,Nagoya Branch,34784,0,10E200200,Supplies Expenses,,,000,Common Department,3402777,2022-03
+2801.0,3.0,79,Credit,2022-03-31,Supplies expense department allocation,10E200200,Supplies Expenses,,,000,Common Department,0,34784,10E200200,Supplies Expenses,,,030,Nagoya Branch,3367993,2022-03
+2801.0,4.0,79,Debit,2022-03-31,Supplies expense department allocation,10E200200,Supplies Expenses,,,040,Osaka Branch,83482,0,10E200200,Supplies Expenses,,,000,Common Department,3451475,2022-03
+2801.0,4.0,79,Credit,2022-03-31,Supplies expense department allocation,10E200200,Supplies Expenses,,,000,Common Department,0,83482,10E200200,Supplies Expenses,,,040,Osaka Branch,3367993,2022-03
+2801.0,5.0,79,Debit,2022-03-31,Supplies expense department allocation,10E200200,Supplies Expenses,,,050,Kyushu Sales Office,24349,0,10E200200,Supplies Expenses,,,000,Common Department,3392342,2022-03
+2801.0,5.0,79,Credit,2022-03-31,Supplies expense department allocation,10E200200,Supplies Expenses,,,000,Common Department,0,24349,10E200200,Supplies Expenses,,,050,Kyushu Sales Office,3367993,2022-03
+2802.0,1.0,93,Debit,2022-03-31,Repair expense,10E201000,Repairs and Maintenance,,,040,Osaka Branch,17850,0,10B100630,Accounts Payable Other,,,000,Common Department,337350,2022-03
+2802.0,1.0,93,Credit,2022-03-31,Repair expense,10B100630,Accounts Payable Other,,,000,Common Department,0,17850,10E201000,Repairs and Maintenance,,,040,Osaka Branch,7931993,2022-03
+2802.0,2.0,93,Debit,2022-03-31,Insurance Premium Withheld portion,10B100690,Deposits Received,1,Insurance Expenses,000,Common Department,742977,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,6356566,2022-03
+2802.0,2.0,93,Credit,2022-03-31,Insurance Premium Withheld portion,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,742977,10B100690,Deposits Received,1,Insurance Expenses,000,Common Department,104229654,2022-03
+2802.0,3.0,93,Debit,2022-03-31,Insurance Premium Employer contribution,10E200540,Statutory Welfare Expenses,,,020,Tokyo Branch,120411,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,10541007,2022-03
+2802.0,3.0,93,Credit,2022-03-31,Insurance Premium Employer contribution,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,120411,10E200540,Statutory Welfare Expenses,,,020,Tokyo Branch,104109243,2022-03
+2802.0,4.0,93,Debit,2022-03-31,Insurance Premium Employer contribution,10E200540,Statutory Welfare Expenses,,,020,Tokyo Branch,236045,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,10777052,2022-03
+2802.0,4.0,93,Credit,2022-03-31,Insurance Premium Employer contribution,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,236045,10E200540,Statutory Welfare Expenses,,,020,Tokyo Branch,103873198,2022-03
+2802.0,5.0,93,Debit,2022-03-31,Insurance Premium Employer contribution,10E200540,Statutory Welfare Expenses,,,010,Sapporo Sales Office,103424,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,10880476,2022-03
+2802.0,5.0,93,Credit,2022-03-31,Insurance Premium Employer contribution,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,103424,10E200540,Statutory Welfare Expenses,,,010,Sapporo Sales Office,103769774,2022-03
+2802.0,6.0,93,Debit,2022-03-31,Insurance Premium Employer contribution,10E200540,Statutory Welfare Expenses,,,030,Nagoya Branch,96352,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,10976828,2022-03
+2802.0,6.0,93,Credit,2022-03-31,Insurance Premium Employer contribution,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,96352,10E200540,Statutory Welfare Expenses,,,030,Nagoya Branch,103673422,2022-03
+2802.0,7.0,93,Debit,2022-03-31,Insurance Premium Employer contribution,10E200540,Statutory Welfare Expenses,,,040,Osaka Branch,119477,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,11096305,2022-03
+2802.0,7.0,93,Credit,2022-03-31,Insurance Premium Employer contribution,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,119477,10E200540,Statutory Welfare Expenses,,,040,Osaka Branch,103553945,2022-03
+2802.0,8.0,93,Debit,2022-03-31,Insurance Premium Employer contribution,10E200540,Statutory Welfare Expenses,,,050,Kyushu Sales Office,67268,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,11163573,2022-03
+2802.0,8.0,93,Credit,2022-03-31,Insurance Premium Employer contribution,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,67268,10E200540,Statutory Welfare Expenses,,,050,Kyushu Sales Office,103486677,2022-03
+2802.0,9.0,93,Debit,2022-03-31,Child allowance contribution Employer contribution,10E200540,Statutory Welfare Expenses,,,020,Tokyo Branch,11056,0,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,11174629,2022-03
+2802.0,9.0,93,Credit,2022-03-31,Child allowance contribution Employer contribution,10A100020,Ordinary Deposits,20,ABC Bank Head Office,000,Common Department,0,11056,10E200540,Statutory Welfare Expenses,,,020,Tokyo Branch,103475621,2022-03
+2803.0,1.0,96,Debit,2022-03-31,Security fee,10E201270,Miscellaneous Expenses,,,030,Nagoya Branch,22470,0,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,5746663,2022-03
+2803.0,1.0,96,Credit,2022-03-31,Security fee,10A100020,Ordinary Deposits,30,GHI Bank Nagoya Branch,000,Common Department,0,22470,10E201270,Miscellaneous Expenses,,,030,Nagoya Branch,103453151,2022-03
+2804.0,1.0,99,Debit,2022-03-31,Freight Expenses,10E200870,Freight Expenses,,,040,Osaka Branch,977410,0,10B100630,Accounts Payable Other,,,000,Common Department,51396860,2022-03
+2804.0,1.0,99,Credit,2022-03-31,Freight Expenses,10B100630,Accounts Payable Other,,,000,Common Department,0,977410,10E200870,Freight Expenses,,,040,Osaka Branch,8909403,2022-03
+2845.0,1.0,990001,Debit,2022-03-31,Sample assumption: Additional borrowingJPY 23343150×annual3.5％、full year、fiscal year-end payment,10E300020,Interest Expense,,,,,817010,0,10A100020,Ordinary Deposits,,,,,2508778,2022-03
+2845.0,1.0,990001,Credit,2022-03-31,Sample assumption: Additional borrowingJPY 23343150×annual3.5％、full year、fiscal year-end payment,10A100020,Ordinary Deposits,,,,,0,817010,10E300020,Interest Expense,,,,,102636141,2022-03
+2846.0,1.0,990002,Debit,2022-03-31,"Estimated current-year consumption tax: tax-inclusive accounting, source tax fields aggregated, general taxation and full deduction of eligible input tax assumed",10E200210,Taxes and Dues,,,,,13556343,0,10B100660,Accrued Consumption Taxes,,,,,13823343,2022-03
+2846.0,1.0,990002,Credit,2022-03-31,"Estimated current-year consumption tax: tax-inclusive accounting, source tax fields aggregated, general taxation and full deduction of eligible input tax assumed",10B100660,Accrued Consumption Taxes,,,,,0,13556343,10E200210,Taxes and Dues,,,,,13556343,2022-03
+2847.0,1.0,990003,Debit,2022-03-31,Sample estimate of corporate taxes: profit before tax multiplied by 30%; not a statutory rate or filed tax amount,10F100070,"Corporate, Inhabitant and Enterprise Taxes",,,,,5004173,0,10B100640,Accrued Corporate Taxes,,,,,5004173,2022-03
+2847.0,1.0,990003,Credit,2022-03-31,Sample estimate of corporate taxes: profit before tax multiplied by 30%; not a statutory rate or filed tax amount,10B100640,Accrued Corporate Taxes,,,,,0,5004173,10F100070,"Corporate, Inhabitant and Enterprise Taxes",,,,,5004173,2022-03
+2844.0,1.0,990012,Debit,2022-03-31,Sample definition: Semiannual bonus accrual allocated evenly 202203 Department010,10E200130,Bonuses,,,010,Sapporo Sales Office,110000,0,10B100320,Provision for Bonuses,,,010,Sapporo Sales Office,10518333,2022-03
+2844.0,1.0,990012,Credit,2022-03-31,Sample definition: Semiannual bonus accrual allocated evenly 202203 Department010,10B100320,Provision for Bonuses,,,010,Sapporo Sales Office,0,110000,10E200130,Bonuses,,,010,Sapporo Sales Office,1457333,2022-03
+2844.0,2.0,990012,Debit,2022-03-31,Sample definition: Semiannual bonus accrual allocated evenly 202203 Department020,10E200130,Bonuses,,,020,Tokyo Branch,261667,0,10B100320,Provision for Bonuses,,,020,Tokyo Branch,10780000,2022-03
+2844.0,2.0,990012,Credit,2022-03-31,Sample definition: Semiannual bonus accrual allocated evenly 202203 Department020,10B100320,Provision for Bonuses,,,020,Tokyo Branch,0,261667,10E200130,Bonuses,,,020,Tokyo Branch,1719000,2022-03
+2844.0,3.0,990012,Debit,2022-03-31,Sample definition: Semiannual bonus accrual allocated evenly 202203 Department030,10E200130,Bonuses,,,030,Nagoya Branch,102667,0,10B100320,Provision for Bonuses,,,030,Nagoya Branch,10882667,2022-03
+2844.0,3.0,990012,Credit,2022-03-31,Sample definition: Semiannual bonus accrual allocated evenly 202203 Department030,10B100320,Provision for Bonuses,,,030,Nagoya Branch,0,102667,10E200130,Bonuses,,,030,Nagoya Branch,1821667,2022-03
+2844.0,4.0,990012,Debit,2022-03-31,Sample definition: Semiannual bonus accrual allocated evenly 202203 Department040,10E200130,Bonuses,,,040,Osaka Branch,120333,0,10B100320,Provision for Bonuses,,,040,Osaka Branch,11003000,2022-03
+2844.0,4.0,990012,Credit,2022-03-31,Sample definition: Semiannual bonus accrual allocated evenly 202203 Department040,10B100320,Provision for Bonuses,,,040,Osaka Branch,0,120333,10E200130,Bonuses,,,040,Osaka Branch,1942000,2022-03
+2844.0,5.0,990012,Debit,2022-03-31,Sample definition: Semiannual bonus accrual allocated evenly 202203 Department050,10E200130,Bonuses,,,050,Kyushu Sales Office,79000,0,10B100320,Provision for Bonuses,,,050,Kyushu Sales Office,11082000,2022-03
+2844.0,5.0,990012,Credit,2022-03-31,Sample definition: Semiannual bonus accrual allocated evenly 202203 Department050,10B100320,Provision for Bonuses,,,050,Kyushu Sales Office,0,79000,10E200130,Bonuses,,,050,Kyushu Sales Office,2021000,2022-03
